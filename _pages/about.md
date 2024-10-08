@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>MASc Candidate, Department: Electrical and Computer Engineering (ECE)</a>. <br> [University of Waterloo (UW)](https://uwaterloo.ca/), Canada. Address: 200 University Ave W, Waterloo, ON N2L 3G1.
+subtitle: <a href='#'>MASc Candidate</a>. Address- 200 University Ave W, Waterloo, ON N2L 3G1.
 
 profile:
   align: right

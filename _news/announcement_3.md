@@ -2,7 +2,7 @@
 layout: post
 title: The Nobel Prize in Physics 2024 was awarded to John J. Hopfield and Geoffrey E. Hinton
 date: 2024-10-08 06:07:00-0400
-inline: false
+inline: true
 related_posts: false
 ---
 

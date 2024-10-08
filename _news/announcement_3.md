@@ -2,7 +2,7 @@
 layout: post
 title: The Nobel Prize in Physics 2024 was awarded to John J. Hopfield and Geoffrey E. Hinton
 date: 2024-10-08 06:07:00-0400
-inline: true
+inline: false
 related_posts: false
 ---
 
@@ -28,6 +28,6 @@ The Royal Swedish Academy of Sciences has decided to award the 2024 [Nobel Prize
 This year’s two Nobel Prize laureates in physics have used tools from physics to develop methods that are the foundation of today’s powerful machine learning. John Hopfield created an associative memory that can store and reconstruct images and other types of patterns in data. Geoffrey Hinton invented a method that can autonomously find properties in data, and so perform tasks such as identifying specific elements in pictures.
 
 Learn more:
-- Press release: https://bit.ly/4diXSfz
-- Popular information: https://bit.ly/4gK57jl
-- Advanced information: https://bit.ly/4egLrly
+- [Press release](https://bit.ly/4diXSfz)
+- [Popular information](https://bit.ly/4gK57jl)
+- [Advanced information](https://bit.ly/4egLrly)

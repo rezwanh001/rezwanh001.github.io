@@ -1,14 +1,19 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - rezwanh001
+  # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - rezwanh001/Online-Voting-System-using-php-and-mysqlOnline-Voting-System-using-php-and-mysql
+  - rezwanh001/Pothole-DetectionPothole-Detection
+  - rezwanh001/UVA-Solutions-in-PythonUVA-Solutions-in-Python
+  - rezwanh001/Spoj-Solutions-in-Cpp-and-Python-3-Spoj-Solutions-in-Cpp-and-Python-3-
+  - rezwanh001/python-programming-with-data-structures-and-algorithms
+
+  # - jekyll/jekyll
+  # - twbs/bootstrap
+  # - jquery/jquery
+  # - FortAwesome/Font-Awesome
+  # - mathjax/MathJax
+  # - jpswalsh/academicons

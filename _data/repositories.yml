@@ -5,10 +5,10 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - rezwanh001/Online-Voting-System-using-php-and-mysqlOnline-Voting-System-using-php-and-mysql
-  - rezwanh001/Pothole-DetectionPothole-Detection
-  - rezwanh001/UVA-Solutions-in-PythonUVA-Solutions-in-Python
-  - rezwanh001/Spoj-Solutions-in-Cpp-and-Python-3-Spoj-Solutions-in-Cpp-and-Python-3-
+  - rezwanh001/Online-Voting-System-using-php-and-mysql
+  - rezwanh001/Pothole-Detection
+  - rezwanh001/UVA-Solutions-in-Python
+  - rezwanh001/Spoj-Solutions-in-Cpp-and-Python-3-
   - rezwanh001/python-programming-with-data-structures-and-algorithms
 
   # - jekyll/jekyll

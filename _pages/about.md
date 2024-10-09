@@ -8,18 +8,10 @@ profile:
   align: right
   image: rezwan_profile_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info:
-    <p></p>
-      <div class="social">
-        <span class="contact-icon" style="font-size: 2rem; padding: 5px">
-            <a href="mailto:%66%65%6E%69%61.%63%68%72%69%73%74%6F%70%6F%75%6C%6F%75@%67%6D%61%69%6C.%63%6F%6D"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=nVKZdJkAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
-            <a href="https://github.com/fenchri" target="_blank" title="GitHub"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/fenchri" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/fenchri" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-        </span>
-      </div>
-      
+  more_info: >    
+        <a href="https://github.com/fenchri" target="_blank" title="GitHub"><i class="fab fa-github-square"></i></a>
+  
+
   # more_info: >
   #   <p>Address: 200 University Ave W, Waterloo, ON N2L 3G1</p>
   #   <p>123 your address street</p>

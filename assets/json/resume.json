@@ -8,29 +8,30 @@
     "url": "https://rezwanh001.github.io/",
     "summary": "Looking for a career to demonstrate the best of my professional ability, research thinking, and strategies to improve my knowledge as well as to contribute to the best of my potential in my institution.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "",
+        "username": "",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "Centre for Pattern Analysis and Machine Intelligence (CPAMI) Lab, University of Waterloo",
+      "name": "Centre for Pattern Analysis and Machine Intelligence (CPAMI) Lab",
+      "location": "Waterloo, Ontario, Canada",
       "position": "Researcher",
-      "url": "",
-      "startDate": "",
+      "url": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
+      "startDate": "2024-04-01",
       "endDate": "",
       "summary": "",
-      "highlights": [""]
+      "highlights": ["University of Waterloo (UW)"]
     }
   ],
   "volunteer": [
@@ -48,14 +49,25 @@
   "education": [
     {
       "institution": "University of Waterloo",
-      "location": "Ontario, Canada",
+      "location": "Waterloo, Ontario, Canada",
       "url": "https://uwaterloo.ca/",
       "area": "AI, Machine Learning, Deep Learning",
-      "studyType": "PhD",
-      "startDate": "2024-04-01",
+      "studyType": "MASc",
+      "startDate": "2024-05-01",
       "endDate": "2026-01-01",
       "score": "",
       "courses": ["Department of Electrical and Computer Engineering (ECE)"]
+    },
+    {
+      "institution": "Khulna University of Engineering & Technology (KUET)",
+      "location": "Khulna, Bangladesh",
+      "url": "https://www.kuet.ac.bd/",
+      "area": "",
+      "studyType": "BSc",
+      "startDate": "2015-04-09",
+      "endDate": "2019-02-19",
+      "score": "",
+      "courses": ["Department of Computer Science and Engineering (CSE)"]
     }
   ],
   "awards": [
@@ -151,7 +163,7 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Bangla",
       "fluency": "Native speaker",
       "icon": ""
     },

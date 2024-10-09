@@ -4,6 +4,7 @@ title: The Nobel Prize in Physics 2024 was awarded to John J. Hopfield and Geoff
 date: 2024-10-08 06:07:00-0400
 inline: false
 related_posts: false
+map: true
 ---
 
 The [Nobel Prize in Physics 2024](https://www.nobelprize.org/prizes/physics/2024/summary/) was awarded to [John J. Hopfield](https://x.com/HopfieldJohn) and [Geoffrey E. Hinton](https://x.com/geoffreyhinton?lang=en) “for foundational discoveries and inventions that enable machine learning with artificial neural networks.”

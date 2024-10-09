@@ -8,7 +8,8 @@ profile:
   align: right
   image: rezwan_profile_pic.jpg
   image_circular: true # crops the image to make it circular
-  social: true
+  more_info:
+    social: true
 
   # more_info: >
   #   <p>Address: 200 University Ave W, Waterloo, ON N2L 3G1</p>

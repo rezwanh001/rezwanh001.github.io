@@ -6,7 +6,7 @@ subtitle: <a href='#'>MASc Candidate</a>, University of Waterloo (UW), Canada.
 
 profile:
   align: right
-  image: rez_demo.jpg
+  image: rezwan_profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Address: 200 University Ave W, Waterloo, ON N2L 3G1</p>

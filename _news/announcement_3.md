@@ -28,6 +28,16 @@ The Royal Swedish Academy of Sciences has decided to award the 2024 [Nobel Prize
 
 This year’s two Nobel Prize laureates in physics have used tools from physics to develop methods that are the foundation of today’s powerful machine learning. John Hopfield created an associative memory that can store and reconstruct images and other types of patterns in data. Geoffrey Hinton invented a method that can autonomously find properties in data, and so perform tasks such as identifying specific elements in pictures.
 
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
 Learn more:
 - [Press release](https://bit.ly/4diXSfz)
 - [Popular information](https://bit.ly/4gK57jl)

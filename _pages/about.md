@@ -9,7 +9,7 @@ profile:
   image: rezwan_profile_pic.jpg
   image_circular: true # crops the image to make it circular
   social: true
-  
+
   # more_info: >
   #   <p>Address: 200 University Ave W, Waterloo, ON N2L 3G1</p>
   #   <p>123 your address street</p>
@@ -20,7 +20,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an MASc Candidate in the Department of Electrical and Computer Engineering (ECE) at the [University of Waterloo (UW)](https://uwaterloo.ca/), Canada. Currently, I am conducting research in the [Centre for Pattern Analysis and Machine Intelligence (CPAMI)](https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/) Lab, focusing on Multi-Modal Machine Learning (MMML) and Large Language Models (LLMs).
+I am an MASc Candidate in the Department of Electrical and Computer Engineering (ECE) at the [University of Waterloo (UW)](https://uwaterloo.ca/), Canada. 
+
+Currently, I am conducting research in the [Centre for Pattern Analysis and Machine Intelligence (CPAMI)](https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/) Lab, focusing on Multi-Modal Machine Learning (MMML) and Large Language Models (LLMs).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 

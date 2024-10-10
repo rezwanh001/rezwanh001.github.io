@@ -54,7 +54,7 @@
       "area": "",
       "studyType": "MASc",
       "startDate": "2024-05-01",
-      "endDate": "2026-30-01",
+      "endDate": "",
       "score": "",
       "courses": ["Department of Electrical and Computer Engineering (ECE)"]
     },
@@ -68,6 +68,28 @@
       "endDate": "2019-02-19",
       "score": "",
       "courses": ["Department of Computer Science and Engineering (CSE)"]
+    },
+    {
+      "institution": "Rajshahi Govt. City College",
+      "location": "Rajshahi, Bangladesh",
+      "url": "http://rgcc.ac.bd/",
+      "area": "",
+      "studyType": "Higher Secondary Certificate (H.S.C)",
+      "startDate": "2012-12-31",
+      "endDate": "2014-12-01",
+      "score": "",
+      "courses": ["Section: Science"]
+    },
+    {
+      "institution": "Balahar B.L. High School",
+      "location": "Dinajpur, Bangladesh",
+      "url": "",
+      "area": "",
+      "studyType": "Secondary School Certificate (S.S.C)",
+      "startDate": "2007-01-01",
+      "endDate": "2012-12-30",
+      "score": "",
+      "courses": ["Section: Science"]
     }
   ],
   "awards": [

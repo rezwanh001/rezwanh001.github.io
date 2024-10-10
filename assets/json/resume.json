@@ -34,16 +34,16 @@
       "highlights": ["Artificial intelligence, Machine Learning, Deep Learning"]
     }
   ],
-  "volunteer": [
+  "Teaching": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE252: Systems Programming and Concurrency [Fall 2024]",
+      "url": "https://uwflow.com/course/ECE252",
+      "startDate": "2024-09-01",
+      "endDate": "2024-12-31",
+      "summary": "",
+      "highlights": [""]
     }
   ],
   "education": [

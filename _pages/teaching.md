@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-### Teaching Assistant (TA): ***ECE 252: Systems Programming and Concurrency (Fall 2024),*** University of Waterloo.
+### Teaching Assistant (TA)- **ECE 252: Systems Programming and Concurrency (Fall 2024),** University of Waterloo.
 ---
 
 #### Course Description

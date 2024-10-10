@@ -25,13 +25,13 @@
   "work": [
     {
       "name": "Centre for Pattern Analysis and Machine Intelligence (CPAMI) Lab",
-      "location": "Waterloo, Ontario, Canada",
+      "location": "Ontario, Canada",
       "position": "Researcher",
       "url": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
       "startDate": "2024-04-01",
       "endDate": "",
       "summary": "",
-      "highlights": ["University of Waterloo (UW)"]
+      "highlights": ["Artificial intelligence, Machine Learning, Deep Learning"]
     }
   ],
   "volunteer": [
@@ -49,12 +49,12 @@
   "education": [
     {
       "institution": "University of Waterloo",
-      "location": "Waterloo, Ontario, Canada",
+      "location": "Ontario, Canada",
       "url": "https://uwaterloo.ca/",
-      "area": "AI, Machine Learning, Deep Learning",
+      "area": "",
       "studyType": "MASc",
       "startDate": "2024-05-01",
-      "endDate": "2026-01-01",
+      "endDate": "2026-30-01",
       "score": "",
       "courses": ["Department of Electrical and Computer Engineering (ECE)"]
     },
@@ -64,7 +64,7 @@
       "url": "https://www.kuet.ac.bd/",
       "area": "",
       "studyType": "BSc",
-      "startDate": "2015-04-09",
+      "startDate": "2014-12-20",
       "endDate": "2019-02-19",
       "score": "",
       "courses": ["Department of Computer Science and Engineering (CSE)"]

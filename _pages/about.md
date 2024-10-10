@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an MASc Candidate in the Department of Electrical and Computer Engineering (ECE) at the [University of Waterloo (UW)](https://uwaterloo.ca/), Canada. 
+I am an MASc student in the Department of Electrical and Computer Engineering (ECE) at the [University of Waterloo (UW)](https://uwaterloo.ca/), Canada. 
 
 Currently, I am conducting research in the [Centre for Pattern Analysis and Machine Intelligence (CPAMI)](https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/) Lab, focusing on Multi-Modal Machine Learning (MMML) and Large Language Models (LLMs).
 

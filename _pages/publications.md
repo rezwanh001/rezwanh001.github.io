@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: publications
-description: 'You can also check <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i> Google Scholar</a>'
-
+description: >
+    'You can also check <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i> Google Scholar</a>'
 
 # description: "You can also check 🌐 [Google Scholar](https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en)"
 # description: You can also check <i class="fa-brands fa-google-scholar"></i> <a href='https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en'>Google Scholar</a>

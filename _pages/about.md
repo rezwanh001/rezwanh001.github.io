@@ -9,9 +9,9 @@ profile:
   image: rezwan_profile_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p><i class="fa-solid fa-envelope"></i> <a href='mailto:rezwan@uwaterloo.ca'>rezwan@uwaterloo.ca</a></p>
-    <p><i class="fa-solid fa-address-book"></i> <a href='https://www.google.com/maps/dir//200+University+Ave+W,+Waterloo,+ON+N2L+3G1/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882bf41d17fd2453:0x30fec4d067f7c48d?sa=X&ved=1t:707&ictx=111'>200 University Ave W, Waterloo, ON N2L 3G1</a></p>
-    <p><i class="fa-solid fa-building-columns"></i> University in Waterloo, Ontario, Canada</p>
+      <p><i class="fa-solid fa-envelope"></i> <a href='mailto:rezwan@uwaterloo.ca'>rezwan@uwaterloo.ca</a></p>
+      <p><i class="fa-solid fa-address-book"></i> <a href='https://www.google.com/maps/dir//200+University+Ave+W,+Waterloo,+ON+N2L+3G1/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882bf41d17fd2453:0x30fec4d067f7c48d?sa=X&ved=1t:707&ictx=111'>200 University Ave W, Waterloo, ON N2L 3G1</a></p>
+      <p><i class="fa-solid fa-building-columns"></i> University in Waterloo, Ontario, Canada</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

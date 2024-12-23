@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>MASc Candidate</a>, University of Waterloo (UW), Canada.
+subtitle: <a href='https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/profiles/md-rezwanul-haque'>MASc Candidate</a>, University of Waterloo (UW), Canada.
 
 profile:
   align: right

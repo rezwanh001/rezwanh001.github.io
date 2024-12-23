@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: You can also check my <a href='https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en'>Google Scholar <i class="fa-brands fa-google-scholar"></i> </a> page.
+description: You can also check my <a href='https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en'>Google Scholar <i class="fa-brands fa-google-scholar"></i> page </a>.
 # description: You can also check my Google Scholar<a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square">page</i></a>
 # description: You can also check my <a href="https://scholar.google.com/citations?hl=en&user=HaI-oFUAAAAJ" target="_blank"><i class="fa fa-gs fa-lg" aria-hidden="true" ></i></a> page.
 

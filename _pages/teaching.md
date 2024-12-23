@@ -72,6 +72,8 @@ Lecture materials, assignments, and portions of this course outline were provide
 ---
 ### Teaching Assistant (TA)- **ECE 459: Programming for Performance**.
 
+- Term: Winter 2025
+
 #### [Course Description](https://uwflow.com/course/ECE459)
 This course covers the following topics:
 - Profiling computer systems
@@ -80,6 +82,9 @@ This course covers the following topics:
 - cache consistency
 - Transactional memory. Streaming architectures, vectorization, and SIMD
 - High-performance programming languages
+
+**Prerequisites**:  
+ECE 254 or 354 or SE 350; Level at least 4A Electrical Engineering or Computer Engineering or Software Engineering
 
 #### Acknowledgment
 Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).

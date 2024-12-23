@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/profiles/md-rezwanul-haque'>MASc Candidate</a>, University of Waterloo (UW), Canada.
 
 profile:
-  align: left
+  align: right
   image: rezwan_profile_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >

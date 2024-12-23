@@ -8,6 +8,37 @@ nav_order: 6
 ---
 
 ---
+### Teaching Assistant (TA)- **ECE 459: Programming for Performance**.
+
+- Term: Winter 2025
+
+#### [Course Description](https://uwflow.com/course/ECE459)
+##### This course covers the following topics [(Course Resources)](https://github.com/jzarnett/ece459):
+- Profiling computer systems
+- bottlenecks, Amdahl's law
+- Techniques for programming multicore processors
+- cache consistency
+- Transactional memory. Streaming architectures, vectorization, and SIMD
+- High-performance programming languages
+
+**Prerequisites**:  
+- ECE 254 or 354 or SE 350; Level at least 4A Electrical Engineering or Computer Engineering or Software Engineering
+
+#### Readings
+
+##### Textbook
+- There are detailed notes. There's no required textbook for the course. The notes cite a number of sources, some of which are useful books. But there's no single source that does it all, so it would be silly to ask you to buy one.
+
+#### Evaluation
+##### Coursework will include the following components:
+- **Academic Integrity Exercise (1%)**
+- **Assignments (64%)   (4 at 16% each)**
+- **Final exam (35%)**
+
+#### Acknowledgment
+- Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).
+
+---
 ### Teaching Assistant (TA)- **ECE 252: Systems Programming and Concurrency**.
 
 - Term: Fall 2024
@@ -64,37 +95,6 @@ Coursework will include the following components:
 - Read the documentation of, understand, and interact with available libraries, such as those for multi-threading, file handling, and network operations.
 - Use inter-process communication mechanisms such as shared memory.
 - Identify, analyze, and solve concurrency and synchronization problems.
-
-#### Acknowledgment
-- Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).
-
----
-### Teaching Assistant (TA)- **ECE 459: Programming for Performance**.
-
-- Term: Winter 2025
-
-#### [Course Description](https://uwflow.com/course/ECE459)
-##### This course covers the following topics [(Course Resources)](https://github.com/jzarnett/ece459):
-- Profiling computer systems
-- bottlenecks, Amdahl's law
-- Techniques for programming multicore processors
-- cache consistency
-- Transactional memory. Streaming architectures, vectorization, and SIMD
-- High-performance programming languages
-
-**Prerequisites**:  
-- ECE 254 or 354 or SE 350; Level at least 4A Electrical Engineering or Computer Engineering or Software Engineering
-
-#### Readings
-
-##### Textbook
-- There are detailed notes. There's no required textbook for the course. The notes cite a number of sources, some of which are useful books. But there's no single source that does it all, so it would be silly to ask you to buy one.
-
-#### Evaluation
-##### Coursework will include the following components:
-- **Academic Integrity Exercise (1%)**
-- **Assignments (64%)   (4 at 16% each)**
-- **Final exam (35%)**
 
 #### Acknowledgment
 - Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).

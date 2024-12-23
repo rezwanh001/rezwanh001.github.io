@@ -7,10 +7,11 @@ nav: true
 nav_order: 6
 ---
 
-### Teaching Assistant (TA)- **ECE 252: Systems Programming and Concurrency (Fall 2024),** University of Waterloo.
----
+<!-- <h3 id="ece252">Teaching Assistant (TA)- <strong>[ECE 252: Systems Programming and Concurrency (Fall 2024)]("https://uwflow.com/course/ECE252"),</strong> University of Waterloo.</h3> -->
 
-#### Course Description
+### Teaching Assistant (TA)- **ECE 252: Systems Programming and Concurrency (Fall 2024),** University of Waterloo.
+
+#### [Course Description]("https://uwflow.com/course/ECE252")
 This course covers the following topics:
 - Processes and threads (pthreads)
 - System calls
@@ -67,9 +68,23 @@ Students who successfully complete the **lab component** will be able to:
 #### Acknowledgment
 Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).
 
+---
+### Teaching Assistant (TA)- **ECE 459: Programming for Performance (Winter 2025),** University of Waterloo.
 
+#### Course Description
+This course covers the following topics:
+- Processes and threads (pthreads)
+- System calls
+- Concurrency (semaphore, mutex, monitors, and barrier synchronization)
+- User-level memory management
+- Performance and correctness of concurrent systems
+- Deadlock detection and recovery
+- File systems
 
+#### Acknowledgment
+Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).
 
+---
 
 <!-- For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 

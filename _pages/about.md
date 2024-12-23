@@ -8,10 +8,10 @@ profile:
   align: right
   image: rezwan_profile_pic.jpg
   image_circular: true # crops the image to make it circular
-  # more_info: >
-  #   <p>Address: 200 University Ave W, Waterloo, ON N2L 3G1</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
+  more_info: >
+    <p>Address: 200 University Ave W, Waterloo, ON N2L 3G1</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

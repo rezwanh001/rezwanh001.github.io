@@ -114,42 +114,42 @@
   "certificates": [
     {
       "name": "Multimodal RAG: Chat with Videos",
-      "date": "2024-10-01",
+      "date": "",
       "issuer": "DeepLearning.AI",
       "url": "https://learn.deeplearning.ai/accomplishments/77451711-d54b-4aee-b1a7-9ad045cd6ee6",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "Pretraining LLMs",
-      "date": "2024-09-01",
+      "date": "",
       "issuer": "DeepLearning.AI",
       "url": "https://learn.deeplearning.ai/accomplishments/76d488c2-de58-42d9-831b-622c4e905a4f",
       "icon": "fa-solid fa-calendar"
     },
     {
       "name": "Quantum Machine Learning",
-      "date": "2022-05-02",
+      "date": "",
       "issuer": "edX | University of Toronto",
       "url": "https://learning.edx.org/course/course-v1:University_of_TorontoX+UTQML101x+1T2019/home",
       "icon": "fa-solid fa-tag"
     },
     {
       "name": "Deep Learning with Python and PyTorch",
-      "date": "2020-10-24",
+      "date": "",
       "issuer": "edX | IBM",
       "url": "https://courses.edx.org/courses/course-v1:IBM+DL0110EN+2T2020/course/",
       "icon": "fa-solid fa-hashtag"
     },
     {
       "name": "Deep Learning Specialization",
-      "date": "2018-02-24",
+      "date": "",
       "issuer": "Coursera | DeepLearning.AI",
       "url": "https://www.coursera.org/account/accomplishments/specialization/NHNHYQ32CCGJ",
       "icon": "fa-solid fa-envelope"
     },
     {
       "name": "Machine Learning",
-      "date": "2017-04-07",
+      "date": "",
       "issuer": "Coursera | Stanford University",
       "url": "https://www.coursera.org/account/accomplishments/verify/U9PTRVDU3VRD",
       "icon": "fa-solid fa-location-dot"
@@ -245,7 +245,7 @@
     {
       "name": "Image Captioning Project",
       "summary": "In this project we define and train an image-to-caption model, that can produce descriptions for real world images!",
-      "highlights": ["Recurrent Neural Networks (RNN)", "Convolutional Neural Networks"],
+      "highlights": ["Recurrent Neural Networks (RNN)", "Convolutional Neural Networks (CNN)"],
       "startDate": "2017-10-01",
       "endDate": "2018-01-01",
       "url": "https://github.com/rezwanh001/Image-Captioning-Project"

@@ -8,6 +8,7 @@ nav_order: 6
 ---
 
 ---
+---
 ### Teaching Assistant (TA)- **ECE 459: Programming for Performance**.
 
 - Term: Winter 2025
@@ -38,6 +39,7 @@ nav_order: 6
 #### Acknowledgment
 - Lecture materials, assignments, and portions of this course outline were provided by [Prof. Jeff Zarnett](https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett).
 
+---
 ---
 ### Teaching Assistant (TA)- **ECE 252: Systems Programming and Concurrency**.
 

@@ -103,100 +103,91 @@
     }
   ],
   "awards": [
-    // {
-    //   "title": "Nobel Prize in Physics",
-    //   "date": "1921-11-01",
-    //   "awarder": "Royal Swedish Academy of Sciences",
-    //   "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-    //   "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    // },
     {
       "title": "Technical Scholarship ",
-      "date": "2015 - 2018",
+      "date": "2015 – 2018",
       "awarder": "KUET | Khulna University of Engineering & Technology",
       "url": "https://www.kuet.ac.bd/",
-      "summary": "This is awarded to the top students of the class every academic year.'"
+      "summary": "This is awarded to the top students of the class every academic year."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Multimodal RAG: Chat with Videos",
+      "date": "2024-10-01",
+      "issuer": "DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/accomplishments/77451711-d54b-4aee-b1a7-9ad045cd6ee6",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Pretraining LLMs",
+      "date": "2024-09-01",
+      "issuer": "DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/accomplishments/76d488c2-de58-42d9-831b-622c4e905a4f",
       "icon": "fa-solid fa-calendar"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Quantum Machine Learning",
+      "date": "2022-05-02",
+      "issuer": "edX | University of Toronto",
+      "url": "https://learning.edx.org/course/course-v1:University_of_TorontoX+UTQML101x+1T2019/home",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Deep Learning with Python and PyTorch",
+      "date": "2020-10-24",
+      "issuer": "edX | IBM",
+      "url": "https://courses.edx.org/courses/course-v1:IBM+DL0110EN+2T2020/course/",
+      "icon": "fa-solid fa-hashtag"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "date": "2018-02-24",
+      "issuer": "Coursera | DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/NHNHYQ32CCGJ",
+      "icon": "fa-solid fa-envelope"
+    },
+    {
+      "name": "Machine Learning",
+      "date": "2017-04-07",
+      "issuer": "Coursera | Stanford University",
+      "url": "https://www.coursera.org/account/accomplishments/verify/U9PTRVDU3VRD",
+      "icon": "fa-solid fa-location-dot"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
+      "publisher": "IEEE Access",
+      "releaseDate": "2021-01-25",
+      "url": "https://ieeexplore.ieee.org/document/9335002",
+      "summary": "This study proposes a non-invasive method to measure blood hemoglobin, glucose, and creatinine levels using fingertip PPG signals captured via smartphones. By extracting 46 features and applying a correlation-based feature selection method with genetic algorithms, the approach achieves high accuracy (R² = 0.922 for Hb, 0.902 for Gl, and 0.969 for Cr) in estimating blood component levels, offering potential for clinical use without blood sampling."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Breast cancer prediction: a comparative study using machine learning techniques",
+      "publisher": "Springer Nature Computer Science",
+      "releaseDate": "2022-09-01",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w",
+      "summary": "This paper compares five supervised machine learning techniques—SVM, K-nearest neighbors, random forests, ANN, and logistic regression—for breast cancer detection using the Wisconsin Breast Cancer dataset. The results show that artificial neural networks (ANNs) achieved the highest performance with 98.57% accuracy, 97.82% precision, and 0.9890 F1 score, outperforming other methods such as SVM."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Badlad: A large multi-domain bengali document layout analysis dataset",
+      "publisher": "ICDAR 2023 | Springer",
+      "releaseDate": "2023-08-19",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19",
+      "summary": "This paper introduces BaDLAD, the first large multi-domain Bengali Document Layout Analysis (DLA) dataset, comprising 33,695 annotated document samples across six domains. The dataset, with 710K polygon annotations for text-boxes, paragraphs, images, and tables, enables deep learning-based Bengali document digitization and addresses the limitations of rule-based DLA systems."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Artificial Intelligence",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Computer Vision"
       ]
     }
   ],
@@ -213,39 +204,51 @@
     }
   ],
   "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
+  {
+    "name": "LLMs",
+    "icon": "fa-solid fa-tag",
+    "keywords": [
+      "Large Language Models",
+      "Transformer Models",
+      "Natural Language Understanding",
+      "GPT",
+      "BERT",
+      "Text Generation"
+    ]
+  },
+  {
+    "name": "MMML",
+    "icon": "fa-solid fa-clipboard-check",
+    "keywords": [
+      "Multimodal Machine Learning",
+      "Cross-modal Learning",
+      "Vision-Language Models",
+      "Multimodal Representation Learning",
+      "Text-to-Image Models",
+      "Audio-Visual Learning"
+    ]
+  }
+],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Professor Fakhri Karray",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Dr. Fakhri Karray is an Adjunct Professor Emeritus in the Department of Electrical and Computer Engineering. Karray held the Loblaws Research Chair in Artificial Intelligence and was the co-Director of the University of Waterloo Artificial Intelligence Institute."
     },
     {
-      "name": "Professor John Doe",
+      "name": "Professor M.M.A. Hashem",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Department of Computer Science and Engineering (CSE), Khulna University of Engineering & Technology (KUET)."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
+      "name": "Image Captioning Project",
+      "summary": "In this project we define and train an image-to-caption model, that can produce descriptions for real world images!",
+      "highlights": ["Recurrent Neural Networks (RNN)", "Convolutional Neural Networks"],
+      "startDate": "2017-10-01",
       "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "url": "https://github.com/rezwanh001/Image-Captioning-Project"
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exciting News: Our Paper Accepted at IJCNN 2025!🎉
+title: Exciting News – Our Paper Accepted at IJCNN 2025!🎉
 date: 2025-03-31 18:29:00-0400
 inline: false
 related_posts: false

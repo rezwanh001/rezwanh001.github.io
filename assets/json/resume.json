@@ -39,7 +39,7 @@
       "organization": "University of Waterloo",
       "location": "Ontario, Canada",
       "position": "ECE 252: Systems Programming and Concurrency",
-      "url": "https://rezwanh001.github.io/teaching/#teaching-assistant-ta--ece-252-systems-programming-and-concurrency",
+      "url": "https://rezwanh001.github.io/teaching/#fall-2024--ece-252-systems-programming-and-concurrency",
       "startDate": "2024-09-01",
       "endDate": "2024-12-31",
       "summary": "",
@@ -49,11 +49,21 @@
       "organization": "University of Waterloo",
       "location": "Ontario, Canada",
       "position": "ECE 459: Programming for Performance",
-      "url": "https://rezwanh001.github.io/teaching/#teaching-assistant-ta--ece-459-programming-for-performance", 
+      "url": "https://rezwanh001.github.io/teaching/#winter-2025--ece-459-programming-for-performance", 
       "startDate": "2025-01-01",
       "endDate": "2025-04-30",
       "summary": "",
       "highlights": ["Winter 2025: January 25 - April 25"]
+    },
+    {
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE 252: Systems Programming and Concurrency",
+      "url": "https://rezwanh001.github.io/teaching/#spring-2025--ece-252-systems-programming-and-concurrency",
+      "startDate": "2025-05-01",
+      "endDate": "2025-08-31",
+      "summary": "",
+      "highlights": ["Spring 2025: May 2025 - December 2025"]
     }
   ],
   "education": [

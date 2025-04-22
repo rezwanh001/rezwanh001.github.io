@@ -1,33 +1,26 @@
-<!-- ---
+---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: Exciting News: Our Paper Accepted at IJCNN 2025!🎉
+date: 2025-03-31 18:29:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+## 🎉 Paper Accepted at IJCNN 2025!
 
----
+I'm thrilled to share that our paper titled  
+**"GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning"**  
+has been **accepted for presentation at [IJCNN 2025](https://2025.ijcnn.org/)**, which will be held in **Rome, Italy** from **June 30 – July 05, 2025**. 🚀
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+📌 **Conference**: International Joint Conference on Neural Networks (IJCNN 2025)  
+📍 **Location**: Rome, Italy  
+📅 **Dates**: June 30 – July 05, 2025  
+📰 **Acceptance Notification**: March 31, 2025
 
-#### Hipster list
+This paper explores novel approaches to whole slide image classification and captioning by combining **Graph Neural Networks (GNNs)** and **Vision Transformers (ViTs)** under a Multiple Instance Learning framework. The work will be published in the **IEEE proceedings**.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+🔗 Check out the LinkedIn announcement here:  
+[LinkedIn Post](https://www.linkedin.com/posts/raju32742_histopathological-digitalpathology-llm-activity-7313262133465534464-plBY)
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+Stay tuned for more updates, and looking forward to connecting with you all in Rome! 🇮🇹
 
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual. -->

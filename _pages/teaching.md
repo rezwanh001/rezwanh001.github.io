@@ -11,7 +11,7 @@ nav_order: 6
 <div class="post">
 <article>
 
-<div class="card mt-3">
+<div class="card mt-3" id="spring-2025--ece-252-systems-programming-and-concurrency">
   <div class="p-3">
     <strong>ECE 252: Systems Programming and Concurrency</strong><br>
     <em>Spring 2025: Teaching Assistant (TA)</em><br><br>
@@ -27,7 +27,7 @@ nav_order: 6
   </div>
 </div>
 
-<div class="card mt-3">
+<div class="card mt-3" id="winter-2025--ece-459-programming-for-performance">
   <div class="p-3">
     <strong>ECE 459: Programming for Performance</strong><br>
     <em>Winter 2025: Teaching Assistant (TA)</em><br><br>
@@ -40,7 +40,7 @@ nav_order: 6
   </div>
 </div>
 
-<div class="card mt-3">
+<div class="card mt-3" id="fall-2024--ece-252-systems-programming-and-concurrency">
   <div class="p-3">
     <strong>ECE 252: Systems Programming and Concurrency</strong><br>
     <em>Fall 2024: Teaching Assistant (TA)</em><br><br>
@@ -229,4 +229,4 @@ Coursework will include the following components:
 
 <!-- For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Organize your courses by years, topics, or universities, however you like! --> -->
+Organize your courses by years, topics, or universities, however you like! --> 

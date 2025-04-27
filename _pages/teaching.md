@@ -1,4 +1,3 @@
-
 ---
 layout: page
 permalink: /teaching/
@@ -59,9 +58,6 @@ nav_order: 6
 
 </article>
 </div>
-
-
-
 
 
 <!-- ---

@@ -1,4 +1,70 @@
+
 ---
+layout: page
+permalink: /teaching/
+title: teaching
+nav: true
+nav_order: 6
+---
+
+<h3>University of Waterloo</h3>
+
+<div class="post">
+<article>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <strong>ECE 252: Systems Programming and Concurrency</strong><br>
+    <em>Spring 2025: Teaching Assistant (TA)</em><br><br>
+    <a href="https://uwflow.com/course/ECE252" target="_blank">Course Description</a><br><br>
+    This course covers processes and threads (pthreads), system calls, concurrency (semaphore, mutex, monitors, and barrier synchronization), user-level memory management, performance and correctness of concurrent systems, deadlock detection and recovery, and file systems.<br><br>
+    <strong>Prerequisites:</strong> ECE 250; Level at least 2B in Computer or Electrical Engineering.<br>
+    <strong>Antirequisites:</strong> CS 343, CS 350, ECE 254, SE 350<br><br>
+    <a href="https://github.com/jzarnett/ece252" target="_blank">Course Resources</a><br>
+    <strong>Main Textbook:</strong> W. Richard Stevens and Stephen A. Rago, <em>Advanced Programming in the UNIX Environment</em><br>
+    <strong>Optional Reference:</strong> Michael Kerrisk, <em>The Linux Programming Interface</em><br><br>
+    <strong>Evaluation:</strong> Assignments (10%), Lab projects (40%), Final exam (50%)<br><br>
+    <strong>Acknowledgment:</strong> Lecture materials provided by <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/arrmorto" target="_blank">Prof. Andrew Morton</a>.
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <strong>ECE 459: Programming for Performance</strong><br>
+    <em>Winter 2025: Teaching Assistant (TA)</em><br><br>
+    <a href="https://uwflow.com/course/ECE459" target="_blank">Course Description</a><br><br>
+    This course covers profiling computer systems, bottlenecks and Amdahl's law, techniques for multicore programming, cache consistency, transactional memory, streaming architectures, vectorization, SIMD, and high-performance programming languages.<br><br>
+    <strong>Prerequisites:</strong> ECE 254 or 354 or SE 350; Level at least 4A in Electrical, Computer, or Software Engineering.<br><br>
+    <a href="https://github.com/jzarnett/ece459" target="_blank">Course Resources</a><br><br>
+    <strong>Evaluation:</strong> Academic Integrity Exercise (1%), Assignments (64%), Final exam (35%)<br><br>
+    <strong>Acknowledgment:</strong> Lecture materials provided by <a href="https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett" target="_blank">Prof. Jeff Zarnett</a>.
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <strong>ECE 252: Systems Programming and Concurrency</strong><br>
+    <em>Fall 2024: Teaching Assistant (TA)</em><br><br>
+    <a href="https://uwflow.com/course/ECE252" target="_blank">Course Description</a><br><br>
+    This course covers processes and threads (pthreads), system calls, concurrency (semaphore, mutex, monitors, and barrier synchronization), user-level memory management, performance and correctness of concurrent systems, deadlock detection and recovery, and file systems.<br><br>
+    <strong>Prerequisites:</strong> ECE 250; Level at least 2B in Computer or Electrical Engineering.<br>
+    <strong>Antirequisites:</strong> CS 343, CS 350, ECE 254, SE 350<br><br>
+    <a href="https://github.com/jzarnett/ece252" target="_blank">Course Resources</a><br>
+    <strong>Main Textbook:</strong> W. Richard Stevens and Stephen A. Rago, <em>Advanced Programming in the UNIX Environment</em><br>
+    <strong>Optional Reference:</strong> Michael Kerrisk, <em>The Linux Programming Interface</em><br><br>
+    <strong>Evaluation:</strong> Assignments (10%), Lab projects (40%), Final exam (50%)<br><br>
+    <strong>Acknowledgment:</strong> Lecture materials provided by <a href="https://uwaterloo.ca/electrical-computer-engineering/contacts/jeff-zarnett" target="_blank">Prof. Jeff Zarnett</a>.
+  </div>
+</div>
+
+</article>
+</div>
+
+
+
+
+
+<!-- ---
 layout: page
 permalink: /teaching/
 title: teaching
@@ -167,4 +233,4 @@ Coursework will include the following components:
 
 <!-- For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Organize your courses by years, topics, or universities, however you like! -->
+Organize your courses by years, topics, or universities, however you like! --> -->

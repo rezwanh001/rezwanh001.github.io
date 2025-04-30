@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exciting News – Our Journal Accepted at IEEE Transection 2025!🎉
-date: 2025-09-30 18:29:00-0400
+date: 2000-09-30 18:29:00-0400
 inline: false
 related_posts: false
 ---

@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-<h3>Conference Highlights</h3>
+<h3>SMC 2025 Conference Highlights</h3>
 
 <div class="post">
 <article>

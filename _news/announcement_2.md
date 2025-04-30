@@ -17,7 +17,7 @@ related_posts: false
     <em>✅ March 2025</em><br><br>
     I'm thrilled to share that our paper titled<br>
     <strong>"GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning"</strong><br>
-    has been <strong>accepted</strong> for presentation at <a href="https://2025.ijcnn.org/" target="_blank">IJCNN 2025</a>, which will be held in <strong>Rome, Italy</strong> from <strong>June 30 – July 05, 2025</strong>. 🎉<br><br>
+    has been <strong>accepted</strong> for presentation at <a href="https://2025.ijcnn.org/" target="_blank">IJCNN 2025</a>, which will be held in <strong>Rome, Italy</strong> from <strong>June 30 – July 05, 2025</strong>. 🚀<br><br>
 
     📌 <strong>Conference:</strong> International Joint Conference on Neural Networks (IJCNN 2025)<br>
     📍 <strong>Location:</strong> Rome, Italy<br>

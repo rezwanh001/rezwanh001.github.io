@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exciting News – Our Paper Accepted at SMC 2025!🎉
-date: 2025-06-31 16:29:00-0400
+date: 2025-06-30 16:29:00-0400
 inline: false
 related_posts: false
 ---
@@ -16,7 +16,7 @@ related_posts: false
     <strong>🎉 Paper Accepted at SMC 2025</strong><br>
     <em>✅ June 2025</em><br><br>
     I'm thrilled to share that our paper titled<br>
-    <strong>"GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning"</strong><br>
+    <strong>"MDD-Net: Multimodal Depression Detection through Mutual Transformer"</strong><br>
     has been <strong>accepted</strong> for presentation at <a href="https://2025.ijcnn.org/" target="_blank">IJCNN 2025</a>, which will be held in <strong>Rome, Italy</strong> from <strong>June 30 – July 05, 2025</strong>. 🎉<br><br>
 
     📌 <strong>Conference:</strong> International Joint Conference on Neural Networks (IJCNN 2025)<br>

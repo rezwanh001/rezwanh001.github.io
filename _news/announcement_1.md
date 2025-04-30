@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exciting News – Our Paper Accepted at SMC 2025!🎉
-date: 2025-06-31 18:29:00-0400
+date: 2025-06-31 16:29:00-0400
 inline: false
 related_posts: false
 ---

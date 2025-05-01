@@ -44,8 +44,8 @@
       "endDate": "2024-12-31",
       "summary": "",
       "highlights": [
-        "Fall 2024: September 2024 - December 2024",
-        "👥 Enrolled Students: 197/200",
+        "🗓️ Fall 2024: September 2024 - December 2024",
+        "👥 Enrolled Students: 206/190 📈",
         "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (4.5/5)"
       ]
     },
@@ -57,7 +57,11 @@
       "startDate": "2025-01-01",
       "endDate": "2025-04-30",
       "summary": "",
-      "highlights": ["Winter 2025: January 2025 - April 2025"]
+      "highlights": [
+        "🗓️ Winter 2025: January 2025 - April 2025",
+        "👥 Enrolled Students: 453/425 📈",
+        "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (--.--/5)"
+      ]
     },
     {
       "organization": "University of Waterloo",
@@ -67,7 +71,11 @@
       "startDate": "2025-05-01",
       "endDate": "2025-08-31",
       "summary": "",
-      "highlights": ["Spring 2025: May 2025 - December 2025"]
+      "highlights": [
+        "🗓️ Spring 2025: May 2025 - December 2025",
+        "👥 Enrolled Students: 120/150",
+        "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (--.--/5)"
+      ]
     }
   ],
   "education": [

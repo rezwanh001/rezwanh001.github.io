@@ -44,6 +44,16 @@ nav_order: 6
   <div class="p-3">
     <strong>ECE 252: Systems Programming and Concurrency</strong><br>
     <em>Fall 2024: Teaching Assistant (TA)</em><br><br>
+
+    <!-- Highlight Enrollment and Rating -->
+    <div class="d-flex justify-content-between align-items-center mb-3" style="font-size: 0.95rem;">
+      <div><strong>👥 Enrolled Students:</strong> 197/200</div>
+      <div>
+        <strong>⭐ TA Rating:</strong>
+        <span style="color: #f5c518;">★★★★☆</span> (4.5/5)
+      </div>
+    </div>
+
     <a href="https://uwflow.com/course/ECE252" target="_blank">Course Description</a><br><br>
     This course covers processes and threads (pthreads), system calls, concurrency (semaphore, mutex, monitors, and barrier synchronization), user-level memory management, performance and correctness of concurrent systems, deadlock detection and recovery, and file systems.<br><br>
     <strong>Prerequisites:</strong> ECE 250; Level at least 2B in Computer or Electrical Engineering.<br>

@@ -23,14 +23,12 @@ nav_order: 6
         <span style="color: #f5c518;">★★★★☆</span> (--.--/5)
       </div>
     </div>
-    <a href="https://uwflow.com/course/ECE252" target="_blank">Course Description</a><br><br>
-    This course covers processes and threads (pthreads), system calls, concurrency (semaphore, mutex, monitors, and barrier synchronization), user-level memory management, performance and correctness of concurrent systems, deadlock detection and recovery, and file systems.<br><br>
-    <strong>Prerequisites:</strong> ECE 250; Level at least 2B in Computer or Electrical Engineering.<br>
+    <a href="https://outline.uwaterloo.ca/viewer/view/nbfyqp" target="_blank">Course Description</a><br><br>
+    This course covers Processes and threads (pthreads); system calls; concurrency (semaphore, mutex, monitors, and barrier synchronization); user-level memory management. Performance and correctness of concurrent systems. Deadlock detection and recovery; file systems.<br>
     <strong>Antirequisites:</strong> CS 343, CS 350, ECE 254, SE 350<br><br>
     <a href="https://github.com/jzarnett/ece252" target="_blank">Course Resources</a><br>
-    <strong>Main Textbook:</strong> W. Richard Stevens and Stephen A. Rago, <em>Advanced Programming in the UNIX Environment</em><br>
     <strong>Optional Reference:</strong> Michael Kerrisk, <em>The Linux Programming Interface</em><br><br>
-    <strong>Evaluation:</strong> Assignments (10%), Lab projects (40%), Final exam (50%)<br><br>
+    <strong>Evaluation:</strong> In-class exercises (4%), Lab projects (30%), Midterm Exam (21%), and Final exam (45%)<br><br>
     <strong>Acknowledgment:</strong> Lecture materials provided by <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/arrmorto" target="_blank">Prof. Andrew Morton</a>.
   </div>
 </div>

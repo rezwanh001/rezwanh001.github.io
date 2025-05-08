@@ -75,6 +75,8 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 scholar_userid: HaI-oFUAAAAJ # your Google Scholar ID
 github_username: rezwanh001 # your GitHub user name
+huggingface_username: huggingface.co/rezwanh001 # your Hugging Face username (e.g., huggingface.co/<username>)
+ollama_username: rezwanh001 # your Ollama user or workspace name
 research_gate_profile: Md-Haque-66 # your profile on ResearchGate
 orcid_id: 0000-0001-9482-2088 # your ORCID ID
 acm_id: # your dl.acm.org/profile/id

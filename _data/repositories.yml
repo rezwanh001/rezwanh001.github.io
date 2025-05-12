@@ -4,7 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - rezwanh001/LocalRAGAIAgent
+  - rezwanh001/Local-RAG-AI-Agent
   - rezwanh001/Online-Voting-System-using-php-and-mysql
   - rezwanh001/Pothole-Detection
   - rezwanh001/UVA-Solutions-in-Python

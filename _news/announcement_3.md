@@ -17,9 +17,9 @@ related_posts: false
     <em>✅ June 2025</em><br><br>
     Additionally, I'm thrilled to share that two of our papers have been <strong>accepted</strong> for presentation at <a href="https://www.ieeesmc2025.org/" target="_blank">IEEE SMC 2025</a>, which will be held in <strong>Vienna, Austria</strong> from <strong>October 5 – 8, 2025</strong>. 🎉<br><br>
     <strong>(1) MDD-Net: Multimodal Depression Detection through Mutual Transformer</strong>
-    (<a href="MDD-Net_752.png" target="_blank" class="image-tooltip">Paper ID: 752<span class="tooltip-image-container"><img src="MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net"></span></a>)<br><br>
+    (<a href="imgs/MDD-Net_752.png" target="_blank" class="image-tooltip">Paper ID: 752<span class="tooltip-image-container"><img src="imgs/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net"></span></a>)<br><br>
     <strong>(2) MMFformer: Multimodal Fusion Transformer Network for Depression Detection</strong>
-    (<a href="MMFformer_1961.png" target="_blank" class="image-tooltip">Paper ID: 1961<span class="tooltip-image-container"><img src="MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer"></span></a>)<br><br>
+    (<a href="imgs/MMFformer_1961.png" target="_blank" class="image-tooltip">Paper ID: 1961<span class="tooltip-image-container"><img src="imgs/MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer"></span></a>)<br><br>
     <!-- <strong>(1) MDD-Net: Multimodal Depression Detection through Mutual Transformer</strong> (Paper ID: 752)<br>
     <img src="../assets/img/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net" style="max-width: 100%; margin-top: 10px; margin-bottom: 15px; border: 1px solid #ddd;"><br>
     <strong>(2) MMFformer: Multimodal Fusion Transformer Network for Depression Detection</strong> (Paper ID: 1961)<br>

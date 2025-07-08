@@ -17,19 +17,17 @@ related_posts: false
     <em>✅ March 2025</em><br><br>
     I'm thrilled to share that our paper titled<br>
     <!-- <strong>"GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning"</strong><br> -->
-    <strong>GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning</strong> (Paper ID: 5245)<br>
-        <img src="../assets/img/GNN-ViTCap_5245.png" alt="IJCNN 2025 Acceptance for GNN-ViTCap" style="max-width: 100%; margin-top: 10px; margin-bottom: 15px; border: 1px solid #ddd;"><br>
+    <strong>GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning</strong>
+        (<a href="../assets/img/GNN-ViTCap_5245.png" target="_blank" class="image-tooltip">Paper ID: 5245<span class="tooltip-image-container"><img src="./assets/img/image3.png" alt="SMC 2025 Acceptance for MMFformer"></span></a>)<br><br>
+    <!-- <strong>GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning</strong> (Paper ID: 5245)<br>
+        <img src="../assets/img/GNN-ViTCap_5245.png" alt="IJCNN 2025 Acceptance for GNN-ViTCap" style="max-width: 100%; margin-top: 10px; margin-bottom: 15px; border: 1px solid #ddd;"><br> -->
     has been <strong>accepted</strong> for presentation at <a href="https://2025.ijcnn.org/" target="_blank">IJCNN 2025</a>, which will be held in <strong>Rome, Italy</strong> from <strong>June 30 – July 05, 2025</strong>. 🚀<br><br>
-
     📌 <strong>Conference:</strong> International Joint Conference on Neural Networks (IJCNN 2025)<br>
     📍 <strong>Location:</strong> Rome, Italy<br>
     📅 <strong>Dates:</strong> June 30 – July 05, 2025<br>
     📰 <strong>Acceptance Notification:</strong> March 31, 2025<br><br>
-
     This work explores novel approaches to whole slide image classification and captioning by integrating <strong>Graph Neural Networks (GNNs)</strong> and <strong>Vision Transformers (ViTs)</strong> under a <strong>Multiple Instance Learning</strong> framework. The paper will appear in the <strong>IEEE proceedings</strong>.<br><br>
-
     🔗 <a href="https://www.linkedin.com/posts/raju32742_histopathological-digitalpathology-llm-activity-7313262133465534464-plBY" target="_blank">LinkedIn Announcement</a><br><br>
-
     Stay tuned for more updates — looking forward to connecting in Rome! 🇮🇹
   </div>
 </div>

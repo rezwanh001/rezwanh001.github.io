@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exciting News – Our 2 Papers Accepted at SMC 2025!🎉
+title: Exciting News – Our 2 Papers Accepted at SMC 2025! 🇦🇹
 date: 2025-06-29 19:15:00-0400
 inline: false
 related_posts: false

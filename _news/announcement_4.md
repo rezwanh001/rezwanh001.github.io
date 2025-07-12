@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exciting News – Our 2 Papers Accepted at ICCV 2025!🎉
+title: Exciting News – Our 2 Papers Accepted at ICCV 2025! 🇺🇸
 date: 2025-07-11 17:58:00-0400
 inline: false
 related_posts: false

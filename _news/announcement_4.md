@@ -1,36 +1,37 @@
-<!-- ---
+---
 layout: post
-title: Exciting News – Our Journal Accepted at IEEE Transection 2025!🎉
-date: 2000-09-30 18:29:00-0400
+title: Exciting News – Our 2 Papers Accepted at ICCV 2025!🎉
+date: 2025-07-11 17:58:00-0400
 inline: false
 related_posts: false
 ---
 
-<h3>IEEE 2025 Journal Highlights</h3>
+<h3>ICCV 2025 Conference Highlights</h3>
 
 <div class="post">
 <article>
 
 <div class="card mt-3" >
   <div class="p-3">
-    <strong>🎉 Paper Accepted at IEEE Journal 2025</strong><br>
-    <em>✅ September 2025</em><br><br>
-    I'm thrilled to share that our paper titled<br>
-    <strong>"GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning"</strong><br>
-    has been <strong>accepted</strong> for presentation at <a href="https://2025.ijcnn.org/" target="_blank">IJCNN 2025</a>, which will be held in <strong>Rome, Italy</strong> from <strong>June 30 – July 05, 2025</strong>. 🎉<br><br>
-
-    📌 <strong>Conference:</strong> International Joint Conference on Neural Networks (IJCNN 2025)<br>
-    📍 <strong>Location:</strong> Rome, Italy<br>
-    📅 <strong>Dates:</strong> June 30 – July 05, 2025<br>
-    📰 <strong>Acceptance Notification:</strong> March 31, 2025<br><br>
-
-    This work explores novel approaches to whole slide image classification and captioning by integrating <strong>Graph Neural Networks (GNNs)</strong> and <strong>Vision Transformers (ViTs)</strong> under a <strong>Multiple Instance Learning</strong> framework. The paper will appear in the <strong>IEEE proceedings</strong>.<br><br>
-
-    🔗 <a href="https://www.linkedin.com/posts/raju32742_histopathological-digitalpathology-llm-activity-7313262133465534464-plBY" target="_blank">LinkedIn Announcement</a><br><br>
-
-    Stay tuned for more updates — looking forward to connecting in Rome! 🇮🇹
+    <strong>🎉 Two Papers Accepted at ICCV 2025</strong><br>
+    <em>✅ July 2025</em><br><br>
+    I'm thrilled to share that two of our papers have been <strong>accepted</strong> for presentation at <a href="https://iccv.thecvf.com/" target="_blank">IEEE/ICCV 2025 [](https://multimodal-sign-language-recognition.github.io/ICCV-2025/)</a>, which will be held in <strong>Honolulu, Hawai'i, USA</strong> from <strong>October 19 – 23, 2025</strong>. 🎉<br><br>
+    <div style="margin-bottom: 20px;">
+        <a href="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" target="_blank">
+            <img src="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" alt="Acceptance Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
+        </a>
+        <strong>(1) FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition</strong><br>
+        (Paper ID: 11)<br><br>
+        <strong>(2) A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition</strong><br>
+        (Paper ID: 13)
+    </div>
+    <div style="clear: both;"></div>
+    <br>
+    📌 <strong>Conference:</strong> International Conference on Computer Vision, ICCV 2025<br>
+    📍 <strong>Location:</strong> Hawai'i Convention Center, Honolulu, Hawai'i, USA<br>
+    📅 <strong>Dates:</strong> October 19 – 23, 2025<br><br>
+    Stay tuned for more updates — Looking forward to connecting with fellow researchers in USA! 🇺🇸
   </div>
 </div>
-
 </article>
-</div> -->
+</div>

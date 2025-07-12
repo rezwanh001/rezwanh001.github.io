@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exciting News – Our Paper Accepted at IJCNN 2025!🎉
+title: Exciting News – Our Paper Accepted at IJCNN 2025! 🇮🇹
 date: 2025-03-31 18:29:00-0400
 inline: false
 related_posts: false
@@ -20,7 +20,7 @@ related_posts: false
             <img src="https://rezwanh001.github.io/assets/img/GNN-ViTCap_5245.png" alt="IJCNN 2025 Acceptance for GNN-ViTCap" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
         </a>
         I'm thrilled to share that our paper, titled:<br>
-        <strong>GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning</strong> (Paper ID: 5245),
+        <strong><a href="https://arxiv.org/abs/2507.07006" target="_blank">GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning</a> </strong> (Paper ID: 5245),
         has been <strong>accepted</strong> for presentation at <a href="https://2025.ijcnn.org/" target="_blank">IJCNN 2025</a>!
     </div>
     <div style="clear: both;"></div>

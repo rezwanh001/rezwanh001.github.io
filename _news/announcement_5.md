@@ -25,7 +25,7 @@ related_posts: false
     <br>
     📌 <strong>Award:</strong> FOE Award, Winter 2025<br>
     📍 <strong>Institution:</strong> University of Waterloo<br>
-    📝 <strong>Program:</strong> MASc, Department of Electrical and Computer Engineering (ECE)<br><br>
+    <!-- 📝 <strong>Program:</strong> MASc, Department of Electrical and Computer Engineering (ECE)<br><br> -->
   </div>
 </div>
 </article>

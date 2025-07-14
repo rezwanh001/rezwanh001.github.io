@@ -6,7 +6,7 @@
     "email": "rezwan@uwaterloo.ca",
     "phone": "",
     "url": "https://rezwanh001.github.io/",
-    "summary": "Looking for a career to demonstrate the best of my professional ability, research thinking, and strategies to improve my knowledge as well as to contribute to the best of my potential in my institution.",
+    "summary": "Looking for a career to demonstrate the best of my professional ability, research thinking, and strategies to improve my knowledge, as well as to contribute to the best of my potential in my institution.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -126,7 +126,14 @@
   ],
   "awards": [
     {
-      "title": "Technical Scholarship ",
+      "title": "Faculty of Engineering (FOE) Award",
+      "date": "Winter 2025",
+      "awarder": "UWaterloo |  University of Waterloo, Canada",
+      "url": "https://uwaterloo.ca/electrical-computer-engineering/graduate-students/awards-and-funding#:~:text=Term%20Activity%20Report%20(FOE)%20Awards,excellence%2C%20outreach%20activities%20etc.)",
+      "summary": "The ECE Department awards students who demonstrate exceptional merit (academic excellence, research excellence, outreach activities etc.) in the previous term with a Faculty of Engineering (FoE) Award. This award is given to students who have shown outstanding performance in their academic and research activities, as well as in outreach initiatives."
+    },
+    {
+      "title": "Technical Scholarship",
       "date": "2015 – 2018",
       "awarder": "KUET | Khulna University of Engineering & Technology",
       "url": "https://www.kuet.ac.bd/",
@@ -179,25 +186,58 @@
   ],
   "publications": [
     {
-      "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
-      "publisher": "IEEE Access",
-      "releaseDate": "2021-01-25",
-      "url": "https://ieeexplore.ieee.org/document/9335002",
-      "summary": "This study proposes a non-invasive method to measure blood hemoglobin, glucose, and creatinine levels using fingertip PPG signals captured via smartphones. By extracting 46 features and applying a correlation-based feature selection method with genetic algorithms, the approach achieves high accuracy (R² = 0.922 for Hb, 0.902 for Gl, and 0.969 for Cr) in estimating blood component levels, offering potential for clinical use without blood sampling."
+      "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",
+      "publisher": "arXiv",
+      "releaseDate": "2025-07-09",
+      "url": "https://arxiv.org/abs/2507.07006"
     },
     {
-      "name": "Breast cancer prediction: a comparative study using machine learning techniques",
-      "publisher": "Springer Nature Computer Science",
-      "releaseDate": "2022-09-01",
-      "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w",
-      "summary": "This paper compares five supervised machine learning techniques—SVM, K-nearest neighbors, random forests, ANN, and logistic regression—for breast cancer detection using the Wisconsin Breast Cancer dataset. The results show that artificial neural networks (ANNs) achieved the highest performance with 98.57% accuracy, 97.82% precision, and 0.9890 F1 score, outperforming other methods such as SVM."
+      "name": "Body Weight Estimation Using Smartphone Based Photoplethysmography Signal",
+      "publisher": "ICCIT 2023 | IEEE Conference",
+      "releaseDate": "2024-02-27",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10441018"
+    },
+    {
+      "name": "Smartphone Based BP Level Monitoring System Using DNN Model",
+      "publisher": "ATC 2023 | IEEE Conference",
+      "releaseDate": "2023-11-20",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10318933"
     },
     {
       "name": "Badlad: A large multi-domain bengali document layout analysis dataset",
       "publisher": "ICDAR 2023 | Springer",
       "releaseDate": "2023-08-19",
-      "url": "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19",
-      "summary": "This paper introduces BaDLAD, the first large multi-domain Bengali Document Layout Analysis (DLA) dataset, comprising 33,695 annotated document samples across six domains. The dataset, with 710K polygon annotations for text-boxes, paragraphs, images, and tables, enables deep learning-based Bengali document digitization and addresses the limitations of rule-based DLA systems."
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19"
+    },
+    {
+      "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
+      "publisher": "IEEE Access",
+      "releaseDate": "2021-01-25",
+      "url": "https://ieeexplore.ieee.org/document/9335002"
+    },
+    {
+      "name": "Breast cancer prediction: a comparative study using machine learning techniques",
+      "publisher": "Springer Nature Computer Science",
+      "releaseDate": "2022-09-01",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w"
+    },
+    {
+      "name": "Deep learning based breast cancer detection using histopathological images",
+      "publisher": "Springer Nature Computer Science",
+      "releaseDate": "2020-09-01",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00383-w"
+    },
+    {
+      "name": "Hemoglobin and glucose level estimation from PPG characteristics features of fingertip video using MGGP-based model",
+      "publisher": "Elsevier",
+      "releaseDate": "2021-03-04",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1746809421000756"
+    },
+    {
+      "name": "Scalable Telehealth Services to Combat Novel Coronavirus (COVID-19) Pandemic",
+      "publisher": "Springer Nature Computer Science",
+      "releaseDate": "2021-01-06",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00401-x"
     }
   ],
   "skills": [

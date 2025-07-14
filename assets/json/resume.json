@@ -130,7 +130,14 @@
       "date": "Winter 2025",
       "awarder": "UWaterloo |  University of Waterloo, Canada",
       "url": "https://uwaterloo.ca/electrical-computer-engineering/graduate-students/awards-and-funding#:~:text=Term%20Activity%20Report%20(FOE)%20Awards,excellence%2C%20outreach%20activities%20etc.)",
-      "summary": "The ECE Department awards students who demonstrate exceptional merit (academic excellence, research excellence, outreach activities etc.) in the previous term with a Faculty of Engineering (FoE) Award. This award is given to students who have shown outstanding performance in their academic and research activities, as well as in outreach initiatives."
+      "summary": "The ECE Department awards students who demonstrate exceptional merit (academic excellence, research excellence, outreach activities etc.) in the previous term with a Faculty of Engineering (FoE) Award."
+    },
+    {
+      "title": "Graduate Student Contingency Bursary",
+      "date": "2025",
+      "awarder": "UWaterloo |  University of Waterloo, Canada",
+      "url": "https://uwaterloo.ca/current-graduate-students/catalogs/graduate-funding-and-awards-database/graduate-student-contingency-bursary#:~:text=The%20Graduate%20Student%20Contingency%20Bursary,their%20program%20are%20not%20eligible.",
+      "summary": ""
     },
     {
       "title": "Technical Scholarship",
@@ -187,7 +194,7 @@
   "publications": [
     {
       "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",
-      "publisher": "arXiv",
+      "publisher": "arXiv Preprint | IJCNN 2025",
       "releaseDate": "2025-07-09",
       "url": "https://arxiv.org/abs/2507.07006"
     },
@@ -210,22 +217,10 @@
       "url": "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19"
     },
     {
-      "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
-      "publisher": "IEEE Access",
-      "releaseDate": "2021-01-25",
-      "url": "https://ieeexplore.ieee.org/document/9335002"
-    },
-    {
-      "name": "Breast cancer prediction: a comparative study using machine learning techniques",
+      "name": "Prediction of cervical cancer from behavior risk using machine learning techniques",
       "publisher": "Springer Nature Computer Science",
-      "releaseDate": "2022-09-01",
-      "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w"
-    },
-    {
-      "name": "Deep learning based breast cancer detection using histopathological images",
-      "publisher": "Springer Nature Computer Science",
-      "releaseDate": "2020-09-01",
-      "url": "https://link.springer.com/article/10.1007/s42979-020-00383-w"
+      "releaseDate": "2021-03-30",
+      "url": "https://link.springer.com/article/10.1007/s42979-021-00551-6"
     },
     {
       "name": "Hemoglobin and glucose level estimation from PPG characteristics features of fingertip video using MGGP-based model",
@@ -234,10 +229,46 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S1746809421000756"
     },
     {
-      "name": "Scalable Telehealth Services to Combat Novel Coronavirus (COVID-19) Pandemic",
+      "name": "Scalable telehealth services to combat novel coronavirus (COVID-19) pandemic",
       "publisher": "Springer Nature Computer Science",
       "releaseDate": "2021-01-06",
       "url": "https://link.springer.com/article/10.1007/s42979-020-00401-x"
+    },
+    {
+      "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
+      "publisher": "IEEE Access",
+      "releaseDate": "2021-01-25",
+      "url": "https://ieeexplore.ieee.org/document/9335002"
+    },
+    {
+      "name": "Deep learning based breast cancer detection using histopathological images",
+      "publisher": "Springer Nature Computer Science",
+      "releaseDate": "2020-09-01",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00383-w"
+    },
+    {
+      "name": "Breast cancer prediction: a comparative study using machine learning techniques",
+      "publisher": "Springer Nature Computer Science",
+      "releaseDate": "2022-09-01",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w"
+    },
+    {
+      "name": "A computer vision based lane detection approach",
+      "publisher": "MECS Press",
+      "releaseDate": "2019-03-01",
+      "url": "https://www.mecs-press.org/ijigsp/ijigsp-v11-n3/IJIGSP-V11-N3-4.pdf"
+    },
+    {
+      "name": "Performance evaluation of random forests and artificial neural networks for the classification of liver disorder",
+      "publisher": "IC4ME2 2018 | IEEE Conference",
+      "releaseDate": "2018-10-20",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8465658"
+    },
+    {
+      "name": "Prediction of breast cancer using support vector machine and K-Nearest neighbors",
+      "publisher": "R10-HTC 2017 | IEEE Conference",
+      "releaseDate": "2017-02-12",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8288944"
     }
   ],
   "skills": [

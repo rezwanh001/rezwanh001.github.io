@@ -18,7 +18,7 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am an MASc student in [Electrical and Computer Engineering (ECE)](https://uwaterloo.ca/electrical-computer-engineering/) at the [University of Waterloo](https://uwaterloo.ca/), Canada, working under the supervision of [Prof. Fakhri Karray](https://uwaterloo.ca/scholar/karray). As a researcher at the [Centre for Pattern Analysis and Machine Intelligence (CPAMI)](https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/) Lab, my work primarily focuses on Multi-Modal Machine Learning (MMML) and Large Language Models (LLMs). 
+I am an MASc student in the Department of [Electrical and Computer Engineering (ECE)](https://uwaterloo.ca/electrical-computer-engineering/) at the [University of Waterloo](https://uwaterloo.ca/), Canada, working under the supervision of [Prof. Fakhri Karray](https://uwaterloo.ca/scholar/karray). As a researcher at the [Centre for Pattern Analysis and Machine Intelligence (CPAMI)](https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/) Lab, my work primarily focuses on Multi-Modal Machine Learning (MMML) and Large Language Models (LLMs). 
 
 I have a strong publication record in top-tier journals and conferences (IEEE Access, Springer, Elsevier, ICCV, IJCNN, SMC), and professional experience as a Machine Learning Engineer and Consultant. My research interests span AI, Deep Learning, Multimodal AI Agents, and Human-Centered Machine Intelligence.
 

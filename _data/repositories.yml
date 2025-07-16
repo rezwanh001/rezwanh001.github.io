@@ -4,10 +4,10 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - rezwanh001/Multimodal-Isolated-Italian-Sign-Language-Recognition
-  - rezwanh001/MSLR-Pose86K-CSLR-Isharah
-  - rezwanh001/Large-Scale-Multimodal-Depression-Detection
-  - rezwanh001/Multimodal-Depression-Detection
+  # - rezwanh001/Multimodal-Isolated-Italian-Sign-Language-Recognition
+  # - rezwanh001/MSLR-Pose86K-CSLR-Isharah
+  # - rezwanh001/Large-Scale-Multimodal-Depression-Detection
+  # - rezwanh001/Multimodal-Depression-Detection
   - rezwanh001/Local-RAG-AI-Agent
   - rezwanh001/Online-Voting-System-using-php-and-mysql
   - rezwanh001/Pothole-Detection

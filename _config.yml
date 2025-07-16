@@ -324,13 +324,6 @@ display_categories: ["external-services"] # these categories will be displayed o
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
-# Scholar
-# https://scholar.google.com/
-scholar:
-  last_name: Haque            # <-- CHANGE THIS
-  first_name: Md Rezwanul     # <-- AND THIS
-  user: "HaI-oFUAAAAJ"        # <-- AND THIS IS THE MOST IMPORTANT ONE
-
 scholar:
   last_name: [Haque]
   first_name: [Md Rezwanul]

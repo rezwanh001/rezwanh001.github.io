@@ -323,7 +323,6 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
-
 scholar:
   last_name: [Haque]
   first_name: [Md Rezwanul]

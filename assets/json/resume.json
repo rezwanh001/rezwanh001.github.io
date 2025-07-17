@@ -193,6 +193,30 @@
   ],
   "publications": [
     {
+      "name": "A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition",
+      "publisher": "Accepted at ICCV 2025",
+      "releaseDate": "2025-07-11",
+      "url": ""
+    },
+    {
+      "name": "FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition",
+      "publisher": "Accepted at ICCV 2025",
+      "releaseDate": "2025-07-11",
+      "url": ""
+    },
+    {
+      "name": "MMFformer: Multimodal Fusion Transformer Network for Depression Detection",
+      "publisher": "Accepted at IEEE SMC 2025",
+      "releaseDate": "2025-06-29",
+      "url": ""
+    },
+    {
+      "name": "MDD-Net: Multimodal Depression Detection through Mutual Transformer",
+      "publisher": "Accepted at IEEE SMC 2025",
+      "releaseDate": "2025-06-29",
+      "url": ""
+    },
+    {
       "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",
       "publisher": "arXiv Preprint | Accepted at IJCNN 2025",
       "releaseDate": "2025-07-09",

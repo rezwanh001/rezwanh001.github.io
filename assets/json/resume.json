@@ -31,7 +31,7 @@
       "startDate": "2024-04-01",
       "endDate": "",
       "summary": "",
-      "highlights": ["Artificial intelligence, Machine Learning, Deep Learning"]
+      "highlights": ["Multi-Modal Machine Learning (MMML)", "Large Language Models (LLMs)", "Deep Learning", "Artificial Intelligence", "Multimodal AI Agents", "Human-Centered Machine Intelligence"]
     }
   ],
   "teaching": [
@@ -194,7 +194,7 @@
   "publications": [
     {
       "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",
-      "publisher": "arXiv Preprint | IJCNN 2025",
+      "publisher": "arXiv Preprint | Accepted at IJCNN 2025",
       "releaseDate": "2025-07-09",
       "url": "https://arxiv.org/abs/2507.07006"
     },

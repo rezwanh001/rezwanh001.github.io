@@ -23,4 +23,20 @@ I am an MASc student in the Department of [Electrical and Computer Engineering (
 
 I have a strong publication record in top-tier conferences and journals (ICCV, IJCNN, SMC, IEEE Access, Springer, Elsevier, etc.), and professional experience as a Machine Learning Engineer and Consultant. My research interests span AI, Deep Learning, Multimodal AI Agents, and Human-Centered Machine Intelligence. **For my MASc thesis, I am actively researching the challenges and opportunities at the intersection of Large Language Models and Multimodal AI agents.**
 
-<span class="vim-caret">I am actively seeking fully-funded PhD positions to further my research in these areas.</span>
+<!-- START: Blinking text effect -->
+<style>
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .blinking-cursor::after {
+    content: '▋'; /* This is a solid block cursor */
+    animation: blink 1.2s step-end infinite;
+    margin-left: 0.2em;
+    color: var(--global-text-color, black); /* Uses theme color, falls back to black */
+  }
+</style>
+
+<span class="blinking-cursor">I am actively seeking a fully-funded PhD position for admission in Winter 2026 to continue my research in these areas.</span>
+<!-- END: Blinking text effect -->

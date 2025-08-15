@@ -41,3 +41,5 @@ I have a strong publication record in top-tier conferences and journals (ICCV, I
 
 <span class="blinking-cursor">I am actively seeking a fully-funded PhD position for admission in Winter 2026 to continue my research in these areas.</span>
 <!-- END: Blinking text effect -->
+
+<img src="https://hits.sh/rezwanh001.github.io.svg?style=flat-square&label=visits&color=blue" alt="visitor count"/>

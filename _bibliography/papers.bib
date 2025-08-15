@@ -4,39 +4,59 @@
 % This file is part of the Rezwan's paper lists.
 
 @inproceedings{haque2025signer,
-    abbr={ICCV 2025 Workshop},
-    bibtex_show={true},
-    title={A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition},
-    author={Haque, Md Rezwanul and Islam, Md. Milon and Raju, S M Taslim Uddin and Karray, Fakhri},
-    journal={Accepted at Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), Honolulu, Hawaii, USA. 1st MSLR Workshop 2025},
-    year={2025}
+  abbr={ICCV 2025 Workshop},
+  bibtex_show={true},
+  title={A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition},
+  author={Haque, Md Rezwanul and Islam, Md. Milon and Raju, S M Taslim Uddin and Karray, Fakhri},
+  journal={Accepted at Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), Honolulu, Hawaii, USA. 1st MSLR Workshop 2025},
+  year={2025},
+  abstract={Continuous Sign Language Recognition (CSLR) faces multiple challenges, including significant inter-signer variability and poor generalization to novel sentence structures. Traditional solutions frequently fail to handle these issues efficiently. For overcoming these constraints, we propose a dual-architecture framework. For the Signer-Independent (SI) challenge, we propose a Signer-Invariant Conformer that combines convolutions with multi-head self-attention to learn robust, signer-agnostic representations from pose-based skeletal keypoints. For the Unseen-Sentences (US) task, we designed a Multi-Scale Fusion Transformer with a novel dual-path temporal encoder that captures both fine-grained posture dynamics, enabling the model’s ability to comprehend novel grammatical compositions. Experiments on the challenging Isharah-1000 dataset establish a new standard for both CSLR benchmarks. The proposed conformer architecture achieves a Word Error Rate (WER) of 13.07% on the SI challenge, a reduction of 13.53% from the state-of-the-art. On the US task, the transformer model scores a WER of 47.78%, surpassing previous work. In the SignEval 2025 CSLR challenge, our team placed 2nd in the US task and 4th in the SI task, demonstrating the performance of these models. The findings validate our key hypothesis: that developing task-specific networks designed for the particular challenges of CSLR leads to considerable performance improvements and establishes a new baseline for further research. The source code is available at: https://github.com/rezwanh001/MSLR-Pose86K-CSLR-Isharah.},
+  html={https://arxiv.org/html/2508.09372v1},
+  pdf={https://arxiv.org/abs/2508.09372},
+  preview={signer.png},
+  selected={true},
 }
 
 @inproceedings{islam2025fusionensemble,
-    abbr={ICCV 2025 Workshop},
-    bibtex_show={true},
-    title={FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition},
-    author={Islam, Md. Milon and Haque, Md Rezwanul and Raju, S M Taslim Uddin and Karray, Fakhri},
-    journal={Accepted at Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), Honolulu, Hawaii, USA. 1st MSLR Workshop 2025},
-    year={2025}
+  abbr={ICCV 2025 Workshop},
+  bibtex_show={true},
+  title={FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition},
+  author={Islam, Md. Milon and Haque, Md Rezwanul and Raju, S M Taslim Uddin and Karray, Fakhri},
+  journal={arXiv preprint arXiv:2508.09362},
+  year={2025},
+  abstract={Accurate recognition of sign language in healthcare communication poses a significant challenge, requiring frameworks that can accurately interpret complex multimodal gestures. To deal with this, we propose FusionEnsemble-Net, a novel attention-based ensemble of spatiotemporal networks that dynamically fuses visual and motion data to enhance recognition accuracy. The proposed approach processes RGB video and range Doppler map radar modalities synchronously through four different spatiotemporal networks. For each network, features from both modalities are continuously fused using an attention-based fusion module before being fed into an ensemble of classifiers. Finally, the outputs of these four different fused channels are combined in an ensemble classification head, thereby enhancing the model’s robustness. Experiments demonstrate that FusionEnsemble-Net outperforms state-of-the-art approaches with a test accuracy of 99.44% on the large-scale MultiMeDaLIS dataset for Italian Sign Language. Our findings indicate that an ensemble of diverse spatiotemporal networks, unified by attention-based fusion, yields a robust and accurate framework for complex, multimodal isolated gesture recognition tasks. The source code is available at: https://github.com/rezwanh001/Multimodal-Isolated-Italian-Sign-Language-Recognition.},
+  html={https://arxiv.org/html/2508.09362v1},
+  pdf={https://arxiv.org/pdf/2508.09362},
+  preview={fusionensemble.png},
+  selected={true},
 }
 
-@inproceedings{haque2025mmfformer,
+@article{haque2025mdd,
+  abbr={IEEE SMC 2025},
+  bibtex_show={true},
+  title={MDD-Net: Multimodal Depression Detection through Mutual Transformer},
+  author={Haque, Md Rezwanul and Islam, Md Milon and Raju, SM and Altaheri, Hamdi and Nassar, Lobna and Karray, Fakhri},
+  journal={arXiv preprint arXiv:2508.08093},
+  year={2025},
+  abstract={Depression is a major mental health condition that severely impacts the emotional and physical well-being of individuals. The simple nature of data collection from social media platforms has attracted significant interest in properly utilizing this information for mental health research. A Multimodal Depression Detection Network (MDD-Net), utilizing acoustic and visual data obtained from social media networks, is proposed in this work where mutual transformers are exploited to efficiently extract and fuse multimodal features for efficient depression detection. The MDD-Net consists of four core modules: an acoustic feature extraction module for retrieving relevant acoustic attributes, a visual feature extraction module for extracting significant high-level patterns, a mutual transformer for computing the correlations among the generated features and fusing these features from multiple modalities, and a detection layer for detecting depression using the fused feature representations. The extensive experiments are performed using the multimodal D-Vlog dataset, and the findings reveal that the developed multimodal depression detection network surpasses the state-of-the-art by up to 17.37% for F1-Score, demonstrating the greater performance of the proposed system. The source code is accessible at https://github.com/rezwanh001/Multimodal-Depression-Detection.},
+  html={https://arxiv.org/html/2508.08093v1},
+  pdf={https://arxiv.org/pdf/2508.08093},
+  preview={mdd.png},
+  selected={true},
+}
+
+@article{haque2025mmfformer,
   abbr={IEEE SMC 2025},
   bibtex_show={true},
   title={MMFformer: Multimodal Fusion Transformer Network for Depression Detection},
-  author={Haque, Md Rezwanul and Islam, Md. Milon and Raju, S M Taslim Uddin and Altaheri, Hamdi and Nassar, Lobna and Karray, Fakhri},
-  journal={Accepted at Proceedings of the 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Vienna, Austria},
-  year={2025}
-}
-
-@inproceedings{haque2025mdd,
-    abbr={IEEE SMC 2025},
-    bibtex_show={true},
-    title={MDD-Net: Multimodal Depression Detection through Mutual Transformer},
-    author={Haque, Md Rezwanul and Islam, Md. Milon and Raju, S M Taslim Uddin and Altaheri, Hamdi and Nassar, Lobna and Karray, Fakhri},
-    journal={Accepted at Proceedings of the 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Vienna, Austria},
-    year={2025}
+  author={Haque, Md Rezwanul and Islam, Md Milon and Raju, SM and Altaheri, Hamdi and Nassar, Lobna and Karray, Fakhri},
+  journal={arXiv preprint arXiv:2508.06701},
+  year={2025},
+  abstract={Depression is a serious mental health illness that significantly affects an individual’s well-being and quality of life, making early detection crucial for adequate care and treatment. Detecting depression is often difficult, as it is based primarily on subjective evaluations during clinical interviews. Hence, the early diagnosis of depression, thanks to the content of social networks, has become a prominent research area. The extensive and diverse nature of user-generated information poses a significant challenge, limiting the accurate extraction of relevant temporal information and the effective fusion of data across multiple modalities. This paper introduces MMFformer, a multimodal depression detection network designed to retrieve depressive spatio-temporal high-level patterns from multimodal social media information. The transformer network with residual connections captures spatial features from videos, and a transformer encoder is exploited to design important temporal dynamics in audio. Moreover, the fusion architecture fused the extracted features through late and intermediate fusion strategies to find out the most relevant intermodal correlations among them. Finally, the proposed network is assessed on two large-scale depression detection datasets, and the results clearly reveal that it surpasses existing state-of-the-art approaches, improving the F1-Score by 13.92% for D-Vlog dataset and 7.74% for LMVD dataset. The code is made available publicly at https://github.com/rezwanh001/Large-Scale-Multimodal-Depression-Detection.},
+  html={https://arxiv.org/html/2508.06701v1},
+  pdf={https://arxiv.org/pdf/2508.06701},
+  preview={mmfformer.png},
+  selected={true},
 }
 
 @article{raju2025gnn,
@@ -49,8 +69,7 @@
   abstract={Microscopic assessment of histopathology images is vital for accurate cancer diagnosis and treatment. Whole Slide Image (WSI) classification and captioning have become crucial tasks in computer-aided pathology. However, microscopic WSI face challenges such as redundant patches and unknown patch positions due to subjective pathologist captures. Moreover, generating automatic pathology captions remains a significant challenge. To address these issues, we introduce a novel GNN-ViTCap framework for classification and caption generation from histopathological microscopic images. First, a visual feature extractor generates patch embeddings. Redundant patches are then removed by dynamically clustering these embeddings using deep embedded clustering and selecting representative patches via a scalar dot attention mechanism. We build a graph by connecting each node to its nearest neighbors in the similarity matrix and apply a graph neural network to capture both local and global context. The aggregated image embeddings are projected into the language model's input space through a linear layer and combined with caption tokens to fine-tune a large language model. We validate our method on the BreakHis and PatchGastric datasets. GNN-ViTCap achieves an F1 score of 0.934 and an AUC of 0.963 for classification, along with a BLEU-4 score of 0.811 and a METEOR score of 0.569 for captioning. Experimental results demonstrate that GNN-ViTCap outperforms state of the art approaches, offering a reliable and efficient solution for microscopy based patient diagnosis.},
   html={https://arxiv.org/abs/2507.07006},
   pdf={https://arxiv.org/pdf/2507.07006},
-  preview={GNN-ViTCap.png},
-  selected={true},
+  preview={GNN-ViTCap.png}
 }
 
 @inproceedings{haque2023body,

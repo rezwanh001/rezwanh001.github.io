@@ -20,7 +20,7 @@ related_posts: false
         <a href="https://rezwanh001.github.io/assets/img/MDD-Net_752.png" target="_blank">
             <img src="https://rezwanh001.github.io/assets/img/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
         </a>
-        <strong>(1) MDD-Net: Multimodal Depression Detection through Mutual Transformer</strong><br>
+        <strong>(1) <a href="https://arxiv.org/pdf/2508.08093" target="_blank">MDD-Net: Multimodal Depression Detection through Mutual Transformer</a></strong><br>
         (Paper ID: 752)
     </div>
     <div style="clear: both;"></div>
@@ -28,7 +28,7 @@ related_posts: false
         <a href="https://rezwanh001.github.io/assets/img/MMFformer_1961.png" target="_blank">
             <img src="https://rezwanh001.github.io/assets/img/MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
         </a>
-        <strong>(2) MMFformer: Multimodal Fusion Transformer Network for Depression Detection</strong><br>
+        <strong>(2) <a href="https://arxiv.org/pdf/2508.06701" target="_blank">MMFformer: Multimodal Fusion Transformer Network for Depression Detection</a></strong><br>
         (Paper ID: 1961)
     </div>
     <div style="clear: both;"></div>

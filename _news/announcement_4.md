@@ -20,9 +20,9 @@ related_posts: false
         <a href="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" target="_blank">
             <img src="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" alt="Acceptance Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
         </a>
-        <strong>(1) FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition</strong><br>
+        <strong>(1) <a href="https://arxiv.org/pdf/2508.09362" target="_blank">FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition</a></strong><br>
         (Paper ID: 11)<br><br>
-        <strong>(2) A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition</strong><br>
+        <strong>(2) <a href="https://arxiv.org/abs/2508.09372" target="_blank">A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition</a></strong><br>
         (Paper ID: 13)
     </div>
     <div style="clear: both;"></div>

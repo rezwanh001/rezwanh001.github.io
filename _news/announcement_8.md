@@ -5,15 +5,15 @@ date: 2025-11-14 11:00:00-0400
 inline: false
 related_posts: false
 ---
-<div class="text-center">
+<!-- <div class="text-center">
     <img src="/assets/img/uw_logo.png" class="post-title-logo" alt="University of Waterloo Logo">
-</div>
+</div> -->
 
 I am delighted to share that our team's work on sign language recognition technology has been featured by the **University of Waterloo's Department of Electrical and Computer Engineering**.
 
 This recognition follows our recent success at the **IEEE/CVF International Conference on Computer Vision (ICCV 2025)**, where our research was honored with the **Best Poster Award** and secured **2nd Place** in the SignEval Challenge.
 
-The university's feature article, titled "Cutting-edge research in the Department of Electrical and Computer Engineering is making global waves in sign language technology," highlights our commitment to advancing inclusive technology.
+The university's feature article, titled <a href="https://uwaterloo.ca/electrical-computer-engineering/news/cutting-edge-research-department-electrical-and-computer" target="_blank">Cutting-edge research in the Department of Electrical and Computer Engineering is making global waves in sign language technology</a> highlights our commitment to advancing inclusive technology.
 
 <div class="row mt-4">
     <div class="col-sm-8">

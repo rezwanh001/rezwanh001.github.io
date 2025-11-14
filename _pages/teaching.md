@@ -11,6 +11,28 @@ nav_order: 6
 <div class="post">
 <article>
 
+<div class="card mt-3" id="fall-2025--ece-222-digital-computers">
+  <div class="p-3">
+    <strong>📘 ECE 222: Digital Computers</strong><br>
+    <em>🗓️ Fall 2025: Teaching Assistant (TA)</em><br><br>
+    <!-- Highlight Enrollment and Rating -->
+    <div class="d-flex justify-content-between align-items-center mb-3" style="font-size: 0.95rem;">
+      <div><strong>👥 Enrolled Students:</strong> 279/280</div>
+      <div>
+        <strong>⭐ Instructor Rating:</strong>
+        <span style="color: #f5c518;">★★★★★</span> (--.--/5)
+      </div>
+    </div>
+    <a href="https://uwaterloo.ca/scholar/z399huan/ece222" target="_blank">Course Description</a><br><br>
+    The objective of this course is to learn how a computer works, focusing on how the computer hardware executes the software. General topics covered in this course: computer abstractions, instruction sets, assembly language programming, processor design, memory system design, and input/output.<br>
+    <strong>Prerequisites:</strong> ECE 124 & CS 137 (or equivalent)<br><br>
+    <a href="https://piazza.com/" target="_blank">Discussion Forum (Piazza)</a><br>
+    <strong>Optional Reference:</strong> Hennessy and Patterson, <em>Computer Organization and Design: The Hardware/Software Interface, RISC-V Edition</em><br><br>
+    <strong>Evaluation:</strong> Quizzes (5%), Labs (25%), Midterm (25%), and Final exam (45%)<br><br>
+    <strong>Acknowledgment:</strong> Course materials provided by <a href="https://uwaterloo.ca/scholar/z399huan/" target="_blank">Prof. Ziqiang Patrick Huang</a>.
+  </div>
+</div>
+
 <div class="card mt-3" id="spring-2025--ece-252-systems-programming-and-concurrency">
   <div class="p-3">
     <strong>📘 ECE 252: Systems Programming and Concurrency</strong><br>

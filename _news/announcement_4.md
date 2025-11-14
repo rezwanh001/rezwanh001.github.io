@@ -20,17 +20,18 @@ related_posts: false
         <a href="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" target="_blank">
             <img src="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" alt="Acceptance Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
         </a>
-        <strong>(1) <a href="https://arxiv.org/pdf/2508.09362" target="_blank">FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition</a></strong><br>
+        <strong>(1) <a href="https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Islam_FusionEnsemble-Net_An_Attention-Based_Ensemble_of_Spatiotemporal_Networks_for_Multimodal_Sign_ICCVW_2025_paper.html" target="_blank">FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition</a></strong><br>
         (Paper ID: 11)<br><br>
-        <strong>(2) <a href="https://arxiv.org/abs/2508.09372" target="_blank">A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition</a></strong><br>
+        <strong>(2) <a href="https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Haque_A_Signer-Invariant_Conformer_and_Multi-Scale_Fusion_Transformer_for_Continuous_Sign_ICCVW_2025_paper.html" target="_blank">A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition</a></strong><br>
         (Paper ID: 13)
     </div>
     <div style="clear: both;"></div>
     <br>
+    🏆 <strong>Best Poster Award:</strong> Paper ID: 13<br>
+    🥈 <strong>Winner (2nd Place):</strong> MSLR ICCV-2025 Contest<br>
     📌 <strong>Conference:</strong> International Conference on Computer Vision, ICCV 2025<br>
     📍 <strong>Location:</strong> Hawai'i Convention Center, Honolulu, Hawai'i, USA<br>
-    📅 <strong>Dates:</strong> October 19 – 23, 2025<br><br>
-    Stay tuned for more updates — Looking forward to connecting with fellow researchers in USA! 🇺🇸
+    📅 <strong>Dates:</strong> October 19 – 23, 2025 🇺🇸<br><br>
   </div>
 </div>
 </article>

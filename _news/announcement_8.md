@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Our Research in the Spotlight at the University of Waterloo
+title: Our Research in the Spotlight at the University of Waterloo 
 date: 2025-11-14 11:00:00-0400
 inline: false
 related_posts: false
 ---
+<div class="text-center">
+    <img src="/assets/img/uw_logo.png" class="post-title-logo" alt="University of Waterloo Logo">
+</div>
+
 I am delighted to share that our team's work on sign language recognition technology has been featured by the **University of Waterloo's Department of Electrical and Computer Engineering**.
 
 This recognition follows our recent success at the **IEEE/CVF International Conference on Computer Vision (ICCV 2025)**, where our research was honored with the **Best Poster Award** and secured **2nd Place** in the SignEval Challenge.
@@ -22,7 +26,7 @@ The university's feature article, titled "Cutting-edge research in the Departmen
     </div>
 </div>
 
-It is a true honor to have our research celebrated by our institution. I am deeply grateful for the guidance of my supervisor, **Dr. Fakhri Karray**, and the collaborative spirit of my teammates, **S. M. Taslim Uddin Raju** and **Dr. Md. Milon Islam**.
+It is a true honor to have our research celebrated by our institution. I am deeply grateful for the guidance of my supervisor, **Prof. Fakhri Karray**, and the collaborative spirit of my teammates, **S. M. Taslim Uddin Raju** and **Dr. Md. Milon Islam**.
 
 You can read the full story on the official university website.
 

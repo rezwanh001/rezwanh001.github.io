@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exciting News – Our Research in the Spotlight at the University of Waterloo by the ECE Department! 🇨🇦
-date: 2025-11-14 11:00:00-0400
+date: 2025-11-13 11:00:00-0400
 inline: false
 related_posts: false
 ---

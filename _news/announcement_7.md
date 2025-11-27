@@ -12,7 +12,7 @@ related_posts: false
 
 <div class="card mt-3">
   <div class="p-3">
-    <strong>🎉 Our Research Featured by UWaterloo ECE News</strong><br>
+    <strong>🌟 Our Research Featured by UWaterloo ECE News</strong><br>
     <em>✅ November 2025</em><br><br>
     I'm incredibly proud to share that our team's recent achievements at <strong>ICCV 2025</strong> have been featured in a news article by the <strong><a href="https://uwaterloo.ca/electrical-computer-engineering/" target="_blank">Department of Electrical and Computer Engineering (ECE)</a></strong> at the University of Waterloo! 🎉<br><br>
     The article, titled <strong>“<a href="https://uwaterloo.ca/electrical-computer-engineering/news/cutting-edge-research-department-electrical-and-computer" target="_blank">Cutting-edge research in the Department of Electrical and Computer Engineering is making global waves in sign language technology</a>,”</strong> highlights our success at the premier computer vision conference. This feature recognizes our two major achievements:
@@ -22,14 +22,14 @@ related_posts: false
         <div class="col-md-6 text-center">
             <h5 class="font-weight-bold">Best Poster Award</h5>
             <a href="#" data-toggle="modal" data-target="#posterAwardModal">
-                <img src="/assets/img/cert_best_poster.jpg" class="img-fluid rounded z-depth-1" alt="Best Poster Award Certificate Thumbnail">
+                <img src="/assets/img/cert_best_poster.png" class="img-fluid rounded z-depth-1" alt="Best Poster Award Certificate Thumbnail">
             </a>
         </div>
         <!-- Certificate 2: 2nd Place Challenge -->
         <div class="col-md-6 text-center">
             <h5 class="font-weight-bold">2nd Place, SignEval Challenge</h5>
             <a href="#" data-toggle="modal" data-target="#challengeAwardModal">
-                <img src="/assets/img/cert_2nd_place.jpg" class="img-fluid rounded z-depth-1" alt="2nd Place Certificate Thumbnail">
+                <img src="/assets/img/cert_2nd_place.png" class="img-fluid rounded z-depth-1" alt="2nd Place Certificate Thumbnail">
             </a>
         </div>
     </div>

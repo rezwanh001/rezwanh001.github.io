@@ -322,7 +322,7 @@
     },
     {
       "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",
-      "publisher": "2025 International Joint Conference on Neural Networks (IJCNN) | IEEE Conference",
+      "publisher": "2025 International Joint Conference on Neural Networks (IJCNN)",
       "releaseDate": "2025-11-14",
       "url": "https://ieeexplore.ieee.org/document/11228324"
     },
@@ -384,7 +384,7 @@
     */
     {
       "name": "Breast cancer prediction: a comparative study using machine learning techniques",
-      "publisher": "Springer Nature Computer Science",
+      "publisher": "Springer",
       "releaseDate": "2022-09-01",
       "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w"
     },

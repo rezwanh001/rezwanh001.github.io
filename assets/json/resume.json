@@ -95,50 +95,139 @@
   "education": [
     {
       "institution": "University of Waterloo",
-      "location": "Ontario, Canada",
+      "location": "Waterloo, CA",
       "url": "https://uwaterloo.ca/",
-      "area": "",
+      "area": "Electrical and Computer Engineering (ECE)",
       "studyType": "MASc",
       "startDate": "2024-05-01",
-      "endDate": "",
-      "score": "",
-      "courses": ["Department of Electrical and Computer Engineering (ECE)"]
+      "endDate": "2026-04-30",
+      "score": "90+ Average",
+      "courses": ["Supervisor: Prof. Fakhri Karray", "Research Focus: Multimodal Machine Learning (MMML) and Large Language Models (LLMs).", "Expected degree completion in Winter 2026."]
     },
     {
       "institution": "Khulna University of Engineering & Technology (KUET)",
       "location": "Khulna, Bangladesh",
       "url": "https://www.kuet.ac.bd/",
-      "area": "",
+      "area": "Computer Science and Engineering (CSE)",
       "studyType": "BSc",
       "startDate": "2014-12-20",
       "endDate": "2019-02-19",
       "score": "",
-      "courses": ["Department of Computer Science and Engineering (CSE)"]
-    },
+      "courses": ["Thesis: “A Study on Non-Invasive Hemoglobin Measurement Techniques and Predictions.”", "Supervisor: Prof. Dr. M.M.A Hashem"]
+    }
+    /*
     {
       "institution": "Rajshahi Govt. City College",
       "location": "Rajshahi, Bangladesh",
       "url": "http://rgcc.ac.bd/",
-      "area": "",
+      "area": "Science",
       "studyType": "Higher Secondary Certificate (H.S.C)",
       "startDate": "2013-01-01",
       "endDate": "2014-12-01",
       "score": "",
-      "courses": ["Section: Science"]
+      "courses": []
     },
     {
       "institution": "Balahar B.L. High School",
       "location": "Dinajpur, Bangladesh",
       "url": "",
-      "area": "",
+      "area": "Science",
       "studyType": "Secondary School Certificate (S.S.C)",
       "startDate": "2007-01-01",
       "endDate": "2012-12-30",
       "score": "",
-      "courses": ["Section: Science"]
+      "courses": []
     }
+    */
   ],
   "awards": [
+    {
+      "title": "Faculty of Engineering (FOE) Award (Spring)",
+      "date": "2025",
+      "awarder": "UWaterloo, CA",
+      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1500."
+    },
+    {
+      "title": "Best Poster Award",
+      "date": "2025",
+      "awarder": "ICCV, USA",
+      "summary": "Awarded at the 1st Multimodal Sign Language Recognition Workshop."
+    },
+    {
+      "title": "Winner (2nd) of MSLR-2025 Challenge",
+      "date": "2025",
+      "awarder": "ICCV, USA",
+      "summary": "Secured 2nd place in The First Multimodal Sign Language Recognition Challenge. Valued at USD $750."
+    },
+    {
+      "title": "Faculty of Engineering (FOE) Award (Winter)",
+      "date": "2025",
+      "awarder": "UWaterloo, CA",
+      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1500."
+    },
+    {
+      "title": "Graduate Student Contingency Bursary",
+      "date": "2025",
+      "awarder": "UWaterloo, CA",
+      "summary": "Valued at CAD $5,000."
+    },
+    {
+      "title": "Graduate Research Studentship (GRS)",
+      "date": "2024 - Present",
+      "awarder": "UWaterloo, CA",
+      "summary": "Valued at CAD $18,000/yr."
+    }
+    /*
+    {
+      "title": "IICT Machine Learning Idea Scholarship",
+      "date": "2023",
+      "awarder": "KUET, BD",
+      "summary": "Valued at BDT 20,000."
+    },
+    {
+      "title": "KUET Undergrad Thesis Scholarship",
+      "date": "2019",
+      "awarder": "KUET, BD",
+      "summary": "Valued at BDT 10,000."
+    },
+    {
+      "title": "KUET Technical Scholarship",
+      "date": "2015 – 2018",
+      "awarder": "KUET, BD",
+      "summary": "This is awarded to the top students of the class every academic year. Valued at BDT 32,000."
+    },
+	{
+      "title": "Higher Secondary Excellence Result Award",
+      "date": "2015",
+      "awarder": "BD",
+      "summary": ""
+    },
+	{
+      "title": "Secondary Excellence Result Award",
+      "date": "2013",
+      "awarder": "BD",
+      "summary": ""
+    },
+    {
+      "title": "School Level Award from Fisheries Subdivision",
+      "date": "2011",
+      "awarder": "BD",
+      "summary": "Valued at BDT 1,000."
+    },
+    {
+      "title": "High School General Grade Scholarship",
+      "date": "2010-2011",
+      "awarder": "BD",
+      "summary": "Valued at BDT 5,100."
+    },
+    {
+      "title": "Primary School General Grade Scholarship",
+      "date": "2007-2009",
+      "awarder": "BD",
+      "summary": "Valued at BDT 3,500."
+    }
+    */ 
+    /*
     {
       "title": "Faculty of Engineering (FOE) Award",
       "date": "Winter 2025",
@@ -160,6 +249,7 @@
       "url": "https://www.kuet.ac.bd/",
       "summary": "This is awarded to the top students of the class every academic year."
     }
+    */
   ],
   "certificates": [
     {
@@ -232,10 +322,11 @@
     },
     {
       "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",
-      "publisher": "arXiv Preprint | Accepted at IJCNN 2025",
-      "releaseDate": "2025-07-09",
-      "url": "https://arxiv.org/abs/2507.07006"
+      "publisher": "2025 International Joint Conference on Neural Networks (IJCNN) | IEEE Conference",
+      "releaseDate": "2025-11-14",
+      "url": "https://ieeexplore.ieee.org/document/11228324"
     },
+    /*  <-- Start of the comment block
     {
       "name": "Body Weight Estimation Using Smartphone Based Photoplethysmography Signal",
       "publisher": "ICCIT 2023 | IEEE Conference",
@@ -248,54 +339,63 @@
       "releaseDate": "2023-11-20",
       "url": "https://ieeexplore.ieee.org/abstract/document/10318933"
     },
+    */  // <-- End of the comment block 
     {
       "name": "Badlad: A large multi-domain bengali document layout analysis dataset",
       "publisher": "ICDAR 2023 | Springer",
       "releaseDate": "2023-08-19",
       "url": "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19"
     },
+    /*
     {
       "name": "Prediction of cervical cancer from behavior risk using machine learning techniques",
       "publisher": "Springer Nature Computer Science",
       "releaseDate": "2021-03-30",
       "url": "https://link.springer.com/article/10.1007/s42979-021-00551-6"
     },
+    */ 
     {
       "name": "Hemoglobin and glucose level estimation from PPG characteristics features of fingertip video using MGGP-based model",
       "publisher": "Elsevier",
       "releaseDate": "2021-03-04",
       "url": "https://www.sciencedirect.com/science/article/pii/S1746809421000756"
     },
+    /*
     {
       "name": "Scalable telehealth services to combat novel coronavirus (COVID-19) pandemic",
       "publisher": "Springer Nature Computer Science",
       "releaseDate": "2021-01-06",
       "url": "https://link.springer.com/article/10.1007/s42979-020-00401-x"
     },
+    */
     {
       "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
       "publisher": "IEEE Access",
       "releaseDate": "2021-01-25",
       "url": "https://ieeexplore.ieee.org/document/9335002"
     },
+    /*
     {
       "name": "Deep learning based breast cancer detection using histopathological images",
       "publisher": "Springer Nature Computer Science",
       "releaseDate": "2020-09-01",
       "url": "https://link.springer.com/article/10.1007/s42979-020-00383-w"
     },
+    */
     {
       "name": "Breast cancer prediction: a comparative study using machine learning techniques",
       "publisher": "Springer Nature Computer Science",
       "releaseDate": "2022-09-01",
       "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w"
     },
+    /*
     {
       "name": "A computer vision based lane detection approach",
       "publisher": "MECS Press",
       "releaseDate": "2019-03-01",
       "url": "https://www.mecs-press.org/ijigsp/ijigsp-v11-n3/IJIGSP-V11-N3-4.pdf"
     },
+    */ 
     {
       "name": "Performance evaluation of random forests and artificial neural networks for the classification of liver disorder",
       "publisher": "IC4ME2 2018 | IEEE Conference",
@@ -381,5 +481,24 @@
       "endDate": "2018-01-01",
       "url": "https://github.com/rezwanh001/Image-Captioning-Project"
     }
-  ]
+  ],
+  "professionalActivities": {
+    "reviewing": [
+      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Conference on Computer Vision (ICCV)" },
+      { "year": "2025-p.", "activity": "Reviewer", "organization": "NeurIPS Workshop MusIML" },
+      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Conference on Electrical Information and Comm. Technology" },
+      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Conference on Systems, Man, and Cybernetics (SMC)" },
+      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Joint Conference on Neural Networks (IJCNN)" },
+      { "year": "2023-p.", "activity": "Reviewer", "organization": "PLOS One: A peer-reviewed open access scientific journal" }
+    ],
+    "otherService": [
+      { "year": "2025", "activity": "Mentor", "organization": "Mentorship Program Fall 2025 (Grad Students)", "location": "UW, CA" },
+      { "year": "2018–19", "activity": "Instructor", "organization": "Hardware Acceleration Club of KUET (HACK)", "location": "KUET, BD" },
+      { "year": "2015–19", "activity": "Instructor", "organization": "Special Group Interested in Programming Contest (SGIPC)", "location": "KUET, BD" },
+      { "year": "2017", "activity": "Volunteer", "organization": "University-Industry Collaboration: Challenges and Opportunities", "location": "KUET, BD" },
+      { "year": "2017", "activity": "Volunteer", "organization": "3rd International Conference on Electrical Information and Communication Technology (EICT)", "location": "KUET, BD" },
+      { "year": "2015–17", "activity": "Organizer", "organization": "National High School Programming Contest (NHSPC)", "location": "KUET, BD" },
+      { "year": "2014", "activity": "Participant", "organization": "Regional Mathematical Olympiad 2014", "location": "BD" }
+    ]
+  }
 }

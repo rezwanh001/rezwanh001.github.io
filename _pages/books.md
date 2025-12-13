@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /reading/
-title: reading shelf
+title: reading
 description: "A collection of books I have recently completed."
 nav: true
 nav_order: 8 # Or any order you prefer

@@ -10,6 +10,24 @@ nav_order: 8 # Or any order you prefer
 # Reading List Data
 # -----------------------------------------------------------------
 reading_list:
+  - title: The Picture of Dorian Gray
+    author: Oscar Wilde
+    published_date: 1890
+    image: /assets/pdf/books/book_dorian_gray.png
+    youtube_id: "RD31qRg8XY4" # Full Audiobook
+    tags: ["Gothic Fiction", "Philosophical Novel", "British Literature"]
+    summary: "The story of the handsome Dorian Gray, who sells his soul for eternal youth. As he indulges in a life of amoral pleasure, his magical portrait, painted by Basil Hallward and influenced by Lord Henry Wotton, bears the scars of his sins and ages in his place."
+    summary_bangla: "এক যুবকের গল্প যে তার আত্মার বিনিময়ে চিরযৌবন লাভ করে। তার প্রতিকৃতিতে বয়সের ছাপ পড়ে, আর সে নিজে ডুবে যায় নৈতিক অবক্ষয়ের গভীরে।"
+
+  - title: White Nights
+    author: Fyodor Dostoevsky
+    published_date: 1848
+    image: /assets/pdf/books/book_white_nights.png
+    youtube_id: "yY7YngQE7gI" # Full Audiobook
+    tags: ["Russian Literature", "Short Story", "Romance"]
+    summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
+    summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
+
   - title: Sense and Sensibility
     author: Jane Austen
     published_date: 1811

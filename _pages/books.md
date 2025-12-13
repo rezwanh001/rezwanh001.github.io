@@ -16,7 +16,7 @@ reading_list:
     author: Jane Austen
     published_date: 1811
     image: /assets/pdf/books/book_sense_and_sensibility.png
-    youtube_id: "cBARWMXUsNM"
+    youtube_id: "cBARWMXUsNM" ## youtube link
     tags: ["British Literature", "Regency Romance", "Satire"]
     summary: "The story of the Dashwood sisters, Elinor and Marianne. One guided by reason and the other by passion, they navigate love, heartbreak, and fortune in Regency society."
     summary_bangla: "দুই বোন এলিনর ও ম্যারিয়েন—একজন যুক্তিবাদী, অন্যজন আবেগপ্রবণ। তাদের প্রেম ও জীবনের নানা প্রতিকূলতার মধ্য দিয়ে পথচলার কাহিনী।"

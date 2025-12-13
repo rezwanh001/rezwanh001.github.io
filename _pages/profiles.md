@@ -1,53 +1,28 @@
 ---
-layout: page
-permalink: /reading/
-title: Reading Shelf
-description: "A collection of books I have recently completed."
+layout: profiles
+permalink: /people/
+title: reading books
+description: "A collection of books I have recently completed.
 nav: true
-nav_order: 8 # Or any order you prefer
+nav_order: 7
 
-# -----------------------------------------------------------------
-# Reading List Data
-# Add new books here. The page will automatically update.
-# -----------------------------------------------------------------
-reading_list:
-  - title: Far from the Madding Crowd
-    author: Thomas Hardy
+profiles:
+  # if you want to include more than one profile, just replicate the following block
+  # and create one content file for each profile inside _pages/
+  - align: right
     image: /assets/pdf/books/book_far_from_madding.png
-    summary: "A fiercely independent woman in pastoral England finds her life entangled with three very different suitors—a story of love, obsession, and the brutal choices that define a life."
-
-  - title: Sense and Sensibility
-    author: Jane Austen
+    content: about_einstein.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: left
     image: /assets/pdf/books/book_sense_and_sensibility.png
-    summary: "Two sisters, one guided by reason and the other by passion, navigate the treacherous waters of love, heartbreak, and fortune in Regency society."
-
-  - title: The Adventures of Huckleberry Finn
-    author: Mark Twain
-    image: /assets/pdf/books/book_huckleberry_finn.png
-    summary: "A young outcast and a runaway slave journey down the Mississippi River, seeking freedom from a 'civilized' world in a groundbreaking tale of friendship and morality."
+    content: about_einstein.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
 ---
-
-<!-- This part of the file is the main content that will be displayed on the page -->
-
-<div class="intro-text" style="margin-bottom: 2rem; text-align: center;">
-  <p>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</p>
-</div>
-
-<!-- =============================================================== -->
-<!-- =================== READING SHELF SECTION ===================== -->
-<!-- =============================================================== -->
-
-<div class="row">
-{% for book in page.reading_list %}
-  <div class="col-md-4 mb-4 d-flex align-items-stretch">
-    <div class="card w-100">
-      <img src="{{ book.image | relative_url }}" class="card-img-top" alt="{{ book.title }} cover" style="height: 450px; object-fit: cover;">
-      <div class="card-body">
-        <h5 class="card-title font-weight-bold">{{ book.title }}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
-        <p class="card-text">{{ book.summary }}</p>
-      </div>
-    </div>
-  </div>
-{% endfor %}
-</div>

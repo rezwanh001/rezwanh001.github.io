@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /people/
-title: reading books
-description: "A collection of books I have recently completed.
+title: people
+description: members of the lab or group
 nav: true
 nav_order: 7
 
@@ -10,7 +10,7 @@ profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: /assets/pdf/books/book_far_from_madding.png
+    image: prof_pic.jpg
     content: about_einstein.md
     image_circular: false # crops the image to make it circular
     more_info: >
@@ -18,7 +18,7 @@ profiles:
       <p>123 your address street</p>
       <p>Your City, State 12345</p>
   - align: left
-    image: /assets/pdf/books/book_sense_and_sensibility.png
+    image: prof_pic.jpg
     content: about_einstein.md
     image_circular: false # crops the image to make it circular
     more_info: >
@@ -26,3 +26,4 @@ profiles:
       <p>123 your address street</p>
       <p>Your City, State 12345</p>
 ---
+

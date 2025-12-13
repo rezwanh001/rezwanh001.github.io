@@ -30,7 +30,7 @@ reading_list:
 <!-- This part of the file is the main content that will be displayed on the page -->
 
 <div class="intro-text" style="margin-bottom: 2rem; text-align: center;">
-  <p>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</p>
+  <p>**Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.**</p>
 </div>
 
 <!-- =============================================================== -->

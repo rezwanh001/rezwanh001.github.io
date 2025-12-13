@@ -28,6 +28,15 @@ reading_list:
     summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
     summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
 
+  - title: Pride and Prejudice
+    author: Jane Austen
+    published_date: 1813
+    image: /assets/pdf/books/book_pride_and_prejudice.png
+    youtube_id: "GvGb2G1Ft5c" # LibriVox Full Audiobook
+    tags: ["British Literature", "Regency Romance", "Classic Novel"]
+    summary: "The classic tale of the spirited Elizabeth Bennet and the proud Mr. Darcy. Through a series of witty encounters and misunderstandings, they must overcome their own pride and prejudices to find love and understanding in the rigid society of Regency England."
+    summary_bangla: "গর্বিত মিঃ ডার্সি এবং প্রাণবন্ত এলিজাবেথ বেনেটের গল্প, যারা সামাজিক শ্রেণি ও নিজেদের অহংকারকে জয় করে অবশেষে প্রেমে পড়ে।"
+
   - title: Sense and Sensibility
     author: Jane Austen
     published_date: 1811

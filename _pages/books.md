@@ -11,6 +11,17 @@ nav_order: 8 # Or any order you prefer
 # The 'category' field is used to create the sections.
 # -----------------------------------------------------------------
 reading_list:
+  - title: A Tale of Two Cities
+    author: Charles Dickens
+    published_date: 1859
+    category: English Literature
+    image: /assets/pdf/books/book_a_tale_of_two_cities.png
+    youtube_id: "lUZIOj24_OI" # LibriVox Full Audiobook
+    gdrive_id: "1eewR-8mgtvjAuJvOuOxbO5hQFV4RIuOt"
+    tags: ["Historical Fiction", "Classic Novel"]
+    summary: "Set against the backdrop of the French Revolution, this novel follows the lives of Charles Darnay and Sydney Carton. As both men fall for the gentle Lucie Manette, their intertwined fates lead to a profound and unforgettable story of love, sacrifice, and redemption in London and Paris."
+    summary_bangla: "ফরাসি বিপ্লবের উত্তাল সময়ে লন্ডন ও প্যারিস—এই দুই শহরের পটভূমিতে লেখা প্রেম, আত্মত্যাগ এবং মুক্তির এক অবিস্মরণীয় কাহিনী।"
+
   - title: Beauty and the Beast
     author: Gabrielle-Suzanne Barbot de Villeneuve
     published_date: 1740

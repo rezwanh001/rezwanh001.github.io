@@ -11,38 +11,115 @@ nav_order: 8 # Or any order you prefer
 # The 'category' field is used to create the sections.
 # -----------------------------------------------------------------
 reading_list:
+  - title: The Merchant of Venice
+    author: William Shakespeare
+    published_date: "c. 1596-1598"
+    category: English Literature
+    image: /assets/pdf/books/book_merchant_of_venice.png
+    youtube_id: "8aZmNTxp7P4"
+    gdrive_id: ""
+    tags: ["Play", "Tragicomedy"]
+    summary: "A tale of love, prejudice, and justice where Bassanio's quest to win the hand of Portia leads his friend Antonio to make a dangerous bargain with the moneylender Shylock."
+    summary_bangla: "প্রেম, প্রতিশোধ এবং ন্যায়বিচারের এক জটিল কাহিনী, যেখানে এক পাউন্ড মাংসের চুক্তিকে ঘিরে নাটকীয়তা আবর্তিত হয়।"
+
+  - title: Hamlet
+    author: William Shakespeare
+    published_date: "c. 1599-1601"
+    category: English Literature
+    image: /assets/pdf/books/book_hamlet.png
+    youtube_id: "p8wEiWrIx6w"
+    gdrive_id: ""
+    tags: ["Play", "Tragedy"]
+    summary: "Prince Hamlet of Denmark seeks revenge on his uncle Claudius, who has murdered his father and married his mother, Gertrude, driving him to the edge of madness and moral conflict."
+    summary_bangla: "প্রতিশোধের দ্বন্দ্বে জর্জরিত ডেনমার্কের রাজপুত্র হ্যামলেটের গল্প, যা অস্তিত্ব, পাগলামি এবং নৈতিকতার প্রশ্ন তোলে।"
+
+  - title: Othello
+    author: William Shakespeare
+    published_date: "c. 1603"
+    category: English Literature
+    image: /assets/pdf/books/book_othello.png
+    youtube_id: "lUiSZ5yIeh0"
+    gdrive_id: ""
+    tags: ["Play", "Tragedy"]
+    summary: "The tragic downfall of the Moorish general Othello, whose mind is poisoned by the master manipulator Iago, leading him to doubt the fidelity of his beloved wife, Desdemona."
+    summary_bangla: "ইয়াগোর ষড়যন্ত্রে ঈর্ষার আগুনে পুড়ে যাওয়া মহান সেনাপতি ওথেলো এবং তার স্ত্রী ডেসডিমোনার করুণ পরিণতি।"
+
+  - title: Macbeth
+    author: William Shakespeare
+    published_date: "c. 1606"
+    category: English Literature
+    image: /assets/pdf/books/book_macbeth.png
+    youtube_id: "xx4CtCXwTZQ"
+    gdrive_id: ""
+    tags: ["Play", "Tragedy"]
+    summary: "A story of unchecked ambition, where the Scottish general Macbeth, spurred by a prophecy and his wife Lady Macbeth, murders his way to the throne, only to be consumed by guilt and paranoia."
+    summary_bangla: "ক্ষমতার লোভে এক স্কটিশ জেনারেল ম্যাকবেথের নৈতিক পতনের এক অন্ধকার এবং রক্তক্ষয়ী কাহিনী।"
+
   - title: The Picture of Dorian Gray
     author: Oscar Wilde
     published_date: 1890
     category: English Literature
     image: /assets/pdf/books/book_dorian_gray.png
     youtube_id: "RD31qRg8XY4"
-    gdrive_id: ""
+    gdrive_id: "1mlQbQ0Lj78UJt35yfVKyJeDBdjsfh8ah"
     tags: ["Gothic Fiction", "Philosophical Novel"]
     summary: "The story of the handsome Dorian Gray, who sells his soul for eternal youth. As he indulges in a life of amoral pleasure, his magical portrait, painted by Basil Hallward and influenced by Lord Henry Wotton, bears the scars of his sins and ages in his place."
     summary_bangla: "এক যুবকের গল্প যে তার আত্মার বিনিময়ে চিরযৌবন লাভ করে। তার প্রতিকৃতিতে বয়সের ছাপ পড়ে, আর সে নিজে ডুবে যায় নৈতিক অবক্ষয়ের গভীরে।"
 
-  - title: White Nights
-    author: Fyodor Dostoevsky
-    published_date: 1848
-    category: Russian Literature
-    image: /assets/pdf/books/book_white_nights.png
-    youtube_id: "yY7YngQE7gI"
+  - title: Jane Eyre
+    author: Charlotte Brontë
+    published_date: 1847
+    category: English Literature
+    image: /assets/pdf/books/book_jane_eyre.png
+    youtube_id: "dgELvs7uM94"
     gdrive_id: ""
-    tags: ["Short Story", "Romance"]
-    summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
-    summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
+    tags: ["Gothic Fiction", "Classic Novel"]
+    summary: "The story of the orphaned Jane Eyre, who overcomes a harsh childhood to become a governess at Thornfield Hall. There, she falls for her mysterious employer, Mr. Rochester, but uncovers a terrible secret that tests her love, morality, and quest for independence."
+    summary_bangla: "এক অনাথ মেয়ের ভালোবাসা, স্বাধীনতা এবং আত্মমর্যাদা খুঁজে পাওয়ার এক শক্তিশালী ও কালজয়ী কাহিনী।"
     
   - title: Pride and Prejudice
     author: Jane Austen
     published_date: 1813
-    category: English Literature
+    category: British Literature
     image: /assets/pdf/books/book_pride_and_prejudice.png
     youtube_id: "GvGb2G1Ft5c"
     gdrive_id: ""
     tags: ["Regency Romance", "Classic Novel"]
     summary: "The classic tale of the spirited Elizabeth Bennet and the proud Mr. Darcy. Through a series of witty encounters and misunderstandings, they must overcome their own pride and prejudices to find love and understanding in the rigid society of Regency England."
     summary_bangla: "গর্বিত মিঃ ডার্সি এবং প্রাণবন্ত এলিজাবেথ বেনেটের গল্প, যারা সামাজিক শ্রেণি ও নিজেদের অহংকারকে জয় করে অবশেষে প্রেমে পড়ে।"
+
+  - title: Sense and Sensibility
+    author: Jane Austen
+    published_date: 1811
+    category: British Literature
+    image: /assets/pdf/books/book_sense_and_sensibility.png
+    youtube_id: "cBARWMXUsNM"
+    gdrive_id: "18eaOO9hVfbj4fmH7xQn3ixp-x_neDOlk"
+    tags: ["Regency Romance", "Satire"]
+    summary: "The story of the Dashwood sisters, Elinor and Marianne. One guided by reason and the other by passion, they navigate love, heartbreak, and fortune in Regency society."
+    summary_bangla: "দুই বোন এলিনর ও ম্যারিয়েন—একজন যুক্তিবাদী, অন্যজন আবেগপ্রবণ। তাদের প্রেম ও জীবনের নানা প্রতিকূলতার মধ্য দিয়ে পথচলার কাহিনী।"
+
+  - title: Far from the Madding Crowd
+    author: Thomas Hardy
+    published_date: 1874
+    category: British Literature
+    image: /assets/pdf/books/book_far_from_madding.png
+    youtube_id: "6TzE0LNzO64"
+    gdrive_id: "1_1Lz1nOJYGnuHiQa6F6suGisIpN9wNdz"
+    tags: ["Classic Novel", "Romance"]
+    summary: "Follows the fiercely independent Bathsheba Everdene as she navigates the affections of three distinct suitors: the loyal shepherd Gabriel Oak, the obsessive farmer William Boldwood, and the dashing Sergeant Troy."
+    summary_bangla: "এক স্বাধীনচেতা নারী বাথশেবা এভারডিন ও তার তিন প্রেমিকের গল্প, যা গ্রামীণ ইংল্যান্ডের পটভূমিতে প্রেম, ত্যাগ এবং নিয়তির অন্বেষণ করে।"
+
+  - title: Wuthering Heights
+    author: Emily Brontë
+    published_date: 1847
+    category: British Literature
+    image: /assets/pdf/books/book_wuthering_heights.png
+    youtube_id: "WuadUccSk7Q"
+    gdrive_id: "1eW2K1Mq6OgY39yxU1lRFyj9kMbYBZQFX"
+    tags: ["Gothic Fiction", "Tragedy"]
+    summary: "A story of the turbulent and destructive love between Catherine Earnshaw and the enigmatic Heathcliff, and how its unresolved passion ultimately destroys them and many around them."
+    summary_bangla: "ক্যাথরিন ও হিথক্লিফের তীব্র, ধ্বংসাত্মক প্রেমের এক মর্মস্পর্শী কাহিনী, যা প্রজন্মের পর প্রজন্ম ধরে প্রতিশোধের আগুন জ্বেলে রাখে।"
 
   - title: The Adventures of Huckleberry Finn
     author: Mark Twain
@@ -55,16 +132,17 @@ reading_list:
     summary: "The young outcast Huckleberry Finn and the runaway slave Jim journey down the Mississippi River, seeking freedom in a groundbreaking tale of friendship and morality."
     summary_bangla: "হাকলবেরি ফিন ও জিমের মুক্তির সন্ধানে মিসিসিপি নদীতে ভেসে যাওয়া, যা বন্ধুত্ব, সমাজ এবং নৈতিকতার এক অবিস্মরণীয় পাঠ দেয়।"
 
-  - title: Jane Eyre
-    author: Charlotte Brontë
-    published_date: 1847
-    category: English Literature
-    image: /assets/pdf/books/book_jane_eyre.png
-    youtube_id: "dgELvs7uM94"
+  - title: White Nights
+    author: Fyodor Dostoevsky
+    published_date: 1848
+    category: Russian Literature
+    image: /assets/pdf/books/book_white_nights.png
+    youtube_id: "yY7YngQE7gI"
     gdrive_id: ""
-    tags: ["Gothic Fiction", "Classic Novel"]
-    summary: "The story of the orphaned Jane Eyre, who overcomes a harsh childhood to become a governess at Thornfield Hall. There, she falls for her mysterious employer, Mr. Rochester, but uncovers a terrible secret that tests her love, morality, and quest for independence."
-    summary_bangla: "এক অনাথ মেয়ের ভালোবাসা, স্বাধীনতা এবং আত্মমর্যাদা খুঁজে পাওয়ার এক শক্তিশালী ও কালজয়ী কাহিনী।"
+    tags: ["Short Story", "Romance"]
+    summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
+    summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
+
 ---
 
 <!-- This part of the file is the main content that will be displayed on the page -->

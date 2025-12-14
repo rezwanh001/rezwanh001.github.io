@@ -108,6 +108,15 @@ reading_list:
     tags: ["Play", "Tragedy", "English Literature"]
     summary: "A story of unchecked ambition, where the Scottish general Macbeth, spurred by a prophecy and his wife Lady Macbeth, murders his way to the throne, only to be consumed by guilt and paranoia."
     summary_bangla: "ক্ষমতার লোভে এক স্কটিশ জেনারেল ম্যাকবেথের নৈতিক পতনের এক অন্ধকার এবং রক্তক্ষয়ী কাহিনী।"
+
+  - title: Jane Eyre
+    author: Charlotte Brontë
+    published_date: 1847
+    image: /assets/pdf/books/book_jane_eyre.png
+    youtube_id: "dgELvs7uM94" # LibriVox Full Audiobook
+    tags: ["Gothic Fiction", "British Literature", "Classic Novel"]
+    summary: "The story of the orphaned Jane Eyre, who overcomes a harsh childhood to become a governess at Thornfield Hall. There, she falls for her mysterious employer, Mr. Rochester, but uncovers a terrible secret that tests her love, morality, and quest for independence."
+    summary_bangla: "এক অনাথ মেয়ের ভালোবাসা, স্বাধীনতা এবং আত্মমর্যাদা খুঁজে পাওয়ার এক শক্তিশালী ও কালজয়ী কাহিনী।"
 ---
 
 <!-- This part of the file is the main content that will be displayed on the page -->

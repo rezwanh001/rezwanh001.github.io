@@ -10,6 +10,18 @@ nav_order: 8 # Or any order you prefer
 # Reading List Data
 # -----------------------------------------------------------------
 reading_list:
+  - title: The Thirty-Nine Steps
+    author: John Buchan
+    published_date: 1915
+    category: English Literature
+    rating: 5
+    image: /assets/pdf/books/book_the_thirty_nine_steps.png
+    youtube_id: "bm84k086h_E" # LibriVox Full Audiobook
+    gdrive_id: "1AzsuV_q92spbjbR7zRlWSBDWGmUsPGQt"
+    tags: ["Spy Fiction", "Adventure", "Thriller"]
+    summary: "The story of Richard Hannay, an ordinary man who, after a spy is murdered in his flat, goes on the run across the Scottish moors. Pursued by both the police for a crime he didn't commit and a ruthless ring of German spies, Hannay must uncover a plot that threatens Britain itself."
+    summary_bangla: "রিচার্ড হ্যানে, এক সাধারণ মানুষ, লন্ডনে এক গুপ্তচর খুন হওয়ার পর এক আন্তর্জাতিক ষড়যন্ত্রের জালে জড়িয়ে পড়ে এবং স্কটল্যান্ডের বিপদসংকুল পথে পালিয়ে বেড়ায়।"
+
   - title: A Tale of Two Cities
     author: Charles Dickens
     published_date: 1859

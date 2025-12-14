@@ -11,6 +11,17 @@ nav_order: 8 # Or any order you prefer
 # The 'category' field is used to create the sections.
 # -----------------------------------------------------------------
 reading_list:
+  - title: Beauty and the Beast
+    author: Gabrielle-Suzanne Barbot de Villeneuve
+    published_date: 1740
+    category: French Literature
+    image: /assets/pdf/books/book_beauty_and_the_beast.png
+    youtube_id: "AwrT7dNuFfc" # LibriVox Full Audiobook
+    gdrive_id: "17VmC8QpHwBqIKcqqkNsGJ79lr6GmdpKl"
+    tags: ["Fairy Tale", "Romance", "Fantasy"]
+    summary: "The original, sprawling tale of a beautiful young woman named Belle who takes her father's place as a prisoner in a cursed castle. She must learn to see past the monstrous exterior of her captor, the Beast, to discover the enchanted prince within."
+    summary_bangla: "এক সুন্দরী তরুণী বেল এবং এক অভিশপ্ত রাজকুমারের গল্প। বেল তার বাবার পরিবর্তে এক প্রাসাদে বন্দী হয় এবং সেখানে সে বাহ্যিক রূপের আড়ালের প্রকৃত সৌন্দর্যকে আবিষ্কার করে।"
+
   - title: The Merchant of Venice
     author: William Shakespeare
     published_date: "c. 1596-1598"

@@ -17,7 +17,7 @@ reading_list:
     category: English Literature
     image: /assets/pdf/books/book_merchant_of_venice.png
     youtube_id: "8aZmNTxp7P4"
-    gdrive_id: ""
+    gdrive_id: "1v_w5M_01tUMursfqa1FM56KMZ0pTOOkz"
     tags: ["Play", "Tragicomedy"]
     summary: "A tale of love, prejudice, and justice where Bassanio's quest to win the hand of Portia leads his friend Antonio to make a dangerous bargain with the moneylender Shylock."
     summary_bangla: "প্রেম, প্রতিশোধ এবং ন্যায়বিচারের এক জটিল কাহিনী, যেখানে এক পাউন্ড মাংসের চুক্তিকে ঘিরে নাটকীয়তা আবর্তিত হয়।"
@@ -28,7 +28,7 @@ reading_list:
     category: English Literature
     image: /assets/pdf/books/book_hamlet.png
     youtube_id: "p8wEiWrIx6w"
-    gdrive_id: ""
+    gdrive_id: "15I84cO-ypM466RdJhgci6TSxdPdwWcRi"
     tags: ["Play", "Tragedy"]
     summary: "Prince Hamlet of Denmark seeks revenge on his uncle Claudius, who has murdered his father and married his mother, Gertrude, driving him to the edge of madness and moral conflict."
     summary_bangla: "প্রতিশোধের দ্বন্দ্বে জর্জরিত ডেনমার্কের রাজপুত্র হ্যামলেটের গল্প, যা অস্তিত্ব, পাগলামি এবং নৈতিকতার প্রশ্ন তোলে।"
@@ -39,7 +39,7 @@ reading_list:
     category: English Literature
     image: /assets/pdf/books/book_othello.png
     youtube_id: "lUiSZ5yIeh0"
-    gdrive_id: ""
+    gdrive_id: "1-nG0nF743Of8sQ2XCp-bcFFM-gq6EROs"
     tags: ["Play", "Tragedy"]
     summary: "The tragic downfall of the Moorish general Othello, whose mind is poisoned by the master manipulator Iago, leading him to doubt the fidelity of his beloved wife, Desdemona."
     summary_bangla: "ইয়াগোর ষড়যন্ত্রে ঈর্ষার আগুনে পুড়ে যাওয়া মহান সেনাপতি ওথেলো এবং তার স্ত্রী ডেসডিমোনার করুণ পরিণতি।"
@@ -50,7 +50,7 @@ reading_list:
     category: English Literature
     image: /assets/pdf/books/book_macbeth.png
     youtube_id: "xx4CtCXwTZQ"
-    gdrive_id: ""
+    gdrive_id: "1Kab4KlS6uvHMuB1FPGxoh38XNYU_kadX"
     tags: ["Play", "Tragedy"]
     summary: "A story of unchecked ambition, where the Scottish general Macbeth, spurred by a prophecy and his wife Lady Macbeth, murders his way to the throne, only to be consumed by guilt and paranoia."
     summary_bangla: "ক্ষমতার লোভে এক স্কটিশ জেনারেল ম্যাকবেথের নৈতিক পতনের এক অন্ধকার এবং রক্তক্ষয়ী কাহিনী।"
@@ -72,7 +72,7 @@ reading_list:
     category: English Literature
     image: /assets/pdf/books/book_jane_eyre.png
     youtube_id: "dgELvs7uM94"
-    gdrive_id: ""
+    gdrive_id: "1e7RwJbX9J-VxZsE3leiqyNwoZjmQrNDW"
     tags: ["Gothic Fiction", "Classic Novel"]
     summary: "The story of the orphaned Jane Eyre, who overcomes a harsh childhood to become a governess at Thornfield Hall. There, she falls for her mysterious employer, Mr. Rochester, but uncovers a terrible secret that tests her love, morality, and quest for independence."
     summary_bangla: "এক অনাথ মেয়ের ভালোবাসা, স্বাধীনতা এবং আত্মমর্যাদা খুঁজে পাওয়ার এক শক্তিশালী ও কালজয়ী কাহিনী।"
@@ -83,7 +83,7 @@ reading_list:
     category: British Literature
     image: /assets/pdf/books/book_pride_and_prejudice.png
     youtube_id: "GvGb2G1Ft5c"
-    gdrive_id: ""
+    gdrive_id: "1swOj5Wm-LIR5ntmFQrjPBg4mP2RzntaF"
     tags: ["Regency Romance", "Classic Novel"]
     summary: "The classic tale of the spirited Elizabeth Bennet and the proud Mr. Darcy. Through a series of witty encounters and misunderstandings, they must overcome their own pride and prejudices to find love and understanding in the rigid society of Regency England."
     summary_bangla: "গর্বিত মিঃ ডার্সি এবং প্রাণবন্ত এলিজাবেথ বেনেটের গল্প, যারা সামাজিক শ্রেণি ও নিজেদের অহংকারকে জয় করে অবশেষে প্রেমে পড়ে।"
@@ -138,7 +138,7 @@ reading_list:
     category: Russian Literature
     image: /assets/pdf/books/book_white_nights.png
     youtube_id: "yY7YngQE7gI"
-    gdrive_id: ""
+    gdrive_id: "1g3_XNlIGEEQ_HghunkiMvqBvVFf6XlGt"
     tags: ["Short Story", "Romance"]
     summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
     summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"

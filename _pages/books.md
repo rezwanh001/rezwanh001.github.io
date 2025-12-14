@@ -8,15 +8,15 @@ nav_order: 8 # Or any order you prefer
 
 # -----------------------------------------------------------------
 # Reading List Data
-# The 'category' field is used to create the sections.
 # -----------------------------------------------------------------
 reading_list:
   - title: A Tale of Two Cities
     author: Charles Dickens
     published_date: 1859
     category: English Literature
+    rating: 5
     image: /assets/pdf/books/book_a_tale_of_two_cities.png
-    youtube_id: "lUZIOj24_OI" # LibriVox Full Audiobook
+    youtube_id: "lUZIOj24_OI"
     gdrive_id: "1eewR-8mgtvjAuJvOuOxbO5hQFV4RIuOt"
     tags: ["Historical Fiction", "Classic Novel"]
     summary: "Set against the backdrop of the French Revolution, this novel follows the lives of Charles Darnay and Sydney Carton. As both men fall for the gentle Lucie Manette, their intertwined fates lead to a profound and unforgettable story of love, sacrifice, and redemption in London and Paris."
@@ -26,8 +26,9 @@ reading_list:
     author: Gabrielle-Suzanne Barbot de Villeneuve
     published_date: 1740
     category: French Literature
+    rating: 4
     image: /assets/pdf/books/book_beauty_and_the_beast.png
-    youtube_id: "AwrT7dNuFfc" # LibriVox Full Audiobook
+    youtube_id: "AwrT7dNuFfc"
     gdrive_id: "17VmC8QpHwBqIKcqqkNsGJ79lr6GmdpKl"
     tags: ["Fairy Tale", "Romance", "Fantasy"]
     summary: "The original, sprawling tale of a beautiful young woman named Belle who takes her father's place as a prisoner in a cursed castle. She must learn to see past the monstrous exterior of her captor, the Beast, to discover the enchanted prince within."
@@ -37,6 +38,7 @@ reading_list:
     author: William Shakespeare
     published_date: "c. 1596-1598"
     category: English Literature
+    rating: 4
     image: /assets/pdf/books/book_merchant_of_venice.png
     youtube_id: "8aZmNTxp7P4"
     gdrive_id: "1v_w5M_01tUMursfqa1FM56KMZ0pTOOkz"
@@ -48,6 +50,7 @@ reading_list:
     author: William Shakespeare
     published_date: "c. 1599-1601"
     category: English Literature
+    rating: 5
     image: /assets/pdf/books/book_hamlet.png
     youtube_id: "p8wEiWrIx6w"
     gdrive_id: "15I84cO-ypM466RdJhgci6TSxdPdwWcRi"
@@ -59,6 +62,7 @@ reading_list:
     author: William Shakespeare
     published_date: "c. 1603"
     category: English Literature
+    rating: 5
     image: /assets/pdf/books/book_othello.png
     youtube_id: "lUiSZ5yIeh0"
     gdrive_id: "1-nG0nF743Of8sQ2XCp-bcFFM-gq6EROs"
@@ -70,6 +74,7 @@ reading_list:
     author: William Shakespeare
     published_date: "c. 1606"
     category: English Literature
+    rating: 4
     image: /assets/pdf/books/book_macbeth.png
     youtube_id: "xx4CtCXwTZQ"
     gdrive_id: "1Kab4KlS6uvHMuB1FPGxoh38XNYU_kadX"
@@ -81,6 +86,7 @@ reading_list:
     author: Oscar Wilde
     published_date: 1890
     category: English Literature
+    rating: 5
     image: /assets/pdf/books/book_dorian_gray.png
     youtube_id: "RD31qRg8XY4"
     gdrive_id: "1mlQbQ0Lj78UJt35yfVKyJeDBdjsfh8ah"
@@ -92,6 +98,7 @@ reading_list:
     author: Charlotte Brontë
     published_date: 1847
     category: English Literature
+    rating: 4
     image: /assets/pdf/books/book_jane_eyre.png
     youtube_id: "dgELvs7uM94"
     gdrive_id: "1e7RwJbX9J-VxZsE3leiqyNwoZjmQrNDW"
@@ -102,7 +109,8 @@ reading_list:
   - title: Pride and Prejudice
     author: Jane Austen
     published_date: 1813
-    category: British Literature
+    category: English Literature
+    rating: 5
     image: /assets/pdf/books/book_pride_and_prejudice.png
     youtube_id: "GvGb2G1Ft5c"
     gdrive_id: "1swOj5Wm-LIR5ntmFQrjPBg4mP2RzntaF"
@@ -113,7 +121,8 @@ reading_list:
   - title: Sense and Sensibility
     author: Jane Austen
     published_date: 1811
-    category: British Literature
+    category: English Literature
+    rating: 4
     image: /assets/pdf/books/book_sense_and_sensibility.png
     youtube_id: "cBARWMXUsNM"
     gdrive_id: "18eaOO9hVfbj4fmH7xQn3ixp-x_neDOlk"
@@ -124,7 +133,8 @@ reading_list:
   - title: Far from the Madding Crowd
     author: Thomas Hardy
     published_date: 1874
-    category: British Literature
+    category: English Literature
+    rating: 4
     image: /assets/pdf/books/book_far_from_madding.png
     youtube_id: "6TzE0LNzO64"
     gdrive_id: "1_1Lz1nOJYGnuHiQa6F6suGisIpN9wNdz"
@@ -135,7 +145,8 @@ reading_list:
   - title: Wuthering Heights
     author: Emily Brontë
     published_date: 1847
-    category: British Literature
+    category: English Literature
+    rating: 5
     image: /assets/pdf/books/book_wuthering_heights.png
     youtube_id: "WuadUccSk7Q"
     gdrive_id: "1eW2K1Mq6OgY39yxU1lRFyj9kMbYBZQFX"
@@ -147,6 +158,7 @@ reading_list:
     author: Mark Twain
     published_date: 1884
     category: American Literature
+    rating: 4
     image: /assets/pdf/books/book_huckleberry_finn.png
     youtube_id: "Qhm95D7tdDw"
     gdrive_id: "1kuo2Q4Kw-nLFs5FMDWabPtAG2O4hQD3W"
@@ -158,6 +170,7 @@ reading_list:
     author: Fyodor Dostoevsky
     published_date: 1848
     category: Russian Literature
+    rating: 5
     image: /assets/pdf/books/book_white_nights.png
     youtube_id: "yY7YngQE7gI"
     gdrive_id: "1g3_XNlIGEEQ_HghunkiMvqBvVFf6XlGt"
@@ -174,7 +187,8 @@ reading_list:
 </div>
 
 <!-- =================== DYNAMIC GROUPING LOGIC ===================== -->
-{% assign grouped_books = page.reading_list | group_by: "category" %}
+{% assign sorted_list = page.reading_list | sort: "category" %}
+{% assign grouped_books = sorted_list | group_by: "category" %}
 
 {% for group in grouped_books %}
   <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
@@ -187,6 +201,18 @@ reading_list:
           <div class="card-body d-flex flex-column">
             <h5 class="card-title font-weight-bold">{{ book.title }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
+            
+            <!-- Star Rating Section -->
+            <div class="star-rating mb-2">
+              {% for i in (1..5) %}
+                {% if i <= book.rating %}
+                  <i class="fas fa-star"></i>
+                {% else %}
+                  <i class="far fa-star"></i>
+                {% endif %}
+              {% endfor %}
+            </div>
+
             <div class="tags-container mb-3">
               <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
               {% for tag in book.tags %}

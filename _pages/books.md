@@ -10,6 +10,54 @@ nav_order: 8 # Or any order you prefer
 # Reading List Data
 # -----------------------------------------------------------------
 reading_list:
+  - title: The Three Musketeers
+    author: Alexandre Dumas
+    published_date: 1844
+    category: French Literature
+    rating: 5
+    image: /assets/pdf/books/book_the_three_musketeers.png
+    youtube_id: "H63ZRNax4uU" # LibriVox Full Audiobook
+    gdrive_id: "145YDJ2qhXsBkP7EkON-mni-1kKCBmme0"
+    tags: ["Adventure", "Historical Fiction", "Swashbuckler"]
+    summary: "The story follows the young d'Artagnan as he leaves home to join the Musketeers of the Guard. He befriends the three most formidable musketeers of the age—Athos, Porthos, and Aramis—and together they become embroiled in the affairs of the state and court, living by the motto 'all for one, one for all.'"
+    summary_bangla: "তরুণ ডি'আর্টানান এবং তার তিন বন্ধু, তিন মাস্কেটিয়ার্স—অ্যাথোস, পোরথোস এবং আরামিসের বন্ধুত্ব, সম্মান এবং রোমাঞ্চকর অভিযানের গল্প।"
+
+  - title: The Man in the Iron Mask
+    author: Alexandre Dumas
+    published_date: 1847
+    category: French Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_man_in_the_iron_mask.png
+    youtube_id: "_Sse0iSsthY" # LibriVox Full Audiobook
+    gdrive_id: "1SpbmSLzasdBNdhc8kvDv4lNU5D_FYYll"
+    tags: ["Adventure", "Historical Fiction", "D'Artagnan Romances"]
+    summary: "The final adventure of the musketeers. As d'Artagnan serves King Louis XIV, Aramis discovers a terrible state secret: the king has a twin brother, a prisoner hidden away in the Bastille. This sets the stage for a daring plot that will test the loyalties of Athos, Porthos, Aramis, and d'Artagnan one last time."
+    summary_bangla: "মাস্কেটিয়ার্সদের শেষ অভিযান, যেখানে রাজা চতুর্দশ লুই-এর যমজ ভাই, লৌহ মুখোশে বন্দী এক রহস্যময় ব্যক্তির পরিচয় উন্মোচিত হয় এবং আনুগত্যের এক চূড়ান্ত পরীক্ষা নেয়।"
+
+  - title: The Count of Monte Cristo
+    author: Alexandre Dumas
+    published_date: 1844
+    category: French Literature
+    rating: 5
+    image: /assets/pdf/books/book_the_count_of_monte_cristo.png
+    youtube_id: "_HI-rreKmSY" # LibriVox Full Audiobook
+    gdrive_id: "1rXcXl7YgyWWcy6AZpD9yKxwIr3koOiyj"
+    tags: ["Adventure", "Historical Fiction", "Revenge"]
+    summary: "The story of Edmond Dantès, a young sailor wrongfully imprisoned for life without trial. After a miraculous escape, he acquires a vast fortune and returns to Paris as the mysterious and sophisticated Count of Monte Cristo to exact a slow, meticulous revenge on the three men who betrayed him."
+    summary_bangla: "এক তরুণ নাবিক, এডমন্ড দান্তেসের অন্যায়ভাবে কারারুদ্ধ হওয়া এবং পরবর্তীতে মন্টে ক্রিস্টোর রহস্যময় কাউন্ট হিসেবে ফিরে এসে তার শত্রুদের উপর প্রতিশোধ নেওয়ার এক মহাকাব্যিক গল্প।"
+
+  - title: "A Murder is Announced (A Miss Marple Mystery)"
+    author: Agatha Christie
+    published_date: 1950
+    category: English Literature
+    rating: 5
+    image: /assets/pdf/books/book_a_murder_is_announced.png
+    youtube_id: "CPSqxN0jfXI" # Full Audiobook
+    gdrive_id: "1BpIFFq2YQeW1OhBV3dbPVedYdI11mjy7"
+    tags: ["Detective Fiction", "Mystery", "Miss Marple Series"]
+    summary: "In the quiet village of Chipping Cleghorn, a strange notice appears in the local paper: 'A murder is announced and will take place on Friday, October 29th, at Little Paddocks at 6:30 p.m.' When a real murder occurs at the advertised time, the brilliant Miss Marple must unravel a complex web of hidden identities and past secrets."
+    summary_bangla: "স্থানীয় সংবাদপত্রে একটি খুনের বিজ্ঞাপন দেওয়া হয়, যা সবাই একটি খেলা বলে মনে করে। কিন্তু যখন সত্যি সত্যি খুন হয়, তখন মিস মার্পলকে এই রহস্য সমাধান করতে হয়।"
+
   - title: The Thirty-Nine Steps
     author: John Buchan
     published_date: 1915
@@ -50,7 +98,7 @@ reading_list:
     author: William Shakespeare
     published_date: "c. 1596-1598"
     category: English Literature
-    rating: 4
+    rating: 5
     image: /assets/pdf/books/book_merchant_of_venice.png
     youtube_id: "8aZmNTxp7P4"
     gdrive_id: "1v_w5M_01tUMursfqa1FM56KMZ0pTOOkz"

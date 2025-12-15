@@ -94,6 +94,18 @@ reading_list:
     summary: "The original, sprawling tale of a beautiful young woman named Belle who takes her father's place as a prisoner in a cursed castle. She must learn to see past the monstrous exterior of her captor, the Beast, to discover the enchanted prince within."
     summary_bangla: "এক সুন্দরী তরুণী বেল এবং এক অভিশপ্ত রাজকুমারের গল্প। বেল তার বাবার পরিবর্তে এক প্রাসাদে বন্দী হয় এবং সেখানে সে বাহ্যিক রূপের আড়ালের প্রকৃত সৌন্দর্যকে আবিষ্কার করে।"
 
+  - title: Romeo and Juliet
+    author: William Shakespeare
+    published_date: "c. 1597"
+    category: English Literature
+    rating: 5
+    image: /assets/pdf/books/book_romeo_and_juliet.png
+    youtube_id: "3js0HV1SZKE" # LibriVox Full Audiobook
+    gdrive_id: "1NB34bcVHD2AMaF3Mmqdmv6By6bsRvSwc"
+    tags: ["Play", "Tragedy", "Romance"]
+    summary: "The timeless story of two young lovers, Romeo Montague and Juliet Capulet, whose love is forbidden by a bitter feud between their families in Verona. Their passionate romance spirals towards a heartbreaking conclusion, serving as a powerful testament to the destructive nature of hate."
+    summary_bangla: "দুটি শত্রু পরিবারের সন্তান রোমিও এবং জুলিয়েটের করুণ প্রেমের গল্প, যা তাদের নিয়তিকে এক মর্মান্তিক পরিণতির দিকে ঠেলে দেয়।"
+
   - title: The Merchant of Venice
     author: William Shakespeare
     published_date: "c. 1596-1598"
@@ -214,6 +226,18 @@ reading_list:
     summary: "A story of the turbulent and destructive love between Catherine Earnshaw and the enigmatic Heathcliff, and how its unresolved passion ultimately destroys them and many around them."
     summary_bangla: "ক্যাথরিন ও হিথক্লিফের তীব্র, ধ্বংসাত্মক প্রেমের এক মর্মস্পর্শী কাহিনী, যা প্রজন্মের পর প্রজন্ম ধরে প্রতিশোধের আগুন জ্বেলে রাখে।"
 
+  - title: "Ben-Hur: A Tale of the Christ"
+    author: Lew Wallace
+    published_date: 1880
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_ben_hur.png
+    youtube_id: "0LOzGanemQU" # LibriVox Full Audiobook
+    gdrive_id: "1MBMOIspgbz86wbtFwrR5PmO_fMysyE66"
+    tags: ["Historical Fiction", "Religious Fiction", "Adventure"]
+    summary: "The epic story of Judah Ben-Hur, a Jewish prince who is betrayed by his Roman friend Messala and condemned to a life of slavery. His journey of survival, revenge, and eventual redemption is set against the backdrop of the life and crucifixion of Jesus Christ, culminating in a legendary chariot race."
+    summary_bangla: "এক ইহুদি রাজপুত্র, জুডাহ বেন-হুরের গল্প, যে তার বন্ধুর বিশ্বাসঘাতকতার শিকার হয়ে দাসে পরিণত হয়। প্রতিশোধ এবং বিশ্বাসের এই মহাকাব্যিক কাহিনীতে তার উত্থান-পতনের চিত্র ফুটে উঠেছে।"
+
   - title: The Adventures of Huckleberry Finn
     author: Mark Twain
     published_date: 1884
@@ -237,6 +261,18 @@ reading_list:
     tags: ["Short Story", "Romance"]
     summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
     summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
+
+  - title: Duranta Eagle
+    author: Dinesh Chandra Chattopadhyay
+    published_date: 1978
+    category: Bengali Literature
+    rating: 3
+    image: /assets/pdf/books/book_duranta_eagle.png
+    youtube_id: "qYpIEDPRckM" # Full Audiobook
+    gdrive_id: "1vBSsBrL5i1LfICGY-L7SP18f5yjjPKiN"
+    tags: ["Adventure", "Young Adult", "Kishore Sahitya"]
+    summary: "The thrilling adventure of a young boy named Bacchu and his friend Tridib in the rugged Chota Nagpur plateau. They get entangled in a mystery involving a secret airplane named 'Duranta Eagle' and a dangerous gang, leading to a tale of courage and suspense."
+    summary_bangla: "বাচ্ছু আর ত্রিদিবের রোমাঞ্চকর অভিযানের গল্প, যেখানে এক রহস্যময় বিমান 'দুরন্ত ঈগল' এবং একদল অপরাধীকে ঘিরে ছোটনাগপুরের মালভূমিতে একের পর এক বিপদ ঘনিয়ে আসে।"
 
 ---
 

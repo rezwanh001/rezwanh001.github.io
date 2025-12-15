@@ -226,6 +226,18 @@ reading_list:
     summary: "A story of the turbulent and destructive love between Catherine Earnshaw and the enigmatic Heathcliff, and how its unresolved passion ultimately destroys them and many around them."
     summary_bangla: "ক্যাথরিন ও হিথক্লিফের তীব্র, ধ্বংসাত্মক প্রেমের এক মর্মস্পর্শী কাহিনী, যা প্রজন্মের পর প্রজন্ম ধরে প্রতিশোধের আগুন জ্বেলে রাখে।"
 
+  - title: The Prophet
+    author: Kahlil Gibran
+    published_date: 1923
+    category: American Literature
+    rating: 5
+    image: /assets/pdf/books/book_the_prophet.png
+    youtube_id: "SRz9iDK5XLQ" # LibriVox Full Audiobook
+    gdrive_id: "1KGz4hPqAuXac1vBJdbnA46rWxkp8zlXT"
+    tags: ["Philosophy", "Poetry", "Spiritual"]
+    summary: "The story of the prophet Almustafa who, before leaving the city of Orphalese, shares his profound wisdom with the people. He delivers a series of prose poetry sermons on essential life topics such as love, marriage, work, joy, sorrow, and freedom."
+    summary_bangla: "আলমুস্তাফা নামের এক প্রফেট অরফালিস শহর ছেড়ে যাওয়ার আগে সেখানকার মানুষদের উদ্দেশ্যে জীবন, প্রেম, কাজ, আনন্দ ও বেদনা-সহ বিভিন্ন বিষয়ে তাঁর গভীর জ্ঞান এবং দর্শন বিতরণ করেন।"
+
   - title: "Ben-Hur: A Tale of the Christ"
     author: Lew Wallace
     published_date: 1880

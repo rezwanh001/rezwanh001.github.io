@@ -286,6 +286,18 @@ reading_list:
     summary: "The thrilling adventure of a young boy named Bacchu and his friend Tridib in the rugged Chota Nagpur plateau. They get entangled in a mystery involving a secret airplane named 'Duranta Eagle' and a dangerous gang, leading to a tale of courage and suspense."
     summary_bangla: "বাচ্ছু আর ত্রিদিবের রোমাঞ্চকর অভিযানের গল্প, যেখানে এক রহস্যময় বিমান 'দুরন্ত ঈগল' এবং একদল অপরাধীকে ঘিরে ছোটনাগপুরের মালভূমিতে একের পর এক বিপদ ঘনিয়ে আসে।"
 
+  - title: The Metamorphosis
+    author: Franz Kafka
+    published_date: 1915
+    category: German Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_metamorphosis.png
+    youtube_id: "dh37IsJf6cU" # LibriVox Full Audiobook
+    gdrive_id: "1TQumxKRMrl1nkrMUyjJkgvHA_8deUOx4"
+    tags: ["Novella", "Absurdist Fiction", "Modernism"]
+    summary: "The surreal story of Gregor Samsa, a traveling salesman who wakes up one morning to find himself inexplicably transformed into a monstrous insect. The novella explores themes of alienation, absurdity, and the burden of human existence as Gregor and his family struggle to cope with this bizarre and tragic situation."
+    summary_bangla: "গ্রেগর সামসা নামের এক ব্যক্তির একদিন সকালে এক বিশাল পোকায় রূপান্তরিত হওয়ার গল্প। এই অদ্ভুত রূপান্তর তার নিজের এবং তার পরিবারের জীবনে যে বিচ্ছিন্নতা ও বিপর্যয় নিয়ে আসে, এটি তারই এক পরাবাস্তব কাহিনী।"
+
 ---
 
 <!-- This part of the file is the main content that will be displayed on the page -->

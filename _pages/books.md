@@ -53,6 +53,18 @@ reading_list:
     # Bengali Literature
     # -----------------------------------------------------------------
 
+  - title: "Hatyashastra (Chanakya Series)"
+    author: Abhigyan Ganguly
+    published_date: 2022
+    category: Bengali Literature
+    rating: 2.5
+    image: /assets/pdf/books/book_hatyashastra.png
+    youtube_id: "Ol3ZG9DrfC0" # Full Audiobook
+    gdrive_id: "1uPxpbqeQuY6yg3-XnWZ6SZMQ2KNJBHP7"
+    tags: ["Thriller", "Spy Fiction", "Modern Bengali"]
+    summary: "In this breathtaking thriller by Abhigyan Ganguly, a brilliant strategist known as the modern-day Chanakya must unravel a deadly conspiracy. The plot revolves around a lost ancient manuscript, the 'Hatyashastra,' and a secret society that threatens to plunge the nation into chaos."
+    summary_bangla: "অভিজ্ঞান গাঙ্গুলীর এই শ্বাসরুদ্ধকর থ্রিলারে, আধুনিক যুগের চাণক্য এক ভয়ংকর ষড়যন্ত্রের মুখোমুখি হন। এক প্রাচীন 'হত্যাশাস্ত্র' পুঁথিকে ঘিরে দেশের নিরাপত্তা সংকটে পড়লে, তিনি তার বুদ্ধি ও কৌশল দিয়ে রহস্যের সমাধান করেন।"
+
   - title: Duranta Eagle
     author: Dinesh Chandra Chattopadhyay
     published_date: 1978

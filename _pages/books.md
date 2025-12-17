@@ -81,6 +81,18 @@ reading_list:
     # English Literature
     # -----------------------------------------------------------------
 
+  - title: Middlemarch
+    author: George Eliot
+    published_date: 1871
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_middlemarch.png
+    youtube_id: "__sOItv-nKo" # LibriVox Full Audiobook
+    gdrive_id: "1mn1_L4GEQ9KHOzTx3m1uQcHFlJt3gq9e"
+    tags: ["Classic Novel", "Victorian Era", "Realism"]
+    summary: "A masterpiece of realism, this novel explores the lives of the residents of the fictional English town of Middlemarch during the 1830s. The story centers on the idealistic Dorothea Brooke and the ambitious Dr. Lydgate, weaving a complex web of intersecting lives to examine the nature of marriage, society, and thwarted ambition."
+    summary_bangla: "ভিক্টোরিয়ান ইংল্যান্ডের মিডলমার্চ শহরের বিভিন্ন মানুষের জীবনের এক বিস্তৃত চিত্র। ডরোথিয়া ব্রুক এবং ডঃ লিডগেটের মতো চরিত্রদের মাধ্যমে এই উপন্যাস সমাজ, বিবাহ এবং উচ্চাকাঙ্ক্ষার এক বাস্তববাদী অন্বেষণ করে।"
+
   - title: "A Murder is Announced (A Miss Marple Mystery)"
     author: Agatha Christie
     published_date: 1950

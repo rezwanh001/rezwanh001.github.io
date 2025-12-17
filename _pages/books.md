@@ -10,41 +10,64 @@ nav_order: 8 # Or any order you prefer
 # Reading List Data
 # -----------------------------------------------------------------
 reading_list:
-  - title: The Three Musketeers
-    author: Alexandre Dumas
-    published_date: 1844
-    category: French Literature
+    # -----------------------------------------------------------------
+    # American Literature
+    # -----------------------------------------------------------------
+  - title: The Prophet
+    author: Kahlil Gibran
+    published_date: 1923
+    category: American Literature
     rating: 5
-    image: /assets/pdf/books/book_the_three_musketeers.png
-    youtube_id: "H63ZRNax4uU" # LibriVox Full Audiobook
-    gdrive_id: "145YDJ2qhXsBkP7EkON-mni-1kKCBmme0"
-    tags: ["Adventure", "Historical Fiction", "Swashbuckler"]
-    summary: "The story follows the young d'Artagnan as he leaves home to join the Musketeers of the Guard. He befriends the three most formidable musketeers of the age—Athos, Porthos, and Aramis—and together they become embroiled in the affairs of the state and court, living by the motto 'all for one, one for all.'"
-    summary_bangla: "তরুণ ডি'আর্টানান এবং তার তিন বন্ধু, তিন মাস্কেটিয়ার্স—অ্যাথোস, পোরথোস এবং আরামিসের বন্ধুত্ব, সম্মান এবং রোমাঞ্চকর অভিযানের গল্প।"
+    image: /assets/pdf/books/book_the_prophet.png
+    youtube_id: "SRz9iDK5XLQ" # LibriVox Full Audiobook
+    gdrive_id: "1KGz4hPqAuXac1vBJdbnA46rWxkp8zlXT"
+    tags: ["Philosophy", "Poetry", "Spiritual"]
+    summary: "The story of the prophet Almustafa who, before leaving the city of Orphalese, shares his profound wisdom with the people. He delivers a series of prose poetry sermons on essential life topics such as love, marriage, work, joy, sorrow, and freedom."
+    summary_bangla: "আলমুস্তাফা নামের এক প্রফেট অরফালিস শহর ছেড়ে যাওয়ার আগে সেখানকার মানুষদের উদ্দেশ্যে জীবন, প্রেম, কাজ, আনন্দ ও বেদনা-সহ বিভিন্ন বিষয়ে তাঁর গভীর জ্ঞান এবং দর্শন বিতরণ করেন।"
 
-  - title: The Man in the Iron Mask
-    author: Alexandre Dumas
-    published_date: 1847
-    category: French Literature
+  - title: "Ben-Hur: A Tale of the Christ"
+    author: Lew Wallace
+    published_date: 1880
+    category: American Literature
     rating: 4
-    image: /assets/pdf/books/book_the_man_in_the_iron_mask.png
-    youtube_id: "_Sse0iSsthY" # LibriVox Full Audiobook
-    gdrive_id: "1SpbmSLzasdBNdhc8kvDv4lNU5D_FYYll"
-    tags: ["Adventure", "Historical Fiction", "D'Artagnan Romances"]
-    summary: "The final adventure of the musketeers. As d'Artagnan serves King Louis XIV, Aramis discovers a terrible state secret: the king has a twin brother, a prisoner hidden away in the Bastille. This sets the stage for a daring plot that will test the loyalties of Athos, Porthos, Aramis, and d'Artagnan one last time."
-    summary_bangla: "মাস্কেটিয়ার্সদের শেষ অভিযান, যেখানে রাজা চতুর্দশ লুই-এর যমজ ভাই, লৌহ মুখোশে বন্দী এক রহস্যময় ব্যক্তির পরিচয় উন্মোচিত হয় এবং আনুগত্যের এক চূড়ান্ত পরীক্ষা নেয়।"
+    image: /assets/pdf/books/book_ben_hur.png
+    youtube_id: "0LOzGanemQU" # LibriVox Full Audiobook
+    gdrive_id: "1MBMOIspgbz86wbtFwrR5PmO_fMysyE66"
+    tags: ["Historical Fiction", "Religious Fiction", "Adventure"]
+    summary: "The epic story of Judah Ben-Hur, a Jewish prince who is betrayed by his Roman friend Messala and condemned to a life of slavery. His journey of survival, revenge, and eventual redemption is set against the backdrop of the life and crucifixion of Jesus Christ, culminating in a legendary chariot race."
+    summary_bangla: "এক ইহুদি রাজপুত্র, জুডাহ বেন-হুরের গল্প, যে তার বন্ধুর বিশ্বাসঘাতকতার শিকার হয়ে দাসে পরিণত হয়। প্রতিশোধ এবং বিশ্বাসের এই মহাকাব্যিক কাহিনীতে তার উত্থান-পতনের চিত্র ফুটে উঠেছে।"
 
-  - title: The Count of Monte Cristo
-    author: Alexandre Dumas
-    published_date: 1844
-    category: French Literature
-    rating: 5
-    image: /assets/pdf/books/book_the_count_of_monte_cristo.png
-    youtube_id: "_HI-rreKmSY" # LibriVox Full Audiobook
-    gdrive_id: "1rXcXl7YgyWWcy6AZpD9yKxwIr3koOiyj"
-    tags: ["Adventure", "Historical Fiction", "Revenge"]
-    summary: "The story of Edmond Dantès, a young sailor wrongfully imprisoned for life without trial. After a miraculous escape, he acquires a vast fortune and returns to Paris as the mysterious and sophisticated Count of Monte Cristo to exact a slow, meticulous revenge on the three men who betrayed him."
-    summary_bangla: "এক তরুণ নাবিক, এডমন্ড দান্তেসের অন্যায়ভাবে কারারুদ্ধ হওয়া এবং পরবর্তীতে মন্টে ক্রিস্টোর রহস্যময় কাউন্ট হিসেবে ফিরে এসে তার শত্রুদের উপর প্রতিশোধ নেওয়ার এক মহাকাব্যিক গল্প।"
+  - title: The Adventures of Huckleberry Finn
+    author: Mark Twain
+    published_date: 1884
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_huckleberry_finn.png
+    youtube_id: "Qhm95D7tdDw"
+    gdrive_id: "1kuo2Q4Kw-nLFs5FMDWabPtAG2O4hQD3W"
+    tags: ["Adventure", "Classic Novel"]
+    summary: "The young outcast Huckleberry Finn and the runaway slave Jim journey down the Mississippi River, seeking freedom in a groundbreaking tale of friendship and morality."
+    summary_bangla: "হাকলবেরি ফিন ও জিমের মুক্তির সন্ধানে মিসিসিপি নদীতে ভেসে যাওয়া, যা বন্ধুত্ব, সমাজ এবং নৈতিকতার এক অবিস্মরণীয় পাঠ দেয়।"
+
+    # -----------------------------------------------------------------
+    # Bengali Literature
+    # -----------------------------------------------------------------
+
+  - title: Duranta Eagle
+    author: Dinesh Chandra Chattopadhyay
+    published_date: 1978
+    category: Bengali Literature
+    rating: 3
+    image: /assets/pdf/books/book_duranta_eagle.png
+    youtube_id: "qYpIEDPRckM" # Full Audiobook
+    gdrive_id: "1vBSsBrL5i1LfICGY-L7SP18f5yjjPKiN"
+    tags: ["Adventure", "Young Adult", "Kishore Sahitya"]
+    summary: "The thrilling adventure of a young boy named Bacchu and his friend Tridib in the rugged Chota Nagpur plateau. They get entangled in a mystery involving a secret airplane named 'Duranta Eagle' and a dangerous gang, leading to a tale of courage and suspense."
+    summary_bangla: "বাচ্ছু আর ত্রিদিবের রোমাঞ্চকর অভিযানের গল্প, যেখানে এক রহস্যময় বিমান 'দুরন্ত ঈগল' এবং একদল অপরাধীকে ঘিরে ছোটনাগপুরের মালভূমিতে একের পর এক বিপদ ঘনিয়ে আসে।"
+
+    # -----------------------------------------------------------------
+    # English Literature
+    # -----------------------------------------------------------------
 
   - title: "A Murder is Announced (A Miss Marple Mystery)"
     author: Agatha Christie
@@ -81,18 +104,6 @@ reading_list:
     tags: ["Historical Fiction", "Classic Novel"]
     summary: "Set against the backdrop of the French Revolution, this novel follows the lives of Charles Darnay and Sydney Carton. As both men fall for the gentle Lucie Manette, their intertwined fates lead to a profound and unforgettable story of love, sacrifice, and redemption in London and Paris."
     summary_bangla: "ফরাসি বিপ্লবের উত্তাল সময়ে লন্ডন ও প্যারিস—এই দুই শহরের পটভূমিতে লেখা প্রেম, আত্মত্যাগ এবং মুক্তির এক অবিস্মরণীয় কাহিনী।"
-
-  - title: Beauty and the Beast
-    author: Gabrielle-Suzanne Barbot de Villeneuve
-    published_date: 1740
-    category: French Literature
-    rating: 4
-    image: /assets/pdf/books/book_beauty_and_the_beast.png
-    youtube_id: "AwrT7dNuFfc"
-    gdrive_id: "17VmC8QpHwBqIKcqqkNsGJ79lr6GmdpKl"
-    tags: ["Fairy Tale", "Romance", "Fantasy"]
-    summary: "The original, sprawling tale of a beautiful young woman named Belle who takes her father's place as a prisoner in a cursed castle. She must learn to see past the monstrous exterior of her captor, the Beast, to discover the enchanted prince within."
-    summary_bangla: "এক সুন্দরী তরুণী বেল এবং এক অভিশপ্ত রাজকুমারের গল্প। বেল তার বাবার পরিবর্তে এক প্রাসাদে বন্দী হয় এবং সেখানে সে বাহ্যিক রূপের আড়ালের প্রকৃত সৌন্দর্যকে আবিষ্কার করে।"
 
   - title: Romeo and Juliet
     author: William Shakespeare
@@ -226,41 +237,89 @@ reading_list:
     summary: "A story of the turbulent and destructive love between Catherine Earnshaw and the enigmatic Heathcliff, and how its unresolved passion ultimately destroys them and many around them."
     summary_bangla: "ক্যাথরিন ও হিথক্লিফের তীব্র, ধ্বংসাত্মক প্রেমের এক মর্মস্পর্শী কাহিনী, যা প্রজন্মের পর প্রজন্ম ধরে প্রতিশোধের আগুন জ্বেলে রাখে।"
 
-  - title: The Prophet
-    author: Kahlil Gibran
-    published_date: 1923
-    category: American Literature
+  - title: The Man-eating Leopard of Rudraprayag
+    author: Jim Corbett
+    published_date: 1947
+    category: English Literature
     rating: 5
-    image: /assets/pdf/books/book_the_prophet.png
-    youtube_id: "SRz9iDK5XLQ" # LibriVox Full Audiobook
-    gdrive_id: "1KGz4hPqAuXac1vBJdbnA46rWxkp8zlXT"
-    tags: ["Philosophy", "Poetry", "Spiritual"]
-    summary: "The story of the prophet Almustafa who, before leaving the city of Orphalese, shares his profound wisdom with the people. He delivers a series of prose poetry sermons on essential life topics such as love, marriage, work, joy, sorrow, and freedom."
-    summary_bangla: "আলমুস্তাফা নামের এক প্রফেট অরফালিস শহর ছেড়ে যাওয়ার আগে সেখানকার মানুষদের উদ্দেশ্যে জীবন, প্রেম, কাজ, আনন্দ ও বেদনা-সহ বিভিন্ন বিষয়ে তাঁর গভীর জ্ঞান এবং দর্শন বিতরণ করেন।"
+    image: /assets/pdf/books/book_man_eating_leopard_of_rudraprayag.png
+    youtube_id: "ZWyjmqqxebE" #  Bangla Audiobook
+    gdrive_id: "1cU_U2cRl4MJdZk9D1GY_rKMvyFiD5qs6"
+    tags: ["True Story", "Hunting", "Adventure", "Non-Fiction"]
+    summary: "The thrilling, true account of hunter-naturalist Jim Corbett's relentless pursuit of a notorious man-eating leopard in Rudraprayag, India. This single leopard was responsible for over 125 documented human deaths, and the book details the years of suspense and danger involved in tracking it down."
+    summary_bangla: "জিম করবেটের রুদ্রপ্রয়াগের মানুষখেকো চিতাবাঘ শিকারের রোমহর্ষক ও সত্য কাহিনী, যে বাঘটি ১২৫ জনেরও বেশি মানুষকে হত্যা করেছিল। এই গল্পে শিকারের উত্তেজনা, ধৈর্য এবং প্রকৃতির ভয়ংকর রূপ ফুটে উঠেছে।"
 
-  - title: "Ben-Hur: A Tale of the Christ"
-    author: Lew Wallace
-    published_date: 1880
-    category: American Literature
-    rating: 4
-    image: /assets/pdf/books/book_ben_hur.png
-    youtube_id: "0LOzGanemQU" # LibriVox Full Audiobook
-    gdrive_id: "1MBMOIspgbz86wbtFwrR5PmO_fMysyE66"
-    tags: ["Historical Fiction", "Religious Fiction", "Adventure"]
-    summary: "The epic story of Judah Ben-Hur, a Jewish prince who is betrayed by his Roman friend Messala and condemned to a life of slavery. His journey of survival, revenge, and eventual redemption is set against the backdrop of the life and crucifixion of Jesus Christ, culminating in a legendary chariot race."
-    summary_bangla: "এক ইহুদি রাজপুত্র, জুডাহ বেন-হুরের গল্প, যে তার বন্ধুর বিশ্বাসঘাতকতার শিকার হয়ে দাসে পরিণত হয়। প্রতিশোধ এবং বিশ্বাসের এই মহাকাব্যিক কাহিনীতে তার উত্থান-পতনের চিত্র ফুটে উঠেছে।"
+    # -----------------------------------------------------------------
+    # French Literature
+    # -----------------------------------------------------------------
 
-  - title: The Adventures of Huckleberry Finn
-    author: Mark Twain
-    published_date: 1884
-    category: American Literature
+  - title: The Three Musketeers
+    author: Alexandre Dumas
+    published_date: 1844
+    category: French Literature
+    rating: 5
+    image: /assets/pdf/books/book_the_three_musketeers.png
+    youtube_id: "H63ZRNax4uU" # LibriVox Full Audiobook
+    gdrive_id: "145YDJ2qhXsBkP7EkON-mni-1kKCBmme0"
+    tags: ["Adventure", "Historical Fiction", "Swashbuckler"]
+    summary: "The story follows the young d'Artagnan as he leaves home to join the Musketeers of the Guard. He befriends the three most formidable musketeers of the age—Athos, Porthos, and Aramis—and together they become embroiled in the affairs of the state and court, living by the motto 'all for one, one for all.'"
+    summary_bangla: "তরুণ ডি'আর্টানান এবং তার তিন বন্ধু, তিন মাস্কেটিয়ার্স—অ্যাথোস, পোরথোস এবং আরামিসের বন্ধুত্ব, সম্মান এবং রোমাঞ্চকর অভিযানের গল্প।"
+
+  - title: The Man in the Iron Mask
+    author: Alexandre Dumas
+    published_date: 1847
+    category: French Literature
     rating: 4
-    image: /assets/pdf/books/book_huckleberry_finn.png
-    youtube_id: "Qhm95D7tdDw"
-    gdrive_id: "1kuo2Q4Kw-nLFs5FMDWabPtAG2O4hQD3W"
-    tags: ["Adventure", "Classic Novel"]
-    summary: "The young outcast Huckleberry Finn and the runaway slave Jim journey down the Mississippi River, seeking freedom in a groundbreaking tale of friendship and morality."
-    summary_bangla: "হাকলবেরি ফিন ও জিমের মুক্তির সন্ধানে মিসিসিপি নদীতে ভেসে যাওয়া, যা বন্ধুত্ব, সমাজ এবং নৈতিকতার এক অবিস্মরণীয় পাঠ দেয়।"
+    image: /assets/pdf/books/book_the_man_in_the_iron_mask.png
+    youtube_id: "_Sse0iSsthY" # LibriVox Full Audiobook
+    gdrive_id: "1SpbmSLzasdBNdhc8kvDv4lNU5D_FYYll"
+    tags: ["Adventure", "Historical Fiction", "D'Artagnan Romances"]
+    summary: "The final adventure of the musketeers. As d'Artagnan serves King Louis XIV, Aramis discovers a terrible state secret: the king has a twin brother, a prisoner hidden away in the Bastille. This sets the stage for a daring plot that will test the loyalties of Athos, Porthos, Aramis, and d'Artagnan one last time."
+    summary_bangla: "মাস্কেটিয়ার্সদের শেষ অভিযান, যেখানে রাজা চতুর্দশ লুই-এর যমজ ভাই, লৌহ মুখোশে বন্দী এক রহস্যময় ব্যক্তির পরিচয় উন্মোচিত হয় এবং আনুগত্যের এক চূড়ান্ত পরীক্ষা নেয়।"
+
+  - title: The Count of Monte Cristo
+    author: Alexandre Dumas
+    published_date: 1844
+    category: French Literature
+    rating: 5
+    image: /assets/pdf/books/book_the_count_of_monte_cristo.png
+    youtube_id: "_HI-rreKmSY" # LibriVox Full Audiobook
+    gdrive_id: "1rXcXl7YgyWWcy6AZpD9yKxwIr3koOiyj"
+    tags: ["Adventure", "Historical Fiction", "Revenge"]
+    summary: "The story of Edmond Dantès, a young sailor wrongfully imprisoned for life without trial. After a miraculous escape, he acquires a vast fortune and returns to Paris as the mysterious and sophisticated Count of Monte Cristo to exact a slow, meticulous revenge on the three men who betrayed him."
+    summary_bangla: "এক তরুণ নাবিক, এডমন্ড দান্তেসের অন্যায়ভাবে কারারুদ্ধ হওয়া এবং পরবর্তীতে মন্টে ক্রিস্টোর রহস্যময় কাউন্ট হিসেবে ফিরে এসে তার শত্রুদের উপর প্রতিশোধ নেওয়ার এক মহাকাব্যিক গল্প।"
+
+  - title: Beauty and the Beast
+    author: Gabrielle-Suzanne Barbot de Villeneuve
+    published_date: 1740
+    category: French Literature
+    rating: 4
+    image: /assets/pdf/books/book_beauty_and_the_beast.png
+    youtube_id: "AwrT7dNuFfc"
+    gdrive_id: "17VmC8QpHwBqIKcqqkNsGJ79lr6GmdpKl"
+    tags: ["Fairy Tale", "Romance", "Fantasy"]
+    summary: "The original, sprawling tale of a beautiful young woman named Belle who takes her father's place as a prisoner in a cursed castle. She must learn to see past the monstrous exterior of her captor, the Beast, to discover the enchanted prince within."
+    summary_bangla: "এক সুন্দরী তরুণী বেল এবং এক অভিশপ্ত রাজকুমারের গল্প। বেল তার বাবার পরিবর্তে এক প্রাসাদে বন্দী হয় এবং সেখানে সে বাহ্যিক রূপের আড়ালের প্রকৃত সৌন্দর্যকে আবিষ্কার করে।"
+
+    # -----------------------------------------------------------------
+    # German Literature
+    # -----------------------------------------------------------------
+
+  - title: The Metamorphosis
+    author: Franz Kafka
+    published_date: 1915
+    category: German Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_metamorphosis.png
+    youtube_id: "dh37IsJf6cU" # LibriVox Full Audiobook
+    gdrive_id: "1TQumxKRMrl1nkrMUyjJkgvHA_8deUOx4"
+    tags: ["Novella", "Absurdist Fiction", "Modernism"]
+    summary: "The surreal story of Gregor Samsa, a traveling salesman who wakes up one morning to find himself inexplicably transformed into a monstrous insect. The novella explores themes of alienation, absurdity, and the burden of human existence as Gregor and his family struggle to cope with this bizarre and tragic situation."
+    summary_bangla: "গ্রেগর সামসা নামের এক ব্যক্তির একদিন সকালে এক বিশাল পোকায় রূপান্তরিত হওয়ার গল্প। এই অদ্ভুত রূপান্তর তার নিজের এবং তার পরিবারের জীবনে যে বিচ্ছিন্নতা ও বিপর্যয় নিয়ে আসে, এটি তারই এক পরাবাস্তব কাহিনী।"
+
+    # -----------------------------------------------------------------
+    # German Literature
+    # -----------------------------------------------------------------
 
   - title: White Nights
     author: Fyodor Dostoevsky
@@ -274,29 +333,7 @@ reading_list:
     summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
     summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
 
-  - title: Duranta Eagle
-    author: Dinesh Chandra Chattopadhyay
-    published_date: 1978
-    category: Bengali Literature
-    rating: 3
-    image: /assets/pdf/books/book_duranta_eagle.png
-    youtube_id: "qYpIEDPRckM" # Full Audiobook
-    gdrive_id: "1vBSsBrL5i1LfICGY-L7SP18f5yjjPKiN"
-    tags: ["Adventure", "Young Adult", "Kishore Sahitya"]
-    summary: "The thrilling adventure of a young boy named Bacchu and his friend Tridib in the rugged Chota Nagpur plateau. They get entangled in a mystery involving a secret airplane named 'Duranta Eagle' and a dangerous gang, leading to a tale of courage and suspense."
-    summary_bangla: "বাচ্ছু আর ত্রিদিবের রোমাঞ্চকর অভিযানের গল্প, যেখানে এক রহস্যময় বিমান 'দুরন্ত ঈগল' এবং একদল অপরাধীকে ঘিরে ছোটনাগপুরের মালভূমিতে একের পর এক বিপদ ঘনিয়ে আসে।"
 
-  - title: The Metamorphosis
-    author: Franz Kafka
-    published_date: 1915
-    category: German Literature
-    rating: 4
-    image: /assets/pdf/books/book_the_metamorphosis.png
-    youtube_id: "dh37IsJf6cU" # LibriVox Full Audiobook
-    gdrive_id: "1TQumxKRMrl1nkrMUyjJkgvHA_8deUOx4"
-    tags: ["Novella", "Absurdist Fiction", "Modernism"]
-    summary: "The surreal story of Gregor Samsa, a traveling salesman who wakes up one morning to find himself inexplicably transformed into a monstrous insect. The novella explores themes of alienation, absurdity, and the burden of human existence as Gregor and his family struggle to cope with this bizarre and tragic situation."
-    summary_bangla: "গ্রেগর সামসা নামের এক ব্যক্তির একদিন সকালে এক বিশাল পোকায় রূপান্তরিত হওয়ার গল্প। এই অদ্ভুত রূপান্তর তার নিজের এবং তার পরিবারের জীবনে যে বিচ্ছিন্নতা ও বিপর্যয় নিয়ে আসে, এটি তারই এক পরাবাস্তব কাহিনী।"
 
 ---
 

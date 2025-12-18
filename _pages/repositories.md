@@ -18,7 +18,7 @@ nav_order: 4
 
 ---
 
-{% if site.repo_trophies.enabled %}
+<!-- {% if site.repo_trophies.enabled %}
 {% for user in site.data.repositories.github_users %}
 {% if site.data.repositories.github_users.size > 1 %}
 
@@ -26,6 +26,19 @@ nav_order: 4
   {% endif %}
   <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% include repository/repo_trophies.liquid username=user %}
+  </div> -->
+
+{% if site.repo_trophies.enabled %}
+{% for user in site.data.repositories.github_users %}
+{% if site.data.repositories.github_users.size > 1 %}
+
+<h4>{{ user }}</h4>
+  {% endif %}
+  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+    <!-- Replaced the include with your specific trophy code -->
+    <a href="https://github.com/ryo-ma/github-profile-trophy" style="width: 100%; text-align: center;">
+      <img src="https://github-profile-trophy.vercel.app/?username={{ user }}&theme=onedark" alt="trophy" style="max-width: 100%;">
+    </a>
   </div>
 
 ---

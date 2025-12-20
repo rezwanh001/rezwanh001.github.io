@@ -13,6 +13,18 @@ reading_list:
     # -----------------------------------------------------------------
     # American Literature
     # -----------------------------------------------------------------
+  - title: The Scarlet Letter
+    author: Nathaniel Hawthorne
+    published_date: 1850
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_scarlet_letter.png
+    youtube_id: "WXOhvwL4FFI" # LibriVox Full Audiobook
+    gdrive_id: "1rSV4EOLJ3QrzuzMS-mXVIUqCK1QDXxZN"
+    tags: ["Historical Fiction", "Classic Novel", "Romance"]
+    summary: "Set in 17th-century Puritan Boston, this novel tells the story of Hester Prynne, who conceives a daughter through an affair and struggles to create a new life of repentance and dignity. She wears the scarlet letter 'A' as a badge of shame, while the identity of her lover and the vengeful plotting of her husband remain hidden."
+    summary_bangla: "সপ্তদশ শতাব্দীর পিউরিটান বোস্টনের পটভূমিতে লেখা হেস্টার প্রিন-এর কাহিনী। ব্যভিচারের দায়ে অভিযুক্ত হেস্টারকে সমাজের সামনে 'A' চিহ্নটি লজ্জার প্রতীক হিসেবে পরতে হয়। এটি পাপ, অনুশোচনা এবং সামাজিক মর্যাদার এক গভীর মনস্তাত্ত্বিক আখ্যান।"
+
   - title: The Prophet
     author: Kahlil Gibran
     published_date: 1923

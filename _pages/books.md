@@ -76,7 +76,7 @@ reading_list:
     summary: "A critical analysis exploring the role and narrative of Islam during the Bangladesh Liberation War of 1971. The author investigates historical perspectives and identity politics to present a counter-narrative regarding the socio-religious dynamics of that pivotal era."
     summary_bangla: "১৯৭১ সালের মহান মুক্তিযুদ্ধের সময় ইসলামের ভূমিকা এবং বয়ান নিয়ে এক বিশ্লেষণধর্মী গ্রন্থ। বইটিতে মুক্তিযুদ্ধের ইতিহাসে ধর্মীয় পরিচয় ও রাজনীতির সমীকরণ এবং প্রচলিত বয়ানের বাইরে গিয়ে এক নতুন দৃষ্টিকোণ তুলে ধরা হয়েছে।"
 
-  - title: "Hatyashastra (Chanakya Series)"
+  - title: "হত্যাশাস্ত্র | চাণক্য সিরিজ — Hatyashastra | Chanakya Series"
     author: Abhigyan Ganguly
     published_date: 2022
     category: Bengali Literature
@@ -88,7 +88,7 @@ reading_list:
     summary: "In this breathtaking thriller by Abhigyan Ganguly, a brilliant strategist known as the modern-day Chanakya must unravel a deadly conspiracy. The plot revolves around a lost ancient manuscript, the 'Hatyashastra,' and a secret society that threatens to plunge the nation into chaos."
     summary_bangla: "অভিজ্ঞান গাঙ্গুলীর এই শ্বাসরুদ্ধকর থ্রিলারে, আধুনিক যুগের চাণক্য এক ভয়ংকর ষড়যন্ত্রের মুখোমুখি হন। এক প্রাচীন 'হত্যাশাস্ত্র' পুঁথিকে ঘিরে দেশের নিরাপত্তা সংকটে পড়লে, তিনি তার বুদ্ধি ও কৌশল দিয়ে রহস্যের সমাধান করেন।"
 
-  - title: Duranta Eagle
+  - title: দুরন্ত ঈগল (Duranta Eagle)
     author: Dinesh Chandra Chattopadhyay
     published_date: 1978
     category: Bengali Literature
@@ -130,6 +130,18 @@ reading_list:
     # -----------------------------------------------------------------
     # English Literature
     # -----------------------------------------------------------------
+  - title: Arms and the Man
+    author: George Bernard Shaw
+    published_date: 1894
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_arms_and_the_man.png
+    youtube_id: "BmRpSOW5DcU" # LibriVox or Audio Drama ID
+    gdrive_id: "1F_qXZQVU2Ljqq1cCfvgoQH25WckHQY0Y"
+    tags: ["Play", "Comedy", "Satire"]
+    summary: "A witty satire that challenges romantic ideas about war and love. Raina Petkoff, a young Bulgarian woman engaged to a 'heroic' soldier, saves a fleeing Swiss mercenary, Captain Bluntschli, who prefers carrying chocolate instead of ammunition. His practical realism ultimately turns her world upside down."
+    summary_bangla: "জর্জ বার্নার্ড শ'র এক অনবদ্য কমেডি নাটক যা যুদ্ধ এবং প্রেমের রোমান্টিক ধারণাকে ব্যঙ্গ করে। রায়না পেটকফ এক পলাতক সুইস সৈনিক ক্যাপ্টেন ব্লুন্টশলিকে আশ্রয় দেয়, যে যুদ্ধের ময়দানে গুলির বদলে চকলেট রাখতে পছন্দ করে। এই ঘটনা রায়নার তথাকথিত বীরত্বের ধারণাকে পাল্টে দেয়।"
+  
   - title: Middlemarch
     author: George Eliot
     published_date: 1871

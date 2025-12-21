@@ -64,6 +64,17 @@ reading_list:
     # -----------------------------------------------------------------
     # Bengali Literature
     # -----------------------------------------------------------------
+  - title: মুক্তিযুদ্ধের বয়ানে ইসলাম (Muktijuddher Boyane Islam)
+    author: Pinaki Bhattacharya
+    published_date: 2024
+    category: Bengali Literature
+    rating: 4
+    image: /assets/pdf/books/book_muktijuddher_boyane_islam.png
+    youtube_id: "" # Add video ID if available
+    gdrive_id: "19YUweDKcY26zIZtImY_9QrCnFuU0QRyl"
+    tags: ["History", "Non-Fiction", "Politics"]
+    summary: "A critical analysis exploring the role and narrative of Islam during the Bangladesh Liberation War of 1971. The author investigates historical perspectives and identity politics to present a counter-narrative regarding the socio-religious dynamics of that pivotal era."
+    summary_bangla: "১৯৭১ সালের মহান মুক্তিযুদ্ধের সময় ইসলামের ভূমিকা এবং বয়ান নিয়ে এক বিশ্লেষণধর্মী গ্রন্থ। বইটিতে মুক্তিযুদ্ধের ইতিহাসে ধর্মীয় পরিচয় ও রাজনীতির সমীকরণ এবং প্রচলিত বয়ানের বাইরে গিয়ে এক নতুন দৃষ্টিকোণ তুলে ধরা হয়েছে।"
 
   - title: "Hatyashastra (Chanakya Series)"
     author: Abhigyan Ganguly
@@ -90,9 +101,23 @@ reading_list:
     summary_bangla: "বাচ্ছু আর ত্রিদিবের রোমাঞ্চকর অভিযানের গল্প, যেখানে এক রহস্যময় বিমান 'দুরন্ত ঈগল' এবং একদল অপরাধীকে ঘিরে ছোটনাগপুরের মালভূমিতে একের পর এক বিপদ ঘনিয়ে আসে।"
 
     # -----------------------------------------------------------------
+    # British Literature
+    # -----------------------------------------------------------------
+  - title: Kidnapped
+    author: Robert Louis Stevenson
+    published_date: 1886
+    category: British Literature
+    rating: 4
+    image: /assets/pdf/books/book_kidnapped.png
+    youtube_id: "Qs7bnD6NN6w" # Placeholder ID for LibriVox or similar
+    gdrive_id: "1GCF4VbTMFohXtREY-CdmNzrw932jCa98"
+    tags: ["Adventure", "Historical Fiction", "Classic Novel"]
+    summary: "The thrilling story of David Balfour, a young orphan who is betrayed by his uncle and kidnapped on a ship bound for the Carolinas. He survives a shipwreck and forms an unlikely alliance with the Jacobite soldier Alan Breck Stewart, fleeing across the wild Scottish Highlands to claim his rightful inheritance."
+    summary_bangla: "ডেভিড ব্যালফোর, তার চাচার বিশ্বাসঘাতকতার শিকার হয়ে অপহৃত হয়। জাহাজডুবির পর সে অ্যালান ব্রেক স্টুয়ার্ট নামের এক জ্যাকোবাইট যোদ্ধার সাথে বন্ধুত্ব করে এবং নিজের অধিকার ফিরে পেতে স্কটল্যান্ডের দুর্গম পথ পাড়ি দেয়।"
+
+    # -----------------------------------------------------------------
     # English Literature
     # -----------------------------------------------------------------
-
   - title: Middlemarch
     author: George Eliot
     published_date: 1871

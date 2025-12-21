@@ -103,6 +103,18 @@ reading_list:
     # -----------------------------------------------------------------
     # British Literature
     # -----------------------------------------------------------------
+  - title: Treasure Island
+    author: Robert Louis Stevenson
+    published_date: 1883
+    category: British Literature
+    rating: 5
+    image: /assets/pdf/books/book_treasure_island.png
+    youtube_id: "xP9sfS5O0a8" # LibriVox Full Audiobook
+    gdrive_id: "1-gtRCif3KcsSE41z89NjfSYKPDb5pvXu"
+    tags: ["Adventure", "Pirate Fiction", "Classic Novel"]
+    summary: "The quintessential tale of buccaneers and buried gold. Young Jim Hawkins discovers a treasure map in the trunk of an old sea captain and sets sail on the Hispaniola. He soon finds himself caught in a deadly game of mutiny led by the charismatic but treacherous one-legged pirate, Long John Silver."
+    summary_bangla: "জলদস্যু এবং গুপ্তধনের চিরকালীন রোমাঞ্চকর কাহিনী। কিশোর জিম হকিন্স একটি গুপ্তধনের মানচিত্র খুঁজে পায় এবং হিস্পানিওলা জাহাজে চড়ে সমুদ্র পাড়ি দেয়। কিন্তু শীঘ্রই সে ধূর্ত একপা-ওয়ালা জলদস্যু লং জন সিলভারের নেতৃত্বে এক বিদ্রোহের মাঝে আটকা পড়ে।"
+
   - title: Kidnapped
     author: Robert Louis Stevenson
     published_date: 1886

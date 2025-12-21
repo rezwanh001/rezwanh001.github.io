@@ -120,7 +120,7 @@ reading_list:
     published_date: 1886
     category: British Literature
     rating: 4
-    image: /assets/pdf/books/book_kidnapped.png
+    image: /assets/pdf/books/book_kidnapped_.png
     youtube_id: "Qs7bnD6NN6w" # Placeholder ID for LibriVox or similar
     gdrive_id: "1GCF4VbTMFohXtREY-CdmNzrw932jCa98"
     tags: ["Adventure", "Historical Fiction", "Classic Novel"]

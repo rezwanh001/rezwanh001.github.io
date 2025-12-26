@@ -9,6 +9,9 @@ nav_order: 8 # Or any order you prefer
 # -----------------------------------------------------------------
 # Reading List Data
 # -----------------------------------------------------------------
+# -----------------------------------------------------------------
+# Reading List Data
+# -----------------------------------------------------------------
 reading_list:
     # -----------------------------------------------------------------
     # American Literature
@@ -22,8 +25,8 @@ reading_list:
     youtube_id: "WXOhvwL4FFI" # LibriVox Full Audiobook
     gdrive_id: "1rSV4EOLJ3QrzuzMS-mXVIUqCK1QDXxZN"
     tags: ["Historical Fiction", "Classic Novel", "Romance"]
-    summary: "Set in 17th-century Puritan Boston, this novel tells the story of Hester Prynne, who conceives a daughter through an affair and struggles to create a new life of repentance and dignity. She wears the scarlet letter 'A' as a badge of shame, while the identity of her lover and the vengeful plotting of her husband remain hidden."
-    summary_bangla: "সপ্তদশ শতাব্দীর পিউরিটান বোস্টনের পটভূমিতে লেখা হেস্টার প্রিন-এর কাহিনী। ব্যভিচারের দায়ে অভিযুক্ত হেস্টারকে সমাজের সামনে 'A' চিহ্নটি লজ্জার প্রতীক হিসেবে পরতে হয়। এটি পাপ, অনুশোচনা এবং সামাজিক মর্যাদার এক গভীর মনস্তাত্ত্বিক আখ্যান।"
+    summary: "Set in 17th-century Puritan Boston, this novel explores the psychological weight of sin and guilt. Hester Prynne bears the scarlet letter 'A' with dignity, while her secret lover, the Reverend Dimmesdale, is consumed by hidden remorse, and her estranged husband, Chillingworth, transforms into a vengeful fiend."
+    summary_bangla: "সপ্তদশ শতাব্দীর পিউরিটান বোস্টনের পটভূমিতে লেখা পাপ, অনুশোচনা এবং সামাজিক মর্যাদার এক গভীর মনস্তাত্ত্বিক আখ্যান। হেস্টার প্রিন লজ্জার প্রতীক 'A' চিহ্নটি সাহসের সাথে বহন করে, অন্যদিকে তার গোপন প্রেমিক রেভারেন্ড ডিমসডেল অনুশোচনায় দগ্ধ হন এবং হেস্টারের স্বামী প্রতিশোধের নেশায় দানবে পরিণত হন।"
 
   - title: The Prophet
     author: Kahlil Gibran
@@ -34,8 +37,8 @@ reading_list:
     youtube_id: "SRz9iDK5XLQ" # LibriVox Full Audiobook
     gdrive_id: "1KGz4hPqAuXac1vBJdbnA46rWxkp8zlXT"
     tags: ["Philosophy", "Poetry", "Spiritual"]
-    summary: "The story of the prophet Almustafa who, before leaving the city of Orphalese, shares his profound wisdom with the people. He delivers a series of prose poetry sermons on essential life topics such as love, marriage, work, joy, sorrow, and freedom."
-    summary_bangla: "আলমুস্তাফা নামের এক প্রফেট অরফালিস শহর ছেড়ে যাওয়ার আগে সেখানকার মানুষদের উদ্দেশ্যে জীবন, প্রেম, কাজ, আনন্দ ও বেদনা-সহ বিভিন্ন বিষয়ে তাঁর গভীর জ্ঞান এবং দর্শন বিতরণ করেন।"
+    summary: "As the prophet Almustafa awaits the ship that will take him home, he shares timeless wisdom with the people of Orphalese. Through twenty-six poetic essays, he explores the deepest aspects of the human condition, offering profound insights on love, marriage, work, freedom, pain, and friendship."
+    summary_bangla: "দীর্ঘ বারো বছর পর আলমুস্তাফা তার নিজের দেশে ফেরার জন্য জাহাজের অপেক্ষায়। বিদায়লগ্নে অরফালিস শহরের মানুষের অনুরোধে তিনি জীবন, প্রেম, কাজ, আনন্দ, বেদনা ও স্বাধীনতা নিয়ে যে গভীর দার্শনিক ও কাব্যিক উপদেশ দেন, তাই এই বইয়ের মূল উপজীব্য।"
 
   - title: "Ben-Hur: A Tale of the Christ"
     author: Lew Wallace
@@ -46,8 +49,8 @@ reading_list:
     youtube_id: "0LOzGanemQU" # LibriVox Full Audiobook
     gdrive_id: "1MBMOIspgbz86wbtFwrR5PmO_fMysyE66"
     tags: ["Historical Fiction", "Religious Fiction", "Adventure"]
-    summary: "The epic story of Judah Ben-Hur, a Jewish prince who is betrayed by his Roman friend Messala and condemned to a life of slavery. His journey of survival, revenge, and eventual redemption is set against the backdrop of the life and crucifixion of Jesus Christ, culminating in a legendary chariot race."
-    summary_bangla: "এক ইহুদি রাজপুত্র, জুডাহ বেন-হুরের গল্প, যে তার বন্ধুর বিশ্বাসঘাতকতার শিকার হয়ে দাসে পরিণত হয়। প্রতিশোধ এবং বিশ্বাসের এই মহাকাব্যিক কাহিনীতে তার উত্থান-পতনের চিত্র ফুটে উঠেছে।"
+    summary: "Judah Ben-Hur, a Jewish prince, is wrongfully condemned to the galleys by his childhood friend Messala. The story follows his miraculous survival, his thirst for vengeance culminating in a deadly chariot race, and his ultimate spiritual transformation after witnessing the crucifixion of Jesus Christ."
+    summary_bangla: "শৈশবের বন্ধু মেসালার বিশ্বাসঘাতকতায় ইহুদি রাজপুত্র জুডাহ বেন-হুর দাসে পরিণত হয়। দাসত্ব থেকে মুক্তি, রোমহর্ষক রথদৗড়ে প্রতিশোধ এবং অবশেষে যিশু খ্রিস্টের সান্নিধ্যে এসে প্রতিহিংসা ভুলে ক্ষমার পথে তার আত্মিক রূপান্তরের এক মহাকাব্যিক গল্প।"
 
   - title: The Adventures of Huckleberry Finn
     author: Mark Twain
@@ -58,8 +61,8 @@ reading_list:
     youtube_id: "Qhm95D7tdDw"
     gdrive_id: "1kuo2Q4Kw-nLFs5FMDWabPtAG2O4hQD3W"
     tags: ["Adventure", "Classic Novel"]
-    summary: "The young outcast Huckleberry Finn and the runaway slave Jim journey down the Mississippi River, seeking freedom in a groundbreaking tale of friendship and morality."
-    summary_bangla: "হাকলবেরি ফিন ও জিমের মুক্তির সন্ধানে মিসিসিপি নদীতে ভেসে যাওয়া, যা বন্ধুত্ব, সমাজ এবং নৈতিকতার এক অবিস্মরণীয় পাঠ দেয়।"
+    summary: "To escape his abusive father and the constraints of 'civilized' society, Huck Finn fakes his death and rafts down the Mississippi River. He is joined by Jim, a runaway slave. The journey challenges Huck's conscience, forcing him to choose between the laws of society and his loyalty to his friend."
+    summary_bangla: "মদ্যপ বাবা এবং সমাজের তথাকথিত সভ্যতার বাঁধন থেকে বাঁচতে হাক ফিন মিসিসিপি নদীতে ভেসে পড়ে। তার সঙ্গী হয় পলাতক ক্রীতদাস জিম। এই যাত্রাপথে হাক তার বিবেক এবং তৎকালীন সমাজের বর্ণবাদী আইনের মধ্যে দ্বন্দ্বের মুখোমুখি হয় এবং এক গভীর বন্ধুত্বের জন্ম দেয়।"
 
     # -----------------------------------------------------------------
     # Bengali Literature
@@ -73,8 +76,8 @@ reading_list:
     youtube_id: "" # Add video ID if available
     gdrive_id: "19YUweDKcY26zIZtImY_9QrCnFuU0QRyl"
     tags: ["History", "Non-Fiction", "Politics"]
-    summary: "A critical analysis exploring the role and narrative of Islam during the Bangladesh Liberation War of 1971. The author investigates historical perspectives and identity politics to present a counter-narrative regarding the socio-religious dynamics of that pivotal era."
-    summary_bangla: "১৯৭১ সালের মহান মুক্তিযুদ্ধের সময় ইসলামের ভূমিকা এবং বয়ান নিয়ে এক বিশ্লেষণধর্মী গ্রন্থ। বইটিতে মুক্তিযুদ্ধের ইতিহাসে ধর্মীয় পরিচয় ও রাজনীতির সমীকরণ এবং প্রচলিত বয়ানের বাইরে গিয়ে এক নতুন দৃষ্টিকোণ তুলে ধরা হয়েছে।"
+    summary: "This critical analysis challenges mainstream narratives regarding the role of Islam during Bangladesh's 1971 Liberation War. The author distinguishes between the political misuse of religion by opposing forces and the genuine faith of the freedom fighters, offering a nuanced counter-narrative on identity politics."
+    summary_bangla: "১৯৭১ সালের মহান মুক্তিযুদ্ধের সময় ইসলামের ভূমিকা নিয়ে প্রচলিত বয়ানের এক বিশ্লেষণধর্মী ব্যবচ্ছেদ। লেখক দেখিয়েছেন কীভাবে রাজনৈতিক স্বার্থে ধর্মের ব্যবহার এবং সাধারণ মানুষের ধর্মবিশ্বাসের মধ্যে পার্থক্য ছিল, যা মুক্তিযুদ্ধের ইতিহাসে এক নতুন এবং ভিন্নধর্মী দৃষ্টিভঙ্গি তুলে ধরে।"
 
   - title: "হত্যাশাস্ত্র | চাণক্য সিরিজ — Hatyashastra | Chanakya Series"
     author: Abhigyan Ganguly
@@ -85,8 +88,8 @@ reading_list:
     youtube_id: "Ol3ZG9DrfC0" # Full Audiobook
     gdrive_id: "1uPxpbqeQuY6yg3-XnWZ6SZMQ2KNJBHP7"
     tags: ["Thriller", "Spy Fiction", "Modern Bengali"]
-    summary: "In this breathtaking thriller by Abhigyan Ganguly, a brilliant strategist known as the modern-day Chanakya must unravel a deadly conspiracy. The plot revolves around a lost ancient manuscript, the 'Hatyashastra,' and a secret society that threatens to plunge the nation into chaos."
-    summary_bangla: "অভিজ্ঞান গাঙ্গুলীর এই শ্বাসরুদ্ধকর থ্রিলারে, আধুনিক যুগের চাণক্য এক ভয়ংকর ষড়যন্ত্রের মুখোমুখি হন। এক প্রাচীন 'হত্যাশাস্ত্র' পুঁথিকে ঘিরে দেশের নিরাপত্তা সংকটে পড়লে, তিনি তার বুদ্ধি ও কৌশল দিয়ে রহস্যের সমাধান করেন।"
+    summary: "When a secret society threatens India's security using an ancient manuscript on assassination called 'Hatyashastra', the government turns to a brilliant modern-day strategist code-named Chanakya. He must decode historical clues and outmaneuver a shadow enemy in a high-stakes game of intellect and espionage."
+    summary_bangla: "প্রাচীন পুঁথি 'হত্যাশাস্ত্র' ব্যবহার করে এক গুপ্ত সংগঠন দেশের নিরাপত্তা বিঘ্নিত করতে চায়। এই সংকট মোকাবিলায় সরকার তলব করে আধুনিক চাণক্যকে। ইতিহাস, রাজনীতি এবং গুপ্তচরবৃত্তির এই টানটান উত্তেজনায় চাণক্যকে লড়তে হয় এক অদৃশ্য শত্রুর বিরুদ্ধে।"
 
   - title: দুরন্ত ঈগল (Duranta Eagle)
     author: Dinesh Chandra Chattopadhyay
@@ -97,8 +100,8 @@ reading_list:
     youtube_id: "qYpIEDPRckM" # Full Audiobook
     gdrive_id: "1vBSsBrL5i1LfICGY-L7SP18f5yjjPKiN"
     tags: ["Adventure", "Young Adult", "Kishore Sahitya"]
-    summary: "The thrilling adventure of a young boy named Bacchu and his friend Tridib in the rugged Chota Nagpur plateau. They get entangled in a mystery involving a secret airplane named 'Duranta Eagle' and a dangerous gang, leading to a tale of courage and suspense."
-    summary_bangla: "বাচ্ছু আর ত্রিদিবের রোমাঞ্চকর অভিযানের গল্প, যেখানে এক রহস্যময় বিমান 'দুরন্ত ঈগল' এবং একদল অপরাধীকে ঘিরে ছোটনাগপুরের মালভূমিতে একের পর এক বিপদ ঘনিয়ে আসে।"
+    summary: "Set in the dense forests and hills of Chota Nagpur, young Bacchu and Tridib stumble upon a criminal conspiracy involving a mysterious aircraft named 'Duranta Eagle.' Their vacation turns into a dangerous investigation as they use their wits to outsmart a ruthless gang of smugglers."
+    summary_bangla: "ছোটনাগপুরের জঙ্গল ও পাহাড়ের পটভূমিতে বাচ্ছু আর ত্রিদিবের ছুটির দিনগুলো পাল্টে যায় এক রুদ্ধশ্বাস অভিযানে। 'দুরন্ত ঈগল' নামের এক রহস্যময় বিমান এবং একদল চোরাকারবারির ষড়যন্ত্রের জট খুলতে দুই কিশোর তাদের বুদ্ধি ও সাহসের পরিচয় দেয়।"
 
     # -----------------------------------------------------------------
     # British Literature
@@ -112,8 +115,8 @@ reading_list:
     youtube_id: "xP9sfS5O0a8" # LibriVox Full Audiobook
     gdrive_id: "1-gtRCif3KcsSE41z89NjfSYKPDb5pvXu"
     tags: ["Adventure", "Pirate Fiction", "Classic Novel"]
-    summary: "The quintessential tale of buccaneers and buried gold. Young Jim Hawkins discovers a treasure map in the trunk of an old sea captain and sets sail on the Hispaniola. He soon finds himself caught in a deadly game of mutiny led by the charismatic but treacherous one-legged pirate, Long John Silver."
-    summary_bangla: "জলদস্যু এবং গুপ্তধনের চিরকালীন রোমাঞ্চকর কাহিনী। কিশোর জিম হকিন্স একটি গুপ্তধনের মানচিত্র খুঁজে পায় এবং হিস্পানিওলা জাহাজে চড়ে সমুদ্র পাড়ি দেয়। কিন্তু শীঘ্রই সে ধূর্ত একপা-ওয়ালা জলদস্যু লং জন সিলভারের নেতৃত্বে এক বিদ্রোহের মাঝে আটকা পড়ে।"
+    summary: "Young Jim Hawkins finds a dead captain's map and sets sail for Treasure Island. The voyage turns perilous when the ship's cook, the charismatic one-legged pirate Long John Silver, leads a mutiny. Jim must grow from a boy into a man of courage to survive the treachery and secure the gold."
+    summary_bangla: "কিশোর জিম হকিন্স একটি গুপ্তধনের মানচিত্র খুঁজে পায় এবং সমুদ্র পাড়ি দেয়। কিন্তু জাহাজের রাঁধুনি, ধূর্ত একপা-ওয়ালা জলদস্যু লং জন সিলভারের নেতৃত্বে নাবিকরা বিদ্রোহ করে। বিশ্বাস-অবিশ্বাস এবং সাহসের এই পরীক্ষায় জিমকে বুদ্ধিমত্তার সাথে টিকে থাকতে হয়।"
 
   - title: Kidnapped
     author: Robert Louis Stevenson
@@ -124,8 +127,8 @@ reading_list:
     youtube_id: "Qs7bnD6NN6w" # Placeholder ID for LibriVox or similar
     gdrive_id: "1GCF4VbTMFohXtREY-CdmNzrw932jCa98"
     tags: ["Adventure", "Historical Fiction", "Classic Novel"]
-    summary: "The thrilling story of David Balfour, a young orphan who is betrayed by his uncle and kidnapped on a ship bound for the Carolinas. He survives a shipwreck and forms an unlikely alliance with the Jacobite soldier Alan Breck Stewart, fleeing across the wild Scottish Highlands to claim his rightful inheritance."
-    summary_bangla: "ডেভিড ব্যালফোর, তার চাচার বিশ্বাসঘাতকতার শিকার হয়ে অপহৃত হয়। জাহাজডুবির পর সে অ্যালান ব্রেক স্টুয়ার্ট নামের এক জ্যাকোবাইট যোদ্ধার সাথে বন্ধুত্ব করে এবং নিজের অধিকার ফিরে পেতে স্কটল্যান্ডের দুর্গম পথ পাড়ি দেয়।"
+    summary: "Orphaned David Balfour is betrayed by his greedy uncle and sold into slavery, but a shipwreck leaves him stranded in the Scottish Highlands. He forms an unlikely bond with Alan Breck Stewart, a Jacobite rebel. Together, they must evade government troops and return to claim David's stolen inheritance."
+    summary_bangla: "চাচা কর্তৃক অপহৃত হয়ে ক্রীতদাস হিসেবে পাচার হওয়ার সময় ডেভিড ব্যালফোর জাহাজডুবির কবলে পড়ে। স্কটল্যান্ডের পাহাড়ি পথে সে অ্যালান ব্রেক স্টুয়ার্ট নামের এক রাজনৈতিক পলাতক যোদ্ধার সাথে বন্ধুত্ব করে। দুই ভিন্ন মতাদর্শের মানুষ এক হয়ে শত্রুদের মোকাবিলা করে এবং ডেভিডের হারানো অধিকার ফিরে পেতে সংগ্রাম করে।"
 
     # -----------------------------------------------------------------
     # English Literature
@@ -139,8 +142,8 @@ reading_list:
     youtube_id: "u5c_oC5UR0I" # LibriVox Full Audiobook
     gdrive_id: "1xz3fBi7XJzbwvYCcsC3_WMXCS3LZl0os"
     tags: ["Humor", "Ghost Story", "Satire"]
-    summary: "A humorous and touching story about an American family who moves into a haunted English mansion. Instead of being terrified by the resident ghost, Sir Simon, they prank him and offer him cleaning products for his bloodstains, turning the traditional ghost story on its head."
-    summary_bangla: "এক আমেরিকান পরিবার ইংল্যান্ডের এক ভুতুড়ে প্রাসাদে থাকতে আসে এবং সেখানকার ভূত স্যার সাইমনকে ভয় পেতে অস্বীকার করে। উল্টো পরিবারের শিশুরা ভূতের সাথে নানা কৌতুক করে তাকেই অতিষ্ঠ করে তোলে। এটি অস্কার ওয়াইল্ডের এক হাস্যরসাত্মক এবং হৃদয়স্পর্শী গল্প।"
+    summary: "When the pragmatic American Otis family buys a haunted English mansion, they refuse to be frightened by the resident ghost, Sir Simon. Instead, the twins prank him mercilessly. The story shifts from comedy to poignancy as the daughter, Virginia, helps the weary spirit find forgiveness and eternal rest."
+    summary_bangla: "এক আমেরিকান পরিবার ইংল্যান্ডের এক ভুতুড়ে প্রাসাদে এসে সেখানকার ভূত স্যার সাইমনকে ভয় না পেয়ে উল্টো তাকেই উত্ত্যক্ত করতে থাকে। হাস্যরসের আড়ালে গল্পটি করুণ মোড় নেয় যখন পরিবারের ছোট মেয়ে ভার্জিনিয়া ভূতটির প্রতি সহানুভূতি দেখায় এবং তাকে মুক্তির পথ খুঁজে দেয়।"
   
   - title: Arms and the Man
     author: George Bernard Shaw
@@ -151,8 +154,8 @@ reading_list:
     youtube_id: "BmRpSOW5DcU" # LibriVox or Audio Drama ID
     gdrive_id: "1F_qXZQVU2Ljqq1cCfvgoQH25WckHQY0Y"
     tags: ["Play", "Comedy", "Satire"]
-    summary: "A witty satire that challenges romantic ideas about war and love. Raina Petkoff, a young Bulgarian woman engaged to a 'heroic' soldier, saves a fleeing Swiss mercenary, Captain Bluntschli, who prefers carrying chocolate instead of ammunition. His practical realism ultimately turns her world upside down."
-    summary_bangla: "জর্জ বার্নার্ড শ'র এক অনবদ্য কমেডি নাটক যা যুদ্ধ এবং প্রেমের রোমান্টিক ধারণাকে ব্যঙ্গ করে। রায়না পেটকফ এক পলাতক সুইস সৈনিক ক্যাপ্টেন ব্লুন্টশলিকে আশ্রয় দেয়, যে যুদ্ধের ময়দানে গুলির বদলে চকলেট রাখতে পছন্দ করে। এই ঘটনা রায়নার তথাকথিত বীরত্বের ধারণাকে পাল্টে দেয়।"
+    summary: "Raina Petkoff is engaged to a dashing war hero, but her romantic view of conflict is shattered when a Swiss mercenary, Captain Bluntschli, climbs into her bedroom. Carrying chocolates instead of bullets, his pragmatism exposes the absurdity of romanticizing warfare and ultimately wins Raina's heart."
+    summary_bangla: "যুদ্ধ ও প্রেমের রোমান্টিক ধারণাকে ব্যঙ্গ করা জর্জ বার্নার্ড শ'র এক অনবদ্য কমেডি। নায়িকা রায়না তার বাগদত্তার বীরত্ব নিয়ে গর্বিত থাকলেও, চকলেট-প্রেমী এক পলাতক সৈনিকের বাস্তববাদী চিন্তাধারা তার জগতকে ওলটপালট করে দেয় এবং তাকে জীবনের সত্য উপলব্ধি করতে শেখায়।"
   
   - title: Middlemarch
     author: George Eliot
@@ -163,8 +166,8 @@ reading_list:
     youtube_id: "__sOItv-nKo" # LibriVox Full Audiobook
     gdrive_id: "1mn1_L4GEQ9KHOzTx3m1uQcHFlJt3gq9e"
     tags: ["Classic Novel", "Victorian Era", "Realism"]
-    summary: "A masterpiece of realism, this novel explores the lives of the residents of the fictional English town of Middlemarch during the 1830s. The story centers on the idealistic Dorothea Brooke and the ambitious Dr. Lydgate, weaving a complex web of intersecting lives to examine the nature of marriage, society, and thwarted ambition."
-    summary_bangla: "ভিক্টোরিয়ান ইংল্যান্ডের মিডলমার্চ শহরের বিভিন্ন মানুষের জীবনের এক বিস্তৃত চিত্র। ডরোথিয়া ব্রুক এবং ডঃ লিডগেটের মতো চরিত্রদের মাধ্যমে এই উপন্যাস সমাজ, বিবাহ এবং উচ্চাকাঙ্ক্ষার এক বাস্তববাদী অন্বেষণ করে।"
+    summary: "This panoramic novel examines provincial life through the lens of social reform and personal ambition. It follows the idealistic Dorothea Brooke, trapped in a loveless marriage to a scholar, and the talented Dr. Lydgate, whose career is stifled by debt and an incompatible wife, illustrating how society shapes destinies."
+    summary_bangla: "ভিক্টোরিয়ান ইংল্যান্ডের এক মফস্বল শহরের নিখুঁত সমাজচিত্র। মহৎ কিছু করার আকাঙ্ক্ষায় থাকা ডরোথিয়া ব্রুক এবং প্রতিভাবান ডাক্তার লিডগেট—উভয়েই ভুল বৈবাহিক সিদ্ধান্তের কারণে কীভাবে তাদের স্বপ্ন ও আদর্শের সাথে আপস করতে বাধ্য হয়, তার এক মর্মস্পর্শী ও বাস্তববাদী আখ্যান।"
 
   - title: "A Murder is Announced (A Miss Marple Mystery)"
     author: Agatha Christie
@@ -175,8 +178,8 @@ reading_list:
     youtube_id: "CPSqxN0jfXI" # Full Audiobook
     gdrive_id: "1BpIFFq2YQeW1OhBV3dbPVedYdI11mjy7"
     tags: ["Detective Fiction", "Mystery", "Miss Marple Series"]
-    summary: "In the quiet village of Chipping Cleghorn, a strange notice appears in the local paper: 'A murder is announced and will take place on Friday, October 29th, at Little Paddocks at 6:30 p.m.' When a real murder occurs at the advertised time, the brilliant Miss Marple must unravel a complex web of hidden identities and past secrets."
-    summary_bangla: "স্থানীয় সংবাদপত্রে একটি খুনের বিজ্ঞাপন দেওয়া হয়, যা সবাই একটি খেলা বলে মনে করে। কিন্তু যখন সত্যি সত্যি খুন হয়, তখন মিস মার্পলকে এই রহস্য সমাধান করতে হয়।"
+    summary: "Residents of Chipping Cleghorn are intrigued by a newspaper notice predicting a murder at Little Paddocks. Thinking it a game, they gather, only to witness a real killing when the lights go out. Miss Marple must peel back layers of false identities and post-war secrets to expose the killer among the neighbors."
+    summary_bangla: "স্থানীয় সংবাদপত্রে খুনের দিনক্ষণ ও স্থান উল্লেখ করে বিজ্ঞাপন দেওয়া হয়। প্রতিবেশীরা কৌতূহলী হয়ে জড়ো হয়, কিন্তু খেলা ভেবে আসা সেই আসরে সত্যিই খুন হয়। আপাতদৃষ্টিতে সাধারণ গ্রামটির মানুষের গোপন পরিচয় আর মিথ্যার জাল ভেদ করে মিস মার্পলকে আসল খুনিকে খুঁজে বের করতে হয়।"
 
   - title: The Thirty-Nine Steps
     author: John Buchan
@@ -187,8 +190,8 @@ reading_list:
     youtube_id: "bm84k086h_E" # LibriVox Full Audiobook
     gdrive_id: "1AzsuV_q92spbjbR7zRlWSBDWGmUsPGQt"
     tags: ["Spy Fiction", "Adventure", "Thriller"]
-    summary: "The story of Richard Hannay, an ordinary man who, after a spy is murdered in his flat, goes on the run across the Scottish moors. Pursued by both the police for a crime he didn't commit and a ruthless ring of German spies, Hannay must uncover a plot that threatens Britain itself."
-    summary_bangla: "রিচার্ড হ্যানে, এক সাধারণ মানুষ, লন্ডনে এক গুপ্তচর খুন হওয়ার পর এক আন্তর্জাতিক ষড়যন্ত্রের জালে জড়িয়ে পড়ে এবং স্কটল্যান্ডের বিপদসংকুল পথে পালিয়ে বেড়ায়।"
+    summary: "Richard Hannay finds a freelance spy murdered in his London apartment and becomes the prime suspect. Fleeing to the Scottish moors, he must outwit the police and a ring of German spies known as 'The Black Stone' to prevent the theft of British military secrets before the outbreak of war."
+    summary_bangla: "রিচার্ড হ্যানে নিজের ফ্ল্যাটে এক গুপ্তচরকে খুন হতে দেখে নিজেই ফেঁসে যায়। নিজেকে নির্দোষ প্রমাণ করতে এবং দেশের গোপন তথ্য পাচার হওয়া রুখতে তাকে পুলিশ ও জার্মান গুপ্তচরদের চোখ এড়িয়ে স্কটল্যান্ডের দুর্গম পথে পালিয়ে বেড়াতে হয়। এটি এক টানটান উত্তেজনার পলাতক কাহিনী।"
 
   - title: A Tale of Two Cities
     author: Charles Dickens
@@ -199,8 +202,8 @@ reading_list:
     youtube_id: "lUZIOj24_OI"
     gdrive_id: "1eewR-8mgtvjAuJvOuOxbO5hQFV4RIuOt"
     tags: ["Historical Fiction", "Classic Novel"]
-    summary: "Set against the backdrop of the French Revolution, this novel follows the lives of Charles Darnay and Sydney Carton. As both men fall for the gentle Lucie Manette, their intertwined fates lead to a profound and unforgettable story of love, sacrifice, and redemption in London and Paris."
-    summary_bangla: "ফরাসি বিপ্লবের উত্তাল সময়ে লন্ডন ও প্যারিস—এই দুই শহরের পটভূমিতে লেখা প্রেম, আত্মত্যাগ এবং মুক্তির এক অবিস্মরণীয় কাহিনী।"
+    summary: "Amidst the Reign of Terror in Paris and the stability of London, the lives of Dr. Manette, his daughter Lucie, and two men who love her—Charles Darnay and Sydney Carton—intersect. The story culminates in Carton's ultimate act of self-sacrifice to save Darnay from the guillotine, finding redemption through love."
+    summary_bangla: "ফরাসি বিপ্লবের রক্তক্ষয়ী দিনগুলোতে লন্ডন ও প্যারিস শহরের পটভূমিতে লেখা। লুসি ম্যানেটকে কেন্দ্র করে দুই প্রেমিক—চার্লস ডার্নে এবং সিডনি কার্টনের ভাগ্য এক সুতোয় গেঁথে যায়। বিপ্লবের চরম অরাজকতার মধ্যে সিডনি কার্টনের মহান আত্মত্যাগ এবং ভালোবাসার মাধ্যমে মুক্তির এক অবিস্মরণীয় কাহিনী।"
 
   - title: Romeo and Juliet
     author: William Shakespeare
@@ -211,8 +214,8 @@ reading_list:
     youtube_id: "3js0HV1SZKE" # LibriVox Full Audiobook
     gdrive_id: "1NB34bcVHD2AMaF3Mmqdmv6By6bsRvSwc"
     tags: ["Play", "Tragedy", "Romance"]
-    summary: "The timeless story of two young lovers, Romeo Montague and Juliet Capulet, whose love is forbidden by a bitter feud between their families in Verona. Their passionate romance spirals towards a heartbreaking conclusion, serving as a powerful testament to the destructive nature of hate."
-    summary_bangla: "দুটি শত্রু পরিবারের সন্তান রোমিও এবং জুলিয়েটের করুণ প্রেমের গল্প, যা তাদের নিয়তিকে এক মর্মান্তিক পরিণতির দিকে ঠেলে দেয়।"
+    summary: "In Verona, the Montagues and Capulets are locked in a violent feud. When their children, Romeo and Juliet, fall instantly in love, they marry in secret. A series of misunderstandings and duels leads to their tragic double suicide, a shock that finally forces the warring families to reconcile."
+    summary_bangla: "ভেরোনা শহরের দুই প্রবল শত্রু পরিবারের সন্তান রোমিও এবং জুলিয়েট একে অপরের প্রেমে পড়ে এবং গোপনে বিয়ে করে। কিন্তু পারিবারিক শত্রুতা ও ভুল বোঝাবুঝির কারণে তাদের প্রেম এক মর্মান্তিক পরিণতির দিকে ধাবিত হয়। তাদের মৃত্যু অবশেষে দুই পরিবারের দীর্ঘদিনের বিবাদ মেটায়।"
 
   - title: The Merchant of Venice
     author: William Shakespeare
@@ -223,8 +226,8 @@ reading_list:
     youtube_id: "8aZmNTxp7P4"
     gdrive_id: "1v_w5M_01tUMursfqa1FM56KMZ0pTOOkz"
     tags: ["Play", "Tragicomedy"]
-    summary: "A tale of love, prejudice, and justice where Bassanio's quest to win the hand of Portia leads his friend Antonio to make a dangerous bargain with the moneylender Shylock."
-    summary_bangla: "প্রেম, প্রতিশোধ এবং ন্যায়বিচারের এক জটিল কাহিনী, যেখানে এক পাউন্ড মাংসের চুক্তিকে ঘিরে নাটকীয়তা আবর্তিত হয়।"
+    summary: "To help his friend Bassanio woo the wealthy Portia, Antonio borrows money from Shylock, agreeing to forfeit a pound of flesh if he defaults. When disaster strikes, Shylock demands his due. The play explores themes of mercy versus justice, culminating in a dramatic courtroom scene led by Portia in disguise."
+    summary_bangla: "বন্ধু ব্যাসানিওকে সাহায্য করতে অ্যান্টোনিও সুদখোর শাইলকের কাছ থেকে টাকা ধার নেয়, শর্ত থাকে টাকা ফেরত না দিতে পারলে এক পাউন্ড মাংস দিতে হবে। আদালতে শাইলক যখন তার শর্ত পূরণে অনড়, তখন ছদ্মবেশী পোর্শিয়া তার বুদ্ধিমত্তা দিয়ে বিচারের মোড় ঘুরিয়ে দেয়।"
 
   - title: Hamlet
     author: William Shakespeare
@@ -235,8 +238,8 @@ reading_list:
     youtube_id: "p8wEiWrIx6w"
     gdrive_id: "15I84cO-ypM466RdJhgci6TSxdPdwWcRi"
     tags: ["Play", "Tragedy"]
-    summary: "Prince Hamlet of Denmark seeks revenge on his uncle Claudius, who has murdered his father and married his mother, Gertrude, driving him to the edge of madness and moral conflict."
-    summary_bangla: "প্রতিশোধের দ্বন্দ্বে জর্জরিত ডেনমার্কের রাজপুত্র হ্যামলেটের গল্প, যা অস্তিত্ব, পাগলামি এবং নৈতিকতার প্রশ্ন তোলে।"
+    summary: "Prince Hamlet is haunted by his father's ghost, who reveals he was murdered by Hamlet's uncle, Claudius, the new king. Paralyzed by grief and the need for proof, Hamlet feigns madness. His hesitation leads to a spiraling tragedy that destroys the entire royal family of Denmark."
+    summary_bangla: "ডেনমার্কের রাজপুত্র হ্যামলেট তার বাবার প্রেতাত্মার কাছ থেকে জানতে পারে যে তার চাচা ক্লডিয়াসই রাজাকে হত্যা করেছে। প্রতিশোধের স্পৃহা এবং নৈতিক দ্বিধার দ্বন্দ্বে হ্যামলেট পাগলামির অভিনয় করে। তার সিদ্ধান্তহীনতা শেষ পর্যন্ত পুরো রাজপরিবারকে ধ্বংসের মুখে ঠেলে দেয়।"
 
   - title: Othello
     author: William Shakespeare
@@ -247,8 +250,8 @@ reading_list:
     youtube_id: "lUiSZ5yIeh0"
     gdrive_id: "1-nG0nF743Of8sQ2XCp-bcFFM-gq6EROs"
     tags: ["Play", "Tragedy"]
-    summary: "The tragic downfall of the Moorish general Othello, whose mind is poisoned by the master manipulator Iago, leading him to doubt the fidelity of his beloved wife, Desdemona."
-    summary_bangla: "ইয়াগোর ষড়যন্ত্রে ঈর্ষার আগুনে পুড়ে যাওয়া মহান সেনাপতি ওথেলো এবং তার স্ত্রী ডেসডিমোনার করুণ পরিণতি।"
+    summary: "Othello, a Moorish general, secretly marries Desdemona. His ensign, Iago, fueled by jealousy and racism, orchestrates a masterclass in manipulation. By planting a handkerchief and whispering lies, Iago convinces Othello of his wife's infidelity, driving the noble soldier to a murderous rage and tragic ruin."
+    summary_bangla: "মুর সেনাপতি ওথেলো ডেসডিমোনাকে ভালোবাসে। কিন্তু তার সহচর ইয়াগো ঈর্ষান্বিত হয়ে ওথেলোর মনে সন্দেহের বীজ বুনে দেয়। একটি রুমালকে কেন্দ্র করে ইয়াগোর সাজানো মিথ্যায় ওথেলো তার স্ত্রীকে অবিশ্বাস করতে শুরু করে, যা তাকে এক করুণ পরিণতির দিকে নিয়ে যায়।"
 
   - title: Macbeth
     author: William Shakespeare
@@ -259,8 +262,8 @@ reading_list:
     youtube_id: "xx4CtCXwTZQ"
     gdrive_id: "1Kab4KlS6uvHMuB1FPGxoh38XNYU_kadX"
     tags: ["Play", "Tragedy"]
-    summary: "A story of unchecked ambition, where the Scottish general Macbeth, spurred by a prophecy and his wife Lady Macbeth, murders his way to the throne, only to be consumed by guilt and paranoia."
-    summary_bangla: "ক্ষমতার লোভে এক স্কটিশ জেনারেল ম্যাকবেথের নৈতিক পতনের এক অন্ধকার এবং রক্তক্ষয়ী কাহিনী।"
+    summary: "A prophecy from three witches tells Macbeth he will be King of Scotland. Spurred by this and his wife's ruthless ambition, he murders King Duncan. Paranoia and guilt soon consume him, leading to a bloody reign of terror and his eventual downfall as the prophecy fulfills itself in unexpected ways."
+    summary_bangla: "তিন ডাইনির ভবিষ্যদ্বাণী শুনে এবং স্ত্রীর প্ররোচনায় স্কটিশ সেনাপতি ম্যাকবেথ রাজাকে হত্যা করে সিংহাসন দখল করে। কিন্তু ক্ষমতার লোভ এবং পাপবোধ তাকে গ্রাস করে ফেলে। একের পর এক হত্যাকাণ্ড এবং মানসিক অস্থিরতা শেষ পর্যন্ত তার পতন ডেকে আনে।"
 
   - title: The Picture of Dorian Gray
     author: Oscar Wilde
@@ -271,8 +274,8 @@ reading_list:
     youtube_id: "RD31qRg8XY4"
     gdrive_id: "1mlQbQ0Lj78UJt35yfVKyJeDBdjsfh8ah"
     tags: ["Gothic Fiction", "Philosophical Novel"]
-    summary: "The story of the handsome Dorian Gray, who sells his soul for eternal youth. As he indulges in a life of amoral pleasure, his magical portrait, painted by Basil Hallward and influenced by Lord Henry Wotton, bears the scars of his sins and ages in his place."
-    summary_bangla: "এক যুবকের গল্প যে তার আত্মার বিনিময়ে চিরযৌবন লাভ করে। তার প্রতিকৃতিতে বয়সের ছাপ পড়ে, আর সে নিজে ডুবে যায় নৈতিক অবক্ষয়ের গভীরে।"
+    summary: "Dorian Gray, a beautiful young man, inadvertently trades his soul so that a portrait of him will age while he remains forever young. As he indulges in a life of vice and cruelty, his flawless face remains unchanged, but the portrait hidden in his attic grows increasingly hideous, reflecting the corruption of his soul."
+    summary_bangla: "সুদর্শন ডরিয়ান গ্রে তার যৌবন ধরে রাখতে চায়, বিনিময়ে তার আঁকা ছবিটি তার হয়ে বুড়ো হতে থাকে। সে যখন অনৈতিক ও পাপাচারে লিপ্ত হয়, তার নিজের চেহারায় কোনো ছাপ পড়ে না, কিন্তু গোপন কুঠুরিতে রাখা ছবিটিতে তার পাপ এবং আত্মার বিকৃতি ফুটে ওঠে।"
 
   - title: Jane Eyre
     author: Charlotte Brontë
@@ -283,8 +286,8 @@ reading_list:
     youtube_id: "dgELvs7uM94"
     gdrive_id: "1e7RwJbX9J-VxZsE3leiqyNwoZjmQrNDW"
     tags: ["Gothic Fiction", "Classic Novel"]
-    summary: "The story of the orphaned Jane Eyre, who overcomes a harsh childhood to become a governess at Thornfield Hall. There, she falls for her mysterious employer, Mr. Rochester, but uncovers a terrible secret that tests her love, morality, and quest for independence."
-    summary_bangla: "এক অনাথ মেয়ের ভালোবাসা, স্বাধীনতা এবং আত্মমর্যাদা খুঁজে পাওয়ার এক শক্তিশালী ও কালজয়ী কাহিনী।"
+    summary: "Orphaned and mistreated, Jane Eyre secures a position as a governess at Thornfield Hall. She falls in love with her brooding employer, Mr. Rochester. However, their wedding is interrupted by the revelation of his mad wife hidden in the attic. Jane flees to maintain her dignity, only returning when she can love him as an equal."
+    summary_bangla: "শৈশবের অনাদর ও বঞ্চনা পেরিয়ে জেন আয়ার থর্নফিল্ড হলে গভর্নেস হিসেবে কাজ পায়। সেখানে সে তার মনিব মিস্টার রচেস্টারের প্রেমে পড়ে। কিন্তু বিয়ের দিন রচেস্টারের গোপন পাগল স্ত্রীর কথা জানাজানি হলে জেন তার আত্মসম্মান বাঁচাতে পালিয়ে যায়, এবং পরে নিজের শর্তে ফিরে আসে।"
     
   - title: Pride and Prejudice
     author: Jane Austen
@@ -295,8 +298,8 @@ reading_list:
     youtube_id: "GvGb2G1Ft5c"
     gdrive_id: "1swOj5Wm-LIR5ntmFQrjPBg4mP2RzntaF"
     tags: ["Regency Romance", "Classic Novel"]
-    summary: "The classic tale of the spirited Elizabeth Bennet and the proud Mr. Darcy. Through a series of witty encounters and misunderstandings, they must overcome their own pride and prejudices to find love and understanding in the rigid society of Regency England."
-    summary_bangla: "গর্বিত মিঃ ডার্সি এবং প্রাণবন্ত এলিজাবেথ বেনেটের গল্প, যারা সামাজিক শ্রেণি ও নিজেদের অহংকারকে জয় করে অবশেষে প্রেমে পড়ে।"
+    summary: "In a society obsessed with advantageous marriage, the spirited Elizabeth Bennet clashes with the wealthy, aloof Mr. Darcy. Through a series of misunderstandings, they must overcome his class snobbery (Pride) and her hasty judgments (Prejudice) to discover that they are perfect intellectual equals."
+    summary_bangla: "বিবাহ এবং সামাজিক মর্যাদার ওপর ভিত্তি করে গড়ে ওঠা সমাজে বুদ্ধিমতী এলিজাবেথ বেনেট এবং ধনী কিন্তু অহংকারী মিস্টার ডার্সির সংঘাত ও প্রেমের গল্প। ভুল বোঝাবুঝি, অহংকার এবং কুসংস্কার কাটিয়ে তারা একে অপরের প্রকৃত গুণাবলী আবিষ্কার করে।"
 
   - title: Sense and Sensibility
     author: Jane Austen
@@ -307,8 +310,8 @@ reading_list:
     youtube_id: "cBARWMXUsNM"
     gdrive_id: "18eaOO9hVfbj4fmH7xQn3ixp-x_neDOlk"
     tags: ["Regency Romance", "Satire"]
-    summary: "The story of the Dashwood sisters, Elinor and Marianne. One guided by reason and the other by passion, they navigate love, heartbreak, and fortune in Regency society."
-    summary_bangla: "দুই বোন এলিনর ও ম্যারিয়েন—একজন যুক্তিবাদী, অন্যজন আবেগপ্রবণ। তাদের প্রেম ও জীবনের নানা প্রতিকূলতার মধ্য দিয়ে পথচলার কাহিনী।"
+    summary: "The Dashwood sisters represent opposing temperaments: Elinor is ruled by reason (Sense) and suppresses her grief, while Marianne is ruled by emotion (Sensibility) and loves recklessly. After losing their fortune, both sisters experience heartbreak and must learn from each other to find balance and lasting happiness."
+    summary_bangla: "দুই বোন—এলিনর, যে যুক্তি ও সংযমে বিশ্বাসী, এবং ম্যারিয়েন, যে আবেগপ্রবণ। পৈতৃক সম্পত্তি হারানোর পর প্রেমের ক্ষেত্রে তারা উভয়েই আঘাত পায়। গল্পের শেষে তারা একে অপরের কাছ থেকে শিক্ষা নিয়ে যুক্তি ও আবেগের ভারসাম্য বজায় রেখে সুখী হতে শেখে।"
 
   - title: Far from the Madding Crowd
     author: Thomas Hardy
@@ -319,8 +322,8 @@ reading_list:
     youtube_id: "6TzE0LNzO64"
     gdrive_id: "1_1Lz1nOJYGnuHiQa6F6suGisIpN9wNdz"
     tags: ["Classic Novel", "Romance"]
-    summary: "Follows the fiercely independent Bathsheba Everdene as she navigates the affections of three distinct suitors: the loyal shepherd Gabriel Oak, the obsessive farmer William Boldwood, and the dashing Sergeant Troy."
-    summary_bangla: "এক স্বাধীনচেতা নারী বাথশেবা এভারডিন ও তার তিন প্রেমিকের গল্প, যা গ্রামীণ ইংল্যান্ডের পটভূমিতে প্রেম, ত্যাগ এবং নিয়তির অন্বেষণ করে।"
+    summary: "Independent Bathsheba Everdene inherits a farm and attracts three very different men: the steady shepherd Gabriel Oak, the dashing but reckless Sergeant Troy, and the obsessive landowner Boldwood. Her choices lead to tragedy and chaos before she finally recognizes the value of true devotion."
+    summary_bangla: "স্বাধীনচেতা নারী বাথশেবা এভারডিন খামারের মালিকানা পাওয়ার পর তিনজন ভিন্ন পুরুষের প্রেমের প্রস্তাব পায়—বিশ্বস্ত মেষপালক গ্যাব্রিয়েল ওক, বেপরোয়া সৈনিক ট্রয় এবং ধনী জমিদার বোল্ডউড। ভুল মানুষকে বেছে নেওয়ায় তার জীবনে নেমে আসে ট্র্যাজেডি, অবশেষে সে সত্যিকারের ভালোবাসার মূল্য বোঝে।"
 
   - title: Wuthering Heights
     author: Emily Brontë
@@ -331,8 +334,8 @@ reading_list:
     youtube_id: "WuadUccSk7Q"
     gdrive_id: "1eW2K1Mq6OgY39yxU1lRFyj9kMbYBZQFX"
     tags: ["Gothic Fiction", "Tragedy"]
-    summary: "A story of the turbulent and destructive love between Catherine Earnshaw and the enigmatic Heathcliff, and how its unresolved passion ultimately destroys them and many around them."
-    summary_bangla: "ক্যাথরিন ও হিথক্লিফের তীব্র, ধ্বংসাত্মক প্রেমের এক মর্মস্পর্শী কাহিনী, যা প্রজন্মের পর প্রজন্ম ধরে প্রতিশোধের আগুন জ্বেলে রাখে।"
+    summary: "On the bleak Yorkshire moors, the intense, destructive love between the orphan Heathcliff and Catherine Earnshaw spans generations. After Catherine marries for status, a heartbroken Heathcliff devotes his life to a cruel, calculated revenge that destroys both the Earnshaw and Linton families."
+    summary_bangla: "ইয়র্কশায়ারের নির্জন মালভূমিতে হিথক্লিফ এবং ক্যাথরিনের তীব্র কিন্তু ধ্বংসাত্মক প্রেমের গল্প। ক্যাথরিন সামাজিক মর্যাদার জন্য অন্যকে বিয়ে করলে, হিথক্লিফ প্রতিশোধপরায়ণ হয়ে ওঠে এবং দুই প্রজন্মের সুখ ধ্বংস করে দেয়। এটি প্রেম, ঘৃণা এবং অতিপ্রাকৃত আবহাওয়ার এক অনন্য সংমিশ্রণ।"
 
   - title: The Man-eating Leopard of Rudraprayag
     author: Jim Corbett
@@ -343,8 +346,8 @@ reading_list:
     youtube_id: "ZWyjmqqxebE" #  Bangla Audiobook
     gdrive_id: "1cU_U2cRl4MJdZk9D1GY_rKMvyFiD5qs6"
     tags: ["True Story", "Hunting", "Adventure", "Non-Fiction"]
-    summary: "The thrilling, true account of hunter-naturalist Jim Corbett's relentless pursuit of a notorious man-eating leopard in Rudraprayag, India. This single leopard was responsible for over 125 documented human deaths, and the book details the years of suspense and danger involved in tracking it down."
-    summary_bangla: "জিম করবেটের রুদ্রপ্রয়াগের মানুষখেকো চিতাবাঘ শিকারের রোমহর্ষক ও সত্য কাহিনী, যে বাঘটি ১২৫ জনেরও বেশি মানুষকে হত্যা করেছিল। এই গল্পে শিকারের উত্তেজনা, ধৈর্য এবং প্রকৃতির ভয়ংকর রূপ ফুটে উঠেছে।"
+    summary: "For eight years, a single leopard terrorized the pilgrims and villagers of Rudraprayag, claiming over 125 lives. Hunter-naturalist Jim Corbett details the grueling nights, the cunning of the predator, and the immense courage required to finally track and end the reign of one of history's deadliest man-eaters."
+    summary_bangla: "টানা আট বছর ধরে একটি চিতাবাঘ রুদ্রপ্রয়াগের তীর্থযাত্রী ও গ্রামবাসীদের মনে ত্রাস সৃষ্টি করে ১২৫ জনেরও বেশি মানুষকে হত্যা করে। জিম করবেট তার শিকারে অভিজ্ঞতার ঝুলি নিয়ে এই ধূর্ত ও বুদ্ধিমান বাঘটিকে মারার জন্য যে অসীম ধৈর্য ও সাহসের পরিচয় দেন, তারই রোমহর্ষক বর্ণনা এই বই।"
 
     # -----------------------------------------------------------------
     # French Literature
@@ -359,8 +362,8 @@ reading_list:
     youtube_id: "H63ZRNax4uU" # LibriVox Full Audiobook
     gdrive_id: "145YDJ2qhXsBkP7EkON-mni-1kKCBmme0"
     tags: ["Adventure", "Historical Fiction", "Swashbuckler"]
-    summary: "The story follows the young d'Artagnan as he leaves home to join the Musketeers of the Guard. He befriends the three most formidable musketeers of the age—Athos, Porthos, and Aramis—and together they become embroiled in the affairs of the state and court, living by the motto 'all for one, one for all.'"
-    summary_bangla: "তরুণ ডি'আর্টানান এবং তার তিন বন্ধু, তিন মাস্কেটিয়ার্স—অ্যাথোস, পোরথোস এবং আরামিসের বন্ধুত্ব, সম্মান এবং রোমাঞ্চকর অভিযানের গল্প।"
+    summary: "Young d'Artagnan arrives in Paris with dreams of becoming a King's Musketeer. He inadvertently challenges the three greatest musketeers—Athos, Porthos, and Aramis—to duels, but they soon unite against the scheming Cardinal Richelieu to protect the Queen's honor and the future of France."
+    summary_bangla: "প্যারিসে এসে তরুণ ডি'আর্টানান রাজা ত্রয়োদশ লুই-এর মাস্কেটিয়ার হতে চায়। ঘটনাচক্রে সেরা তিন মাস্কেটিয়ার—অ্যাথোস, পোরথোস এবং আরামিসের সাথে তার বন্ধুত্ব গড়ে ওঠে। কার্ডিনাল রিশলুর ষড়যন্ত্র থেকে রানীর সম্মান বাঁচাতে তারা কাঁধে কাঁধ মিলিয়ে লড়াই করে।"
 
   - title: The Man in the Iron Mask
     author: Alexandre Dumas
@@ -371,8 +374,8 @@ reading_list:
     youtube_id: "_Sse0iSsthY" # LibriVox Full Audiobook
     gdrive_id: "1SpbmSLzasdBNdhc8kvDv4lNU5D_FYYll"
     tags: ["Adventure", "Historical Fiction", "D'Artagnan Romances"]
-    summary: "The final adventure of the musketeers. As d'Artagnan serves King Louis XIV, Aramis discovers a terrible state secret: the king has a twin brother, a prisoner hidden away in the Bastille. This sets the stage for a daring plot that will test the loyalties of Athos, Porthos, Aramis, and d'Artagnan one last time."
-    summary_bangla: "মাস্কেটিয়ার্সদের শেষ অভিযান, যেখানে রাজা চতুর্দশ লুই-এর যমজ ভাই, লৌহ মুখোশে বন্দী এক রহস্যময় ব্যক্তির পরিচয় উন্মোচিত হয় এবং আনুগত্যের এক চূড়ান্ত পরীক্ষা নেয়।"
+    summary: "In the concluding chapter of the saga, the musketeers find themselves on opposite sides. Aramis plots to replace King Louis XIV with his twin brother, Philippe, who has been imprisoned in an iron mask to hide his identity. The plot forces the old friends to choose between loyalty to the crown and to each other."
+    summary_bangla: "মাস্কেটিয়ার্স সিরিজের শেষ পর্বে বন্ধুরা একে অপরের মুখোমুখি দাঁড়ায়। আরামিস রাজা চতুর্দশ লুইকে সরিয়ে তার যমজ ভাই ফিলিপকে সিংহাসনে বসানোর পরিকল্পনা করে, যে এতকাল লোহার মুখোশে বন্দি ছিল। এই ষড়যন্ত্র বন্ধুদের আনুগত্য ও বন্ধুত্বের এক কঠিন পরীক্ষার মুখে ফেলে।"
 
   - title: The Count of Monte Cristo
     author: Alexandre Dumas
@@ -383,8 +386,8 @@ reading_list:
     youtube_id: "_HI-rreKmSY" # LibriVox Full Audiobook
     gdrive_id: "1rXcXl7YgyWWcy6AZpD9yKxwIr3koOiyj"
     tags: ["Adventure", "Historical Fiction", "Revenge"]
-    summary: "The story of Edmond Dantès, a young sailor wrongfully imprisoned for life without trial. After a miraculous escape, he acquires a vast fortune and returns to Paris as the mysterious and sophisticated Count of Monte Cristo to exact a slow, meticulous revenge on the three men who betrayed him."
-    summary_bangla: "এক তরুণ নাবিক, এডমন্ড দান্তেসের অন্যায়ভাবে কারারুদ্ধ হওয়া এবং পরবর্তীতে মন্টে ক্রিস্টোর রহস্যময় কাউন্ট হিসেবে ফিরে এসে তার শত্রুদের উপর প্রতিশোধ নেওয়ার এক মহাকাব্যিক গল্প।"
+    summary: "Betrayed by jealous friends on his wedding day, Edmond Dantès spends 14 years in a dungeon. Guided by the Abbe Faria, he escapes and uncovers a hidden treasure. Reborn as the enigmatic Count of Monte Cristo, he enacts a complex, methodical revenge on those who stole his life, exploring the limits of justice."
+    summary_bangla: "ঈর্ষান্বিত বন্ধুদের ষড়যন্ত্রে বিয়ের দিনই তরুণ এডমন্ড দান্তেস কারারুদ্ধ হয়। দীর্ঘ ১৪ বছর পর সে জেল থেকে পালায় এবং এক বিশাল গুপ্তধনের মালিক হয়। মন্টে ক্রিস্টোর কাউন্ট হিসেবে ফিরে এসে সে অত্যন্ত ঠান্ডা মাথায় তার শত্রুদের একে একে ধ্বংস করে প্রতিশোধ নেয়।"
 
   - title: Beauty and the Beast
     author: Gabrielle-Suzanne Barbot de Villeneuve
@@ -395,8 +398,8 @@ reading_list:
     youtube_id: "AwrT7dNuFfc"
     gdrive_id: "17VmC8QpHwBqIKcqqkNsGJ79lr6GmdpKl"
     tags: ["Fairy Tale", "Romance", "Fantasy"]
-    summary: "The original, sprawling tale of a beautiful young woman named Belle who takes her father's place as a prisoner in a cursed castle. She must learn to see past the monstrous exterior of her captor, the Beast, to discover the enchanted prince within."
-    summary_bangla: "এক সুন্দরী তরুণী বেল এবং এক অভিশপ্ত রাজকুমারের গল্প। বেল তার বাবার পরিবর্তে এক প্রাসাদে বন্দী হয় এবং সেখানে সে বাহ্যিক রূপের আড়ালের প্রকৃত সৌন্দর্যকে আবিষ্কার করে।"
+    summary: "To save her father, Belle voluntarily becomes a prisoner in a magical castle ruled by a fearsome Beast. Unlike the simple Disney version, this original tale explores the lengthy backstory of the Prince's curse and Belle's dreams, showing how intellectual companionship gradually transforms fear into deep love."
+    summary_bangla: "বাবাকে বাঁচাতে বেল এক ভয়ংকর দর্শন পশুর প্রাসাদে বন্দি হতে রাজি হয়। এটি কেবল রূপকথা নয়, বরং মনের পরিবর্তনের গল্প। প্রাসাদের জাদু এবং পশুর সাথে দীর্ঘ আলাপচারিতার মাধ্যমে বেল তার বাহ্যিক রূপের আড়ালে লুকিয়ে থাকা মানবিক সত্তা ও রাজকুমারকে আবিষ্কার করে।"
 
     # -----------------------------------------------------------------
     # German Literature
@@ -411,13 +414,13 @@ reading_list:
     youtube_id: "dh37IsJf6cU" # LibriVox Full Audiobook
     gdrive_id: "1TQumxKRMrl1nkrMUyjJkgvHA_8deUOx4"
     tags: ["Novella", "Absurdist Fiction", "Modernism"]
-    summary: "The surreal story of Gregor Samsa, a traveling salesman who wakes up one morning to find himself inexplicably transformed into a monstrous insect. The novella explores themes of alienation, absurdity, and the burden of human existence as Gregor and his family struggle to cope with this bizarre and tragic situation."
-    summary_bangla: "গ্রেগর সামসা নামের এক ব্যক্তির একদিন সকালে এক বিশাল পোকায় রূপান্তরিত হওয়ার গল্প। এই অদ্ভুত রূপান্তর তার নিজের এবং তার পরিবারের জীবনে যে বিচ্ছিন্নতা ও বিপর্যয় নিয়ে আসে, এটি তারই এক পরাবাস্তব কাহিনী।"
+    summary: "Gregor Samsa wakes up transformed into a giant insect, but his main worry is being late for work. As he becomes a burden to his family, their initial shock turns to resentment and neglect. The story is a bleak, absurdist look at alienation, the fragility of human connection, and economic value."
+    summary_bangla: "গ্রেগর সামসা সকালে ঘুম থেকে উঠে দেখে সে এক বিশাল পোকায় পরিণত হয়েছে। এই অদ্ভুত রূপান্তরের ফলে সে তার পরিবারের কাছে বোঝা হয়ে দাঁড়ায়। প্রথমে সহানুভূতি থাকলেও ধীরে ধীরে পরিবার তাকে অবহেলা ও ঘৃণা করতে শুরু করে। এটি আধুনিক জীবনের বিচ্ছিন্নতা ও অস্তিত্ব সংকটের এক করুণ চিত্র।"
 
     # -----------------------------------------------------------------
-    # German Literature
+    # Russian Literature
     # -----------------------------------------------------------------
-
+    
   - title: White Nights
     author: Fyodor Dostoevsky
     published_date: 1848
@@ -427,10 +430,8 @@ reading_list:
     youtube_id: "yY7YngQE7gI"
     gdrive_id: "1g3_XNlIGEEQ_HghunkiMvqBvVFf6XlGt"
     tags: ["Short Story", "Romance"]
-    summary: "A lonely, unnamed narrator, a dreamer wandering the streets of St. Petersburg, meets the young Nastenka over four nights. He falls deeply in love, only to discover she is waiting for another man, leading to a poignant tale of hope and heartbreak."
-    summary_bangla: "এক নিঃসঙ্গ স্বপ্নদর্শী যুবকের সাথে তরুণী নাস্তেনকার সেন্ট পিটার্সবার্গের চারটি রাতের আলাপচারিতার গল্প। এটি একতরফা প্রেম, আশা এবং হৃদয়ভাঙার এক মর্মস্পর্শী আখ্যান।"
-
-
+    summary: "In the magical glow of St. Petersburg's 'white nights,' a lonely dreamer meets Nastenka. Over four nights, they share their deepest hopes and life stories. He falls in love, but she is waiting for another man. It is a tender, heartbreaking tale of unrequited love and the fleeting nature of happiness."
+    summary_bangla: "সেন্ট পিটার্সবার্গের সাদা রাতের জাদুকরী আলোয় এক নিঃসঙ্গ স্বপ্নচারী যুবকের সাথে নাস্তেনকার দেখা হয়। চারটি রাতে তারা নিজেদের জীবনের গল্প ভাগ করে নেয়। যুবকটি প্রেমে পড়ে, কিন্তু নাস্তেনকা তার প্রেমিকের অপেক্ষায় থাকে। এটি একতরফা প্রেম, ক্ষণস্থায়ী আনন্দ এবং নিঃস্বার্থ ত্যাগের এক অনবদ্য কাহিনী।"
 
 ---
 

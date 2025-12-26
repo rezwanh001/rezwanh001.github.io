@@ -130,6 +130,18 @@ reading_list:
     # -----------------------------------------------------------------
     # English Literature
     # -----------------------------------------------------------------
+  - title: The Canterville Ghost
+    author: Oscar Wilde
+    published_date: 1887
+    category: English Literature
+    rating: 3
+    image: /assets/pdf/books/book_the_canterville_ghost.png
+    youtube_id: "u5c_oC5UR0I" # LibriVox Full Audiobook
+    gdrive_id: "1xz3fBi7XJzbwvYCcsC3_WMXCS3LZl0os"
+    tags: ["Humor", "Ghost Story", "Satire"]
+    summary: "A humorous and touching story about an American family who moves into a haunted English mansion. Instead of being terrified by the resident ghost, Sir Simon, they prank him and offer him cleaning products for his bloodstains, turning the traditional ghost story on its head."
+    summary_bangla: "এক আমেরিকান পরিবার ইংল্যান্ডের এক ভুতুড়ে প্রাসাদে থাকতে আসে এবং সেখানকার ভূত স্যার সাইমনকে ভয় পেতে অস্বীকার করে। উল্টো পরিবারের শিশুরা ভূতের সাথে নানা কৌতুক করে তাকেই অতিষ্ঠ করে তোলে। এটি অস্কার ওয়াইল্ডের এক হাস্যরসাত্মক এবং হৃদয়স্পর্শী গল্প।"
+  
   - title: Arms and the Man
     author: George Bernard Shaw
     published_date: 1894

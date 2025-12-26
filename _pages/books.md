@@ -77,7 +77,7 @@ reading_list:
   # Bengali Literature
   # -----------------------------------------------------------------
   - title: Secrets of Zionism (সিক্রেটস অব জায়োনিজম)
-    author: Henry Ford (Trans: Fuad Al Azad)
+    author: Henry Ford (Translate — Fuad Al Azad)
     published_date: 1920
     category: Bengali Literature
     rating: 5

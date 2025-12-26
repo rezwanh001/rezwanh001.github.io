@@ -9,13 +9,10 @@ nav_order: 8 # Or any order you prefer
 # -----------------------------------------------------------------
 # Reading List Data
 # -----------------------------------------------------------------
-# -----------------------------------------------------------------
-# Reading List Data
-# -----------------------------------------------------------------
 reading_list:
-    # -----------------------------------------------------------------
-    # American Literature
-    # -----------------------------------------------------------------
+  # -----------------------------------------------------------------
+  # American Literature
+  # -----------------------------------------------------------------
   - title: The Scarlet Letter
     author: Nathaniel Hawthorne
     published_date: 1850
@@ -52,6 +49,18 @@ reading_list:
     summary: "Judah Ben-Hur, a Jewish prince, is wrongfully condemned to the galleys by his childhood friend Messala. The story follows his miraculous survival, his thirst for vengeance culminating in a deadly chariot race, and his ultimate spiritual transformation after witnessing the crucifixion of Jesus Christ."
     summary_bangla: "শৈশবের বন্ধু মেসালার বিশ্বাসঘাতকতায় ইহুদি রাজপুত্র জুডাহ বেন-হুর দাসে পরিণত হয়। দাসত্ব থেকে মুক্তি, রোমহর্ষক রথদৗড়ে প্রতিশোধ এবং অবশেষে যিশু খ্রিস্টের সান্নিধ্যে এসে প্রতিহিংসা ভুলে ক্ষমার পথে তার আত্মিক রূপান্তরের এক মহাকাব্যিক গল্প।"
 
+  - title: Moby Dick
+    author: Herman Melville
+    published_date: 1851
+    category: American Literature
+    rating: 5
+    image: /assets/pdf/books/book_moby_dick.png
+    youtube_id: "zVpMIVXcvxE" # LibriVox Full Audiobook
+    gdrive_id: "1mQ2U7-drlbreIPG2WsmHPDXH4ZHm2bRK"
+    tags: ["Adventure", "Epic", "Classic Novel"]
+    summary: "Narrated by the wandering sailor Ishmael, this epic tale chronicles the voyage of the whaling ship Pequod. Its captain, the monomaniacal Ahab, is driven by a singular, mad purpose: to hunt and kill Moby Dick, the ferocious white whale that severed his leg. The journey evolves into a profound philosophical exploration of obsession, fate, and the struggle between man and nature."
+    summary_bangla: "ইসমায়েল নামের এক নাবিকের জবানবন্দিতে এই মহাকাব্যিক উপন্যাসের শুরু। 'পিকোয়াড' জাহাজের ক্যাপ্টেন আহাবের একমাত্র লক্ষ্য একটি সাদা তিমি, মবি ডিক-কে হত্যা করা, যে তার একটি পা কেড়ে নিয়েছিল। আহাবের এই অন্ধ আক্রোশ এবং প্রতিশোধের নেশা শেষ পর্যন্ত পুরো জাহাজ এবং তার নাবিকদের এক অনিবার্য ধ্বংসের দিকে ঠেলে দেয়।"
+
   - title: The Adventures of Huckleberry Finn
     author: Mark Twain
     published_date: 1884
@@ -64,9 +73,9 @@ reading_list:
     summary: "To escape his abusive father and the constraints of 'civilized' society, Huck Finn fakes his death and rafts down the Mississippi River. He is joined by Jim, a runaway slave. The journey challenges Huck's conscience, forcing him to choose between the laws of society and his loyalty to his friend."
     summary_bangla: "মদ্যপ বাবা এবং সমাজের তথাকথিত সভ্যতার বাঁধন থেকে বাঁচতে হাক ফিন মিসিসিপি নদীতে ভেসে পড়ে। তার সঙ্গী হয় পলাতক ক্রীতদাস জিম। এই যাত্রাপথে হাক তার বিবেক এবং তৎকালীন সমাজের বর্ণবাদী আইনের মধ্যে দ্বন্দ্বের মুখোমুখি হয় এবং এক গভীর বন্ধুত্বের জন্ম দেয়।"
 
-    # -----------------------------------------------------------------
-    # Bengali Literature
-    # -----------------------------------------------------------------
+  # -----------------------------------------------------------------
+  # Bengali Literature
+  # -----------------------------------------------------------------
   - title: মুক্তিযুদ্ধের বয়ানে ইসলাম (Muktijuddher Boyane Islam)
     author: Pinaki Bhattacharya
     published_date: 2024
@@ -103,9 +112,9 @@ reading_list:
     summary: "Set in the dense forests and hills of Chota Nagpur, young Bacchu and Tridib stumble upon a criminal conspiracy involving a mysterious aircraft named 'Duranta Eagle.' Their vacation turns into a dangerous investigation as they use their wits to outsmart a ruthless gang of smugglers."
     summary_bangla: "ছোটনাগপুরের জঙ্গল ও পাহাড়ের পটভূমিতে বাচ্ছু আর ত্রিদিবের ছুটির দিনগুলো পাল্টে যায় এক রুদ্ধশ্বাস অভিযানে। 'দুরন্ত ঈগল' নামের এক রহস্যময় বিমান এবং একদল চোরাকারবারির ষড়যন্ত্রের জট খুলতে দুই কিশোর তাদের বুদ্ধি ও সাহসের পরিচয় দেয়।"
 
-    # -----------------------------------------------------------------
-    # British Literature
-    # -----------------------------------------------------------------
+  # -----------------------------------------------------------------
+  # British Literature
+  # -----------------------------------------------------------------
   - title: Treasure Island
     author: Robert Louis Stevenson
     published_date: 1883
@@ -130,9 +139,9 @@ reading_list:
     summary: "Orphaned David Balfour is betrayed by his greedy uncle and sold into slavery, but a shipwreck leaves him stranded in the Scottish Highlands. He forms an unlikely bond with Alan Breck Stewart, a Jacobite rebel. Together, they must evade government troops and return to claim David's stolen inheritance."
     summary_bangla: "চাচা কর্তৃক অপহৃত হয়ে ক্রীতদাস হিসেবে পাচার হওয়ার সময় ডেভিড ব্যালফোর জাহাজডুবির কবলে পড়ে। স্কটল্যান্ডের পাহাড়ি পথে সে অ্যালান ব্রেক স্টুয়ার্ট নামের এক রাজনৈতিক পলাতক যোদ্ধার সাথে বন্ধুত্ব করে। দুই ভিন্ন মতাদর্শের মানুষ এক হয়ে শত্রুদের মোকাবিলা করে এবং ডেভিডের হারানো অধিকার ফিরে পেতে সংগ্রাম করে।"
 
-    # -----------------------------------------------------------------
-    # English Literature
-    # -----------------------------------------------------------------
+  # -----------------------------------------------------------------
+  # English Literature
+  # -----------------------------------------------------------------
   - title: The Canterville Ghost
     author: Oscar Wilde
     published_date: 1887
@@ -349,10 +358,9 @@ reading_list:
     summary: "For eight years, a single leopard terrorized the pilgrims and villagers of Rudraprayag, claiming over 125 lives. Hunter-naturalist Jim Corbett details the grueling nights, the cunning of the predator, and the immense courage required to finally track and end the reign of one of history's deadliest man-eaters."
     summary_bangla: "টানা আট বছর ধরে একটি চিতাবাঘ রুদ্রপ্রয়াগের তীর্থযাত্রী ও গ্রামবাসীদের মনে ত্রাস সৃষ্টি করে ১২৫ জনেরও বেশি মানুষকে হত্যা করে। জিম করবেট তার শিকারে অভিজ্ঞতার ঝুলি নিয়ে এই ধূর্ত ও বুদ্ধিমান বাঘটিকে মারার জন্য যে অসীম ধৈর্য ও সাহসের পরিচয় দেন, তারই রোমহর্ষক বর্ণনা এই বই।"
 
-    # -----------------------------------------------------------------
-    # French Literature
-    # -----------------------------------------------------------------
-
+  # -----------------------------------------------------------------
+  # French Literature
+  # -----------------------------------------------------------------
   - title: The Three Musketeers
     author: Alexandre Dumas
     published_date: 1844
@@ -401,10 +409,9 @@ reading_list:
     summary: "To save her father, Belle voluntarily becomes a prisoner in a magical castle ruled by a fearsome Beast. Unlike the simple Disney version, this original tale explores the lengthy backstory of the Prince's curse and Belle's dreams, showing how intellectual companionship gradually transforms fear into deep love."
     summary_bangla: "বাবাকে বাঁচাতে বেল এক ভয়ংকর দর্শন পশুর প্রাসাদে বন্দি হতে রাজি হয়। এটি কেবল রূপকথা নয়, বরং মনের পরিবর্তনের গল্প। প্রাসাদের জাদু এবং পশুর সাথে দীর্ঘ আলাপচারিতার মাধ্যমে বেল তার বাহ্যিক রূপের আড়ালে লুকিয়ে থাকা মানবিক সত্তা ও রাজকুমারকে আবিষ্কার করে।"
 
-    # -----------------------------------------------------------------
-    # German Literature
-    # -----------------------------------------------------------------
-
+  # -----------------------------------------------------------------
+  # German Literature
+  # -----------------------------------------------------------------
   - title: The Metamorphosis
     author: Franz Kafka
     published_date: 1915
@@ -417,10 +424,9 @@ reading_list:
     summary: "Gregor Samsa wakes up transformed into a giant insect, but his main worry is being late for work. As he becomes a burden to his family, their initial shock turns to resentment and neglect. The story is a bleak, absurdist look at alienation, the fragility of human connection, and economic value."
     summary_bangla: "গ্রেগর সামসা সকালে ঘুম থেকে উঠে দেখে সে এক বিশাল পোকায় পরিণত হয়েছে। এই অদ্ভুত রূপান্তরের ফলে সে তার পরিবারের কাছে বোঝা হয়ে দাঁড়ায়। প্রথমে সহানুভূতি থাকলেও ধীরে ধীরে পরিবার তাকে অবহেলা ও ঘৃণা করতে শুরু করে। এটি আধুনিক জীবনের বিচ্ছিন্নতা ও অস্তিত্ব সংকটের এক করুণ চিত্র।"
 
-    # -----------------------------------------------------------------
-    # Russian Literature
-    # -----------------------------------------------------------------
-    
+  # -----------------------------------------------------------------
+  # Russian Literature
+  # -----------------------------------------------------------------
   - title: White Nights
     author: Fyodor Dostoevsky
     published_date: 1848

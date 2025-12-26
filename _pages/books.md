@@ -53,7 +53,7 @@ reading_list:
     author: Herman Melville
     published_date: 1851
     category: American Literature
-    rating: 5
+    rating: 4
     image: /assets/pdf/books/book_moby_dick.png
     youtube_id: "zVpMIVXcvxE" # LibriVox Full Audiobook
     gdrive_id: "1mQ2U7-drlbreIPG2WsmHPDXH4ZHm2bRK"
@@ -76,6 +76,18 @@ reading_list:
   # -----------------------------------------------------------------
   # Bengali Literature
   # -----------------------------------------------------------------
+  - title: Secrets of Zionism (সিক্রেটস অব জায়োনিজম)
+    author: Henry Ford (Trans: Fuad Al Azad)
+    published_date: 1920
+    category: Bengali Literature
+    rating: 5
+    image: /assets/pdf/books/book_secrets_of_zionism.png
+    youtube_id: ""
+    gdrive_id: "1I4VBjpDYODuqt7WYP6ITBO5hLeV6Vy98"
+    tags: ["Politics", "History", "Translation"]
+    summary: "A Bengali translation of Henry Ford's controversial collection of essays, originally published as 'The International Jew'. The book presents Ford's arguments regarding the alleged disproportionate influence of a specific group over global finance, media, and government policies. It offers a historical window into early 20th-century perspectives on the geopolitical structures of power and the specific role he attributed to Zionism in shaping world events."
+    summary_bangla: "হেনরি ফোর্ডের বিখ্যাত এবং বিতর্কিত প্রবন্ধ সংকলন 'দ্য ইন্টারন্যাশনাল জিউ'-এর বাংলা অনুবাদ। বইটিতে ফোর্ড বিংশ শতাব্দীর প্রেক্ষাপটে বিশ্ব অর্থনীতি, সংবাদমাধ্যম এবং আন্তর্জাতিক রাজনীতিতে জায়নবাদী প্রভাবের এক বিস্তারিত বিবরণ তুলে ধরেছেন। এতে বৈশ্বিক ক্ষমতা কাঠামো, ব্যাংকিং ব্যবস্থা এবং এর নেপথ্য চালিকাশক্তি সম্পর্কে লেখকের নিজস্ব বিশ্লেষণ ও পর্যবেক্ষণ স্থান পেয়েছে, যা আজও বিতর্কের কেন্দ্রবিন্দু।"
+
   - title: মুক্তিযুদ্ধের বয়ানে ইসলাম (Muktijuddher Boyane Islam)
     author: Pinaki Bhattacharya
     published_date: 2024

@@ -17,7 +17,6 @@ description: Publications by categories in reversed chronological order. You can
 nav: true
 nav_order: 2
 ---
-
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->

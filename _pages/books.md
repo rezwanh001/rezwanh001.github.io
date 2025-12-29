@@ -494,47 +494,30 @@ reading_list:
           <div class="card w-100">
             <img src="{{ book.image | relative_url }}" class="card-img-top" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-              <!-- Searchable Element: Title -->
-              <h5 class="card-title font-weight-bold book-title searchable-text" data-original-text="{{ book.title }}">{{ book.title }}</h5>
-              <!-- Searchable Element: Author -->
-              <h6 class="card-subtitle mb-2 text-muted book-author searchable-text" data-original-text="{{ book.author }}">{{ book.author }}</h6>
+              <!-- ADDED 'search-target' CLASS HERE -->
+              <h5 class="card-title font-weight-bold book-title search-target">{{ book.title }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted book-author search-target">{{ book.author }}</h6>
               
-              <!-- Hidden Metadata for Search (Category, Rating, Date) -->
-              <div class="d-none search-metadata">
-                {{ book.category }} {{ book.rating }} {{ book.published_date }}
-              </div>
+              <!-- Hidden Search Data (Tags/Category) -->
+              <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }}</div>
 
-              <!-- Star Rating Display -->
               <div class="star-rating mb-2">
                 {% for i in (1..5) %}
-                  {% if i <= book.rating %}
-                    <i class="fas fa-star"></i>
-                  {% else %}
-                    <i class="far fa-star"></i>
-                  {% endif %}
+                  {% if i <= book.rating %}<i class="fas fa-star"></i>{% else %}<i class="far fa-star"></i>{% endif %}
                 {% endfor %}
               </div>
 
-              <!-- Visible Tags -->
               <div class="tags-container mb-3">
                 <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
                 {% for tag in book.tags %}
-                  <!-- We add 'searchable-text' class to badges too if we want to highlight inside them, 
-                       but modifying HTML inside badges can be tricky. For now, we search them via metadata. 
-                       If specific tag highlighting is needed, we'd need spans inside badges. 
-                       Let's keep them as text search targets via the hidden div for robust filtering. -->
                   <span class="badge badge-pill badge-genre">{{ tag }}</span>
                 {% endfor %}
-                <!-- Hidden text version of tags for searching/highlighting context if needed, 
-                     but main highlighting target are the paragraphs below -->
               </div>
               
-              <!-- Searchable Element: English Summary -->
-              <p class="card-text book-summary searchable-text" data-original-text="{{ book.summary }}">{{ book.summary }}</p>
-              
-              <!-- Searchable Element: Bangla Summary -->
+              <!-- ADDED 'search-target' CLASS HERE -->
+              <p class="card-text search-target">{{ book.summary }}</p>
               {% if book.summary_bangla and book.summary_bangla != "" %}
-                <p class="card-text bangla-summary mt-auto searchable-text" data-original-text="{{ book.summary_bangla }}">{{ book.summary_bangla }}</p>
+                <p class="card-text bangla-summary mt-auto search-target">{{ book.summary_bangla }}</p>
               {% endif %}
             </div>
             
@@ -575,51 +558,61 @@ reading_list:
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById("bookSearch");
-  let timeoutId;
+  // Select all elements we want to highlight (Title, Author, Summary)
+  const textElements = document.querySelectorAll(".search-target");
+  
+  // 1. Initialize: Store the original clean HTML for every searchable field
+  // This prevents the HTML from getting messy when we add/remove highlights
+  textElements.forEach(el => {
+    el.dataset.originalHtml = el.innerHTML;
+  });
 
-  // Actual filtering logic (Matches bibsearch.js logic)
-  const filterBooks = (searchTerm) => {
-    const lowerTerm = searchTerm.toLowerCase();
+  const performSearch = () => {
+    const query = searchInput.value.trim();
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, "gi"); // Escape special chars + Case insensitive
     
-    // 1. Filter Books
-    const allBooks = document.querySelectorAll(".book-item");
-    allBooks.forEach(book => {
-      // Check all text inside the card (Title, Author, Tags, Summary, Hidden Data)
-      const text = book.innerText.toLowerCase();
+    // A. Loop through books to Filter (Show/Hide)
+    document.querySelectorAll(".book-item").forEach(book => {
+      const allText = book.innerText.toLowerCase(); // Search everything visible + hidden
       
-      if (text.indexOf(lowerTerm) > -1) {
-        book.classList.remove("d-none"); // Show matches
+      if (query === "" || allText.includes(query.toLowerCase())) {
+        book.classList.remove("d-none");
+        
+        // B. Apply Highlighting to visible books
+        const targets = book.querySelectorAll(".search-target");
+        targets.forEach(el => {
+          const original = el.dataset.originalHtml;
+          if (query.length > 0) {
+            // Replace the matching text with <mark> tags
+            // $1 captures the original case (e.g. "Jane" stays "Jane" even if you typed "jane")
+            el.innerHTML = original.replace(regex, '<mark style="padding:0; background-color: #ffeeba;">$1</mark>');
+          } else {
+            el.innerHTML = original; // Reset if query is empty
+          }
+        });
+
       } else {
-        book.classList.add("d-none");    // Hide non-matches
+        book.classList.add("d-none");
       }
     });
 
-    // 2. Hide Empty Category Sections
-    const allSections = document.querySelectorAll(".category-section");
-    allSections.forEach(section => {
-      // Check if this section has any visible books left
+    // C. Hide Empty Categories
+    document.querySelectorAll(".category-section").forEach(section => {
       const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
-      
-      if (visibleBooks.length === 0) {
-        section.style.display = "none";
-      } else {
-        section.style.display = "block";
-      }
+      section.style.display = (visibleBooks.length === 0) ? "none" : "block";
     });
   };
 
-  // Event Listener with 300ms Delay (Debounce)
+  // Event Listener with Debounce (Wait 300ms to stop typing)
+  let timeoutId;
   if (searchInput) {
-    searchInput.addEventListener("input", function() {
-      clearTimeout(timeoutId); // Clear previous timer
-      const value = this.value;
-      
-      // Wait 300ms before running the filter (Performance optimization)
-      timeoutId = setTimeout(() => filterBooks(value), 300);
+    searchInput.addEventListener("keyup", function() {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(performSearch, 300);
     });
   }
 
-  // Stop YouTube Video on Modal Close (Standard Bootstrap Fix)
+  // Bootstrap Modal Fix (Stop video on close)
   if (typeof $ !== 'undefined') {
     $('.modal').on('hidden.bs.modal', function () {
       var iframe = $(this).find('iframe');

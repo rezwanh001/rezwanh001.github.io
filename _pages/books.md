@@ -477,7 +477,7 @@ reading_list:
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
     <!-- Matches your Publications search bar style -->
-    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da;">
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da; max-width: 600px; margin: 0 auto;">
   </div>
 </div>
 

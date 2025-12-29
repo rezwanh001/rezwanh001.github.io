@@ -502,10 +502,10 @@ reading_list:
     <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
     <hr class="mt-0 mb-4">
     <div class="row">
-      <!-- {% for book in group.items %} --> 
+      {% for book in group.items %} 
       <!-- NEW: Sort the books inside this group by title before looping -->
-      {% assign sorted_group_books = group.items | sort: "title" %}
-      {% for book in sorted_group_books %}
+      <!-- {% assign sorted_group_books = group.items | sort: "title" %}
+      {% for book in sorted_group_books %} -->
         <!-- Added "book-item" class here for JS selection -->
         <div class="col-md-4 mb-4 d-flex align-items-stretch book-item">
           <div class="card w-100">

@@ -457,9 +457,10 @@ reading_list:
 <!-- PAGE CONTENT -->
 <!-- =============================================================== -->
 
+
 <style>
   /* Highlighter Style */
-  .search-highlight {
+  mark.search-highlight {
     background-color: #ffeeba;
     color: #000;
     font-weight: bold;
@@ -475,11 +476,12 @@ reading_list:
 <!-- SEARCH BAR -->
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
-    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em;">
+    <!-- Matches your Publications search bar style -->
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da;">
   </div>
 </div>
 
-<!-- BOOK LIST -->
+<!-- MAIN BOOK LIST LOGIC -->
 {% assign sorted_list = page.reading_list | sort: "category" %}
 {% assign grouped_books = sorted_list | group_by: "category" %}
 
@@ -489,15 +491,16 @@ reading_list:
     <hr class="mt-0 mb-4">
     <div class="row">
       {% for book in group.items %}
+        <!-- Added "book-item" class here for JS selection -->
         <div class="col-md-4 mb-4 d-flex align-items-stretch book-item">
           <div class="card w-100">
             <img src="{{ book.image | relative_url }}" class="card-img-top" loading="lazy" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-              <!-- Searchable Fields -->
+              <!-- Added "search-target" for highlighting -->
               <h5 class="card-title font-weight-bold book-title search-target">{{ book.title }}</h5>
               <h6 class="card-subtitle mb-2 text-muted book-author search-target">{{ book.author }}</h6>
               
-              <!-- Hidden Search Data -->
+              <!-- Hidden Metadata for Search (Category, Rating, Tags) -->
               <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }} {{ book.rating }}</div>
 
               <div class="star-rating mb-2">
@@ -521,13 +524,11 @@ reading_list:
             
             <div class="card-footer bg-transparent border-top-0 text-center">
               {% if book.youtube_id and book.youtube_id != "" %}
-                <!-- Button stores ID in data attribute, NOT an iframe -->
                 <button type="button" class="btn btn-outline-primary btn-sm m-1" onclick="openVideo('{{ book.title | escape }}', '{{ book.youtube_id }}')">
                   <i class="fab fa-youtube"></i> Watch Audiobook
                 </button>
               {% endif %}
               {% if book.gdrive_id and book.gdrive_id != "" %}
-                <!-- Button stores ID in data attribute, NOT an iframe -->
                 <button type="button" class="btn btn-outline-danger btn-sm m-1" onclick="openPDF('{{ book.title | escape }}', '{{ book.gdrive_id }}')">
                   <i class="fas fa-book-open"></i> Read PDF
                 </button>
@@ -540,7 +541,7 @@ reading_list:
   </div>
 {% endfor %}
 
-<!-- SINGLE SHARED VIDEO MODAL -->
+<!-- SINGLE SHARED MODALS (Performance Optimization) -->
 <div class="modal fade" id="sharedVideoModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
@@ -557,7 +558,6 @@ reading_list:
   </div>
 </div>
 
-<!-- SINGLE SHARED PDF MODAL -->
 <div class="modal fade" id="sharedPDFModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
@@ -572,9 +572,9 @@ reading_list:
   </div>
 </div>
 
-<!-- SCRIPT: EFFICIENT SEARCH + LAZY MODALS -->
+<!-- SCRIPT: SEARCH, HIGHLIGHT, FILTER & LAZY MODALS -->
 <script>
-// 1. GLOBAL MODAL FUNCTIONS (Optimization: No iframes loaded until click)
+// 1. GLOBAL MODAL FUNCTIONS (Memory Optimization)
 function openVideo(title, youtubeId) {
   document.getElementById('sharedVideoModalLabel').innerText = title;
   document.getElementById('sharedVideoIframe').src = "https://www.youtube.com/embed/" + youtubeId;
@@ -589,13 +589,13 @@ function openPDF(title, driveId) {
 
 function closeModal(modalId) {
   $('#' + modalId).modal('hide');
-  // Clear iframe to stop video/save memory
+  // Clear iframes to stop video/save memory
   if(modalId === 'sharedVideoModal') document.getElementById('sharedVideoIframe').src = "";
   if(modalId === 'sharedPDFModal') document.getElementById('sharedPDFIframe').src = "";
 }
 
-// Ensure iframes are cleared if user clicks background to close
 document.addEventListener("DOMContentLoaded", function() {
+  // Modal cleanup for background clicks
   if (typeof $ !== 'undefined') {
     $('.modal').on('hidden.bs.modal', function () {
       document.getElementById('sharedVideoIframe').src = "";
@@ -603,60 +603,80 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 2. SEARCH & HIGHLIGHT LOGIC
+  // 2. SEARCH LOGIC
   const searchInput = document.getElementById("bookSearch");
   const textElements = document.querySelectorAll(".search-target");
   
-  // Store original HTML for clean highlighting
+  // A. Initialize: Store original text for highlighting restoration
   textElements.forEach(el => {
     el.dataset.originalHtml = el.innerHTML;
   });
 
-  const performSearch = () => {
+  function performSearch() {
     const query = searchInput.value.trim().toLowerCase();
     
-    // Regex for highlighting (case insensitive)
-    // We escape special regex characters from input to prevent crashes
+    // Create safe regex for highlighting (case insensitive)
+    // Escape special regex characters to prevent crashes
     const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const regex = new RegExp(`(${safeQuery})`, "gi");
 
     const books = document.querySelectorAll(".book-item");
     const sections = document.querySelectorAll(".category-section");
 
+    // B. Filter Books
     books.forEach(book => {
-      // Collect text: Visible fields + Hidden metadata
+      // Collect text from visible fields AND hidden metadata
       let fullText = "";
       book.querySelectorAll(".search-target").forEach(el => fullText += el.textContent + " ");
       const meta = book.querySelector(".search-metadata");
       if(meta) fullText += meta.textContent + " ";
       fullText = fullText.toLowerCase();
 
+      // Show/Hide Logic
       if (query === "" || fullText.includes(query)) {
-        book.classList.remove("d-none");
+        // USE STYLE.DISPLAY instead of class for reliability
+        book.style.setProperty("display", "flex", "important"); // Show
         
-        // Highlight visible text
+        // Highlight Logic for visible fields
         const targets = book.querySelectorAll(".search-target");
         targets.forEach(el => {
           const original = el.dataset.originalHtml;
           if (query.length > 0) {
-            // Replace text matches with <mark> tags
+            // Apply highlighting mark
             el.innerHTML = original.replace(regex, '<mark class="search-highlight">$1</mark>');
           } else {
+            // Reset text
             el.innerHTML = original;
           }
         });
       } else {
-        book.classList.add("d-none");
+        // Hide non-matching books
+        book.style.setProperty("display", "none", "important");
       }
     });
 
-    // Hide empty sections
+    // C. Hide Empty Sections
     sections.forEach(section => {
-      const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
-      section.style.display = (visibleBooks.length === 0) ? "none" : "block";
-    });
-  };
+      // Check for visible books inside this section
+      // We look for books that are NOT set to display: none
+      let hasVisibleBooks = false;
+      const sectionBooks = section.querySelectorAll(".book-item");
+      
+      sectionBooks.forEach(b => {
+        if (b.style.display !== "none") {
+          hasVisibleBooks = true;
+        }
+      });
 
+      if (hasVisibleBooks) {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  }
+
+  // D. Event Listener (Debounced)
   let timeoutId;
   if (searchInput) {
     searchInput.addEventListener("keyup", function() {

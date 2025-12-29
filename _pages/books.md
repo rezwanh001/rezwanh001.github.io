@@ -457,14 +457,26 @@ reading_list:
 <!-- PAGE CONTENT -->
 <!-- =============================================================== -->
 
+
+<!-- STYLES FOR HIGHLIGHTING -->
+<style>
+  .search-highlight {
+    background-color: #ffeeba; /* Light yellow background */
+    color: #000;
+    font-weight: bold;
+    padding: 0 2px;
+    border-radius: 3px;
+  }
+</style>
+
 <div class="intro-text" style="margin-bottom: 2rem; text-align: center;">
   <p><strong>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</strong></p>
 </div>
 
-<!-- SEARCH BAR - Matches your Publications Page Style -->
+<!-- SEARCH BAR (Using same class 'bibsearch-form-input' to match styles) -->
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
-    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da;">
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em;">
   </div>
 </div>
 
@@ -482,22 +494,15 @@ reading_list:
           <div class="card w-100">
             <img src="{{ book.image | relative_url }}" class="card-img-top" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title font-weight-bold">{{ book.title }}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
+              <!-- Searchable Element: Title -->
+              <h5 class="card-title font-weight-bold book-title searchable-text" data-original-text="{{ book.title }}">{{ book.title }}</h5>
+              <!-- Searchable Element: Author -->
+              <h6 class="card-subtitle mb-2 text-muted book-author searchable-text" data-original-text="{{ book.author }}">{{ book.author }}</h6>
               
-              <!-- === HIDDEN SEARCHABLE DATA === -->
-              <!-- This div contains ALL text you want to search for. It is hidden from view but seen by the JS. -->
-              <div class="search-data d-none">
-                {{ book.title }} 
-                {{ book.author }} 
-                {{ book.published_date }} 
-                {{ book.category }} 
-                {{ book.tags | join: " " }} 
-                {{ book.summary }} 
-                {{ book.summary_bangla }}
-                Rating: {{ book.rating }}
+              <!-- Hidden Metadata for Search (Category, Rating, Date) -->
+              <div class="d-none search-metadata">
+                {{ book.category }} {{ book.rating }} {{ book.published_date }}
               </div>
-              <!-- ============================== -->
 
               <!-- Star Rating Display -->
               <div class="star-rating mb-2">
@@ -514,13 +519,22 @@ reading_list:
               <div class="tags-container mb-3">
                 <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
                 {% for tag in book.tags %}
+                  <!-- We add 'searchable-text' class to badges too if we want to highlight inside them, 
+                       but modifying HTML inside badges can be tricky. For now, we search them via metadata. 
+                       If specific tag highlighting is needed, we'd need spans inside badges. 
+                       Let's keep them as text search targets via the hidden div for robust filtering. -->
                   <span class="badge badge-pill badge-genre">{{ tag }}</span>
                 {% endfor %}
+                <!-- Hidden text version of tags for searching/highlighting context if needed, 
+                     but main highlighting target are the paragraphs below -->
               </div>
               
-              <p class="card-text">{{ book.summary }}</p>
+              <!-- Searchable Element: English Summary -->
+              <p class="card-text book-summary searchable-text" data-original-text="{{ book.summary }}">{{ book.summary }}</p>
+              
+              <!-- Searchable Element: Bangla Summary -->
               {% if book.summary_bangla and book.summary_bangla != "" %}
-                <p class="card-text bangla-summary mt-auto">{{ book.summary_bangla }}</p>
+                <p class="card-text bangla-summary mt-auto searchable-text" data-original-text="{{ book.summary_bangla }}">{{ book.summary_bangla }}</p>
               {% endif %}
             </div>
             
@@ -543,7 +557,7 @@ reading_list:
   </div>
 {% endfor %}
 
-<!-- MODALS CODE (Unchanged logic, just simplified layout for brevity) -->
+<!-- MODALS CODE -->
 {% for book in page.reading_list %}
   {% if book.youtube_id != "" %}
   <div class="modal fade" id="videoModal-{{ book.title | slugify }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -557,47 +571,94 @@ reading_list:
   {% endif %}
 {% endfor %}
 
-<!-- JAVASCRIPT FOR SEARCH & FILTERING -->
+<!-- JAVASCRIPT FOR SEARCH, FILTERING AND HIGHLIGHTING -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById("bookSearch");
+  let timeoutId;
 
-  // Filter Function
-  function filterBooks() {
-    const input = searchInput.value.toLowerCase();
+  // 1. Initialize: Store original text for all searchable elements
+  const searchableElements = document.querySelectorAll(".searchable-text");
+  searchableElements.forEach(el => {
+    // We already added data-original-text in Liquid, but let's ensure it's there
+    if (!el.getAttribute("data-original-text")) {
+      el.setAttribute("data-original-text", el.innerText);
+    }
+  });
+
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+  }
+
+  function filterAndHighlight() {
+    const input = searchInput.value.toLowerCase().trim();
     const books = document.querySelectorAll(".book-item");
     const sections = document.querySelectorAll(".category-section");
 
-    // 1. Show/Hide Books based on Hidden Search Data
     books.forEach(book => {
-      // We explicitly look at the hidden .search-data div we created
-      const searchData = book.querySelector(".search-data").textContent.toLowerCase();
+      // Collect all text from this book (visible + hidden metadata)
+      // We look at the data-attributes of searchable elements to search against clean text
+      let fullText = "";
       
-      if (searchData.includes(input)) {
+      // Add Title, Author, Summaries
+      book.querySelectorAll(".searchable-text").forEach(el => {
+        fullText += el.getAttribute("data-original-text") + " ";
+      });
+      
+      // Add Tags/Category/Rating from hidden metadata div
+      const meta = book.querySelector(".search-metadata");
+      if(meta) fullText += meta.textContent + " ";
+      // Add actual Badge text (tags)
+      book.querySelectorAll(".badge").forEach(b => fullText += b.textContent + " ");
+
+      fullText = fullText.toLowerCase();
+
+      // --- LOGIC: SHOW OR HIDE ---
+      if (fullText.includes(input)) {
         book.classList.remove("d-none");
+        
+        // --- LOGIC: HIGHLIGHTING ---
+        // We only highlight if there is an input
+        const targetElements = book.querySelectorAll(".searchable-text");
+        targetElements.forEach(el => {
+          const originalText = el.getAttribute("data-original-text");
+          
+          if (input.length > 0) {
+            // Create a regex for the input, case insensitive
+            // We use capturing group () to keep the original casing when replacing
+            const regex = new RegExp(`(${escapeRegExp(input)})`, "gi");
+            
+            // Replace matches with wrapped span
+            // $1 ensures we keep the original case (e.g. 'Jane' stays 'Jane' even if search is 'jane')
+            const newHtml = originalText.replace(regex, '<span class="search-highlight">$1</span>');
+            el.innerHTML = newHtml;
+          } else {
+            // Reset to original if input is empty
+            el.innerHTML = originalText;
+          }
+        });
+
       } else {
         book.classList.add("d-none");
       }
     });
 
-    // 2. Hide Empty Sections
+    // --- LOGIC: HIDE EMPTY SECTIONS ---
     sections.forEach(section => {
-      // Count how many books in this section do NOT have 'd-none'
       const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
-      if (visibleBooks.length === 0) {
-        section.style.display = "none";
-      } else {
-        section.style.display = "block";
-      }
+      section.style.display = (visibleBooks.length === 0) ? "none" : "block";
     });
   }
 
-  // Event Listener - Runs immediately on typing
+  // 2. Event Listener with Debounce (300ms)
   if (searchInput) {
-    searchInput.addEventListener("keyup", filterBooks);
+    searchInput.addEventListener("keyup", function() {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(filterAndHighlight, 300);
+    });
   }
 
-  // Stop YouTube Video on Modal Close (jQuery Fallback for Bootstrap)
+  // 3. Stop YouTube on Modal Close
   if (typeof $ !== 'undefined') {
     $('.modal').on('hidden.bs.modal', function () {
       var iframe = $(this).find('iframe');

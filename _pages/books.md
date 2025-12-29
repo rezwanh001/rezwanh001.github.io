@@ -453,7 +453,10 @@ reading_list:
 
 ---
 
-<!-- This part of the file is the main content that will be displayed on the page -->
+
+<!-- =============================================================== -->
+<!-- PAGE CONTENT -->
+<!-- =============================================================== -->
 
 <div class="intro-text" style="margin-bottom: 2rem; text-align: center;">
   <p><strong>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</strong></p>
@@ -462,7 +465,8 @@ reading_list:
 <!-- =================== SEARCH BAR ===================== -->
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
-    <input type="text" id="bookSearch" class="form-control" placeholder="Search books by title, author, category, or tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da;">
+    <!-- Updated ID and CLASS to match bibliography search style -->
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Type to filter..." style="border-radius: 5px; padding: 10px; font-size: 1.1em;">
   </div>
 </div>
 
@@ -471,6 +475,7 @@ reading_list:
 {% assign grouped_books = sorted_list | group_by: "category" %}
 
 {% for group in grouped_books %}
+  <!-- Wrapping the section in a div with class 'category-section' for easy hiding via JS -->
   <div class="category-section">
     <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
     <hr class="mt-0 mb-4">
@@ -483,8 +488,9 @@ reading_list:
               <h5 class="card-title font-weight-bold book-title">{{ book.title }}</h5>
               <h6 class="card-subtitle mb-2 text-muted book-author">{{ book.author }}</h6>
               
-              <!-- Hidden category for search indexing -->
+              <!-- Hidden fields for search indexing -->
               <span style="display:none;" class="book-category-text">{{ book.category }}</span>
+              <span style="display:none;">{{ book.tags | join: " " }}</span>
 
               <!-- Star Rating Section -->
               <div class="star-rating mb-2">
@@ -503,11 +509,13 @@ reading_list:
                   <span class="badge badge-pill badge-genre">{{ tag }}</span>
                 {% endfor %}
               </div>
+              
               <p class="card-text book-summary">{{ book.summary }}</p>
               {% if book.summary_bangla and book.summary_bangla != "" %}
                 <p class="card-text bangla-summary mt-auto">{{ book.summary_bangla }}</p>
               {% endif %}
             </div>
+            
             <div class="card-footer bg-transparent border-top-0 text-center">
               {% if book.youtube_id and book.youtube_id != "" %}
                 <button type="button" class="btn btn-outline-primary btn-sm m-1" data-toggle="modal" data-target="#videoModal-{{ book.title | slugify }}">
@@ -567,58 +575,64 @@ reading_list:
   {% endif %}
 {% endfor %}
 
-<!-- JavaScript to stop video when modal is closed -->
+<!-- =================== FILTER SCRIPT ===================== -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // 1. Search Logic
-    const searchInput = document.getElementById('bookSearch');
-    if (searchInput) {
-      searchInput.addEventListener('keyup', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        const bookItems = document.querySelectorAll('.book-item');
-        const sections = document.querySelectorAll('.category-section');
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("bookSearch");
+  let timeoutId;
 
-        // Toggle book visibility
-        bookItems.forEach(item => {
-          const text = item.textContent.toLowerCase();
-          if (text.includes(searchTerm)) {
-            item.classList.remove('d-none');
-          } else {
-            item.classList.add('d-none');
-          }
-        });
+  // Function to perform the filtering (Logic similar to bibsearch.js)
+  const filterBooks = (searchTerm) => {
+    searchTerm = searchTerm.toLowerCase();
+    
+    const allBooks = document.querySelectorAll(".book-item");
+    const allSections = document.querySelectorAll(".category-section");
 
-        // Toggle section visibility if all books in it are hidden
-        sections.forEach(section => {
-          // Check if any book in this section is visible (does not have d-none)
-          const visibleBooks = section.querySelectorAll('.book-item:not(.d-none)');
-          if (visibleBooks.length > 0) {
-            section.style.display = '';
-          } else {
-            section.style.display = 'none';
-          }
-        });
-      });
-    }
+    // 1. Loop through all books and toggle visibility
+    allBooks.forEach(book => {
+      // We grab all text content from the book card including hidden spans
+      const textContent = book.textContent.toLowerCase();
+      
+      if (textContent.includes(searchTerm)) {
+        book.classList.remove("d-none"); // Show
+      } else {
+        book.classList.add("d-none");    // Hide
+      }
+    });
 
-    // 2. Video Stop Logic (Using jQuery since Bootstrap modals likely rely on it in this theme)
-    if (typeof $ !== 'undefined') {
-      $('.modal').on('hidden.bs.modal', function (e) {
-        var iframe = $(this).find('iframe');
-        if (iframe.length > 0) {
-          var originalSrc = iframe.attr('src');
-          iframe.attr('src', '');
-          iframe.attr('src', originalSrc);
-        }
-      });
-    } else {
-        // Fallback vanilla JS for modal close if jQuery is missing
-        const modals = document.querySelectorAll('.modal');
-        modals.forEach(modal => {
-            // This relies on Bootstrap adding a click listener or mutation observer,
-            // but for simplicity, we listen to click on close buttons if jQuery isn't there.
-            // (Theme likely has jQuery, but just in case)
-        });
-    }
-  });
+    // 2. Loop through sections and hide them if they have no visible books
+    allSections.forEach(section => {
+      // Find visible books inside this specific section
+      // :not(.d-none) matches elements that do NOT have the hidden class
+      const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
+      
+      if (visibleBooks.length === 0) {
+        section.style.display = "none";
+      } else {
+        section.style.display = ""; // Reset to default (block)
+      }
+    });
+  };
+
+  // Listen for input (with 300ms debounce like bibsearch.js)
+  if (searchInput) {
+    searchInput.addEventListener("input", function() {
+      clearTimeout(timeoutId);
+      const value = this.value;
+      timeoutId = setTimeout(() => filterBooks(value), 300);
+    });
+  }
+
+  // Also handle video stop logic (standard Bootstrap fix)
+  if (typeof $ !== 'undefined') {
+    $('.modal').on('hidden.bs.modal', function (e) {
+      var iframe = $(this).find('iframe');
+      if (iframe.length > 0) {
+        var src = iframe.attr('src');
+        iframe.attr('src', '');
+        iframe.attr('src', src);
+      }
+    });
+  }
+});
 </script>

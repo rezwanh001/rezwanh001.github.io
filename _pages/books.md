@@ -4,7 +4,7 @@ permalink: /reading/
 title: reading
 description: "A collection of books I have recently completed."
 nav: true
-nav_order: 8 # Or any order you prefer
+nav_order: 8
 
 # -----------------------------------------------------------------
 # Reading List Data
@@ -19,7 +19,7 @@ reading_list:
     category: American Literature
     rating: 4
     image: /assets/pdf/books/book_the_scarlet_letter.png
-    youtube_id: "WXOhvwL4FFI" # LibriVox Full Audiobook
+    youtube_id: "WXOhvwL4FFI"
     gdrive_id: "1rSV4EOLJ3QrzuzMS-mXVIUqCK1QDXxZN"
     tags: ["Historical Fiction", "Classic Novel", "Romance"]
     summary: "Set in 17th-century Puritan Boston, this novel explores the psychological weight of sin and guilt. Hester Prynne bears the scarlet letter 'A' with dignity, while her secret lover, the Reverend Dimmesdale, is consumed by hidden remorse, and her estranged husband, Chillingworth, transforms into a vengeful fiend."
@@ -31,7 +31,7 @@ reading_list:
     category: American Literature
     rating: 5
     image: /assets/pdf/books/book_the_prophet.png
-    youtube_id: "SRz9iDK5XLQ" # LibriVox Full Audiobook
+    youtube_id: "SRz9iDK5XLQ"
     gdrive_id: "1KGz4hPqAuXac1vBJdbnA46rWxkp8zlXT"
     tags: ["Philosophy", "Poetry", "Spiritual"]
     summary: "As the prophet Almustafa awaits the ship that will take him home, he shares timeless wisdom with the people of Orphalese. Through twenty-six poetic essays, he explores the deepest aspects of the human condition, offering profound insights on love, marriage, work, freedom, pain, and friendship."
@@ -43,7 +43,7 @@ reading_list:
     category: American Literature
     rating: 4
     image: /assets/pdf/books/book_ben_hur.png
-    youtube_id: "0LOzGanemQU" # LibriVox Full Audiobook
+    youtube_id: "0LOzGanemQU"
     gdrive_id: "1MBMOIspgbz86wbtFwrR5PmO_fMysyE66"
     tags: ["Historical Fiction", "Religious Fiction", "Adventure"]
     summary: "Judah Ben-Hur, a Jewish prince, is wrongfully condemned to the galleys by his childhood friend Messala. The story follows his miraculous survival, his thirst for vengeance culminating in a deadly chariot race, and his ultimate spiritual transformation after witnessing the crucifixion of Jesus Christ."
@@ -55,7 +55,7 @@ reading_list:
     category: American Literature
     rating: 4
     image: /assets/pdf/books/book_moby_dick.png
-    youtube_id: "zVpMIVXcvxE" # LibriVox Full Audiobook
+    youtube_id: "zVpMIVXcvxE"
     gdrive_id: "1mQ2U7-drlbreIPG2WsmHPDXH4ZHm2bRK"
     tags: ["Adventure", "Epic", "Classic Novel"]
     summary: "Narrated by the wandering sailor Ishmael, this epic tale chronicles the voyage of the whaling ship Pequod. Its captain, the monomaniacal Ahab, is driven by a singular, mad purpose: to hunt and kill Moby Dick, the ferocious white whale that severed his leg. The journey evolves into a profound philosophical exploration of obsession, fate, and the struggle between man and nature."
@@ -94,7 +94,7 @@ reading_list:
     category: Bengali Literature
     rating: 4
     image: /assets/pdf/books/book_muktijuddher_boyane_islam.png
-    youtube_id: "" # Add video ID if available
+    youtube_id: ""
     gdrive_id: "19YUweDKcY26zIZtImY_9QrCnFuU0QRyl"
     tags: ["History", "Non-Fiction", "Politics"]
     summary: "This critical analysis challenges mainstream narratives regarding the role of Islam during Bangladesh's 1971 Liberation War. The author distinguishes between the political misuse of religion by opposing forces and the genuine faith of the freedom fighters, offering a nuanced counter-narrative on identity politics."
@@ -106,7 +106,7 @@ reading_list:
     category: Bengali Literature
     rating: 2.5
     image: /assets/pdf/books/book_hatyashastra.png
-    youtube_id: "Ol3ZG9DrfC0" # Full Audiobook
+    youtube_id: "Ol3ZG9DrfC0"
     gdrive_id: "1uPxpbqeQuY6yg3-XnWZ6SZMQ2KNJBHP7"
     tags: ["Thriller", "Spy Fiction", "Modern Bengali"]
     summary: "When a secret society threatens India's security using an ancient manuscript on assassination called 'Hatyashastra', the government turns to a brilliant modern-day strategist code-named Chanakya. He must decode historical clues and outmaneuver a shadow enemy in a high-stakes game of intellect and espionage."
@@ -118,7 +118,7 @@ reading_list:
     category: Bengali Literature
     rating: 3
     image: /assets/pdf/books/book_duranta_eagle.png
-    youtube_id: "qYpIEDPRckM" # Full Audiobook
+    youtube_id: "qYpIEDPRckM"
     gdrive_id: "1vBSsBrL5i1LfICGY-L7SP18f5yjjPKiN"
     tags: ["Adventure", "Young Adult", "Kishore Sahitya"]
     summary: "Set in the dense forests and hills of Chota Nagpur, young Bacchu and Tridib stumble upon a criminal conspiracy involving a mysterious aircraft named 'Duranta Eagle.' Their vacation turns into a dangerous investigation as they use their wits to outsmart a ruthless gang of smugglers."
@@ -133,10 +133,10 @@ reading_list:
     category: British Literature
     rating: 5
     image: /assets/pdf/books/book_treasure_island.png
-    youtube_id: "xP9sfS5O0a8" # LibriVox Full Audiobook
+    youtube_id: "xP9sfS5O0a8"
     gdrive_id: "1-gtRCif3KcsSE41z89NjfSYKPDb5pvXu"
     tags: ["Adventure", "Pirate Fiction", "Classic Novel"]
-    summary: "Young Jim Hawkins finds a dead captain's map and sets sail for Treasure Island. The voyage turns perilous when the ship's cook, the charismatic one-legged pirate Long John Silver, leads a mutiny. Jim must grow from a boy into a man of courage to survive the treachery and secure the gold."
+    summary: "Young Jim Hawkins discovers a dead captain's map and sets sail for Treasure Island. The voyage turns perilous when the ship's cook, the charismatic one-legged pirate Long John Silver, leads a mutiny. Jim must grow from a boy into a man of courage to survive the treachery and secure the gold."
     summary_bangla: "কিশোর জিম হকিন্স একটি গুপ্তধনের মানচিত্র খুঁজে পায় এবং সমুদ্র পাড়ি দেয়। কিন্তু জাহাজের রাঁধুনি, ধূর্ত একপা-ওয়ালা জলদস্যু লং জন সিলভারের নেতৃত্বে নাবিকরা বিদ্রোহ করে। বিশ্বাস-অবিশ্বাস এবং সাহসের এই পরীক্ষায় জিমকে বুদ্ধিমত্তার সাথে টিকে থাকতে হয়।"
 
   - title: Kidnapped
@@ -145,7 +145,7 @@ reading_list:
     category: British Literature
     rating: 4
     image: /assets/pdf/books/book_kidnapped_.png
-    youtube_id: "Qs7bnD6NN6w" # Placeholder ID for LibriVox or similar
+    youtube_id: "Qs7bnD6NN6w"
     gdrive_id: "1GCF4VbTMFohXtREY-CdmNzrw932jCa98"
     tags: ["Adventure", "Historical Fiction", "Classic Novel"]
     summary: "Orphaned David Balfour is betrayed by his greedy uncle and sold into slavery, but a shipwreck leaves him stranded in the Scottish Highlands. He forms an unlikely bond with Alan Breck Stewart, a Jacobite rebel. Together, they must evade government troops and return to claim David's stolen inheritance."
@@ -160,7 +160,7 @@ reading_list:
     category: English Literature
     rating: 3
     image: /assets/pdf/books/book_the_canterville_ghost.png
-    youtube_id: "u5c_oC5UR0I" # LibriVox Full Audiobook
+    youtube_id: "u5c_oC5UR0I"
     gdrive_id: "1xz3fBi7XJzbwvYCcsC3_WMXCS3LZl0os"
     tags: ["Humor", "Ghost Story", "Satire"]
     summary: "When the pragmatic American Otis family buys a haunted English mansion, they refuse to be frightened by the resident ghost, Sir Simon. Instead, the twins prank him mercilessly. The story shifts from comedy to poignancy as the daughter, Virginia, helps the weary spirit find forgiveness and eternal rest."
@@ -172,7 +172,7 @@ reading_list:
     category: English Literature
     rating: 4
     image: /assets/pdf/books/book_arms_and_the_man.png
-    youtube_id: "BmRpSOW5DcU" # LibriVox or Audio Drama ID
+    youtube_id: "BmRpSOW5DcU"
     gdrive_id: "1F_qXZQVU2Ljqq1cCfvgoQH25WckHQY0Y"
     tags: ["Play", "Comedy", "Satire"]
     summary: "Raina Petkoff is engaged to a dashing war hero, but her romantic view of conflict is shattered when a Swiss mercenary, Captain Bluntschli, climbs into her bedroom. Carrying chocolates instead of bullets, his pragmatism exposes the absurdity of romanticizing warfare and ultimately wins Raina's heart."
@@ -184,7 +184,7 @@ reading_list:
     category: English Literature
     rating: 4
     image: /assets/pdf/books/book_middlemarch.png
-    youtube_id: "__sOItv-nKo" # LibriVox Full Audiobook
+    youtube_id: "__sOItv-nKo"
     gdrive_id: "1mn1_L4GEQ9KHOzTx3m1uQcHFlJt3gq9e"
     tags: ["Classic Novel", "Victorian Era", "Realism"]
     summary: "This panoramic novel examines provincial life through the lens of social reform and personal ambition. It follows the idealistic Dorothea Brooke, trapped in a loveless marriage to a scholar, and the talented Dr. Lydgate, whose career is stifled by debt and an incompatible wife, illustrating how society shapes destinies."
@@ -196,11 +196,11 @@ reading_list:
     category: English Literature
     rating: 5
     image: /assets/pdf/books/book_a_murder_is_announced.png
-    youtube_id: "CPSqxN0jfXI" # Full Audiobook
+    youtube_id: "CPSqxN0jfXI"
     gdrive_id: "1BpIFFq2YQeW1OhBV3dbPVedYdI11mjy7"
     tags: ["Detective Fiction", "Mystery", "Miss Marple Series"]
     summary: "Residents of Chipping Cleghorn are intrigued by a newspaper notice predicting a murder at Little Paddocks. Thinking it a game, they gather, only to witness a real killing when the lights go out. Miss Marple must peel back layers of false identities and post-war secrets to expose the killer among the neighbors."
-    summary_bangla: "স্থানীয় সংবাদপত্রে খুনের দিনক্ষণ ও স্থান উল্লেখ করে বিজ্ঞাপন দেওয়া হয়। প্রতিবেশীরা কৌতূহলী হয়ে জড়ো হয়, কিন্তু খেলা ভেবে আসা সেই আসরে সত্যিই খুন হয়। আপাতদৃষ্টিতে সাধারণ গ্রামটির মানুষের গোপন পরিচয় আর মিথ্যার জাল ভেদ করে মিস মার্পলকে আসল খুনিকে খুঁজে বের করতে হয়।"
+    summary_bangla: "স্থানীয় সংবাদপত্রে একটি খুনের বিজ্ঞাপন দেওয়া হয়, যা সবাই একটি খেলা বলে মনে করে। কিন্তু যখন সত্যি সত্যি খুন হয়, তখন মিস মার্পলকে এই রহস্য সমাধান করতে হয়। আপাতদৃষ্টিতে সাধারণ গ্রামটির মানুষের গোপন পরিচয় আর মিথ্যার জাল ভেদ করে মিস মার্পলকে আসল খুনিকে খুঁজে বের করতে হয়।"
 
   - title: The Thirty-Nine Steps
     author: John Buchan
@@ -208,11 +208,11 @@ reading_list:
     category: English Literature
     rating: 5
     image: /assets/pdf/books/book_the_thirty_nine_steps.png
-    youtube_id: "bm84k086h_E" # LibriVox Full Audiobook
+    youtube_id: "bm84k086h_E"
     gdrive_id: "1AzsuV_q92spbjbR7zRlWSBDWGmUsPGQt"
     tags: ["Spy Fiction", "Adventure", "Thriller"]
     summary: "Richard Hannay finds a freelance spy murdered in his London apartment and becomes the prime suspect. Fleeing to the Scottish moors, he must outwit the police and a ring of German spies known as 'The Black Stone' to prevent the theft of British military secrets before the outbreak of war."
-    summary_bangla: "রিচার্ড হ্যানে নিজের ফ্ল্যাটে এক গুপ্তচরকে খুন হতে দেখে নিজেই ফেঁসে যায়। নিজেকে নির্দোষ প্রমাণ করতে এবং দেশের গোপন তথ্য পাচার হওয়া রুখতে তাকে পুলিশ ও জার্মান গুপ্তচরদের চোখ এড়িয়ে স্কটল্যান্ডের দুর্গম পথে পালিয়ে বেড়াতে হয়। এটি এক টানটান উত্তেজনার পলাতক কাহিনী।"
+    summary_bangla: "রিচার্ড হ্যানে নিজের ফ্ল্যাটে এক গুপ্তচরকে খুন হতে দেখে নিজেই ফেঁসে যায়। নিজেকে নির্দোষ প্রমাণ করতে তাকে পুলিশ ও জার্মান গুপ্তচরদের চোখ এড়িয়ে স্কটল্যান্ডের দুর্গম পথে পালিয়ে বেড়াতে হয়। এটি এক টানটান উত্তেজনার পলাতক কাহিনী।"
 
   - title: A Tale of Two Cities
     author: Charles Dickens
@@ -232,7 +232,7 @@ reading_list:
     category: English Literature
     rating: 5
     image: /assets/pdf/books/book_romeo_and_juliet.png
-    youtube_id: "3js0HV1SZKE" # LibriVox Full Audiobook
+    youtube_id: "3js0HV1SZKE"
     gdrive_id: "1NB34bcVHD2AMaF3Mmqdmv6By6bsRvSwc"
     tags: ["Play", "Tragedy", "Romance"]
     summary: "In Verona, the Montagues and Capulets are locked in a violent feud. When their children, Romeo and Juliet, fall instantly in love, they marry in secret. A series of misunderstandings and duels leads to their tragic double suicide, a shock that finally forces the warring families to reconcile."
@@ -453,7 +453,9 @@ reading_list:
 
 ---
 
-<!-- This part of the file is the main content that will be displayed on the page -->
+<!-- =============================================================== -->
+<!-- PAGE CONTENT -->
+<!-- =============================================================== -->
 
 <div class="intro-text" style="margin-bottom: 2rem; text-align: center;">
   <p><strong>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</strong></p>
@@ -462,7 +464,8 @@ reading_list:
 <!-- =================== SEARCH BAR ===================== -->
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
-    <input type="text" id="bookSearch" class="form-control" placeholder="Search books by title, author, category, or tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da;">
+    <!-- Updated ID and CLASS to match bibliography search style -->
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Type to filter..." style="border-radius: 5px; padding: 10px; font-size: 1.1em;">
   </div>
 </div>
 
@@ -471,54 +474,63 @@ reading_list:
 {% assign grouped_books = sorted_list | group_by: "category" %}
 
 {% for group in grouped_books %}
-  <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
-  <hr class="mt-0 mb-4">
-  <div class="row">
-    {% for book in group.items %}
-      <div class="col-md-4 mb-4 d-flex align-items-stretch">
-        <div class="card w-100">
-          <img src="{{ book.image | relative_url }}" class="card-img-top" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title font-weight-bold">{{ book.title }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
-            
-            <!-- Star Rating Section -->
-            <div class="star-rating mb-2">
-              {% for i in (1..5) %}
-                {% if i <= book.rating %}
-                  <i class="fas fa-star"></i>
-                {% else %}
-                  <i class="far fa-star"></i>
-                {% endif %}
-              {% endfor %}
-            </div>
+  <!-- Wrapping the section in a div with class 'category-section' for easy hiding via JS -->
+  <div class="category-section">
+    <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
+    <hr class="mt-0 mb-4">
+    <div class="row">
+      {% for book in group.items %}
+        <div class="col-md-4 mb-4 d-flex align-items-stretch book-item">
+          <div class="card w-100">
+            <img src="{{ book.image | relative_url }}" class="card-img-top" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-weight-bold book-title">{{ book.title }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted book-author">{{ book.author }}</h6>
+              
+              <!-- Hidden fields for search indexing -->
+              <span style="display:none;" class="book-category-text">{{ book.category }}</span>
+              <span style="display:none;" class="book-tags-text">{{ book.tags | join: " " }}</span>
 
-            <div class="tags-container mb-3">
-              <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
-              {% for tag in book.tags %}
-                <span class="badge badge-pill badge-genre">{{ tag }}</span>
-              {% endfor %}
+              <!-- Star Rating Section -->
+              <div class="star-rating mb-2">
+                {% for i in (1..5) %}
+                  {% if i <= book.rating %}
+                    <i class="fas fa-star"></i>
+                  {% else %}
+                    <i class="far fa-star"></i>
+                  {% endif %}
+                {% endfor %}
+              </div>
+
+              <div class="tags-container mb-3">
+                <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
+                {% for tag in book.tags %}
+                  <span class="badge badge-pill badge-genre">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              
+              <p class="card-text book-summary">{{ book.summary }}</p>
+              {% if book.summary_bangla and book.summary_bangla != "" %}
+                <p class="card-text bangla-summary mt-auto">{{ book.summary_bangla }}</p>
+              {% endif %}
             </div>
-            <p class="card-text">{{ book.summary }}</p>
-            {% if book.summary_bangla and book.summary_bangla != "" %}
-              <p class="card-text bangla-summary mt-auto">{{ book.summary_bangla }}</p>
-            {% endif %}
-          </div>
-          <div class="card-footer bg-transparent border-top-0 text-center">
-            {% if book.youtube_id and book.youtube_id != "" %}
-              <button type="button" class="btn btn-outline-primary btn-sm m-1" data-toggle="modal" data-target="#videoModal-{{ book.title | slugify }}">
-                <i class="fab fa-youtube"></i> Watch Audiobook
-              </button>
-            {% endif %}
-            {% if book.gdrive_id and book.gdrive_id != "" %}
-              <button type="button" class="btn btn-outline-danger btn-sm m-1" data-toggle="modal" data-target="#pdfModal-{{ book.title | slugify }}">
-                <i class="fas fa-book-open"></i> Read PDF
-              </button>
-            {% endif %}
+            
+            <div class="card-footer bg-transparent border-top-0 text-center">
+              {% if book.youtube_id and book.youtube_id != "" %}
+                <button type="button" class="btn btn-outline-primary btn-sm m-1" data-toggle="modal" data-target="#videoModal-{{ book.title | slugify }}">
+                  <i class="fab fa-youtube"></i> Watch Audiobook
+                </button>
+              {% endif %}
+              {% if book.gdrive_id and book.gdrive_id != "" %}
+                <button type="button" class="btn btn-outline-danger btn-sm m-1" data-toggle="modal" data-target="#pdfModal-{{ book.title | slugify }}">
+                  <i class="fas fa-book-open"></i> Read PDF
+                </button>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 {% endfor %}
 
@@ -562,16 +574,64 @@ reading_list:
   {% endif %}
 {% endfor %}
 
-<!-- JavaScript to stop video when modal is closed -->
+<!-- =================== FILTER SCRIPT ===================== -->
 <script>
-  $(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("bookSearch");
+  let timeoutId;
+
+  // Function to perform the filtering (Logic similar to bibsearch.js)
+  const filterBooks = (searchTerm) => {
+    searchTerm = searchTerm.toLowerCase();
+    
+    const allBooks = document.querySelectorAll(".book-item");
+    const allSections = document.querySelectorAll(".category-section");
+
+    // 1. Loop through all books and toggle visibility
+    allBooks.forEach(book => {
+      // We grab all text content from the book card including hidden spans
+      const textContent = book.textContent.toLowerCase();
+      
+      if (textContent.includes(searchTerm)) {
+        book.classList.remove("d-none"); // Show
+      } else {
+        book.classList.add("d-none");    // Hide
+      }
+    });
+
+    // 2. Loop through sections and hide them if they have no visible books
+    allSections.forEach(section => {
+      // Find visible books inside this specific section
+      // :not(.d-none) matches elements that do NOT have the hidden class
+      const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
+      
+      if (visibleBooks.length === 0) {
+        section.style.display = "none";
+      } else {
+        section.style.display = ""; // Reset to default (block)
+      }
+    });
+  };
+
+  // Listen for input (with 300ms debounce like bibsearch.js)
+  if (searchInput) {
+    searchInput.addEventListener("input", function() {
+      clearTimeout(timeoutId);
+      const value = this.value;
+      timeoutId = setTimeout(() => filterBooks(value), 300);
+    });
+  }
+
+  // Also handle video stop logic (standard Bootstrap fix)
+  if (typeof $ !== 'undefined') {
     $('.modal').on('hidden.bs.modal', function (e) {
       var iframe = $(this).find('iframe');
       if (iframe.length > 0) {
-        var originalSrc = iframe.attr('src');
+        var src = iframe.attr('src');
         iframe.attr('src', '');
-        iframe.attr('src', originalSrc);
+        iframe.attr('src', src);
       }
     });
-  });
+  }
+});
 </script>

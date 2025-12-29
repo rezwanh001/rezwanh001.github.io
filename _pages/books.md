@@ -457,11 +457,10 @@ reading_list:
 <!-- PAGE CONTENT -->
 <!-- =============================================================== -->
 
-
-<!-- STYLES FOR HIGHLIGHTING -->
 <style>
+  /* Highlighter Style */
   .search-highlight {
-    background-color: #ffeeba; /* Light yellow background */
+    background-color: #ffeeba;
     color: #000;
     font-weight: bold;
     padding: 0 2px;
@@ -473,14 +472,14 @@ reading_list:
   <p><strong>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</strong></p>
 </div>
 
-<!-- SEARCH BAR (Using same class 'bibsearch-form-input' to match styles) -->
+<!-- SEARCH BAR -->
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
-    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em;">
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em;">
   </div>
 </div>
 
-<!-- MAIN BOOK LIST LOGIC -->
+<!-- BOOK LIST -->
 {% assign sorted_list = page.reading_list | sort: "category" %}
 {% assign grouped_books = sorted_list | group_by: "category" %}
 
@@ -492,14 +491,14 @@ reading_list:
       {% for book in group.items %}
         <div class="col-md-4 mb-4 d-flex align-items-stretch book-item">
           <div class="card w-100">
-            <img src="{{ book.image | relative_url }}" class="card-img-top" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
+            <img src="{{ book.image | relative_url }}" class="card-img-top" loading="lazy" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-              <!-- ADDED 'search-target' CLASS HERE -->
+              <!-- Searchable Fields -->
               <h5 class="card-title font-weight-bold book-title search-target">{{ book.title }}</h5>
               <h6 class="card-subtitle mb-2 text-muted book-author search-target">{{ book.author }}</h6>
               
-              <!-- Hidden Search Data (Tags/Category) -->
-              <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }}</div>
+              <!-- Hidden Search Data -->
+              <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }} {{ book.rating }}</div>
 
               <div class="star-rating mb-2">
                 {% for i in (1..5) %}
@@ -514,7 +513,6 @@ reading_list:
                 {% endfor %}
               </div>
               
-              <!-- ADDED 'search-target' CLASS HERE -->
               <p class="card-text search-target">{{ book.summary }}</p>
               {% if book.summary_bangla and book.summary_bangla != "" %}
                 <p class="card-text bangla-summary mt-auto search-target">{{ book.summary_bangla }}</p>
@@ -523,12 +521,14 @@ reading_list:
             
             <div class="card-footer bg-transparent border-top-0 text-center">
               {% if book.youtube_id and book.youtube_id != "" %}
-                <button type="button" class="btn btn-outline-primary btn-sm m-1" data-toggle="modal" data-target="#videoModal-{{ book.title | slugify }}">
+                <!-- Button stores ID in data attribute, NOT an iframe -->
+                <button type="button" class="btn btn-outline-primary btn-sm m-1" onclick="openVideo('{{ book.title | escape }}', '{{ book.youtube_id }}')">
                   <i class="fab fa-youtube"></i> Watch Audiobook
                 </button>
               {% endif %}
               {% if book.gdrive_id and book.gdrive_id != "" %}
-                <button type="button" class="btn btn-outline-danger btn-sm m-1" data-toggle="modal" data-target="#pdfModal-{{ book.title | slugify }}">
+                <!-- Button stores ID in data attribute, NOT an iframe -->
+                <button type="button" class="btn btn-outline-danger btn-sm m-1" onclick="openPDF('{{ book.title | escape }}', '{{ book.gdrive_id }}')">
                   <i class="fas fa-book-open"></i> Read PDF
                 </button>
               {% endif %}
@@ -540,87 +540,128 @@ reading_list:
   </div>
 {% endfor %}
 
-<!-- MODALS CODE -->
-{% for book in page.reading_list %}
-  {% if book.youtube_id != "" %}
-  <div class="modal fade" id="videoModal-{{ book.title | slugify }}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">{{ book.title }}</h5><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div><div class="modal-body"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ book.youtube_id }}" allowfullscreen></iframe></div></div></div></div>
+<!-- SINGLE SHARED VIDEO MODAL -->
+<div class="modal fade" id="sharedVideoModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sharedVideoModalLabel">Audiobook</h5>
+        <button type="button" class="close" onclick="closeModal('sharedVideoModal')"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe id="sharedVideoIframe" class="embed-responsive-item" src="" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
   </div>
-  {% endif %}
-  {% if book.gdrive_id != "" %}
-  <div class="modal fade" id="pdfModal-{{ book.title | slugify }}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">{{ book.title }}</h5><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div><div class="modal-body p-0" style="height: 85vh;"><iframe src="https://drive.google.com/file/d/{{ book.gdrive_id }}/preview" width="100%" height="100%" frameborder="0"></iframe></div></div></div>
-  </div>
-  {% endif %}
-{% endfor %}
+</div>
 
-<!-- JAVASCRIPT FOR SEARCH, FILTERING AND HIGHLIGHTING -->
+<!-- SINGLE SHARED PDF MODAL -->
+<div class="modal fade" id="sharedPDFModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sharedPDFModalLabel">Reading</h5>
+        <button type="button" class="close" onclick="closeModal('sharedPDFModal')"><span>&times;</span></button>
+      </div>
+      <div class="modal-body p-0" style="height: 85vh;">
+        <iframe id="sharedPDFIframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT: EFFICIENT SEARCH + LAZY MODALS -->
 <script>
+// 1. GLOBAL MODAL FUNCTIONS (Optimization: No iframes loaded until click)
+function openVideo(title, youtubeId) {
+  document.getElementById('sharedVideoModalLabel').innerText = title;
+  document.getElementById('sharedVideoIframe').src = "https://www.youtube.com/embed/" + youtubeId;
+  $('#sharedVideoModal').modal('show');
+}
+
+function openPDF(title, driveId) {
+  document.getElementById('sharedPDFModalLabel').innerText = title;
+  document.getElementById('sharedPDFIframe').src = "https://drive.google.com/file/d/" + driveId + "/preview";
+  $('#sharedPDFModal').modal('show');
+}
+
+function closeModal(modalId) {
+  $('#' + modalId).modal('hide');
+  // Clear iframe to stop video/save memory
+  if(modalId === 'sharedVideoModal') document.getElementById('sharedVideoIframe').src = "";
+  if(modalId === 'sharedPDFModal') document.getElementById('sharedPDFIframe').src = "";
+}
+
+// Ensure iframes are cleared if user clicks background to close
 document.addEventListener("DOMContentLoaded", function() {
+  if (typeof $ !== 'undefined') {
+    $('.modal').on('hidden.bs.modal', function () {
+      document.getElementById('sharedVideoIframe').src = "";
+      document.getElementById('sharedPDFIframe').src = "";
+    });
+  }
+
+  // 2. SEARCH & HIGHLIGHT LOGIC
   const searchInput = document.getElementById("bookSearch");
-  // Select all elements we want to highlight (Title, Author, Summary)
   const textElements = document.querySelectorAll(".search-target");
   
-  // 1. Initialize: Store the original clean HTML for every searchable field
-  // This prevents the HTML from getting messy when we add/remove highlights
+  // Store original HTML for clean highlighting
   textElements.forEach(el => {
     el.dataset.originalHtml = el.innerHTML;
   });
 
   const performSearch = () => {
-    const query = searchInput.value.trim();
-    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, "gi"); // Escape special chars + Case insensitive
+    const query = searchInput.value.trim().toLowerCase();
     
-    // A. Loop through books to Filter (Show/Hide)
-    document.querySelectorAll(".book-item").forEach(book => {
-      const allText = book.innerText.toLowerCase(); // Search everything visible + hidden
-      
-      if (query === "" || allText.includes(query.toLowerCase())) {
+    // Regex for highlighting (case insensitive)
+    // We escape special regex characters from input to prevent crashes
+    const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${safeQuery})`, "gi");
+
+    const books = document.querySelectorAll(".book-item");
+    const sections = document.querySelectorAll(".category-section");
+
+    books.forEach(book => {
+      // Collect text: Visible fields + Hidden metadata
+      let fullText = "";
+      book.querySelectorAll(".search-target").forEach(el => fullText += el.textContent + " ");
+      const meta = book.querySelector(".search-metadata");
+      if(meta) fullText += meta.textContent + " ";
+      fullText = fullText.toLowerCase();
+
+      if (query === "" || fullText.includes(query)) {
         book.classList.remove("d-none");
         
-        // B. Apply Highlighting to visible books
+        // Highlight visible text
         const targets = book.querySelectorAll(".search-target");
         targets.forEach(el => {
           const original = el.dataset.originalHtml;
           if (query.length > 0) {
-            // Replace the matching text with <mark> tags
-            // $1 captures the original case (e.g. "Jane" stays "Jane" even if you typed "jane")
-            el.innerHTML = original.replace(regex, '<mark style="padding:0; background-color: #ffeeba;">$1</mark>');
+            // Replace text matches with <mark> tags
+            el.innerHTML = original.replace(regex, '<mark class="search-highlight">$1</mark>');
           } else {
-            el.innerHTML = original; // Reset if query is empty
+            el.innerHTML = original;
           }
         });
-
       } else {
         book.classList.add("d-none");
       }
     });
 
-    // C. Hide Empty Categories
-    document.querySelectorAll(".category-section").forEach(section => {
+    // Hide empty sections
+    sections.forEach(section => {
       const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
       section.style.display = (visibleBooks.length === 0) ? "none" : "block";
     });
   };
 
-  // Event Listener with Debounce (Wait 300ms to stop typing)
   let timeoutId;
   if (searchInput) {
     searchInput.addEventListener("keyup", function() {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(performSearch, 300);
-    });
-  }
-
-  // Bootstrap Modal Fix (Stop video on close)
-  if (typeof $ !== 'undefined') {
-    $('.modal').on('hidden.bs.modal', function () {
-      var iframe = $(this).find('iframe');
-      if (iframe.length) {
-        var src = iframe.attr('src');
-        iframe.attr('src', '');
-        iframe.attr('src', src);
-      }
     });
   }
 });

@@ -154,6 +154,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: Murder on the Orient Express
+    author: Agatha Christie
+    published_date: 1934
+    category: English Literature
+    rating: 5
+    image: /assets/pdf/books/book_murder_on_the_orient_express.png
+    youtube_id: "q1MLqCBAok0" # Copyrighted material, usually removed from YouTube
+    gdrive_id: "1UtHjnIw5KGbndp7leY-BxopMBsYEZ8C6"
+    tags: ["Hercule Poirot", "Detective Fiction", "Mystery", "Crime Fiction"]
+    summary: "Just after midnight, a snowdrift stops the luxurious Orient Express. The next morning, Samuel Ratchett, an American tycoon with a sinister past, is found dead in his locked compartment, stabbed a dozen times. Belgian Detective Hercule Poirot must interrogate twelve diverse passengers—ranging from a Russian princess to a British colonel—who appear to be strangers but are secretly linked by the tragedy of the Armstrong kidnapping case, forcing Poirot to decide between the law and moral justice."
+    summary_bangla: "মধ্যরাতে প্রবল তুষারঝড়ে আটকা পড়া বিলাসবহুল ওরিয়েন্ট এক্সপ্রেসে এক রুদ্ধশ্বাস রহস্যের সৃষ্টি হয়। পরদিন সকালে ধনী আমেরিকান স্যামুয়েল র্যাচেট-কে তার ভেতর থেকে বন্ধ কামরায় মৃত অবস্থায় পাওয়া যায়, যাকে বারোবার ছুরিকাঘাত করা হয়েছে। বিখ্যাত বেলজিয়ান গোয়েন্দা এরকুল পোয়ারো তদন্তে নেমে দেখেন, ট্রেনের বারোজন যাত্রী—যাদের মধ্যে রাজকুমারী থেকে শুরু করে ব্রিটিশ কর্নেলও আছেন—আপাতদৃষ্টিতে অপরিচিত হলেও অতীতের এক ট্র্যাজেডি, আর্মস্ট্রং অপহরণ মামলা-র সূত্রে গোপনে একে অপরের সাথে যুক্ত। পোয়ারোকে উন্মোচন করতে হয় এই সম্মিলিত প্রতিশোধ ও ন্যায়বিচারের জটিল সমীকরণ।"
+
   - title: The Canterville Ghost
     author: Oscar Wilde
     published_date: 1887
@@ -477,7 +489,7 @@ reading_list:
 <div class="row mt-3 mb-4">
   <div class="col-md-12">
     <!-- Matches your Publications search bar style -->
-    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da; max-width: 600px; margin: 0 auto;">
+    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da; max-width: 800px; margin: 0 auto;">
   </div>
 </div>
 
@@ -490,7 +502,10 @@ reading_list:
     <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
     <hr class="mt-0 mb-4">
     <div class="row">
-      {% for book in group.items %}
+      <!-- {% for book in group.items %} --> 
+      <!-- NEW: Sort the books inside this group by title before looping -->
+      {% assign sorted_group_books = group.items | sort: "title" %}
+      {% for book in sorted_group_books %}
         <!-- Added "book-item" class here for JS selection -->
         <div class="col-md-4 mb-4 d-flex align-items-stretch book-item">
           <div class="card w-100">
@@ -499,29 +514,24 @@ reading_list:
               <!-- Added "search-target" for highlighting -->
               <h5 class="card-title font-weight-bold book-title search-target">{{ book.title }}</h5>
               <h6 class="card-subtitle mb-2 text-muted book-author search-target">{{ book.author }}</h6>
-              
               <!-- Hidden Metadata for Search (Category, Rating, Tags) -->
               <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }} {{ book.rating }}</div>
-
               <div class="star-rating mb-2">
                 {% for i in (1..5) %}
                   {% if i <= book.rating %}<i class="fas fa-star"></i>{% else %}<i class="far fa-star"></i>{% endif %}
                 {% endfor %}
               </div>
-
               <div class="tags-container mb-3">
                 <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
                 {% for tag in book.tags %}
                   <span class="badge badge-pill badge-genre">{{ tag }}</span>
                 {% endfor %}
               </div>
-              
               <p class="card-text search-target">{{ book.summary }}</p>
               {% if book.summary_bangla and book.summary_bangla != "" %}
                 <p class="card-text bangla-summary mt-auto search-target">{{ book.summary_bangla }}</p>
               {% endif %}
             </div>
-            
             <div class="card-footer bg-transparent border-top-0 text-center">
               {% if book.youtube_id and book.youtube_id != "" %}
                 <button type="button" class="btn btn-outline-primary btn-sm m-1" onclick="openVideo('{{ book.title | escape }}', '{{ book.youtube_id }}')">

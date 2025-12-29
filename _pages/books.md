@@ -577,88 +577,49 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById("bookSearch");
   let timeoutId;
 
-  // 1. Initialize: Store original text for all searchable elements
-  const searchableElements = document.querySelectorAll(".searchable-text");
-  searchableElements.forEach(el => {
-    // We already added data-original-text in Liquid, but let's ensure it's there
-    if (!el.getAttribute("data-original-text")) {
-      el.setAttribute("data-original-text", el.innerText);
-    }
-  });
-
-  function escapeRegExp(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
-  }
-
-  function filterAndHighlight() {
-    const input = searchInput.value.toLowerCase().trim();
-    const books = document.querySelectorAll(".book-item");
-    const sections = document.querySelectorAll(".category-section");
-
-    books.forEach(book => {
-      // Collect all text from this book (visible + hidden metadata)
-      // We look at the data-attributes of searchable elements to search against clean text
-      let fullText = "";
+  // Actual filtering logic (Matches bibsearch.js logic)
+  const filterBooks = (searchTerm) => {
+    const lowerTerm = searchTerm.toLowerCase();
+    
+    // 1. Filter Books
+    const allBooks = document.querySelectorAll(".book-item");
+    allBooks.forEach(book => {
+      // Check all text inside the card (Title, Author, Tags, Summary, Hidden Data)
+      const text = book.innerText.toLowerCase();
       
-      // Add Title, Author, Summaries
-      book.querySelectorAll(".searchable-text").forEach(el => {
-        fullText += el.getAttribute("data-original-text") + " ";
-      });
-      
-      // Add Tags/Category/Rating from hidden metadata div
-      const meta = book.querySelector(".search-metadata");
-      if(meta) fullText += meta.textContent + " ";
-      // Add actual Badge text (tags)
-      book.querySelectorAll(".badge").forEach(b => fullText += b.textContent + " ");
-
-      fullText = fullText.toLowerCase();
-
-      // --- LOGIC: SHOW OR HIDE ---
-      if (fullText.includes(input)) {
-        book.classList.remove("d-none");
-        
-        // --- LOGIC: HIGHLIGHTING ---
-        // We only highlight if there is an input
-        const targetElements = book.querySelectorAll(".searchable-text");
-        targetElements.forEach(el => {
-          const originalText = el.getAttribute("data-original-text");
-          
-          if (input.length > 0) {
-            // Create a regex for the input, case insensitive
-            // We use capturing group () to keep the original casing when replacing
-            const regex = new RegExp(`(${escapeRegExp(input)})`, "gi");
-            
-            // Replace matches with wrapped span
-            // $1 ensures we keep the original case (e.g. 'Jane' stays 'Jane' even if search is 'jane')
-            const newHtml = originalText.replace(regex, '<span class="search-highlight">$1</span>');
-            el.innerHTML = newHtml;
-          } else {
-            // Reset to original if input is empty
-            el.innerHTML = originalText;
-          }
-        });
-
+      if (text.indexOf(lowerTerm) > -1) {
+        book.classList.remove("d-none"); // Show matches
       } else {
-        book.classList.add("d-none");
+        book.classList.add("d-none");    // Hide non-matches
       }
     });
 
-    // --- LOGIC: HIDE EMPTY SECTIONS ---
-    sections.forEach(section => {
+    // 2. Hide Empty Category Sections
+    const allSections = document.querySelectorAll(".category-section");
+    allSections.forEach(section => {
+      // Check if this section has any visible books left
       const visibleBooks = section.querySelectorAll(".book-item:not(.d-none)");
-      section.style.display = (visibleBooks.length === 0) ? "none" : "block";
+      
+      if (visibleBooks.length === 0) {
+        section.style.display = "none";
+      } else {
+        section.style.display = "block";
+      }
     });
-  }
+  };
 
-  // 2. Event Listener with Debounce (300ms)
+  // Event Listener with 300ms Delay (Debounce)
   if (searchInput) {
-    searchInput.addEventListener("keyup", function() {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(filterAndHighlight, 300);
+    searchInput.addEventListener("input", function() {
+      clearTimeout(timeoutId); // Clear previous timer
+      const value = this.value;
+      
+      // Wait 300ms before running the filter (Performance optimization)
+      timeoutId = setTimeout(() => filterBooks(value), 300);
     });
   }
 
-  // 3. Stop YouTube on Modal Close
+  // Stop YouTube Video on Modal Close (Standard Bootstrap Fix)
   if (typeof $ !== 'undefined') {
     $('.modal').on('hidden.bs.modal', function () {
       var iframe = $(this).find('iframe');

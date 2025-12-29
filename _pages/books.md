@@ -459,6 +459,13 @@ reading_list:
   <p><strong>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</strong></p>
 </div>
 
+<!-- =================== SEARCH BAR ===================== -->
+<div class="row mt-3 mb-4">
+  <div class="col-md-12">
+    <input type="text" id="bookSearch" class="form-control" placeholder="Search books by title, author, category, or tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da;">
+  </div>
+</div>
+
 <!-- =================== DYNAMIC GROUPING LOGIC ===================== -->
 {% assign sorted_list = page.reading_list | sort: "category" %}
 {% assign grouped_books = sorted_list | group_by: "category" %}

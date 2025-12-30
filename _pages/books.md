@@ -76,6 +76,18 @@ reading_list:
   # -----------------------------------------------------------------
   # Bengali Literature
   # -----------------------------------------------------------------
+  - title: "Ra'ufur Rahim (রউফুর রহীম)"
+    author: Dr. Ali Muhammad al-Sallabi
+    published_date: 2023
+    category: Bengali Literature
+    rating: 5
+    image: /assets/pdf/books/book_raufur_rahim.png
+    youtube_id: ""
+    gdrive_id: "16SZ_k8QKKEG8XPFQzYRC5rZuyvPp3_7e"
+    tags: ["Seerah", "Biography", "Islamic History", "Non-Fiction"]
+    summary: "A monumental biographical work by the historian Dr. Ali Muhammad al-Sallabi. This book offers a strictly authentic and detailed account of the life of Prophet Muhammad (PBUH). Going beyond simple storytelling, Sallabi analyzes historical events to derive profound social, political, and spiritual lessons applicable to the modern world."
+    summary_bangla: "ড. আলি মুহাম্মাদ সাল্লাবির রচিত সীরাত সাহিত্যের এক অনবদ্য সংযোজন। এটি কেবল নবিজীবনের ঘটনার বিবরণ নয়, বরং প্রতিটি ঘটনার বিশুদ্ধতা যাচাই করে তার রাজনৈতিক, সামাজিক ও আধ্যাত্মিক শিক্ষাগুলো বিশ্লেষণ করা হয়েছে। রাসুল (সা.)-এর জীবনী থেকে আধুনিক জীবনের পাথেয় খুঁজে পাওয়ার জন্য এটি একটি অপরিহার্য গ্রন্থ।"
+
   - title: "Musalmander Potone Bissho Ki Haralo (মুসলমানদের পতনে বিশ্ব কী হারালো?)"
     author: Sayyid Abul Hasan Ali Nadwi (Translate — Abu Sayeed Muhammad Omar Ali)
     published_date: 1950

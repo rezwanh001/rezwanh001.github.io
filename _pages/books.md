@@ -76,6 +76,30 @@ reading_list:
   # -----------------------------------------------------------------
   # Bengali Literature
   # -----------------------------------------------------------------
+  - title: "Musalmander Potone Bissho Ki Haralo (মুসলমানদের পতনে বিশ্ব কী হারালো?)"
+    author: Sayyid Abul Hasan Ali Nadwi (Translate — Abu Sayeed Muhammad Omar Ali)
+    published_date: 1950
+    category: Bengali Literature
+    rating: 5
+    image: /assets/pdf/books/book_musalmander_potone.png
+    youtube_id: ""
+    gdrive_id: "1nMxXkcdqKtZglRj9yETT3dE7ba53yrCO"
+    tags: ["History", "Philosophy", "Islamic Literature", "Non-Fiction"]
+    summary: "A seminal historical analysis arguing that the decline of Muslim leadership was not just a tragedy for Muslims, but a catastrophe for the entire world. Nadwi contends that when global leadership shifted from a morally grounded civilization to materialistic powers, it resulted in a universal spiritual bankruptcy and the loss of human dignity."
+    summary_bangla: "সাইয়েদ আবুল হাসান আলী নদভী রহ.-এর এই কালজয়ী গ্রন্থে দেখানো হয়েছে যে, মুসলমানদের অধঃপতন কেবল একটি জাতিগোষ্ঠীর পতন নয়, বরং তা বিশ্বমানবতার জন্য এক অপূরণীয় ক্ষতি। নৈতিকতা ও আধ্যাত্মিকতাহীন নেতৃত্বের হাতে বিশ্বের শাসনভার ন্যস্ত হওয়ার ফলে মানবসভ্যতার যে চরম বিপর্যয় নেমে এসেছে, তারই এক দালিলিক ও তাত্ত্বিক বিশ্লেষণ এই বই।"
+
+  - title: "Shikwa & Jawab-e-Shikwa (শিকওয়া ও জওয়াব-ই-শিকওয়া)"
+    author: Allama Muhammad Iqbal (Translate — Obaidullah Mansoor)
+    published_date: 1909
+    category: Bengali Literature
+    rating: 5
+    image: /assets/pdf/books/book_shikwa_jawab_e_shikwa.png
+    youtube_id: ""
+    gdrive_id: "1Azs-G2XwEVQ_QSm23gH94-k84ny7HZX0"
+    tags: ["Poetry", "Islamic Philosophy", "Classic"]
+    summary: "A masterpiece of Urdu poetry presenting a dialogue between the poet and God. In 'Shikwa' (The Complaint), Iqbal boldly questions why the Muslim Ummah has fallen into decline despite their faithfulness. In 'Jawab-e-Shikwa' (The Answer), God responds, urging the people to look inward, abandon lethargy, and rekindle their spiritual connection to regain their lost glory."
+    summary_bangla: "আল্লামা ইকবালের এক কালজয়ী কাব্যগ্রন্থ। 'শিকওয়া'-তে কবি আল্লাহর দরবারে মুসলমানদের বর্তমান অধঃপতন নিয়ে সাহসি অভিযোগ পেশ করেছেন। এর বিপরীতে 'জওয়াব-ই-শিকওয়া'-তে আল্লাহ সেই অভিযোগের জবাবে মুসলমানদের আত্মশুদ্ধি, কর্মবিমুখতা ত্যাগ এবং ঈমানি দৃঢ়তার মাধ্যমে হারানো ঐতিহ্য ফিরে পাওয়ার পথ বাতলে দিয়েছেন।"
+
   - title: Secrets of Zionism (সিক্রেটস অব জায়োনিজম)
     author: Henry Ford (Translate — Fuad Al Azad)
     published_date: 1920
@@ -84,7 +108,7 @@ reading_list:
     image: /assets/pdf/books/book_secrets_of_zionism.png
     youtube_id: ""
     gdrive_id: "1I4VBjpDYODuqt7WYP6ITBO5hLeV6Vy98"
-    tags: ["Politics", "History", "Translation"]
+    tags: ["Global Politics", "History", "Translation", "Zionism"]
     summary: "A Bengali translation of Henry Ford's controversial collection of essays, originally published as 'The International Jew'. The book presents Ford's arguments regarding the alleged disproportionate influence of a specific group over global finance, media, and government policies. It offers a historical window into early 20th-century perspectives on the geopolitical structures of power and the specific role he attributed to Zionism in shaping world events."
     summary_bangla: "হেনরি ফোর্ডের বিখ্যাত এবং বিতর্কিত প্রবন্ধ সংকলন 'দ্য ইন্টারন্যাশনাল জিউ'-এর বাংলা অনুবাদ। বইটিতে ফোর্ড বিংশ শতাব্দীর প্রেক্ষাপটে বিশ্ব অর্থনীতি, সংবাদমাধ্যম এবং আন্তর্জাতিক রাজনীতিতে জায়নবাদী প্রভাবের এক বিস্তারিত বিবরণ তুলে ধরেছেন। এতে বৈশ্বিক ক্ষমতা কাঠামো, ব্যাংকিং ব্যবস্থা এবং এর নেপথ্য চালিকাশক্তি সম্পর্কে লেখকের নিজস্ব বিশ্লেষণ ও পর্যবেক্ষণ স্থান পেয়েছে, যা আজও বিতর্কের কেন্দ্রবিন্দু।"
 

@@ -192,6 +192,11 @@ external_sources:
     posts:
       - url: https://huggingface.co/google/gemma-3-27b-it
         published_date: 2025-03-04
+  - name: Awesome Gemma 3n Projects 
+    posts:
+      - url: https://blog.google/technology/developers/developers-changing-lives-with-gemma-3n/
+        published_date: 2025-12-30
+    
 
 # -----------------------------------------------------------------------------
 # Newsletter

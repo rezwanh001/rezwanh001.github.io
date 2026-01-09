@@ -160,6 +160,18 @@ reading_list:
     summary: "Set in the dense forests and hills of Chota Nagpur, young Bacchu and Tridib stumble upon a criminal conspiracy involving a mysterious aircraft named 'Duranta Eagle.' Their vacation turns into a dangerous investigation as they use their wits to outsmart a ruthless gang of smugglers."
     summary_bangla: "ছোটনাগপুরের জঙ্গল ও পাহাড়ের পটভূমিতে বাচ্ছু আর ত্রিদিবের ছুটির দিনগুলো পাল্টে যায় এক রুদ্ধশ্বাস অভিযানে। 'দুরন্ত ঈগল' নামের এক রহস্যময় বিমান এবং একদল চোরাকারবারির ষড়যন্ত্রের জট খুলতে দুই কিশোর তাদের বুদ্ধি ও সাহসের পরিচয় দেয়।"
 
+  # - title: Moru o Sangha (মরু ও সংঘ)
+  #   author: Saradindu Bandyopadhyay
+  #   published_date: 1954
+  #   category: Bengali Literature
+  #   rating: 3
+  #   image: /assets/pdf/books/book_moru_o_sangha.png
+  #   youtube_id: "J8C50KF_sS8" # Audio Story ID
+  #   gdrive_id: ""
+  #   tags: ["Historical Fiction", "Romance", "Buddhist Philosophy", "Classic"]
+  #   summary: "Set in the 5th-century kingdom of Kucha along the Silk Road, this masterpiece chronicles the journey of Bidyut, a devout Buddhist monk. His disciplined world is shattered when he rescues a dying gypsy girl, Chini, from the scorching Taklamakan desert. The novel portrays a tormented spiritual crisis: the choice between the dry, detached liberation of the 'Sangha' (The Order) and the vibrant, forbidden passion of the 'Moru' (The Desert/Worldly Life), woven against the backdrop of a historical Chinese invasion."
+  #   summary_bangla: "পঞ্চম শতাব্দীর মধ্য এশিয়ার কুচা রাজ্যের ঐতিহাসিক প্রেক্ষাপটে রচিত এই উপন্যাসের নায়ক তরুণ বৌদ্ধ ভিক্ষু বিদ্যুৎ। সঙ্ঘের কঠোর অনুশাসনে বাঁধা তার জীবন হঠাৎ ঝড়ের মুখে পড়ে যখন সে তাকলামাকান মরুভূমিতে মুমূর্ষু এক বেদে-কন্যা, চিনি-কে উদ্ধার করে। সঙ্ঘের নির্বাণ লাভের কঠোর শুষ্কতা নাকি রক্তমাংসের মানবিক প্রেমের তীব্র তৃষ্ণা—কোনটা পরম সত্য? এই গভীর মনস্তাত্ত্বিক দ্বন্দ্ব এবং কুচা রাজ্যে চীনা আক্রমণের ঐতিহাসিক ঘটনাপ্রবাহের এক অনন্য সংমিশ্রণ এই কালজয়ী কাহিনী।"
+
   # -----------------------------------------------------------------
   # British Literature
   # -----------------------------------------------------------------
@@ -190,6 +202,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: And Then There Were None
+    author: Agatha Christie
+    published_date: 1939
+    category: English Literature
+    rating: 5
+    image: /assets/pdf/books/book_and_then_there_were_none.png
+    youtube_id: "bVHetS2IFWs" # Copyrighted material
+    gdrive_id: "1wS7owdv2t5TfXTGTQzuR2OJUUJMwUpA3"
+    tags: ["Mystery", "Psychological Thriller", "Classic"]
+    summary: "Ten strangers, each hiding a dark secret, are lured to an isolated island off the Devon coast. Cut off by a storm, their dinner is interrupted by a gramophone recording accusing each guest of an unpunished murder. Terror mounts as they are picked off one by one according to a macabre nursery rhyme, and with every death, a figurine vanishes from the dining table. It becomes a psychological nightmare as the survivors realize the killer is not an intruder, but one of them."
+    summary_bangla: "ডেভন উপকূলের এক নির্জন দ্বীপে আমন্ত্রিত হয় দশজন অপরিচিত ব্যক্তি, যাদের প্রত্যেকের অতীতে রয়েছে গোপন অপরাধের ইতিহাস। প্রবল ঝড়ে পৃথিবী থেকে বিচ্ছিন্ন হয়ে পড়ার পর, একটি গ্রামোফোন রেকর্ড তাদের খুনি হিসেবে অভিযুক্ত করে। এরপর শুরু হয় এক বিভীষিকাময় খেলা—দেয়ালে টাঙানো এক শিশুতোষ ছড়া অনুসরণ করে একে একে তারা খুন হতে থাকে, আর ডাইনিং টেবিল থেকে উধাও হতে থাকে একটি করে পুতুল। অবিশ্বাস আর আতঙ্কের চরম মুহূর্তে তারা বুঝতে পারে, কোনো বহিরাগত নয়, খুনি লুকিয়ে আছে তাদেরই মাঝে।"
+
   - title: Murder on the Orient Express
     author: Agatha Christie
     published_date: 1934

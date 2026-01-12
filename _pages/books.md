@@ -160,6 +160,18 @@ reading_list:
     summary: "Set in the dense forests and hills of Chota Nagpur, young Bacchu and Tridib stumble upon a criminal conspiracy involving a mysterious aircraft named 'Duranta Eagle.' Their vacation turns into a dangerous investigation as they use their wits to outsmart a ruthless gang of smugglers."
     summary_bangla: "ছোটনাগপুরের জঙ্গল ও পাহাড়ের পটভূমিতে বাচ্ছু আর ত্রিদিবের ছুটির দিনগুলো পাল্টে যায় এক রুদ্ধশ্বাস অভিযানে। 'দুরন্ত ঈগল' নামের এক রহস্যময় বিমান এবং একদল চোরাকারবারির ষড়যন্ত্রের জট খুলতে দুই কিশোর তাদের বুদ্ধি ও সাহসের পরিচয় দেয়।"
 
+  - title: Adarsha Hindu Hotel (আদর্শ হিন্দু হোটেল)
+    author: Bibhutibhushan Bandopadhyay
+    published_date: 1940
+    category: Bengali Literature
+    rating: 3.5
+    image: /assets/pdf/books/book_adarsha_hindu_hotel.png
+    youtube_id: "vL0PbxkmSSA" # Add the Mirchi Bangla or Sunday Suspense ID here if available
+    gdrive_id: "1zSU53tbnz7SGkw6wZloPTZWlm7wvuZgy"
+    tags: ["Classic Novel", "Social Realism", "Culinary Fiction"]
+    summary: "The inspiring story of Hajari Thakur, a gifted but impoverished middle-aged cook who endures constant humiliation from Padma, the malicious maid and manager of Bechu Chakravarty's hotel. Driven by his culinary passion and a dream of dignity, Hajari leaves to establish his own rival establishment. Supported by the kind-hearted Kusum, his 'Adarsha Hindu Hotel' rises to fame, proving that skill, honesty, and good food eventually triumph over arrogance and monopoly."
+    summary_bangla: "রানাঘাটের স্টেশনের পাশে বেচু চক্কত্তির হোটেলের সাধারণ রাঁধুনি হাজারি ঠাকুর। হোটেলের ঝি পদ্ম-র গঞ্জনা আর অপমানে অতিষ্ঠ হয়ে হাজারি স্বপ্ন দেখে নিজের একটি হোটেল খোলার। এই উপন্যাসে হাজারির অসামান্য রন্ধনশিল্প, সততা এবং কঠোর পরিশ্রমের মাধ্যমে শূন্য থেকে শিখরে ওঠার গল্প বর্ণিত হয়েছে। কুসুম-এর অনুপ্রেরণায় এবং ভাগ্যের চাকা ঘুরে যাওয়ায় হাজারি শেষ পর্যন্ত তার 'আদর্শ হিন্দু হোটেল' প্রতিষ্ঠা করে, যা তার প্রতিদ্বন্দ্বীদের অহংকার চূর্ণ করে দেয়।"
+
   # - title: Moru o Sangha (মরু ও সংঘ)
   #   author: Saradindu Bandyopadhyay
   #   published_date: 1954
@@ -501,7 +513,7 @@ reading_list:
     published_date: 1915
     category: German Literature
     rating: 4
-    image: /assets/pdf/books/book_the_metamorphosis.png
+    image: /assets/pdf/books/book_the_metamorphosis_updated.png
     youtube_id: "dh37IsJf6cU" # LibriVox Full Audiobook
     gdrive_id: "1TQumxKRMrl1nkrMUyjJkgvHA_8deUOx4"
     tags: ["Novella", "Absurdist Fiction", "Modernism"]
@@ -522,6 +534,18 @@ reading_list:
     tags: ["Short Story", "Romance"]
     summary: "In the magical glow of St. Petersburg's 'white nights,' a lonely dreamer meets Nastenka. Over four nights, they share their deepest hopes and life stories. He falls in love, but she is waiting for another man. It is a tender, heartbreaking tale of unrequited love and the fleeting nature of happiness."
     summary_bangla: "সেন্ট পিটার্সবার্গের সাদা রাতের জাদুকরী আলোয় এক নিঃসঙ্গ স্বপ্নচারী যুবকের সাথে নাস্তেনকার দেখা হয়। চারটি রাতে তারা নিজেদের জীবনের গল্প ভাগ করে নেয়। যুবকটি প্রেমে পড়ে, কিন্তু নাস্তেনকা তার প্রেমিকের অপেক্ষায় থাকে। এটি একতরফা প্রেম, ক্ষণস্থায়ী আনন্দ এবং নিঃস্বার্থ ত্যাগের এক অনবদ্য কাহিনী।"
+
+  - title: Anna Karenina
+    author: Leo Tolstoy
+    published_date: 1878
+    category: Russian Literature
+    rating: 3
+    image: /assets/pdf/books/book_anna_karenina.png
+    youtube_id: "Pm4qlMY51U0" # LibriVox Full Audiobook
+    gdrive_id: "1bTddNuiz63pKc-rg48Sl_iwagG2aYJWF"
+    tags: ["Realism", "Romance", "Tragedy", "Classic Novel"]
+    summary: "Tolstoy weaves two parallel storylines to explore the nature of love and happiness. The first follows Anna Karenina, a sophisticated aristocrat who sacrifices her marriage, son, and social standing for a passionate, illicit affair with Count Vronsky, a path that leads to isolation, paranoia, and ultimate self-destruction. In stark contrast, the second narrative follows Konstantin Levin, a socially awkward landowner who seeks meaning in faith and rural labor, eventually finding a stable, spiritual fulfillment in his marriage to Kitty."
+    summary_bangla: "টলস্টয়ের এই মহাকাব্যিক উপন্যাসে দুটি সমান্তরাল কাহিনী প্রবাহিত। একদিকে সমাজের জৌলুসপূর্ণ জীবনে অভ্যস্ত আনা কারেনিনা, যে কাউন্ট ভ্রনস্কির প্রতি এক নিষিদ্ধ আবেগের টানে নিজের সাজানো সংসার ও সামাজিক মর্যাদা বিসর্জন দেয় এবং ধীরে ধীরে এক করুণ পরিণতির দিকে ধাবিত হয়। অন্যদিকে, গ্রাম্য জমিদার কনস্ট্যান্টিন লেভিন, যে জীবনের প্রকৃত অর্থ এবং আধ্যাত্মিক শান্তির খোঁজে কিটির সাথে এক পবিত্র ও স্থিতিশীল সংসার গড়ে তোলে। প্রেম, বিশ্বাস এবং পারিবারিক জীবনের এক নিখুঁত মনস্তাত্ত্বিক বিশ্লেষণ।"
 
 ---
 

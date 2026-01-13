@@ -73,6 +73,18 @@ reading_list:
     summary: "To escape his abusive father and the constraints of 'civilized' society, Huck Finn fakes his death and rafts down the Mississippi River. He is joined by Jim, a runaway slave. The journey challenges Huck's conscience, forcing him to choose between the laws of society and his loyalty to his friend."
     summary_bangla: "মদ্যপ বাবা এবং সমাজের তথাকথিত সভ্যতার বাঁধন থেকে বাঁচতে হাক ফিন মিসিসিপি নদীতে ভেসে পড়ে। তার সঙ্গী হয় পলাতক ক্রীতদাস জিম। এই যাত্রাপথে হাক তার বিবেক এবং তৎকালীন সমাজের বর্ণবাদী আইনের মধ্যে দ্বন্দ্বের মুখোমুখি হয় এবং এক গভীর বন্ধুত্বের জন্ম দেয়।"
 
+  - title: The Last of the Mohicans
+    author: James Fenimore Cooper
+    published_date: 1826
+    category: American Literature
+    rating: 3.5
+    image: /assets/pdf/books/book_the_last_of_the_mohicans.png
+    youtube_id: "c-xWBfOaqdA" # LibriVox Full Audiobook
+    gdrive_id: "1dPNbdVUp_xB5E-tBqrC6dliio0K5J9K7"
+    tags: ["Historical Fiction", "Adventure", "Classic Novel"]
+    summary: "Set against the violent backdrop of the French and Indian War in 1757, the story follows the frontiersman Hawkeye and his Mohican blood-brothers, Chingachgook and Uncas. They undertake a perilous mission to escort two British sisters, Cora and Alice, through the wilderness to their father. The group is relentlessly hunted by Magua, a Huron warrior seeking personal vengeance, leading to a tragic chase that marks the twilight of the Mohican tribe."
+    summary_bangla: "১৭৫৭ সালের ফরাসি ও ইন্ডিয়ান যুদ্ধের প্রেক্ষাপটে রচিত এই উপন্যাসে সীমান্তরক্ষী হকআই এবং তার দুই মোহিকান সঙ্গী, চিঙ্গাচগুক ও আনকাস-এর বীরত্বগাথা বর্ণিত হয়েছে। ব্রিটিশ কর্নেল মুনরোর দুই মেয়ে, কোরা ও অ্যালিস-কে দুর্গম অরণ্যের ভেতর দিয়ে নিরাপদে পৌঁছে দেওয়ার দায়িত্ব নেয় তারা। কিন্তু তাদের পিছু নেয় এক প্রতিহিংসাপরায়ণ হুরন যোদ্ধা মাগুয়া। এই রোমহর্ষক ধাওয়া, যুদ্ধ এবং বিয়োগান্তক পরিণতিতে মোহিকান জাতির শেষ অধ্যায় রচিত হয়।"
+
   # -----------------------------------------------------------------
   # Bengali Literature
   # -----------------------------------------------------------------

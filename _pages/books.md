@@ -226,6 +226,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: Great Expectations
+    author: Charles Dickens
+    published_date: 1861
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_great_expectations.png
+    youtube_id: "QnyheMsDg8M" # LibriVox Full Audiobook
+    gdrive_id: "1Ccl6oIrjuetspMThG2c50O3zSWgtBQfz/"
+    tags: ["Classic Novel", "Bildungsroman", "Victorian Era"]
+    summary: "The novel traces the life of an orphan named Pip, moving from his humble childhood with his blacksmith brother-in-law, Joe Gargery, to his rise in London society. The plot is set in motion by two events: a terrifying encounter with an escaped convict named Abel Magwitch in a graveyard, and Pip's visits to the decaying Satis House, where he falls for the beautiful but cold Estella, the ward of the eccentric Miss Havisham. When Pip receives a massive fortune from a mysterious benefactor, he abandons his roots to become a gentleman, mistakenly believing Miss Havisham is his patron. The story culminates in the shocking revelation of his true benefactor's identity, forcing Pip to lose his fortune but regain his soul, learning that loyalty and inner worth are far more valuable than social class."
+    summary_bangla: "এটি পিপ নামের এক এতিম বালকের জীবন পরিক্রমার গল্প। কাহিনী শুরু হয় যখন পিপ এক কবরস্থানে ম্যাগউইচ নামের এক পলাতক আসামিকে সাহায্য করে। পরবর্তীতে সে ধনী কিন্তু অদ্ভুত মিস হ্যাভিশাম এবং তার পালিত কন্যা এস্টেলার সংস্পর্শে আসে, যার প্রেমে পিপ পড়ে যায়। হঠাৎ এক গোপন দাতার টাকায় পিপ যখন লন্ডন শহরে গিয়ে ভদ্রলোক হওয়ার সুযোগ পায়, তখন সে তার সাধারণ অতীত এবং তার সবচেয়ে আপনজন, কর্মকার জো-কে অবজ্ঞা করতে শুরু করে। পিপ মনে করেছিল মিস হ্যাভিশামই তার দাতা, কিন্তু কাহিনীর শেষে যখন আসল দাতার পরিচয় ফাঁস হয়, তখন পিপের সব অহংকার ভেঙে যায়। সে বুঝতে পারে সামাজিক আভিজাত্যের চেয়ে মানবিকতা, কৃতজ্ঞতা এবং ভালোবাসার মূল্য অনেক বেশি।"
+
   - title: And Then There Were None
     author: Agatha Christie
     published_date: 1939

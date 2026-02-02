@@ -11,6 +11,7 @@ assets/libs/
 assets/pdf/books/*.pdf 
 assets/pdf/books/*.mp3 
 node_modules/
+assets/pdf/books.md
 vendor
 .idea*.mp3
 *.mp3

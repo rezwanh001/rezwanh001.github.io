@@ -13,6 +13,18 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
+  - title: The Gift of the Magi
+    author: O. Henry
+    published_date: 1905
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_gift_of_the_magi.png
+    youtube_id: "nxs3FczwDo4" # LibriVox Audio
+    gdrive_id: "16W5XIUN9HV4mcGB3aa3I3LCHpcxdRACS"
+    tags: ["Short Story", "Romance", "Classic", "Irony"]
+    summary: "Set in New York City on Christmas Eve, this story follows a young, impoverished married couple, Jim and Della Dillingham Young. Desperate to buy worthy gifts for each other, they each secretly sacrifice their most prized possession. Della sells her beautiful, knee-length hair to buy a platinum fob chain for Jim's heirloom watch, while Jim sells his watch to buy a set of expensive combs for Della's hair. The narrative concludes with the poignant irony that their gifts are now useless, yet they have given the ultimate gift of sacrificial love."
+    summary_bangla: "জিম এবং ডেলা নামের এক দরিদ্র দম্পতির ভালোবাসার এক অমর কাহিনী। ক্রিসমাসের প্রাক্কালে একে অপরকে উপহার দেওয়ার জন্য তাদের কাছে পর্যাপ্ত টাকা ছিল না। ডেলার ছিল তার দীর্ঘ সুন্দর চুল, আর জিমের ছিল বংশপরম্পরায় পাওয়া একটি সোনার ঘড়ি। ডেলা তার চুল বিক্রি করে জিমের ঘড়ির জন্য একটি চেইন কেনে। অন্যদিকে, জিম তার সাধের ঘড়িটি বিক্রি করে ডেলার চুলের জন্য এক সেট দামি চিরুনি কিনে আনে। গল্পের শেষে এক করুণ পরিহাসের সৃষ্টি হয় যখন দেখা যায় তাদের উপহারগুলো ব্যবহারের অযোগ্য হয়ে গেছে, কিন্তু তাদের এই আত্মত্যাগ প্রমাণ করে যে ভালোবাসাই হলো সবচেয়ে বড় উপহার।"
+
   - title: The Scarlet Letter
     author: Nathaniel Hawthorne
     published_date: 1850

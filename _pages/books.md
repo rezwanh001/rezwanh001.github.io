@@ -13,17 +13,17 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
-  - title: The Gift of the Magi
-    author: O. Henry
-    published_date: 1905
-    category: American Literature
-    rating: 4
-    image: /assets/pdf/books/book_the_gift_of_the_magi.png
-    youtube_id: "nxs3FczwDo4"
-    gdrive_id: "16W5XIUN9HV4mcGB3aa3I3LCHpcxdRACS"
-    tags: ["Short Story", "Romance", "Classic", "Irony"]
-    summary: "Set on a poverty-stricken Christmas Eve, this story follows **Jim** and **Della Young**, a devoted couple desperate to buy worthy gifts for one another. They each secretly sacrifice their most prized possession—**Della** sells her hair and **Jim** sells his watch—to buy accessories for the other's treasure. The narrative concludes with a poignant twist, illustrating that their useless gifts are the ultimate proof of selfless love."
-    summary_bangla: "বড়দিনের প্রাক্কালে **জিম** ও **ডেলা** নামের এক দরিদ্র দম্পতি একে অপরকে উপহার দেওয়ার জন্য ব্যাকুল হয়ে ওঠে। টাকার অভাবে **ডেলা** তার সুন্দর চুল এবং **জিম** তার সাধের ঘড়িটি বিক্রি করে দেয়। গল্পের শেষে এক করুণ পরিহাসের সৃষ্টি হয় যখন দেখা যায় তাদের উপহারগুলো ব্যবহারের অযোগ্য, কিন্তু তাদের এই আত্মত্যাগ প্রমাণ করে যে ভালোবাসাই হলো সবচেয়ে বড় সম্পদ।"
+  # - title: The Gift of the Magi
+  #   author: O. Henry
+  #   published_date: 1905
+  #   category: American Literature
+  #   rating: 4
+  #   image: /assets/pdf/books/book_the_gift_of_the_magi.png
+  #   youtube_id: "nxs3FczwDo4"
+  #   gdrive_id: "16W5XIUN9HV4mcGB3aa3I3LCHpcxdRACS"
+  #   tags: ["Short Story", "Romance", "Classic", "Irony"]
+  #   summary: "Set on a poverty-stricken Christmas Eve, this story follows **Jim** and **Della Young**, a devoted couple desperate to buy worthy gifts for one another. They each secretly sacrifice their most prized possession—**Della** sells her hair and **Jim** sells his watch—to buy accessories for the other's treasure. The narrative concludes with a poignant twist, illustrating that their useless gifts are the ultimate proof of selfless love."
+  #   summary_bangla: "বড়দিনের প্রাক্কালে **জিম** ও **ডেলা** নামের এক দরিদ্র দম্পতি একে অপরকে উপহার দেওয়ার জন্য ব্যাকুল হয়ে ওঠে। টাকার অভাবে **ডেলা** তার সুন্দর চুল এবং **জিম** তার সাধের ঘড়িটি বিক্রি করে দেয়। গল্পের শেষে এক করুণ পরিহাসের সৃষ্টি হয় যখন দেখা যায় তাদের উপহারগুলো ব্যবহারের অযোগ্য, কিন্তু তাদের এই আত্মত্যাগ প্রমাণ করে যে ভালোবাসাই হলো সবচেয়ে বড় সম্পদ।"
 
   - title: The Scarlet Letter
     author: Nathaniel Hawthorne

@@ -146,7 +146,7 @@ reading_list:
     gdrive_id: "1I4VBjpDYODuqt7WYP6ITBO5hLeV6Vy98"
     tags: ["Global Politics", "History", "Translation", "Zionism"]
     summary: "A Bengali translation of **Henry Ford**'s controversial essays, originally titled 'The International Jew'. The book presents arguments regarding the alleged disproportionate influence of a specific group over global finance, media, and government policies. It offers a historical window into early 20th-century perspectives on the geopolitical structures of power and Zionism."
-    summary_bangla: "**হেনরি ফোর্ড**-এর বিশ্বখ্যাত ও বিতর্কিত প্রবন্ধ সংকলন 'দ্য ইন্টারন্যাশনাল জিউ'-এর বাংলা অনুবাদ। বইটিতে ফোর্ড বিংশ শতাব্দীর প্রেক্ষাপটে বিশ্ব অর্থনীতি, সংবাদমাধ্যম এবং আন্তর্জাতিক রাজনীতিতে জায়নবাদী প্রভাবের এক বিস্তারিত বিবরণ তুলে ধরেছেন। এতে বৈশ্বিক ক্ষমতা কাঠামো এবং এর নেপথ্য চালিকাশক্তি সম্পর্কে লেখকের নিজস্ব বিশ্লেষণ ও পর্যবেক্ষণ স্থান পেয়েছে।"
+    summary_bangla: "**হেনরি ফোর্ড**- এর বিশ্বখ্যাত ও বিতর্কিত প্রবন্ধ সংকলন 'দ্য ইন্টারন্যাশনাল জিউ'-এর বাংলা অনুবাদ। বইটিতে ফোর্ড বিংশ শতাব্দীর প্রেক্ষাপটে বিশ্ব অর্থনীতি, সংবাদমাধ্যম এবং আন্তর্জাতিক রাজনীতিতে জায়নবাদী প্রভাবের এক বিস্তারিত বিবরণ তুলে ধরেছেন। এতে বৈশ্বিক ক্ষমতা কাঠামো এবং এর নেপথ্য চালিকাশক্তি সম্পর্কে লেখকের নিজস্ব বিশ্লেষণ ও পর্যবেক্ষণ স্থান পেয়েছে।"
 
   - title: মুক্তিযুদ্ধের বয়ানে ইসলাম (Muktijuddher Boyane Islam)
     author: Pinaki Bhattacharya

@@ -515,7 +515,7 @@ reading_list:
     gdrive_id: "1SpbmSLzasdBNdhc8kvDv4lNU5D_FYYll"
     tags: ["Adventure", "Historical Fiction", "D'Artagnan Romances"]
     summary: "In the concluding chapter of the saga, the musketeers find themselves on opposite sides. **Aramis** plots to replace **King Louis XIV** with his twin brother, **Philippe**, who has been imprisoned in an iron mask to hide his identity. The plot forces the old friends to choose between loyalty to the crown and to each other."
-    summary_bangla: "মাস্কেটিয়ার্স সিরিজের শেষ পর্বে বন্ধুরা একে অপরের মুখোমুখি দাঁড়ায়। **আরামিস** রাজা চতুর্দশ লুইকে সরিয়ে তার যমজ ভাই **ফিলিপ**-কে সিংহাসনে বসানোর পরিকল্পনা করে, যে এতকাল লোহার মুখোশে বন্দি ছিল। এই ষড়যন্ত্র বন্ধুদের আনুগত্য ও বন্ধুত্বের এক কঠিন পরীক্ষার মুখে ফেলে।"
+    summary_bangla: "মাস্কেটিয়ার্স সিরিজের শেষ পর্বে বন্ধুরা একে অপরের মুখোমুখি দাঁড়ায়। **আরামিস** রাজা চতুর্দশ লুইকে সরিয়ে তার যমজ ভাই **ফিলিপ**- কে সিংহাসনে বসানোর পরিকল্পনা করে, যে এতকাল লোহার মুখোশে বন্দি ছিল। এই ষড়যন্ত্র বন্ধুদের আনুগত্য ও বন্ধুত্বের এক কঠিন পরীক্ষার মুখে ফেলে।"
 
   - title: The Count of Monte Cristo
     author: Alexandre Dumas

@@ -490,6 +490,18 @@ reading_list:
     summary: "For eight years, a single leopard terrorized the pilgrims and villagers of Rudraprayag, claiming over 125 lives. Hunter-naturalist Jim Corbett details the grueling nights, the cunning of the predator, and the immense courage required to finally track and end the reign of one of history's deadliest man-eaters. It is a gripping tale of man versus nature."
     summary_bangla: "টানা আট বছর ধরে একটি চিতাবাঘ রুদ্রপ্রয়াগের তীর্থযাত্রী ও গ্রামবাসীদের মনে ত্রাস সৃষ্টি করে ১২৫ জনেরও বেশি মানুষকে হত্যা করে। জিম করবেট তার শিকারে অভিজ্ঞতার ঝুলি নিয়ে এই ধূর্ত ও বুদ্ধিমান বাঘটিকে মারার জন্য যে অসীম ধৈর্য ও সাহসের পরিচয় দেন, তারই রোমহর্ষক বর্ণনা এই বই। এটি শিকার কাহিনীর এক ধ্রুপদী নিদর্শন।"
 
+  - title: Lady Chatterley’s Lover
+    author: D.H. Lawrence
+    published_date: 1928
+    category: English Literature
+    rating: 3
+    image: /assets/pdf/books/book_lady_chatterleys_lover.png
+    youtube_id: "qVhUGaIrSqM" # Placeholder for Audiobook
+    gdrive_id: "1dgZVgsbOybw5Q1YTyF06UyY1rRwElv9Y"
+    tags: ["Classic Novel", "Romance", "Modernism"]
+    summary: "Constance Chatterley feels trapped in a loveless marriage to Sir Clifford, an aristocrat paralyzed in World War I who retreats into cold intellectualism. Seeking physical and emotional vitality, she begins a passionate, illicit affair with the estate's gamekeeper, Oliver Mellors. The novel is a bold exploration of the conflict between mind and body, industrialization versus nature, and the possibility of bridging rigid class divides through love."
+    summary_bangla: "লেডি কনস্ট্যান্স চ্যাটারলি তার অভিজাত কিন্তু যুদ্ধাহত ও পঙ্গু স্বামী ক্লিফোর্ডের সাথে এক নিঃসঙ্গ জীবনে আটকা পড়েন। মানসিক ও শারীরিক অতৃপ্তি থেকে মুক্তি পেতে তিনি এস্টেটের গেমকিপার অলিভার মেলর্সের সাথে এক নিষিদ্ধ সম্পর্কে জড়িয়ে পড়েন। এই উপন্যাসটি কেবল প্রেমের গল্প নয়, বরং এটি শরীর ও মনের সম্পর্ক, আভিজাত্য বনাম সাধারণ জীবন এবং শিল্পায়নের যুগে প্রকৃতির সাথে মানুষের সংযোগের এক সাহসী ও বিতর্কিত অন্বেষণ।"
+
   # -----------------------------------------------------------------
   # French Literature
   # -----------------------------------------------------------------

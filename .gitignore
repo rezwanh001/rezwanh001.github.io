@@ -8,10 +8,11 @@ _site
 .tweet-cache
 Gemfile.lock
 assets/libs/
-assets/pdf/books/*.pdf 
+assets/pdf/books/*.pdf
 assets/pdf/books/*.mp3 
 node_modules/
 assets/pdf/books.md
+assets/pdf/books (copy).md
 Old__README.md
 vendor
 .idea*.mp3

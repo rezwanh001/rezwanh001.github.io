@@ -310,15 +310,15 @@
     },
     {
       "name": "MMFformer: Multimodal Fusion Transformer Network for Depression Detection",
-      "publisher": "arXiv Preprint | Accepted at IEEE SMC 2025",
-      "releaseDate": "2025-08-08",
-      "url": "https://arxiv.org/abs/2508.06701"
+      "publisher": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+      "releaseDate": "2025-10-08",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11342694"
     },
     {
       "name": "MDD-Net: Multimodal Depression Detection through Mutual Transformer",
-      "publisher": "arXiv Preprint | Accepted at IEEE SMC 2025",
-      "releaseDate": "2025-08-11",
-      "url": "https://arxiv.org/abs/2508.08093"
+      "publisher": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+      "releaseDate": "2025-10-08",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11342588"
     },
     {
       "name": "GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning",

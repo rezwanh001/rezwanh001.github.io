@@ -3,6 +3,11 @@ require 'nokogiri'
 require 'open-uri'
 require 'yaml'
 
+###=====================================================================================
+## python scripts/fetch_citations.py
+## git add _data/scholar_citations.yml && git commit -m "update citations" && git push 
+###=====================================================================================  
+
 module Helpers
   extend ActiveSupport::NumberHelper
 end

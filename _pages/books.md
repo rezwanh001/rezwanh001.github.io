@@ -579,7 +579,7 @@ reading_list:
     image: /assets/pdf/books/book_the_overcoat.png
     youtube_id: "11y3P3JwH6k" # Placeholder for Audiobook
     gdrive_id: "1b2jr5dGFIi-QvpJ9uVULaEmfSYliRfOx"
-    tags:["Short Story", "Satire", "Realism"]
+    tags: ["Short Story", "Satire", "Realism"]
     summary: "Akaky Akakievich is a poor, relentlessly mocked clerk in St. Petersburg whose bleak life transforms when he saves enough money to buy a beautiful new overcoat. However, his newfound joy and social respect are shattered when the coat is violently stolen. After an arrogant official cruelly dismisses his plea for help, Akaky dies of cold and despair, only for his ghost to return to haunt the winter streets, snatching coats from the wealthy to exact a tragicomic revenge on a callous society."
     summary_bangla: "সেন্ট পিটার্সবার্গের এক দরিদ্র ও উপেক্ষিত কেরানি আকাকি আকাকিয়েভিচ বহু কষ্টে টাকা জমিয়ে একটি নতুন ওভারকোট কেনে। কোটটি তার জীবনে ক্ষণিকের আনন্দ ও সামাজিক সম্মান বয়ে আনলেও, শীঘ্রই সেটি চুরি হয়ে যায়। এক অহংকারী উচ্চপদস্থ কর্মকর্তা তাকে সাহায্য করতে অস্বীকৃতি জানালে, আকাকি তীব্র শীতে ও ভগ্ন হৃদয়ে মারা যায়। এরপর তার প্রেতাত্মা শীতের রাতে শহরের রাস্তায় ঘুরে বেড়ায় এবং ক্ষমতাবানদের কোট ছিনিয়ে নিয়ে এক নিষ্ঠুর ও হাস্যরসাত্মক প্রতিশোধ গ্রহণ করে।"
 

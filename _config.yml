@@ -221,6 +221,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  teaching:
+    output: true
+    permalink: /teaching/:title/
 
 announcements:
   enabled: true

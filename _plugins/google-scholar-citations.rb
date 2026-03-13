@@ -1,6 +1,7 @@
 require "active_support/all"
 require 'nokogiri'
 require 'open-uri'
+require 'yaml'
 
 module Helpers
   extend ActiveSupport::NumberHelper
@@ -9,6 +10,7 @@ end
 module Jekyll
   class GoogleScholarCitationsTag < Liquid::Tag
     Citations = { }
+    CacheLoaded = { loaded: false, data: {} }
 
     def initialize(tag_name, params, tokens)
       super
@@ -26,10 +28,26 @@ module Jekyll
 
     end
 
+    def load_cache(context)
+      return if CacheLoaded[:loaded]
+      cache_file = File.join(context.registers[:site].source, '_data', 'scholar_citations.yml')
+      if File.exist?(cache_file)
+        CacheLoaded[:data] = YAML.load_file(cache_file) || {}
+        puts "Loaded #{CacheLoaded[:data].size} cached citation counts from scholar_citations.yml"
+      else
+        puts "No scholar_citations.yml cache file found, will try live fetching"
+        CacheLoaded[:data] = {}
+      end
+      CacheLoaded[:loaded] = true
+    end
+
     def render(context)
       article_id = context[@article_id.strip]
       scholar_id = context[@scholar_id.strip]
       article_url = "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=#{scholar_id}&citation_for_view=#{scholar_id}:#{article_id}"
+
+      # Load cache on first call
+      load_cache(context)
 
       begin
           # If the citation count has already been fetched, return it
@@ -37,6 +55,15 @@ module Jekyll
             return GoogleScholarCitationsTag::Citations[article_id]
           end
 
+          # Check the local YAML cache first (populated by scripts/fetch_citations.py)
+          if CacheLoaded[:data].key?(article_id)
+            citation_count = CacheLoaded[:data][article_id].to_i
+            citation_count = Helpers.number_to_human(citation_count, :format => '%n%u', :precision => 2, :units => { :thousand => 'K', :million => 'M', :billion => 'B' })
+            GoogleScholarCitationsTag::Citations[article_id] = citation_count
+            return "#{citation_count}"
+          end
+
+          # Fallback: try live fetching from Google Scholar
           # Sleep for a random amount of time to avoid being blocked
           sleep(rand(1.5..3.5))
 

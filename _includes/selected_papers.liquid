@@ -1,3 +1,12 @@
-<div class="publications">
-  {% bibliography --group_by none --query @*[selected=true]* %}
+<div class="selected-publications">
+  <div class="sel-pub-header">
+    <div class="sel-pub-badge">
+      <i class="fas fa-star"></i>
+      <span>Featured Research</span>
+    </div>
+    <p class="sel-pub-desc">Peer-reviewed publications at top-tier venues including ICCV, IEEE SMC, IJCNN, and IEEE Access</p>
+  </div>
+  <div class="publications sel-pub-list">
+    {% bibliography --group_by none --query @*[selected=true]* %}
+  </div>
 </div>

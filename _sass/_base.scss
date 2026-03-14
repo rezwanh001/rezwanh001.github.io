@@ -659,6 +659,116 @@ ul.task-list input[type="checkbox"] {
 
 // ── Selected Publications (about page) ───────────────────────────
 
+.selected-publications {
+  margin-top: 0.25rem;
+
+  // Featured Research badge + description
+  .sel-pub-header {
+    text-align: center;
+    margin-bottom: 1.4rem;
+
+    .sel-pub-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 1.1rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(135deg, var(--global-theme-color) 0%, color-mix(in srgb, var(--global-theme-color) 70%, #7c3aed) 100%);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.13);
+
+      i {
+        font-size: 0.72rem;
+        animation: sel-star-pulse 2.5s ease-in-out infinite;
+      }
+    }
+
+    .sel-pub-desc {
+      margin-top: 0.55rem;
+      font-size: 0.82rem;
+      color: var(--global-text-color-light);
+      line-height: 1.5;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // Override card styling for featured publications
+  .sel-pub-list ol.bibliography li {
+    border: 1.5px solid rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.25);
+    background: linear-gradient(
+      135deg,
+      var(--global-card-bg-color, var(--global-bg-color)) 0%,
+      color-mix(in srgb, var(--global-theme-color) 4%, var(--global-card-bg-color, var(--global-bg-color))) 100%
+    );
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06),
+                0 1px 4px rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.08);
+    position: relative;
+
+    // Persistent accent stripe
+    &::before {
+      opacity: 1 !important;
+      width: 4px;
+      background: linear-gradient(to bottom, var(--global-theme-color), color-mix(in srgb, var(--global-theme-color) 60%, #7c3aed));
+    }
+
+    // Impact star corner badge
+    &::after {
+      content: '\f005';
+      font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      font-size: 0.65rem;
+      color: var(--global-theme-color);
+      opacity: 0.35;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1),
+                  0 4px 12px rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.15);
+      transform: translateY(-5px);
+
+      &::after {
+        opacity: 0.8;
+        transform: scale(1.2) rotate(15deg);
+      }
+    }
+
+    // Slightly larger title in featured context
+    .title {
+      font-size: 1.08rem;
+    }
+
+    // Prominent venue badge
+    .abbr abbr {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+      font-size: 0.74rem;
+      padding: 0.3rem 0.7rem;
+    }
+
+    // Larger preview image
+    .preview {
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+@keyframes sel-star-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.15); }
+}
+
 .about-pubs-section .publications {
   margin-top: 0.5rem;
 }

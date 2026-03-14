@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Md Rezwanul Haque",
-    "label": "MASc Candidate · AI Researcher",
+    "label": "PhD Candidate · AI Researcher",
     "image": "",
     "email": "rezwan@uwaterloo.ca",
     "phone": "",
     "url": "https://rezwanh001.github.io/",
-    "summary": "MASc candidate in Electrical & Computer Engineering at the University of Waterloo, specializing in Multimodal Machine Learning (MMML) and Large Language Models (LLMs) under the supervision of Prof. Fakhri Karray at the CPAMI Lab. Published at top-tier venues including ICCV, IEEE SMC, and IJCNN. Secured 2nd place in the ICCV MSLR-2025 Challenge with a Best Poster Award. Research interests span multimodal AI agents, human-centered machine intelligence, and sign language recognition.",
+    "summary": "Looking for a career to demonstrate the best of my professional ability, research thinking, and strategies to improve my knowledge, as well as to contribute to the best of my potential in my institution.",
     "location": {
       "city": "Waterloo",
       "region": "Ontario",
@@ -17,6 +17,11 @@
         "network": "Google Scholar",
         "username": "Md Rezwanul Haque",
         "url": "https://scholar.google.com/citations?user=HaI-oFUAAAAJ"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "Md-Haque-66",
+        "url": "https://www.researchgate.net/profile/Md-Haque-66"
       },
       {
         "network": "GitHub",
@@ -54,8 +59,8 @@
       "endDate": "",
       "score": "",
       "courses": [
-        "Supervisor: Prof. Fakhri Karray",
-        "Research Focus: Multimodal Machine Learning, Large Language Models, and Human-Centered AI."
+        "Research Focus: Agentic Systems for Embodied AI, Multi-agent Embodied Systems with Shared Visual Understanding, and World Models and Visual Cognitions for Embodied Agents.",
+        "Supervisor(s): Prof. Fakhri Karray & Prof. Zhou Wang"
       ]
     },
     {
@@ -66,11 +71,10 @@
       "studyType": "MASc",
       "startDate": "2024-05-01",
       "endDate": "2026-04-30",
-      "score": "90+ Average",
+      "score": "",
       "courses": [
-        "Supervisor: Prof. Fakhri Karray",
-        "Thesis: Multimodal Machine Learning and Large Language Models for Human-Centered Applications.",
-        "Faculty of Engineering (FOE) Award recipient (Winter & Spring 2025)."
+        "Thesis: \u201cTitle is coming ...\u201d",
+        "Supervisor(s): Prof. Fakhri Karray & Prof. Pin-Han Ho"
       ]
     },
     {
@@ -84,8 +88,7 @@
       "score": "",
       "courses": [
         "Thesis: \u201cA Study on Non-Invasive Hemoglobin Measurement Techniques and Predictions.\u201d",
-        "Supervisor: Prof. Dr. M.M.A Hashem",
-        "Technical Scholarship recipient (2015\u20132018)."
+        "Supervisor: Prof. Dr. M.M.A Hashem"
       ]
     }
   ],
@@ -282,22 +285,6 @@
         "IEEE EICT 2025 — Int'l Conference on Electrical Information and Communication Technology",
         "PLOS One (2023–Present) — Peer-reviewed open access scientific journal"
       ]
-    },
-    {
-      "organization": "Academic & Community Service",
-      "position": "Mentor / Instructor / Volunteer",
-      "startDate": "2014-01-01",
-      "endDate": "",
-      "summary": "Mentoring, teaching, and organizing activities across academic communities.",
-      "highlights": [
-        "Mentor — Graduate Mentorship Program Fall 2025, University of Waterloo",
-        "Instructor — Hardware Acceleration Club of KUET (HACK), 2018–2019",
-        "Instructor — Special Group Interested in Programming Contest (SGIPC), KUET, 2015–2019",
-        "Volunteer — University-Industry Collaboration: Challenges and Opportunities, KUET, 2017",
-        "Volunteer — 3rd International Conference on EICT, KUET, 2017",
-        "Organizer — National High School Programming Contest (NHSPC), KUET, 2015–2017",
-        "Participant — Regional Mathematical Olympiad 2014"
-      ]
     }
   ],
   "certificates": [
@@ -355,8 +342,7 @@
         "Large Language Models (LLMs)",
         "Computer Vision",
         "Natural Language Processing",
-        "Transformer Architectures",
-        "Sign Language Recognition"
+        "Transformer Architectures"
       ]
     },
     {
@@ -416,24 +402,48 @@
       "name": "Large Language Models",
       "icon": "fa-solid fa-robot",
       "keywords": [
-        "Transformer Models",
+        "Transformer Architectures",
         "Natural Language Understanding",
-        "GPT / BERT / LLaMA",
+        "GPT / LLaMA / Gemma",
         "Instruction Tuning & RLHF",
-        "Text Generation",
-        "Retrieval-Augmented Generation (RAG)"
+        "Retrieval-Augmented Generation (RAG)",
+        "Agentic Systems & Tool Use"
       ]
     },
     {
       "name": "Multimodal Machine Learning",
       "icon": "fa-solid fa-diagram-project",
       "keywords": [
-        "Cross-modal Learning",
         "Vision-Language Models",
-        "Multimodal Representation Learning",
+        "Multimodal Fusion & Representation",
         "Audio-Visual Learning",
         "Sign Language Recognition",
-        "Multimodal AI Agents"
+        "Depression Detection (Multimodal)",
+        "Medical Image Analysis"
+      ]
+    },
+    {
+      "name": "AI Agents & Embodied Intelligence",
+      "icon": "fa-solid fa-microchip",
+      "keywords": [
+        "Multi-Agent Systems",
+        "Embodied AI",
+        "Visual Cognition & World Models",
+        "Human-Centered Machine Intelligence",
+        "Multimodal AI Agents",
+        "Shared Visual Understanding"
+      ]
+    },
+    {
+      "name": "Deep Learning & Computer Vision",
+      "icon": "fa-solid fa-eye",
+      "keywords": [
+        "Convolutional Neural Networks",
+        "Vision Transformers (ViT)",
+        "Object Detection & Segmentation",
+        "Whole Slide Image Analysis",
+        "Graph Neural Networks",
+        "Self-Supervised & Contrastive Learning"
       ]
     }
   ]

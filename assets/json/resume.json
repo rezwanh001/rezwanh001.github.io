@@ -1,24 +1,27 @@
 {
   "basics": {
     "name": "Md Rezwanul Haque",
-    "label": "Grad Student",
+    "label": "MASc Candidate · AI Researcher",
     "image": "",
     "email": "rezwan@uwaterloo.ca",
     "phone": "",
     "url": "https://rezwanh001.github.io/",
-    "summary": "Looking for a career to demonstrate the best of my professional ability, research thinking, and strategies to improve my knowledge, as well as to contribute to the best of my potential in my institution.",
+    "summary": "MASc candidate in Electrical & Computer Engineering at the University of Waterloo, specializing in Multimodal Machine Learning (MMML) and Large Language Models (LLMs) under the supervision of Prof. Fakhri Karray at the CPAMI Lab. Published at top-tier venues including ICCV, IEEE SMC, and IJCNN. Secured 2nd place in the ICCV MSLR-2025 Challenge with a Best Poster Award. Research interests span multimodal AI agents, human-centered machine intelligence, and sign language recognition.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": ""
+      "city": "Waterloo",
+      "region": "Ontario",
+      "countryCode": "CA"
     },
     "profiles": [
       {
-        "network": "",
-        "username": "",
-        "url": ""
+        "network": "Google Scholar",
+        "username": "Md Rezwanul Haque",
+        "url": "https://scholar.google.com/citations?user=HaI-oFUAAAAJ"
+      },
+      {
+        "network": "GitHub",
+        "username": "rezwanh001",
+        "url": "https://github.com/rezwanh001"
       }
     ]
   },
@@ -26,83 +29,49 @@
     {
       "name": "Centre for Pattern Analysis and Machine Intelligence (CPAMI) Lab",
       "location": "Ontario, Canada",
-      "position": "Researcher",
+      "position": "Graduate Researcher",
       "url": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
       "startDate": "2024-04-01",
       "endDate": "",
-      "summary": "",
-      "highlights": ["Multi-Modal Machine Learning (MMML)", "Large Language Models (LLMs)", "Deep Learning", "Artificial Intelligence", "Multimodal AI Agents", "Human-Centered Machine Intelligence"]
-    }
-  ],
-  "teaching": [
-    {
-      "organization": "University of Waterloo",
-      "location": "Ontario, Canada",
-      "position": "ECE 252: Systems Programming and Concurrency",
-      "url": "https://rezwanh001.github.io/teaching/#fall-2024--ece-252-systems-programming-and-concurrency",
-      "startDate": "2024-09-01",
-      "endDate": "2024-12-31",
-      "summary": "",
+      "summary": "Conducting research on multimodal machine learning and large language models for human-centered AI applications, including depression detection, sign language recognition, and medical image analysis.",
       "highlights": [
-        "🗓️ Fall 2024: September 2024 - December 2024",
-        "👥 Enrolled Students: 206/190 📈",
-        "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (4.5/5)"
-      ]
-    },
-    {
-      "organization": "University of Waterloo",
-      "location": "Ontario, Canada",
-      "position": "ECE 459: Programming for Performance",
-      "url": "https://rezwanh001.github.io/teaching/#winter-2025--ece-459-programming-for-performance", 
-      "startDate": "2025-01-01",
-      "endDate": "2025-04-30",
-      "summary": "",
-      "highlights": [
-        "🗓️ Winter 2025: January 2025 - April 2025",
-        "👥 Enrolled Students: 453/425 📈",
-        "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (--.--/5)"
-      ]
-    },
-    {
-      "organization": "University of Waterloo",
-      "location": "Ontario, Canada",
-      "position": "ECE 252: Systems Programming and Concurrency",
-      "url": "https://rezwanh001.github.io/teaching/#spring-2025--ece-252-systems-programming-and-concurrency",
-      "startDate": "2025-05-01",
-      "endDate": "2025-08-31",
-      "summary": "",
-      "highlights": [
-        "🗓️ Spring 2025: May 2025 - August 2025",
-        "👥 Enrolled Students: 120/150",
-        "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (--.--/5)"
-      ]
-    },
-    {
-      "organization": "University of Waterloo",
-      "location": "Ontario, Canada",
-      "position": "ECE 222: Digital Computers",
-      "url": "https://rezwanh001.github.io/teaching/#fall-2025--ece-222-digital-computers",
-      "startDate": "2025-09-01",
-      "endDate": "2025-12-31",
-      "summary": "",
-      "highlights": [
-        "🗓️ Fall 2025: September 2025 - December 2025",
-        "👥 Enrolled Students: 279/280",
-        "⭐ TA Rating: <span style=\"color: #f5c518;\">★★★★☆</span> (--.--/5)"
+        "Multi-Modal Machine Learning (MMML)",
+        "Large Language Models (LLMs)",
+        "Multimodal AI Agents",
+        "Human-Centered Machine Intelligence",
+        "Deep Learning & Computer Vision"
       ]
     }
   ],
   "education": [
     {
       "institution": "University of Waterloo",
-      "location": "Waterloo, CA",
+      "location": "Waterloo, Ontario, Canada",
+      "url": "https://uwaterloo.ca/",
+      "area": "Electrical and Computer Engineering (ECE)",
+      "studyType": "PhD",
+      "startDate": "2026-05-01",
+      "endDate": "",
+      "score": "",
+      "courses": [
+        "Supervisor: Prof. Fakhri Karray",
+        "Research Focus: Multimodal Machine Learning, Large Language Models, and Human-Centered AI."
+      ]
+    },
+    {
+      "institution": "University of Waterloo",
+      "location": "Waterloo, Ontario, Canada",
       "url": "https://uwaterloo.ca/",
       "area": "Electrical and Computer Engineering (ECE)",
       "studyType": "MASc",
       "startDate": "2024-05-01",
       "endDate": "2026-04-30",
       "score": "90+ Average",
-      "courses": ["Supervisor: Prof. Fakhri Karray", "Research Focus: Multimodal Machine Learning (MMML) and Large Language Models (LLMs).", "Expected degree completion in Winter 2026."]
+      "courses": [
+        "Supervisor: Prof. Fakhri Karray",
+        "Thesis: Multimodal Machine Learning and Large Language Models for Human-Centered Applications.",
+        "Faculty of Engineering (FOE) Award recipient (Winter & Spring 2025)."
+      ]
     },
     {
       "institution": "Khulna University of Engineering & Technology (KUET)",
@@ -113,198 +82,95 @@
       "startDate": "2014-12-20",
       "endDate": "2019-02-19",
       "score": "",
-      "courses": ["Thesis: “A Study on Non-Invasive Hemoglobin Measurement Techniques and Predictions.”", "Supervisor: Prof. Dr. M.M.A Hashem"]
+      "courses": [
+        "Thesis: \u201cA Study on Non-Invasive Hemoglobin Measurement Techniques and Predictions.\u201d",
+        "Supervisor: Prof. Dr. M.M.A Hashem",
+        "Technical Scholarship recipient (2015\u20132018)."
+      ]
     }
-    /*
-    {
-      "institution": "Rajshahi Govt. City College",
-      "location": "Rajshahi, Bangladesh",
-      "url": "http://rgcc.ac.bd/",
-      "area": "Science",
-      "studyType": "Higher Secondary Certificate (H.S.C)",
-      "startDate": "2013-01-01",
-      "endDate": "2014-12-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Balahar B.L. High School",
-      "location": "Dinajpur, Bangladesh",
-      "url": "",
-      "area": "Science",
-      "studyType": "Secondary School Certificate (S.S.C)",
-      "startDate": "2007-01-01",
-      "endDate": "2012-12-30",
-      "score": "",
-      "courses": []
-    }
-    */
   ],
-  "awards": [
+  "teaching": [
     {
-      "title": "Faculty of Engineering (FOE) Award (Spring)",
-      "date": "2025",
-      "awarder": "UWaterloo, CA",
-      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1500."
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE 459: Programming for Performance",
+      "url": "https://rezwanh001.github.io/teaching/0_ece459_winter2026/",
+      "startDate": "2026-01-01",
+      "endDate": "2026-04-30",
+      "summary": "Teaching Assistant (TA)",
+      "highlights": [
+        "\ud83d\udcc5 Winter 2026 \u00b7 January 2026 \u2013 April 2026",
+        "\ud83d\udc65 Enrolled Students: 440/447",
+        "\u2b50 TA Rating: \u2605\u2605\u2605\u2605\u2605 (--.--/5)"
+      ]
     },
     {
-      "title": "Best Poster Award",
-      "date": "2025",
-      "awarder": "ICCV, USA",
-      "summary": "Awarded at the 1st Multimodal Sign Language Recognition Workshop."
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE 222: Digital Computers",
+      "url": "https://rezwanh001.github.io/teaching/1_ece222_fall2025/",
+      "startDate": "2025-09-01",
+      "endDate": "2025-12-31",
+      "summary": "Teaching Assistant (TA)",
+      "highlights": [
+        "\ud83d\udcc5 Fall 2025 \u00b7 September 2025 \u2013 December 2025",
+        "\ud83d\udc65 Enrolled Students: 279/280",
+        "\u2b50 TA Rating: \u2605\u2605\u2605\u2605\u2605 (--.--/5)"
+      ]
     },
     {
-      "title": "Winner (2nd) of MSLR-2025 Challenge",
-      "date": "2025",
-      "awarder": "ICCV, USA",
-      "summary": "Secured 2nd place in The First Multimodal Sign Language Recognition Challenge. Valued at USD $750."
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE 252: Systems Programming and Concurrency",
+      "url": "https://rezwanh001.github.io/teaching/2_ece252_spring2025/",
+      "startDate": "2025-05-01",
+      "endDate": "2025-08-31",
+      "summary": "Teaching Assistant (TA)",
+      "highlights": [
+        "\ud83d\udcc5 Spring 2025 \u00b7 May 2025 \u2013 August 2025",
+        "\ud83d\udc65 Enrolled Students: 120/150",
+        "\u2b50 TA Rating: \u2605\u2605\u2605\u2605\u2606 (--.--/5)"
+      ]
     },
     {
-      "title": "Faculty of Engineering (FOE) Award (Winter)",
-      "date": "2025",
-      "awarder": "UWaterloo, CA",
-      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1500."
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE 459: Programming for Performance",
+      "url": "https://rezwanh001.github.io/teaching/3_ece459_winter2025/",
+      "startDate": "2025-01-01",
+      "endDate": "2025-04-30",
+      "summary": "Teaching Assistant (TA)",
+      "highlights": [
+        "\ud83d\udcc5 Winter 2025 \u00b7 January 2025 \u2013 April 2025",
+        "\ud83d\udc65 Enrolled Students: 453/425 \ud83d\udcc8",
+        "\u2b50 TA Rating: \u2605\u2605\u2605\u2605\u2606 (--.--/5)"
+      ]
     },
     {
-      "title": "Graduate Student Contingency Bursary",
-      "date": "2025",
-      "awarder": "UWaterloo, CA",
-      "summary": "Valued at CAD $5,000."
-    },
-    {
-      "title": "Graduate Research Studentship (GRS)",
-      "date": "2024 - Present",
-      "awarder": "UWaterloo, CA",
-      "summary": "Valued at CAD $18,000/yr."
-    }
-    /*
-    {
-      "title": "IICT Machine Learning Idea Scholarship",
-      "date": "2023",
-      "awarder": "KUET, BD",
-      "summary": "Valued at BDT 20,000."
-    },
-    {
-      "title": "KUET Undergrad Thesis Scholarship",
-      "date": "2019",
-      "awarder": "KUET, BD",
-      "summary": "Valued at BDT 10,000."
-    },
-    {
-      "title": "KUET Technical Scholarship",
-      "date": "2015 – 2018",
-      "awarder": "KUET, BD",
-      "summary": "This is awarded to the top students of the class every academic year. Valued at BDT 32,000."
-    },
-	{
-      "title": "Higher Secondary Excellence Result Award",
-      "date": "2015",
-      "awarder": "BD",
-      "summary": ""
-    },
-	{
-      "title": "Secondary Excellence Result Award",
-      "date": "2013",
-      "awarder": "BD",
-      "summary": ""
-    },
-    {
-      "title": "School Level Award from Fisheries Subdivision",
-      "date": "2011",
-      "awarder": "BD",
-      "summary": "Valued at BDT 1,000."
-    },
-    {
-      "title": "High School General Grade Scholarship",
-      "date": "2010-2011",
-      "awarder": "BD",
-      "summary": "Valued at BDT 5,100."
-    },
-    {
-      "title": "Primary School General Grade Scholarship",
-      "date": "2007-2009",
-      "awarder": "BD",
-      "summary": "Valued at BDT 3,500."
-    }
-    */ 
-    /*
-    {
-      "title": "Faculty of Engineering (FOE) Award",
-      "date": "Winter 2025",
-      "awarder": "UWaterloo |  University of Waterloo, Canada",
-      "url": "https://uwaterloo.ca/electrical-computer-engineering/graduate-students/awards-and-funding#:~:text=Term%20Activity%20Report%20(FOE)%20Awards,excellence%2C%20outreach%20activities%20etc.)",
-      "summary": "The ECE Department awards students who demonstrate exceptional merit (academic excellence, research excellence, outreach activities etc.) in the previous term with a Faculty of Engineering (FoE) Award."
-    },
-    {
-      "title": "Graduate Student Contingency Bursary",
-      "date": "2025",
-      "awarder": "UWaterloo |  University of Waterloo, Canada",
-      "url": "https://uwaterloo.ca/current-graduate-students/catalogs/graduate-funding-and-awards-database/graduate-student-contingency-bursary#:~:text=The%20Graduate%20Student%20Contingency%20Bursary,their%20program%20are%20not%20eligible.",
-      "summary": ""
-    },
-    {
-      "title": "Technical Scholarship",
-      "date": "2015 – 2018",
-      "awarder": "KUET | Khulna University of Engineering & Technology",
-      "url": "https://www.kuet.ac.bd/",
-      "summary": "This is awarded to the top students of the class every academic year."
-    }
-    */
-  ],
-  "certificates": [
-    {
-      "name": "Multimodal RAG: Chat with Videos",
-      "date": "",
-      "issuer": "DeepLearning.AI",
-      "url": "https://learn.deeplearning.ai/accomplishments/77451711-d54b-4aee-b1a7-9ad045cd6ee6",
-      "icon": "fa-solid fa-clipboard-check"
-    },
-    {
-      "name": "Pretraining LLMs",
-      "date": "",
-      "issuer": "DeepLearning.AI",
-      "url": "https://learn.deeplearning.ai/accomplishments/76d488c2-de58-42d9-831b-622c4e905a4f",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Machine Learning",
-      "date": "",
-      "issuer": "edX | University of Toronto",
-      "url": "https://learning.edx.org/course/course-v1:University_of_TorontoX+UTQML101x+1T2019/home",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Deep Learning with Python and PyTorch",
-      "date": "",
-      "issuer": "edX | IBM",
-      "url": "https://courses.edx.org/courses/course-v1:IBM+DL0110EN+2T2020/course/",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Deep Learning Specialization",
-      "date": "",
-      "issuer": "Coursera | DeepLearning.AI",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/NHNHYQ32CCGJ",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Machine Learning",
-      "date": "",
-      "issuer": "Coursera | Stanford University",
-      "url": "https://www.coursera.org/account/accomplishments/verify/U9PTRVDU3VRD",
-      "icon": "fa-solid fa-location-dot"
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
+      "position": "ECE 252: Systems Programming and Concurrency",
+      "url": "https://rezwanh001.github.io/teaching/4_ece252_fall2024/",
+      "startDate": "2024-09-01",
+      "endDate": "2024-12-31",
+      "summary": "Teaching Assistant (TA)",
+      "highlights": [
+        "\ud83d\udcc5 Fall 2024 \u00b7 September 2024 \u2013 December 2024",
+        "\ud83d\udc65 Enrolled Students: 206/190 \ud83d\udcc8",
+        "\u2b50 TA Rating: \u2605\u2605\u2605\u2605\u2606 (4.5/5)"
+      ]
     }
   ],
   "publications": [
     {
       "name": "A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition",
-      "publisher": "In Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025",
+      "publisher": "In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2025",
       "releaseDate": "2025-10-19",
       "url": "https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Haque_A_Signer-Invariant_Conformer_and_Multi-Scale_Fusion_Transformer_for_Continuous_Sign_ICCVW_2025_paper.html"
     },
     {
       "name": "FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition",
-      "publisher": "In Proceedings of the IEEE/CVF International Conference on Computer Vision, 2025",
+      "publisher": "In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2025",
       "releaseDate": "2025-10-19",
       "url": "https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Islam_FusionEnsemble-Net_An_Attention-Based_Ensemble_of_Spatiotemporal_Networks_for_Multimodal_Sign_ICCVW_2025_paper.html"
     },
@@ -326,76 +192,30 @@
       "releaseDate": "2025-11-14",
       "url": "https://ieeexplore.ieee.org/document/11228324"
     },
-    /*  <-- Start of the comment block
-    {
-      "name": "Body Weight Estimation Using Smartphone Based Photoplethysmography Signal",
-      "publisher": "ICCIT 2023 | IEEE Conference",
-      "releaseDate": "2024-02-27",
-      "url": "https://ieeexplore.ieee.org/abstract/document/10441018"
-    },
-    {
-      "name": "Smartphone Based BP Level Monitoring System Using DNN Model",
-      "publisher": "ATC 2023 | IEEE Conference",
-      "releaseDate": "2023-11-20",
-      "url": "https://ieeexplore.ieee.org/abstract/document/10318933"
-    },
-    */  // <-- End of the comment block 
     {
       "name": "Badlad: A large multi-domain bengali document layout analysis dataset",
       "publisher": "ICDAR 2023 | Springer",
       "releaseDate": "2023-08-19",
       "url": "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19"
     },
-    /*
-    {
-      "name": "Prediction of cervical cancer from behavior risk using machine learning techniques",
-      "publisher": "Springer Nature Computer Science",
-      "releaseDate": "2021-03-30",
-      "url": "https://link.springer.com/article/10.1007/s42979-021-00551-6"
-    },
-    */ 
     {
       "name": "Hemoglobin and glucose level estimation from PPG characteristics features of fingertip video using MGGP-based model",
-      "publisher": "Elsevier",
+      "publisher": "Elsevier — Biomedical Signal Processing and Control",
       "releaseDate": "2021-03-04",
       "url": "https://www.sciencedirect.com/science/article/pii/S1746809421000756"
     },
-    /*
-    {
-      "name": "Scalable telehealth services to combat novel coronavirus (COVID-19) pandemic",
-      "publisher": "Springer Nature Computer Science",
-      "releaseDate": "2021-01-06",
-      "url": "https://link.springer.com/article/10.1007/s42979-020-00401-x"
-    },
-    */
     {
       "name": "A novel technique for non-invasive measurement of human blood component levels from fingertip video using DNN based models",
       "publisher": "IEEE Access",
       "releaseDate": "2021-01-25",
       "url": "https://ieeexplore.ieee.org/document/9335002"
     },
-    /*
-    {
-      "name": "Deep learning based breast cancer detection using histopathological images",
-      "publisher": "Springer Nature Computer Science",
-      "releaseDate": "2020-09-01",
-      "url": "https://link.springer.com/article/10.1007/s42979-020-00383-w"
-    },
-    */
     {
       "name": "Breast cancer prediction: a comparative study using machine learning techniques",
-      "publisher": "Springer",
+      "publisher": "Springer Nature Computer Science",
       "releaseDate": "2022-09-01",
       "url": "https://link.springer.com/article/10.1007/s42979-020-00305-w"
     },
-    /*
-    {
-      "name": "A computer vision based lane detection approach",
-      "publisher": "MECS Press",
-      "releaseDate": "2019-03-01",
-      "url": "https://www.mecs-press.org/ijigsp/ijigsp-v11-n3/IJIGSP-V11-N3-4.pdf"
-    },
-    */ 
     {
       "name": "Performance evaluation of random forests and artificial neural networks for the classification of liver disorder",
       "publisher": "IC4ME2 2018 | IEEE Conference",
@@ -409,16 +229,173 @@
       "url": "https://ieeexplore.ieee.org/abstract/document/8288944"
     }
   ],
+  "awards": [
+    {
+      "title": "Faculty of Engineering (FOE) Award (Spring)",
+      "date": "2025",
+      "awarder": "UWaterloo, CA",
+      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1,500."
+    },
+    {
+      "title": "Best Poster Award",
+      "date": "2025",
+      "awarder": "ICCV, USA",
+      "summary": "Awarded at the 1st Multimodal Sign Language Recognition Workshop at ICCV 2025."
+    },
+    {
+      "title": "Winner (2nd) of MSLR-2025 Challenge",
+      "date": "2025",
+      "awarder": "ICCV, USA",
+      "summary": "Secured 2nd place in The First Multimodal Sign Language Recognition Challenge. Valued at USD $750."
+    },
+    {
+      "title": "Faculty of Engineering (FOE) Award (Winter)",
+      "date": "2025",
+      "awarder": "UWaterloo, CA",
+      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1,500."
+    },
+    {
+      "title": "Graduate Student Contingency Bursary",
+      "date": "2025",
+      "awarder": "UWaterloo, CA",
+      "summary": "Financial support for graduate studies. Valued at CAD $5,000."
+    },
+    {
+      "title": "Graduate Research Studentship (GRS)",
+      "date": "2024 - Present",
+      "awarder": "UWaterloo, CA",
+      "summary": "Research funding for MASc studies. Valued at CAD $18,000/yr."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Academic Peer Review",
+      "position": "Conference & Journal Reviewer",
+      "startDate": "2023-01-01",
+      "endDate": "",
+      "summary": "Peer reviewer for top-tier AI/ML conferences and journals.",
+      "highlights": [
+        "ICCV 2025 — IEEE/CVF International Conference on Computer Vision",
+        "NeurIPS 2025 — Workshop on Music and Machine Learning (MusIML)",
+        "IEEE SMC 2025 — International Conference on Systems, Man, and Cybernetics",
+        "IEEE IJCNN 2025 — International Joint Conference on Neural Networks",
+        "IEEE EICT 2025 — Int'l Conference on Electrical Information and Communication Technology",
+        "PLOS One (2023–Present) — Peer-reviewed open access scientific journal"
+      ]
+    },
+    {
+      "organization": "Academic & Community Service",
+      "position": "Mentor / Instructor / Volunteer",
+      "startDate": "2014-01-01",
+      "endDate": "",
+      "summary": "Mentoring, teaching, and organizing activities across academic communities.",
+      "highlights": [
+        "Mentor — Graduate Mentorship Program Fall 2025, University of Waterloo",
+        "Instructor — Hardware Acceleration Club of KUET (HACK), 2018–2019",
+        "Instructor — Special Group Interested in Programming Contest (SGIPC), KUET, 2015–2019",
+        "Volunteer — University-Industry Collaboration: Challenges and Opportunities, KUET, 2017",
+        "Volunteer — 3rd International Conference on EICT, KUET, 2017",
+        "Organizer — National High School Programming Contest (NHSPC), KUET, 2015–2017",
+        "Participant — Regional Mathematical Olympiad 2014"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Multimodal RAG: Chat with Videos",
+      "date": "",
+      "issuer": "DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/accomplishments/77451711-d54b-4aee-b1a7-9ad045cd6ee6",
+      "icon": "fa-solid fa-video"
+    },
+    {
+      "name": "Pretraining LLMs",
+      "date": "",
+      "issuer": "DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/accomplishments/76d488c2-de58-42d9-831b-622c4e905a4f",
+      "icon": "fa-solid fa-robot"
+    },
+    {
+      "name": "Quantum Machine Learning",
+      "date": "",
+      "issuer": "edX | University of Toronto",
+      "url": "https://learning.edx.org/course/course-v1:University_of_TorontoX+UTQML101x+1T2019/home",
+      "icon": "fa-solid fa-atom"
+    },
+    {
+      "name": "Deep Learning with Python and PyTorch",
+      "date": "",
+      "issuer": "edX | IBM",
+      "url": "https://courses.edx.org/courses/course-v1:IBM+DL0110EN+2T2020/course/",
+      "icon": "fa-brands fa-python"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "date": "",
+      "issuer": "Coursera | DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/NHNHYQ32CCGJ",
+      "icon": "fa-solid fa-brain"
+    },
+    {
+      "name": "Machine Learning",
+      "date": "",
+      "issuer": "Coursera | Stanford University",
+      "url": "https://www.coursera.org/account/accomplishments/verify/U9PTRVDU3VRD",
+      "icon": "fa-solid fa-chart-line"
+    }
+  ],
   "skills": [
     {
-      "name": "Artificial Intelligence",
+      "name": "Machine Learning & AI",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-brain",
       "keywords": [
-        "Machine Learning",
         "Deep Learning",
+        "Multimodal Learning",
+        "Large Language Models (LLMs)",
+        "Computer Vision",
         "Natural Language Processing",
-        "Computer Vision"
+        "Transformer Architectures",
+        "Sign Language Recognition"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "C / C++",
+        "Rust",
+        "Java",
+        "MATLAB",
+        "Bash / Shell Scripting"
+      ]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "level": "Master",
+      "icon": "fa-solid fa-layer-group",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow / Keras",
+        "Hugging Face Transformers",
+        "OpenCV",
+        "scikit-learn",
+        "NumPy / Pandas"
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "level": "Advanced",
+      "icon": "fa-solid fa-toolbox",
+      "keywords": [
+        "Linux / Ubuntu",
+        "Git / GitHub",
+        "Docker",
+        "SLURM (HPC Clusters)",
+        "LaTeX",
+        "Weights & Biases"
       ]
     }
   ],
@@ -426,79 +403,62 @@
     {
       "language": "Bangla",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-earth-asia"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "fa-solid fa-globe"
     }
   ],
   "interests": [
-  {
-    "name": "LLMs",
-    "icon": "fa-solid fa-tag",
-    "keywords": [
-      "Large Language Models",
-      "Transformer Models",
-      "Natural Language Understanding",
-      "GPT",
-      "BERT",
-      "Text Generation"
-    ]
-  },
-  {
-    "name": "MMML",
-    "icon": "fa-solid fa-clipboard-check",
-    "keywords": [
-      "Multimodal Machine Learning",
-      "Cross-modal Learning",
-      "Vision-Language Models",
-      "Multimodal Representation Learning",
-      "Text-to-Image Models",
-      "Audio-Visual Learning"
-    ]
-  }
-],
+    {
+      "name": "Large Language Models",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "Transformer Models",
+        "Natural Language Understanding",
+        "GPT / BERT / LLaMA",
+        "Instruction Tuning & RLHF",
+        "Text Generation",
+        "Retrieval-Augmented Generation (RAG)"
+      ]
+    },
+    {
+      "name": "Multimodal Machine Learning",
+      "icon": "fa-solid fa-diagram-project",
+      "keywords": [
+        "Cross-modal Learning",
+        "Vision-Language Models",
+        "Multimodal Representation Learning",
+        "Audio-Visual Learning",
+        "Sign Language Recognition",
+        "Multimodal AI Agents"
+      ]
+    }
+  ],
   "references": [
     {
       "name": "Professor Fakhri Karray",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Prof. Fakhri Karray is an Adjunct Professor Emeritus in the Department of Electrical and Computer Engineering. Prof. Karray held the Loblaws Research Chair in Artificial Intelligence and was the co-Director of the University of Waterloo Artificial Intelligence Institute."
+      "icon": "fa-solid fa-user-tie",
+      "reference": "Adjunct Professor Emeritus, Department of Electrical and Computer Engineering, University of Waterloo. Former Loblaws Research Chair in Artificial Intelligence and co-Director of the University of Waterloo Artificial Intelligence Institute.",
+      "url": "https://uwaterloo.ca/electrical-computer-engineering/profile/karray"
     },
     {
       "name": "Professor M.M.A. Hashem",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Department of Computer Science and Engineering (CSE), Khulna University of Engineering & Technology (KUET)."
+      "icon": "fa-solid fa-user-tie",
+      "reference": "Professor, Department of Computer Science and Engineering (CSE), Khulna University of Engineering & Technology (KUET), Bangladesh.",
+      "url": "https://www.kuet.ac.bd/index.php/cse/faculty_details/prof-dr-mm-a-hashem"
     }
   ],
   "projects": [
     {
       "name": "Image Captioning Project",
-      "summary": "In this project we define and train an image-to-caption model, that can produce descriptions for real world images!",
+      "summary": "End-to-end image-to-caption model that generates natural language descriptions for real-world images using encoder-decoder architecture.",
       "highlights": ["Recurrent Neural Networks (RNN)", "Convolutional Neural Networks (CNN)"],
       "startDate": "2017-10-01",
       "endDate": "2018-01-01",
       "url": "https://github.com/rezwanh001/Image-Captioning-Project"
     }
-  ],
-  "professionalActivities": {
-    "reviewing": [
-      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Conference on Computer Vision (ICCV)" },
-      { "year": "2025-p.", "activity": "Reviewer", "organization": "NeurIPS Workshop MusIML" },
-      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Conference on Electrical Information and Comm. Technology" },
-      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Conference on Systems, Man, and Cybernetics (SMC)" },
-      { "year": "2025-p.", "activity": "Reviewer", "organization": "International Joint Conference on Neural Networks (IJCNN)" },
-      { "year": "2023-p.", "activity": "Reviewer", "organization": "PLOS One: A peer-reviewed open access scientific journal" }
-    ],
-    "otherService": [
-      { "year": "2025", "activity": "Mentor", "organization": "Mentorship Program Fall 2025 (Grad Students)", "location": "UW, CA" },
-      { "year": "2018–19", "activity": "Instructor", "organization": "Hardware Acceleration Club of KUET (HACK)", "location": "KUET, BD" },
-      { "year": "2015–19", "activity": "Instructor", "organization": "Special Group Interested in Programming Contest (SGIPC)", "location": "KUET, BD" },
-      { "year": "2017", "activity": "Volunteer", "organization": "University-Industry Collaboration: Challenges and Opportunities", "location": "KUET, BD" },
-      { "year": "2017", "activity": "Volunteer", "organization": "3rd International Conference on Electrical Information and Communication Technology (EICT)", "location": "KUET, BD" },
-      { "year": "2015–17", "activity": "Organizer", "organization": "National High School Programming Contest (NHSPC)", "location": "KUET, BD" },
-      { "year": "2014", "activity": "Participant", "organization": "Regional Mathematical Olympiad 2014", "location": "BD" }
-    ]
-  }
+  ]
 }

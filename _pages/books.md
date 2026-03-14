@@ -609,86 +609,515 @@ reading_list:
 
 ---
 
-<!-- =============================================================== -->
-<!-- PAGE CONTENT -->
-<!-- =============================================================== -->
-
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- READING PAGE — Beautifully Redesigned                           -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <style>
-  /* Highlighter Style */
-  mark.search-highlight {
-    background-color: #ffeeba;
-    color: #000;
-    font-weight: bold;
-    padding: 0 2px;
-    border-radius: 3px;
-  }
+/* ── Page Hero ────────────────────────────────────────────────────── */
+.reading-hero {
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.reading-hero p.lead {
+  font-size: 1rem;
+  color: var(--global-text-color-light, #6c757d);
+  max-width: 680px;
+  margin: 0 auto 1.25rem;
+  line-height: 1.7;
+}
+.reading-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.reading-stat {
+  text-align: center;
+}
+.reading-stat .stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--global-theme-color);
+  display: block;
+  line-height: 1;
+}
+.reading-stat .stat-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--global-text-color-light, #999);
+  font-weight: 600;
+}
+
+/* ── Category Quick-Nav ───────────────────────────────────────────── */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.category-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  border: 1.5px solid var(--global-divider-color, #dee2e6);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.category-nav a:hover,
+.category-nav a.active {
+  background: var(--global-theme-color);
+  color: #fff;
+  border-color: var(--global-theme-color);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+.category-nav .nav-count {
+  background: rgba(0,0,0,0.08);
+  padding: 0 0.4rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+.category-nav a:hover .nav-count,
+.category-nav a.active .nav-count {
+  background: rgba(255,255,255,0.25);
+}
+
+/* ── Search Bar ───────────────────────────────────────────────────── */
+.reading-search-wrap {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+.reading-search-wrap i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--global-text-color-light, #aaa);
+  font-size: 0.9rem;
+}
+#bookSearch {
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2.5rem;
+  border: 2px solid var(--global-divider-color, #dee2e6);
+  border-radius: 30px;
+  font-size: 0.95rem;
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  color: var(--global-text-color);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#bookSearch:focus {
+  outline: none;
+  border-color: var(--global-theme-color);
+  box-shadow: 0 0 0 4px rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.15);
+}
+#bookSearch::placeholder {
+  color: var(--global-text-color-light, #aaa);
+}
+
+/* ── Bangla Toggle ────────────────────────────────────────────────── */
+.lang-toggle-wrap {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--global-divider-color, #dee2e6);
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  color: var(--global-text-color);
+  transition: all 0.25s ease;
+}
+.lang-toggle-btn:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+.lang-toggle-btn.active {
+  background: var(--global-theme-color);
+  color: #fff;
+  border-color: var(--global-theme-color);
+}
+
+/* ── Category Section ─────────────────────────────────────────────── */
+.category-section {
+  margin-bottom: 3rem;
+}
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--global-divider-color, #dee2e6);
+}
+.cat-header h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--global-text-color);
+}
+.cat-header .cat-count {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  background: var(--global-theme-color);
+  color: #fff;
+}
+
+/* ── Book Card ────────────────────────────────────────────────────── */
+.book-item {
+  display: flex;
+  align-items: stretch;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color, #dee2e6);
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  transition: transform 0.35s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.35s ease;
+}
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.1);
+}
+
+/* Cover image */
+.book-cover {
+  position: relative;
+  overflow: hidden;
+  height: 380px;
+}
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.book-card:hover .book-cover img {
+  transform: scale(1.05);
+}
+.book-cover .cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 50%);
+  pointer-events: none;
+}
+.book-cover .cover-rating {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  gap: 2px;
+  font-size: 0.9rem;
+}
+.book-cover .cover-rating i {
+  color: #f5c518;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.book-cover .cover-year {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Body */
+.book-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.15rem 0.75rem;
+}
+.book-body .book-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+  line-height: 1.35;
+  color: var(--global-text-color);
+}
+.book-body .book-author {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light, #6c757d);
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+.book-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+.book-tags .tag-pill {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 10px;
+  background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.1);
+  color: var(--global-theme-color);
+  white-space: nowrap;
+}
+
+/* Summary */
+.book-summary-text {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: var(--global-text-color);
+  position: relative;
+  overflow: hidden;
+  max-height: 5.8em; /* ~3.5 lines collapsed */
+  transition: max-height 0.45s ease;
+}
+.book-summary-text.expanded {
+  max-height: 2000px;
+}
+.book-summary-text .fade-mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5em;
+  background: linear-gradient(to bottom, transparent, var(--global-card-bg-color, var(--global-bg-color)));
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.book-summary-text.expanded .fade-mask {
+  opacity: 0;
+}
+.book-bangla {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--global-divider-color, #ddd);
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--global-text-color-light, #555);
+  display: none; /* hidden by default */
+}
+.book-bangla.show-bangla {
+  display: block;
+}
+.expand-toggle {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: color 0.2s;
+}
+.expand-toggle:hover {
+  text-decoration: underline;
+}
+
+/* Actions footer */
+.book-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  border-top: 1px solid var(--global-divider-color, #eee);
+  margin-top: auto;
+}
+.book-actions .action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  border: 1.5px solid;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.action-btn.yt-btn {
+  color: #e53935;
+  border-color: #e53935;
+}
+.action-btn.yt-btn:hover {
+  background: #e53935;
+  color: #fff;
+}
+.action-btn.pdf-btn {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+.action-btn.pdf-btn:hover {
+  background: var(--global-theme-color);
+  color: #fff;
+}
+
+/* ── Search highlight ─────────────────────────────────────────────── */
+mark.search-highlight {
+  background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.2);
+  color: inherit;
+  font-weight: 700;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .book-cover { height: 300px; }
+  .reading-stats { gap: 1rem; }
+  .reading-stat .stat-number { font-size: 1.4rem; }
+}
+
+/* ── Animations ───────────────────────────────────────────────────── */
+.book-item {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: bookFadeIn 0.5s ease forwards;
+}
+@for $i from 1 through 30 {
+  /* handled in JS instead for cross-browser compat */
+}
+@keyframes bookFadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
 </style>
 
-<div class="intro-text" style="margin-bottom: 2rem; text-align: center;">
-  <p><strong>Here are some of the books I've had the pleasure of reading. Each offers a unique window into different worlds and ideas.</strong></p>
-</div>
+<!-- ═══ Hero Section ═══ -->
+{% assign all_books = page.reading_list %}
+{% assign total_books = all_books | size %}
+{% assign all_categories = all_books | map: "category" | uniq %}
+{% assign total_categories = all_categories | size %}
 
-<!-- SEARCH BAR -->
-<div class="row mt-3 mb-4">
-  <div class="col-md-12">
-    <!-- Matches your Publications search bar style -->
-    <input type="text" id="bookSearch" class="search bibsearch-form-input form-control" placeholder="Search title, author, date, category, tags..." style="border-radius: 5px; padding: 10px; font-size: 1.1em; border: 1px solid #ced4da; max-width: 800px; margin: 0 auto;">
+<div class="reading-hero">
+  <p class="lead">
+    A curated collection of books I have had the pleasure of reading — spanning classic literature, philosophy, thriller, poetry, and more. Each offers a unique window into different worlds and ideas.
+  </p>
+  <div class="reading-stats">
+    <div class="reading-stat">
+      <span class="stat-number">{{ total_books }}</span>
+      <span class="stat-label">Books Read</span>
+    </div>
+    <div class="reading-stat">
+      <span class="stat-number">{{ total_categories }}</span>
+      <span class="stat-label">Categories</span>
+    </div>
+    <div class="reading-stat">
+      <span class="stat-number">7</span>
+      <span class="stat-label">Literatures</span>
+    </div>
   </div>
 </div>
 
-<!-- MAIN BOOK LIST LOGIC -->
+<!-- ═══ Category Quick-Nav ═══ -->
 {% assign sorted_list = page.reading_list | sort: "category" %}
 {% assign grouped_books = sorted_list | group_by: "category" %}
 
-{% for group in grouped_books %}
-  <div class="category-section">
-    <h2 class="category-title mt-4 pt-4">{{ group.name }}</h2>
-    <hr class="mt-0 mb-4">
-    <div class="row">
-      <!-- NEW: Sort the books inside this group by title before looping -->
-      {% assign sorted_group_books = group.items | sort: "title" %}
-      
-      {% for book in sorted_group_books %}
-        <!-- Added "book-item" class here for JS selection -->
-        <div class="col-md-4 mb-4 d-flex align-items-stretch book-item">
-          <div class="card w-100">
-            <img src="{{ book.image | relative_url }}" class="card-img-top" loading="lazy" alt="{{ book.title }} cover" style="height: 400px; object-fit: cover;">
-            <div class="card-body d-flex flex-column">
-              <!-- Added "search-target" for highlighting -->
-              <h5 class="card-title font-weight-bold book-title search-target">{{ book.title }}</h5>
-              <h6 class="card-subtitle mb-2 text-muted book-author search-target">{{ book.author }}</h6>
-              
-              <!-- Hidden Metadata for Search (Category, Rating, Tags) -->
-              <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }} {{ book.rating }}</div>
+<div class="category-nav" id="categoryNav">
+  <a href="#" class="active" data-filter="all">All <span class="nav-count">{{ total_books }}</span></a>
+  {% for group in grouped_books %}
+    <a href="#cat-{{ group.name | slugify }}" data-filter="{{ group.name | slugify }}">
+      {{ group.name }} <span class="nav-count">{{ group.items | size }}</span>
+    </a>
+  {% endfor %}
+</div>
 
-              <div class="star-rating mb-2">
+<!-- ═══ Search Bar ═══ -->
+<div class="reading-search-wrap">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="text" id="bookSearch" placeholder="Search by title, author, year, tags...">
+</div>
+
+<!-- ═══ Bangla Toggle ═══ -->
+<div class="lang-toggle-wrap">
+  <button class="lang-toggle-btn" id="banglaToggle" title="Show/Hide Bangla Summaries">
+    <i class="fa-solid fa-language"></i> বাংলা Summaries
+  </button>
+</div>
+
+<!-- ═══ Book Grid ═══ -->
+{% for group in grouped_books %}
+  <div class="category-section" id="cat-{{ group.name | slugify }}" data-category="{{ group.name | slugify }}">
+    <div class="cat-header">
+      <h2>{{ group.name }}</h2>
+      <span class="cat-count">{{ group.items | size }} {% if group.items.size == 1 %}book{% else %}books{% endif %}</span>
+    </div>
+    <div class="row">
+      {% assign sorted_group_books = group.items | sort: "title" %}
+      {% for book in sorted_group_books %}
+        <div class="col-md-4 mb-4 book-item" style="animation-delay: {{ forloop.index | times: 0.08 }}s;">
+          <div class="book-card">
+            <!-- Cover -->
+            <div class="book-cover">
+              <img src="{{ book.image | relative_url }}" loading="lazy" alt="{{ book.title }} cover">
+              <div class="cover-overlay"></div>
+              <div class="cover-rating">
                 {% for i in (1..5) %}
                   {% if i <= book.rating %}<i class="fas fa-star"></i>{% else %}<i class="far fa-star"></i>{% endif %}
                 {% endfor %}
               </div>
+              <span class="cover-year">{{ book.published_date }}</span>
+            </div>
 
-              <div class="tags-container mb-3">
-                <span class="badge badge-pill badge-date">Published: {{ book.published_date }}</span>
+            <!-- Body -->
+            <div class="book-body">
+              <h5 class="book-title search-target">{{ book.title }}</h5>
+              <p class="book-author search-target">{{ book.author }}</p>
+
+              <!-- Hidden Metadata for Search -->
+              <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }} {{ book.rating }} {{ book.published_date }}</div>
+
+              <div class="book-tags">
                 {% for tag in book.tags %}
-                  <span class="badge badge-pill badge-genre">{{ tag }}</span>
+                  <span class="tag-pill">{{ tag }}</span>
                 {% endfor %}
               </div>
-              
-              <p class="card-text search-target">{{ book.summary }}</p>
-              {% if book.summary_bangla and book.summary_bangla != "" %}
-                <p class="card-text bangla-summary mt-auto search-target">{{ book.summary_bangla }}</p>
-              {% endif %}
+
+              <div class="book-summary-text search-target">
+                {{ book.summary }}
+                {% if book.summary_bangla and book.summary_bangla != "" %}
+                  <div class="book-bangla search-target">{{ book.summary_bangla }}</div>
+                {% endif %}
+                <div class="fade-mask"></div>
+              </div>
+              <button class="expand-toggle" onclick="toggleSummary(this)">Read more ▾</button>
             </div>
-            
-            <div class="card-footer bg-transparent border-top-0 text-center">
+
+            <!-- Actions -->
+            <div class="book-actions">
               {% if book.youtube_id and book.youtube_id != "" %}
-                <button type="button" class="btn btn-outline-primary btn-sm m-1" onclick="openVideo('{{ book.title | escape }}', '{{ book.youtube_id }}')">
-                  <i class="fab fa-youtube"></i> Watch Audiobook
+                <button class="action-btn yt-btn" onclick="openVideo('{{ book.title | escape }}', '{{ book.youtube_id }}')">
+                  <i class="fab fa-youtube"></i> Audiobook
                 </button>
               {% endif %}
               {% if book.gdrive_id and book.gdrive_id != "" %}
-                <button type="button" class="btn btn-outline-danger btn-sm m-1" onclick="openPDF('{{ book.title | escape }}', '{{ book.gdrive_id }}')">
+                <button class="action-btn pdf-btn" onclick="openPDF('{{ book.title | escape }}', '{{ book.gdrive_id }}')">
                   <i class="fas fa-book-open"></i> Read PDF
                 </button>
               {% endif %}
@@ -700,7 +1129,7 @@ reading_list:
   </div>
 {% endfor %}
 
-<!-- SINGLE SHARED MODALS (Performance Optimization) -->
+<!-- ═══ Shared Modals ═══ -->
 <div class="modal fade" id="sharedVideoModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
@@ -731,30 +1160,34 @@ reading_list:
   </div>
 </div>
 
-<!-- SCRIPT: SEARCH, HIGHLIGHT, FILTER & LAZY MODALS -->
+<!-- ═══ Scripts ═══ -->
 <script>
-// 1. GLOBAL MODAL FUNCTIONS (Memory Optimization)
+/* ── Modal Functions ────────────────────────────────────────────── */
 function openVideo(title, youtubeId) {
   document.getElementById('sharedVideoModalLabel').innerText = title;
   document.getElementById('sharedVideoIframe').src = "https://www.youtube.com/embed/" + youtubeId;
   $('#sharedVideoModal').modal('show');
 }
-
 function openPDF(title, driveId) {
   document.getElementById('sharedPDFModalLabel').innerText = title;
   document.getElementById('sharedPDFIframe').src = "https://drive.google.com/file/d/" + driveId + "/preview";
   $('#sharedPDFModal').modal('show');
 }
-
 function closeModal(modalId) {
   $('#' + modalId).modal('hide');
-  // Clear iframes to stop video/save memory
-  if(modalId === 'sharedVideoModal') document.getElementById('sharedVideoIframe').src = "";
-  if(modalId === 'sharedPDFModal') document.getElementById('sharedPDFIframe').src = "";
+  if (modalId === 'sharedVideoModal') document.getElementById('sharedVideoIframe').src = "";
+  if (modalId === 'sharedPDFModal') document.getElementById('sharedPDFIframe').src = "";
+}
+
+/* ── Expand / Collapse Summary ──────────────────────────────────── */
+function toggleSummary(btn) {
+  var wrapper = btn.previousElementSibling;
+  wrapper.classList.toggle('expanded');
+  btn.textContent = wrapper.classList.contains('expanded') ? 'Show less ▴' : 'Read more ▾';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Modal cleanup for background clicks
+  /* ── Modal cleanup ─────────────────────────────────────────────── */
   if (typeof $ !== 'undefined') {
     $('.modal').on('hidden.bs.modal', function () {
       document.getElementById('sharedVideoIframe').src = "";
@@ -762,85 +1195,104 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // 2. SEARCH LOGIC
-  const searchInput = document.getElementById("bookSearch");
-  const textElements = document.querySelectorAll(".search-target");
-  
-  // A. Initialize: Store original text for highlighting restoration
-  textElements.forEach(el => {
+  /* ── Bangla Toggle ─────────────────────────────────────────────── */
+  var banglaBtn = document.getElementById('banglaToggle');
+  var banglaOn = false;
+  if (banglaBtn) {
+    banglaBtn.addEventListener('click', function() {
+      banglaOn = !banglaOn;
+      banglaBtn.classList.toggle('active', banglaOn);
+      document.querySelectorAll('.book-bangla').forEach(function(el) {
+        el.classList.toggle('show-bangla', banglaOn);
+      });
+    });
+  }
+
+  /* ── Category Quick-Nav Filter ─────────────────────────────────── */
+  var navLinks = document.querySelectorAll('.category-nav a');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      navLinks.forEach(function(l) { l.classList.remove('active'); });
+      link.classList.add('active');
+      var filter = link.dataset.filter;
+      var sections = document.querySelectorAll('.category-section');
+      sections.forEach(function(sec) {
+        if (filter === 'all' || sec.dataset.category === filter) {
+          sec.style.display = 'block';
+          // Re-trigger animations
+          sec.querySelectorAll('.book-item').forEach(function(item, i) {
+            item.style.animation = 'none';
+            item.offsetHeight; // reflow
+            item.style.animation = '';
+            item.style.animationDelay = (i * 0.08) + 's';
+          });
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+      // Scroll if not "All"
+      if (filter !== 'all') {
+        var target = document.getElementById('cat-' + filter);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  /* ── Search Logic ──────────────────────────────────────────────── */
+  var searchInput = document.getElementById("bookSearch");
+  var textElements = document.querySelectorAll(".search-target");
+
+  textElements.forEach(function(el) {
     el.dataset.originalHtml = el.innerHTML;
   });
 
   function performSearch() {
-    const query = searchInput.value.trim().toLowerCase();
-    
-    // Create safe regex for highlighting (case insensitive)
-    // Escape special regex characters to prevent crashes
-    const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`(${safeQuery})`, "gi");
+    var query = searchInput.value.trim().toLowerCase();
+    var safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    var regex = new RegExp('(' + safeQuery + ')', 'gi');
+    var books = document.querySelectorAll(".book-item");
+    var sections = document.querySelectorAll(".category-section");
 
-    const books = document.querySelectorAll(".book-item");
-    const sections = document.querySelectorAll(".category-section");
+    // Reset category nav to "All" during search
+    if (query.length > 0) {
+      navLinks.forEach(function(l) { l.classList.remove('active'); });
+      document.querySelector('.category-nav a[data-filter="all"]').classList.add('active');
+      sections.forEach(function(s) { s.style.display = 'block'; });
+    }
 
-    // B. Filter Books
-    books.forEach(book => {
-      // Collect text from visible fields AND hidden metadata
-      let fullText = "";
-      book.querySelectorAll(".search-target").forEach(el => fullText += el.textContent + " ");
-      const meta = book.querySelector(".search-metadata");
-      if(meta) fullText += meta.textContent + " ";
+    books.forEach(function(book) {
+      var fullText = "";
+      book.querySelectorAll(".search-target").forEach(function(el) { fullText += el.textContent + " "; });
+      var meta = book.querySelector(".search-metadata");
+      if (meta) fullText += meta.textContent + " ";
       fullText = fullText.toLowerCase();
 
-      // Show/Hide Logic
       if (query === "" || fullText.includes(query)) {
-        // USE STYLE.DISPLAY instead of class for reliability
-        book.style.setProperty("display", "flex", "important"); // Show
-        
-        // Highlight Logic for visible fields
-        const targets = book.querySelectorAll(".search-target");
-        targets.forEach(el => {
-          const original = el.dataset.originalHtml;
-          if (query.length > 0) {
-            // Apply highlighting mark
-            el.innerHTML = original.replace(regex, '<mark class="search-highlight">$1</mark>');
-          } else {
-            // Reset text
-            el.innerHTML = original;
-          }
+        book.style.setProperty("display", "flex", "important");
+        book.querySelectorAll(".search-target").forEach(function(el) {
+          var original = el.dataset.originalHtml;
+          el.innerHTML = query.length > 0 ? original.replace(regex, '<mark class="search-highlight">$1</mark>') : original;
         });
       } else {
-        // Hide non-matching books
         book.style.setProperty("display", "none", "important");
       }
     });
 
-    // C. Hide Empty Sections
-    sections.forEach(section => {
-      // Check for visible books inside this section
-      // We look for books that are NOT set to display: none
-      let hasVisibleBooks = false;
-      const sectionBooks = section.querySelectorAll(".book-item");
-      
-      sectionBooks.forEach(b => {
-        if (b.style.display !== "none") {
-          hasVisibleBooks = true;
-        }
+    sections.forEach(function(section) {
+      var hasVisible = false;
+      section.querySelectorAll(".book-item").forEach(function(b) {
+        if (b.style.display !== "none") hasVisible = true;
       });
-
-      if (hasVisibleBooks) {
-        section.style.display = "block";
-      } else {
-        section.style.display = "none";
-      }
+      section.style.display = hasVisible ? "block" : "none";
     });
   }
 
-  // D. Event Listener (Debounced)
-  let timeoutId;
+  var timeoutId;
   if (searchInput) {
     searchInput.addEventListener("keyup", function() {
       clearTimeout(timeoutId);
-      timeoutId = setTimeout(performSearch, 300);
+      timeoutId = setTimeout(performSearch, 250);
     });
   }
 });

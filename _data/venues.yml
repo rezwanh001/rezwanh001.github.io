@@ -1,3 +1,53 @@
+# ── User's Venues ──────────────────────────────────────────────────
+"ICCV 2025":
+  url: https://iccv2025.thecvf.com/
+  color: "#6B21A8"
+
+"IEEE SMC 2025":
+  url: https://ieeesmc2025.org/
+  color: "#0369A1"
+
+"IJCNN 2025":
+  url: https://2025.ijcnn.org/
+  color: "#0D9488"
+
+"ICCIT 2023":
+  url: https://iccit.org.bd/
+  color: "#EA580C"
+
+"ATC 2023":
+  url: https://atc-conf.org/
+  color: "#4D7C0F"
+
+"ICDAR 2023":
+  url: https://icdar2023.org/
+  color: "#7E22CE"
+
+"IEEE Access":
+  url: https://ieeeaccess.ieee.org/
+  color: "#1D4ED8"
+
+"Springer":
+  url: https://www.springer.com/
+  color: "#1E40AF"
+
+"Elsevier":
+  url: https://www.elsevier.com/
+  color: "#D97706"
+
+"MECS Press":
+  url: https://www.mecs-press.org/
+  color: "#475569"
+
+"IC4ME2 2018":
+  url: https://ieeexplore.ieee.org/
+  color: "#DC2626"
+
+"R10-HTC 2017":
+  url: https://ieeexplore.ieee.org/
+  color: "#2563EB"
+
+# ── Demo / al-folio Venues ────────────────────────────────────────
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"

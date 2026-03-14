@@ -42,34 +42,48 @@ layout: default
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <div class="about-section about-news-section">
+        <div class="about-section-header">
+          <i class="fas fa-bullhorn"></i>
+          <h2><a href="{{ '/news/' | relative_url }}">News</a></h2>
+        </div>
+        {% include news.liquid limit=true %}
+      </div>
     {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <div class="about-section about-posts-section">
+        <div class="about-section-header">
+          <i class="fas fa-feather-pointed"></i>
+          <h2><a href="{{ '/blog/' | relative_url }}">Latest Posts</a></h2>
+        </div>
+        {% include latest_posts.liquid %}
+      </div>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <div class="about-section about-pubs-section">
+        <div class="about-section-header">
+          <i class="fas fa-award"></i>
+          <h2><a href="{{ '/publications/' | relative_url }}">Selected Publications</a></h2>
+        </div>
+        {% include selected_papers.liquid %}
+      </div>
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+      <div class="about-section about-social-section">
+        <div class="about-section-header">
+          <i class="fas fa-share-nodes"></i>
+          <h2>Connect</h2>
+        </div>
+        <div class="social">
+          <div class="contact-icons">{% include social.liquid %}</div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
       </div>
     {% endif %}
 

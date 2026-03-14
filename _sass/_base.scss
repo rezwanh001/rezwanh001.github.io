@@ -383,16 +383,36 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
 
     a {
-      i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      border: 1.5px solid var(--global-divider-color);
+      background: var(--global-bg-color);
+      transition: all 0.25s ease;
+
+      i, i::before {
+        color: var(--global-text-color-light);
+        font-size: 0.95rem;
+        transition: color 0.25s ease;
       }
 
       &:hover {
-        i::before {
+        transform: translateY(-3px);
+        border-color: var(--global-theme-color);
+        box-shadow: 0 4px 12px rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.2);
+        background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.06);
+
+        i, i::before {
           color: var(--global-theme-color);
         }
       }
@@ -400,7 +420,9 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
+    margin-top: 0.6rem;
+    color: var(--global-text-color-light);
   }
 }
 
@@ -431,6 +453,221 @@ ul.task-list input[type="checkbox"] {
 @media only screen and (max-width: 400px) {
   .wechat-modal > img {
     width: 100%;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// About Page — Section Styling
+// ═══════════════════════════════════════════════════════════════════
+
+.about-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.about-section:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.about-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+
+  i {
+    font-size: 1.1rem;
+    color: var(--global-theme-color);
+    opacity: 0.8;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.2px;
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// ── News Section ──────────────────────────────────────────────────
+
+.news-list {
+  padding-right: 0.5rem;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--global-divider-color);
+    border-radius: 4px;
+  }
+}
+
+.news-item {
+  display: flex;
+  gap: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.45rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+  align-items: flex-start;
+
+  &:hover {
+    background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.04);
+    border-color: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.12);
+  }
+}
+
+.news-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.08);
+  flex-shrink: 0;
+}
+
+.news-date-day {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--global-theme-color);
+}
+
+.news-date-month {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.1rem;
+}
+
+.news-content {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--global-text-color);
+  padding-top: 0.15rem;
+}
+
+.news-title {
+  color: var(--global-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// ── Latest Posts Section ──────────────────────────────────────────
+
+.posts-list {
+  padding-right: 0.5rem;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--global-divider-color);
+    border-radius: 4px;
+  }
+}
+
+.post-item {
+  display: flex;
+  gap: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.45rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+  align-items: flex-start;
+
+  &:hover {
+    background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.04);
+    border-color: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.12);
+  }
+}
+
+.post-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.08);
+  flex-shrink: 0;
+}
+
+.post-date-day {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--global-theme-color);
+}
+
+.post-date-month {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.1rem;
+}
+
+.post-content {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  padding-top: 0.15rem;
+}
+
+.post-link {
+  color: var(--global-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// ── Selected Publications (about page) ───────────────────────────
+
+.about-pubs-section .publications {
+  margin-top: 0.5rem;
+}
+
+// ── Social Section (about page) ──────────────────────────────────
+
+.about-social-section {
+  .social {
+    padding: 0.5rem 0;
   }
 }
 

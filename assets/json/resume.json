@@ -436,29 +436,5 @@
         "Multimodal AI Agents"
       ]
     }
-  ],
-  "references": [
-    {
-      "name": "Professor Fakhri Karray",
-      "icon": "fa-solid fa-user-tie",
-      "reference": "Adjunct Professor Emeritus, Department of Electrical and Computer Engineering, University of Waterloo. Former Loblaws Research Chair in Artificial Intelligence and co-Director of the University of Waterloo Artificial Intelligence Institute.",
-      "url": "https://uwaterloo.ca/electrical-computer-engineering/profile/karray"
-    },
-    {
-      "name": "Professor M.M.A. Hashem",
-      "icon": "fa-solid fa-user-tie",
-      "reference": "Professor, Department of Computer Science and Engineering (CSE), Khulna University of Engineering & Technology (KUET), Bangladesh.",
-      "url": "https://www.kuet.ac.bd/index.php/cse/faculty_details/prof-dr-mm-a-hashem"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Image Captioning Project",
-      "summary": "End-to-end image-to-caption model that generates natural language descriptions for real-world images using encoder-decoder architecture.",
-      "highlights": ["Recurrent Neural Networks (RNN)", "Convolutional Neural Networks (CNN)"],
-      "startDate": "2017-10-01",
-      "endDate": "2018-01-01",
-      "url": "https://github.com/rezwanh001/Image-Captioning-Project"
-    }
   ]
 }

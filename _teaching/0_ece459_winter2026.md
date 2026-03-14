@@ -1,26 +1,26 @@
 ---
 layout: page
 title: "ECE 459: Programming for Performance"
-term: "Winter 2025"
+term: "Winter 2026"
 role: "Teaching Assistant (TA)"
 university: "University of Waterloo"
-enrollment: "453/425 📈"
+enrollment: "440/447"
 rating: "--.--/5"
-rating_stars: "★★★★☆"
+rating_stars: "★★★★★"
 rating_type: "TA"
-order: 3
+order: 0
 icon: "🚀"
-color: "#fd7e14"
+color: "#0d6efd"
 degree: "MASc"
 ---
 
 <div class="card mt-3">
   <div class="p-3">
     <div class="d-flex justify-content-between align-items-center mb-3" style="font-size: 0.95rem;">
-      <div><strong>👥 Enrolled Students:</strong> 453/425 📈</div>
+      <div><strong>👥 Enrolled Students:</strong> 440/447</div>
       <div>
         <strong>⭐ TA Rating:</strong>
-        <span style="color: #f5c518;">★★★★☆</span> (--.--/5)
+        <span style="color: #f5c518;">★★★★★</span> (--.--/5)
       </div>
     </div>
 

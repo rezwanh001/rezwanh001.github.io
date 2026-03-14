@@ -11,6 +11,7 @@ rating_type: "TA"
 order: 2
 icon: "⚙️"
 color: "#e83e8c"
+degree: "MASc"
 ---
 
 <div class="card mt-3">
@@ -49,6 +50,18 @@ color: "#e83e8c"
         <tr><td>Lab Projects</td><td>30%</td></tr>
         <tr><td>Midterm Exam</td><td>21%</td></tr>
         <tr><td>Final Exam</td><td>45%</td></tr>
+      </tbody>
+    </table>
+    <hr>
+
+    <h4><i class="fa-solid fa-chalkboard-user"></i> Lab Instructor</h4>
+    <table class="table table-sm">
+      <tbody>
+        <tr>
+          <td><strong>Dr. Mojtaba Aajami, Ph.D.</strong></td>
+          <td>Lab Instructor</td>
+          <td><a href="mailto:mojtaba.aajami@uwaterloo.ca">mojtaba.aajami@uwaterloo.ca</a></td>
+        </tr>
       </tbody>
     </table>
     <hr>

@@ -12,6 +12,43 @@ nav_order: 6
 </p>
 
 <div class="teaching-timeline">
+
+  <!-- ═══ PhD Section ═══ -->
+  <div class="timeline-degree-section">
+    <div class="timeline-degree-badge phd">
+      <i class="fa-solid fa-user-graduate"></i> PhD · Electrical &amp; Computer Engineering
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-card timeline-placeholder" style="--timeline-accent: #6610f2;">
+      <div class="timeline-header">
+        <h4 class="timeline-course-title">
+          <span class="timeline-course-icon">🎓</span>
+          PhD TA — Coming Soon
+        </h4>
+        <span class="timeline-term-badge" style="background: #6610f2;">
+          🗓️ Spring 2026
+        </span>
+      </div>
+      <div style="font-size: 0.9rem; color: var(--global-text-color-light, #6c757d);">
+        Teaching Assistant (TA) · University of Waterloo
+      </div>
+      <div class="timeline-meta">
+        <span class="timeline-stat" style="font-style: italic;">
+          <i class="fa-solid fa-clock"></i>&nbsp; Course assignment pending
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ MASc Section ═══ -->
+  <div class="timeline-degree-section">
+    <div class="timeline-degree-badge masc">
+      <i class="fa-solid fa-microchip"></i> MASc · Electrical &amp; Computer Engineering
+    </div>
+  </div>
+
   {% assign sorted_courses = site.teaching | sort: "order" %}
   {% for course in sorted_courses %}
   <div class="timeline-item">

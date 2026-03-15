@@ -157,6 +157,10 @@ div.list-group {
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
   min-width: 0;
   width: 100%;
+  max-width: 100% !important;
+  flex: none !important;
+  padding-left: 0.7rem !important;
+  padding-right: 0.7rem !important;
 
   .table-cv {
     margin-bottom: 0;

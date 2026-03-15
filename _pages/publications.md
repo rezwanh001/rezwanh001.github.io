@@ -37,7 +37,7 @@ nav_order: 2
     <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank" class="pub-hero-btn">
       <i class="ai ai-google-scholar"></i> Google Scholar
     </a>
-    <a href="https://www.researchgate.net/profile/Md-Rezwanul-Haque" target="_blank" class="pub-hero-btn pub-hero-btn-outline">
+    <a href="https://www.researchgate.net/profile/Md-Haque-66" target="_blank" class="pub-hero-btn pub-hero-btn-outline">
       <i class="ai ai-researchgate"></i> ResearchGate
     </a>
   </div>

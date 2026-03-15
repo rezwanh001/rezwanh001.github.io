@@ -6,7 +6,7 @@
     "email": "rezwan@uwaterloo.ca",
     "phone": "",
     "url": "https://rezwanh001.github.io/",
-    "summary": "Looking for a career to demonstrate the best of my professional ability, research thinking, and strategies to improve my knowledge, as well as to contribute to the best of my potential in my institution.",
+    "summary": "Incoming PhD candidate in Electrical and Computer Engineering at the University of Waterloo, researching multimodal machine learning, large language models, and agentic AI systems at the CPAMI Lab. Author of 11 peer-reviewed publications at venues including ICCV, IEEE SMC, IJCNN, IEEE Access, and Elsevier. Recipient of the ICCV 2025 Best Poster Award and multiple Faculty of Engineering Awards.",
     "location": {
       "city": "Waterloo",
       "region": "Ontario",
@@ -38,13 +38,15 @@
       "url": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
       "startDate": "2024-04-01",
       "endDate": "",
-      "summary": "Conducting research on multimodal machine learning and large language models for human-centered AI applications, including depression detection, sign language recognition, and medical image analysis.",
+      "summary": "Conducting advanced research in multimodal machine learning and large language models at the CPAMI Lab, University of Waterloo, under the supervision of Prof. Fakhri Karray. Designing transformer-based architectures and multi-agent systems for human-centered AI — spanning depression detection, sign language recognition, and medical image analysis.",
       "highlights": [
-        "Multi-Modal Machine Learning (MMML)",
-        "Large Language Models (LLMs)",
-        "Multimodal AI Agents",
-        "Human-Centered Machine Intelligence",
-        "Deep Learning & Computer Vision"
+        "🧠 Multimodal Machine Learning",
+        "🤖 Large Language Models (LLMs)",
+        "👁️‍🗨️ Vision-Language Models",
+        "🚀 Multimodal AI Agents",
+        "🌐 Embodied Agentic AI Systems",
+        "👤 Human-Centered Machine Intelligence",
+        "🔬 Deep Learning & Computer Vision"
       ]
     }
   ],
@@ -52,29 +54,33 @@
     {
       "institution": "University of Waterloo",
       "location": "Waterloo, Ontario, Canada",
-      "url": "https://uwaterloo.ca/",
+      "url": "https://uwaterloo.ca/electrical-computer-engineering",
       "area": "Electrical and Computer Engineering (ECE)",
       "studyType": "PhD",
       "startDate": "2026-05-01",
       "endDate": "",
       "score": "",
       "courses": [
-        "Research Focus: Agentic Systems for Embodied AI, Multi-agent Embodied Systems with Shared Visual Understanding, and World Models and Visual Cognitions for Embodied Agents.",
-        "Supervisor(s): Prof. Fakhri Karray & Prof. Zhou Wang"
+        "🔬 Research Focus:",
+        "    ▸ Agentic Systems for Embodied AI",
+        "    ▸ Multi-Agent Embodied Systems with Shared Visual Understanding",
+        "    ▸ World Models & Visual Cognitions for Embodied Agents",
+        "👨‍🔬 Supervisor(s): Prof. Fakhri Karray & Prof. Zhou Wang"
       ]
     },
     {
       "institution": "University of Waterloo",
       "location": "Waterloo, Ontario, Canada",
-      "url": "https://uwaterloo.ca/",
+      "url": "https://uwaterloo.ca/electrical-computer-engineering",
       "area": "Electrical and Computer Engineering (ECE)",
       "studyType": "MASc",
       "startDate": "2024-05-01",
       "endDate": "2026-04-30",
       "score": "",
       "courses": [
-        "Thesis: \u201cTitle is coming ...\u201d",
-        "Supervisor(s): Prof. Fakhri Karray & Prof. Pin-Han Ho"
+        "📝 Thesis: \u201cTitle is coming ...\u201d",
+        "🔬 Focus: Multimodal ML \u00b7 LLMs \u00b7 Human-Centered AI",
+        "👨\u200d🔬 Supervisor(s): Prof. Fakhri Karray & Prof. Pin-Han Ho"
       ]
     },
     {
@@ -87,8 +93,8 @@
       "endDate": "2019-02-19",
       "score": "",
       "courses": [
-        "Thesis: \u201cA Study on Non-Invasive Hemoglobin Measurement Techniques and Predictions.\u201d",
-        "Supervisor: Prof. Dr. M.M.A Hashem"
+        "📝 Thesis: \u201cA Study on Non-Invasive Hemoglobin Measurement Techniques and Predictions.\u201d",
+        "👨\u200d🔬 Supervisor: Prof. Dr. M.M.A Hashem"
       ]
     }
   ],
@@ -234,40 +240,40 @@
   ],
   "awards": [
     {
-      "title": "Faculty of Engineering (FOE) Award (Spring)",
+      "title": "🏅 Faculty of Engineering (FOE) Award (Spring)",
       "date": "2025",
       "awarder": "UWaterloo, CA",
-      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1,500."
+      "summary": "🏅 Awarded for exceptional merit in research and academics. 💰 Valued at CAD $1,500."
     },
     {
-      "title": "Best Poster Award",
+      "title": "🏆 Best Poster Award",
       "date": "2025",
       "awarder": "ICCV, USA",
-      "summary": "Awarded at the 1st Multimodal Sign Language Recognition Workshop at ICCV 2025."
+      "summary": "🥇 Awarded at the 1st Multimodal Sign Language Recognition Workshop at ICCV 2025."
     },
     {
-      "title": "Winner (2nd) of MSLR-2025 Challenge",
+      "title": "🥈 Winner (2nd) of MSLR-2025 Challenge",
       "date": "2025",
       "awarder": "ICCV, USA",
-      "summary": "Secured 2nd place in The First Multimodal Sign Language Recognition Challenge. Valued at USD $750."
+      "summary": "🎯 Secured 2nd place in The First Multimodal Sign Language Recognition Challenge. 💰 Valued at USD $750."
     },
     {
-      "title": "Faculty of Engineering (FOE) Award (Winter)",
+      "title": "🏅 Faculty of Engineering (FOE) Award (Winter)",
       "date": "2025",
       "awarder": "UWaterloo, CA",
-      "summary": "Awarded for exceptional merit in research and academics. Valued at CAD $1,500."
+      "summary": "🏅 Awarded for exceptional merit in research and academics. 💰 Valued at CAD $1,500."
     },
     {
-      "title": "Graduate Student Contingency Bursary",
+      "title": "📚 Graduate Student Contingency Bursary",
       "date": "2025",
       "awarder": "UWaterloo, CA",
-      "summary": "Financial support for graduate studies. Valued at CAD $5,000."
+      "summary": "🎓 Competitive bursary for graduate students with strong academic standing. 💰 Valued at CAD $5,000."
     },
     {
-      "title": "Graduate Research Studentship (GRS)",
+      "title": "🌟 MASc - Graduate Research Studentship (GRS)",
       "date": "2024 - Present",
       "awarder": "UWaterloo, CA",
-      "summary": "Research funding for MASc studies. Valued at CAD $18,000/yr."
+      "summary": "🎓 Merit-based studentship supporting full-time thesis research in ECE. 💰 Valued at CAD $33,000/yr."
     }
   ],
   "volunteer": [
@@ -276,14 +282,14 @@
       "position": "Conference & Journal Reviewer",
       "startDate": "2023-01-01",
       "endDate": "",
-      "summary": "Peer reviewer for top-tier AI/ML conferences and journals.",
+      "summary": "Serving as an invited peer reviewer for leading AI/ML conferences and journals, evaluating research in computer vision, multimodal learning, and deep learning.",
       "highlights": [
-        "ICCV 2025 — IEEE/CVF International Conference on Computer Vision",
-        "NeurIPS 2025 — Workshop on Music and Machine Learning (MusIML)",
-        "IEEE SMC 2025 — International Conference on Systems, Man, and Cybernetics",
-        "IEEE IJCNN 2025 — International Joint Conference on Neural Networks",
-        "IEEE EICT 2025 — Int'l Conference on Electrical Information and Communication Technology",
-        "PLOS One (2023–Present) — Peer-reviewed open access scientific journal"
+        "👁️ ICCV 2025 — IEEE/CVF International Conference on Computer Vision",
+        "🧠 NeurIPS 2025 — Workshop on Music and Machine Learning (MusIML)",
+        "⚙️ IEEE SMC 2025 — International Conference on Systems, Man, and Cybernetics",
+        "🫀 IEEE IJCNN 2025 — International Joint Conference on Neural Networks",
+        "📡 IEEE EICT 2025 — Int'l Conference on Electrical Information and Communication Technology",
+        "📚 PLOS One (2023–Present) — Peer-reviewed open access scientific journal"
       ]
     }
   ],

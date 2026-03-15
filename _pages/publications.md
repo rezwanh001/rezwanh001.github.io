@@ -106,14 +106,14 @@ document.addEventListener('DOMContentLoaded', function() {
   var journalEl = document.getElementById('pub-journal-count');
   if (journalEl) journalEl.textContent = journalCount;
 
-  // Count first-author papers (user's name is in <em> tag in .author)
+  // Count first-author papers (user's highlighted name appears first in .author)
   var firstAuthor = 0;
   items.forEach(function(li) {
     var authorDiv = li.querySelector('.author');
     if (authorDiv) {
-      // Check if the first author element is <em> (self)
-      var firstChild = authorDiv.firstElementChild;
-      if (firstChild && firstChild.tagName === 'EM') {
+      // innerHTML check: if the rendered author list starts with <em>, user is first author
+      var html = authorDiv.innerHTML.trim();
+      if (html.match(/^<em\b/i)) {
         firstAuthor++;
       }
     }
@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var firstEl = document.getElementById('pub-first-author');
   if (firstEl) firstEl.textContent = firstAuthor;
 
-  // Count awards
-  var awardCount = document.querySelectorAll('ol.bibliography .award').length;
+  // Count awards (select only .award.btn to avoid double-counting hidden award divs)
+  var awardCount = document.querySelectorAll('ol.bibliography a.award').length;
   var awardEl = document.getElementById('pub-award-count');
   if (awardEl) awardEl.textContent = awardCount;
 

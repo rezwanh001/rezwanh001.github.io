@@ -136,7 +136,8 @@ a.btncv:hover {
 div.list-groups {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.4rem;
+  gap: 0.5rem 0.75rem;
+  width: 100%;
 
   @media (max-width: 767.98px) {
     grid-template-columns: 1fr;
@@ -149,15 +150,17 @@ div.list-group {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 0;
-  padding: 0.35rem 0.5rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 8px;
   background: rgba(108, 92, 231, 0.03);
   border: 1px solid rgba(108, 92, 231, 0.08);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
   min-width: 0;
+  width: 100%;
 
   .table-cv {
     margin-bottom: 0;
+    width: 100%;
 
     td {
       padding: 0.1rem 0.2rem;
@@ -186,9 +189,17 @@ td.list-group-category-icon {
 }
 
 td.list-group-name {
-  font-size: 0.75rem;
-  padding: 0.02rem 0;
-  line-height: 1.35;
+  font-size: 0.78rem;
+  padding: 0.05rem 0;
+  line-height: 1.4;
+
+  b::before {
+    content: '▹';
+    color: var(--global-theme-color);
+    margin-right: 0.3rem;
+    font-weight: normal;
+    font-size: 0.7rem;
+  }
 }
 
 td.list-group-level {

@@ -81,6 +81,24 @@ document.addEventListener('DOMContentLoaded', function() {
     spanEl.textContent = (maxY - minY + 1);
   }
 
+  // Add publication count badge to each year heading
+  yearHeaders.forEach(function(h2) {
+    // Count items in the next <ol.bibliography> sibling
+    var nextEl = h2.nextElementSibling;
+    while (nextEl && !nextEl.matches('ol.bibliography')) {
+      nextEl = nextEl.nextElementSibling;
+    }
+    if (nextEl) {
+      var count = nextEl.querySelectorAll(':scope > li').length;
+      if (count > 0) {
+        var badge = document.createElement('span');
+        badge.className = 'pub-year-count';
+        badge.textContent = count + (count === 1 ? ' paper' : ' papers');
+        h2.appendChild(badge);
+      }
+    }
+  });
+
   // Fade-in animation for publication entries
   const observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {

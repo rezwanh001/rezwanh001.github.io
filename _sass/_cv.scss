@@ -148,12 +148,13 @@ div.list-group {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
-  padding: 0.75rem;
+  margin-bottom: 0;
+  padding: 0.5rem 0.6rem;
   border-radius: 10px;
   background: rgba(108, 92, 231, 0.03);
   border: 1px solid rgba(108, 92, 231, 0.08);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  min-width: 0;
 
   &:hover {
     border-color: rgba(108, 92, 231, 0.2);
@@ -163,21 +164,21 @@ div.list-group {
 
 td.list-group-category {
   color: var(--global-theme-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 td.list-group-category-icon {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--global-theme-color);
-  width: 1.6rem;
-  padding-right: 0.4rem;
+  width: 1.4rem;
+  padding-right: 0.3rem;
 }
 
 td.list-group-name {
-  font-size: 0.82rem;
-  padding: 0.1rem 0;
+  font-size: 0.78rem;
+  padding: 0.05rem 0;
 }
 
 td.list-group-level {

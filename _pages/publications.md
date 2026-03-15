@@ -24,15 +24,43 @@ nav_order: 2
     </div>
     <div class="pub-stat-divider"></div>
     <div class="pub-stat">
+      <span class="pub-stat-number" id="pub-conf-count">--</span>
+      <span class="pub-stat-label">Conference</span>
+    </div>
+    <div class="pub-stat-divider"></div>
+    <div class="pub-stat">
+      <span class="pub-stat-number" id="pub-journal-count">--</span>
+      <span class="pub-stat-label">Journal</span>
+    </div>
+    <div class="pub-stat-divider"></div>
+    <div class="pub-stat">
+      <span class="pub-stat-number" id="pub-first-author">--</span>
+      <span class="pub-stat-label">First Author</span>
+    </div>
+    <div class="pub-stat-divider"></div>
+    <div class="pub-stat">
       <span class="pub-stat-number" id="pub-venue-count">--</span>
       <span class="pub-stat-label">Venues</span>
     </div>
     <div class="pub-stat-divider"></div>
     <div class="pub-stat">
-      <span class="pub-stat-number" id="pub-year-span">--</span>
-      <span class="pub-stat-label">Years Active</span>
+      <span class="pub-stat-number" id="pub-award-count">--</span>
+      <span class="pub-stat-label">Awards</span>
     </div>
   </div>
+
+  <!-- Visual breakdown bar -->
+  <div class="pub-breakdown">
+    <div class="pub-breakdown-bar">
+      <div class="pub-bar-segment pub-bar-conf" id="pub-bar-conf" title="Conference Papers"></div>
+      <div class="pub-bar-segment pub-bar-journal" id="pub-bar-journal" title="Journal Papers"></div>
+    </div>
+    <div class="pub-breakdown-legend">
+      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-conf"></span>Conference</span>
+      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-journal"></span>Journal</span>
+    </div>
+  </div>
+
   <div class="pub-hero-links">
     <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank" class="pub-hero-btn">
       <i class="ai ai-google-scholar"></i> Google Scholar
@@ -54,36 +82,68 @@ nav_order: 2
 <!-- ═══════════════════════  Stats Counter JS  ═══════════════════════ -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Count publications
-  const items = document.querySelectorAll('ol.bibliography > li');
-  const totalEl = document.getElementById('pub-total-count');
+  var items = document.querySelectorAll('ol.bibliography > li');
+  var totalEl = document.getElementById('pub-total-count');
   if (totalEl) totalEl.textContent = items.length;
 
+  // Count conference vs journal
+  var confCount = 0, journalCount = 0;
+  items.forEach(function(li) {
+    var periodical = li.querySelector('.periodical');
+    if (periodical) {
+      var text = periodical.textContent.trim();
+      if (text.match(/^In\s/i)) {
+        confCount++;
+      } else if (text.length > 0) {
+        journalCount++;
+      }
+    }
+  });
+  var confEl = document.getElementById('pub-conf-count');
+  if (confEl) confEl.textContent = confCount;
+  var journalEl = document.getElementById('pub-journal-count');
+  if (journalEl) journalEl.textContent = journalCount;
+
+  // Count first-author papers (user's name is in <em> tag in .author)
+  var firstAuthor = 0;
+  items.forEach(function(li) {
+    var authorDiv = li.querySelector('.author');
+    if (authorDiv) {
+      // Check if the first author element is <em> (self)
+      var firstChild = authorDiv.firstElementChild;
+      if (firstChild && firstChild.tagName === 'EM') {
+        firstAuthor++;
+      }
+    }
+  });
+  var firstEl = document.getElementById('pub-first-author');
+  if (firstEl) firstEl.textContent = firstAuthor;
+
+  // Count awards
+  var awardCount = document.querySelectorAll('ol.bibliography .award').length;
+  var awardEl = document.getElementById('pub-award-count');
+  if (awardEl) awardEl.textContent = awardCount;
+
   // Count unique venues
-  const venues = new Set();
+  var venues = new Set();
   document.querySelectorAll('ol.bibliography .abbr abbr').forEach(function(el) {
     venues.add(el.textContent.trim());
   });
-  const venueEl = document.getElementById('pub-venue-count');
+  var venueEl = document.getElementById('pub-venue-count');
   if (venueEl) venueEl.textContent = venues.size;
 
-  // Calculate years active
-  const yearHeaders = document.querySelectorAll('h2.bibliography');
-  const years = [];
-  yearHeaders.forEach(function(h) {
-    const y = parseInt(h.textContent.trim());
-    if (!isNaN(y)) years.push(y);
-  });
-  const spanEl = document.getElementById('pub-year-span');
-  if (spanEl && years.length > 0) {
-    const minY = Math.min(...years);
-    const maxY = Math.max(...years);
-    spanEl.textContent = (maxY - minY + 1);
+  // Visual breakdown bar
+  var total = confCount + journalCount;
+  if (total > 0) {
+    var confBar = document.getElementById('pub-bar-conf');
+    var journalBar = document.getElementById('pub-bar-journal');
+    if (confBar) confBar.style.width = ((confCount / total) * 100) + '%';
+    if (journalBar) journalBar.style.width = ((journalCount / total) * 100) + '%';
   }
 
   // Add publication count badge to each year heading
+  var yearHeaders = document.querySelectorAll('h2.bibliography');
   yearHeaders.forEach(function(h2) {
-    // Count items in the next <ol.bibliography> sibling
     var nextEl = h2.nextElementSibling;
     while (nextEl && !nextEl.matches('ol.bibliography')) {
       nextEl = nextEl.nextElementSibling;
@@ -100,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Fade-in animation for publication entries
-  const observer = new IntersectionObserver(function(entries) {
+  var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('pub-visible');

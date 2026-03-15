@@ -1241,6 +1241,69 @@ footer.sticky-bottom {
   opacity: 0.5;
 }
 
+// Publication type breakdown bar
+.pub-breakdown {
+  max-width: 400px;
+  margin: 0 auto 1.4rem;
+}
+
+.pub-breakdown-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--global-divider-color);
+  margin-bottom: 0.5rem;
+}
+
+.pub-bar-segment {
+  height: 100%;
+  transition: width 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+
+.pub-bar-conf {
+  background: linear-gradient(90deg, var(--global-theme-color), #6c5ce7);
+  border-radius: 8px 0 0 8px;
+}
+
+.pub-bar-journal {
+  background: linear-gradient(90deg, #00b894, #0984e3);
+  border-radius: 0 8px 8px 0;
+}
+
+.pub-breakdown-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pub-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pub-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pub-dot-conf {
+  background: var(--global-theme-color);
+}
+
+.pub-dot-journal {
+  background: #00b894;
+}
+
 .pub-hero-links {
   display: flex;
   justify-content: center;

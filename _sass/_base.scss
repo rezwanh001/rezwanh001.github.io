@@ -1267,6 +1267,10 @@ footer.sticky-bottom {
   border-radius: 8px 0 0 8px;
 }
 
+.pub-bar-q1 {
+  background: linear-gradient(90deg, #fdcb6e, #e17055);
+}
+
 .pub-bar-journal {
   background: linear-gradient(90deg, #00b894, #0984e3);
   border-radius: 0 8px 8px 0;
@@ -1298,6 +1302,10 @@ footer.sticky-bottom {
 
 .pub-dot-conf {
   background: var(--global-theme-color);
+}
+
+.pub-dot-q1 {
+  background: #fdcb6e;
 }
 
 .pub-dot-journal {

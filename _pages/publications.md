@@ -39,8 +39,8 @@ nav_order: 2
     </div>
     <div class="pub-stat-divider"></div>
     <div class="pub-stat">
-      <span class="pub-stat-number" id="pub-venue-count">--</span>
-      <span class="pub-stat-label">Venues</span>
+      <span class="pub-stat-number" id="pub-q1-count">--</span>
+      <span class="pub-stat-label">Q1 Journals</span>
     </div>
     <div class="pub-stat-divider"></div>
     <div class="pub-stat">
@@ -53,11 +53,13 @@ nav_order: 2
   <div class="pub-breakdown">
     <div class="pub-breakdown-bar">
       <div class="pub-bar-segment pub-bar-conf" id="pub-bar-conf" title="Conference Papers"></div>
-      <div class="pub-bar-segment pub-bar-journal" id="pub-bar-journal" title="Journal Papers"></div>
+      <div class="pub-bar-segment pub-bar-q1" id="pub-bar-q1" title="Q1 Journal Papers"></div>
+      <div class="pub-bar-segment pub-bar-journal" id="pub-bar-journal" title="Other Journal Papers"></div>
     </div>
     <div class="pub-breakdown-legend">
       <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-conf"></span>Conference</span>
-      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-journal"></span>Journal</span>
+      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-q1"></span>Q1 Journal</span>
+      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-journal"></span>Other Journal</span>
     </div>
   </div>
 
@@ -124,21 +126,28 @@ document.addEventListener('DOMContentLoaded', function() {
   var awardEl = document.getElementById('pub-award-count');
   if (awardEl) awardEl.textContent = awardCount;
 
-  // Count unique venues
-  var venues = new Set();
-  document.querySelectorAll('ol.bibliography .abbr abbr').forEach(function(el) {
-    venues.add(el.textContent.trim());
+  // Count Q1 journal papers (abbr badge contains "Q1")
+  var q1Count = 0;
+  items.forEach(function(li) {
+    var abbrEl = li.querySelector('.abbr abbr');
+    if (abbrEl && abbrEl.textContent.indexOf('Q1') !== -1) {
+      q1Count++;
+    }
   });
-  var venueEl = document.getElementById('pub-venue-count');
-  if (venueEl) venueEl.textContent = venues.size;
+  var q1El = document.getElementById('pub-q1-count');
+  if (q1El) q1El.textContent = q1Count;
 
-  // Visual breakdown bar
+  var otherJournal = journalCount - q1Count;
+
+  // Visual breakdown bar (3 segments)
   var total = confCount + journalCount;
   if (total > 0) {
     var confBar = document.getElementById('pub-bar-conf');
+    var q1Bar = document.getElementById('pub-bar-q1');
     var journalBar = document.getElementById('pub-bar-journal');
     if (confBar) confBar.style.width = ((confCount / total) * 100) + '%';
-    if (journalBar) journalBar.style.width = ((journalCount / total) * 100) + '%';
+    if (q1Bar) q1Bar.style.width = ((q1Count / total) * 100) + '%';
+    if (journalBar) journalBar.style.width = ((otherJournal / total) * 100) + '%';
   }
 
   // Add publication count badge to each year heading

@@ -664,6 +664,115 @@ ul.task-list input[type="checkbox"] {
   margin-top: 0.5rem;
 }
 
+// ── About Page Professional Bio Styling ──────────────────────────
+
+// Multi-line subtitle under the name (like Prof. Karimi's page)
+.about-subtitle-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1.55;
+
+  span {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--global-text-color-light);
+    font-style: italic;
+  }
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    font-style: italic;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Bio heading
+.post .clearfix h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--global-theme-color);
+  position: relative;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(135deg, var(--global-theme-color), #6c5ce7);
+  }
+}
+
+// Bio paragraph styling
+.post .clearfix p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+// Award highlight links
+a.award-link {
+  color: var(--global-theme-color);
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(120deg, rgba(108, 92, 231, 0.08), rgba(108, 92, 231, 0.04));
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: linear-gradient(120deg, rgba(108, 92, 231, 0.15), rgba(108, 92, 231, 0.08));
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(108, 92, 231, 0.15);
+  }
+}
+
+// CV link button
+a.cv-link-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--global-theme-color), #6c5ce7);
+  color: #fff !important;
+  padding: 0.35em 1em;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(108, 92, 231, 0.25);
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(108, 92, 231, 0.35);
+    text-decoration: none;
+  }
+}
+
+// Visitor badge
+.about-visitor-badge {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  img {
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
 // ── Social Section (about page) ──────────────────────────────────
 
 .about-social-section {

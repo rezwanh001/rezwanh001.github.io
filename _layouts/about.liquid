@@ -12,6 +12,11 @@ layout: default
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
+    {% if page.social %}
+      <div class="about-header-social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+      </div>
+    {% endif %}
   </header>
 
   <article>
@@ -70,20 +75,6 @@ layout: default
           <h2><a href="{{ '/publications/' | relative_url }}">Selected Publications</a></h2>
         </div>
         {% include selected_papers.liquid %}
-      </div>
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="about-section about-social-section">
-        <div class="about-section-header">
-          <i class="fas fa-share-nodes"></i>
-          <h2>Connect</h2>
-        </div>
-        <div class="social">
-          <div class="contact-icons">{% include social.liquid %}</div>
-          <div class="contact-note">{{ site.contact_note }}</div>
-        </div>
       </div>
     {% endif %}
 

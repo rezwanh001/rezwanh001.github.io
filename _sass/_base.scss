@@ -691,6 +691,57 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Social icons in header (under subtitle, like Prof. Karimi's page)
+.about-header-social {
+  margin-top: 0.5rem;
+
+  .contact-icons {
+    display: inline-flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      border: 1.5px solid var(--global-divider-color);
+      background: var(--global-bg-color);
+      transition: all 0.25s ease;
+      text-decoration: none;
+
+      i, i::before {
+        color: var(--global-text-color-light);
+        font-size: 0.85rem;
+        transition: color 0.25s ease;
+        line-height: 1;
+      }
+
+      .ai {
+        font-size: 0.9rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: var(--global-theme-color);
+        box-shadow: 0 3px 10px rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.18);
+        background: rgba(var(--global-theme-color-rgb, 78, 115, 223), 0.05);
+
+        i, i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+}
+
 // Bio heading
 .post .clearfix h2 {
   font-size: 1.6rem;

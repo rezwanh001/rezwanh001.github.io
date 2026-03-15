@@ -134,12 +134,13 @@ a.btncv:hover {
 
 /* ── Skills / list-groups premium ── */
 div.list-groups {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 div.list-group {

@@ -666,6 +666,60 @@ ul.task-list input[type="checkbox"] {
 
 // ── About Page Professional Bio Styling ──────────────────────────
 
+// Header row: image left, name/subtitle/social right (like Prof. Karimi)
+.about-header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+.about-header-image {
+  flex-shrink: 0;
+  width: 180px;
+
+  img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #d4a843;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  // Override figure.liquid wrapper margins
+  figure {
+    margin: 0 !important;
+  }
+
+  @media (max-width: 575.98px) {
+    width: 160px;
+
+    img {
+      width: 160px;
+    }
+  }
+}
+
+.about-header-info {
+  flex: 1;
+  min-width: 0;
+
+  .post-title {
+    margin-bottom: 0.3rem;
+  }
+
+  .desc {
+    margin-bottom: 0.3rem;
+  }
+}
+
 // Multi-line subtitle under the name (like Prof. Karimi's page)
 .about-subtitle-lines {
   display: flex;

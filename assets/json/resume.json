@@ -6,7 +6,7 @@
     "email": "rezwan@uwaterloo.ca",
     "phone": "",
     "url": "https://rezwanh001.github.io/",
-    "summary": "Incoming PhD candidate in Electrical and Computer Engineering at the University of Waterloo, researching multimodal machine learning, large language models, and agentic AI systems at the CPAMI Lab. Author of 11 peer-reviewed publications at venues including ICCV, IEEE SMC, IJCNN, IEEE Access, and Elsevier. Recipient of the ICCV 2025 Best Poster Award and multiple Faculty of Engineering Awards.",
+    "summary": "Incoming PhD candidate in Electrical and Computer Engineering at the University of Waterloo, researching multimodal machine learning, large language models, and agentic AI systems at the CPAMI Lab.",
     "location": {
       "city": "Waterloo",
       "region": "Ontario",
@@ -38,7 +38,7 @@
       "url": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
       "startDate": "2024-04-01",
       "endDate": "",
-      "summary": "Conducting advanced research in multimodal machine learning and large language models at the CPAMI Lab, University of Waterloo, under the supervision of Prof. Fakhri Karray. Designing transformer-based architectures and multi-agent systems for human-centered AI — spanning depression detection, sign language recognition, and medical image analysis.",
+      "summary": "Conducting advanced research in multimodal machine learning and large language models at the CPAMI Lab, University of Waterloo. Designing transformer-based architectures and multi-agent systems for human-centered AI applications.",
       "highlights": [
         "🧠 Multimodal Machine Learning",
         "🤖 Large Language Models (LLMs)",
@@ -61,10 +61,7 @@
       "endDate": "",
       "score": "",
       "courses": [
-        "🔬 Research Focus:",
-        "    ▸ Agentic Systems for Embodied AI",
-        "    ▸ Multi-Agent Embodied Systems with Shared Visual Understanding",
-        "    ▸ World Models & Visual Cognitions for Embodied Agents",
+        "🔬 Research: Agentic Systems for Embodied AI · Multi-Agent Embodied Systems with Shared Visual Understanding · World Models & Visual Cognitions for Embodied Agents",
         "👨‍🔬 Supervisor(s): Prof. Fakhri Karray & Prof. Zhou Wang"
       ]
     },

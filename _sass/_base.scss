@@ -687,7 +687,9 @@ ul.task-list input[type="checkbox"] {
 
   img {
     width: 180px;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
+    object-position: top center;
     border-radius: 8px;
     border: 4px solid #d4a843;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -703,6 +705,7 @@ ul.task-list input[type="checkbox"] {
 
     img {
       width: 160px;
+      height: 195px;
     }
   }
 }
@@ -713,6 +716,7 @@ ul.task-list input[type="checkbox"] {
 
   .post-title {
     margin-bottom: 0.3rem;
+    font-weight: 700;
   }
 
   .desc {

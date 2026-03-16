@@ -23,7 +23,7 @@ nav_order: 4
     </div>
     <div class="repo-stat-divider"></div>
     <div class="repo-stat">
-      <span class="repo-stat-number">66+</span>
+      <span class="repo-stat-number" id="repo-github-count">--</span>
       <span class="repo-stat-label">Public Repos on GitHub</span>
     </div>
   </div>
@@ -96,6 +96,19 @@ document.addEventListener('DOMContentLoaded', function() {
   // Each repo has light+dark img, divide by 2
   repoCount = Math.round(repoCount / 2);
   if (countEl && repoCount > 0) countEl.textContent = repoCount;
+
+  // Fetch total public repo count from GitHub API
+  var ghCountEl = document.getElementById('repo-github-count');
+  if (ghCountEl) {
+    fetch('https://api.github.com/users/rezwanh001')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        if (data && data.public_repos) {
+          ghCountEl.textContent = data.public_repos;
+        }
+      })
+      .catch(function() { ghCountEl.textContent = '60+'; });
+  }
 
   // Fade-in animation for repo cards
   var observer = new IntersectionObserver(function(entries) {

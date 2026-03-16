@@ -19,12 +19,12 @@ nav_order: 4
   <div class="repo-hero-stats">
     <div class="repo-stat">
       <span class="repo-stat-number" id="repo-total-count">--</span>
-      <span class="repo-stat-label">Repositories</span>
+      <span class="repo-stat-label">Paper Repositories</span>
     </div>
     <div class="repo-stat-divider"></div>
     <div class="repo-stat">
-      <span class="repo-stat-number"><i class="fas fa-code-branch" style="font-size:0.9em"></i></span>
-      <span class="repo-stat-label">Active Development</span>
+      <span class="repo-stat-number">66+</span>
+      <span class="repo-stat-label">Public Repos on GitHub</span>
     </div>
   </div>
   <a href="https://github.com/rezwanh001" target="_blank" class="repo-hero-btn">
@@ -70,7 +70,7 @@ nav_order: 4
 <div class="repo-section">
   <div class="repo-section-header">
     <i class="fas fa-code"></i>
-    <h3>Research & Project Repositories</h3>
+    <h3>Research Paper Repositories</h3>
   </div>
   <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% for repo in site.data.repositories.github_repos %}

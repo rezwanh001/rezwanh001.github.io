@@ -1241,39 +1241,89 @@ footer.sticky-bottom {
   opacity: 0.5;
 }
 
-// Publication type breakdown bar
-.pub-breakdown {
-  max-width: 400px;
-  margin: 0 auto 1.4rem;
+// Yearly publication chart
+.pub-yearly-chart {
+  max-width: 480px;
+  margin: 0 auto 0.6rem;
+  padding: 0 0.5rem;
 }
 
-.pub-breakdown-bar {
+.pub-chart-bars {
   display: flex;
-  height: 8px;
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--global-divider-color);
-  margin-bottom: 0.5rem;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.6rem;
+  height: 120px;
 }
 
-.pub-bar-segment {
-  height: 100%;
-  transition: width 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
-  width: 0;
+.pub-chart-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 32px;
+  max-width: 52px;
 }
 
-.pub-bar-conf {
-  background: linear-gradient(90deg, var(--global-theme-color), #6c5ce7);
-  border-radius: 8px 0 0 8px;
+.pub-chart-count {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--global-theme-color);
+  margin-bottom: 0.2rem;
 }
 
-.pub-bar-q1 {
-  background: linear-gradient(90deg, #fdcb6e, #e17055);
+.pub-chart-bar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  height: 90px;
+  gap: 2px;
 }
 
-.pub-bar-journal {
-  background: linear-gradient(90deg, #00b894, #0984e3);
-  border-radius: 0 8px 8px 0;
+.pub-chart-bar {
+  border-radius: 4px 4px 2px 2px;
+  min-height: 0;
+  transition: height 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+
+.pub-yearly-chart:not(.pub-chart-visible) .pub-chart-bar {
+  height: 0 !important;
+}
+
+.pub-chart-bar-conf {
+  background: linear-gradient(180deg, var(--global-theme-color), #6c5ce7);
+}
+
+.pub-chart-bar-journal {
+  background: linear-gradient(180deg, #00b894, #0984e3);
+  position: relative;
+}
+
+.pub-chart-bar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.9);
+  pointer-events: none;
+}
+
+.pub-chart-year {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  margin-top: 0.25rem;
+  white-space: nowrap;
+}
+
+.pub-journal-icon {
+  font-size: 0.6rem;
+  margin-left: 0.15rem;
+  color: #00b894;
 }
 
 .pub-breakdown-legend {
@@ -1285,6 +1335,7 @@ footer.sticky-bottom {
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: 1.2rem;
 }
 
 .pub-legend-item {
@@ -1302,10 +1353,6 @@ footer.sticky-bottom {
 
 .pub-dot-conf {
   background: var(--global-theme-color);
-}
-
-.pub-dot-q1 {
-  background: #fdcb6e;
 }
 
 .pub-dot-journal {

@@ -35,12 +35,7 @@ nav_order: 2
     <div class="pub-stat-divider"></div>
     <div class="pub-stat">
       <span class="pub-stat-number" id="pub-first-author">--</span>
-      <span class="pub-stat-label">First Author</span>
-    </div>
-    <div class="pub-stat-divider"></div>
-    <div class="pub-stat">
-      <span class="pub-stat-number" id="pub-q1-count">--</span>
-      <span class="pub-stat-label">Q1 Journals</span>
+      <span class="pub-stat-label">First / Equal Author</span>
     </div>
     <div class="pub-stat-divider"></div>
     <div class="pub-stat">
@@ -49,18 +44,11 @@ nav_order: 2
     </div>
   </div>
 
-  <!-- Visual breakdown bar -->
-  <div class="pub-breakdown">
-    <div class="pub-breakdown-bar">
-      <div class="pub-bar-segment pub-bar-conf" id="pub-bar-conf" title="Conference Papers"></div>
-      <div class="pub-bar-segment pub-bar-q1" id="pub-bar-q1" title="Q1 Journal Papers"></div>
-      <div class="pub-bar-segment pub-bar-journal" id="pub-bar-journal" title="Other Journal Papers"></div>
-    </div>
-    <div class="pub-breakdown-legend">
-      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-conf"></span>Conference</span>
-      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-q1"></span>Q1 Journal</span>
-      <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-journal"></span>Other Journal</span>
-    </div>
+  <!-- Yearly publication chart -->
+  <div class="pub-yearly-chart" id="pub-yearly-chart"></div>
+  <div class="pub-breakdown-legend">
+    <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-conf"></span>Conference</span>
+    <span class="pub-legend-item"><span class="pub-legend-dot pub-dot-journal"></span>Journal<span class="pub-journal-icon">&#9733;</span></span>
   </div>
 
   <div class="pub-hero-links">
@@ -88,16 +76,25 @@ document.addEventListener('DOMContentLoaded', function() {
   var totalEl = document.getElementById('pub-total-count');
   if (totalEl) totalEl.textContent = items.length;
 
-  // Count conference vs journal
+  // Count conference vs journal + build yearly data
   var confCount = 0, journalCount = 0;
+  var yearData = {}; // { year: { conf: N, journal: N } }
   items.forEach(function(li) {
     var periodical = li.querySelector('.periodical');
+    var isConf = false, isJournal = false;
     if (periodical) {
       var text = periodical.textContent.trim();
-      if (text.match(/^In\s/i)) {
-        confCount++;
-      } else if (text.length > 0) {
-        journalCount++;
+      if (text.match(/^In\s/i)) { confCount++; isConf = true; }
+      else if (text.length > 0) { journalCount++; isJournal = true; }
+    }
+    // Extract year from periodical text (last 4-digit number)
+    if (periodical) {
+      var yearMatch = periodical.textContent.match(/(\d{4})/);
+      if (yearMatch) {
+        var y = yearMatch[1];
+        if (!yearData[y]) yearData[y] = { conf: 0, journal: 0 };
+        if (isConf) yearData[y].conf++;
+        if (isJournal) yearData[y].journal++;
       }
     }
   });
@@ -106,48 +103,71 @@ document.addEventListener('DOMContentLoaded', function() {
   var journalEl = document.getElementById('pub-journal-count');
   if (journalEl) journalEl.textContent = journalCount;
 
-  // Count first-author papers (user's highlighted name appears first in .author)
+  // Count first-author + equal contribution papers
   var firstAuthor = 0;
   items.forEach(function(li) {
     var authorDiv = li.querySelector('.author');
     if (authorDiv) {
-      // innerHTML check: if the rendered author list starts with <em>, user is first author
       var html = authorDiv.innerHTML.trim();
+      // First author: starts with <em> (highlighted name is first)
       if (html.match(/^<em\b/i)) {
         firstAuthor++;
+      }
+      // Equal contribution: annotation contains "Equal contribution" and user name is in author list
+      else {
+        var annotation = li.querySelector('.annotation');
+        if (annotation && annotation.textContent.indexOf('Equal contribution') !== -1) {
+          // Check if user's highlighted name (<em>) appears in authors
+          if (authorDiv.querySelector('em')) {
+            firstAuthor++;
+          }
+        }
       }
     }
   });
   var firstEl = document.getElementById('pub-first-author');
   if (firstEl) firstEl.textContent = firstAuthor;
 
-  // Count awards (select only .award.btn to avoid double-counting hidden award divs)
+  // Count awards
   var awardCount = document.querySelectorAll('ol.bibliography a.award').length;
   var awardEl = document.getElementById('pub-award-count');
   if (awardEl) awardEl.textContent = awardCount;
 
-  // Count Q1 journal papers (abbr badge contains "Q1")
-  var q1Count = 0;
-  items.forEach(function(li) {
-    var abbrEl = li.querySelector('.abbr abbr');
-    if (abbrEl && abbrEl.textContent.indexOf('Q1') !== -1) {
-      q1Count++;
-    }
-  });
-  var q1El = document.getElementById('pub-q1-count');
-  if (q1El) q1El.textContent = q1Count;
+  // Build yearly publication chart
+  var chartContainer = document.getElementById('pub-yearly-chart');
+  if (chartContainer && Object.keys(yearData).length > 0) {
+    var years = Object.keys(yearData).sort();
+    var maxCount = 0;
+    years.forEach(function(y) {
+      var t = yearData[y].conf + yearData[y].journal;
+      if (t > maxCount) maxCount = t;
+    });
 
-  var otherJournal = journalCount - q1Count;
+    var chartHTML = '<div class="pub-chart-bars">';
+    years.forEach(function(y) {
+      var total = yearData[y].conf + yearData[y].journal;
+      var confPct = maxCount > 0 ? (yearData[y].conf / maxCount) * 100 : 0;
+      var journalPct = maxCount > 0 ? (yearData[y].journal / maxCount) * 100 : 0;
+      chartHTML += '<div class="pub-chart-col">';
+      chartHTML += '<span class="pub-chart-count">' + total + '</span>';
+      chartHTML += '<div class="pub-chart-bar-wrapper">';
+      if (yearData[y].journal > 0) {
+        chartHTML += '<div class="pub-chart-bar pub-chart-bar-journal" style="height:' + journalPct + '%" title="' + yearData[y].journal + ' journal paper' + (yearData[y].journal > 1 ? 's' : '') + '"><span class="pub-chart-bar-label">&#9733;</span></div>';
+      }
+      if (yearData[y].conf > 0) {
+        chartHTML += '<div class="pub-chart-bar pub-chart-bar-conf" style="height:' + confPct + '%" title="' + yearData[y].conf + ' conference paper' + (yearData[y].conf > 1 ? 's' : '') + '"></div>';
+      }
+      chartHTML += '</div>';
+      chartHTML += '<span class="pub-chart-year">' + y + '</span>';
+      chartHTML += '</div>';
+    });
+    chartHTML += '</div>';
+    chartContainer.innerHTML = chartHTML;
 
-  // Visual breakdown bar (3 segments)
-  var total = confCount + journalCount;
-  if (total > 0) {
-    var confBar = document.getElementById('pub-bar-conf');
-    var q1Bar = document.getElementById('pub-bar-q1');
-    var journalBar = document.getElementById('pub-bar-journal');
-    if (confBar) confBar.style.width = ((confCount / total) * 100) + '%';
-    if (q1Bar) q1Bar.style.width = ((q1Count / total) * 100) + '%';
-    if (journalBar) journalBar.style.width = ((otherJournal / total) * 100) + '%';
+    // Animate bars in
+    setTimeout(function() {
+      chartContainer.classList.add('pub-chart-visible');
+    }, 200);
   }
 
   // Add publication count badge to each year heading

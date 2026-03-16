@@ -59,6 +59,58 @@ nav_order: 2
       <i class="ai ai-researchgate"></i> ResearchGate
     </a>
   </div>
+
+  <!-- ─── Citation Impact Section ─── -->
+  <div class="pub-citation-section">
+    <h3 class="pub-citation-title"><i class="fas fa-chart-line"></i> Citation Impact</h3>
+    <div class="pub-citation-cards">
+      <div class="pub-citation-card">
+        <span class="pub-citation-value">{{ site.data.scholar.citations.all }}</span>
+        <span class="pub-citation-label">Citations</span>
+        <span class="pub-citation-since">Since 2020: {{ site.data.scholar.citations.since_2020 }}</span>
+      </div>
+      <div class="pub-citation-card">
+        <span class="pub-citation-value">{{ site.data.scholar.h_index.all }}</span>
+        <span class="pub-citation-label">h-index</span>
+        <span class="pub-citation-since">Since 2020: {{ site.data.scholar.h_index.since_2020 }}</span>
+      </div>
+      <div class="pub-citation-card">
+        <span class="pub-citation-value">{{ site.data.scholar.i10_index.all }}</span>
+        <span class="pub-citation-label">i10-index</span>
+        <span class="pub-citation-since">Since 2020: {{ site.data.scholar.i10_index.since_2020 }}</span>
+      </div>
+    </div>
+
+    <!-- Yearly citation chart -->
+    <div class="pub-cite-chart" id="pub-cite-chart">
+      <div class="pub-cite-chart-bars">
+        {% assign max_cites = 0 %}
+        {% for pair in site.data.scholar.cites_per_year %}
+          {% assign c = pair[1] | plus: 0 %}
+          {% if c > max_cites %}{% assign max_cites = c %}{% endif %}
+        {% endfor %}
+        {% for pair in site.data.scholar.cites_per_year %}
+          {% assign yr = pair[0] %}
+          {% assign ct = pair[1] | plus: 0 %}
+          {% if max_cites > 0 %}
+            {% assign pct = ct | times: 100 | divided_by: max_cites %}
+          {% else %}
+            {% assign pct = 0 %}
+          {% endif %}
+          <div class="pub-cite-chart-col">
+            <span class="pub-cite-chart-count">{{ ct }}</span>
+            <div class="pub-cite-chart-bar-wrapper">
+              <div class="pub-cite-chart-bar" data-height="{{ pct }}" style="height: 0%;" title="{{ ct }} citations in {{ yr }}"></div>
+            </div>
+            <span class="pub-cite-chart-year">{{ yr }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="pub-cite-chart-label">
+      <i class="fas fa-quote-left"></i> Yearly Citations &middot; Source: <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    </div>
+  </div>
 </div>
 
 <!-- ═══════════════════════  Search  ═══════════════════════ -->
@@ -202,5 +254,17 @@ document.addEventListener('DOMContentLoaded', function() {
     item.style.transitionDelay = (i % 4) * 0.08 + 's';
     observer.observe(item);
   });
+
+  // Animate citation chart bars
+  var citeBars = document.querySelectorAll('.pub-cite-chart-bar');
+  if (citeBars.length > 0) {
+    setTimeout(function() {
+      citeBars.forEach(function(bar, idx) {
+        setTimeout(function() {
+          bar.style.height = bar.getAttribute('data-height') + '%';
+        }, idx * 60);
+      });
+    }, 400);
+  }
 });
 </script>

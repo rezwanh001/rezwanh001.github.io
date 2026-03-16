@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Fetch per-paper Google Scholar citation counts and cache them in _data/scholar_citations.yml.
+Fetch per-paper Google Scholar citation counts and profile stats,
+then cache them in _data/scholar_citations.yml and _data/scholar.yml.
 
 Usage:
     python scripts/fetch_citations.py
@@ -9,6 +10,9 @@ This script reads google_scholar_id values from _bibliography/papers.bib,
 fetches citation counts from Google Scholar, and writes them to
 _data/scholar_citations.yml so the Jekyll plugin can use cached values
 instead of live-scraping (which gets blocked on CI servers).
+
+It also scrapes profile-level statistics (total citations, h-index,
+i10-index, and yearly citation counts) and saves them to _data/scholar.yml.
 """
 
 import re
@@ -23,6 +27,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.join(SCRIPT_DIR, '..')
 BIB_FILE = os.path.join(ROOT_DIR, '_bibliography', 'papers.bib')
 CACHE_FILE = os.path.join(ROOT_DIR, '_data', 'scholar_citations.yml')
+SCHOLAR_FILE = os.path.join(ROOT_DIR, '_data', 'scholar.yml')
 SCHOLAR_USER_ID = 'HaI-oFUAAAAJ'
 
 HEADERS = {
@@ -75,6 +80,76 @@ def fetch_citation_count(user_id, article_id):
         return None
 
 
+def fetch_profile_stats(user_id):
+    """
+    Fetch profile-level Google Scholar statistics:
+    total citations, h-index, i10-index (all-time and since-2020),
+    plus yearly citation counts.
+    """
+    url = f"https://scholar.google.com/citations?user={user_id}&hl=en"
+    stats = {
+        'citations': {'all': '0', 'since_2020': '0'},
+        'h_index': {'all': '0', 'since_2020': '0'},
+        'i10_index': {'all': '0', 'since_2020': '0'},
+        'cites_per_year': {},
+    }
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, 'html.parser')
+
+        # --- Table stats (citations, h-index, i10-index) ---
+        table = soup.find('table', id='gsc_rsb_st')
+        if table:
+            rows = table.find_all('tr')
+            for row in rows:
+                cells = row.find_all('td')
+                if len(cells) >= 3:
+                    label = cells[0].get_text(strip=True).lower()
+                    val_all = cells[1].get_text(strip=True)
+                    val_recent = cells[2].get_text(strip=True)
+                    if 'citations' in label:
+                        stats['citations'] = {'all': val_all, 'since_2020': val_recent}
+                    elif 'h-index' in label:
+                        stats['h_index'] = {'all': val_all, 'since_2020': val_recent}
+                    elif 'i10-index' in label:
+                        stats['i10_index'] = {'all': val_all, 'since_2020': val_recent}
+
+        # --- Yearly citation histogram ---
+        chart_div = soup.find('div', class_='gsc_md_hist_b')
+        if chart_div:
+            years_row = soup.find('div', class_='gsc_md_hist_w')
+            if years_row:
+                year_spans = years_row.find_all('span', class_='gsc_g_t')
+                bar_spans = chart_div.find_all('a', class_='gsc_g_a')
+                years = [s.get_text(strip=True) for s in year_spans]
+                counts = []
+                for bar in bar_spans:
+                    span = bar.find('span', class_='gsc_g_al')
+                    if span:
+                        counts.append(span.get_text(strip=True))
+                    else:
+                        counts.append('0')
+                for y, c in zip(years, counts):
+                    stats['cites_per_year'][y] = c
+
+        print(f"Profile stats: citations={stats['citations']['all']}, "
+              f"h-index={stats['h_index']['all']}, "
+              f"i10-index={stats['i10_index']['all']}")
+        print(f"Yearly citations: {stats['cites_per_year']}")
+        return stats
+    except Exception as e:
+        print(f"Error fetching profile stats: {e}")
+        return stats
+
+
+def save_scholar_stats(scholar_path, stats):
+    """Save profile-level scholar stats to _data/scholar.yml."""
+    with open(scholar_path, 'w') as f:
+        yaml.dump(stats, f, default_flow_style=False, sort_keys=True)
+    print(f"Profile stats saved to {scholar_path}")
+
+
 def load_cache(cache_path):
     """Load existing cache if available."""
     if os.path.exists(cache_path):
@@ -91,6 +166,14 @@ def save_cache(cache_path, data):
 
 
 def main():
+    # --- Fetch profile-level stats ---
+    print("Fetching Google Scholar profile stats...")
+    time.sleep(random.uniform(1.0, 3.0))
+    profile_stats = fetch_profile_stats(SCHOLAR_USER_ID)
+    save_scholar_stats(SCHOLAR_FILE, profile_stats)
+    print()
+
+    # --- Fetch per-paper citation counts ---
     print(f"Reading article IDs from {BIB_FILE}...")
     article_ids = extract_article_ids(BIB_FILE)
     print(f"Found {len(article_ids)} articles with google_scholar_id.\n")

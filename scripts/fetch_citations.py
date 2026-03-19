@@ -83,14 +83,15 @@ def fetch_citation_count(user_id, article_id):
 def fetch_profile_stats(user_id):
     """
     Fetch profile-level Google Scholar statistics:
-    total citations, h-index, i10-index (all-time and since-2020),
+    total citations, h-index, i10-index (all-time and recent),
     plus yearly citation counts.
     """
     url = f"https://scholar.google.com/citations?user={user_id}&hl=en"
     stats = {
-        'citations': {'all': '0', 'since_2020': '0'},
-        'h_index': {'all': '0', 'since_2020': '0'},
-        'i10_index': {'all': '0', 'since_2020': '0'},
+        'citations': {'all': '0', 'recent': '0'},
+        'h_index': {'all': '0', 'recent': '0'},
+        'i10_index': {'all': '0', 'recent': '0'},
+        'since_year': '2021',
         'cites_per_year': {},
     }
     try:
@@ -101,6 +102,14 @@ def fetch_profile_stats(user_id):
         # --- Table stats (citations, h-index, i10-index) ---
         table = soup.find('table', id='gsc_rsb_st')
         if table:
+            # Detect the "Since XXXX" year from table header
+            header_row = table.find('tr')
+            if header_row:
+                headers = header_row.find_all('th')
+                for th in headers:
+                    year_match = re.search(r'Since\s+(\d{4})', th.get_text())
+                    if year_match:
+                        stats['since_year'] = year_match.group(1)
             rows = table.find_all('tr')
             for row in rows:
                 cells = row.find_all('td')
@@ -109,11 +118,11 @@ def fetch_profile_stats(user_id):
                     val_all = cells[1].get_text(strip=True)
                     val_recent = cells[2].get_text(strip=True)
                     if 'citations' in label:
-                        stats['citations'] = {'all': val_all, 'since_2020': val_recent}
+                        stats['citations'] = {'all': val_all, 'recent': val_recent}
                     elif 'h-index' in label:
-                        stats['h_index'] = {'all': val_all, 'since_2020': val_recent}
+                        stats['h_index'] = {'all': val_all, 'recent': val_recent}
                     elif 'i10-index' in label:
-                        stats['i10_index'] = {'all': val_all, 'since_2020': val_recent}
+                        stats['i10_index'] = {'all': val_all, 'recent': val_recent}
 
         # --- Yearly citation histogram ---
         chart_div = soup.find('div', class_='gsc_md_hist_b')

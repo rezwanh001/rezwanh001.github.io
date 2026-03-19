@@ -1,20 +1,11 @@
 citations:
-  all: '1285'
-  recent: '1197'
-cites_per_year:
-  '2018': '5'
-  '2019': '22'
-  '2020': '54'
-  '2021': '141'
-  '2022': '270'
-  '2023': '284'
-  '2024': '267'
-  '2025': '210'
-  '2026': '23'
+  all: '0'
+  recent: '0'
+cites_per_year: {}
 h_index:
-  all: '10'
-  recent: '10'
+  all: '0'
+  recent: '0'
 i10_index:
-  all: '10'
-  recent: '10'
+  all: '0'
+  recent: '0'
 since_year: '2021'

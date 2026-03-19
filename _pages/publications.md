@@ -67,17 +67,17 @@ nav_order: 2
       <div class="pub-citation-card">
         <span class="pub-citation-value">{{ site.data.scholar.citations.all }}</span>
         <span class="pub-citation-label">Citations</span>
-        <span class="pub-citation-since">Since 2020: {{ site.data.scholar.citations.since_2020 }}</span>
+        <span class="pub-citation-since">Since {{ site.data.scholar.since_year }}: {{ site.data.scholar.citations.recent }}</span>
       </div>
       <div class="pub-citation-card">
         <span class="pub-citation-value">{{ site.data.scholar.h_index.all }}</span>
         <span class="pub-citation-label">h-index</span>
-        <span class="pub-citation-since">Since 2020: {{ site.data.scholar.h_index.since_2020 }}</span>
+        <span class="pub-citation-since">Since {{ site.data.scholar.since_year }}: {{ site.data.scholar.h_index.recent }}</span>
       </div>
       <div class="pub-citation-card">
         <span class="pub-citation-value">{{ site.data.scholar.i10_index.all }}</span>
         <span class="pub-citation-label">i10-index</span>
-        <span class="pub-citation-since">Since 2020: {{ site.data.scholar.i10_index.since_2020 }}</span>
+        <span class="pub-citation-since">Since {{ site.data.scholar.since_year }}: {{ site.data.scholar.i10_index.recent }}</span>
       </div>
     </div>
 

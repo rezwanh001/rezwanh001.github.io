@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   <span class="about-subtitle-lines">
   <span>Incoming PhD Candidate</span>
-  <span><a href='https://uwaterloo.ca/electrical-computer-engineering/'>Electrical & Computer Engineering</a>, <a href='https://uwaterloo.ca/'>University of Waterloo</a></span>
+  <span><a href='https://uwaterloo.ca/electrical-computer-engineering/'>Electrical and Computer Engineering (ECE)</a>, <a href='https://uwaterloo.ca/'>University of Waterloo</a></span>
   <span>Graduate Researcher, <a href='https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/'>CPAMI Lab</a></span>
   <span>rezwan [at] uwaterloo.ca</span>
   </span>

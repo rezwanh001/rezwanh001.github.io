@@ -505,6 +505,18 @@ reading_list:
   # -----------------------------------------------------------------
   # French Literature
   # -----------------------------------------------------------------
+  - title: Les Misérables
+    author: Victor Hugo
+    published_date: 1862
+    category: French Literature
+    rating: 5
+    image: /assets/pdf/books/book_les_miserables.png
+    youtube_id: "3fd6tsqMUIw" # Placeholder for LibriVox or similar
+    gdrive_id: "1GnaqMQ5JBtWCme3Xnl9HoB0CMiXkuM4j"
+    tags: ["Historical Fiction", "Epic", "Classic Novel"]
+    summary: "After serving nineteen years for stealing a loaf of bread, Jean Valjean breaks his parole to start an honorable life, inspired by a bishop's profound act of mercy. He becomes a respected mayor and adopts the orphaned girl Cosette, but his past constantly threatens him in the form of Inspector Javert, a rigid lawman who pursues Valjean relentlessly across decades. Set against the backdrop of the 1832 Paris uprising, this monumental epic explores the enduring battle between harsh law and divine grace, and the redemptive power of love."
+    summary_bangla: "মাত্র একটি রুটি চুরির অপরাধে উনিশ বছর জেল খাটার পর জিন ভলজ্যাঁ প্যারোলে মুক্তি পায়। এক দয়ালু বিশপের ক্ষমার আদর্শে অনুপ্রাণিত হয়ে সে নিজের অতীত মুছে ফেলে এক সৎ মানুষ হিসেবে নতুন জীবন শুরু করে এবং এতিম মেয়ে কসেটকে দত্তক নেয়। কিন্তু তার অতীত তাকে তাড়া করে ফেরে, যখন কঠোর ও নীতিবাগীশ পুলিশ ইন্সপেক্টর জাভের দশকের পর দশক ধরে তাকে তাড়া করতে থাকে। ১৮৩২ সালের প্যারিস বিদ্রোহের পটভূমিতে রচিত এই মহাকাব্যিক উপন্যাসে আইন বনাম ক্ষমা, মানবতা এবং ভালোবাসার মাধ্যমে আত্মশুদ্ধির এক অবিস্মরণীয় কাহিনী ফুটে উঠেছে।"
+
   - title: The Three Musketeers
     author: Alexandre Dumas
     published_date: 1844

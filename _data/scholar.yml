@@ -1,7 +1,22 @@
 citations:
+<<<<<<< HEAD
   all: '0'
   recent: '0'
 cites_per_year: {}
+=======
+  all: '1294'
+  recent: '1206'
+cites_per_year:
+  '2018': '5'
+  '2019': '22'
+  '2020': '54'
+  '2021': '141'
+  '2022': '270'
+  '2023': '284'
+  '2024': '268'
+  '2025': '212'
+  '2026': '29'
+>>>>>>> fc234ec1 (fix: restore Google Scholar citation counts and New book: Little Women Added)
 h_index:
   all: '0'
   recent: '0'

@@ -97,6 +97,18 @@ reading_list:
     summary: "Set against the violent backdrop of the French and Indian War in 1757, the story follows the scout Hawkeye and his Mohican blood-brothers, Chingachgook and Uncas. They undertake a perilous mission to escort two British sisters, Cora and Alice Munro, through the wilderness to their father's fort. The group is relentlessly hunted by Magua, a Huron warrior seeking personal vengeance, leading to a tragic chase across the frontier that marks the twilight of the Mohican tribe."
     summary_bangla: "১৭৫৭ সালের ফরাসি ও ইন্ডিয়ান যুদ্ধের প্রেক্ষাপটে রচিত এই উপন্যাসে সীমান্তরক্ষী হকআই এবং তার দুই মোহিকান সঙ্গী, চিঙ্গাচগুক ও আনকাস-এর বীরত্বগাথা বর্ণিত হয়েছে। ব্রিটিশ কর্নেল মুনরোর দুই মেয়ে, কোরা ও অ্যালিস-কে দুর্গম অরণ্যের ভেতর দিয়ে নিরাপদে পৌঁছে দেওয়ার দায়িত্ব নেয় তারা। কিন্তু তাদের পিছু নেয় এক প্রতিহিংসাপরায়ণ হুরন যোদ্ধা মাগুয়া। এই রোমহর্ষক ধাওয়া, যুদ্ধ এবং বিয়োগান্তক পরিণতিতে মোহিকান জাতির শেষ অধ্যায় রচিত হয়।"
 
+  - title: Little Women
+    author: Louisa May Alcott
+    published_date: 1868
+    category: American Literature
+    rating: 3
+    image: /assets/pdf/books/book_little_women.png
+    youtube_id: "cUz9-xy4YwU" # Placeholder for LibriVox or similar
+    gdrive_id: "1gMhZGtTNwYrlvhL-nzSnKrEF7YiTeNnG"
+    tags:["Coming-of-Age", "Classic Novel", "Domestic Fiction"]
+    summary: "Set against the backdrop of the American Civil War, this coming-of-age classic intimately chronicles the journey of the four distinct March sisters: the responsible beauty Meg, the fiercely independent writer Jo, the tragically gentle Beth, and the ambitious artist Amy. With their father away at war and their family facing sudden poverty, they are guided by their wise mother, Marmee. The novel deeply explores their individual quests for love, artistic careers, and self-identity, showing how they navigate heartbreaking loss and rigid societal expectations to forge their own unique paths into womanhood."
+    summary_bangla: "আমেরিকান গৃহযুদ্ধের পটভূমিতে রচিত এই ধ্রুপদী উপন্যাসটি মার্চ পরিবারের চার ভিন্ন স্বভাবের বোন—দায়িত্বশীল মেগ, স্বাধীনচেতা ও উচ্চাকাঙ্ক্ষী লেখিকা জো, শান্ত ও স্নেহময়ী বেথ এবং শৈল্পিক অ্যামির শৈশব থেকে নারীত্বে পদার্পণের গল্প। বাবা যুদ্ধে থাকায় মা মার্মির আদর্শ নির্দেশনায় তারা হঠাৎ নেমে আসা দারিদ্র্য, অসুস্থতা এবং সমাজের নানা প্রতিকূলতার মোকাবিলা করে। জীবনে প্রেম, ক্যারিয়ার এবং নিজস্ব আত্মপরিচয় খোঁজার পথে তাদের স্বপ্ন, বিয়োগান্তক শোক, আত্মত্যাগ এবং অটুট পারিবারিক বন্ধনের এক হৃদয়স্পর্শী ও অনুপ্রেরণামূলক আখ্যান এই বই।"
+
   # -----------------------------------------------------------------
   # Bengali Literature
   # -----------------------------------------------------------------

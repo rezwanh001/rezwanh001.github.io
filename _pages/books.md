@@ -105,7 +105,7 @@ reading_list:
     image: /assets/pdf/books/book_little_women.png
     youtube_id: "cUz9-xy4YwU" # Placeholder for LibriVox or similar
     gdrive_id: "1gMhZGtTNwYrlvhL-nzSnKrEF7YiTeNnG"
-    tags:["Coming-of-Age", "Classic Novel", "Domestic Fiction"]
+    tags: ["Coming-of-Age", "Classic Novel", "Domestic Fiction"]
     summary: "Set against the backdrop of the American Civil War, this coming-of-age classic intimately chronicles the journey of the four distinct March sisters: the responsible beauty Meg, the fiercely independent writer Jo, the tragically gentle Beth, and the ambitious artist Amy. With their father away at war and their family facing sudden poverty, they are guided by their wise mother, Marmee. The novel deeply explores their individual quests for love, artistic careers, and self-identity, showing how they navigate heartbreaking loss and rigid societal expectations to forge their own unique paths into womanhood."
     summary_bangla: "আমেরিকান গৃহযুদ্ধের পটভূমিতে রচিত এই ধ্রুপদী উপন্যাসটি মার্চ পরিবারের চার ভিন্ন স্বভাবের বোন—দায়িত্বশীল মেগ, স্বাধীনচেতা ও উচ্চাকাঙ্ক্ষী লেখিকা জো, শান্ত ও স্নেহময়ী বেথ এবং শৈল্পিক অ্যামির শৈশব থেকে নারীত্বে পদার্পণের গল্প। বাবা যুদ্ধে থাকায় মা মার্মির আদর্শ নির্দেশনায় তারা হঠাৎ নেমে আসা দারিদ্র্য, অসুস্থতা এবং সমাজের নানা প্রতিকূলতার মোকাবিলা করে। জীবনে প্রেম, ক্যারিয়ার এবং নিজস্ব আত্মপরিচয় খোঁজার পথে তাদের স্বপ্ন, বিয়োগান্তক শোক, আত্মত্যাগ এবং অটুট পারিবারিক বন্ধনের এক হৃদয়স্পর্শী ও অনুপ্রেরণামূলক আখ্যান এই বই।"
 

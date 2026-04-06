@@ -197,6 +197,10 @@ external_sources:
     posts:
       - url: https://blog.google/technology/developers/developers-changing-lives-with-gemma-3n/
         published_date: 2025-12-30
+  - name: DeepMind Gemma-4
+    posts:
+      - url: https://deepmind.google/models/gemma/gemma-4/
+        published_date: 2026-04-05
     
 
 # -----------------------------------------------------------------------------
@@ -228,12 +232,12 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 10 # leave blank to include all the news in the `_news` folder
+  # limit: 10 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  # limit: 3 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

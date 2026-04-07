@@ -17,6 +17,9 @@ nav_order: 2
     <!-- Contributions spanning sign language recognition, multimodal depression detection,
     medical image analysis, and healthcare AI -->
   </p>
+  <p class="pub-last-updated">
+    Last updated: {{ site.time | date: "%B %-d, %Y" }}
+  </p>
   <div class="pub-hero-stats">
     <div class="pub-stat">
       <span class="pub-stat-number" id="pub-total-count">--</span>

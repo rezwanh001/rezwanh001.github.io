@@ -14,8 +14,8 @@ nav_order: 2
   </div>
   <h2 class="pub-hero-title">Research Publications</h2>
   <p class="pub-hero-subtitle">
-    Contributions spanning sign language recognition, multimodal depression detection,
-    medical image analysis, and healthcare AI
+    <!-- Contributions spanning sign language recognition, multimodal depression detection,
+    medical image analysis, and healthcare AI -->
   </p>
   <div class="pub-hero-stats">
     <div class="pub-stat">
@@ -63,52 +63,37 @@ nav_order: 2
   <!-- ─── Citation Impact Section ─── -->
   <div class="pub-citation-section">
     <h3 class="pub-citation-title"><i class="fas fa-chart-line"></i> Citation Impact</h3>
+    {% assign total_citations = 0 %}
+    {% for pair in site.data.scholar_citations %}
+      {% assign total_citations = total_citations | plus: pair[1] %}
+    {% endfor %}
+
     <div class="pub-citation-cards">
       <div class="pub-citation-card">
-        <span class="pub-citation-value">{{ site.data.scholar.citations.all }}</span>
-        <span class="pub-citation-label">Citations</span>
-        <span class="pub-citation-since">Since {{ site.data.scholar.since_year }}: {{ site.data.scholar.citations.recent }}</span>
+        <span class="pub-citation-value">{{ total_citations }}</span>
+        <span class="pub-citation-label">Total Citations</span>
+        <span class="pub-citation-since">Across publications listed on this page</span>
       </div>
       <div class="pub-citation-card">
-        <span class="pub-citation-value">{{ site.data.scholar.h_index.all }}</span>
-        <span class="pub-citation-label">h-index</span>
-        <span class="pub-citation-since">Since {{ site.data.scholar.since_year }}: {{ site.data.scholar.h_index.recent }}</span>
+        <span class="pub-citation-value">{{ site.data.scholar_citations | size }}</span>
+        <span class="pub-citation-label">Cited Papers</span>
+        <span class="pub-citation-since">Papers with citation data available</span>
       </div>
       <div class="pub-citation-card">
-        <span class="pub-citation-value">{{ site.data.scholar.i10_index.all }}</span>
-        <span class="pub-citation-label">i10-index</span>
-        <span class="pub-citation-since">Since {{ site.data.scholar.since_year }}: {{ site.data.scholar.i10_index.recent }}</span>
+        {% assign top_cited = 0 %}
+        {% for pair in site.data.scholar_citations %}
+          {% if pair[1] > top_cited %}
+            {% assign top_cited = pair[1] %}
+          {% endif %}
+        {% endfor %}
+        <span class="pub-citation-value">{{ top_cited }}</span>
+        <span class="pub-citation-label">Top Paper Citations</span>
+        <span class="pub-citation-since">Highest citation count for a listed paper</span>
       </div>
     </div>
 
-    <!-- Yearly citation chart -->
-    <div class="pub-cite-chart" id="pub-cite-chart">
-      <div class="pub-cite-chart-bars">
-        {% assign max_cites = 0 %}
-        {% for pair in site.data.scholar.cites_per_year %}
-          {% assign c = pair[1] | plus: 0 %}
-          {% if c > max_cites %}{% assign max_cites = c %}{% endif %}
-        {% endfor %}
-        {% for pair in site.data.scholar.cites_per_year %}
-          {% assign yr = pair[0] %}
-          {% assign ct = pair[1] | plus: 0 %}
-          {% if max_cites > 0 %}
-            {% assign pct = ct | times: 100 | divided_by: max_cites %}
-          {% else %}
-            {% assign pct = 0 %}
-          {% endif %}
-          <div class="pub-cite-chart-col">
-            <span class="pub-cite-chart-count">{{ ct }}</span>
-            <div class="pub-cite-chart-bar-wrapper">
-              <div class="pub-cite-chart-bar" data-height="{{ pct }}" style="height: 0%;" title="{{ ct }} citations in {{ yr }}"></div>
-            </div>
-            <span class="pub-cite-chart-year">{{ yr }}</span>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
     <div class="pub-cite-chart-label">
-      <i class="fas fa-quote-left"></i> Yearly Citations &middot; Source: <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <i class="fas fa-quote-left"></i> Citation counts shown per paper below &middot; Source: <a href="https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en" target="_blank">Google Scholar</a>
     </div>
   </div>
 </div>

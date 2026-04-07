@@ -32,6 +32,26 @@ layout: default
           <div class="contact-icons">{% include social.liquid %}</div>
         </div>
       {% endif %}
+
+      {% assign scholar_stats = site.data.scholar %}
+      {% if page.citation and scholar_stats and scholar_stats.citations %}
+        <div class="about-header-citations">
+          <a
+            href="https://scholar.google.com/citations?user={{ site.scholar_userid | default: site.data.socials.scholar_userid }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Google Scholar citation metrics"
+          >
+            <img
+              src="https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Frezwanh001%2Frezwanh001.github.io%2Fmaster%2F_data%2Fscholar.yml&query=citations.all&label=Google%20Scholar%20Citations&color=4285F4&logo=googlescholar&logoColor=white"
+              alt="Google Scholar Citations: {{ scholar_stats.citations.all }}"
+            >
+          </a>
+          <span class="about-header-citation-summary">
+            h-index {{ scholar_stats.h_index.all }} · i10-index {{ scholar_stats.i10_index.all }}
+          </span>
+        </div>
+      {% endif %}
     </div>
   </header>
 

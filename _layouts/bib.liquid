@@ -184,6 +184,18 @@
 
     <!-- Links/Buttons -->
     <div class="links">
+      {% if entry.google_scholar_id and site.data.scholar_citations[entry.google_scholar_id] != nil %}
+        <a
+          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+          class="btn btn-sm z-depth-0 btn-citations"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Google Scholar citations for {{ entry.title }}"
+        >
+          <i class="ai ai-google-scholar"></i> Cited by {{ site.data.scholar_citations[entry.google_scholar_id] }}
+        </a>
+      {% endif %}
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
           <i class="fas fa-trophy"></i> {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}

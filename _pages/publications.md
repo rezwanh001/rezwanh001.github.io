@@ -67,8 +67,12 @@ nav_order: 2
   <div class="pub-citation-section">
     <h3 class="pub-citation-title"><i class="fas fa-chart-line"></i> Citation Impact</h3>
     {% assign total_citations = 0 %}
+    {% assign highly_cited_papers = 0 %}
     {% for pair in site.data.scholar_citations %}
       {% assign total_citations = total_citations | plus: pair[1] %}
+      {% if pair[1] >= 100 %}
+        {% assign highly_cited_papers = highly_cited_papers | plus: 1 %}
+      {% endif %}
     {% endfor %}
 
     <div class="pub-citation-cards">
@@ -81,6 +85,11 @@ nav_order: 2
         <span class="pub-citation-value">{{ site.data.scholar_citations | size }}</span>
         <span class="pub-citation-label">Cited Papers</span>
         <span class="pub-citation-since">Papers with citation data available</span>
+      </div>
+      <div class="pub-citation-card pub-citation-card-highlight">
+        <span class="pub-citation-value">{{ highly_cited_papers }}</span>
+        <span class="pub-citation-label">100+ Citation Papers</span>
+        <span class="pub-citation-since">Marked with a star badge in the list below</span>
       </div>
       <div class="pub-citation-card">
         {% assign top_cited = 0 %}

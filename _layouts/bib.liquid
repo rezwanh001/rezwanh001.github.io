@@ -46,8 +46,20 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+    {% assign entry_citation_count = site.data.scholar_citations[entry.google_scholar_id] | default: 0 %}
+    {% assign entry_is_highly_cited = false %}
+    {% if entry_citation_count >= 100 %}
+      {% assign entry_is_highly_cited = true %}
+    {% endif %}
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title-row">
+      <div class="title">{{ entry.title }}</div>
+      {% if entry_is_highly_cited %}
+        <span class="pub-impact-badge" aria-label="This paper has 100 or more Google Scholar citations">
+          <i class="fas fa-star"></i> 100+ citations
+        </span>
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -191,7 +203,7 @@
           role="button"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Google Scholar citations for {{ entry.title }}"
+          aria-label="Google Scholar citations for {{ entry.title | escape_once }}"
         >
           <i class="ai ai-google-scholar"></i> Cited by {{ site.data.scholar_citations[entry.google_scholar_id] }}
         </a>

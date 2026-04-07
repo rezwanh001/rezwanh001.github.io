@@ -1454,6 +1454,15 @@ footer.sticky-bottom {
   }
 }
 
+.pub-citation-card-highlight {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.22);
+
+  .pub-citation-value {
+    color: #d97706;
+  }
+}
+
 .pub-citation-value {
   font-size: 2rem;
   font-weight: 800;
@@ -1792,6 +1801,39 @@ footer.sticky-bottom {
         line-height: 1.45;
         color: var(--global-text-color);
         margin-bottom: 0.15rem;
+      }
+
+      .title-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-bottom: 0.15rem;
+      }
+
+      .title-row .title {
+        flex: 1 1 320px;
+      }
+
+      .pub-impact-badge {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        padding: 0.22rem 0.65rem;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #8a5a00;
+        background: rgba(245, 158, 11, 0.14);
+        border: 1px solid rgba(245, 158, 11, 0.35);
+
+        i {
+          color: #d97706;
+        }
       }
 
       .author {

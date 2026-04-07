@@ -34,6 +34,15 @@ layout: default
       {% endif %}
 
       {% assign scholar_stats = site.data.scholar %}
+      {% assign scholar_citation_map = site.data.scholar_citations %}
+      {% assign highly_cited_papers = 0 %}
+      {% if scholar_citation_map %}
+        {% for citation_entry in scholar_citation_map %}
+          {% if citation_entry[1] >= 100 %}
+            {% assign highly_cited_papers = highly_cited_papers | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
       {% if page.citation and scholar_stats and scholar_stats.citations %}
         <div class="about-header-citations">
           <a
@@ -48,7 +57,7 @@ layout: default
             >
           </a>
           <span class="about-header-citation-summary">
-            h-index {{ scholar_stats.h_index.all }} · i10-index {{ scholar_stats.i10_index.all }}
+            h-index {{ scholar_stats.h_index.all }} · i10-index {{ scholar_stats.i10_index.all }} · {{ highly_cited_papers }} papers with 100+ citations
           </span>
         </div>
       {% endif %}

@@ -529,6 +529,18 @@ reading_list:
   # -----------------------------------------------------------------
   # French Literature
   # -----------------------------------------------------------------
+  - title: The Necklace
+    author: Guy de Maupassant
+    published_date: 1884
+    category: French Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_necklace.jpg
+    youtube_id: "jNPmiqsX_P0" # Placeholder for Audio Story
+    gdrive_id: "1DBw4n0ZQinQQI75-LPx4lCqUcC_xaAEj"
+    tags: ["Short Story", "Realism", "Irony"]
+    summary: "Mathilde Loisel, a beautiful but middle-class woman dissatisfied with her modest life, borrows a dazzling diamond necklace from a wealthy friend to wear to a high-society ball. When she loses the precious piece of jewelry on her way home, she and her husband secretly borrow heavily to buy a replacement, plunging themselves into ten years of grueling poverty and crushing labor. The story concludes with a legendary, devastating twist when a hardened, aged Mathilde finally confesses the truth to her friend, only to discover the cruel reality of her lifelong sacrifice."
+    summary_bangla: "মধ্যবিত্ত জীবনের সাধারণ ছকে বন্দী, উচ্চাকাঙ্ক্ষী ও সুন্দরী মাটিল্ডা লোইসেল এক অভিজাত পার্টিতে যাওয়ার জন্য তার ধনী বান্ধবীর কাছ থেকে একটি হীরার হার ধার করে। কিন্তু ফেরার পথে সেই মহামূল্যবান হারটি হারিয়ে গেলে, স্বামীসহ সে বিশাল ঋণের জালে জড়িয়ে পড়ে একটি নতুন হার কিনে ফেরত দেয়। সেই ঋণ শোধ করতে গিয়ে তাদের জীবনের দশটি বছর চরম দারিদ্র্য ও অমানুষিক পরিশ্রমে কেটে যায়। গল্পের শেষে এক অপ্রত্যাশিত ও মর্মান্তিক সত্য উন্মোচিত হয়, যখন বয়স্ক ও জীর্ণ মাটিল্ডা তার বান্ধবীর কাছে সত্যটি স্বীকার করে এবং জানতে পারে তার অসীম আত্মত্যাগের নিষ্ঠুর বাস্তবতা।"
+
   - title: Les Misérables
     author: Victor Hugo
     published_date: 1862

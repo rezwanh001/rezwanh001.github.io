@@ -250,6 +250,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: Frankenstein
+    author: Mary Shelley
+    published_date: 1818
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_frankenstein.webp
+    youtube_id: "r3cEA2mnAKc" # Placeholder for LibriVox Full Audiobook
+    gdrive_id: "1iovu9vbLXxT6Y3X-jRmsMxOD9giHRmtx"
+    tags: ["Science Fiction", "Gothic Fiction", "Classic Novel"]
+    summary: "This groundbreaking novel tells the tragic story of Victor Frankenstein, a brilliant but arrogant young scientist who unlocks the secret of life. He stitches together a creature from graveyard body parts and animates it, only to recoil in absolute horror at its monstrous appearance and abandon it to fend for itself. Rejected by his creator and violently alienated by human society, the intelligent and deeply lonely creature is driven to despair and vows a ruthless, calculated revenge against Victor and everyone he loves, exploring profound themes of scientific responsibility and the devastating consequences of playing God."
+    summary_bangla: "বিজ্ঞান কল্পকাহিনীর এই অমর ধ্রুপদী উপন্যাসে ভিক্টর ফ্রাঙ্কেনস্টাইন নামের এক উচ্চাকাঙ্ক্ষী ও অহংকারী বিজ্ঞানীর মর্মান্তিক পরিণতি তুলে ধরা হয়েছে। সে মৃতদেহের খণ্ডিত অংশ জোড়া দিয়ে এক কৃত্রিম প্রাণীর জন্ম দেয়, কিন্তু তার বীভৎস রূপ দেখে ভয়ে তাকে পরিত্যাগ করে পালিয়ে যায়। নিজের স্রষ্টা এবং সমাজের কাছে বারবার প্রত্যাখ্যাত হয়ে এই অত্যন্ত বুদ্ধিমান অথচ নিঃসঙ্গ প্রাণীটি চরম হতাশায় ডুবে যায় এবং ভয়ংকর প্রতিশোধের নেশায় মত্ত হয়। এটি বৈজ্ঞানিক আবিষ্কারের দায়বদ্ধতা, প্রকৃতির নিয়ম ভাঙার পরিণতি এবং একাকিত্ব ও সহানুভূতির অভাব কীভাবে ধ্বংস ডেকে আনে, তার এক গভীর মনস্তাত্ত্বিক বিশ্লেষণ।"
+
   - title: Great Expectations
     author: Charles Dickens
     published_date: 1861

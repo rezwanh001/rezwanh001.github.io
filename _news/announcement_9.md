@@ -2,48 +2,13 @@
 layout: post
 title: MASc Seminar: Audio-Visual Feature Fusion through Transformers for Automated Depression Screening in Social Media Content
 date: 2026-04-10 10:00:00-0400
-inline: false
+inline: true
 related_posts: false
 ---
 
-<h3>Department of Electrical and Computer Engineering, University of Waterloo</h3>
-
-<div class="post">
-<article>
-
-<div class="card mt-3">
-  <div class="p-3">
-    <p>
-      I am pleased to announce my <strong>MASc seminar</strong> in the Department of Electrical and Computer Engineering at the University of Waterloo. This seminar marks an important stage in my graduate research journey and presents the central contributions of my MASc thesis.
-    </p>
-
-    <p>
-      <strong>Seminar Title:</strong> Audio-Visual Feature Fusion through Transformers for Automated Depression Screening in Social Media Content<br>
-      <strong>Candidate:</strong> Md Rezwanul Haque<br>
-      <strong>Date:</strong> Thursday, April 16, 2026<br>
-      <strong>Time:</strong> 11:00 AM to 12:00 PM EDT<br>
-      <strong>Location:</strong> Online<br>
-      <strong>Supervisor:</strong> Prof. Fakhri Karray<br>
-      <strong>Co-Supervisor:</strong> Prof. Pin-Han Ho
-    </p>
-
-    <p>
-      The seminar examines transformer-based methods for multimodal depression screening from social media video content, with particular emphasis on the fusion of acoustic and visual representations. The thesis is organized around two complementary contributions: <strong>MDD-Net</strong>, which introduces a mutual-transformer-based fusion framework, and <strong>MMFformer</strong>, which investigates multiple transformer-based fusion strategies for modeling audiovisual signals.
-    </p>
-
-    <p>
-      Both approaches are evaluated on the <strong>D-Vlog</strong> and <strong>LMVD</strong> datasets and demonstrate strong improvements over previously reported methods, while also highlighting encouraging cross-corpus generalization. Together, these studies contribute to the growing body of research on multimodal machine learning for mental health assessment.
-    </p>
-
-    <p>
-      All are welcome to attend.
-    </p>
-
-    <p>
-      <strong>Official Event Page:</strong>
-      <a href="https://uwaterloo.ca/electrical-computer-engineering/events/masc-seminar-audio-visual-feature-fusion-through" target="_blank" rel="noopener noreferrer">University of Waterloo ECE Seminar Listing</a>
-    </p>
-  </div>
-</div>
-</article>
-</div>
+<span class="news-highlight-tag">MASc Seminar</span>
+<strong class="news-feature-title">Audio-Visual Feature Fusion through Transformers for Automated Depression Screening in Social Media Content</strong><br>
+<span class="news-feature-meta">University of Waterloo, Department of Electrical and Computer Engineering · Thursday, April 16, 2026 · 11:00 AM to 12:00 PM EDT · Online</span><br>
+I will be presenting my MASc seminar on multimodal transformer-based methods for automated depression screening from social media video content, covering the thesis contributions behind <strong>MDD-Net</strong> and <strong>MMFformer</strong>. All are welcome.
+<br>
+<a class="news-feature-link" href="https://uwaterloo.ca/electrical-computer-engineering/events/masc-seminar-audio-visual-feature-fusion-through" target="_blank" rel="noopener noreferrer">View the official seminar announcement</a>

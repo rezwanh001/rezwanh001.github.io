@@ -74,7 +74,17 @@ def fetch_citation_count(user_id, article_id):
             if match:
                 return int(match.group(1).replace(',', ''))
 
-        return 0
+        # If the article page itself loaded, zero citations can be a valid result.
+        page_has_article = (
+            soup.find(id='gsc_oci_title') is not None
+            or soup.find('div', id='gsc_oci_view_content') is not None
+            or 'citation_for_view' in resp.url
+        )
+        if page_has_article:
+            return 0
+
+        print(f"  Scholar article page for {article_id} did not contain citation markup; likely blocked.")
+        return None
     except Exception as e:
         print(f"  Error fetching {article_id}: {e}")
         return None
@@ -142,6 +152,20 @@ def fetch_profile_stats(user_id):
                 for y, c in zip(years, counts):
                     stats['cites_per_year'][y] = c
 
+        has_summary = any(
+            stats[key]['all'] != '0' or stats[key]['recent'] != '0'
+            for key in ('citations', 'h_index', 'i10_index')
+        )
+        has_histogram = len(stats['cites_per_year']) > 0
+
+        if not table and not chart_div:
+            print("Profile stats page did not contain Scholar stats markup; likely blocked.")
+            return None
+
+        if not has_summary and not has_histogram:
+            print("Profile stats fetch returned empty values; keeping existing cached stats.")
+            return None
+
         print(f"Profile stats: citations={stats['citations']['all']}, "
               f"h-index={stats['h_index']['all']}, "
               f"i10-index={stats['i10_index']['all']}")
@@ -149,7 +173,7 @@ def fetch_profile_stats(user_id):
         return stats
     except Exception as e:
         print(f"Error fetching profile stats: {e}")
-        return stats
+        return None
 
 
 def save_scholar_stats(scholar_path, stats):
@@ -168,6 +192,14 @@ def load_cache(cache_path):
     return {}
 
 
+def load_yaml_file(path):
+    """Load a YAML file if present; otherwise return an empty dict."""
+    if os.path.exists(path):
+        with open(path, 'r') as f:
+            return yaml.safe_load(f) or {}
+    return {}
+
+
 def save_cache(cache_path, data):
     """Save citation cache to YAML file."""
     with open(cache_path, 'w') as f:
@@ -178,7 +210,11 @@ def main():
     # --- Fetch profile-level stats ---
     print("Fetching Google Scholar profile stats...")
     time.sleep(random.uniform(1.0, 3.0))
+    existing_profile_stats = load_yaml_file(SCHOLAR_FILE)
     profile_stats = fetch_profile_stats(SCHOLAR_USER_ID)
+    if profile_stats is None:
+        profile_stats = existing_profile_stats
+        print("Keeping existing cached profile stats.")
     save_scholar_stats(SCHOLAR_FILE, profile_stats)
     print()
 

@@ -1151,7 +1151,7 @@ mark.search-highlight {
               <p class="book-author search-target">{{ book.author }}</p>
 
               <!-- Hidden Metadata for Search -->
-              <div class="d-none search-metadata">{{ book.tags | join: " " }} {{ book.category }} {{ book.rating }} {{ book.published_date }}</div>
+              <div class="d-none search-metadata">{{ book.title }} {{ book.author }} {{ book.tags | join: " " }} {{ book.category }} {{ book.rating }} {{ book.published_date }} {{ book.summary }} {{ book.summary_bangla }}</div>
 
               <div class="book-tags">
                 {% for tag in book.tags %}
@@ -1159,8 +1159,8 @@ mark.search-highlight {
                 {% endfor %}
               </div>
 
-              <div class="book-summary-text search-target">
-                {{ book.summary }}
+              <div class="book-summary-text">
+                <span class="search-target">{{ book.summary }}</span>
                 {% if book.summary_bangla and book.summary_bangla != "" %}
                   <div class="book-bangla search-target">{{ book.summary_bangla }}</div>
                 {% endif %}
@@ -1323,7 +1323,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     books.forEach(function(book) {
       var fullText = "";
-      book.querySelectorAll(".search-target").forEach(function(el) { fullText += el.textContent + " "; });
       var meta = book.querySelector(".search-metadata");
       if (meta) fullText += meta.textContent + " ";
       fullText = fullText.toLowerCase();
@@ -1350,7 +1349,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var timeoutId;
   if (searchInput) {
-    searchInput.addEventListener("keyup", function() {
+    searchInput.addEventListener("input", function() {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(performSearch, 250);
     });

@@ -223,6 +223,18 @@ reading_list:
   # -----------------------------------------------------------------
   # British Literature
   # -----------------------------------------------------------------
+  - title: Rain
+    author: W. Somerset Maugham
+    published_date: 1921
+    category: British Literature
+    rating: 4
+    image: /assets/pdf/books/book_rain.jpg
+    youtube_id: "l92egHU2TeA" # Placeholder for Audio Story
+    gdrive_id: "1sg8zaQbHuGOvrtMbDC8iR9QkpFcjTMeo"
+    tags: ["Short Story", "Psychological Drama", "Classic"]
+    summary: "Set on the tropical island of Pago Pago during a disease quarantine, the story centers on the intense clash between a zealous, rigid missionary, Mr. Davidson, and a defiant, fleeing prostitute named Sadie Thompson. As the relentless rain pours down, Davidson becomes obsessively determined to save her soul, subjecting her to grueling psychological pressure until she breaks and repents. The narrative culminates in a shocking, tragic twist that exposes the dark hypocrisy of Davidson's self-righteous crusade and the fragile, destructive nature of repressed human desires."
+    summary_bangla: "প্যাগো প্যাগো দ্বীপে মহামারীর কারণে আটকে পড়া কয়েকজন যাত্রীর গল্প, যেখানে কট্টর ধর্মযাজক মিস্টার ডেভিডসন এবং পতিতা স্যাডি থম্পসনের মধ্যে এক তীব্র মনস্তাত্ত্বিক সংঘাত শুরু হয়। একটানা বৃষ্টির বিষণ্ণ পরিবেশে ডেভিডসন স্যাডিকে পাপের পথ থেকে ফিরিয়ে আনতে মরিয়া হয়ে ওঠেন এবং তীব্র মানসিক চাপ সৃষ্টি করে তাকে অনুতপ্ত হতে বাধ্য করেন। কিন্তু গল্পের শেষে এক ভয়ংকর সত্য উন্মোচিত হয়, যখন ডেভিডসনের নিজের অবদমিত প্রবৃত্তি তার সমস্ত নৈতিক অহংকারকে ধ্বংস করে দেয় এবং ধর্মীয় ভণ্ডামির চরম রূপ প্রকাশ পায়।"
+
   - title: Treasure Island
     author: Robert Louis Stevenson
     published_date: 1883

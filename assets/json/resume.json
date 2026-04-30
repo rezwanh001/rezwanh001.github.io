@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Md Rezwanul Haque",
-    "label": "PhD Candidate · AI Researcher",
+    "label": "PhD Student · AI Researcher",
     "image": "",
     "email": "",
     "phone": "",
     "url": "https://rezwanh001.github.io/",
-    "summary": "Incoming PhD candidate in Electrical and Computer Engineering at the University of Waterloo, researching multimodal machine learning, large language models, and agentic AI systems at the CPAMI Lab.",
+    "summary": "A PhD student in Electrical and Computer Engineering at the University of Waterloo, researching multimodal machine learning, large language models, and agentic AI systems at the CPAMI Lab.",
     "location": {
       "city": "Waterloo",
       "region": "Ontario",

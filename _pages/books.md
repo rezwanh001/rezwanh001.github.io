@@ -262,6 +262,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: As You Like It
+    author: William Shakespeare
+    published_date: "c. 1599"
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_as_you_like_it.jpg
+    youtube_id: "BeEOvAZAasQ" # Placeholder for LibriVox Full Audiobook
+    gdrive_id: "14Jz1hxxHRFELmP9POHQ9mE0xR3t0VKTV"
+    tags: ["Play", "Comedy", "Pastoral"]
+    summary: "Fleeing the oppressive persecution of her tyrannical uncle at the royal court, the witty and resourceful Rosalind escapes into the idyllic, liberating Forest of Arden, disguised as a young male shepherd named Ganymede. Accompanied by her devoted cousin Celia and the court jester Touchstone, she is soon followed by her passionately lovestruck but naive suitor, Orlando. Amidst the pastoral beauty of the forest, Rosalind uses her clever disguise to playfully school Orlando in the true art of courtship, while a colorful cast of exiled nobles, rustic shepherds, and the deeply melancholic Jaques philosophize on the stages of human life. Culminating in a joyous quadruple wedding, this beloved comedy brilliantly contrasts the corruption of politics with the restorative power of nature, celebrating the profound absurdities of romantic love and the fluidity of human identity."
+    summary_bangla: "স্বৈরাচারী চাচার রোষানলে পড়ে রাজপ্রাসাদ থেকে পালিয়ে রোজালিন্ড 'গ্যানিমিড' নামের এক মেষপালক ছেলের ছদ্মবেশে আর্ডেন নামক এক মায়াবী জঙ্গলে আশ্রয় নেয়। তার এই পালানোর সঙ্গী হয় বিশ্বস্ত চাচাতো বোন সিলিয়া এবং রাজদরবারের বিদূষক টাচস্টোন। ঘটনাক্রমে তার নির্বাসিত পিতা এবং প্রেমিক অরল্যান্ডোও সেই একই জঙ্গলে এসে উপস্থিত হয়। জঙ্গলের এই প্রশান্ত পরিবেশে রোজালিন্ড তার পুরুষ ছদ্মবেশের সুযোগ নিয়ে অরল্যান্ডোকে প্রেমের আসল পাঠ শেখাতে শুরু করে। অন্যদিকে বিষণ্ণ জ্যাকুইস এবং অন্যান্য গ্রামীণ চরিত্রের মাধ্যমে মানুষের জীবনের বিভিন্ন পর্যায়ের দার্শনিক তত্ত্ব উঠে আসে। অবশেষে চারটি যুগলের আনন্দঘন বিবাহের মাধ্যমে নাটকটি সমাপ্ত হয়। প্রেম, ছদ্মবেশ এবং রাজদরবারের দুর্নীতির বিপরীতে প্রকৃতির অবারিত স্বাধীনতার এক অপূর্ব ও আনন্দঘন চিত্র এই বিখ্যাত কমেডি নাটকে নিখুঁতভাবে ফুটে উঠেছে।"
+
   - title: Frankenstein
     author: Mary Shelley
     published_date: 1818

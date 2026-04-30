@@ -6,6 +6,7 @@ _site
 .DS_store
 .ruby-version
 .tweet-cache
+.codex
 Gemfile.lock
 assets/libs/
 assets/pdf/books/*.pdf
@@ -13,6 +14,9 @@ assets/pdf/books/*.mp3
 node_modules/
 assets/pdf/books.md
 assets/pdf/books (copy).md
+assets/pdf/_New_CV_Rezwan.pdf
+assets/pdf/Updated_CV_Rezwan.pdf
+assets/pdf/Resume_Rezwan.pdf
 Old__README.md
 vendor
 .idea*.mp3

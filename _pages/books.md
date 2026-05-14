@@ -13,6 +13,18 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
+  - title: The Old Man and the Sea
+    author: Ernest Hemingway
+    published_date: 1952
+    category: American Literature
+    rating: 4 
+    image: /assets/pdf/books/book_the_old_man_and_the_sea.jpg
+    youtube_id: "DEvjCtoB9go" # Placeholder for Audiobook
+    gdrive_id: "19KH6xJscIPDGLpA4yDUiGmhPn7lcWwo2"
+    tags: ["Novella", "Classic Novel", "Adventure"]
+    summary: "Set in the Gulf Stream off the coast of Cuba, this poignant novella tells the epic story of Santiago, an aging and impoverished fisherman who has gone eighty-four days without catching a single fish. Driven by an unyielding spirit, he ventures far out into the deep ocean and hooks a gigantic, majestic marlin. What follows is a grueling, agonizing three-day battle of endurance and mutual respect between man and nature. Though he finally conquers the great fish, Santiago faces a heartbreaking journey back to shore as relentless sharks attack his prize, leaving him to return with only a skeleton, yet proving the profound truth that a man can be destroyed but not defeated."
+    summary_bangla: "কিউবার উপসাগরীয় স্রোতের পটভূমিতে রচিত এই কালজয়ী উপন্যাসে সান্তিয়াগো নামের এক বৃদ্ধ ও নিঃস্ব জেলের অদম্য লড়াইয়ের গল্প বলা হয়েছে। টানা চুরাশি দিন কোনো মাছ না পেয়ে সে গভীর সমুদ্রে পাড়ি জমায় এবং তার বড়শিতে আটকা পড়ে এক বিশাল ও রাজকীয় মার্লিন মাছ। এরপর শুরু হয় মানুষ এবং প্রকৃতির মধ্যে টিকে থাকার এক টানা তিন দিনের ভয়ংকর ও ক্লান্তিকর যুদ্ধ। অসীম ধৈর্য ও সাহসের সাথে বৃদ্ধ মাছটিকে শিকার করলেও, ফেরার পথে হাঙরের দল তার শিকারকে আক্রমণ করে। তীরে ফেরার পর মাছটির কেবল কঙ্কালই অবশিষ্ট থাকে, কিন্তু এই মহাকাব্যিক আখ্যান প্রমাণ করে যে মানুষ ধ্বংস হতে পারে, কিন্তু কখনো পরাজিত হয় না।"
+
   - title: The Gift of the Magi
     author: O. Henry
     published_date: 1905

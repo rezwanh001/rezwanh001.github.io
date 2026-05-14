@@ -76,7 +76,8 @@
       "score": "",
       "courses": [
         "📝 Thesis: \u201cAudio-Visual Feature Fusion through Transformers for Automated Depression Screening in Social Media Content.\u201d",
-        "👨\u200d🔬 Supervisor(s): Prof. Fakhri Karray & Prof. Pin-Han Ho"
+        "👨\u200d🔬 Supervisor(s): Prof. Fakhri Karray & Prof. Pin-Han Ho",
+        "Link: https://uwspace.uwaterloo.ca/items/27dcb916-d81b-47ab-9ea7-676c054ef194"
       ]
     },
     {
@@ -167,6 +168,12 @@
     }
   ],
   "publications": [
+    {
+      "name": "CAST: Channel-Aware Spatial Transfer Learning with Pseudo-Image Radar for Sign Language Recognition",
+      "publisher": "In the Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026",
+      "releaseDate": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08663"
+    },
     {
       "name": "A Signer-Invariant Conformer and Multi-Scale Fusion Transformer for Continuous Sign Language Recognition",
       "publisher": "In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2025",

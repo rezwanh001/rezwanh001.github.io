@@ -13,6 +13,18 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
+  - title: "The Turn of the Screw"
+    author: Henry James
+    published_date: 1898
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_turn_of_the_screw.jpg
+    youtube_id: "_DfevxLLUC4" # Copyrighted or custom audio
+    gdrive_id: "1r1hcDI-nY40xUZi4M1BS2UzD8ObnHRkL"
+    tags: ["Gothic Fiction", "Psychological Horror", "Novella"]
+    summary: "This chilling gothic novella follows a young, unnamed governess hired to care for two orphaned children, Miles and Flora, at a remote English country estate called Bly. Soon after her arrival, she begins to see the spectral figures of two deceased former employees: the sinister valet Peter Quint and her predecessor, Miss Jessel. Believing these ghosts are malevolent entities seeking to corrupt the children, the governess desperately tries to protect them. The narrative is a psychological masterpiece, leaving the reader with the disturbing ambiguity of whether the spirits are real or merely the delusions of her own unraveling sanity."
+    summary_bangla: "এক নির্জন ইংরেজ প্রাসাদে মাইলস এবং ফ্লোরা নামের দুই এতিম শিশুর দেখাশোনার দায়িত্ব নেয় এক তরুণী গৃহশিক্ষিকা। প্রাসাদে আসার কিছুদিন পর থেকেই সে সেখানে দুজন মৃত প্রাক্তন কর্মচারীর প্রেতাত্মা ঘুরে বেড়াতে দেখে—যাদের একজন পাপাচারী পিটার কুইন্ট এবং অন্যজন তার পূর্বসূরি মিস জেসেল। গভর্নেসের ধারণা হয় যে এই অশরীরী আত্মাগুলো নিষ্পাপ শিশুদের গ্রাস করতে চায়, এবং সে তাদের বাঁচানোর জন্য মরিয়া হয়ে ওঠে। এই মনস্তাত্ত্বিক হরর গল্পটির প্রধান বৈশিষ্ট্য হলো এর রহস্যময় অস্পষ্টতা, যা পাঠককে ভাবিয়ে তোলে যে ভূতগুলো কি সত্যিই বাস্তব নাকি গভর্নেসের মানসিক বিকারের ফসল।"
+
   - title: The Old Man and the Sea
     author: Ernest Hemingway
     published_date: 1952

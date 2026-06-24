@@ -17,8 +17,8 @@ related_posts: false
     <em>✅ July 2025</em><br><br>
     I'm thrilled to share that two of our papers have been <strong>accepted</strong> for presentation at <a href="https://iccv.thecvf.com/" target="_blank">IEEE/ICCV 2025 </a> (<a href="https://multimodal-sign-language-recognition.github.io/ICCV-2025/" target="_blank">MSLR 2025</a>), which will be held in <strong>Honolulu, Hawai'i, USA</strong> from <strong>October 19 – 23, 2025</strong>. 🎉<br><br>
     <div style="margin-bottom: 20px;">
-        <a href="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" target="_blank">
-            <img src="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" alt="Acceptance Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
+        <a href="#" data-toggle="modal" data-target="#announcement-4-image-modal-1">
+            <img src="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" alt="Acceptance Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
         <strong>(1) <a href="https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Islam_FusionEnsemble-Net_An_Attention-Based_Ensemble_of_Spatiotemporal_Networks_for_Multimodal_Sign_ICCVW_2025_paper.html" target="_blank">FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition</a></strong><br>
         (Paper ID: 11)<br><br>
@@ -35,4 +35,15 @@ related_posts: false
   </div>
 </div>
 </article>
+</div>
+
+<div class="modal fade" id="announcement-4-image-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content" style="background: transparent; border: 0; box-shadow: none;">
+      <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; opacity: 1;">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="https://rezwanh001.github.io/assets/img/mslr_ICCV-2025.png" alt="Acceptance Notification!" style="width: 100%; height: auto; border-radius: 6px;">
+    </div>
+  </div>
 </div>

@@ -16,8 +16,8 @@ related_posts: false
     <strong>🎉 Paper Accepted at IJCNN 2025</strong><br>
     <em>✅ March 2025</em><br><br>
     <div style="margin-bottom: 20px;">
-        <a href="https://rezwanh001.github.io/assets/img/GNN-ViTCap_5245.png" target="_blank">
-            <img src="https://rezwanh001.github.io/assets/img/GNN-ViTCap_5245.png" alt="IJCNN 2025 Acceptance for GNN-ViTCap" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px;">
+        <a href="#" data-toggle="modal" data-target="#announcement-2-image-modal-1">
+            <img src="https://rezwanh001.github.io/assets/img/GNN-ViTCap_5245.png" alt="IJCNN 2025 Acceptance for GNN-ViTCap" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
         I'm thrilled to share that our paper, titled:<br>
         <strong><a href="https://arxiv.org/abs/2507.07006" target="_blank">GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning</a> </strong> (Paper ID: 5245),
@@ -36,4 +36,15 @@ related_posts: false
 </div>
 
 </article>
+</div>
+
+<div class="modal fade" id="announcement-2-image-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content" style="background: transparent; border: 0; box-shadow: none;">
+      <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; opacity: 1;">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="https://rezwanh001.github.io/assets/img/GNN-ViTCap_5245.png" alt="IJCNN 2025 Acceptance for GNN-ViTCap" style="width: 100%; height: auto; border-radius: 6px;">
+    </div>
+  </div>
 </div>

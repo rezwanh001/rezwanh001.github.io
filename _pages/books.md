@@ -910,6 +910,15 @@ reading_list:
   object-fit: cover;
   transition: transform 0.6s ease;
 }
+.cover-zoom-trigger {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
 .book-card:hover .book-cover img {
   transform: scale(1.05);
 }
@@ -1171,7 +1180,9 @@ mark.search-highlight {
           <div class="book-card">
             <!-- Cover -->
             <div class="book-cover">
-              <img src="{{ book.image | relative_url }}" loading="lazy" alt="{{ book.title }} cover">
+              <button type="button" class="cover-zoom-trigger" data-cover-title="{{ book.title | escape }}" data-cover-src="{{ book.image | relative_url }}" onclick="openCoverFromButton(this)" aria-label="View {{ book.title | escape }} cover">
+                <img src="{{ book.image | relative_url }}" loading="lazy" alt="{{ book.title }} cover">
+              </button>
               <div class="cover-overlay"></div>
               <div class="cover-rating">
                 {% for i in (1..5) %}
@@ -1256,6 +1267,17 @@ mark.search-highlight {
   </div>
 </div>
 
+<div class="modal fade" id="sharedCoverModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content" style="background: transparent; border: 0; box-shadow: none;">
+      <button type="button" class="close text-white ml-auto mr-2 mt-2" onclick="closeModal('sharedCoverModal')" aria-label="Close" style="font-size: 2rem; opacity: 1;">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img id="sharedCoverImage" src="" alt="" style="width: 100%; max-height: 88vh; object-fit: contain; border-radius: 6px;">
+    </div>
+  </div>
+</div>
+
 <!-- ═══ Scripts ═══ -->
 <script>
 /* ── Modal Functions ────────────────────────────────────────────── */
@@ -1269,10 +1291,19 @@ function openPDF(title, driveId) {
   document.getElementById('sharedPDFIframe').src = "https://drive.google.com/file/d/" + driveId + "/preview";
   $('#sharedPDFModal').modal('show');
 }
+function openCoverFromButton(button) {
+  var title = button.getAttribute('data-cover-title') || 'Book cover';
+  var src = button.getAttribute('data-cover-src') || '';
+  var image = document.getElementById('sharedCoverImage');
+  image.src = src;
+  image.alt = title + ' cover';
+  $('#sharedCoverModal').modal('show');
+}
 function closeModal(modalId) {
   $('#' + modalId).modal('hide');
   if (modalId === 'sharedVideoModal') document.getElementById('sharedVideoIframe').src = "";
   if (modalId === 'sharedPDFModal') document.getElementById('sharedPDFIframe').src = "";
+  if (modalId === 'sharedCoverModal') document.getElementById('sharedCoverImage').src = "";
 }
 
 /* ── Expand / Collapse Summary ──────────────────────────────────── */

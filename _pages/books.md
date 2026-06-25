@@ -136,6 +136,18 @@ reading_list:
   # -----------------------------------------------------------------
   # Bengali Literature
   # -----------------------------------------------------------------
+  - title: Chander Pahar (চাঁদের পাহাড়)
+    author: Bibhutibhushan Bandyopadhyay (বিভূতিভূষণ বন্দ্যোপাধ্যায়)
+    published_date: 1937
+    category: Bengali Literature
+    rating: 5
+    image: /assets/pdf/books/chander_paher.webp
+    youtube_id: "wnbfJc9aEII" # You can add the Sunday Suspense or audiobook ID here if available
+    gdrive_id: "1X9IE6xY74v4sgWOI6g4LUS4cgVxeAlBe"
+    tags: ["Adventure", "Classic Novel", "Kishore Sahitya", "Survival"]
+    summary: "Refusing to settle for a mundane clerk's life in Bengal, the young and courageous Shankar leaves for East Africa to work on the construction of the Uganda Railway. After surviving close encounters with deadly black mambas and man-eating lions, his destiny shifts when he rescues Diego Alvarez, a seasoned Portuguese explorer. Alvarez inspires him with tales of the Richtersveld—a mountain range holding legendary diamond mines guarded by a mythical, bloodthirsty monster called the Bunyip. Together, they embark on a perilous quest through dense jungles, active volcanoes, and the brutal Kalahari desert. Even after facing tragic loss, isolation, and near-fatal dehydration in the wilderness, Shankar's relentless spirit drives him to survive against the harshest elements of nature, making this a timeless epic of human resilience."
+    summary_bangla: "বাংলার এক সাধারণ কেরানির গণ্ডিবদ্ধ জীবনকে প্রত্যাখ্যান করে অসীম সাহসী তরুণ শঙ্কর রোমাঞ্চের খোঁজে আফ্রিকার উগান্ডা রেলওয়েতে চাকরি নিয়ে চলে যায়। সেখানে বিষধর ব্ল্যাক মাম্বা আর মানুষখেকো সিংহের হাত থেকে অলৌকিকভাবে বেঁচে যাওয়ার পর, তার জীবন মোড় নেয় যখন সে পোর্তুগিজ অভিযাত্রী ডিয়েগো আলভারেজকে উদ্ধার করে। আলভারেজের কাছ থেকে শঙ্কর জানতে পারে আফ্রিকার দুর্গম রিচার্সভেল্ড পর্বতের কথা, যেখানে রয়েছে এক গুপ্ত হীরের খনি এবং পাহারারত এক ভয়ংকর হিংস্র প্রাণী বুনিপ। তারা দুজনে মিলে সেই রহস্যময় পাহাড় এবং প্রাণঘাতী কালাহারি মরুভূমি জয়ের অভিযানে রওনা হয়। সঙ্গী হারানোর শোক, চরম একাকীত্ব এবং জলহীন মরুভূমিতে মৃত্যুর মুখোমুখি দাঁড়িয়েও শঙ্করের বেঁচে থাকার অদম্য লড়াই মানুষের অপরাজেয় ইচ্ছাশক্তি ও চরম জীবনসংগ্রামের এক চিরন্তন দলিল।"
+
   - title: "Ra'ufur Rahim (রউফুর রহীম)"
     author: Dr. Ali Muhammad al-Sallabi
     published_date: 2023

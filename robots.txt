@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rezwanh001.github.io/sitemap.xml
+Sitemap: https://rezwan.xyz/sitemap.xml

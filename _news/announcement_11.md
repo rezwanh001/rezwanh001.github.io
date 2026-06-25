@@ -18,7 +18,7 @@ related_posts: false
     I'm thrilled to share that one of our papers has been <strong>accepted</strong> for presentation at <a href="https://www.ieeesmc2026.org/" target="_blank">IEEE SMC 2026</a>, which will be held in <strong>Bellevue, WA, USA</strong> from <strong>October 4 – 7, 2026</strong>. 🎉<br><br>
     <div style="margin-bottom: 20px;">
         <a href="#" data-toggle="modal" data-target="#smc2026ImageModal">
-            <img src="https://rezwanh001.github.io/assets/img/Towards_2260.png" alt="SMC 2026 Acceptance for SLM-RL Agents" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
+            <img src="/assets/img/Towards_2260.png" alt="SMC 2026 Acceptance for SLM-RL Agents" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
         <strong>(1) <a href="https://github.com/rezwanh001/SLM-RL-Agents" target="_blank">Towards Robust Reinforcement Learning for Small-Scale Language Model Agents</a></strong><br>
         (Paper ID: 2260)
@@ -40,7 +40,7 @@ related_posts: false
       <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; opacity: 1;">
         <span aria-hidden="true">&times;</span>
       </button>
-      <img src="https://rezwanh001.github.io/assets/img/Towards_2260.png" alt="SMC 2026 Acceptance for SLM-RL Agents" style="width: 100%; height: auto; border-radius: 6px;">
+      <img src="/assets/img/Towards_2260.png" alt="SMC 2026 Acceptance for SLM-RL Agents" style="width: 100%; height: auto; border-radius: 6px;">
     </div>
   </div>
 </div>

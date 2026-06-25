@@ -18,7 +18,7 @@ related_posts: false
     I’m thrilled to announce that I have been awarded an FOE award by the University of Waterloo for the Spring 2025 term. The award will be recognized as the Engineering Graduate Scholarship. <strong>This honor places me among 20 distinguished recipients</strong>, and I am deeply grateful for this recognition!<br><br>
     <div style="margin-bottom: 20px;">
         <a href="#" data-toggle="modal" data-target="#announcement-8-image-modal-1">
-            <img src="https://rezwanh001.github.io/assets/img/Spring-2025_FOE.png" alt="FOE Award Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
+            <img src="/assets/img/Spring-2025_FOE.png" alt="FOE Award Notification!" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
     </div>
     <div style="clear: both;"></div>
@@ -37,7 +37,7 @@ related_posts: false
       <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; opacity: 1;">
         <span aria-hidden="true">&times;</span>
       </button>
-      <img src="https://rezwanh001.github.io/assets/img/Spring-2025_FOE.png" alt="FOE Award Notification!" style="width: 100%; height: auto; border-radius: 6px;">
+      <img src="/assets/img/Spring-2025_FOE.png" alt="FOE Award Notification!" style="width: 100%; height: auto; border-radius: 6px;">
     </div>
   </div>
 </div>

@@ -18,7 +18,7 @@ related_posts: false
     I'm thrilled to share that two of our papers have been <strong>accepted</strong> for presentation at <a href="https://www.ieeesmc2025.org/" target="_blank">IEEE SMC 2025</a>, which will be held in <strong>Vienna, Austria</strong> from <strong>October 5 – 8, 2025</strong>. 🎉<br><br>
     <div style="margin-bottom: 20px;">
         <a href="#" data-toggle="modal" data-target="#announcement-3-image-modal-1">
-            <img src="https://rezwanh001.github.io/assets/img/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
+            <img src="/assets/img/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
         <strong>(1) <a href="https://ieeexplore.ieee.org/abstract/document/11342588" target="_blank">MDD-Net: Multimodal Depression Detection through Mutual Transformer</a></strong><br>
         (Paper ID: 752)
@@ -26,7 +26,7 @@ related_posts: false
     <div style="clear: both;"></div>
     <div>
         <a href="#" data-toggle="modal" data-target="#announcement-3-image-modal-2">
-            <img src="https://rezwanh001.github.io/assets/img/MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
+            <img src="/assets/img/MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
         <strong>(2) <a href="https://ieeexplore.ieee.org/abstract/document/11342694" target="_blank">MMFformer: Multimodal Fusion Transformer Network for Depression Detection</a></strong><br>
         (Paper ID: 1961)
@@ -48,7 +48,7 @@ related_posts: false
       <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; opacity: 1;">
         <span aria-hidden="true">&times;</span>
       </button>
-      <img src="https://rezwanh001.github.io/assets/img/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net" style="width: 100%; height: auto; border-radius: 6px;">
+      <img src="/assets/img/MDD-Net_752.png" alt="SMC 2025 Acceptance for MDD-Net" style="width: 100%; height: auto; border-radius: 6px;">
     </div>
   </div>
 </div>
@@ -59,7 +59,7 @@ related_posts: false
       <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; opacity: 1;">
         <span aria-hidden="true">&times;</span>
       </button>
-      <img src="https://rezwanh001.github.io/assets/img/MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer" style="width: 100%; height: auto; border-radius: 6px;">
+      <img src="/assets/img/MMFformer_1961.png" alt="SMC 2025 Acceptance for MMFformer" style="width: 100%; height: auto; border-radius: 6px;">
     </div>
   </div>
 </div>

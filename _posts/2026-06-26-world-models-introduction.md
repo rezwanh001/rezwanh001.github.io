@@ -202,8 +202,10 @@ A non-exhaustive map of where the field is, to orient the rest of the series:
 - **Joint-embedding / non-generative prediction** — the JEPA program <d-cite key="lecun2022path"></d-cite><d-cite key="assran2023ijepa"></d-cite>.
 - **Generative interactive environments** — Genie learns *action-controllable* worlds from unlabeled video <d-cite key="bruce2024genie"></d-cite>.
 - **Video generators as world simulators** — large video models exhibiting emergent simulation of physics and persistence <d-cite key="openai2024sora"></d-cite>.
+- **Embodied, agent-centric world models** — recent position work argues the world model is the missing *core* of embodied agents <d-cite key="fung2025embodied"></d-cite>, and multiplayer/multi-agent world models must keep shared views consistent across agents <d-cite key="savva2026solaris"></d-cite>.
+- **Evaluation is being rethought** — closed-loop benchmarks show that visual realism does *not* imply task success <d-cite key="zhang2025worldinworld"></d-cite>, and high-level procedural planning remains largely unsolved for today's models <d-cite key="chen2025worldprediction"></d-cite>.
 
-The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas, and I'll keep adding them to the [series bibliography](#how-to-cite-this-post).
+The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas. For a continuously-updated, annotated guide, see the companion **[World Models — Reading Map]({{ '/blog/2026/world-models-reading-map/' | relative_url }})**.
 
 ---
 

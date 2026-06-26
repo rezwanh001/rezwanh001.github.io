@@ -16,7 +16,7 @@ related_posts: false
 
 This is a **living reading map** for the World Models series — a curated, thematically organized guide to the recent literature on world models, active perception, and agentic embodied AI. I treat these papers as the best raw material for *idea generation*: read across a cluster, find the gap, build there.
 
-It pairs with the conceptual primer in **[Part 0: From Language Models to World Models]({{ '/blog/2026/world-models-introduction/' | relative_url }})**. Annotations are paraphrased in my own words; many entries are fast-moving preprints, so **open each link and confirm title/authors/venue before citing in a formal document**.
+It pairs with the conceptual primer in **[Part 0: From Language Models to World Models]({{ '/blog/2026/world-models-introduction/' | relative_url }})**, and for ten of these papers there is a structured breakdown — gist, pipeline, benchmark, dataset, results, and improvement/idea angles — in the **[Deep Dives]({{ '/blog/2026/world-models-deep-dives/' | relative_url }})** companion. Annotations are paraphrased in my own words; many entries are fast-moving preprints, so **open each link and confirm title/authors/venue before citing in a formal document**.
 
 <div class="rm-callout">
   <strong>⭐ Start here (four high-leverage reads):</strong>

@@ -23,12 +23,27 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
     Notes and deep-dives on world models — learned simulators, predictive representations, and visual cognition for embodied agents.
   </p>
 
-  <!-- ▼▼▼  WORLD MODELS CONTENT GOES HERE  ▼▼▼ -->
+  {% assign wm_posts = site.posts | where_exp: "post", "post.tags contains 'world-models'" | sort: "date" %}
+  {% if wm_posts.size > 0 %}
+  <div class="wm-series">
+    {% for post in wm_posts %}
+    <a class="wm-entry" href="{{ post.url | relative_url }}">
+      <span class="wm-num">{{ forloop.index0 | prepend: "0" | slice: -2, 2 }}</span>
+      <span class="wm-text">
+        <span class="wm-entry-title">{{ post.title }}</span>
+        {% if post.description %}<span class="wm-entry-desc">{{ post.description }}</span>{% endif %}
+        <span class="wm-entry-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </span>
+      <i class="fa-solid fa-arrow-right wm-arrow"></i>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
   <div class="blog-placeholder">
     <i class="fa-solid fa-pen-nib"></i>
     <span>Content in progress — writing coming soon.</span>
   </div>
-  <!-- ▲▲▲  WORLD MODELS CONTENT GOES HERE  ▲▲▲ -->
+  {% endif %}
 </section>
 
 <!-- ═══════════════════════════ Exploring ═══════════════════════════ -->
@@ -144,4 +159,41 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
 .blog-placeholder i {
   color: var(--global-theme-color);
 }
+/* World Models series list */
+.wm-series {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.wm-entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  background: var(--global-card-bg-color);
+  text-decoration: none;
+  color: var(--global-text-color);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.wm-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-color: var(--global-theme-color);
+}
+.wm-num {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--global-theme-color);
+  min-width: 2.2rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.wm-text { display: flex; flex-direction: column; flex: 1; }
+.wm-entry-title { font-weight: 600; line-height: 1.35; }
+.wm-entry-desc { font-size: 0.9rem; opacity: 0.8; margin-top: 0.15rem; }
+.wm-entry-meta { font-size: 0.78rem; opacity: 0.6; margin-top: 0.35rem; }
+.wm-arrow { color: var(--global-theme-color); opacity: 0.6; transition: transform 0.18s ease; }
+.wm-entry:hover .wm-arrow { transform: translateX(4px); opacity: 1; }
 </style>

@@ -15,8 +15,6 @@ authors:
     affiliations:
       name: CPAMI Lab, University of Waterloo
 
-bibliography: world_models.bib
-
 toc:
   - name: Why this series
   - name: The triumph (and the ceiling) of language models
@@ -27,6 +25,7 @@ toc:
   - name: A quick tour of the landscape
   - name: Where this series is going
   - name: How to cite this post
+  - name: References
 ---
 
 <div class="wm-backlink">
@@ -39,9 +38,9 @@ toc:
 
 ## Why this series
 
-I'm writing this series the way I wish someone had written it for me: starting at the very beginning and going deep, one step at a time. Each part is a standalone Markdown post — I'll fold in formal definitions, intuition, figures, and, where relevant, my own proposals and notes. Everything is **properly referenced** so that if any of this helps your own paper, you can cite the primary sources directly (and this post too — see the [last section](#how-to-cite-this-post)).
+I'm writing this series the way I wish someone had written it for me: starting at the very beginning and going deep, one step at a time. Each part is a standalone Markdown post — I'll fold in formal definitions, intuition, figures, and, where relevant, my own proposals and notes. Everything is **properly referenced**, with full citations written plainly in the [References](#references) at the end of each page, so that if any of this helps your own paper you can cite the primary sources directly (and this post too — see [How to cite this post](#how-to-cite-this-post)).
 
-If you prefer to *watch* an excellent framing of the same shift — from large language models toward joint-embedding world models — the talk *"From LLM to JEPA"* is a great companion to this post <d-cite key="amilabs2026fromllm"></d-cite>:
+If you prefer to *watch* an excellent framing of the same shift — from large language models toward joint-embedding world models — the talk *"From LLM to JEPA"* is a great companion to this post<sup class="wm-cite"><a href="#ref-1">1</a></sup>:
 
 <div class="wm-video">
   <iframe src="https://www.youtube.com/embed/UaHwJeCMzso" title="From LLM to JEPA — AMI Labs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -51,7 +50,7 @@ If you prefer to *watch* an excellent framing of the same shift — from large l
 
 ## The triumph (and the ceiling) of language models
 
-A modern large language model (LLM) is, at heart, an autoregressive next-token predictor <d-cite key="vaswani2017attention"></d-cite><d-cite key="brown2020gpt3"></d-cite>. Given a sequence of tokens $$x_{1}, \dots, x_{t-1}$$, it models the probability of the next one,
+A modern large language model (LLM) is, at heart, an autoregressive next-token predictor<sup class="wm-cite"><a href="#ref-2">2</a>,<a href="#ref-3">3</a></sup>. Given a sequence of tokens $$x_{1}, \dots, x_{t-1}$$, it models the probability of the next one,
 
 $$
 p_\theta(x_t \mid x_{1:t-1}),
@@ -83,7 +82,7 @@ This is the ceiling. To cross it we need a model whose variables are **states an
 
 ## So what is a world model?
 
-Informally, a **world model** is an internal, predictive model of how an environment evolves — a learned simulator you can query: *"if the state is this and I do that, what happens?"* The idea is old: self-supervised recurrent predictors of the environment <d-cite key="schmidhuber1990making"></d-cite> and model-based planning in reinforcement learning <d-cite key="sutton1991dyna"></d-cite><d-cite key="sutton2018reinforcement"></d-cite> are its direct ancestors.
+Informally, a **world model** is an internal, predictive model of how an environment evolves — a learned simulator you can query: *"if the state is this and I do that, what happens?"* The idea is old: self-supervised recurrent predictors of the environment<sup class="wm-cite"><a href="#ref-4">4</a></sup> and model-based planning in reinforcement learning<sup class="wm-cite"><a href="#ref-5">5</a>,<a href="#ref-6">6</a></sup> are its direct ancestors.
 
 Formally, most agentic settings are **partially observed**: the agent never sees the true state $$s_t$$, only observations $$o_t$$ (pixels, sensors). A world model introduces a compact **latent state** $$z_t$$ and learns three pieces:
 
@@ -112,9 +111,9 @@ The key new ingredient is the **action** $$a_t$$: a world model is *conditional 
 
 ## The anatomy of a world model
 
-The cleanest starting blueprint is Ha &amp; Schmidhuber's **V–M–C** decomposition <d-cite key="ha2018worldmodels"></d-cite>:
+The cleanest starting blueprint is Ha &amp; Schmidhuber's **V–M–C** decomposition<sup class="wm-cite"><a href="#ref-7">7</a></sup>:
 
-- **V — Vision.** An encoder (classically a variational autoencoder <d-cite key="kingma2014vae"></d-cite>) compresses each high-dimensional observation $$o_t$$ into a small latent code $$z_t$$.
+- **V — Vision.** An encoder (classically a variational autoencoder<sup class="wm-cite"><a href="#ref-8">8</a></sup>) compresses each high-dimensional observation $$o_t$$ into a small latent code $$z_t$$.
 - **M — Memory.** A recurrent (or, today, Transformer) dynamics model predicts the next latent given the current latent and action, $$p_\theta(z_{t+1}\mid z_t, a_t, h_t)$$, carrying history in its hidden state $$h_t$$.
 - **C — Controller.** A small policy $$\pi(a_t \mid z_t, h_t)$$ chooses actions from the *compressed* state. Because V and M did the heavy lifting, C can be tiny.
 
@@ -163,7 +162,7 @@ That last point is the magic: a trained dynamics model lets you generate experie
 
 ## Why world models matter
 
-**1. Sample efficiency — learning in a dream.** If $$p_\theta(z_{t+1}\mid z_t,a_t)$$ is accurate, the controller can be optimized on *imagined* rollouts instead of real ones. This is exactly the Dreamer line of work, which learns behaviors "by latent imagination" and scales across hundreds of tasks from a single configuration <d-cite key="hafner2020dreamer"></d-cite><d-cite key="hafner2021dreamerv2"></d-cite><d-cite key="hafner2023dreamerv3"></d-cite>. Concretely, the controller maximizes imagined return
+**1. Sample efficiency — learning in a dream.** If $$p_\theta(z_{t+1}\mid z_t,a_t)$$ is accurate, the controller can be optimized on *imagined* rollouts instead of real ones. This is exactly the Dreamer line of work, which learns behaviors "by latent imagination" and scales across hundreds of tasks from a single configuration<sup class="wm-cite"><a href="#ref-9">9</a>,<a href="#ref-10">10</a>,<a href="#ref-11">11</a></sup>. Concretely, the controller maximizes imagined return
 
 $$
 \max_{\pi}\; \mathbb{E}_{p_\theta,\,\pi}\!\left[\sum_{\tau=t}^{t+H} \gamma^{\,\tau-t}\, \hat{r}_\tau \right],
@@ -175,7 +174,7 @@ with the *whole rollout* synthesized by the model over a horizon $$H$$.
 
 **3. Generalization &amp; grounding.** Forcing a network to predict consequences pressures it to discover the *causal structure* of its environment (objects, physics, agency) — representations that transfer.
 
-**4. A candidate path to autonomous machine intelligence.** This is the thesis behind LeCun's proposal for a modular, predictive, world-model-centric architecture as a route past the limits of pure text prediction <d-cite key="lecun2022path"></d-cite>.
+**4. A candidate path to autonomous machine intelligence.** This is the thesis behind LeCun's proposal for a modular, predictive, world-model-centric architecture as a route past the limits of pure text prediction<sup class="wm-cite"><a href="#ref-12">12</a></sup>.
 
 ---
 
@@ -190,7 +189,7 @@ $$
 E(x, y) = \big\| \, s_y - P(s_x, v) \, \big\|^2 ,
 $$
 
-so the model is rewarded for capturing *predictable structure* and free to *discard* unpredictable noise <d-cite key="lecun2022path"></d-cite><d-cite key="assran2023ijepa"></d-cite>. This is the "From LLM to JEPA" shift in one equation: stop predicting every token/pixel, start predicting the *abstract state* that actually matters for acting.
+so the model is rewarded for capturing *predictable structure* and free to *discard* unpredictable noise<sup class="wm-cite"><a href="#ref-12">12</a>,<a href="#ref-13">13</a></sup>. This is the "From LLM to JEPA" shift in one equation: stop predicting every token/pixel, start predicting the *abstract state* that actually matters for acting.
 
 ---
 
@@ -198,14 +197,14 @@ so the model is rewarded for capturing *predictable structure* and free to *disc
 
 A non-exhaustive map of where the field is, to orient the rest of the series:
 
-- **Foundational latent world models for control** — Ha &amp; Schmidhuber <d-cite key="ha2018worldmodels"></d-cite>; the Dreamer family <d-cite key="hafner2020dreamer"></d-cite><d-cite key="hafner2021dreamerv2"></d-cite><d-cite key="hafner2023dreamerv3"></d-cite>.
-- **Joint-embedding / non-generative prediction** — the JEPA program <d-cite key="lecun2022path"></d-cite><d-cite key="assran2023ijepa"></d-cite>.
-- **Generative interactive environments** — Genie learns *action-controllable* worlds from unlabeled video <d-cite key="bruce2024genie"></d-cite>.
-- **Video generators as world simulators** — large video models exhibiting emergent simulation of physics and persistence <d-cite key="openai2024sora"></d-cite>.
-- **Embodied, agent-centric world models** — recent position work argues the world model is the missing *core* of embodied agents <d-cite key="fung2025embodied"></d-cite>, and multiplayer/multi-agent world models must keep shared views consistent across agents <d-cite key="savva2026solaris"></d-cite>.
-- **Evaluation is being rethought** — closed-loop benchmarks show that visual realism does *not* imply task success <d-cite key="zhang2025worldinworld"></d-cite>, and high-level procedural planning remains largely unsolved for today's models <d-cite key="chen2025worldprediction"></d-cite>.
+- **Foundational latent world models for control** — Ha &amp; Schmidhuber<sup class="wm-cite"><a href="#ref-7">7</a></sup>; the Dreamer family<sup class="wm-cite"><a href="#ref-9">9</a>,<a href="#ref-10">10</a>,<a href="#ref-11">11</a></sup>.
+- **Joint-embedding / non-generative prediction** — the JEPA program<sup class="wm-cite"><a href="#ref-12">12</a>,<a href="#ref-13">13</a></sup>.
+- **Generative interactive environments** — Genie learns *action-controllable* worlds from unlabeled video<sup class="wm-cite"><a href="#ref-14">14</a></sup>.
+- **Video generators as world simulators** — large video models exhibiting emergent simulation of physics and persistence<sup class="wm-cite"><a href="#ref-15">15</a></sup>.
+- **Embodied, agent-centric world models** — recent position work argues the world model is the missing *core* of embodied agents<sup class="wm-cite"><a href="#ref-16">16</a></sup>, and multiplayer/multi-agent world models must keep shared views consistent across agents<sup class="wm-cite"><a href="#ref-17">17</a></sup>.
+- **Evaluation is being rethought** — closed-loop benchmarks show that visual realism does *not* imply task success<sup class="wm-cite"><a href="#ref-18">18</a></sup>, and high-level procedural planning remains largely unsolved for today's models<sup class="wm-cite"><a href="#ref-19">19</a></sup>.
 
-The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas. For a continuously-updated, annotated guide, see the companion **[World Models — Reading Map]({{ '/blog/2026/world-models-reading-map/' | relative_url }})**.
+The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas. For a continuously-updated, annotated guide, see the companion **[World Models — Reading Map]({{ '/blog/2026/world-models-reading-map/' | relative_url }})** and the structured **[Deep Dives]({{ '/blog/2026/world-models-deep-dives/' | relative_url }})**.
 
 ---
 
@@ -219,7 +218,7 @@ Comments are open at the bottom of every post — feedback, corrections, and poi
 
 ## How to cite this post
 
-If this series is useful for your work, please cite the **primary sources** in the bibliography below (rendered automatically from `world_models.bib`). To reference this post itself:
+If this series is useful for your work, please cite the **primary sources** listed plainly in the [References](#references) below. To reference this post itself:
 
 ```bibtex
 @misc{haque2026worldmodels0,
@@ -231,6 +230,32 @@ If this series is useful for your work, please cite the **primary sources** in t
 }
 ```
 
+---
+
+## References
+
+<ol class="wm-refs">
+  <li id="ref-1">AMI Labs. <em>[JEPA, EBM, World Models] AMI Labs and the Architecture of Actionable World Models: From LLM to JEPA.</em> YouTube, 2026. <a href="https://www.youtube.com/watch?v=UaHwJeCMzso" target="_blank" rel="noopener">youtube.com/watch?v=UaHwJeCMzso</a></li>
+  <li id="ref-2">A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin. <em>Attention Is All You Need.</em> NeurIPS, 2017.</li>
+  <li id="ref-3">T. B. Brown et al. <em>Language Models are Few-Shot Learners.</em> NeurIPS, 2020.</li>
+  <li id="ref-4">J. Schmidhuber. <em>Making the World Differentiable: On Using Self-Supervised Fully Recurrent Neural Networks for Dynamic Reinforcement Learning and Planning.</em> Tech. Report FKI-126-90, TU Munich, 1990.</li>
+  <li id="ref-5">R. S. Sutton. <em>Dyna, an Integrated Architecture for Learning, Planning, and Reacting.</em> ACM SIGART Bulletin, 2(4):160–163, 1991.</li>
+  <li id="ref-6">R. S. Sutton and A. G. Barto. <em>Reinforcement Learning: An Introduction</em> (2nd ed.). MIT Press, 2018.</li>
+  <li id="ref-7">D. Ha and J. Schmidhuber. <em>World Models / Recurrent World Models Facilitate Policy Evolution.</em> NeurIPS, 2018. <a href="https://arxiv.org/abs/1803.10122" target="_blank" rel="noopener">arXiv:1803.10122</a></li>
+  <li id="ref-8">D. P. Kingma and M. Welling. <em>Auto-Encoding Variational Bayes.</em> ICLR, 2014. <a href="https://arxiv.org/abs/1312.6114" target="_blank" rel="noopener">arXiv:1312.6114</a></li>
+  <li id="ref-9">D. Hafner, T. Lillicrap, J. Ba, and M. Norouzi. <em>Dream to Control: Learning Behaviors by Latent Imagination.</em> ICLR, 2020. <a href="https://arxiv.org/abs/1912.01603" target="_blank" rel="noopener">arXiv:1912.01603</a></li>
+  <li id="ref-10">D. Hafner, T. Lillicrap, M. Norouzi, and J. Ba. <em>Mastering Atari with Discrete World Models (DreamerV2).</em> ICLR, 2021. <a href="https://arxiv.org/abs/2010.02193" target="_blank" rel="noopener">arXiv:2010.02193</a></li>
+  <li id="ref-11">D. Hafner, J. Pasukonis, J. Ba, and T. Lillicrap. <em>Mastering Diverse Domains through World Models (DreamerV3).</em> 2023. <a href="https://arxiv.org/abs/2301.04104" target="_blank" rel="noopener">arXiv:2301.04104</a></li>
+  <li id="ref-12">Y. LeCun. <em>A Path Towards Autonomous Machine Intelligence.</em> OpenReview (v0.9.2), 2022. <a href="https://openreview.net/forum?id=BZ5a1r-kVsf" target="_blank" rel="noopener">openreview.net</a></li>
+  <li id="ref-13">M. Assran, Q. Duval, I. Misra, P. Bojanowski, P. Vincent, M. Rabbat, Y. LeCun, and N. Ballas. <em>Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture (I-JEPA).</em> CVPR, 2023. <a href="https://arxiv.org/abs/2301.08243" target="_blank" rel="noopener">arXiv:2301.08243</a></li>
+  <li id="ref-14">J. Bruce, M. D. Dennis, A. Edwards, J. Parker-Holder, Y. Shi, E. Hughes, et al. <em>Genie: Generative Interactive Environments.</em> ICML, 2024. <a href="https://arxiv.org/abs/2402.15391" target="_blank" rel="noopener">arXiv:2402.15391</a></li>
+  <li id="ref-15">OpenAI. <em>Video Generation Models as World Simulators.</em> 2024. <a href="https://openai.com/research/video-generation-models-as-world-simulators" target="_blank" rel="noopener">openai.com</a></li>
+  <li id="ref-16">P. Fung et al. <em>Embodied AI Agents: Modeling the World.</em> Meta, 2025. <a href="https://arxiv.org/abs/2506.22355" target="_blank" rel="noopener">arXiv:2506.22355</a></li>
+  <li id="ref-17">G. Savva, O. Michel, …, S. Xie. <em>Solaris: Building a Multiplayer Video World Model in Minecraft.</em> NYU, 2026. <a href="https://arxiv.org/abs/2602.22208" target="_blank" rel="noopener">arXiv:2602.22208</a></li>
+  <li id="ref-18">J. Zhang et al. <em>World-in-World: World Models in a Closed-Loop World.</em> ICLR 2026 (Oral). <a href="https://arxiv.org/abs/2510.18135" target="_blank" rel="noopener">arXiv:2510.18135</a></li>
+  <li id="ref-19">D. Chen, W. Chung, Y. Bang, Z. Ji, and P. Fung. <em>WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning.</em> Meta, 2025. <a href="https://arxiv.org/abs/2506.04363" target="_blank" rel="noopener">arXiv:2506.04363</a></li>
+</ol>
+
 <div class="wm-backlink wm-backlink-bottom">
   <a href="{{ '/blog/#world-models' | relative_url }}">&larr; Back to the <strong>World Models</strong> series</a>
 </div>
@@ -240,6 +265,10 @@ If this series is useful for your work, please cite the **primary sources** in t
 .wm-backlink-bottom { margin: 2rem 0 0; }
 .wm-backlink a { color: var(--global-theme-color); text-decoration: none; }
 .wm-backlink a:hover { text-decoration: underline; }
+.wm-cite a { color: var(--global-theme-color); font-weight: 600; text-decoration: none; }
+.wm-cite a:hover { text-decoration: underline; }
+.wm-refs { font-size: 0.9rem; line-height: 1.55; padding-left: 1.4rem; }
+.wm-refs li { margin-bottom: 0.5rem; scroll-margin-top: 80px; }
 .wm-video {
   position: relative; width: 100%; padding-bottom: 56.25%; height: 0;
   margin: 1.2rem 0; border-radius: 10px; overflow: hidden;

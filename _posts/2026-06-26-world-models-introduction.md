@@ -204,7 +204,7 @@ A non-exhaustive map of where the field is, to orient the rest of the series:
 - **Embodied, agent-centric world models** — recent position work argues the world model is the missing *core* of embodied agents<sup class="wm-cite"><a href="#ref-16">16</a></sup>, and multiplayer/multi-agent world models must keep shared views consistent across agents<sup class="wm-cite"><a href="#ref-17">17</a></sup>.
 - **Evaluation is being rethought** — closed-loop benchmarks show that visual realism does *not* imply task success<sup class="wm-cite"><a href="#ref-18">18</a></sup>, and high-level procedural planning remains largely unsolved for today's models<sup class="wm-cite"><a href="#ref-19">19</a></sup>.
 
-The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas. For a continuously-updated, annotated guide, see the companion **[World Models — Reading Map]({{ '/blog/2026/world-models-reading-map/' | relative_url }})** and the structured **[Deep Dives]({{ '/blog/2026/world-models-deep-dives/' | relative_url }})**.
+The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas. For a continuously-updated, annotated guide — in-depth deep dives followed by a broad thematic index — see the companion **[World Models — Reading &amp; Resources]({{ '/blog/2026/world-models-reading-and-resources/' | relative_url }})**.
 
 ---
 

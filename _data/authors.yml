@@ -1,0 +1,183 @@
+# -----------------------------------------------------------------------------
+# Author profiles for the Reading page (_pages/books.md)
+# Keyed EXACTLY by the `author:` string used in each book entry.
+# Each entry has an English (en) and Bangla (bn) short biography, shown in the
+# floating "About the author" popup when a reader clicks a writer's name.
+# If an author here has no match, the popup shows a graceful fallback.
+# -----------------------------------------------------------------------------
+
+"William Shakespeare":
+  en: "English poet, playwright, and actor of the Elizabethan era, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He wrote roughly 38 plays and 154 sonnets, spanning tragedies, comedies, and histories that remain central to world literature."
+  bn: "এলিজাবেথীয় যুগের ইংরেজ কবি, নাট্যকার ও অভিনেতা, যাঁকে ইংরেজি ভাষার সর্বশ্রেষ্ঠ লেখক ও নাট্যকার হিসেবে গণ্য করা হয়। তিনি প্রায় ৩৮টি নাটক ও ১৫৪টি সনেট রচনা করেন, যা আজও বিশ্বসাহিত্যের কেন্দ্রবিন্দু।"
+
+"Alexandre Dumas":
+  en: "French novelist and playwright, one of the most widely read French authors. He is celebrated for his historical adventure novels, including The Three Musketeers and The Count of Monte Cristo."
+  bn: "ফরাসি ঔপন্যাসিক ও নাট্যকার, ফরাসি সাহিত্যের সবচেয়ে জনপ্রিয় লেখকদের একজন। তিনি ‘দ্য থ্রি মাস্কেটিয়ার্স’ ও ‘দ্য কাউন্ট অব মন্টে ক্রিস্টো’-র মতো ঐতিহাসিক অ্যাডভেঞ্চার উপন্যাসের জন্য বিখ্যাত।"
+
+"Agatha Christie":
+  en: "English writer known as the Queen of Crime and the best-selling novelist of all time. She created the famous detectives Hercule Poirot and Miss Marple across 66 detective novels and many short-story collections."
+  bn: "ইংরেজ লেখিকা, যিনি ‘রহস্য সাহিত্যের রানি’ নামে পরিচিত এবং সর্বকালের সর্বাধিক বিক্রীত ঔপন্যাসিক। তিনি হারকিউল পোয়ারো ও মিস মার্পলের মতো বিখ্যাত গোয়েন্দা চরিত্র সৃষ্টি করেন।"
+
+"Robert Louis Stevenson":
+  en: "Scottish novelist, essayist, and poet, famous for adventure and gothic classics such as Treasure Island, Kidnapped, and Strange Case of Dr Jekyll and Mr Hyde."
+  bn: "স্কটিশ ঔপন্যাসিক, প্রাবন্ধিক ও কবি; ‘ট্রেজার আইল্যান্ড’, ‘কিডন্যাপড’ এবং ‘ডক্টর জেকিল অ্যান্ড মিস্টার হাইড’-এর মতো অ্যাডভেঞ্চার ও গথিক ক্লাসিকের জন্য বিখ্যাত।"
+
+"Oscar Wilde":
+  en: "Irish poet and playwright, one of the most popular writers of the late Victorian era. He is known for his sparkling wit and for works like The Picture of Dorian Gray and The Importance of Being Earnest."
+  bn: "আইরিশ কবি ও নাট্যকার, ভিক্টোরীয় যুগের অন্যতম জনপ্রিয় লেখক। তীক্ষ্ণ রসবোধ এবং ‘দ্য পিকচার অব ডোরিয়ান গ্রে’ ও ‘দি ইম্পর্ট্যান্স অব বিয়িং আর্নেস্ট’-এর জন্য তিনি বিখ্যাত।"
+
+"Jane Austen":
+  en: "English novelist known for six major novels that critique the British landed gentry through wit and realism, including Pride and Prejudice, Sense and Sensibility, and Emma."
+  bn: "ইংরেজ ঔপন্যাসিক, যিনি ‘প্রাইড অ্যান্ড প্রেজুডিস’, ‘সেন্স অ্যান্ড সেনসিবিলিটি’ ও ‘এমা’-সহ ছয়টি প্রধান উপন্যাসের জন্য বিখ্যাত, যেখানে রসবোধ ও বাস্তবতায় তৎকালীন সমাজের চিত্র উঠে এসেছে।"
+
+"Charles Dickens":
+  en: "English writer and social critic, regarded as the greatest novelist of the Victorian era. His works include Oliver Twist, Great Expectations, David Copperfield, and A Tale of Two Cities."
+  bn: "ইংরেজ লেখক ও সমাজ-সমালোচক, ভিক্টোরীয় যুগের সর্বশ্রেষ্ঠ ঔপন্যাসিক হিসেবে বিবেচিত। তাঁর রচনার মধ্যে রয়েছে ‘অলিভার টুইস্ট’, ‘গ্রেট এক্সপেক্টেশনস’ ও ‘আ টেল অব টু সিটিজ’।"
+
+"W. Somerset Maugham":
+  en: "British novelist, playwright, and short-story writer, among the highest-paid authors of the 1930s. He is known for Of Human Bondage, The Moon and Sixpence, and The Razor's Edge."
+  bn: "ব্রিটিশ ঔপন্যাসিক, নাট্যকার ও ছোটগল্পকার; ১৯৩০-এর দশকের অন্যতম জনপ্রিয় লেখক। ‘অব হিউম্যান বন্ডেজ’ ও ‘দ্য মুন অ্যান্ড সিক্সপেন্স’-এর জন্য বিখ্যাত।"
+
+"Victor Hugo":
+  en: "French poet, novelist, and dramatist of the Romantic movement, considered one of France's greatest writers. He authored Les Misérables and The Hunchback of Notre-Dame."
+  bn: "রোমান্টিক আন্দোলনের ফরাসি কবি, ঔপন্যাসিক ও নাট্যকার; ফ্রান্সের সর্বশ্রেষ্ঠ লেখকদের একজন। তিনি ‘লে মিজারেবল’ ও ‘দ্য হাঞ্চব্যাক অব নটরডেম’ রচনা করেন।"
+
+"Thomas Hardy":
+  en: "English novelist and poet of the Victorian era, whose fiction is set largely in the semi-fictional region of Wessex. His major works include Tess of the d'Urbervilles and Far from the Madding Crowd."
+  bn: "ভিক্টোরীয় যুগের ইংরেজ ঔপন্যাসিক ও কবি, যাঁর গল্পের পটভূমি মূলত আধা-কাল্পনিক ‘ওয়েসেক্স’ অঞ্চল। ‘টেস অব দ্য ডি’আর্বারভিলস’ তাঁর অন্যতম প্রধান রচনা।"
+
+"Sayyid Abul Hasan Ali Nadwi (Translate — Abu Sayeed Muhammad Omar Ali)":
+  en: "Indian Islamic scholar and author (1914–1999), one of the most influential religious thinkers of the 20th century. His best-known work is Maza Khasaral Alam bi-Inhitat al-Muslimin (What the World Lost with the Decline of Muslims). This Bangla edition was translated by Abu Sayeed Muhammad Omar Ali."
+  bn: "ভারতীয় ইসলামি পণ্ডিত ও লেখক (১৯১৪–১৯৯৯), বিংশ শতাব্দীর অন্যতম প্রভাবশালী চিন্তাবিদ। তাঁর বিখ্যাত গ্রন্থ ‘মুসলমানদের পতনে বিশ্ব কী হারালো’; বাংলায় অনুবাদ করেছেন আবু সাঈদ মুহাম্মদ ওমর আলী।"
+
+"Pinaki Bhattacharya":
+  en: "Bangladeshi author and commentator, trained as a physician, who writes on history, politics, and society. His book in this list is Muktijuddher Boyane Islam."
+  bn: "বাংলাদেশি লেখক ও ভাষ্যকার, পেশায় চিকিৎসক; ইতিহাস, রাজনীতি ও সমাজ নিয়ে লেখেন। এই তালিকায় তাঁর গ্রন্থ ‘মুক্তিযুদ্ধের বয়ানে ইসলাম’।"
+
+"O. Henry":
+  en: "Pen name of William Sydney Porter, an American short-story writer celebrated for his wit, wordplay, and surprise endings, as in The Gift of the Magi."
+  bn: "উইলিয়াম সিডনি পোর্টারের ছদ্মনাম; মার্কিন ছোটগল্পকার, যিনি তাঁর রসবোধ ও চমকপ্রদ সমাপ্তির জন্য বিখ্যাত—যেমন ‘দ্য গিফট অব দ্য ম্যাজাই’।"
+
+"Nikolai Gogol":
+  en: "Russian novelist, dramatist, and short-story writer of Ukrainian origin, a founder of Russian realism. He wrote Dead Souls, The Overcoat, and The Government Inspector."
+  bn: "ইউক্রেনীয় বংশোদ্ভূত রুশ ঔপন্যাসিক, নাট্যকার ও ছোটগল্পকার; রুশ বাস্তববাদের অন্যতম প্রতিষ্ঠাতা। তিনি ‘ডেড সোলস’ ও ‘দ্য ওভারকোট’ রচনা করেন।"
+
+"Nathaniel Hawthorne":
+  en: "American novelist and short-story writer of the Romantic period, known for exploring guilt, sin, and morality. His best-known work is The Scarlet Letter."
+  bn: "রোমান্টিক যুগের মার্কিন ঔপন্যাসিক ও ছোটগল্পকার, যিনি অপরাধবোধ, পাপ ও নৈতিকতা নিয়ে লেখার জন্য পরিচিত। ‘দ্য স্কারলেট লেটার’ তাঁর শ্রেষ্ঠ রচনা।"
+
+"Mary Shelley":
+  en: "English novelist who wrote the gothic classic Frankenstein, widely regarded as an early work of science fiction. She was the daughter of philosopher William Godwin and writer Mary Wollstonecraft."
+  bn: "ইংরেজ ঔপন্যাসিক, যিনি গথিক ক্লাসিক ‘ফ্রাঙ্কেনস্টাইন’ রচনা করেন—যা কল্পবিজ্ঞানের অন্যতম আদি নিদর্শন হিসেবে বিবেচিত।"
+
+"Mark Twain":
+  en: "Pen name of Samuel Clemens, an American writer and humorist often called the father of American literature. He wrote The Adventures of Tom Sawyer and Adventures of Huckleberry Finn."
+  bn: "স্যামুয়েল ক্লিমেন্সের ছদ্মনাম; মার্কিন লেখক ও রম্যকার, যাঁকে ‘আমেরিকান সাহিত্যের জনক’ বলা হয়। তিনি ‘টম সয়ার’ ও ‘হাকলবেরি ফিন’ রচনা করেন।"
+
+"Louisa May Alcott":
+  en: "American novelist best known for the beloved coming-of-age novel Little Women, drawn from her own family life in New England."
+  bn: "মার্কিন ঔপন্যাসিক, যিনি জনপ্রিয় উপন্যাস ‘লিটল উইমেন’-এর জন্য সর্বাধিক পরিচিত, যা তাঁর নিজের পারিবারিক জীবন থেকে অনুপ্রাণিত।"
+
+"Lew Wallace":
+  en: "American lawyer, Union general, and author, best remembered for the historical novel Ben-Hur: A Tale of the Christ, one of the best-selling novels of the 19th century."
+  bn: "মার্কিন আইনজীবী, সেনা-জেনারেল ও লেখক; ঐতিহাসিক উপন্যাস ‘বেন-হার: আ টেল অব দ্য ক্রাইস্ট’-এর জন্য সর্বাধিক স্মরণীয়, যা ঊনবিংশ শতাব্দীর অন্যতম সর্বাধিক বিক্রীত উপন্যাস।"
+
+"Leo Tolstoy":
+  en: "Russian writer regarded as one of the greatest authors of all time. His masterpieces War and Peace and Anna Karenina are pinnacles of realist fiction."
+  bn: "রুশ লেখক, সর্বকালের অন্যতম শ্রেষ্ঠ সাহিত্যিক হিসেবে বিবেচিত। ‘ওয়ার অ্যান্ড পিস’ ও ‘আন্না কারেনিনা’ বাস্তববাদী সাহিত্যের শিখর।"
+
+"Kahlil Gibran":
+  en: "Lebanese-American writer, poet, and visual artist, best known for The Prophet, a book of poetic essays that became one of the best-selling books of the 20th century."
+  bn: "লেবানিজ-মার্কিন লেখক, কবি ও চিত্রশিল্পী; ‘দ্য প্রফেট’-এর জন্য সর্বাধিক পরিচিত, যা বিংশ শতাব্দীর অন্যতম সর্বাধিক বিক্রীত গ্রন্থ।"
+
+"John Buchan":
+  en: "Scottish novelist, historian, and statesman who served as Governor General of Canada. He is best known for the spy thriller The Thirty-Nine Steps."
+  bn: "স্কটিশ ঔপন্যাসিক, ইতিহাসবিদ ও রাষ্ট্রনায়ক; কানাডার গভর্নর জেনারেল ছিলেন। গুপ্তচর থ্রিলার ‘দ্য থার্টি-নাইন স্টেপস’-এর জন্য বিখ্যাত।"
+
+"Jim Corbett":
+  en: "British-Indian hunter, tracker, naturalist, and author, renowned for hunting man-eating tigers and leopards in northern India. His books include Man-Eaters of Kumaon."
+  bn: "ব্রিটিশ-ভারতীয় শিকারি, প্রকৃতিবিদ ও লেখক; উত্তর ভারতে নরখাদক বাঘ ও চিতা শিকারের জন্য বিখ্যাত। ‘ম্যান-ইটার্স অব কুমায়ুন’ তাঁর অন্যতম গ্রন্থ।"
+
+"James Fenimore Cooper":
+  en: "American novelist, one of the first popular US authors, best known for The Last of the Mohicans and the Leatherstocking Tales of frontier life."
+  bn: "মার্কিন ঔপন্যাসিক, আমেরিকার অন্যতম প্রথম জনপ্রিয় লেখক; ‘দ্য লাস্ট অব দ্য মোহিকান্স’-এর জন্য বিখ্যাত।"
+
+"Herman Melville":
+  en: "American novelist and poet of the American Renaissance, best known for the epic novel Moby-Dick, now considered a masterpiece of world literature."
+  bn: "মার্কিন ঔপন্যাসিক ও কবি; মহাকাব্যিক উপন্যাস ‘মবি-ডিক’-এর জন্য বিখ্যাত, যা বিশ্বসাহিত্যের অন্যতম শ্রেষ্ঠ রচনা হিসেবে বিবেচিত।"
+
+"Henry James":
+  en: "American-British author, a key figure of literary realism. He is known for novels and novellas including The Portrait of a Lady and the ghost story The Turn of the Screw."
+  bn: "মার্কিন-ব্রিটিশ লেখক, সাহিত্যিক বাস্তববাদের অন্যতম পুরোধা। ‘দ্য পোর্ট্রেট অব আ লেডি’ ও ভৌতিক গল্প ‘দ্য টার্ন অব দ্য স্ক্রু’-এর জন্য পরিচিত।"
+
+"Henry Ford (Translate — Fuad Al Azad)":
+  en: "American industrialist and founder of the Ford Motor Company, who pioneered the moving assembly line and the mass production of automobiles. This Bangla edition was translated by Fuad Al Azad."
+  bn: "মার্কিন শিল্পপতি ও ফোর্ড মোটর কোম্পানির প্রতিষ্ঠাতা, যিনি চলমান অ্যাসেম্বলি লাইন ও গাড়ির গণ-উৎপাদনের পথিকৃৎ। এই বাংলা সংস্করণটি অনুবাদ করেছেন ফুয়াদ আল আজাদ।"
+
+"Guy de Maupassant":
+  en: "French writer regarded as a master of the short story and a key figure of literary naturalism. His famous stories include The Necklace and Boule de Suif."
+  bn: "ফরাসি লেখক, ছোটগল্পের অন্যতম শ্রেষ্ঠ কারিগর হিসেবে বিবেচিত। ‘দ্য নেকলেস’ ও ‘বুল দ্য সুইফ’ তাঁর বিখ্যাত গল্প।"
+
+"George Eliot":
+  en: "Pen name of Mary Ann Evans, an English novelist of the Victorian era known for psychological depth and realism. Her masterpiece is Middlemarch."
+  bn: "মেরি অ্যান ইভান্সের ছদ্মনাম; ভিক্টোরীয় যুগের ইংরেজ ঔপন্যাসিক, মনস্তাত্ত্বিক গভীরতা ও বাস্তববাদের জন্য পরিচিত। ‘মিডলমার্চ’ তাঁর শ্রেষ্ঠ রচনা।"
+
+"George Bernard Shaw":
+  en: "Irish playwright, critic, and polemicist who profoundly influenced Western theatre. A Nobel laureate in Literature, he is known for Pygmalion and Man and Superman."
+  bn: "আইরিশ নাট্যকার ও সমালোচক, যিনি পশ্চিমা নাট্যজগৎকে গভীরভাবে প্রভাবিত করেন। সাহিত্যে নোবেলজয়ী এই লেখক ‘পিগম্যালিয়ন’-এর জন্য বিখ্যাত।"
+
+"Gabrielle-Suzanne Barbot de Villeneuve":
+  en: "French author credited with writing the original, full-length version of Beauty and the Beast, first published in 1740."
+  bn: "ফরাসি লেখিকা, যিনি ‘বিউটি অ্যান্ড দ্য বিস্ট’-এর মূল ও পূর্ণাঙ্গ সংস্করণ (১৭৪০) রচনার জন্য কৃতিত্বপ্রাপ্ত।"
+
+"Fyodor Dostoevsky":
+  en: "Russian novelist and philosopher whose works probe psychology, morality, and faith. His major novels include Crime and Punishment, The Brothers Karamazov, and The Idiot."
+  bn: "রুশ ঔপন্যাসিক ও দার্শনিক, যাঁর রচনায় মনস্তত্ত্ব, নৈতিকতা ও বিশ্বাসের গভীর অনুসন্ধান রয়েছে। ‘ক্রাইম অ্যান্ড পানিশমেন্ট’ ও ‘দ্য ব্রাদার্স কারামাজভ’ তাঁর প্রধান রচনা।"
+
+"Franz Kafka":
+  en: "German-language novelist from Prague, one of the most influential writers of the 20th century. His surreal, anxiety-laden works include The Metamorphosis and The Trial."
+  bn: "প্রাগের জার্মান-ভাষী ঔপন্যাসিক, বিংশ শতাব্দীর অন্যতম প্রভাবশালী লেখক। ‘দ্য মেটামরফোসিস’ ও ‘দ্য ট্রায়াল’ তাঁর পরাবাস্তব রচনা।"
+
+"Ernest Hemingway":
+  en: "American novelist and short-story writer, a Nobel laureate known for his spare, understated style. His works include The Old Man and the Sea and A Farewell to Arms."
+  bn: "মার্কিন ঔপন্যাসিক ও ছোটগল্পকার, সাহিত্যে নোবেলজয়ী; সংক্ষিপ্ত ও সংযত গদ্যশৈলীর জন্য বিখ্যাত। ‘দ্য ওল্ড ম্যান অ্যান্ড দ্য সি’ তাঁর অন্যতম রচনা।"
+
+"Emily Brontë":
+  en: "English novelist and poet, best known for her only novel, the passionate and dark classic Wuthering Heights. She was one of the three literary Brontë sisters."
+  bn: "ইংরেজ ঔপন্যাসিক ও কবি; তাঁর একমাত্র উপন্যাস ‘ওয়াদারিং হাইটস’-এর জন্য বিখ্যাত। তিনি বিখ্যাত ব্রন্টি সাহিত্য-পরিবারের তিন বোনের একজন।"
+
+"Dr. Ali Muhammad al-Sallabi":
+  en: "Libyan Islamic scholar and historian, author of many widely translated works on Islamic history and the biographies of the Prophet Muhammad and his companions."
+  bn: "লিবীয় ইসলামি পণ্ডিত ও ইতিহাসবিদ; ইসলামের ইতিহাস এবং নবী মুহাম্মদ (সা.) ও সাহাবিদের জীবনী নিয়ে বহু জনপ্রিয় গ্রন্থের রচয়িতা।"
+
+"Dinesh Chandra Chattopadhyay":
+  en: "Bengali author known for adventure and detective fiction for young readers; Duranta Eagle is among his popular works."
+  bn: "বাংলা সাহিত্যিক, কিশোরদের জন্য অ্যাডভেঞ্চার ও গোয়েন্দা কাহিনির জন্য পরিচিত; ‘দুরন্ত ঈগল’ তাঁর অন্যতম জনপ্রিয় রচনা।"
+
+"D.H. Lawrence":
+  en: "English novelist, poet, and essayist whose work explored industrialization, human emotion, and relationships. His novels include Sons and Lovers and Lady Chatterley's Lover."
+  bn: "ইংরেজ ঔপন্যাসিক, কবি ও প্রাবন্ধিক; শিল্পায়ন, মানবিক আবেগ ও সম্পর্ক তাঁর রচনার প্রধান বিষয়। ‘সন্স অ্যান্ড লাভার্স’ তাঁর অন্যতম উপন্যাস।"
+
+"Charlotte Brontë":
+  en: "English novelist and poet, the eldest of the three Brontë sisters. Her best-known novel, Jane Eyre, is a classic of English literature."
+  bn: "ইংরেজ ঔপন্যাসিক ও কবি, ব্রন্টি তিন বোনের মধ্যে জ্যেষ্ঠ। তাঁর বিখ্যাত উপন্যাস ‘জেন আয়ার’ ইংরেজি সাহিত্যের একটি ক্লাসিক।"
+
+"Bram Stoker":
+  en: "Irish author best known for the 1897 gothic horror novel Dracula, which shaped the modern vampire genre. He also wrote The Jewel of Seven Stars."
+  bn: "আইরিশ লেখক, ১৮৯৭ সালের গথিক হরর উপন্যাস ‘ড্রাকুলা’-র জন্য বিখ্যাত, যা আধুনিক ভ্যাম্পায়ার সাহিত্যের ভিত্তি গড়ে। তিনি ‘দ্য জুয়েল অব সেভেন স্টার্স’-ও রচনা করেন।"
+
+"Bibhutibhushan Bandyopadhyay (বিভূতিভূষণ বন্দ্যোপাধ্যায়)":
+  en: "One of the most celebrated novelists in Bengali literature, best known for Pather Panchali (adapted into Satyajit Ray's film), Aranyak, Chander Pahar, and Adarsha Hindu Hotel."
+  bn: "বাংলা সাহিত্যের অন্যতম শ্রেষ্ঠ কথাসাহিত্যিক; ‘পথের পাঁচালী’ (সত্যজিৎ রায়ের চলচ্চিত্রে রূপায়িত), ‘আরণ্যক’, ‘চাঁদের পাহাড়’ ও ‘আদর্শ হিন্দু হোটেল’-এর জন্য বিখ্যাত।"
+
+"Bibhutibhushan Bandopadhyay":
+  en: "One of the most celebrated novelists in Bengali literature, best known for Pather Panchali (adapted into Satyajit Ray's film), Aranyak, Chander Pahar, and Adarsha Hindu Hotel."
+  bn: "বাংলা সাহিত্যের অন্যতম শ্রেষ্ঠ কথাসাহিত্যিক; ‘পথের পাঁচালী’ (সত্যজিৎ রায়ের চলচ্চিত্রে রূপায়িত), ‘আরণ্যক’, ‘চাঁদের পাহাড়’ ও ‘আদর্শ হিন্দু হোটেল’-এর জন্য বিখ্যাত।"
+
+"Allama Muhammad Iqbal (Translate — Obaidullah Mansoor)":
+  en: "South Asian poet, philosopher, and politician (1877–1938), widely regarded as one of the greatest Urdu and Persian poets. He wrote Shikwa and Jawab-e-Shikwa; this edition was translated by Obaidullah Mansoor."
+  bn: "দক্ষিণ এশীয় কবি, দার্শনিক ও রাজনীতিবিদ (১৮৭৭–১৯৩৮), উর্দু ও ফারসি ভাষার অন্যতম শ্রেষ্ঠ কবি হিসেবে বিবেচিত। ‘শিকওয়া ও জওয়াব-ই-শিকওয়া’ তাঁর বিখ্যাত রচনা; এই সংস্করণ অনুবাদ করেছেন ওবায়দুল্লাহ মনসুর।"
+
+"Abhigyan Ganguly":
+  en: "Contemporary Bengali novelist known for historical and mythological thrillers, including the popular Chanakya series to which Hatyashastra belongs."
+  bn: "সমকালীন বাংলা ঔপন্যাসিক, ঐতিহাসিক ও পৌরাণিক থ্রিলারের জন্য পরিচিত; ‘হত্যাশাস্ত্র’ তাঁর জনপ্রিয় ‘চাণক্য সিরিজ’-এর অন্তর্ভুক্ত।"

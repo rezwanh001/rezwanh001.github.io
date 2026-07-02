@@ -298,6 +298,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: The Jewel of Seven Stars
+    author: Bram Stoker
+    published_date: 1903
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_jewel_of_seven_stars.jpg
+    youtube_id: "GuZezrOvpRs" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "1s2sPhEeSsv_ZN8BtMM2Mk8HWCBoLD0Hb"
+    tags: ["Gothic Fiction", "Horror", "Mummy Fiction", "Mystery"]
+    summary: "This eerie gothic horror novel follows young barrister Malcolm Ross, who is summoned to the London home of eminent Egyptologist Abel Trelawny. Malcolm finds Trelawny in a mysterious, catatonic trance, surrounded by strange ancient relics, including the sarcophagus of the ancient sorceress Queen Tera. Working with Trelawny's beautiful daughter, Margaret, Malcolm discovers that the archaeologist was planning a grand, dangerous occult experiment: using magical artifacts, including a unique ruby shaped like a seven-fingered hand, to resurrect the sleeping queen. As the ritual begins in a lonely cave, the boundaries between science and ancient magic blur, leading to a terrifying climax that explores the dangerous obsession with immortality and the wrath of awakened, primeval forces."
+    summary_bangla: "ব্র্যাম স্টোকারের লেখা এক রোমহর্ষক গথিক হরর উপন্যাস। তরুণ ব্যারিস্টার ম্যালকম রস যখন বিখ্যাত মিশরবিদ অ্যাবেল ট্রিলনির বাড়িতে পৌঁছায়, তখন সে ট্রিলনিকে এক রহস্যময় অচৈতন্য অবস্থায় দেখতে পায়। তার চারপাশ ঘিরে সাজানো ছিল প্রাচীন মিশরের বিচিত্র প্রত্নতাত্ত্বিক নিদর্শন এবং রানী তেরা নামের এক প্রাচীন মায়াবিনীর মমি। ট্রিলনির সুন্দরী কন্যা মার্গারেটের সহায়তায় ম্যালকম জানতে পারে যে, এই প্রত্নতাত্ত্বিক এক অত্যন্ত বিপজ্জনক ও গোপন তান্ত্রিক পরীক্ষা করার পরিকল্পনা করছিলেন। সাতটি তারাখচিত এক অদ্ভুত রুবি পাথরের আংটি এবং মমির জাদুকরী শক্তি ব্যবহার করে তিনি মৃত রানী তেরাকে পুনরুজ্জীবিত করতে চেয়েছিলেন। এক নির্জন গুহায় যখন এই প্রাচীন আচার শুরু হয়, তখন বিজ্ঞান ও অতিপ্রাকৃত ক্ষমতার সীমানা মুছে যায় এবং এক ভয়ংকর পরিণতি নেমে আসে।"
+
   - title: As You Like It
     author: William Shakespeare
     published_date: "c. 1599"
@@ -1207,7 +1219,9 @@ mark.search-highlight {
             <!-- Body -->
             <div class="book-body">
               <h5 class="book-title search-target">{{ book.title }}</h5>
-              <p class="book-author search-target">{{ book.author }}</p>
+              <p class="book-author">
+                <button type="button" class="author-link" data-author="{{ book.author | escape }}" onclick="openAuthor(this)" aria-label="About the author {{ book.author | escape }}"><span class="search-target">{{ book.author }}</span><i class="fas fa-circle-info author-info-icon" aria-hidden="true"></i></button>
+              </p>
 
               <!-- Hidden Metadata for Search -->
               <div class="d-none search-metadata">{{ book.title }} {{ book.author }} {{ book.tags | join: " " }} {{ book.category }} {{ book.rating }} {{ book.published_date }} {{ book.summary }} {{ book.summary_bangla }}</div>
@@ -1290,6 +1304,87 @@ mark.search-highlight {
   </div>
 </div>
 
+<!-- Author bio (bilingual) modal -->
+<div class="modal fade" id="sharedAuthorModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="sharedAuthorModalLabel">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content author-modal-content">
+      <div class="modal-header author-modal-header">
+        <h5 class="modal-title" id="sharedAuthorModalLabel"><i class="fas fa-feather-alt"></i> <span id="sharedAuthorName"></span></h5>
+        <button type="button" class="close" onclick="closeModal('sharedAuthorModal')" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body author-modal-body">
+        <div class="author-bio-block" id="authorBioEnBlock">
+          <span class="bio-lang-badge">EN</span>
+          <p id="authorBioEn"></p>
+        </div>
+        <div class="author-bio-block" id="authorBioBnBlock">
+          <span class="bio-lang-badge">বাংলা</span>
+          <p id="authorBioBn" lang="bn"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.author-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--global-theme-color);
+  cursor: pointer;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.15s ease, opacity 0.15s ease;
+}
+.author-link:hover,
+.author-link:focus-visible {
+  border-bottom-color: var(--global-theme-color);
+  opacity: 0.85;
+  outline: none;
+}
+.author-info-icon { font-size: 0.72em; opacity: 0.55; }
+.author-link:hover .author-info-icon { opacity: 1; }
+.author-modal-content {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--global-bg-color);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+.author-modal-header {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 1rem 1.25rem;
+}
+.author-modal-header .modal-title { font-weight: 700; }
+.author-modal-header .modal-title i { color: var(--global-theme-color); margin-right: 0.35rem; }
+.author-modal-body { padding: 1.1rem 1.4rem 1.4rem; }
+.author-bio-block { position: relative; padding: 0.15rem 0 0.4rem; }
+.author-bio-block + .author-bio-block {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 0.95rem;
+  margin-top: 0.7rem;
+}
+.bio-lang-badge {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: var(--global-theme-color);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  margin-bottom: 0.5rem;
+}
+.author-bio-block p { margin: 0; line-height: 1.75; font-size: 0.96rem; color: var(--global-text-color); }
+#authorBioBn { font-size: 1rem; }
+</style>
+
 <!-- ═══ Scripts ═══ -->
 <script>
 /* ── Modal Functions ────────────────────────────────────────────── */
@@ -1316,6 +1411,29 @@ function closeModal(modalId) {
   if (modalId === 'sharedVideoModal') document.getElementById('sharedVideoIframe').src = "";
   if (modalId === 'sharedPDFModal') document.getElementById('sharedPDFIframe').src = "";
   if (modalId === 'sharedCoverModal') document.getElementById('sharedCoverImage').src = "";
+}
+
+/* ── Author Bio (bilingual) ─────────────────────────────────────── */
+var authorBios = {{ site.data.authors | jsonify }};
+function openAuthor(el) {
+  var name = el.getAttribute('data-author') || '';
+  document.getElementById('sharedAuthorName').innerText = name;
+  var info = authorBios[name];
+  var enBlock = document.getElementById('authorBioEnBlock');
+  var bnBlock = document.getElementById('authorBioBnBlock');
+  var enEl = document.getElementById('authorBioEn');
+  var bnEl = document.getElementById('authorBioBn');
+  if (info && (info.en || info.bn)) {
+    if (info.en) { enEl.innerText = info.en; enBlock.style.display = ''; }
+    else { enBlock.style.display = 'none'; }
+    if (info.bn) { bnEl.innerText = info.bn; bnBlock.style.display = ''; }
+    else { bnBlock.style.display = 'none'; }
+  } else {
+    enEl.innerText = 'A short biography for this author is coming soon.';
+    enBlock.style.display = '';
+    bnBlock.style.display = 'none';
+  }
+  $('#sharedAuthorModal').modal('show');
 }
 
 /* ── Expand / Collapse Summary ──────────────────────────────────── */

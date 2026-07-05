@@ -259,6 +259,18 @@ reading_list:
   # -----------------------------------------------------------------
   # British Literature
   # -----------------------------------------------------------------
+  - title: Robinson Crusoe
+    author: Daniel Defoe
+    published_date: 1719
+    category: British Literature
+    rating: 5
+    image: /assets/pdf/books/book_robinson_crusoe.jpg
+    youtube_id: "dZ2gTN56GNU" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "1NWKBGlV_CM5XY4OQcusP-gKNrznofK1I"
+    tags: ["Classic", "Adventure", "Survival Fiction", "Epistolary"]
+    summary: "Frequently considered the first English novel, this iconic story follows Robinson Crusoe, a defiant young Englishman who ignores his family's warnings and sets sail to find fortune, only to be shipwrecked on a deserted island near Trinidad. Stranded for twenty-eight years, Crusoe is forced to build a life from scratch, taming his wild surroundings by constructing a fortress, growing crops, and raising goats, while documenting his survival and spiritual awakening in a journal. His profound isolation is broken when he discovers cannibals visiting the island, leading him to rescue a native captive whom he names Friday. Becoming companions and allies, the two men eventually defeat the cannibals and aid the captain of a mutinied English ship, allowing Crusoe to finally return home, having transformed from a reckless youth into a deeply reflective master of his own fate."
+    summary_bangla: "প্রায়শই ইংরেজি সাহিত্যের প্রথম উপন্যাস হিসেবে বিবেচিত এই কালজয়ী আখ্যানটি রবিনসন ক্রুসো নামের এক একগুঁয়ে ইংরেজ যুবককে কেন্দ্র করে গড়ে উঠেছে। সে তার পরিবারের সতর্কবার্তা উপেক্ষা করে ভাগ্যের সন্ধানে সমুদ্রযাত্রায় বের হয়, কিন্তু এক প্রলয়ংকরী ঝড়ে জাহাজডুবির পর ত্রিনিদাদের নিকটবর্তী এক নির্জন দ্বীপে আটকা পড়ে। দীর্ঘ আটাশ বছর সেই দ্বীপে সম্পূর্ণ একা নির্বাসিত ক্রুসো তার অদম্য ইচ্ছাশক্তির জোরে শূন্য থেকে জীবন গড়ে তোলে—সে সেখানে দুর্গ বানায়, চাষাবাদ শেখে এবং ছাগল পালন শুরু করে, আর নিজের এই টিকে থাকার লড়াই ও আত্মিক রূপান্তরের কথা ডায়েরিতে লিখে রাখে। তার এই চরম একাকীত্ব কাটে যখন সে দ্বীপে নরখাদকদের আনাগোনা আবিষ্কার করে এবং এক আদিবাসী বন্দীকে উদ্ধার করে তার নাম দেয় ফ্রাইডে। তারা দুজনে গভীর বন্ধুত্বে আবদ্ধ হয় এবং পরবর্তীতে এক বিদ্রোহগ্রস্ত ইংরেজ জাহাজের ক্যাপ্টেনকে সাহায্য করার মাধ্যমে ক্রুসো অবশেষে নিজের দেশে ফিরে আসার সুযোগ পায়।"
+
   - title: The Jungle Book
     author: Rudyard Kipling
     published_date: 1894

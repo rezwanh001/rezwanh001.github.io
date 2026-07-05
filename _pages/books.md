@@ -259,6 +259,18 @@ reading_list:
   # -----------------------------------------------------------------
   # British Literature
   # -----------------------------------------------------------------
+  - title: The Jungle Book
+    author: Rudyard Kipling
+    published_date: 1894
+    category: British Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_jungle_book.webp
+    youtube_id: "jiHihh3Ha_w" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "12MYGfrZwo1t8XNwpNmOFpfaUxl8EnNgn"
+    tags: ["Classic", "Fables", "Adventure", "Kishore Sahitya"]
+    summary: "This beloved collection of stories primarily revolves around Mowgli, an orphaned human child raised by a pack of wolves in the Indian jungle. Under the wise mentorship of Baloo the bear and Bagheera the black panther, Mowgli learns the strict, sacred Law of the Jungle. However, his peaceful existence is constantly threatened by the ruthless, man-eating tiger, Shere Khan, who is determined to kill him. The anthology also includes other famous fables of animal heroism, such as the brave mongoose Rikki-Tikki-Tavi. Through these rich narratives of companionship and survival, the book serves as a profound allegory about the laws of nature, discipline, and the deep, inevitable conflict between wild instinct and human civilization."
+    summary_bangla: "রুডইয়ার্ড কিপলিং-এর এই বিশ্ববিখ্যাত গল্প সংকলনের মূল কেন্দ্রবিন্দু হলো মোগলি—ভারতের গহীন অরণ্যে নেকড়েদের আশ্রয়ে বেড়ে ওঠা এক মানব সন্তান। ভালুক বালু এবং কালো চিতাবাঘ বাঘিরার স্নেহ ও অভিভাবকত্বে মোগলি শেখে বনের কঠোর ও পবিত্র নিয়ম বা 'ল অফ দ্য জঙ্গল'। কিন্তু তার এই শান্তিময় জীবন চিরকাল হুমকির মুখে পড়ে যখন বনের হিংস্র ও মানুষখেকো বাঘ শের খান তাকে হত্যা করতে মরিয়া হয়ে ওঠে। এই বইটিতে মোগলির অ্যাডভেঞ্চার ছাড়াও নেউল রিকি-টিকি-তাভির মতো অন্যান্য জনপ্রিয় রূপক গল্পও অন্তর্ভুক্ত রয়েছে। পশুদের সাহচর্য ও টিকে থাকার এই অসাধারণ আখ্যানগুলোর মাধ্যমে লেখক মূলত প্রকৃতির নিয়ম, নৈতিক শৃঙ্খলা এবং বন্য প্রবৃত্তি বনাম মানব সভ্যতার এক গভীর সংঘাতের চিত্র তুলে ধরেছেন।"
+
   - title: Rain
     author: W. Somerset Maugham
     published_date: 1921
@@ -298,6 +310,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: The Jungle Book
+    author: Rudyard Kipling
+    published_date: 1894
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_jungle_book.webp
+    youtube_id: "" # add a LibriVox audiobook ID if available
+    gdrive_id: "" # add a Google Drive PDF ID if available
+    tags: ["Children's Literature", "Adventure", "Fable", "Classic"]
+    summary: "A collection of fables set mostly in the forests of India, this beloved classic is best known for the tales of Mowgli, a 'man-cub' raised by a pack of wolves after being found in the jungle as an infant. Under the guidance of Baloo the wise bear and Bagheera the black panther, Mowgli learns the Law of the Jungle while evading the vengeful tiger Shere Khan, who is determined to hunt him down. Alongside Mowgli's story, the book gathers other unforgettable tales—among them 'Rikki-Tikki-Tavi,' the fearless mongoose who defends a family from a pair of deadly cobras. Together the stories weave a timeless meditation on belonging, courage, and the bond between humans and the natural world."
+    summary_bangla: "রুডইয়ার্ড কিপলিং রচিত এই কালজয়ী গল্পসংকলনের পটভূমি মূলত ভারতের গহীন অরণ্য। এর সবচেয়ে বিখ্যাত অংশ মোগলির কাহিনি—শিশু অবস্থায় জঙ্গলে পাওয়া এক মানব-শিশু, যাকে নেকড়ের দল লালন-পালন করে বড় করে তোলে। জ্ঞানী ভালুক বালু এবং কালো চিতা বাঘীরার তত্ত্বাবধানে মোগলি অরণ্যের নিয়ম শেখে, আর প্রতিহিংসাপরায়ণ বাঘ শের খানের হাত থেকে বাঁচতে লড়াই করে। মোগলির গল্পের পাশাপাশি রয়েছে আরও কিছু অবিস্মরণীয় কাহিনি—যেমন সাহসী বেজি ‘রিক্কি-টিক্কি-টাভি’, যে একটি পরিবারকে বিষধর গোখরো সাপের হাত থেকে রক্ষা করে। গল্পগুলো একত্রে অন্তর্ভুক্তি, সাহস এবং মানুষ ও প্রকৃতির মধ্যকার বন্ধনের এক চিরন্তন আখ্যান রচনা করে।"
+
   - title: The Jewel of Seven Stars
     author: Bram Stoker
     published_date: 1903

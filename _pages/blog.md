@@ -88,28 +88,38 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
           {% assign loc_intro = "Inside the stone ramparts of Vieux-Québec — the only walled city north of Mexico and a UNESCO World Heritage site — cobblestone lanes climb past the copper-roofed Château Frontenac through four centuries of French-Canadian history." %}
       {% endcase %}
       {% if loc_files.size > 0 %}
-      <section class="exp-location">
-        <div class="exp-loc-head">
-          <h3 class="exp-loc-title"><i class="fa-solid fa-location-dot"></i> {{ loc_name }} <span class="exp-loc-region">{{ loc_region }}</span></h3>
+      {% assign vids = loc_files | where_exp: "f", "f.extname == '.mp4'" %}
+      {% assign nvid = vids | size %}
+      {% assign nimg = loc_files.size | minus: nvid %}
+      <details class="exp-fold" open>
+        <summary class="exp-fold-summary">
+          <span class="exp-fold-title"><i class="fa-solid fa-location-dot"></i> {{ loc_name }} <span class="exp-loc-region">{{ loc_region }}</span></span>
+          <span class="exp-fold-meta">
+            {% if nimg > 0 %}<span class="exp-count"><i class="fa-solid fa-image"></i> {{ nimg }}</span>{% endif %}
+            {% if nvid > 0 %}<span class="exp-count"><i class="fa-solid fa-video"></i> {{ nvid }}</span>{% endif %}
+            <i class="fa-solid fa-chevron-down exp-fold-chevron" aria-hidden="true"></i>
+          </span>
+        </summary>
+        <div class="exp-fold-body">
           <p class="exp-loc-tag">{{ loc_tag }}</p>
           <p class="exp-loc-intro">{{ loc_intro }}</p>
+          <div class="exp-grid" data-location="{{ loc }}">
+            {% for f in loc_files %}
+              {% assign ext = f.extname | downcase %}
+              {% if ext == '.mp4' or ext == '.webm' %}
+                <button type="button" class="exp-thumb is-video" data-type="video" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="Play {{ loc_name }} video">
+                  <video class="exp-media" muted preload="metadata" playsinline tabindex="-1"><source src="{{ f.path | relative_url }}#t=0.1" type="video/mp4"></video>
+                  <span class="exp-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                </button>
+              {% elsif ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' %}
+                <button type="button" class="exp-thumb" data-type="image" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="View {{ loc_name }} photo">
+                  <img class="exp-media" src="{{ f.path | relative_url }}" loading="lazy" alt="{{ loc_name }} — photo">
+                </button>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
-        <div class="exp-grid" data-location="{{ loc }}">
-          {% for f in loc_files %}
-            {% assign ext = f.extname | downcase %}
-            {% if ext == '.mp4' or ext == '.webm' %}
-              <button type="button" class="exp-thumb is-video" data-type="video" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="Play {{ loc_name }} video">
-                <video class="exp-media" muted preload="metadata" playsinline tabindex="-1"><source src="{{ f.path | relative_url }}#t=0.1" type="video/mp4"></video>
-                <span class="exp-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-              </button>
-            {% elsif ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' %}
-              <button type="button" class="exp-thumb" data-type="image" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="View {{ loc_name }} photo">
-                <img class="exp-media" src="{{ f.path | relative_url }}" loading="lazy" alt="{{ loc_name }} — photo">
-              </button>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </section>
+      </details>
       {% endif %}
     {% endfor %}
   </div>
@@ -250,9 +260,33 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
 .wm-subhead i { color: var(--global-theme-color); }
 
 /* ── Exploring gallery ── */
-.exp-gallery { display: flex; flex-direction: column; gap: 2.75rem; }
+.exp-gallery { display: flex; flex-direction: column; gap: 1rem; }
 .exp-location { scroll-margin-top: 80px; }
 .exp-loc-head { margin-bottom: 0.5rem; }
+/* Accordion "fold" per spot */
+.exp-fold {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px; overflow: hidden;
+  background: var(--global-card-bg-color);
+  scroll-margin-top: 80px;
+}
+.exp-fold[open] { box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07); }
+.exp-fold-summary {
+  list-style: none; cursor: pointer; user-select: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1rem 1.25rem; transition: background 0.15s ease;
+}
+.exp-fold-summary::-webkit-details-marker { display: none; }
+.exp-fold-summary:hover { background: rgba(128, 128, 128, 0.08); }
+.exp-fold-title { font-weight: 700; font-size: 1.1rem; display: inline-flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+.exp-fold-title i { color: var(--global-theme-color); }
+.exp-fold-meta { display: inline-flex; align-items: center; gap: 0.7rem; opacity: 0.7; font-size: 0.85rem; white-space: nowrap; }
+.exp-count { display: inline-flex; align-items: center; gap: 0.3rem; }
+.exp-count i { color: var(--global-theme-color); opacity: 0.85; }
+.exp-fold-chevron { transition: transform 0.25s ease; opacity: 0.6; }
+.exp-fold[open] .exp-fold-chevron { transform: rotate(180deg); }
+.exp-fold-body { padding: 0 1.25rem 1.4rem; }
+.exp-fold-body .exp-loc-tag { margin-top: 0.1rem; }
 .exp-loc-title {
   display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
   font-weight: 700; margin: 0 0 0.35rem;

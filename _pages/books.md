@@ -13,6 +13,18 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
+  - title: The Wonderful Wizard of Oz
+    author: L. Frank Baum
+    published_date: 1900
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_wonderful_wizard_of_oz.jpg
+    youtube_id: "yWfMEYulzhA" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "1pB2uoxt6_PDtUuQ4SeCmvuhK7cR_vlx5"
+    tags: ["Classic", "Fantasy", "Adventure", "Children's Literature"]
+    summary: "This legendary American fantasy follows Dorothy Gale, a young girl swept away from her bleak Kansas farm by a powerful cyclone, landing in the magical Land of Oz. Eager to return home, she sets off along the Yellow Brick Road to the Emerald City to seek the help of the mysterious Wizard of Oz. Along her journey, she befriends three unforgettable companions: a Scarecrow who desires a brain, a Tin Woodman who longs for a heart, and a Cowardly Lion in search of courage. Together, they navigate a series of treacherous obstacles, including a quest to destroy the Wicked Witch of the West. The narrative unfolds as a profound journey of self-discovery, eventually revealing that the great Wizard is merely a sham and that the power to fulfill their deepest desires was possessed by the companions and Dorothy all along."
+    summary_bangla: "আমেরিকার অত্যন্ত জনপ্রিয় এই ফ্যান্টাসি উপন্যাসটি ডরোথি গেল নামের এক ছোট্ট মেয়েকে কেন্দ্র করে গড়ে উঠেছে, যে কানসাসের এক প্রলয়ংকরী ঘূর্ণিঝড়ে উড়ে গিয়ে অদ্ভুত জাদুকরী দেশ 'ওজ'-এ পতিত হয়। নিজের দেশে ফিরে যাওয়ার আকুলতায় সে হলুদ ইটের রাস্তা ধরে পান্না শহর বা এমেরাল্ড সিটির দিকে রওনা দেয়, যেখানে রয়েছে ওজ-এর মহান জাদুকর। যাত্রাপথে তার সাথে পরিচয় হয় তিন অদ্ভুত বন্ধুর: বুদ্ধিহীন এক কাকতাড়ুয়া, হৃদয়হীন এক টিনের কাঠুরে এবং এক ভীরু সিংহ। নিজেদের ইচ্ছা পূরণের আশায় তারা একজোট হয়ে এক রোমাঞ্চকর অভিযানে নামে এবং পশ্চিমের দুষ্ট ডাইনিকে পরাস্ত করার কঠিন দায়িত্ব নেয়। এই আখ্যানটি মূলত আত্মআবিষ্কারের এক অসাধারণ রূপক, যা শেষ পর্যন্ত প্রমাণ করে যে বাহ্যিক কোনো জাদুকর নয়, বরং মানুষের নিজের মাঝেই লুকিয়ে থাকে বুদ্ধি, আবেগ, সাহস এবং যেকোনো সংকট কাটিয়ে ওঠার অসীম ক্ষমতা।"
+
   - title: "The Turn of the Screw"
     author: Henry James
     published_date: 1898
@@ -322,6 +334,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: Dracula
+    author: Bram Stoker
+    published_date: 1897
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_dracula.png
+    youtube_id: "bqaLzhAZVpY" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "1kHZPdryoHNPHx-aPcDkYVNwrStKzvqwn"
+    tags: ["Classic", "Gothic Fiction", "Horror", "Epistolary"]
+    summary: "Told through a series of letters, diary entries, and ship logs, this defining gothic masterpiece begins with young English solicitor Jonathan Harker traveling to Transylvania to aid the mysterious Count Dracula with a London real estate purchase. Jonathan soon becomes a prisoner in the remote castle, realizing the Count is a vampire. Dracula then travels to England, unleashing a wave of terror, claiming Jonathan's friend Lucy Westenra and targeting Jonathan's fiancée, Mina. To combat the ancient evil, a group of brave allies—led by the eccentric Dutch professor Abraham Van Helsing—unite. They track Dracula's movements, protect Mina from his curse, and hunt the vampire back to his homeland in a desperate, climatic battle to destroy him and save humanity."
+    summary_bangla: "চিঠি, ডায়েরির পাতা এবং সংবাদপত্রের প্রতিবেদনের সমন্বয়ে রচিত এই গথিক হরর উপন্যাসটি তরুণ ইংরেজ আইনজীবী জোনাথন হার্কারের ট্রান্সিলভেনিয়া যাত্রার মধ্য দিয়ে শুরু হয়। সে সেখানে রহস্যময় কাউন্ট ড্রাকুলার দুর্গে অবরুদ্ধ হয়ে পড়ে এবং বুঝতে পারে যে কাউন্ট আসলে এক রক্তচোষা ভ্যাম্পায়ার। এরপর ড্রাকুলা ইংল্যান্ডে এসে এক ত্রাসের রাজত্ব কায়েম করে, যেখানে সে জোনাথনের বন্ধু লুসিকে হত্যা করে এবং জোনাথনের বাগদত্তা মিনা-কে নিজের নিশানা বানায়। এই প্রাচীন অপশক্তিকে পরাস্ত করতে ডাচ অধ্যাপক আব্রাহাম ভ্যান হেলসিং-এর নেতৃত্বে একদল অসমসাহসী মানুষ ঐক্যবদ্ধ হয়। তারা ড্রাকুলার গতিবিধি অনুসরণ করে মিনাকে তার অভিশাপ থেকে বাঁচাতে এবং অবশেষে ট্রান্সিলভেনিয়ার দুর্গম পাহাড়ে ড্রাকুলাকে চিরতরে ধ্বংস করতে এক রক্তক্ষয়ী অভিযানে নামে।"
+
   - title: The Jungle Book
     author: Rudyard Kipling
     published_date: 1894

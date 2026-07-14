@@ -78,15 +78,22 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
 
   {% assign amal_files = site.static_files | where_exp: "f", "f.path contains '/assets/img/daily-amal/'" | sort: "path" %}
   {% if amal_files.size > 0 %}
-  <h3 class="amal-section-h"><i class="fa-solid fa-book-bookmark"></i> Source pages <span>{{ amal_files.size }} scanned pages</span></h3>
-  <p class="blog-section-sub">The authentic pages this collection is read from — tap any to view full-screen.</p>
-  <div class="exp-grid" data-location="daily-amal">
-    {% for f in amal_files %}
-      <button type="button" class="exp-thumb" data-type="image" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="Daily Amal source page">
-        <img class="exp-media" src="{{ f.path | relative_url }}" loading="lazy" alt="Daily Amal — source page">
-      </button>
-    {% endfor %}
-  </div>
+  <details class="exp-fold amal-fold">
+    <summary class="exp-fold-summary">
+      <span class="exp-fold-title"><i class="fa-solid fa-book-bookmark"></i> Source pages <span class="exp-loc-region">{{ amal_files.size }} scanned pages</span></span>
+      <span class="exp-fold-meta"><span class="exp-count"><i class="fa-solid fa-file-lines"></i> {{ amal_files.size }}</span><i class="fa-solid fa-chevron-down exp-fold-chevron" aria-hidden="true"></i></span>
+    </summary>
+    <div class="exp-fold-body">
+      <p class="blog-section-sub">The authentic pages this collection is read from — tap any to view it full-screen.</p>
+      <div class="exp-grid amal-pages" data-location="daily-amal">
+        {% for f in amal_files %}
+          <button type="button" class="exp-thumb" data-type="image" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="Daily Amal source page {{ forloop.index }}">
+            <img class="exp-media" src="{{ f.path | relative_url }}" loading="lazy" alt="Daily Amal — source page {{ forloop.index }}">
+          </button>
+        {% endfor %}
+      </div>
+    </div>
+  </details>
   {% endif %}
 
   <p class="amal-note">Arabic, transliteration, and meanings of the surahs and du'as follow the well-known standard text; the 99 Names are given as transliteration and meaning. For anything exact — including the Bengali renderings — please refer to the scanned source pages above.</p>
@@ -381,6 +388,11 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
   font-size: 0.85rem; opacity: 0.7; line-height: 1.6;
   border-top: 1px solid var(--global-divider-color); padding-top: 0.85rem; margin-top: 1.6rem;
 }
+/* Source-pages fold: portrait thumbnails (3:4) so full book pages show without cropping/overlap */
+.amal-fold { margin: 1.2rem 0 0.5rem; }
+.exp-grid.amal-pages { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
+.amal-pages .exp-thumb { aspect-ratio: 3 / 4; }
+.amal-pages .exp-media { object-fit: cover; object-position: top; }
 
 /* ── Exploring gallery ── */
 .exp-gallery { display: flex; flex-direction: column; gap: 1rem; }

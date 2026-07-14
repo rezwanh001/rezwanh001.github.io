@@ -8,13 +8,89 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
 ---
 
 <div class="blogs-intro">
-  This is where I share longer-form thoughts: technical deep-dives into the ideas I work on, and a more visual log of experiments and things that catch my attention. Two threads to start — more will follow.
+  This is where I share longer-form thoughts: technical deep-dives into the ideas I work on, a daily-reading collection I keep close, and a visual log of experiments and things that catch my attention. A few threads to start — more will follow.
 </div>
 
 <nav class="blogs-section-nav" aria-label="Blog sections">
+  <a href="#everyday-reading"><i class="fa-solid fa-book-open"></i> Everyday Reading</a>
   <a href="#world-models"><i class="fa-solid fa-globe"></i> World Models</a>
   <a href="#exploring"><i class="fa-solid fa-compass"></i> Exploring</a>
 </nav>
+
+<!-- ═══════════════════════════ Everyday Reading ═══════════════════════════ -->
+<section id="everyday-reading" class="blog-section">
+  <h2 class="blog-section-title"><i class="fa-solid fa-book-open"></i> Everyday Reading</h2>
+  <p class="blog-section-sub">
+    A personal <em>daily amal</em> — short surahs, the Names of Allah, and du'as I like to keep close. Presented with Arabic, transliteration, and meaning; the authentic scanned source pages are gathered at the end.
+  </p>
+
+  <div class="amal">
+    <article class="amal-card">
+      <h3>Al-Fatiha <span class="amal-sub">The Opening · Surah 1</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p>
+      <p class="amal-tr">Bismillāhir Raḥmānir Raḥīm. Alḥamdu lillāhi Rabbil ʿālamīn. Ar-Raḥmānir Raḥīm. Māliki yawmid-dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdinaṣ-ṣirāṭal mustaqīm. Ṣirāṭal-ladhīna anʿamta ʿalayhim, ghayril maghḍūbi ʿalayhim wa laḍ-ḍāllīn.</p>
+      <p class="amal-en">In the name of Allah, the Most Compassionate, the Most Merciful. All praise is for Allah, Lord of all worlds — the Most Compassionate, the Most Merciful — Master of the Day of Judgement. You alone we worship, and You alone we ask for help. Guide us along the Straight Path: the path of those You have blessed, not those who have earned Your anger, nor those who have gone astray.</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Al-Ikhlas <span class="amal-sub">Sincerity · Surah 112</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</p>
+      <p class="amal-tr">Qul huwa Allāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakul lahu kufuwan aḥad.</p>
+      <p class="amal-en">Say, He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Al-Falaq <span class="amal-sub">The Daybreak · Surah 113</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</p>
+      <p class="amal-tr">Qul aʿūdhu bi-Rabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fil-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad.</p>
+      <p class="amal-en">Say, I seek refuge in the Lord of the daybreak: from the evil of what He created; from the evil of darkness when it settles; from the evil of those who blow on knots; and from the evil of an envier when he envies.</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>An-Nas <span class="amal-sub">Mankind · Surah 114</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ</p>
+      <p class="amal-tr">Qul aʿūdhu bi-Rabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.</p>
+      <p class="amal-en">Say, I seek refuge in the Lord of mankind, the Sovereign of mankind, the God of mankind — from the evil of the retreating whisperer, who whispers into the hearts of mankind, from among the jinn and mankind.</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Ḥasbunallāh <span class="amal-sub">Reliance on Allah · At-Tawbah 9:129</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ</p>
+      <p class="amal-tr">Ḥasbiyallāhu lā ilāha illā huwa, ʿalayhi tawakkaltu, wa huwa Rabbul-ʿArshil-ʿAẓīm.</p>
+      <p class="amal-en">Allah is sufficient for me; there is no god except Him. In Him I put my trust, and He is the Lord of the Mighty Throne.</p>
+      <p class="amal-ref">Recited seven times in the morning and seven in the evening.</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Rabbi-shraḥ lī ṣadrī <span class="amal-sub">A du'a for ease · Ta-Ha 20:25–28</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي ۝ وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي ۝ يَفْقَهُوا قَوْلِي</p>
+      <p class="amal-tr">Rabbi-shraḥ lī ṣadrī. Wa yassir lī amrī. Waḥlul ʿuqdatan min lisānī. Yafqahū qawlī.</p>
+      <p class="amal-en">My Lord, expand for me my breast, and ease for me my task, and untie the knot from my tongue, so that they may understand my speech.</p>
+    </article>
+  </div>
+
+  <h3 class="amal-section-h"><i class="fa-solid fa-star-and-crescent"></i> The 99 Names of Allah <span>Asmā-ul-Ḥusnā</span></h3>
+  <div class="names-grid">
+    {% for name in site.data.asma_ul_husna %}
+      <div class="name-item"><span class="name-num">{{ forloop.index }}</span><span class="name-body"><span class="name-tr">{{ name.tr }}</span><span class="name-en">{{ name.en }}</span></span></div>
+    {% endfor %}
+  </div>
+
+  {% assign amal_files = site.static_files | where_exp: "f", "f.path contains '/assets/img/daily-amal/'" | sort: "path" %}
+  {% if amal_files.size > 0 %}
+  <h3 class="amal-section-h"><i class="fa-solid fa-book-bookmark"></i> Source pages <span>{{ amal_files.size }} scanned pages</span></h3>
+  <p class="blog-section-sub">The authentic pages this collection is read from — tap any to view full-screen.</p>
+  <div class="exp-grid" data-location="daily-amal">
+    {% for f in amal_files %}
+      <button type="button" class="exp-thumb" data-type="image" data-src="{{ f.path | relative_url }}" onclick="openExp(this)" aria-label="Daily Amal source page">
+        <img class="exp-media" src="{{ f.path | relative_url }}" loading="lazy" alt="Daily Amal — source page">
+      </button>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p class="amal-note">Arabic, transliteration, and meanings of the surahs and du'as follow the well-known standard text; the 99 Names are given as transliteration and meaning. For anything exact — including the Bengali renderings — please refer to the scanned source pages above.</p>
+</section>
 
 <!-- ═══════════════════════════ World Models ═══════════════════════════ -->
 <section id="world-models" class="blog-section">
@@ -258,6 +334,53 @@ description: Longer-form deep-dives and a visual log of things I'm exploring —
   margin: 2rem 0 1rem; font-size: 1.05rem; font-weight: 600; opacity: 0.9;
 }
 .wm-subhead i { color: var(--global-theme-color); }
+
+/* ── Everyday Reading (Daily Amal) ── */
+.amal { display: flex; flex-direction: column; gap: 1.1rem; margin: 1.2rem 0 1.5rem; }
+.amal-card {
+  border: 1px solid var(--global-divider-color);
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 12px; background: var(--global-card-bg-color);
+  padding: 1.1rem 1.35rem;
+}
+.amal-card h3 { margin: 0 0 0.85rem; font-weight: 700; display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap; }
+.amal-sub { font-size: 0.76rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
+.amal-ar {
+  font-size: 1.7rem; line-height: 2.5; text-align: right; direction: rtl;
+  font-family: "Amiri", "Scheherazade New", "Traditional Arabic", "Noto Naskh Arabic", serif;
+  margin: 0 0 0.75rem;
+}
+.amal-tr { font-style: italic; opacity: 0.9; margin: 0 0 0.45rem; line-height: 1.75; }
+.amal-en { margin: 0; line-height: 1.75; }
+.amal-ref { font-size: 0.82rem; opacity: 0.62; margin: 0.6rem 0 0; }
+.amal-section-h {
+  display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap;
+  margin: 2.2rem 0 0.3rem; font-weight: 700;
+}
+.amal-section-h span { font-size: 0.82rem; font-weight: 500; opacity: 0.6; }
+.amal-section-h i { color: var(--global-theme-color); }
+.names-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 0.5rem; margin: 1.1rem 0 1.5rem;
+}
+.name-item {
+  display: flex; align-items: center; gap: 0.6rem;
+  border: 1px solid var(--global-divider-color); border-radius: 9px;
+  padding: 0.5rem 0.7rem; background: var(--global-card-bg-color);
+}
+.name-num {
+  flex: none; width: 1.7rem; height: 1.7rem; border-radius: 50%;
+  background: var(--global-theme-color); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.name-body { display: flex; flex-direction: column; line-height: 1.3; min-width: 0; }
+.name-tr { font-weight: 600; }
+.name-en { font-size: 0.8rem; opacity: 0.72; }
+.amal-note {
+  font-size: 0.85rem; opacity: 0.7; line-height: 1.6;
+  border-top: 1px solid var(--global-divider-color); padding-top: 0.85rem; margin-top: 1.6rem;
+}
 
 /* ── Exploring gallery ── */
 .exp-gallery { display: flex; flex-direction: column; gap: 1rem; }

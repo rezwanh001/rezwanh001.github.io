@@ -66,6 +66,135 @@ nav: false
     </article>
   </div>
 
+  <h3 class="amal-section-h"><i class="fa-solid fa-hands-praying"></i> Refuge &amp; relief <span>in hardship</span></h3>
+  <div class="amal">
+    <article class="amal-card">
+      <h3>Du'ā of Yūnus <span class="amal-sub">Al-Anbiyā 21:87</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</p>
+      <p class="amal-tr">Lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn.</p>
+      <p class="amal-en">There is no god but You; glory be to You. Indeed, I have been among the wrongdoers.</p>
+      <p class="amal-bn" lang="bn">আপনি ছাড়া কোনো মাবুদ নেই; আপনি পবিত্র, মহান; আমিতো সীমালঙ্ঘনকারী।</p>
+      <p class="amal-ref">Whoever supplicates with the words of Yūnus — in whatever difficulty he is — Allah answers him. [Tirmidhī 3505]</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Yā Ḥayyu yā Qayyūm <span class="amal-sub">for severe distress</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ</p>
+      <p class="amal-tr">Yā Ḥayyu yā Qayyūm, bi-raḥmatika astaghīth.</p>
+      <p class="amal-en">O Ever-Living, O Sustainer of all — by Your mercy I seek relief.</p>
+      <p class="amal-bn" lang="bn">হে চিরঞ্জীব! হে চিরস্থায়ী! আপনার রহমতের মাধ্যমে আপনার নিকটে সাহায্য চাই।</p>
+      <p class="amal-ref">The du'ā the Messenger ﷺ read in the hardest difficulty. [Tirmidhī; Mustadrak al-Ḥākim; Mishkāt]</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Against severe trial <span class="amal-sub">jahd al-balā</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَهْدِ الْبَلَاءِ، وَدَرَكِ الشَّقَاءِ، وَسُوءِ الْقَضَاءِ، وَشَمَاتَةِ الْأَعْدَاءِ</p>
+      <p class="amal-tr">Allāhumma innī aʿūdhu bika min jahdil-balāʾ, wa darakish-shaqāʾ, wa sūʾil-qaḍāʾ, wa shamātatil-aʿdāʾ.</p>
+      <p class="amal-en">O Allah, I seek refuge in You from severe affliction, from being overtaken by wretchedness, from an evil decree, and from the gloating of enemies.</p>
+      <p class="amal-bn" lang="bn">হে আল্লাহ, অবশ্যই আমি তোমার নিকট কঠিন দুরবস্থা, দুর্ভাগ্যের নাগাল, মন্দভাগ্য এবং দুশমনের হাসি থেকে রক্ষা কামনা করছি।</p>
+      <p class="amal-ref">[Bukhārī 7/155; Muslim 2707]</p>
+    </article>
+  </div>
+
+  <h3 class="amal-section-h"><i class="fa-solid fa-heart-crack"></i> Seeking forgiveness <span>istighfār</span></h3>
+  <div class="amal">
+    <article class="amal-card">
+      <h3>Sayyidul Istighfār <span class="amal-sub">the master supplication for forgiveness</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</p>
+      <p class="amal-tr">Allāhumma anta Rabbī lā ilāha illā anta, khalaqtanī wa anā ʿabduka, wa anā ʿalā ʿahdika wa waʿdika mā-staṭaʿtu, aʿūdhu bika min sharri mā ṣanaʿtu, abūʾu laka bi-niʿmatika ʿalayya, wa abūʾu bi-dhanbī faghfir lī fa-innahu lā yaghfirudh-dhunūba illā anta.</p>
+      <p class="amal-en">O Allah, You are my Lord; there is no god but You. You created me and I am Your servant, and I keep to Your covenant and promise as much as I can. I seek refuge in You from the evil I have done. I acknowledge Your favour upon me, and I acknowledge my sin — so forgive me, for none forgives sins but You.</p>
+      <p class="amal-bn" lang="bn">হে আল্লাহ! তুমিই আমার রব, তুমি ছাড়া কোনো মাবুদ নেই। তুমি আমাকে সৃষ্টি করেছ, আর আমি তোমার বান্দা। আমি সাধ্যমতো তোমার সাথে কৃত অঙ্গীকার ও প্রতিশ্রুতির উপর আছি। আমি আমার কৃতকর্মের অনিষ্ট থেকে তোমার আশ্রয় চাই। আমার প্রতি তোমার নিয়ামত স্বীকার করছি এবং আমার গুনাহও স্বীকার করছি; সুতরাং আমাকে ক্ষমা করো, কেননা তুমি ছাড়া কেউ গুনাহ ক্ষমা করতে পারে না।</p>
+      <p class="amal-ref">Read morning and evening. Whoever says it with conviction by day and dies that day, or by night and dies that night, will be of the people of Paradise. [Bukhārī 6306]</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Astaghfirullāh <span class="amal-sub">a short, complete istighfār</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ</p>
+      <p class="amal-tr">Astaghfirullāha alladhī lā ilāha illā huwal-Ḥayyul-Qayyūmu wa atūbu ilayh.</p>
+      <p class="amal-en">I seek the forgiveness of Allah, besides whom there is no god — the Ever-Living, the Sustainer — and I turn to Him in repentance.</p>
+      <p class="amal-bn" lang="bn">আমি সেই আল্লাহর কাছে ক্ষমা চাই, যিনি ছাড়া কোনো মাবুদ নেই; তিনি চিরঞ্জীব, চিরস্থায়ী — আর আমি তাঁরই দিকে তওবা করছি।</p>
+      <p class="amal-ref">His sins are forgiven, even if he had fled from the battlefield. [Abū Dāwūd 1517; Tirmidhī 3577]</p>
+    </article>
+  </div>
+
+  <h3 class="amal-section-h"><i class="fa-solid fa-repeat"></i> Daily remembrance <span>dhikr</span></h3>
+  <div class="amal">
+    <article class="amal-card">
+      <h3>The four weighty phrases <span class="amal-sub">said three times</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ</p>
+      <p class="amal-tr">Subḥānallāhi wa bi-ḥamdihi, ʿadada khalqihi, wa riḍā nafsihi, wa zinata ʿarshihi, wa midāda kalimātihi.</p>
+      <p class="amal-en">Glory be to Allah and praise be to Him — as many as the number of His creation, as much as pleases Him, as heavy as His Throne, and as endless as the ink of His words.</p>
+      <p class="amal-bn" lang="bn">আমি আল্লাহ তা'আলার প্রশংসাসমেত পবিত্রতা ঘোষণা করছি — তাঁর সৃষ্টিকুলের সংখ্যার পরিমাণ, তিনি সন্তুষ্ট হওয়া পরিমাণ, তাঁর আরশের ওজন সমপরিমাণ এবং তাঁর কথা লিপিবদ্ধ করার কালির পরিমাণ।</p>
+      <p class="amal-ref">Said three times, these outweigh all the remembrance of the whole day. [Muslim 2726]</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>On waking in the night <span class="amal-sub">and a du'ā that is answered</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ، رَبِّ اغْفِرْ لِي</p>
+      <p class="amal-tr">Lā ilāha illallāhu waḥdahu lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ʿalā kulli shayʾin qadīr. Subḥānallāh, wal-ḥamdu lillāh, wa lā ilāha illallāh, wallāhu akbar, wa lā ḥawla wa lā quwwata illā billāhil-ʿAliyyil-ʿAẓīm. Rabbighfir lī.</p>
+      <p class="amal-en">There is no god but Allah alone, without partner; His is the dominion and His is the praise, and He is capable of all things. Glory be to Allah; all praise is for Allah; there is no god but Allah; Allah is the Greatest; there is no might nor power except with Allah, the Most High, the Magnificent. My Lord, forgive me.</p>
+      <p class="amal-bn" lang="bn">আল্লাহ ছাড়া কোনো ইলাহ নেই, তিনি একক, তাঁর কোনো শরিক নেই; রাজত্ব তাঁরই, প্রশংসাও তাঁরই, আর তিনি সব কিছুর উপর ক্ষমতাবান। আল্লাহ পবিত্র, সমস্ত প্রশংসা আল্লাহর, আল্লাহ ছাড়া কোনো ইলাহ নেই, আল্লাহ সর্বশ্রেষ্ঠ; আর আল্লাহর সাহায্য ছাড়া কোনো উপায় ও শক্তি নেই, যিনি সুমহান ও মহীয়ান। হে আমার রব, আমাকে ক্ষমা করো।</p>
+      <p class="amal-ref">Whoever says this on waking at night is forgiven; if he supplicates, he is answered; if he makes wuḍū and prays, his prayer is accepted. [Bukhārī — Fatḥul Bārī 1154]</p>
+    </article>
+  </div>
+
+  <h3 class="amal-section-h"><i class="fa-solid fa-hand-holding-heart"></i> Provision, love &amp; setting out</h3>
+  <div class="amal">
+    <article class="amal-card">
+      <h3>Freedom from debt <span class="amal-sub">sufficiency by the lawful</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ</p>
+      <p class="amal-tr">Allāhumma-kfinī bi-ḥalālika ʿan ḥarāmik, wa aghninī bi-faḍlika ʿamman siwāk.</p>
+      <p class="amal-en">O Allah, suffice me with what You have made lawful against what You have forbidden, and enrich me by Your bounty so that I need none besides You.</p>
+      <p class="amal-bn" lang="bn">হে আল্লাহ! তুমি তোমার হারাম বস্তু হতে বাঁচিয়ে তোমার হালাল রিযিক দ্বারা আমাকে পরিতুষ্ট দান করো, এবং তোমার অনুগ্রহ দ্বারা তুমি ব্যতীত অন্য সকলের থেকে আমাকে অমুখাপেক্ষী করে দাও।</p>
+      <p class="amal-ref">[Tirmidhī 3563]</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>Asking for Allah's love <span class="amal-sub">ḥubbullāh</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">اللَّهُمَّ إِنِّي أَسْأَلُكَ حُبَّكَ، وَحُبَّ مَنْ يُحِبُّكَ، وَالْعَمَلَ الَّذِي يُبَلِّغُنِي حُبَّكَ. اللَّهُمَّ اجْعَلْ حُبَّكَ أَحَبَّ إِلَيَّ مِنْ نَفْسِي وَأَهْلِي وَمِنَ الْمَاءِ الْبَارِدِ</p>
+      <p class="amal-tr">Allāhumma innī asʾaluka ḥubbaka, wa ḥubba man yuḥibbuka, wal-ʿamalal-ladhī yuballighunī ḥubbak. Allāhumma-jʿal ḥubbaka aḥabba ilayya min nafsī wa ahlī wa minal-māʾil-bārid.</p>
+      <p class="amal-en">O Allah, I ask You for Your love, the love of those who love You, and the deeds that will bring me to Your love. O Allah, make Your love dearer to me than myself, my family, and cold water.</p>
+      <p class="amal-bn" lang="bn">হে আল্লাহ! আমি তোমার নিকট তোমার ভালোবাসা এবং যে তোমাকে ভালোবাসে তার ভালোবাসা প্রার্থনা করি, এবং এমন আমল করার সামর্থ্য চাই যা তোমার ভালোবাসা লাভ পর্যন্ত পৌঁছে দেবে। হে আল্লাহ! তোমার ভালোবাসাকে আমার নিজের জান-মাল, পরিবার-পরিজন ও ঠান্ডা পানির চেয়েও বেশি প্রিয় করে দাও।</p>
+      <p class="amal-ref">[Tirmidhī 3490]</p>
+    </article>
+
+    <article class="amal-card">
+      <h3>On leaving the house <span class="amal-sub">tawakkul</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ</p>
+      <p class="amal-tr">Bismillāh, tawakkaltu ʿalallāh, wa lā ḥawla wa lā quwwata illā billāh.</p>
+      <p class="amal-en">In the name of Allah; I place my trust in Allah; there is no might nor power except with Allah.</p>
+      <p class="amal-bn" lang="bn">আল্লাহর নামে (বের হচ্ছি)। আল্লাহর উপর ভরসা করলাম। আর আল্লাহর সাহায্য ছাড়া (পাপ থেকে বাঁচার) কোনো উপায় এবং (সৎকাজ করার) কোনো শক্তি কারও নেই।</p>
+      <p class="amal-ref">[Abū Dāwūd 5095; Tirmidhī; Nasāʾī 3426]</p>
+    </article>
+  </div>
+
+  <h3 class="amal-section-h"><i class="fa-solid fa-shield-halved"></i> Āyatul Kursī <span>Al-Baqarah 2:255</span></h3>
+  <div class="amal">
+    <article class="amal-card">
+      <h3>The Verse of the Throne <span class="amal-sub">after every obligatory prayer</span></h3>
+      <p class="amal-ar" lang="ar" dir="rtl">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ</p>
+      <p class="amal-tr">Allāhu lā ilāha illā huwal-Ḥayyul-Qayyūm. Lā taʾkhudhuhu sinatun wa lā nawm. Lahu mā fis-samāwāti wa mā fil-arḍ. Man dhal-ladhī yashfaʿu ʿindahu illā bi-idhnih. Yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shayʾin min ʿilmihi illā bimā shāʾ. Wasiʿa kursiyyuhus-samāwāti wal-arḍ, wa lā yaʾūduhu ḥifẓuhumā, wa huwal-ʿAliyyul-ʿAẓīm.</p>
+      <p class="amal-en">Allah — there is no god but He, the Ever-Living, the Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what lies before them and what is behind them, and they encompass nothing of His knowledge except what He wills. His Kursī extends over the heavens and the earth, and their preservation does not tire Him. And He is the Most High, the Magnificent.</p>
+      <p class="amal-bn" lang="bn">আল্লাহ — তিনি ছাড়া কোনো ইলাহ নেই; তিনি চিরঞ্জীব, সর্বসত্তার ধারক। তন্দ্রা ও নিদ্রা তাঁকে স্পর্শ করে না। আসমান ও জমিনে যা কিছু আছে সবই তাঁর। কে আছে যে তাঁর অনুমতি ছাড়া তাঁর কাছে সুপারিশ করবে? তাদের সামনে ও পেছনে যা কিছু আছে তিনি জানেন; আর তারা তাঁর জ্ঞানের কিছুই আয়ত্ত করতে পারে না, তবে তিনি যতটুকু চান। তাঁর কুরসি আসমান ও জমিন পরিব্যাপ্ত করে আছে, আর এ দুটির রক্ষণাবেক্ষণ তাঁকে ক্লান্ত করে না। তিনিই সুমহান, মহীয়ান।</p>
+      <p class="amal-ref">Whoever recites it after every obligatory prayer, nothing stands between him and Paradise except death. [Nasāʾī 9848]</p>
+    </article>
+  </div>
+
+  <h3 class="amal-section-h"><i class="fa-solid fa-lightbulb"></i> Worth keeping in mind <span>from the same pages</span></h3>
+  <div class="amal">
+    <article class="amal-card">
+      <h3>Three practices <span class="amal-sub">and two weekly surahs</span></h3>
+      <ul class="amal-list">
+        <li><strong>Āyatul Kursī</strong> after each obligatory prayer — <span lang="bn">প্রতি ফরজ নামাজের পর (১ বার)</span>.</li>
+        <li><strong>Sūrah al-Mulk</strong> (67) every night — it intercedes for its reciter until he is forgiven. <span lang="bn">সূরা মূলক প্রতি রাতে (১ বার)</span>. [Abū Dāwūd 1400; Tirmidhī 2891]</li>
+        <li><strong>Sayyidul Istighfār</strong> morning and evening — <span lang="bn">সকাল-বিকাল ১ বার করে</span>.</li>
+        <li><strong>Sūrah al-Kahf</strong> (18) on Friday — light shines for the reader until the next Friday; memorising its first ten verses guards against the trial of the Dajjāl. [Muslim 809; Abū Dāwūd 4323]</li>
+        <li><strong>The last two verses of Sūrah al-Baqarah</strong> (2:285–286) at night — they will suffice him. [Bukhārī 5009; Muslim 807–808]</li>
+      </ul>
+      <p class="amal-ref">Nothing changes the decree except du'ā — so ask abundantly. [Tirmidhī 2139]</p>
+    </article>
+  </div>
+
   <h3 class="amal-section-h"><i class="fa-solid fa-star-and-crescent"></i> The 99 Names of Allah <span>Asmā-ul-Ḥusnā</span></h3>
   <div class="names-grid">
     {% for name in site.data.asma_ul_husna %}

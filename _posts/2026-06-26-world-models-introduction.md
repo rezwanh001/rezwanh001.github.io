@@ -210,7 +210,9 @@ The contemporary literature here is *vast* and moving fast; throughout the serie
 
 ## Where this series is going
 
-This was Part 0 — the *why* and the vocabulary. Upcoming parts (added one by one) will go deep, with derivations and code, into: latent-variable models and the VAE/ELBO; recurrent vs. Transformer dynamics; the full Dreamer objective; JEPA and energy-based learning; generative interactive worlds (Genie / Sora); evaluation; and open problems and proposals. Each will live in its own post under the **World Models** section of the [blog]({{ '/blog/world-models/' | relative_url }}).
+This was Part 0 — the *why* and the vocabulary. **[Part 1: Inside the Latent]({{ '/blog/2026/world-models-latent-dynamics/' | relative_url }})** is now up: it derives the VAE and the ELBO from scratch, builds the Recurrent State-Space Model that turns an encoder into a simulator, shows how Dreamer trains a policy entirely inside its own imagination, and walks through the systems running on these ideas today (DreamerV3, Genie, Sora, GameNGen, GAIA-1).
+
+Further parts (added one by one) will go deep into: JEPA and energy-based learning; generative interactive worlds; evaluation; and open problems and proposals. Each will live in its own post under the **World Models** section of the [blog]({{ '/blog/world-models/' | relative_url }}).
 
 Comments are open at the bottom of every post — feedback, corrections, and pointers to papers I should cover are very welcome.
 

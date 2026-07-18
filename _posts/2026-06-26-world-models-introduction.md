@@ -29,7 +29,7 @@ toc:
 ---
 
 <div class="wm-backlink">
-  <a href="{{ '/blog/#world-models' | relative_url }}">&larr; Blogs · <strong>World Models</strong> series</a>
+  <a href="{{ '/blog/world-models/' | relative_url }}">&larr; Blogs · <strong>World Models</strong> series</a>
 </div>
 
 > **TL;DR.** A language model learns the statistics of *text*. A **world model** learns the dynamics of an *environment* — given where you are and what you do, what happens next. This post starts from the familiar next-token objective, shows precisely where it stops being enough for agents that must *act*, and builds up the idea of a world model from first principles. It is **Part 0** of a step-by-step series that will go from these basics down into the contemporary research literature.
@@ -210,7 +210,7 @@ The contemporary literature here is *vast* and moving fast; throughout the serie
 
 ## Where this series is going
 
-This was Part 0 — the *why* and the vocabulary. Upcoming parts (added one by one) will go deep, with derivations and code, into: latent-variable models and the VAE/ELBO; recurrent vs. Transformer dynamics; the full Dreamer objective; JEPA and energy-based learning; generative interactive worlds (Genie / Sora); evaluation; and open problems and proposals. Each will live in its own post under the **World Models** section of the [blog]({{ '/blog/#world-models' | relative_url }}).
+This was Part 0 — the *why* and the vocabulary. Upcoming parts (added one by one) will go deep, with derivations and code, into: latent-variable models and the VAE/ELBO; recurrent vs. Transformer dynamics; the full Dreamer objective; JEPA and energy-based learning; generative interactive worlds (Genie / Sora); evaluation; and open problems and proposals. Each will live in its own post under the **World Models** section of the [blog]({{ '/blog/world-models/' | relative_url }}).
 
 Comments are open at the bottom of every post — feedback, corrections, and pointers to papers I should cover are very welcome.
 
@@ -257,7 +257,7 @@ If this series is useful for your work, please cite the **primary sources** list
 </ol>
 
 <div class="wm-backlink wm-backlink-bottom">
-  <a href="{{ '/blog/#world-models' | relative_url }}">&larr; Back to the <strong>World Models</strong> series</a>
+  <a href="{{ '/blog/world-models/' | relative_url }}">&larr; Back to the <strong>World Models</strong> series</a>
 </div>
 
 <style>

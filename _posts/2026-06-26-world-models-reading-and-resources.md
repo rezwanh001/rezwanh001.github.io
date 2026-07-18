@@ -11,7 +11,7 @@ related_posts: false
 ---
 
 <div class="wm-backlink">
-  <a href="{{ '/blog/#world-models' | relative_url }}">&larr; Blogs · <strong>World Models</strong> series</a>
+  <a href="{{ '/blog/world-models/' | relative_url }}">&larr; Blogs · <strong>World Models</strong> series</a>
 </div>
 
 This is the single **reading-and-resources hub** for the World Models series. It has two halves: **Part I — Deep Dives** reads each key paper along the same axes (*gist · pipeline · benchmark &amp; dataset · results · stated future work · scope &amp; unique ideas*) so the page doubles as an idea-generation worksheet; **Part II — Thematic Index** is the broader, faster annotated map across the active-perception, world-model, and embodied-agent literature. The concepts behind all of this are introduced in **[Part 0: From Language Models to World Models]({{ '/blog/2026/world-models-introduction/' | relative_url }})**.
@@ -314,7 +314,7 @@ A simple recipe I follow: (1) pick a **cluster** above; (2) read the surveys to 
 13. J. Zhang et al. *Embodied Image Quality Assessment for Robotic Intelligence (EPD / MA-EIQA).* arXiv:2412.18774, Shanghai Jiao Tong University, 2025. <https://arxiv.org/abs/2412.18774>
 
 <div class="wm-backlink wm-backlink-bottom">
-  <a href="{{ '/blog/#world-models' | relative_url }}">&larr; Back to the <strong>World Models</strong> series</a>
+  <a href="{{ '/blog/world-models/' | relative_url }}">&larr; Back to the <strong>World Models</strong> series</a>
 </div>
 
 <style>

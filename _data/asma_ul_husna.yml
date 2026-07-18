@@ -1,102 +1,103 @@
-# The 99 Names of Allah (Asma-ul-Husna) — transliteration + English meaning.
-# Standard list; the exact Arabic and Bengali meanings are in the source pages
-# shown in the Everyday Reading viewer. tr = transliteration, en = meaning.
-- { tr: "Ar-Rahman", en: "The Most Compassionate" }
-- { tr: "Ar-Rahim", en: "The Most Merciful" }
-- { tr: "Al-Malik", en: "The King, the Sovereign" }
-- { tr: "Al-Quddus", en: "The Most Holy" }
-- { tr: "As-Salam", en: "The Source of Peace" }
-- { tr: "Al-Mu'min", en: "The Guardian of Faith" }
-- { tr: "Al-Muhaymin", en: "The Protector" }
-- { tr: "Al-'Aziz", en: "The Almighty" }
-- { tr: "Al-Jabbar", en: "The Compeller" }
-- { tr: "Al-Mutakabbir", en: "The Supreme in Greatness" }
-- { tr: "Al-Khaliq", en: "The Creator" }
-- { tr: "Al-Bari'", en: "The Maker, the Evolver" }
-- { tr: "Al-Musawwir", en: "The Fashioner of Forms" }
-- { tr: "Al-Ghaffar", en: "The Ever-Forgiving" }
-- { tr: "Al-Qahhar", en: "The Subduer" }
-- { tr: "Al-Wahhab", en: "The Bestower" }
-- { tr: "Ar-Razzaq", en: "The Provider" }
-- { tr: "Al-Fattah", en: "The Opener, the Judge" }
-- { tr: "Al-'Alim", en: "The All-Knowing" }
-- { tr: "Al-Qabid", en: "The Withholder" }
-- { tr: "Al-Basit", en: "The Extender" }
-- { tr: "Al-Khafid", en: "The Abaser" }
-- { tr: "Ar-Rafi'", en: "The Exalter" }
-- { tr: "Al-Mu'izz", en: "The Bestower of Honour" }
-- { tr: "Al-Mudhill", en: "The Humiliator" }
-- { tr: "As-Sami'", en: "The All-Hearing" }
-- { tr: "Al-Basir", en: "The All-Seeing" }
-- { tr: "Al-Hakam", en: "The Judge" }
-- { tr: "Al-'Adl", en: "The Utterly Just" }
-- { tr: "Al-Latif", en: "The Subtle, the Gentle" }
-- { tr: "Al-Khabir", en: "The All-Aware" }
-- { tr: "Al-Halim", en: "The Forbearing" }
-- { tr: "Al-'Azim", en: "The Magnificent" }
-- { tr: "Al-Ghafur", en: "The Forgiving" }
-- { tr: "Ash-Shakur", en: "The Appreciative" }
-- { tr: "Al-'Ali", en: "The Most High" }
-- { tr: "Al-Kabir", en: "The Most Great" }
-- { tr: "Al-Hafiz", en: "The Preserver" }
-- { tr: "Al-Muqit", en: "The Nourisher, the Sustainer" }
-- { tr: "Al-Hasib", en: "The Reckoner" }
-- { tr: "Al-Jalil", en: "The Majestic" }
-- { tr: "Al-Karim", en: "The Most Generous" }
-- { tr: "Ar-Raqib", en: "The Watchful" }
-- { tr: "Al-Mujib", en: "The Responsive" }
-- { tr: "Al-Wasi'", en: "The All-Encompassing" }
-- { tr: "Al-Hakim", en: "The All-Wise" }
-- { tr: "Al-Wadud", en: "The Most Loving" }
-- { tr: "Al-Majid", en: "The Most Glorious" }
-- { tr: "Al-Ba'ith", en: "The Resurrector" }
-- { tr: "Ash-Shahid", en: "The Witness" }
-- { tr: "Al-Haqq", en: "The Truth" }
-- { tr: "Al-Wakil", en: "The Trustee, the Disposer of Affairs" }
-- { tr: "Al-Qawiyy", en: "The Most Strong" }
-- { tr: "Al-Matin", en: "The Firm, the Steadfast" }
-- { tr: "Al-Wali", en: "The Protecting Friend" }
-- { tr: "Al-Hamid", en: "The Praiseworthy" }
-- { tr: "Al-Muhsi", en: "The All-Enumerating" }
-- { tr: "Al-Mubdi'", en: "The Originator" }
-- { tr: "Al-Mu'id", en: "The Restorer" }
-- { tr: "Al-Muhyi", en: "The Giver of Life" }
-- { tr: "Al-Mumit", en: "The Bringer of Death" }
-- { tr: "Al-Hayy", en: "The Ever-Living" }
-- { tr: "Al-Qayyum", en: "The Self-Subsisting Sustainer" }
-- { tr: "Al-Wajid", en: "The Finder, the Perceiver" }
-- { tr: "Al-Majid", en: "The Noble, the Illustrious" }
-- { tr: "Al-Wahid", en: "The One" }
-- { tr: "Al-Ahad", en: "The Unique, the Indivisible" }
-- { tr: "As-Samad", en: "The Eternal, the Self-Sufficient" }
-- { tr: "Al-Qadir", en: "The All-Capable" }
-- { tr: "Al-Muqtadir", en: "The All-Powerful" }
-- { tr: "Al-Muqaddim", en: "The Expediter" }
-- { tr: "Al-Mu'akhkhir", en: "The Delayer" }
-- { tr: "Al-Awwal", en: "The First" }
-- { tr: "Al-Akhir", en: "The Last" }
-- { tr: "Az-Zahir", en: "The Manifest" }
-- { tr: "Al-Batin", en: "The Hidden" }
-- { tr: "Al-Wali", en: "The Governing Patron" }
-- { tr: "Al-Muta'ali", en: "The Most Exalted" }
-- { tr: "Al-Barr", en: "The Source of All Goodness" }
-- { tr: "At-Tawwab", en: "The Ever-Relenting" }
-- { tr: "Al-Muntaqim", en: "The Avenger" }
-- { tr: "Al-'Afuww", en: "The Pardoner" }
-- { tr: "Ar-Ra'uf", en: "The Most Kind" }
-- { tr: "Malik-ul-Mulk", en: "Master of the Kingdom" }
-- { tr: "Dhul-Jalali wal-Ikram", en: "Lord of Majesty and Bounty" }
-- { tr: "Al-Muqsit", en: "The Equitable" }
-- { tr: "Al-Jami'", en: "The Gatherer" }
-- { tr: "Al-Ghani", en: "The Self-Sufficient" }
-- { tr: "Al-Mughni", en: "The Enricher" }
-- { tr: "Al-Mani'", en: "The Preventer" }
-- { tr: "Ad-Darr", en: "The Distresser" }
-- { tr: "An-Nafi'", en: "The Benefactor" }
-- { tr: "An-Nur", en: "The Light" }
-- { tr: "Al-Hadi", en: "The Guide" }
-- { tr: "Al-Badi'", en: "The Incomparable Originator" }
-- { tr: "Al-Baqi", en: "The Everlasting" }
-- { tr: "Al-Warith", en: "The Inheritor" }
-- { tr: "Ar-Rashid", en: "The Guide to the Right Path" }
-- { tr: "As-Sabur", en: "The Most Patient" }
+# The 99 Names of Allah (Asmā-ul-Ḥusnā)
+# Order and Bangla meanings follow the scanned source pages (pp. 705–706),
+# which begin the list with "Allah" and do not list Al-Aḥad separately.
+# tr = transliteration, en = English meaning, bn = Bangla meaning (from source).
+- { tr: "Allah", en: "The One and Only, the Divine Name", bn: "আল্লাহ (এক-অদ্বিতীয়)" }
+- { tr: "Ar-Rahman", en: "The Most Compassionate", bn: "পরম দয়ালু" }
+- { tr: "Ar-Rahim", en: "The Most Merciful", bn: "পরম করুণাময়" }
+- { tr: "Al-Malik", en: "The Sovereign, the King", bn: "সর্বোচ্চ ক্ষমতার মালিক" }
+- { tr: "Al-Quddus", en: "The Most Holy", bn: "পবিত্র" }
+- { tr: "As-Salam", en: "The Source of Peace", bn: "শান্তিদাতা" }
+- { tr: "Al-Mu'min", en: "The Giver of Security", bn: "নিরাপত্তাদাতা" }
+- { tr: "Al-Muhaymin", en: "The Protector", bn: "রক্ষাকারী" }
+- { tr: "Al-'Aziz", en: "The Almighty", bn: "মহাপরাক্রমশালী" }
+- { tr: "Al-Jabbar", en: "The Compeller", bn: "মহাক্ষমতাশালী" }
+- { tr: "Al-Mutakabbir", en: "The Supreme in Greatness", bn: "সর্বাপেক্ষা মহান" }
+- { tr: "Al-Khaliq", en: "The Creator", bn: "সৃষ্টিকর্তা" }
+- { tr: "Al-Bari'", en: "The Maker, the Originator", bn: "উদ্ভাবনকারী" }
+- { tr: "Al-Musawwir", en: "The Fashioner of Forms", bn: "আকৃতিদানকারী" }
+- { tr: "Al-Ghaffar", en: "The Ever-Forgiving", bn: "অসীম ক্ষমাশীল" }
+- { tr: "Al-Qahhar", en: "The Subduer", bn: "নিয়ন্ত্রণকারী" }
+- { tr: "Al-Wahhab", en: "The Bestower", bn: "মহান দাতা" }
+- { tr: "Ar-Razzaq", en: "The Provider", bn: "রিজিকদাতা" }
+- { tr: "Al-Fattah", en: "The Opener", bn: "প্রশস্তদাতা" }
+- { tr: "Al-'Alim", en: "The All-Knowing", bn: "মহাজ্ঞানী" }
+- { tr: "Al-Qabid", en: "The Withholder", bn: "হরণকারী" }
+- { tr: "Al-Basit", en: "The Extender", bn: "সম্প্রসারণকারী" }
+- { tr: "Al-Khafid", en: "The Abaser", bn: "অবনতকারী" }
+- { tr: "Ar-Rafi'", en: "The Exalter", bn: "মর্যাদা দানকারী" }
+- { tr: "Al-Mu'izz", en: "The Bestower of Honour", bn: "সম্মানদাতা" }
+- { tr: "Al-Mudhill", en: "The Humiliator", bn: "অপমানকারী" }
+- { tr: "As-Sami'", en: "The All-Hearing", bn: "সর্বশ্রোতা" }
+- { tr: "Al-Basir", en: "The All-Seeing", bn: "সর্বদ্রষ্টা" }
+- { tr: "Al-Hakam", en: "The Judge", bn: "মহাবিচারক" }
+- { tr: "Al-'Adl", en: "The Utterly Just", bn: "ন্যায়পরায়ণ" }
+- { tr: "Al-Latif", en: "The Subtle, the Gentle", bn: "উদার" }
+- { tr: "Al-Khabir", en: "The All-Aware", bn: "সর্বজ্ঞানময়" }
+- { tr: "Al-Halim", en: "The Forbearing", bn: "পরম ধৈর্যশীল" }
+- { tr: "Al-'Azim", en: "The Magnificent", bn: "মহান" }
+- { tr: "Al-Ghafur", en: "The Forgiving", bn: "অতি ক্ষমাশীল" }
+- { tr: "Ash-Shakur", en: "The Appreciative", bn: "গুণগ্রাহী" }
+- { tr: "Al-'Ali", en: "The Most High", bn: "মহা উন্নত" }
+- { tr: "Al-Kabir", en: "The Most Great", bn: "সর্বাপেক্ষা বড়" }
+- { tr: "Al-Hafiz", en: "The Preserver", bn: "মহারক্ষক" }
+- { tr: "Al-Muqit", en: "The Sustainer, the Nourisher", bn: "মহান শক্তিদাতা" }
+- { tr: "Al-Hasib", en: "The Reckoner", bn: "হিসাব গ্রহণকারী" }
+- { tr: "Al-Jalil", en: "The Majestic", bn: "মহামান্বিত" }
+- { tr: "Al-Karim", en: "The Most Generous", bn: "মহা অনুগ্রহশীল" }
+- { tr: "Ar-Raqib", en: "The Watchful", bn: "নিরীক্ষণকারী" }
+- { tr: "Al-Mujib", en: "The Responsive", bn: "প্রার্থনা গ্রহণকারী" }
+- { tr: "Al-Wasi'", en: "The All-Encompassing", bn: "মহা বিস্তারকারী" }
+- { tr: "Al-Hakim", en: "The All-Wise", bn: "মহা প্রজ্ঞাময়" }
+- { tr: "Al-Wadud", en: "The Most Loving", bn: "প্রেমময়" }
+- { tr: "Al-Majid", en: "The Most Glorious", bn: "মহা গৌরবান্বিত" }
+- { tr: "Al-Ba'ith", en: "The Resurrector", bn: "পুনরুত্থানকারী" }
+- { tr: "Ash-Shahid", en: "The Witness", bn: "মহান সাক্ষী" }
+- { tr: "Al-Haqq", en: "The Truth", bn: "মহাসত্য" }
+- { tr: "Al-Wakil", en: "The Trustee, Disposer of Affairs", bn: "প্রতিনিধি" }
+- { tr: "Al-Qawiyy", en: "The Most Strong", bn: "মহাশক্তিধর" }
+- { tr: "Al-Matin", en: "The Firm, the Steadfast", bn: "অত্যন্ত দৃঢ়" }
+- { tr: "Al-Waliyy", en: "The Protecting Friend", bn: "অভিভাবক" }
+- { tr: "Al-Hamid", en: "The Praiseworthy", bn: "মহাপ্রশংসিত" }
+- { tr: "Al-Muhsi", en: "The All-Enumerating", bn: "হিসাব গ্রহণকারী" }
+- { tr: "Al-Mubdi'", en: "The Originator", bn: "সূচনাকারী" }
+- { tr: "Al-Mu'id", en: "The Restorer", bn: "প্রথম সৃষ্টিকারী" }
+- { tr: "Al-Hayy", en: "The Ever-Living", bn: "চিরঞ্জীব" }
+- { tr: "Al-Qayyum", en: "The Self-Subsisting Sustainer", bn: "চিরস্থায়ী" }
+- { tr: "Al-Muhyi", en: "The Giver of Life", bn: "জীবনদানকারী" }
+- { tr: "Al-Mumit", en: "The Bringer of Death", bn: "মৃত্যুদানকারী" }
+- { tr: "Al-Wajid", en: "The Finder, the Perceiver", bn: "ইচ্ছাপূরণকারী" }
+- { tr: "Al-Majid", en: "The Noble, the Illustrious", bn: "মহাগৌরবান্বিত" }
+- { tr: "Al-Wahid", en: "The One", bn: "একক সত্তা" }
+- { tr: "As-Samad", en: "The Eternal, the Self-Sufficient", bn: "স্বয়ংসম্পূর্ণ / অমুখাপেক্ষী" }
+- { tr: "Al-Qadir", en: "The All-Capable", bn: "সর্বশক্তিমান" }
+- { tr: "Al-Muqtadir", en: "The All-Powerful", bn: "মহান কুদরতের অধিকারী" }
+- { tr: "Al-Muqaddim", en: "The Expediter", bn: "অগ্রসরকারী" }
+- { tr: "Al-Mu'akhkhir", en: "The Delayer", bn: "বিলম্বকারী" }
+- { tr: "Al-Awwal", en: "The First", bn: "সর্বপ্রথম" }
+- { tr: "Al-Akhir", en: "The Last", bn: "সর্বশেষ" }
+- { tr: "Az-Zahir", en: "The Manifest", bn: "প্রকাশ্য" }
+- { tr: "Al-Batin", en: "The Hidden", bn: "অপ্রকাশিত" }
+- { tr: "Al-Wali", en: "The Governing Patron", bn: "মহান অধিপতি" }
+- { tr: "Al-Muta'ali", en: "The Most Exalted", bn: "চির-উন্নত" }
+- { tr: "Al-Barr", en: "The Source of All Goodness", bn: "কল্যাণদাতা" }
+- { tr: "At-Tawwab", en: "The Ever-Relenting", bn: "মহান তওবা কবুলকারী" }
+- { tr: "Al-Muntaqim", en: "The Avenger", bn: "প্রতিশোধ গ্রহণকারী" }
+- { tr: "Al-'Afuww", en: "The Pardoner", bn: "ক্ষমাকারী" }
+- { tr: "Ar-Ra'uf", en: "The Most Kind", bn: "অতিশয় দয়ালু" }
+- { tr: "Malik-ul-Mulk", en: "Master of the Kingdom", bn: "সর্বভৌম ক্ষমতার অধিকারী" }
+- { tr: "Dhul-Jalali wal-Ikram", en: "Lord of Majesty and Bounty", bn: "গৌরব ও মহত্ত্বের অধিকারী" }
+- { tr: "Al-Muqsit", en: "The Equitable", bn: "ন্যায়পরায়ণ" }
+- { tr: "Al-Jami'", en: "The Gatherer", bn: "একত্রকারী" }
+- { tr: "Al-Ghani", en: "The Self-Sufficient", bn: "মহা সম্পদশালী / স্বয়ংসম্পূর্ণ" }
+- { tr: "Al-Mughni", en: "The Enricher", bn: "ঐশ্বর্যদানকারী" }
+- { tr: "Al-Mani'", en: "The Preventer", bn: "প্রতিরোধকারী" }
+- { tr: "Ad-Darr", en: "The Distresser", bn: "অনিষ্টকারী" }
+- { tr: "An-Nafi'", en: "The Benefactor", bn: "উপকারকারী" }
+- { tr: "An-Nur", en: "The Light", bn: "জ্যোতি" }
+- { tr: "Al-Hadi", en: "The Guide", bn: "পথ প্রদর্শনকারী" }
+- { tr: "Al-Badi'", en: "The Incomparable Originator", bn: "সৃষ্টিকারী" }
+- { tr: "Al-Baqi", en: "The Everlasting", bn: "চিরবিরাজমান" }
+- { tr: "Al-Warith", en: "The Inheritor", bn: "স্বত্বাধিকারী" }
+- { tr: "Ar-Rashid", en: "The Guide to the Right Path", bn: "সৎপথে পরিচালনাকারী" }
+- { tr: "As-Sabur", en: "The Most Patient", bn: "মহাধৈর্যশীল" }

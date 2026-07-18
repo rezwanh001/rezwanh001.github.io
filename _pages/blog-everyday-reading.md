@@ -198,7 +198,7 @@ nav: false
   <h3 class="amal-section-h"><i class="fa-solid fa-star-and-crescent"></i> The 99 Names of Allah <span>Asmā-ul-Ḥusnā</span></h3>
   <div class="names-grid">
     {% for name in site.data.asma_ul_husna %}
-      <div class="name-item"><span class="name-num">{{ forloop.index }}</span><span class="name-body"><span class="name-tr">{{ name.tr }}</span><span class="name-en">{{ name.en }}</span></span></div>
+      <div class="name-item"><span class="name-num">{{ forloop.index }}</span><span class="name-body"><span class="name-tr">{{ name.tr }}</span><span class="name-en">{{ name.en }}</span><span class="name-bn" lang="bn">{{ name.bn }}</span></span></div>
     {% endfor %}
   </div>
 
@@ -222,7 +222,7 @@ nav: false
   </details>
   {% endif %}
 
-  <p class="amal-note">Arabic, transliteration, and meanings of the surahs and du'as follow the well-known standard text; the 99 Names are given as transliteration and meaning. For anything exact — including the Bengali renderings — please refer to the scanned source pages above.</p>
+  <p class="amal-note">Arabic, transliteration, and meanings of the surahs and du'as follow the well-known standard text; the 99 Names follow the order and Bangla meanings of the scanned source pages (which begin with Allah). For anything exact — including the Bengali renderings — please refer to the scanned source pages above.</p>
 </section>
 
 {% include blog_styles.liquid %}

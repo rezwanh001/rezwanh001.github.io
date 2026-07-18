@@ -198,6 +198,78 @@ Read together, these papers point one direction.
 2. **Keep human alignment but scope it** to *human-facing* agents (wearables, assistive glasses), where AVS-style capture guidance and human preference genuinely matter.
 3. **Make the human-versus-task quality gap itself the research question**: when do they agree, when do they diverge, can one model serve both.
 
+Drawn as a 2×2, the gap is impossible to miss — and this is the single most useful picture to have in your head when pitching the direction:
+
+<div class="wm-figure">
+<svg viewBox="0 0 760 380" role="img" aria-label="Two-by-two map: does the agent move, versus what view quality is aligned to" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;color:var(--global-text-color);">
+  <defs>
+    <marker id="rmArrow" markerWidth="8" markerHeight="8" refX="6.5" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="currentColor"></path>
+    </marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="120" y1="320" x2="700" y2="320" stroke="currentColor" stroke-width="1.6" marker-end="url(#rmArrow)"></line>
+  <line x1="120" y1="320" x2="120" y2="46"  stroke="currentColor" stroke-width="1.6" marker-end="url(#rmArrow)"></line>
+  <text x="410" y="352" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">does the agent MOVE to get a better view?</text>
+  <text x="188" y="338" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">no — static scoring</text>
+  <text x="600" y="338" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">yes — active perception</text>
+  <g transform="rotate(-90 34 183)">
+    <text x="34" y="183" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">quality aligned to…</text>
+  </g>
+  <text x="72" y="290" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">pixels /</text>
+  <text x="72" y="303" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">humans</text>
+  <text x="72" y="86"  text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">task</text>
+  <text x="72" y="99"  text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">success</text>
+
+  <line x1="410" y1="46" x2="410" y2="320" stroke="currentColor" stroke-width="1" opacity="0.22"></line>
+  <line x1="120" y1="183" x2="700" y2="183" stroke="currentColor" stroke-width="1" opacity="0.22"></line>
+
+  <!-- bottom-left: classic IQA -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9">
+    <rect x="150" y="215" width="215" height="72" rx="9"></rect>
+  </g>
+  <text x="257" y="242" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">MANIQA · classic IQA</text>
+  <text x="257" y="262" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.78">scores a still image the way</text>
+  <text x="257" y="277" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.78">a person would rate it</text>
+
+  <!-- bottom-right: AVS -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9">
+    <rect x="455" y="215" width="215" height="72" rx="9"></rect>
+  </g>
+  <text x="562" y="242" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">Active View Selector</text>
+  <text x="562" y="262" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.78">moves to improve the view —</text>
+  <text x="562" y="277" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.78">but optimises reconstruction (SSIM)</text>
+
+  <!-- top-left: Embodied IQA -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9">
+    <rect x="150" y="80" width="215" height="72" rx="9"></rect>
+  </g>
+  <text x="257" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">Embodied-IQA · EPD</text>
+  <text x="257" y="127" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.78">quality = does the robot succeed —</text>
+  <text x="257" y="142" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.78">but only scores static images</text>
+
+  <!-- top-right: THE GAP -->
+  <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-dasharray="7 5">
+    <rect x="455" y="80" width="215" height="72" rx="9"></rect>
+  </g>
+  <text x="562" y="105" text-anchor="middle" font-size="12.5" font-weight="700" fill="currentColor">◆ unclaimed</text>
+  <text x="562" y="125" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.85">a learned movement policy whose</text>
+  <text x="562" y="140" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.85">reward is task-aligned view quality</text>
+
+  <!-- arrows converging on the gap -->
+  <g stroke="currentColor" fill="none" stroke-width="1.3" stroke-dasharray="4 4" opacity="0.65">
+    <path d="M562,213 V158" marker-end="url(#rmArrow)"></path>
+    <path d="M367,116 H451" marker-end="url(#rmArrow)"></path>
+  </g>
+  <text x="586" y="188" font-size="10" fill="currentColor" opacity="0.7">swap the objective</text>
+  <text x="374" y="106" font-size="10" fill="currentColor" opacity="0.7">add movement</text>
+
+  <text x="410" y="30" text-anchor="middle" font-size="11.5" fill="currentColor" opacity="0.9">each half of the idea already exists — the combination does not</text>
+</svg>
+<figcaption>The research gap, drawn. Two literatures each hold one half: AVS moves but optimises the wrong thing; Embodied-IQA and EPD define the right thing but never move. The dashed quadrant is the thesis.</figcaption>
+</div>
+
 **The unclaimed center.** AVS *moves the camera* but optimizes reconstruction quality with no learned policy; Embodied-IQA and EPD *define task-aligned quality* but only score static images — nothing moves. Stated precisely, the open problem is: *an agent that learns a **movement policy** whose reward is a learned, **task-aligned** (not pretty) **view-quality** signal, evaluated in **closed loop** by task success.* Each half exists in the literature; the combination does not. Concrete openings: a task-aligned view-usefulness model used as a **dense intrinsic reward** for an active-perception RL policy (EPD's reward-as-label × AVS's move-to-improve); a **cross-reference usefulness** signal for an agent with memory ("is this new viewpoint more useful than the ones I already hold"); a new **active-perception benchmark** where an agent moves and each viewpoint is labeled by downstream task success (filling the static-only gap in Embodied-IQA / EPD); and a **lightweight-by-design** reward model (both AVS's RepViT and MA-EIQA's 48M-parameter CNN exist because the loop must run in real time).
 
 ---
@@ -407,4 +479,6 @@ A simple recipe I follow: (1) pick a **cluster** above; (2) read the surveys to 
   margin: 0.1rem 0 0.25rem;
 }
 .paper-meta a { font-weight: 500; }
+.wm-figure { margin: 1.8rem 0; }
+.wm-figure figcaption { margin-top: 0.6rem; font-size: 0.88rem; opacity: 0.8; text-align: center; color: var(--global-text-color); }
 </style>

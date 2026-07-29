@@ -20,7 +20,7 @@ related_posts: false
         <a href="#" data-toggle="modal" data-target="#smc2026ImageModal">
             <img src="/assets/img/Towards_2260.png" alt="SMC 2026 Acceptance for SLM-RL Agents" style="float: right; width: 45%; max-width: 350px; margin-left: 15px; border: 1px solid #ddd; padding: 3px; border-radius: 4px; cursor: zoom-in;">
         </a>
-        <strong>(1) <a href="https://github.com/rezwanh001/SLM-RL-Agents" target="_blank">Towards Robust Reinforcement Learning for Small-Scale Language Model Agents</a></strong><br>
+        <strong>(1) <a href="https://arxiv.org/abs/2607.25091" target="_blank">Towards Robust Reinforcement Learning for Small-Scale Language Model Agents</a></strong><br>
         (Paper ID: 2260)
     </div>
     <div style="clear: both;"></div>

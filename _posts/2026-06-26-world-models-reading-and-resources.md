@@ -33,6 +33,7 @@ Throughout, a 🎯 marks the papers closest to my current research direction —
   <a href="#deep-dives">Part I · Deep Dives</a>
   <a href="#group-d">🎯 Group D (project-aligned)</a>
   <a href="#idea-seed">Idea seed</a>
+  <a href="#further-reading">Further reading (active perception & IQA)</a>
   <a href="#thematic-index">Part II · Thematic Index</a>
   <a href="#how-to-use">How to use this</a>
   <a href="#references">References</a>
@@ -271,6 +272,72 @@ Drawn as a 2×2, the gap is impossible to miss — and this is the single most u
 </div>
 
 **The unclaimed center.** AVS *moves the camera* but optimizes reconstruction quality with no learned policy; Embodied-IQA and EPD *define task-aligned quality* but only score static images — nothing moves. Stated precisely, the open problem is: *an agent that learns a **movement policy** whose reward is a learned, **task-aligned** (not pretty) **view-quality** signal, evaluated in **closed loop** by task success.* Each half exists in the literature; the combination does not. Concrete openings: a task-aligned view-usefulness model used as a **dense intrinsic reward** for an active-perception RL policy (EPD's reward-as-label × AVS's move-to-improve); a **cross-reference usefulness** signal for an agent with memory ("is this new viewpoint more useful than the ones I already hold"); a new **active-perception benchmark** where an agent moves and each viewpoint is labeled by downstream task success (filling the static-only gap in Embodied-IQA / EPD); and a **lightweight-by-design** reward model (both AVS's RepViT and MA-EIQA's 48M-parameter CNN exist because the loop must run in real time).
+
+---
+
+# Further reading — active perception &amp; embodied IQA (2024–2026) {#further-reading}
+
+A focused companion to Group D: the surrounding literature on *machine-oriented image quality*, *cross-reference / novel-view quality*, *next-best-view selection*, and *active perception inside VLA policies*. This is the fast-moving neighbourhood around "moving to see better." Many entries are recent preprints — **confirm title/authors/venue at the source before formal citation.**
+
+## Machine &amp; embodied IQA — the direct lineage
+
+<div class="paper-list">
+  <div class="paper"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Image_Quality_Assessment_From_Human_to_Machine_Preference_CVPR_2025_paper.pdf" target="_blank" rel="noopener">Image Quality Assessment: From Human to Machine Preference (MPD)</a><span class="paper-meta">CVPR 2025 · SJTU</span>The <strong>MPD</strong> database (1k reference / 30k distorted / ~2.25M annotations, 5 machine subjects) — the machine-preference predecessor of Embodied-IQA on the cognition-only side, and the methodological source it builds on.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2508.19850" target="_blank" rel="noopener">IQA for Machines: Paradigm, Large-scale Database &amp; Models (MIQD-2.5M / RA-MIQA)</a><span class="paper-meta">2025</span>~2.5M degraded images (ImageNet + COCO), 10 distortions × 5 severities × <strong>3 spatial patterns</strong> (uniform / ROI / background), labelled by 75 vision models. Proposes a <em>region-aware</em> IQA transformer; independently reports human IQA metrics at ~0.24–0.54 on machine labels — corroborating the embodied-IQA gap and adding the spatial-locality axis.</div>
+  <div class="paper"><a href="https://openreview.net/forum?id=594Zi8w9SZ" target="_blank" rel="noopener">Machine-oriented IQA (MoIQA) Challenge</a><span class="paper-meta">ACM MM 2026</span>Two tracks — <strong>MoIQA-Sim</strong> (agreement with VLM performance in simulation) and <strong>MoIQA-Real</strong> (agreement with VLA results in the real world) — with released datasets. A ready-made venue and benchmark for exactly this problem.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2605.09479" target="_blank" rel="noopener">ML-CLIPSim: Multi-Layer CLIP Similarity for Machine-Oriented IQA</a><span class="paper-meta">2026</span>A machine-aligned distortion measure used as the distortion term in learned image compression — a concrete instance of the "quality-metric-as-training-loss" direction.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2410.05474" target="_blank" rel="noopener">R-Bench: Are Large Multimodal Models Robust to Real-world Corruptions?</a><span class="paper-meta">JSTSP 2024/25 · SJTU</span>Robustness of MLLMs under real corruptions — the perception-side motivation for machine-oriented quality.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2312.17090" target="_blank" rel="noopener">Q-Align: Teaching LMMs Visual Scoring via Discrete Text-Defined Levels</a><span class="paper-meta">ICML 2024</span>The scoring LMM used as both a pre-filter and a zero-shot baseline throughout this literature.</div>
+</div>
+
+## Cross-reference &amp; novel-view quality assessment
+
+<div class="paper-list">
+  <div class="paper"><a href="https://arxiv.org/abs/2404.14409" target="_blank" rel="noopener">CrossScore: Towards Multi-View Image Evaluation and Scoring</a><span class="paper-meta">ECCV 2024 · Oxford</span>The mechanism AVS builds on: cross-attention over multi-view references to predict an SSIM map <em>without</em> ground truth. The essential prerequisite for any cross-reference quality signal.</div>
+  <div class="paper"><a href="https://stootaghaj.github.io/nova-project/" target="_blank" rel="noopener">NOVA: Non-Aligned Reference IQA for Novel View Synthesis</a><span class="paper-meta">WACV 2026</span>Successor/competitor to CrossScore — quality assessment with <em>non-aligned</em> references; bears on whether "reference from another viewpoint" needs alignment.</div>
+</div>
+
+## Active view selection &amp; next-best-view (around AVS)
+
+<div class="paper-list">
+  <div class="paper"><a href="https://arxiv.org/abs/2311.17874" target="_blank" rel="noopener">FisherRF: Active View Selection &amp; Mapping with Fisher Information</a><span class="paper-meta">ECCV 2024</span>The 3D-uncertainty baseline AVS dethrones on both quality and speed.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2506.14856" target="_blank" rel="noopener">Peering into the Unknown: Active View Selection with Neural Uncertainty Maps</a><span class="paper-meta">2025</span>Learned 2D uncertainty maps for view selection — the "uncertainty" analogue to AVS's "quality."</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2601.03024" target="_blank" rel="noopener">SA-ResGS: Self-Augmented Residual 3DGS for Next-Best-View</a><span class="paper-meta">2026</span>Stabilised uncertainty quantification for NBV — the 3D-side rebuttal to AVS's "skip 3D" argument.</div>
+  <div class="paper"><a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.70363" target="_blank" rel="noopener">OUGS: Object-aware Uncertainty Estimation in 3DGS for View Selection</a><span class="paper-meta">CGF 2026</span>Uncertainty from the physical parameters of Gaussian primitives; object-aware.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2602.08266" target="_blank" rel="noopener">Informative Object-centric Next-Best-View for 3DGS in Cluttered Scenes</a><span class="paper-meta">2026</span>Object-centric NBV — closer to manipulation than scene-level NVS.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2507.01125" target="_blank" rel="noopener">VISTA: Task-Relevant Robot Exploration with Online Semantic Gaussian Splatting</a><span class="paper-meta">2025</span><strong>Task-relevant</strong> exploration — the semantic/task conditioning that a pure quality score lacks, applied to exploration.</div>
+  <div class="paper"><a href="https://arm.stanford.edu/next-best-sense" target="_blank" rel="noopener">Next Best Sense: Guiding Vision and Touch with FisherRF for 3DGS</a><span class="paper-meta">2025 · Stanford</span>Extends FisherRF to vision + touch — the multimodal-perception extension embodied-IQA work flags as future.</div>
+</div>
+
+## Active perception inside VLA / manipulation
+
+<div class="paper-list">
+  <div class="paper"><a href="https://arxiv.org/abs/2601.08325" target="_blank" rel="noopener">ActiveVLA: Injecting Active Perception into VLA Models</a><span class="paper-meta">2026</span>Adaptive viewpoint <em>and camera-resolution</em> selection inside a VLA (active 3D zoom-in) — the closest existing "quality-aware VLA," though it optimises task success directly rather than a quality metric.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2508.05186" target="_blank" rel="noopener">Learning to See and Act: Task-Aware View Planning (TAVP)</a><span class="paper-meta">2025</span>Task-aware view planning with an MoE visual encoder — task conditioning of viewpoint choice, applied to planning.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2602.04600" target="_blank" rel="noopener">Act, Sense, Act: Non-Markovian Active Perception from Egocentric Human Data</a><span class="paper-meta">2026</span>Learns non-Markovian active-perception strategies at scale from egocentric video.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2409.14891" target="_blank" rel="noopener">Observe Then Act: Asynchronous Active Vision-Action for Manipulation</a><span class="paper-meta">2024/25</span>A camera next-best-view policy serially coupled to a gripper next-best-pose policy.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2506.12261" target="_blank" rel="noopener">Viewpoint-Agnostic Manipulation Policies with Strategic Vantage Selection</a><span class="paper-meta">2025</span>Vantage selection for viewpoint-robust manipulation.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2606.21501" target="_blank" rel="noopener">UniviewVLA: A Unified Multiview VLA Model with World Modeling</a><span class="paper-meta">2026</span>Multiview + world modelling in a single VLA — a bridge between the world-model and multi-view lines.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2606.19091" target="_blank" rel="noopener">GCNGrasp-VP: Affordance-Guided View Planning for Task-Oriented Grasping</a><span class="paper-meta">2026</span>Affordance- (i.e. task-) guided view planning.</div>
+</div>
+
+## VLA robustness under perturbation — why quality matters
+
+<div class="paper-list">
+  <div class="paper"><a href="https://arxiv.org/abs/2510.00037" target="_blank" rel="noopener">On Robustness of VLA Models against Multi-Modal Perturbations</a><span class="paper-meta">2025</span>Systematic VLA robustness under multi-modal perturbation — independent confirmation that perception degradation breaks embodied policies.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2606.08881" target="_blank" rel="noopener">Benchmarking VLA Models on SO-101: Failure &amp; Recovery Analysis</a><span class="paper-meta">2026</span>A structured failure taxonomy separating semantic- from execution-level failure, with recovery-aware metrics — useful for defining what a quality signal should predict.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2607.04434" target="_blank" rel="noopener">RoboDojo: A Unified Sim-and-Real Benchmark for Manipulation Policies</a><span class="paper-meta">2026</span>A sim-and-real evaluation harness — a candidate testbed for closed-loop validation.</div>
+</div>
+
+## Closed-loop evaluation &amp; IQA as a reward signal
+
+<div class="paper-list">
+  <div class="paper"><a href="https://arxiv.org/abs/2510.18135" target="_blank" rel="noopener">World-in-World: World Models in a Closed-Loop World</a><span class="paper-meta">ICLR 2026 (Oral) · <a href="#group-b">deep dive ↑</a></span>The strongest single citation for "pixel/perceptual metrics ≠ embodied usefulness" — evaluates world models by interaction and finds large gaps between visual quality and task success.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2502.20694" target="_blank" rel="noopener">WorldModelBench: Judging Video Generation Models as World Models</a><span class="paper-meta">2025</span>A benchmark-design precedent for judging generative models by embodied rather than pixel criteria.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2505.14460" target="_blank" rel="noopener">VisualQuality-R1: Reasoning-Induced IQA via RL-to-Rank</a><span class="paper-meta">2025</span>RL-to-rank for IQA — a template for training a quality model with ranking objectives, robust to noisy opinion labels.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2601.02918" target="_blank" rel="noopener">Zoom-IQA: IQA with Reliable Region-Aware Reasoning</a><span class="paper-meta">2026</span>Region-aware reasoning for IQA — the spatial-localisation direction.</div>
+  <div class="paper"><a href="https://arxiv.org/abs/2604.16858" target="_blank" rel="noopener">Q-DeepSight: Incentivizing Thinking with Images for IQA and Refinement</a><span class="paper-meta">2026</span>An assess-and-refine loop translating localised quality diagnoses into targeted edits — analogous to "diagnose → re-observe" for a robot.</div>
+</div>
 
 ---
 

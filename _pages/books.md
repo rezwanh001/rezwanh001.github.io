@@ -13,6 +13,18 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
+  - title: The Legend of Sleepy Hollow
+    author: Washington Irving
+    published_date: 1820
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_the_legend_of_sleepy_hollow.jpg
+    youtube_id: "a6L0OQgHCm8" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "1ZuoCp2eFyfzRCbNvbF_H_47RDR0VTS_P"
+    tags: ["Short Story", "Classic", "Gothic Fiction", "Humor"]
+    summary: "Set in the quiet, secluded Dutch settlement of Sleepy Hollow in New York, this iconic gothic short story revolves around Ichabod Crane, a superstitious and pedantic schoolmaster from Connecticut. Ichabod becomes infatuated with Katrina Van Tassel, the beautiful and wealthy eighteen-year-old daughter of a prosperous local farmer, primarily due to her massive inheritance. This pursuit puts Ichabod in direct conflict with Abraham 'Brom Bones' Van Brunt, the rugged, rowdy, and athletic town hero who is also determined to marry Katrina. The rivalry reaches its climax during a festive autumn party at the Van Tassel homestead, where Ichabod is quietly rejected by Katrina. Depressed and vulnerable, Ichabod rides his horse home late at night through the dark, haunted woods of Sleepy Hollow. Suddenly, he is confronted by the legendary Headless Horseman—the ghost of a Hessian trooper whose head was carried away by a cannonball during the Revolutionary War. A terrifying chase ensues, culminating in the Horseman hurling his severed 'head' directly at Ichabod. The next morning, Ichabod has vanished from the town, leaving behind only his horse, a shattered pumpkin, and his belongings. While Brom Bones marries Katrina and laughs knowingly at the story, the superstitious villagers believe Ichabod was carried off by the supernatural rider, transforming him into a permanent legend of the hollow."
+    summary_bangla: "নিউ ইয়র্কের এক নিস্তব্ধ ও রহস্যময় ওলন্দাজ গ্রাম স্লিপি হ্যালো-র পটভূমিতে রচিত এই ক্লাসিক গথিক গল্পটি ইকাবড ক্রেন নামের এক অত্যন্ত কুসংস্কারাচ্ছন্ন ও কিঞ্চিৎ লোভী স্কুল শিক্ষককে কেন্দ্র করে আবর্তিত হয়। ইকাবড এলাকার এক ধনী কৃষকের সুন্দরী ও একমাত্র উত্তরাধিকারী কন্যা ক্যাটরিনা ভ্যান ট্যাসেলের প্রেমে পড়ে, যার মূল উদ্দেশ্য ছিল ভ্যান ট্যাসেল পরিবারের বিশাল সম্পত্তি হাসিল করা। এই চক্রান্ত তাকে সরাসরি মুখোমুখি দাঁড় করিয়ে দেয় আব্রাহাম 'ব্রম বোনস' ভ্যান ব্রন্টের—যে ছিল এলাকার অত্যন্ত শক্তিশালী, ডানপিটে এবং সাহসী এক যুবক এবং ক্যাটরিনাকে বিয়ে করতে দৃঢ়প্রতিজ্ঞ। তাদের এই প্রতিদ্বন্দ্বিতা চূড়ান্ত রূপ নেয় ভ্যান ট্যাসেলদের বাড়িতে আয়োজিত এক শরৎকালীন সান্ধ্যকালীন পার্টিতে, যেখানে ক্যাটরিনা ইকাবডের প্রেমের প্রস্তাব প্রত্যাখ্যান করে। ভগ্ন হৃদয়ে ইকাবড যখন গভীর রাতে তার ঘোড়ায় চড়ে স্লিপি হ্যালোর ঘন ও ভুতুড়ে বনের ভেতর দিয়ে বাড়ি ফিরছিল, তখন সে হঠাৎ মুখোমুখি হয় এক কিংবদন্তি অপশক্তি—মাথাহীন অশ্বারোহীর (হেডলেস হর্সম্যান), যে ছিল মূলত স্বাধীনতা যুদ্ধে কামানের গোলার আঘাতে মাথা হারানো এক সৈনিকের প্রেতাত্মা। শুরু হয় এক শ্বাসরুদ্ধকর ও অতিপ্রাকৃত ধাওয়া, যার শেষ পর্যায়ে মাথাহীন অশ্বারোহীটি তার বিচ্ছিন্ন জ্বলন্ত 'মাথা' ইকাবডের দিকে ছুঁড়ে মারে। পরদিন সকালে ইকাবডের আর কোনো খোঁজ পাওয়া যায় না; নদীর ধারে পড়ে থাকে কেবল তার ঘোড়া, তার জীর্ণ টুপি এবং একটি ভাঙা মিষ্টি কুমড়ো। ব্রম বোনস শীঘ্রই ক্যাটরিনাকে বিয়ে করে এবং ইকাবডের গল্প শুনলেই রহস্যময় হাসি হাসে। অন্যদিকে স্লিপি হ্যালোর কুসংস্কারাচ্ছন্ন গ্রামবাসীরা বিশ্বাস করতে শুরু করে যে ইকাবডকে সেই মাথাহীন অশ্বারোহীই তুলে নিয়ে গেছে, যা তাকে স্লিপি হ্যালোর এক চিরন্তন রূপকথায় পরিণত করে।"
+
   - title: Rip Van Winkle
     author: Washington Irving
     published_date: 1819
@@ -370,6 +382,18 @@ reading_list:
   # -----------------------------------------------------------------
   # English Literature
   # -----------------------------------------------------------------
+  - title: Animal Farm
+    author: George Orwell
+    published_date: 1945
+    category: English Literature
+    rating: 4
+    image: /assets/pdf/books/book_animal_farm.webp
+    youtube_id: "t-l5n95Evkw" # You can add an audiobook ID here if available
+    gdrive_id: "1hJSq6_lhJct0OawAt6VD9xeyangZaMky"
+    tags: ["Satire", "Political Allegory", "Classic Novel", "Dystopian"]
+    summary: "Set on Manor Farm, this political allegory and biting satire begins with the aging boar Old Major sharing his revolutionary dream of a society where animals live free from human exploitation. Inspired by his vision, the animals stage a successful rebellion against their neglectful and abusive farmer, Mr. Jones, renaming the property Animal Farm and establishing the Seven Commandments of Animalism, primarily declaring that all animals are equal. Initially, the farm prospers, but a quiet power struggle soon develops between two pigs: the idealistic, inventive Snowball and the ruthless, power-hungry Napoleon. Using a pack of fierce attack dogs he raised in secret, Napoleon violently exiles Snowball and seizes absolute control of the farm. Supported by Squealer, a pig masterful in propaganda, Napoleon begins to systematically dismantle the animals' rights, blame Snowball for every misfortune, and rewrite the sacred commandments to justify his own corrupt, human-like luxuries. The tragic descent of the farm is highlighted by the betrayal of Boxer, the loyal, hardworking cart-horse, who is sold to a glue factory when he becomes too weak to work. By the novel's chilling conclusion, the pigs are walking on two legs, carrying whips, and have reduced the commandments to a single, infamous law: 'All animals are equal, but some animals are more equal than others.' The remaining animals watch in horror as they can no longer distinguish between the tyrannical pigs and their former human oppressors."
+    summary_bangla: "ম্যানর ফার্মের পটভূমিতে রচিত এই বিখ্যাত রাজনৈতিক রূপক ও ব্যঙ্গাত্মক উপন্যাসটি শুরু হয় প্রবীণ শূকর ওল্ড মেজরের এক বিপ্লবী স্বপ্নের মাধ্যমে, যেখানে সে এমন এক সমাজের স্বপ্ন দেখে যেখানে প্রাণীরা মানুষের শোষণ থেকে মুক্ত থাকবে। তার এই আদর্শে অনুপ্রাণিত হয়ে খামারের প্রাণীরা তাদের অত্যাচারী ও উদাসীন মালিক মিস্টার জোন্সের বিরুদ্ধে এক সফল বিদ্রোহ গড়ে তোলে, খামারের নাম পরিবর্তন করে রাখে 'অ্যানিমেল ফার্ম' এবং অ্যানিমেলিজমের সাতটি মূল নীতি প্রতিষ্ঠা করে—যার প্রধান কথা ছিল 'সব প্রাণীই সমান'। শুরুতে খামারটি বেশ ভালোভাবে চললেও দ্রুতই দুই শূকর—আদর্শবাদী ও কৌশলী স্নোবল এবং ক্ষমতালোভী ও নির্দয় নেপোলিয়নের মধ্যে এক নীরব ক্ষমতার দ্বন্দ্ব শুরু হয়। গোপনে লালন-পালন করা একদল শিকারি কুকুরের সাহায্যে নেপোলিয়ন স্নোবলকে খামার থেকে হিংস্রভাবে তাড়িয়ে দেয় এবং একচ্ছত্র ক্ষমতা দখল করে। নেপোলিয়ন তার চতুর প্রচারক স্কুইলারের সাহায্যে স্নোবলকে সমস্ত অনর্থের মূল হিসেবে অভিযুক্ত করে এবং নিজের স্বার্থে একের পর এক মূল নীতিগুলো পরিবর্তন করতে শুরু করে। প্রাণীদের অধিকার কেড়ে নিয়ে সে মানুষের মতো বিলাসবহুল জীবনযাপন শুরু করে। খামারের এই চরম অবক্ষয়ের রূপ ফুটে ওঠে যখন অত্যন্ত পরিশ্রমী ও অনুগত ঘোড়া বক্সার অসুস্থ হয়ে পড়লে তাকে কসাইয়ের কাছে বিক্রি করে দেওয়া হয়। উপন্যাসের শেষে দেখা যায়, শাসক শূকরেরা দুই পায়ে হাঁটতে শুরু করেছে এবং চাবুক হাতে প্রাণীদের শাসন করছে। তারা পূর্বের নীতিগুলো মুছে কেবল একটি কুখ্যাত আইন রেখে দেয়: 'সব প্রাণীই সমান, তবে কিছু প্রাণী অন্যদের চেয়ে বেশি সমান।' শোষিত সাধারণ প্রাণীরা হতবাক হয়ে লক্ষ্য করে যে, অত্যাচারী শূকর এবং তাদের পূর্বের শোষক মানুষের চেহারার মধ্যে তারা আর কোনো পার্থক্য খুঁজে পাচ্ছে না।"
+
   - title: Dracula
     author: Bram Stoker
     published_date: 1897

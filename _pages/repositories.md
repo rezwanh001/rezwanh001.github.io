@@ -18,12 +18,12 @@ nav_order: 4
   </p>
   <div class="repo-hero-stats">
     <div class="repo-stat">
-      <span class="repo-stat-number" id="repo-total-count">--</span>
+      <span class="repo-stat-number" id="repo-total-count">{{ site.data.repositories.github_repos | size }}</span>
       <span class="repo-stat-label">Paper Repositories</span>
     </div>
     <div class="repo-stat-divider"></div>
     <div class="repo-stat">
-      <span class="repo-stat-number" id="repo-github-count">--</span>
+      <span class="repo-stat-number" id="repo-github-count">{{ site.data.repositories.github_user.public_repos }}</span>
       <span class="repo-stat-label">Public Repos on GitHub</span>
     </div>
   </div>
@@ -80,39 +80,62 @@ nav_order: 4
 </div>
 {% endif %}
 
-<!-- ═══════════════════════  Stats Counter JS  ═══════════════════════ -->
+<!-- ═══════════════════════  Stats + Live-Refresh JS  ═══════════════════════ -->
+<!--
+  Cards render from baked data (see _data/repositories.yml), so nothing ever
+  appears broken. This script only *enhances* them: it counts the cards for
+  the hero, and opportunistically refreshes star / fork / follower counts from
+  the public GitHub API. Every network call fails silently — on rate-limit or
+  offline the baked numbers simply stay. No third-party image service involved.
+-->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var repoCards = document.querySelectorAll('.repo');
-  var countEl = document.getElementById('repo-total-count');
-  // Count only repo pin cards (not the user overview card)
-  var repoCount = 0;
-  repoCards.forEach(function(c) {
-    var imgs = c.querySelectorAll('img');
-    imgs.forEach(function(img) {
-      if (img.src && img.src.indexOf('/pin/') !== -1) repoCount++;
-    });
-  });
-  // Each repo has light+dark img, divide by 2
-  repoCount = Math.round(repoCount / 2);
-  if (countEl && repoCount > 0) countEl.textContent = repoCount;
+  var paperCards = document.querySelectorAll('.repo-card[data-repo]');
 
-  // Fetch total public repo count from GitHub API
+  // Hero: number of paper repositories shown on this page.
+  var countEl = document.getElementById('repo-total-count');
+  if (countEl) countEl.textContent = paperCards.length;
+
+  // Hero: total public repos — live-refresh over the baked fallback.
   var ghCountEl = document.getElementById('repo-github-count');
-  if (ghCountEl) {
-    fetch('https://api.github.com/users/rezwanh001')
-      .then(function(res) { return res.json(); })
-      .then(function(data) {
-        if (data && data.public_repos) {
-          ghCountEl.textContent = data.public_repos;
-        }
-      })
-      .catch(function() { ghCountEl.textContent = '60+'; });
+
+  function setNum(el, value) {
+    if (el && typeof value === 'number' && !isNaN(value)) el.textContent = value;
   }
 
-  // Fade-in animation for repo cards
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
+  // --- Live refresh: user profile (repos / followers / following) ---
+  var userCard = document.querySelector('.repo-card-user[data-user]');
+  if (userCard) {
+    fetch('https://api.github.com/users/' + userCard.getAttribute('data-user'))
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (d) {
+        setNum(ghCountEl, d.public_repos);
+        var map = { repos: d.public_repos, followers: d.followers, following: d.following };
+        Object.keys(map).forEach(function (k) {
+          var span = userCard.querySelector('[data-stat="' + k + '"] .repo-card-num');
+          setNum(span, map[k]);
+        });
+      })
+      .catch(function () { /* keep baked values */ });
+  }
+
+  // --- Live refresh: each repo card (stars / forks) ---
+  paperCards.forEach(function (card) {
+    fetch('https://api.github.com/repos/' + card.getAttribute('data-repo'))
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (d) {
+        var s = card.querySelector('[data-stat="stars"] .repo-card-num');
+        var f = card.querySelector('[data-stat="forks"] .repo-card-num');
+        setNum(s, d.stargazers_count);
+        setNum(f, d.forks_count);
+      })
+      .catch(function () { /* keep baked values */ });
+  });
+
+  // --- Fade-in animation ---
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('repo-visible');
         observer.unobserve(entry.target);
@@ -120,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, { threshold: 0.1 });
 
-  repoCards.forEach(function(card, i) {
+  repoCards.forEach(function (card, i) {
     card.style.transitionDelay = (i % 3) * 0.1 + 's';
     card.classList.add('repo-animate');
     observer.observe(card);

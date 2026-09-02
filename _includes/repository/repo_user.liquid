@@ -1,14 +1,29 @@
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&show_icons=true"
-    >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&show_icons=true"
-    >
+{% comment %}
+  Native GitHub profile card. Renders from baked data in
+  _data/repositories.yml (github_user) with a locally-stored avatar —
+  no dependency on github-readme-stats. Counts refresh live in the
+  browser and fall back to the baked values.
+{% endcomment %}
+{% assign u = site.data.repositories.github_user %}
+
+<div class="repo repo-user p-2">
+  <a
+    class="repo-card repo-card-user"
+    href="{{ u.html_url }}"
+    target="_blank"
+    rel="noopener"
+    data-user="{{ u.login }}"
+  >
+    <img class="repo-user-avatar" src="{{ u.avatar | relative_url }}" alt="{{ u.login }}" loading="lazy" width="72" height="72">
+    <div class="repo-user-body">
+      <div class="repo-user-name">{{ u.name }}</div>
+      <div class="repo-user-login">@{{ u.login }}</div>
+      {% if u.bio %}<p class="repo-user-bio">{{ u.bio }}</p>{% endif %}
+      <div class="repo-user-stats">
+        <span data-stat="repos"><strong class="repo-card-num">{{ u.public_repos }}</strong> repositories</span>
+        <span data-stat="followers"><strong class="repo-card-num">{{ u.followers }}</strong> followers</span>
+        <span data-stat="following"><strong class="repo-card-num">{{ u.following }}</strong> following</span>
+      </div>
+    </div>
   </a>
 </div>

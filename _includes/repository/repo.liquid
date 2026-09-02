@@ -1,27 +1,52 @@
-{% assign repo_url = include.repository | split: '/' %}
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
-{% else %}
-  {% assign show_owner = true %}
-{% endif %}
+{% comment %}
+  Native repository card. Renders entirely from baked data in
+  _data/repositories.yml — no dependency on github-readme-stats.
+  `include.repository` is one entry from `github_repos` (an object).
+  Star / fork counts are refreshed live in the browser (see repositories.md)
+  and gracefully fall back to the baked values below.
+{% endcomment %}
+{% assign r = include.repository %}
+{% assign slug = r.repo | split: '/' %}
+{% assign owner = slug[0] %}
+{% assign name = slug[1] %}
 
-{% if site.data.repositories.repo_description_lines_max %}
-  {% assign max_lines = site.data.repositories.repo_description_lines_max %}
-{% else %}
-  {% assign max_lines = 2 %}
-{% endif %}
+<div class="repo p-2">
+  <a
+    class="repo-card"
+    href="https://github.com/{{ r.repo }}"
+    target="_blank"
+    rel="noopener"
+    data-repo="{{ r.repo }}"
+  >
+    <div class="repo-card-top">
+      <span class="repo-card-icon"><i class="fa-solid fa-book-bookmark"></i></span>
+      <span class="repo-card-title">
+        <span class="repo-card-owner">{{ owner }}/</span><span class="repo-card-name">{{ name }}</span>
+      </span>
+    </div>
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
+    {% if r.description %}
+    <p class="repo-card-desc">{{ r.description }}</p>
+    {% endif %}
+
+    <div class="repo-card-foot">
+      {% if r.language %}
+      <span class="repo-card-lang">
+        <span class="repo-card-dot" style="background-color: {{ r.lang_color | default: '#8b8b8b' }};"></span>
+        {{ r.language }}
+      </span>
+      {% endif %}
+      <span class="repo-card-stat" data-stat="stars" title="Stars">
+        <i class="fa-solid fa-star"></i> <span class="repo-card-num">{{ r.stars | default: 0 }}</span>
+      </span>
+      <span class="repo-card-stat" data-stat="forks" title="Forks">
+        <i class="fa-solid fa-code-branch"></i> <span class="repo-card-num">{{ r.forks | default: 0 }}</span>
+      </span>
+      {% if r.homepage %}
+      <span class="repo-card-link" title="Project page / paper">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </span>
+      {% endif %}
+    </div>
   </a>
 </div>

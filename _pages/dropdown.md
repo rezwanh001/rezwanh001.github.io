@@ -11,7 +11,7 @@ children:
   - title: cv
     permalink: /cv/
   - title: divider
-  - title: reading
+  - title: books
     permalink: /reading/
   - title: divider
   - title: repositories

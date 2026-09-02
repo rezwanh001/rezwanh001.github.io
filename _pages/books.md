@@ -13,6 +13,18 @@ reading_list:
   # -----------------------------------------------------------------
   # American Literature
   # -----------------------------------------------------------------
+  - title: Rip Van Winkle
+    author: Washington Irving
+    published_date: 1819
+    category: American Literature
+    rating: 4
+    image: /assets/pdf/books/book_rip_van_winkle.jpg
+    youtube_id: "O4N8YiaD_OM" # You can add a LibriVox audiobook ID here if available
+    gdrive_id: "12lIzCsAsfQ0wUSAp6CEjMQ8xWwdMe48U"
+    tags: ["Short Story", "Classic", "Fantasy", "Folk Tale"]
+    summary: "Set in the years before the American Revolutionary War, this iconic American short story takes place in a quiet village at the foot of New York's Catskill Mountains. The protagonist, Rip Van Winkle, is an easygoing, kind-hearted, but notoriously lazy Dutch-American villager who is beloved by his neighbors and local children but constantly nagged by his sharp-tongued wife, Dame Van Winkle, for neglecting his family and farm. To escape his wife's relentless scolding, Rip wanders deep into the mountains one autumn day with his loyal dog, Wolf. There, he encounters a strange group of silently bowling, solemnly dressed men, who are actually the ghosts of the historic explorer Hendrick Hudson and his crew. Rip drinks their mysterious, magical brew and falls into a profound, enchanted sleep. When he finally wakes up, he is shocked to find his gun rusted, his dog gone, and his joints stiff. Returning to his village, Rip discovers that twenty years have passed. He has slept through the entire American Revolutionary War, his nagging wife has passed away, his children are fully grown, and his quiet colonial village has transformed into a bustling, democratic American town. Initially accused of being a British loyalist when he proclaims his allegiance to King George III, Rip is eventually recognized by old neighbors. He settles into his new life as a revered village elder and storyteller, a living relic of a bygone era."
+    summary_bangla: "আমেরিকার স্বাধীনতা যুদ্ধের পূর্ববর্তী সময়ের পটভূমিতে রচিত এই ক্লাসিক গল্পটি নিউ ইয়র্কের ক্যাটসকিল পর্বতের পাদদেশে অবস্থিত ওলন্দাজ-আমেরিকানদের একটি শান্ত গ্রামকে কেন্দ্র করে আবর্তিত হয়। গল্পের মূল চরিত্র রিপ ভ্যান উইঙ্কল একজন অত্যন্ত শান্ত, দয়ালু কিন্তু তীব্র কুঁড়ে স্বভাবের মানুষ। সে তার প্রতিবেশী ও গ্রামের শিশুদের মাঝে অত্যন্ত জনপ্রিয় হলেও নিজের পরিবার ও চাষাবাদের প্রতি উদাসীনতার কারণে তার কড়া মেজাজী স্ত্রী ডেম ভ্যান উইঙ্কলের কাছ থেকে প্রতিদিন অবিরত বকুনি শোনে। একদিন স্ত্রীর সেই অশান্ত চিৎকার থেকে বাঁচতে রিপ তার বিশ্বস্ত কুকুর উলফকে নিয়ে ক্যাটসকিল পর্বতের গহীন অরণ্যে চলে যায়। সেখানে সে একদল প্রাচীন অভিযাত্রী হেনড্রিক হাডসন ও তার নাবিকদের প্রেতাত্মার মুখোমুখি হয়, যারা অদ্ভুত পোশাকে নীরব খেলায় মত্ত ছিল। তাদের রহস্যময় জাদুকরী পানীয় পান করার পর রিপ এক গভীর, অলৌকিক ঘুমে তলিয়ে যায়। যখন তার ঘুম ভাঙে, তখন সে নিজেকে অত্যন্ত জীর্ণ অবস্থায় আবিষ্কার করে—তার বন্দুকটিতে মরচে পড়ে গেছে, কুকুরটি উধাও এবং তার শরীর বার্ধক্যের কারণে অবশ হয়ে পড়েছে। গ্রামে ফিরে রিপ বুঝতে পারে যে সে দীর্ঘ বিশ বছর ধরে ঘুমিয়েছিল। এই সময়ের মধ্যে আমেরিকার স্বাধীনতা যুদ্ধ শেষ হয়ে গেছে এবং তার পুরো গ্রামটি ব্রিটিশ উপনিবেশ থেকে এক স্বাধীন আমেরিকান শহরে রূপান্তরিত হয়েছে। তার রাগী স্ত্রী মারা গেছেন, তার ছেলেমেয়েরা বড় হয়ে গেছে এবং পুরো সমাজ ব্যবস্থা আমূল বদলে গেছে। প্রথমে তাকে ব্রিটিশদের গুপ্তচর মনে করা হলেও, অবশেষে গ্রামের প্রবীণরা তাকে চিনতে পারে। রিপ পুনরায় তার মেয়ে ও নাতি-নাতনিদের কাছে ফিরে আসে এবং এক নতুন যুগের মাঝে পুরনো দিনের সাক্ষী হয়ে বেঁচে থাকে, যার প্রধান কাজ হয়ে দাঁড়ায় আগত পথিকদের কাছে নিজের এই অলৌকিক ঘুম ও অতীতের গল্প শোনানো।"
+
   - title: The Wonderful Wizard of Oz
     author: L. Frank Baum
     published_date: 1900

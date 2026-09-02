@@ -1,11 +1,11 @@
 name: Update Scholar Citations
 
 on:
-  schedule:
-    # Run every 6 hours so an occasional Google Scholar 403 doesn't leave
-    # the counts stale — at least one of the day's attempts usually gets through.
-    - cron: "0 */6 * * *"
-  workflow_dispatch: # Allow manual trigger
+  # Scheduled runs are intentionally DISABLED. Citation updates are driven from
+  # a local monitor on the lab server (scripts/scholar_monitor.py), which can
+  # reach Google Scholar reliably — unlike GitHub's shared runners, which get
+  # 403-blocked. This workflow remains only as a manual fallback.
+  workflow_dispatch:
 
 permissions:
   contents: write

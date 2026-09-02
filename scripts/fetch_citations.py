@@ -35,6 +35,43 @@ HEADERS = {
                   '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
+# Rotating user-agents + retry/backoff help ride out Google Scholar's
+# intermittent 403/429 rate-limiting of shared CI IPs.
+USER_AGENTS = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+    '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 '
+    '(KHTML, like Gecko) Version/17.1 Safari/605.1.15',
+    'Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0',
+]
+
+_SESSION = requests.Session()
+
+
+def http_get(url, timeout=15, retries=3):
+    """GET with rotating UA and backoff on rate-limit/5xx responses."""
+    last = None
+    for attempt in range(retries):
+        ua = USER_AGENTS[attempt % len(USER_AGENTS)]
+        try:
+            resp = _SESSION.get(
+                url,
+                headers={'User-Agent': ua, 'Accept-Language': 'en-US,en;q=0.9'},
+                timeout=timeout,
+            )
+            if resp.status_code in (403, 429, 500, 502, 503):
+                last = resp
+                time.sleep(random.uniform(3, 8) * (attempt + 1))
+                continue
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException as e:
+            last = e
+            time.sleep(random.uniform(2, 5) * (attempt + 1))
+    if isinstance(last, requests.Response):
+        last.raise_for_status()
+    raise last if last is not None else RuntimeError(f'request failed: {url}')
+
 
 def extract_article_ids(bib_path):
     """Extract all google_scholar_id values from the .bib file."""
@@ -56,8 +93,7 @@ def fetch_citation_count(user_id, article_id):
         f"&user={user_id}&citation_for_view={user_id}:{article_id}"
     )
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        resp.raise_for_status()
+        resp = http_get(url)
         soup = BeautifulSoup(resp.text, 'html.parser')
 
         # Try meta description first
@@ -105,8 +141,7 @@ def fetch_profile_stats(user_id):
         'cites_per_year': {},
     }
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        resp.raise_for_status()
+        resp = http_get(url)
         soup = BeautifulSoup(resp.text, 'html.parser')
 
         # --- Table stats (citations, h-index, i10-index) ---

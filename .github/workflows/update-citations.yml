@@ -2,8 +2,9 @@ name: Update Scholar Citations
 
 on:
   schedule:
-    # Run daily at 6:00 AM UTC
-    - cron: "0 6 * * *"
+    # Run every 6 hours so an occasional Google Scholar 403 doesn't leave
+    # the counts stale — at least one of the day's attempts usually gets through.
+    - cron: "0 */6 * * *"
   workflow_dispatch: # Allow manual trigger
 
 permissions:

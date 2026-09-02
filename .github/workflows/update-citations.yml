@@ -29,9 +29,32 @@ jobs:
         run: python scripts/fetch_citations.py
 
       - name: Commit and push if changed
+        id: commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add _data/scholar_citations.yml _data/scholar.yml
-          git diff --staged --quiet || git commit -m "chore: update Google Scholar citation counts [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: update Google Scholar citation counts [skip ci]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Push a phone notification (via ntfy.sh) only when the counts actually
+      # changed. Set the NTFY_TOPIC repo secret to keep the topic private;
+      # otherwise it falls back to the topic baked below. Subscribe to the same
+      # topic in the free "ntfy" iOS app to receive the alerts.
+      - name: Notify iPhone on change (ntfy)
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          TOPIC="${{ secrets.NTFY_TOPIC }}"
+          TOPIC="${TOPIC:-rezwan-scholar-af8aafafff}"
+          STATS=$(python -c "import yaml; d=yaml.safe_load(open('_data/scholar.yml')); c=d.get('citations',{}); print(f\"Citations: {c.get('all','?')} (all) / {c.get('recent','?')} (since {d.get('since_year','')}) · h-index {d.get('h_index',{}).get('all','?')} · i10 {d.get('i10_index',{}).get('all','?')}\")" 2>/dev/null || echo "Your Scholar citation counts changed.")
+          curl -s \
+            -H "Title: Google Scholar updated" \
+            -H "Tags: chart_with_upwards_trend,books" \
+            -H "Click: https://rezwan.xyz/publications/" \
+            -d "$STATS" \
+            "https://ntfy.sh/${TOPIC}" || true

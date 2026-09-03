@@ -4,8 +4,7 @@ permalink: /reading/
 title: books
 description: "A collection of books I have recently completed."
 nav: true
-nav_order: 8
-
+nav_order: 3
 # -----------------------------------------------------------------
 # Reading List Data
 # -----------------------------------------------------------------

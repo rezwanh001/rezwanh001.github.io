@@ -4,7 +4,7 @@ permalink: /blog/
 title: blogs
 description: Longer-form threads — a daily reading collection, deep-dives on world models, and a visual log of places I have explored.
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 <div class="blogs-intro">

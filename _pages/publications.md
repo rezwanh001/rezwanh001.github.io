@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 description: Research publications across computer vision, deep learning, healthcare AI, and NLP. Also available on <a href='https://scholar.google.com/citations?user=HaI-oFUAAAAJ&hl=en'><b>Google Scholar</b></a>.
 nav: true
-nav_order: 2
+nav_order: 5
 ---
 
 <!-- ═══════════════════════  Hero Section  ═══════════════════════ -->
@@ -136,15 +136,22 @@ document.addEventListener('DOMContentLoaded', function() {
       if (text.match(/^In\s/i)) { confCount++; isConf = true; }
       else if (text.length > 0) { journalCount++; isJournal = true; }
     }
-    // Extract year from periodical text (last 4-digit number)
-    if (periodical) {
-      var yearMatch = periodical.textContent.match(/(\d{4})/);
-      if (yearMatch) {
-        var y = yearMatch[1];
-        if (!yearData[y]) yearData[y] = { conf: 0, journal: 0 };
-        if (isConf) yearData[y].conf++;
-        if (isJournal) yearData[y].journal++;
-      }
+    // Year: use the authoritative entry.year (data-year on the row), so arXiv
+    // ids like arXiv:2607.xxxxx are never mistaken for a publication year.
+    var y = null;
+    var row = li.querySelector('[data-year]');
+    if (row && /^\d{4}$/.test((row.dataset.year || '').trim())) {
+      y = row.dataset.year.trim();
+    } else if (periodical) {
+      // Fallback: ignore any arXiv id, then take the last 4-digit year.
+      var cleaned = periodical.textContent.replace(/arXiv:\s*\d{4}\.\d{4,5}/gi, '');
+      var all = cleaned.match(/(19|20)\d{2}/g);
+      if (all) y = all[all.length - 1];
+    }
+    if (y) {
+      if (!yearData[y]) yearData[y] = { conf: 0, journal: 0 };
+      if (isConf) yearData[y].conf++;
+      if (isJournal) yearData[y].journal++;
     }
   });
   var confEl = document.getElementById('pub-conf-count');

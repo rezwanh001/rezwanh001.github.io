@@ -4,7 +4,7 @@ permalink: /repositories/
 title: repositories
 description: Open-source projects and research code repositories.
 nav: true
-nav_order: 4
+nav_order: 6
 ---
 
 <!-- ═══════════════════════  Hero Section  ═══════════════════════ -->

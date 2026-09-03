@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: teaching
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 <h3 style="margin-bottom: 0.25rem;"><i class="fa-solid fa-graduation-cap"></i> University of Waterloo</h3>

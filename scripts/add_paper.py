@@ -19,6 +19,7 @@ before push] guidance.
 import os
 import re
 import sys
+import time
 import argparse
 import xml.etree.ElementTree as ET
 import requests
@@ -67,7 +68,13 @@ def resolve_arxiv(arxiv_id):
         raise SystemExit(f"Could not parse an arXiv id from: {arxiv_id}")
     aid = m.group(1)
     url = f"https://export.arxiv.org/api/query?id_list={aid}"
-    r = requests.get(url, headers=UA, timeout=25)
+    # arXiv rate-limits bursts (429); retry with a short backoff.
+    for attempt in range(3):
+        r = requests.get(url, headers=UA, timeout=25)
+        if r.status_code in (429, 503) and attempt < 2:
+            time.sleep(3 * (attempt + 1))
+            continue
+        break
     r.raise_for_status()
     ns = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
     e = ET.fromstring(r.text).find("a:entry", ns)

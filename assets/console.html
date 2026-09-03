@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Portfolio">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#b509ac">
+<title>Portfolio Console</title>
+<style>
+:root{--m:#b509ac;--m2:#ff6ec7;--bg:#0e0e12;--card:#1a1a22;--tx:#eee;--mut:#9a9aa6;--line:#2a2a35}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 -apple-system,system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+header{position:sticky;top:0;z-index:5;background:linear-gradient(120deg,var(--m),var(--m2));color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 16px 14px;font-weight:800;font-size:1.2rem;display:flex;align-items:center;gap:8px}
+main{padding:16px;max-width:640px;margin:0 auto;padding-bottom:80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 16px}
+label{display:block;font-size:.8rem;color:var(--mut);margin:0 0 6px}
+input,textarea{width:100%;padding:13px;border-radius:11px;border:1px solid var(--line);background:#12121a;color:var(--tx);font:inherit}
+textarea{min-height:230px;font-family:ui-monospace,Menlo,monospace;font-size:.82rem;white-space:pre}
+button{width:100%;padding:14px;border:0;border-radius:12px;background:var(--m);color:#fff;font-weight:700;font-size:1rem;margin-top:10px}
+button:active{opacity:.8}button.ghost{background:#26262f;color:var(--tx)}
+.tabs{display:flex;gap:8px;margin:0 0 16px}
+.tabs button{width:auto;flex:1;padding:11px;background:#20202a;color:var(--mut);font-size:.92rem}
+.tabs button.on{background:var(--m);color:#fff}
+.stat{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line)}
+.stat b{color:var(--m);font-size:1.15rem}
+.note{color:#ffd479;font-size:.82rem;margin-top:10px}
+.hide{display:none}small{color:var(--mut)}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(env(safe-area-inset-bottom) + 16px);background:#000;border:1px solid var(--m);padding:13px 15px;border-radius:12px;opacity:0;transition:.3s;pointer-events:none;font-size:.9rem;z-index:9}
+#toast.show{opacity:1}
+a{color:var(--m2)}
+</style></head><body>
+<header>📑 Portfolio Console</header>
+<main>
+  <section id="login" class="card">
+    <label>GitHub token (fine-grained, Contents: Read/Write on your repo)</label>
+    <input id="tok" type="password" placeholder="github_pat_…" autocomplete="off">
+    <button onclick="saveTok()">Save &amp; unlock</button>
+    <small>Stored only on THIS device (localStorage). Never sent anywhere except github.com.</small>
+  </section>
+
+  <div id="app" class="hide">
+    <div class="tabs">
+      <button data-t="paper" class="on" onclick="tab('paper')">Add paper</button>
+      <button data-t="scholar" onclick="tab('scholar')">Scholar</button>
+      <button data-t="set" onclick="tab('set')">Settings</button>
+    </div>
+
+    <section id="t-paper" class="card">
+      <label>arXiv link / id, or DOI</label>
+      <input id="ident" placeholder="2508.09362 · arxiv.org/abs/… · 10.1109/…" autocapitalize="off" autocorrect="off">
+      <button onclick="resolve()">Resolve ✨</button>
+      <div id="rnote" class="note hide"></div>
+      <div id="preview" class="hide">
+        <label style="margin-top:14px">Review / edit the entry, then publish</label>
+        <textarea id="bib" spellcheck="false"></textarea>
+        <button onclick="publish()">Publish to site 🚀</button>
+      </div>
+    </section>
+
+    <section id="t-scholar" class="card hide">
+      <div id="stats"><small>Loading…</small></div>
+      <small>Read live from your repo. Counts refresh via your server monitor.</small>
+    </section>
+
+    <section id="t-set" class="card hide">
+      <div class="stat"><span>Repo</span><b style="font-size:.9rem">rezwanh001.github.io</b></div>
+      <div id="whoami"><small>…</small></div>
+      <button class="ghost" onclick="logout()">Log out (forget token)</button>
+    </section>
+  </div>
+</main>
+<div id="toast"></div>
+<script>
+const OWNER="rezwanh001", REPO="rezwanh001.github.io", BRANCH="master";
+const BIBPATH="_bibliography/papers.bib", SCHOLARPATH="_data/scholar.yml";
+const tok=()=>localStorage.getItem("pc_gh")||"";
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("show"),4000)}
+function b64e(s){const b=new TextEncoder().encode(s);let x="";for(let i=0;i<b.length;i++)x+=String.fromCharCode(b[i]);return btoa(x)}
+function b64d(b){const bin=atob((b||"").replace(/\n/g,""));const a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return new TextDecoder().decode(a)}
+
+async function gh(path,opts={}){
+  const r=await fetch("https://api.github.com/repos/"+OWNER+"/"+REPO+"/"+path,{...opts,
+    headers:{"Authorization":"Bearer "+tok(),"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28",...(opts.headers||{})}});
+  return r;
+}
+
+// ---------- resolve via Semantic Scholar (CORS-friendly) ----------
+function surnameFirst(n){n=n.trim().replace(/\s+/g," ");if(n.includes(","))return n;const p=n.split(" ");return p.length<2?n:p[p.length-1]+", "+p.slice(0,-1).join(" ")}
+function venueAbbr(t,y){if(!t)return "TODO-VENUE";let m=t.match(/\(([A-Z][A-Za-z]{1,9})\)/);if(!m)m=t.match(/\b(ICCV|CVPR|ECCV|NeurIPS|ICML|ICLR|AAAI|IJCAI|KDD|SMC|IJCNN|ICDAR|EMNLP|ACL|NAACL|COLING|LREC|WACV|BMVC|MICCAI|ATC|ICCIT|INTERSPEECH)\b/);return m?(m[1]+" "+y).trim():"TODO-VENUE"}
+function keyOf(a,y,t){const last=(surnameFirst(a).split(",")[0]||"paper").toLowerCase().replace(/[^a-z]/g,"")||"paper";const w=((t.split(" ")[0]||"paper").toLowerCase().replace(/[^a-z]/g,""))||"paper";return last+y+w}
+
+async function resolve(){
+  const raw=document.getElementById("ident").value.trim();if(!raw)return;
+  let id;
+  const ax=raw.match(/(\d{4}\.\d{4,5})/);
+  const doi=raw.match(/10\.\d{4,9}\/\S+/);
+  if(ax&&!/10\.\d/.test(raw))id="ARXIV:"+ax[1];
+  else if(doi)id="DOI:"+doi[0];
+  else{toast("Paste an arXiv id/link or a DOI");return}
+  toast("Resolving…");
+  try{
+    const f="title,abstract,year,authors,venue,externalIds,publicationVenue";
+    const r=await fetch("https://api.semanticscholar.org/graph/v1/paper/"+encodeURIComponent(id)+"?fields="+f);
+    if(!r.ok)throw new Error(r.status===404?"Not indexed yet — fill the entry manually below.":"lookup "+r.status);
+    const d=await r.json();
+    const authors=(d.authors||[]).map(a=>a.name);
+    const year=(d.year||new Date().getFullYear())+"";
+    const arxivId=(d.externalIds||{}).ArXiv||(ax?ax[1]:"");
+    const hasDoi=!!(d.externalIds||{}).DOI;
+    const venue=(d.publicationVenue&&d.publicationVenue.name)||d.venue||"";
+    const isPreprint=!hasDoi&&(!venue||/arxiv/i.test(venue));
+    const key=keyOf(authors[0]||"paper",year,d.title||"paper");
+    let L=[];
+    L.push("@"+(isPreprint?"article":"inproceedings")+"{"+key+",");
+    L.push("  abbr={"+venueAbbr(venue,year)+"},");
+    L.push("  bibtex_show={true},");
+    L.push("  title={"+(d.title||"")+"},");
+    L.push("  author={"+authors.map(surnameFirst).join(" and ")+"},");
+    if(isPreprint)L.push("  journal={arXiv preprint arXiv:"+arxivId+"},");
+    else L.push("  booktitle={"+venue+"},");
+    L.push("  year={"+year+"},");
+    if(d.abstract)L.push("  abstract={"+d.abstract.replace(/\s+/g," ").trim()+"},");
+    if(arxivId){L.push("  html={https://arxiv.org/abs/"+arxivId+"},");L.push("  pdf={https://arxiv.org/pdf/"+arxivId+"},");}
+    if(hasDoi)L.push("  doi={"+d.externalIds.DOI+"},");
+    L.push("  % google_scholar_id={TODO once it appears on your Scholar profile},");
+    L.push("  % preview={TODO-image.png},");
+    L.push("}");
+    document.getElementById("bib").value=L.join("\n");
+    document.getElementById("preview").classList.remove("hide");
+    const n=document.getElementById("rnote");
+    n.textContent=isPreprint?"Preprint — venue guessed into abbr; update to @inproceedings/@article when published.":"";
+    n.classList.toggle("hide",!n.textContent);
+    toast("Resolved: "+(d.title||"").slice(0,44));
+  }catch(e){
+    // Give an editable skeleton so the user can still add it by hand.
+    document.getElementById("bib").value="@article{TODO_key,\n  abbr={TODO},\n  bibtex_show={true},\n  title={},\n  author={Last, First and Last, First},\n  journal={arXiv preprint arXiv:"+(ax?ax[1]:"")+"},\n  year={"+new Date().getFullYear()+"},\n}";
+    document.getElementById("preview").classList.remove("hide");
+    toast(e.message);
+  }
+}
+
+// ---------- publish: append to papers.bib via GitHub API ----------
+async function publish(){
+  const entry=document.getElementById("bib").value.trim();
+  if(!entry.startsWith("@")||entry.split("{").length!==entry.split("}").length){toast("Entry braces look unbalanced");return}
+  const key=(entry.match(/@\w+\{([^,]+),/)||[])[1];
+  if(!confirm("Publish "+(key||"this entry")+" to your live site?"))return;
+  toast("Publishing…");
+  try{
+    const r=await gh("contents/"+BIBPATH+"?ref="+BRANCH);
+    if(r.status===401){toast("Bad/expired token — check Settings");return}
+    if(!r.ok)throw new Error("read papers.bib "+r.status);
+    const j=await r.json();
+    const cur=b64d(j.content);
+    if(key&&new RegExp("@\\w+\\{"+key.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*,").test(cur)){toast("Key '"+key+"' already exists");return}
+    const updated=cur.replace(/\s*$/,"")+"\n\n"+entry+"\n";
+    const p=await gh("contents/"+BIBPATH,{method:"PUT",body:JSON.stringify({
+      message:"Publications: add "+(key||"entry")+" (via phone console)",
+      content:b64e(updated),sha:j.sha,branch:BRANCH})});
+    if(!p.ok){const e=await p.json().catch(()=>({}));throw new Error(e.message||("publish "+p.status))}
+    toast("Published "+(key||"")+" ✓ — site rebuilds in a few min");
+    document.getElementById("preview").classList.add("hide");
+    document.getElementById("ident").value="";document.getElementById("bib").value="";
+  }catch(e){toast("Publish failed: "+e.message)}
+}
+
+// ---------- scholar view ----------
+async function loadScholar(){
+  const el=document.getElementById("stats");
+  try{
+    const r=await gh("contents/"+SCHOLARPATH+"?ref="+BRANCH);
+    if(!r.ok)throw new Error("read "+r.status);
+    const y=b64d((await r.json()).content);
+    const g=(re)=>{const m=y.match(re);return m?m[1]:"—"};
+    el.innerHTML=
+      `<div class="stat"><span>Citations (all)</span><b>${g(/citations:\s*\n\s*all:\s*'?(\d+)/)}</b></div>
+       <div class="stat"><span>Since ${g(/since_year:\s*'?(\d+)/)}</span><b>${g(/citations:[\s\S]*?recent:\s*'?(\d+)/)}</b></div>
+       <div class="stat"><span>h-index</span><b>${g(/h_index:\s*\n\s*all:\s*'?(\d+)/)}</b></div>
+       <div class="stat"><span>i10-index</span><b>${g(/i10_index:\s*\n\s*all:\s*'?(\d+)/)}</b></div>`;
+  }catch(e){el.innerHTML="<small>"+e.message+"</small>"}
+}
+async function whoami(){
+  try{const r=await fetch("https://api.github.com/user",{headers:{"Authorization":"Bearer "+tok()}});
+    const d=await r.json();document.getElementById("whoami").innerHTML=r.ok?`<div class="stat"><span>Signed in</span><b style="font-size:.95rem">@${d.login}</b></div>`:"<small>token invalid</small>"}catch(e){}
+}
+
+function saveTok(){const v=document.getElementById("tok").value.trim();if(!v)return;localStorage.setItem("pc_gh",v);show()}
+function logout(){localStorage.removeItem("pc_gh");location.reload()}
+function show(){document.getElementById("login").classList.add("hide");document.getElementById("app").classList.remove("hide");loadScholar();whoami()}
+function tab(t){["paper","scholar","set"].forEach(x=>{document.getElementById("t-"+x).classList.toggle("hide",x!==t);document.querySelector("[data-t="+x+"]").classList.toggle("on",x===t)})}
+if(tok())show();
+</script></body></html>

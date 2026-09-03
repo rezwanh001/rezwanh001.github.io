@@ -1,80 +1,64 @@
-# ═══════════════════════════════════════════════════════════════════════
+# =======================================================================
 #  Repositories page data  (/repositories/)
-# ─────────────────────────────────────────────────────────────────────────
-#  Native, self-contained cards are rendered from the baked metadata below.
-#  This removes the dependency on the third-party `github-readme-stats`
-#  service (which is shared, rate-limited, and frequently returns broken
-#  images). Star / fork counts are refreshed live in the browser from the
-#  public GitHub API when reachable, and fall back to these baked values
-#  otherwise — so the page never shows a broken card.
-#
-#  To re-bake after adding/removing repos or to refresh counts, run:
-#      python scripts/fetch_github.py
-# ═══════════════════════════════════════════════════════════════════════
+#  Native cards render from the baked metadata below — no dependency
+#  on github-readme-stats. Re-bake with: python scripts/fetch_github.py
+#  Last refreshed: 2026-09-03
+# =======================================================================
 
 github_users:
-  - rezwanh001
-
+- rezwanh001
 repo_description_lines_max: 2
-
-# ─── Baked GitHub profile (rendered natively; avatar stored locally) ───
 github_user:
   login: rezwanh001
   name: Md. Rezwanul Haque
-  bio: "Enthusiastic researcher working on Agentic Systems for Embodied AI, Multimodal Learning, and Intelligent Agents."
+  bio: Enthusiastic researcher working on Agentic Systems for Embodied AI, Multimodal Learning, and Intelligent
+    Agents.
   avatar: /assets/img/github_avatar.jpg
   html_url: https://github.com/rezwanh001
   public_repos: 53
   followers: 109
   following: 237
-
-# ─── Baked repository cards (last refreshed: 2026-09-02) ───
 github_repos:
-  - repo: rezwanh001/SLM-RL-Agents
-    name: SLM-RL-Agents
-    description: "Framework for training Small Language Models (SLMs) with Reinforcement Learning for autonomous agent capabilities."
-    language: Python
-    lang_color: "#3572A5"
-    stars: 3
-    forks: 0
-    homepage:
-
-  - repo: rezwanh001/Multimodal-Isolated-Italian-Sign-Language-Recognition
-    name: Multimodal-Isolated-Italian-Sign-Language-Recognition
-    description: "1st Multimodal Isolated Italian Sign Language Recognition using RGB and Radar-RDM data from the MultiMeDaLIS dataset (Mineo et al., 2024)."
-    language: Python
-    lang_color: "#3572A5"
-    stars: 3
-    forks: 0
-    homepage: https://arxiv.org/abs/2508.09362
-
-  - repo: rezwanh001/MSLR-Pose86K-CSLR-Isharah
-    name: MSLR-Pose86K-CSLR-Isharah
-    description: "Continuous Sign Language Recognition on the Isharah dataset — ~14,000 videos across 1,000 unique sentences by 18 signers."
-    language: Python
-    lang_color: "#3572A5"
-    stars: 15
-    forks: 1
-    homepage: https://arxiv.org/abs/2508.09372
-
-  - repo: rezwanh001/Large-Scale-Multimodal-Depression-Detection
-    name: Large-Scale-Multimodal-Depression-Detection
-    description: "MMFformer: Multimodal Fusion Transformer Network for Depression Detection."
-    language: Python
-    lang_color: "#3572A5"
-    stars: 20
-    forks: 2
-    homepage: https://arxiv.org/abs/2508.06701
-
-  - repo: rezwanh001/Multimodal-Depression-Detection
-    name: Multimodal-Depression-Detection
-    description: "Multimodal Depression Detection through a Mutual Transformer."
-    language: Python
-    lang_color: "#3572A5"
-    stars: 10
-    forks: 1
-    homepage: https://arxiv.org/abs/2508.08093
-
-# Archived / paused repos (uncomment to surface):
-#  - repo: rezwanh001/EDA-SynthText-Dataset
-#  - repo: rezwanh001/Pothole-Detection
+- repo: rezwanh001/SLM-RL-Agents
+  name: SLM-RL-Agents
+  description: Framework for training Small Language Models (SLMs) with Reinforcement Learning for autonomous
+    agent capabilities.
+  language: Python
+  lang_color: '#3572A5'
+  stars: 3
+  forks: 0
+  homepage: null
+- repo: rezwanh001/Multimodal-Isolated-Italian-Sign-Language-Recognition
+  name: Multimodal-Isolated-Italian-Sign-Language-Recognition
+  description: 1st Multimodal Isolated Italian Sign Language Recognition using RGB and Radar-RDM data
+    from the MultiMeDaLIS dataset (Mineo et al., 2024).
+  language: Python
+  lang_color: '#3572A5'
+  stars: 3
+  forks: 0
+  homepage: https://arxiv.org/abs/2508.09362
+- repo: rezwanh001/MSLR-Pose86K-CSLR-Isharah
+  name: MSLR-Pose86K-CSLR-Isharah
+  description: Continuous Sign Language Recognition on the Isharah dataset — ~14,000 videos across 1,000
+    unique sentences by 18 signers.
+  language: Python
+  lang_color: '#3572A5'
+  stars: 15
+  forks: 1
+  homepage: https://arxiv.org/abs/2508.09372
+- repo: rezwanh001/Large-Scale-Multimodal-Depression-Detection
+  name: Large-Scale-Multimodal-Depression-Detection
+  description: 'MMFformer: Multimodal Fusion Transformer Network for Depression Detection.'
+  language: Python
+  lang_color: '#3572A5'
+  stars: 20
+  forks: 2
+  homepage: https://arxiv.org/abs/2508.06701
+- repo: rezwanh001/Multimodal-Depression-Detection
+  name: Multimodal-Depression-Detection
+  description: Multimodal Depression Detection through a Mutual Transformer.
+  language: Python
+  lang_color: '#3572A5'
+  stars: 10
+  forks: 1
+  homepage: https://arxiv.org/abs/2508.08093

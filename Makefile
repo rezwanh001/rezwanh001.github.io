@@ -3,6 +3,7 @@
 #  Override the interpreter if needed:  make citations PY=python3
 # ─────────────────────────────────────────────────────────────────────────
 PY ?= python
+m ?= update
 
 help:            ## Show this list of commands
 	@echo "Portfolio commands (make <target>):"
@@ -36,4 +37,11 @@ build:           ## Build the static site into _site/
 status:          ## Show what has changed (git)
 	git status --short
 
-.PHONY: help citations repos monitor paper paper-add refresh serve build status
+publish:         ## Commit ALL changes and push:  make publish m="what you changed"
+	@git add -A
+	@git commit -m "$(m)" || echo "(nothing new to commit)"
+	@gh auth switch --hostname github.com --user rezwanh001 2>/dev/null || true
+	@git push
+	@echo "Pushed. Live at https://rezwan.xyz in ~3-5 min."
+
+.PHONY: help citations repos monitor paper paper-add refresh serve build status publish

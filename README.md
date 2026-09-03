@@ -24,12 +24,45 @@ Run `make` (or `make help`) to list everything. The common ones:
 | `make serve` | Local live preview at <http://localhost:4000> |
 | `make build` | Build the static site into `_site/` |
 | `make status` | `git status --short` |
+| **`make publish m="msg"`** | **Stage everything → commit → push** (live in ~3–5 min) |
 
 > ⚠️ **Don't** run `for f in scripts/*.py; do python "$f"; done` — `add_paper.py`
 > needs an argument and `scholar_scraper.py` is legacy. Use `make refresh` instead.
 
-**Publish a change:** commit and push to `master` — the site rebuilds automatically
-(see [Deploy](#-deploy)). Always push from the **`rezwanh001`** account.
+---
+
+## 🚀 Publish your changes
+
+Edited a file, a publication, or a book? Publish it yourself — you never need to ask.
+
+**One-time setup** (so `git push` works as `rezwanh001`):
+
+```bash
+gh auth login          # choose  rezwanh001 · GitHub.com · HTTPS
+gh auth setup-git      # let git push with that login
+```
+
+**Every time — one command:**
+
+```bash
+make publish m="what you changed"
+```
+
+This stages everything, commits, and pushes. Your change is **live at
+<https://rezwan.xyz> in ~3–5 min** (the Deploy Action runs on its own).
+
+**Prefer to do it by hand?**
+
+```bash
+git status                        # 1. see what changed
+git add -A                        # 2. stage everything
+git commit -m "what you changed"  # 3. commit
+git push                          # 4. publish
+```
+
+> Always push from **`rezwanh001`** (not another GitHub account on the machine).
+> If a push is refused, run `gh auth switch --user rezwanh001` and push again.
+> Or edit from your phone — the [admin console](#-edit-from-your-phone-no-server-from-anywhere) commits for you.
 
 ---
 

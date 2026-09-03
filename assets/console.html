@@ -3,66 +3,99 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Portfolio">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Admin">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#b509ac">
-<title>Portfolio Console</title>
+<title>Portfolio Admin</title>
 <style>
-:root{--m:#b509ac;--m2:#ff6ec7;--bg:#0e0e12;--card:#1a1a22;--card2:#20202a;--tx:#eee;--mut:#9a9aa6;--line:#2a2a35;--red:#ff5c7a}
+:root{
+  --m:#b509ac;--m2:#e84bd0;--bg:#f6f6f9;--panel:#ffffff;--tx:#1b1b1f;--mut:#6b6b76;
+  --line:#e6e6ee;--soft:#faf5fb;--red:#d33a57;--ok:#1a9e5f;--shadow:0 2px 10px rgba(20,10,30,.06)
+}
+@media (prefers-color-scheme:dark){:root:not([data-t]){
+  --bg:#0e0e12;--panel:#1a1a22;--tx:#eee;--mut:#9a9aa6;--line:#2a2a35;--soft:#221826;--shadow:0 2px 12px rgba(0,0,0,.4)
+}}
 *{box-sizing:border-box}
-body{margin:0;font:16px/1.5 -apple-system,system-ui,sans-serif;background:var(--bg);color:var(--tx)}
-header{position:sticky;top:0;z-index:5;background:linear-gradient(120deg,var(--m),var(--m2));color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 16px 14px;font-weight:800;font-size:1.15rem}
-main{padding:14px;max-width:680px;margin:0 auto;padding-bottom:90px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;margin:0 0 14px}
-label{display:block;font-size:.78rem;color:var(--mut);margin:10px 0 5px}
+body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--tx);-webkit-text-size-adjust:100%}
+header{position:sticky;top:0;z-index:6;background:var(--panel);border-bottom:1px solid var(--line);padding:calc(env(safe-area-inset-top) + 12px) 16px 12px;display:flex;align-items:center;gap:10px}
+.brand{font-weight:400;font-size:1.12rem;color:var(--tx)}
+.brand b{font-weight:800}
+.pill{margin-left:auto;font-size:.68rem;font-weight:800;letter-spacing:.04em;color:#fff;background:linear-gradient(120deg,var(--m),var(--m2));padding:4px 10px;border-radius:999px}
+main{padding:14px;max-width:720px;margin:0 auto;padding-bottom:96px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 14px;box-shadow:var(--shadow)}
+h3{margin:0 0 12px;font-size:1.02rem;color:var(--tx)}
+label{display:block;font-size:.76rem;color:var(--mut);margin:11px 0 5px;font-weight:600}
 label:first-child{margin-top:0}
-input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#12121a;color:var(--tx);font:inherit}
+input,textarea,select{width:100%;padding:12px;border-radius:11px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--m);border-color:var(--m)}
 textarea{min-height:180px;font-family:ui-monospace,Menlo,monospace;font-size:.8rem;white-space:pre}
-button{width:100%;padding:13px;border:0;border-radius:11px;background:var(--m);color:#fff;font-weight:700;font-size:.98rem;margin-top:10px}
-button:active{opacity:.8}button.ghost{background:var(--card2);color:var(--tx)}button.danger{background:var(--red)}
-button.mini{width:auto;padding:7px 12px;font-size:.8rem;margin:0 0 0 6px}
-.tabs{display:flex;gap:6px;margin:0 0 14px;overflow-x:auto}
-.tabs button{width:auto;flex:0 0 auto;padding:9px 13px;background:var(--card2);color:var(--mut);font-size:.86rem;margin:0}
-.tabs button.on{background:var(--m);color:#fff}
+button{width:100%;padding:13px;border:0;border-radius:12px;background:var(--m);color:#fff;font-weight:700;font-size:.98rem;margin-top:10px}
+button:active{opacity:.82}button.ghost{background:var(--soft);color:var(--m);border:1px solid var(--line)}
+button.danger{background:var(--red)}button.mini{width:auto;padding:7px 12px;font-size:.8rem;margin:0 0 0 6px}
+.tabs{display:flex;gap:6px;margin:0 0 14px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tabs button{width:auto;flex:0 0 auto;padding:9px 14px;background:var(--panel);color:var(--mut);font-size:.85rem;margin:0;border:1px solid var(--line);box-shadow:var(--shadow)}
+.tabs button.on{background:var(--m);color:#fff;border-color:var(--m)}
 .stat{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line)}
-.stat b{color:var(--m);font-size:1.1rem}
-.row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 0;border-bottom:1px solid var(--line)}
-.row .t{font-size:.86rem;min-width:0;overflow:hidden;text-overflow:ellipsis}
-.row .k{color:var(--m2);font-size:.72rem}
-.row .btns{flex:0 0 auto;white-space:nowrap}
-.note{color:#ffd479;font-size:.8rem;margin-top:8px}
+.stat:last-child{border:0}.stat b{color:var(--m);font-size:1.1rem}
+.rowi{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 0;border-bottom:1px solid var(--line)}
+.rowi .t{font-size:.86rem;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.rowi .k{color:var(--m);font-size:.72rem}
+.rowi .btns{flex:0 0 auto;white-space:nowrap}
+.note{color:#9a6a00;background:#fff7e6;border:1px solid #ffe3a3;font-size:.8rem;margin-top:8px;padding:8px 10px;border-radius:8px}
+@media (prefers-color-scheme:dark){:root:not([data-t]) .note{color:#ffd479;background:#2a2213;border-color:#5c4a1a}}
 .hide{display:none}small{color:var(--mut)}
-#toast{position:fixed;left:14px;right:14px;bottom:calc(env(safe-area-inset-bottom) + 14px);background:#000;border:1px solid var(--m);padding:12px 14px;border-radius:11px;opacity:0;transition:.3s;pointer-events:none;font-size:.88rem;z-index:9}
-#toast.show{opacity:1}a{color:var(--m2)}
-h3{margin:2px 0 10px;font-size:1rem}
+#toast{position:fixed;left:14px;right:14px;bottom:calc(env(safe-area-inset-bottom) + 14px);background:var(--m);color:#fff;padding:12px 14px;border-radius:12px;opacity:0;transition:.3s;pointer-events:none;font-size:.9rem;z-index:9;box-shadow:0 6px 20px rgba(181,9,172,.35)}
+#toast.show{opacity:1}
+a{color:var(--m)}
+.frame{width:100%;height:62vh;border:1px solid var(--line);border-radius:12px;background:#fff}
+.mdview{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--panel);max-height:50vh;overflow:auto;font-size:.9rem}
+.mdview img{max-width:100%}.mdview pre{overflow:auto;background:var(--soft);padding:8px;border-radius:8px}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block}
 </style></head><body>
-<header>📑 Portfolio Console</header>
+<header>
+  <span class="brand"><b>Md</b> Rezwanul Haque</span>
+  <span class="pill">ADMIN</span>
+</header>
 <main>
   <section id="login" class="card">
+    <h3>Sign in</h3>
     <label>GitHub token — fine-grained, Contents: Read/Write on your repo</label>
     <input id="tok" type="password" placeholder="github_pat_…" autocomplete="off" autocapitalize="off" autocorrect="off">
     <button onclick="saveTok()">Save &amp; unlock</button>
-    <small>Stored only on THIS device (localStorage). Sent only to github.com. Never put it in a file.</small>
+    <small>Stored only on THIS device (localStorage), sent only to github.com. Never put it in a file.</small>
   </section>
 
   <div id="app" class="hide">
     <div class="tabs">
-      <button data-t="pubs" class="on" onclick="tab('pubs')">Publications</button>
+      <button data-t="site" class="on" onclick="tab('site')">Live site</button>
+      <button data-t="pubs" onclick="tab('pubs')">Publications</button>
       <button data-t="books" onclick="tab('books')">Books</button>
       <button data-t="editor" onclick="tab('editor')">Editor</button>
       <button data-t="scholar" onclick="tab('scholar')">Scholar</button>
       <button data-t="set" onclick="tab('set')">Settings</button>
     </div>
 
+    <!-- LIVE SITE -->
+    <section id="t-site" class="card">
+      <h3>Your live portfolio <span class="live"><span class="dot"></span>rezwan.xyz</span></h3>
+      <div style="display:flex;gap:8px">
+        <button class="ghost" onclick="reloadSite()">↻ Refresh</button>
+        <button class="ghost" onclick="window.open('https://rezwan.xyz/','_blank')">Open ↗</button>
+      </div>
+      <iframe id="siteframe" class="frame" src="https://rezwan.xyz/" loading="lazy" style="margin-top:10px"></iframe>
+      <small id="deployHint"></small>
+    </section>
+
     <!-- PUBLICATIONS -->
-    <section id="t-pubs" class="card">
+    <section id="t-pubs" class="card hide">
       <h3>Add a publication</h3>
       <label>arXiv link / id, or DOI</label>
       <input id="ident" placeholder="2508.09362 · arxiv.org/abs/… · 10.1109/…" autocapitalize="off" autocorrect="off">
       <button onclick="resolve()">Resolve ✨</button>
       <div id="rnote" class="note hide"></div>
       <div id="pubEdit" class="hide">
-        <label id="pubEditLabel">Review / edit, then save</label>
+        <label id="pubEditLabel">Review / edit, then publish</label>
         <textarea id="bib" spellcheck="false"></textarea>
         <button onclick="savePub()">Publish 🚀</button>
         <button class="ghost" onclick="cancelPub()">Cancel</button>
@@ -88,29 +121,35 @@ h3{margin:2px 0 10px;font-size:1rem}
       <div id="bookList"><small>…</small></div>
     </section>
 
-    <!-- GENERIC EDITOR -->
+    <!-- EDITOR with live preview -->
     <section id="t-editor" class="card hide">
       <h3>Edit any file</h3>
-      <label>Path in repo (posts, pages, data, anything)</label>
+      <label>Path in repo (posts, pages, data — anything)</label>
       <input id="ed_path" placeholder="_posts/2026-01-01-title.md" autocapitalize="off" autocorrect="off">
       <button class="ghost" onclick="edOpen()">Open</button>
       <div id="ed_body" class="hide">
         <label>Content — edit, then save (blank = create new file)</label>
-        <textarea id="ed_text" style="min-height:300px;white-space:pre"></textarea>
-        <button onclick="edSave()">Save / commit 🚀</button>
+        <textarea id="ed_text" style="min-height:280px;white-space:pre"></textarea>
+        <div style="display:flex;gap:8px">
+          <button onclick="edSave()">Save / commit 🚀</button>
+          <button class="ghost" onclick="edPreview()">👁 Preview</button>
+        </div>
         <button class="danger" onclick="edDelete()">Delete this file</button>
+        <div id="ed_prev" class="mdview hide" style="margin-top:12px"></div>
       </div>
-      <small>New file: type a new path, leave content, write it, Save. Discard: open &amp; Delete.</small>
+      <small>New file: type a new path, leave content empty, write, Save. Discard: Open then Delete.</small>
     </section>
 
     <!-- SCHOLAR -->
     <section id="t-scholar" class="card hide">
+      <h3>Google Scholar</h3>
       <div id="stats"><small>Loading…</small></div>
       <small>Read live from your repo.</small>
     </section>
 
     <!-- SETTINGS -->
     <section id="t-set" class="card hide">
+      <h3>Settings</h3>
       <div class="stat"><span>Repo</span><b style="font-size:.9rem">rezwanh001.github.io</b></div>
       <div id="whoami"><small>…</small></div>
       <button class="danger" onclick="logout()">Log out (forget token)</button>
@@ -130,15 +169,22 @@ async function gh(path,opts={}){return fetch("https://api.github.com/repos/"+OWN
 async function ghGet(path){const r=await gh("contents/"+path+"?ref="+BRANCH);if(r.status===401)throw new Error("bad/expired token");if(r.status===404)return {text:"",sha:null,missing:true};if(!r.ok)throw new Error("read "+r.status);const j=await r.json();return {text:b64d(j.content),sha:j.sha}}
 async function ghPut(path,text,sha,message){const body={message,content:b64e(text),branch:BRANCH};if(sha)body.sha=sha;const p=await gh("contents/"+path,{method:"PUT",body:JSON.stringify(body)});if(!p.ok){const e=await p.json().catch(()=>({}));throw new Error(e.message||("save "+p.status))}return p.json()}
 async function ghDel(path,sha,message){const p=await gh("contents/"+path,{method:"DELETE",body:JSON.stringify({message,sha,branch:BRANCH})});if(!p.ok){const e=await p.json().catch(()=>({}));throw new Error(e.message||("delete "+p.status))}}
+function afterCommit(){const h=document.getElementById("deployHint");if(h)h.textContent="Last change committed — site rebuilds in ~2–3 min. Use Live site ↻ to watch.";setTimeout(reloadSite,150000)}
+
+// live site
+function reloadSite(){const f=document.getElementById("siteframe");if(f)f.src="https://rezwan.xyz/?t="+Date.now()}
+
+// markdown preview via GitHub API
+async function renderMd(text){try{const r=await fetch("https://api.github.com/markdown",{method:"POST",headers:{"Authorization":"Bearer "+tok(),"Accept":"application/vnd.github+json"},body:JSON.stringify({text,mode:"gfm",context:OWNER+"/"+REPO})});return r.ok?await r.text():"(preview unavailable)"}catch(e){return "(preview error)"}}
 
 // ---------------- Publications ----------------
 function parseBib(text){const es=[];let i=0;while(i<text.length){if(text[i]==="@"){let j=text.indexOf("{",i);if(j<0)break;const type=text.slice(i+1,j).trim();if(!/^\w+$/.test(type)){i++;continue}let depth=0,k=j,ok=false;for(;k<text.length;k++){if(text[k]==="{")depth++;else if(text[k]==="}"){depth--;if(depth===0){k++;ok=true;break}}}if(!ok)break;const raw=text.slice(i,k);const key=(raw.match(/@\w+\{([^,]+),/)||[])[1]||"";const title=(raw.match(/title\s*=\s*[{"]([^}"]+)/i)||[])[1]||"(no title)";es.push({type,key,title:title.trim(),raw});i=k}else i++}return es}
-let PUB={text:"",sha:null,entries:[],editingKey:null};
-async function loadPubs(){const el=document.getElementById("pubList");el.innerHTML="<small>loading…</small>";try{const f=await ghGet(BIBPATH);PUB.text=f.text;PUB.sha=f.sha;PUB.entries=parseBib(f.text);el.innerHTML=PUB.entries.map(e=>`<div class="row"><div class="t">${esc(e.title)}<div class="k">${esc(e.key)}</div></div><div class="btns"><button class="mini ghost" onclick="editPub('${esc(e.key)}')">Edit</button><button class="mini danger" onclick="delPub('${esc(e.key)}')">Del</button></div></div>`).join("")||"<small>none</small>"}catch(e){el.innerHTML="<small>"+e.message+"</small>"}}
-function editPub(key){const e=PUB.entries.find(x=>x.key===key);if(!e)return;PUB.editingKey=key;document.getElementById("bib").value=e.raw;document.getElementById("pubEdit").classList.remove("hide");document.getElementById("pubEditLabel").textContent="Editing "+key;document.getElementById("pubEdit").scrollIntoView({behavior:"smooth"})}
+let PUB={editingKey:null};
+async function loadPubs(){const el=document.getElementById("pubList");el.innerHTML="<small>loading…</small>";try{const f=await ghGet(BIBPATH);const es=parseBib(f.text);el.innerHTML=es.map(e=>`<div class="rowi"><div class="t">${esc(e.title)}<div class="k">${esc(e.key)}</div></div><div class="btns"><button class="mini ghost" onclick="editPub('${esc(e.key)}')">Edit</button><button class="mini danger" onclick="delPub('${esc(e.key)}')">Del</button></div></div>`).join("")||"<small>none</small>"}catch(e){el.innerHTML="<small>"+e.message+"</small>"}}
+async function editPub(key){try{const f=await ghGet(BIBPATH);const e=parseBib(f.text).find(x=>x.key===key);if(!e)return;PUB.editingKey=key;document.getElementById("bib").value=e.raw;document.getElementById("pubEdit").classList.remove("hide");document.getElementById("pubEditLabel").textContent="Editing "+key;document.getElementById("pubEdit").scrollIntoView({behavior:"smooth"})}catch(err){toast(err.message)}}
 function cancelPub(){PUB.editingKey=null;document.getElementById("pubEdit").classList.add("hide");document.getElementById("bib").value="";document.getElementById("ident").value="";document.getElementById("rnote").classList.add("hide")}
-async function savePub(){const entry=document.getElementById("bib").value.trim();if(!entry.startsWith("@")||entry.split("{").length!==entry.split("}").length){toast("Braces look unbalanced");return}const key=(entry.match(/@\w+\{([^,]+),/)||[])[1];if(!confirm((PUB.editingKey?"Update ":"Publish ")+(key||"entry")+"?"))return;toast("Saving…");try{const f=await ghGet(BIBPATH);let text=f.text;if(PUB.editingKey){const old=parseBib(text).find(x=>x.key===PUB.editingKey);if(!old)throw new Error("original entry vanished; reload");text=text.replace(old.raw,entry)}else{if(key&&new RegExp("@\\w+\\{"+key.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*,").test(text))throw new Error("key '"+key+"' exists");text=text.replace(/\s*$/,"")+"\n\n"+entry+"\n"}await ghPut(BIBPATH,text,f.sha,(PUB.editingKey?"Publications: update ":"Publications: add ")+(key||"entry")+" (via phone)");toast((PUB.editingKey?"Updated ":"Published ")+(key||"")+" ✓");cancelPub();loadPubs()}catch(e){toast("Failed: "+e.message)}}
-async function delPub(key){if(!confirm("Discard publication "+key+"? This removes it from the site."))return;toast("Deleting…");try{const f=await ghGet(BIBPATH);const e=parseBib(f.text).find(x=>x.key===key);if(!e)throw new Error("not found");let text=f.text.replace(e.raw,"").replace(/\n{3,}/g,"\n\n");await ghPut(BIBPATH,text,f.sha,"Publications: remove "+key+" (via phone)");toast("Removed "+key+" ✓");loadPubs()}catch(e){toast("Failed: "+e.message)}}
+async function savePub(){const entry=document.getElementById("bib").value.trim();if(!entry.startsWith("@")||entry.split("{").length!==entry.split("}").length){toast("Braces look unbalanced");return}const key=(entry.match(/@\w+\{([^,]+),/)||[])[1];if(!confirm((PUB.editingKey?"Update ":"Publish ")+(key||"entry")+"?"))return;toast("Saving…");try{const f=await ghGet(BIBPATH);let text=f.text;if(PUB.editingKey){const old=parseBib(text).find(x=>x.key===PUB.editingKey);if(!old)throw new Error("original vanished; reload");text=text.replace(old.raw,entry)}else{if(key&&new RegExp("@\\w+\\{"+key.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*,").test(text))throw new Error("key '"+key+"' exists");text=text.replace(/\s*$/,"")+"\n\n"+entry+"\n"}await ghPut(BIBPATH,text,f.sha,(PUB.editingKey?"Publications: update ":"Publications: add ")+(key||"entry")+" (via admin)");toast((PUB.editingKey?"Updated ":"Published ")+(key||"")+" ✓");afterCommit();cancelPub();loadPubs()}catch(e){toast("Failed: "+e.message)}}
+async function delPub(key){if(!confirm("Discard publication "+key+"?"))return;toast("Deleting…");try{const f=await ghGet(BIBPATH);const e=parseBib(f.text).find(x=>x.key===key);if(!e)throw new Error("not found");let text=f.text.replace(e.raw,"").replace(/\n{3,}/g,"\n\n");await ghPut(BIBPATH,text,f.sha,"Publications: remove "+key+" (via admin)");toast("Removed "+key+" ✓");afterCommit();loadPubs()}catch(e){toast("Failed: "+e.message)}}
 
 // resolve via Semantic Scholar
 function surnameFirst(n){n=n.trim().replace(/\s+/g," ");if(n.includes(","))return n;const p=n.split(" ");return p.length<2?n:p[p.length-1]+", "+p.slice(0,-1).join(" ")}
@@ -147,19 +193,17 @@ function keyOf(a,y,t){const last=(surnameFirst(a).split(",")[0]||"paper").toLowe
 async function resolve(){const raw=document.getElementById("ident").value.trim();if(!raw)return;let id;const ax=raw.match(/(\d{4}\.\d{4,5})/);const doi=raw.match(/10\.\d{4,9}\/\S+/);if(ax&&!/10\.\d/.test(raw))id="ARXIV:"+ax[1];else if(doi)id="DOI:"+doi[0];else{toast("Paste an arXiv id/link or a DOI");return}PUB.editingKey=null;toast("Resolving…");try{const r=await fetch("https://api.semanticscholar.org/graph/v1/paper/"+encodeURIComponent(id)+"?fields=title,abstract,year,authors,venue,externalIds,publicationVenue");if(!r.ok)throw new Error(r.status===404?"not indexed yet — fill it in manually":"lookup "+r.status);const d=await r.json();const authors=(d.authors||[]).map(a=>a.name);const year=(d.year||new Date().getFullYear())+"";const arxivId=(d.externalIds||{}).ArXiv||(ax?ax[1]:"");const hasDoi=!!(d.externalIds||{}).DOI;const venue=(d.publicationVenue&&d.publicationVenue.name)||d.venue||"";const pre=!hasDoi&&(!venue||/arxiv/i.test(venue));const key=keyOf(authors[0]||"paper",year,d.title||"paper");let L=["@"+(pre?"article":"inproceedings")+"{"+key+",","  abbr={"+venueAbbr(venue,year)+"},","  bibtex_show={true},","  title={"+(d.title||"")+"},","  author={"+authors.map(surnameFirst).join(" and ")+"},"];if(pre)L.push("  journal={arXiv preprint arXiv:"+arxivId+"},");else L.push("  booktitle={"+venue+"},");L.push("  year={"+year+"},");if(d.abstract)L.push("  abstract={"+d.abstract.replace(/\s+/g," ").trim()+"},");if(arxivId){L.push("  html={https://arxiv.org/abs/"+arxivId+"},");L.push("  pdf={https://arxiv.org/pdf/"+arxivId+"},")}if(hasDoi)L.push("  doi={"+d.externalIds.DOI+"},");L.push("  % google_scholar_id={TODO after it appears on Scholar},");L.push("  % preview={TODO-image.png},");L.push("}");document.getElementById("bib").value=L.join("\n");document.getElementById("pubEdit").classList.remove("hide");document.getElementById("pubEditLabel").textContent="Review / edit, then publish";const n=document.getElementById("rnote");n.textContent=pre?"Preprint — venue guessed into abbr; change to @inproceedings/@article when published.":"";n.classList.toggle("hide",!n.textContent);toast("Resolved: "+(d.title||"").slice(0,42))}catch(e){document.getElementById("bib").value="@article{TODO_key,\n  abbr={TODO},\n  bibtex_show={true},\n  title={},\n  author={Last, First and Last, First},\n  journal={arXiv preprint arXiv:"+(ax?ax[1]:"")+"},\n  year={"+new Date().getFullYear()+"},\n}";document.getElementById("pubEdit").classList.remove("hide");toast(e.message)}}
 
 // ---------------- Books ----------------
-function bookBlocks(text){const s=text.indexOf("reading_list:");if(s<0)return{fmEnd:-1,items:[]};const lines=text.split("\n");let dashes=[];for(let i=0;i<lines.length;i++)if(lines[i].trim()==="---")dashes.push(i);const fmEnd=dashes.length>=2?dashes[1]:-1;return{fmEnd,items:[...text.matchAll(/^  - title:\s*(.+)$/gm)].map(m=>({title:m[1].trim(),idx:m.index}))}}
-async function loadBooks(){const el=document.getElementById("bookList");el.innerHTML="<small>loading…</small>";try{const f=await ghGet(BOOKSPATH);BOOK={text:f.text,sha:f.sha};const items=[...f.text.matchAll(/^  - title:\s*(.+)\n(?:.*\n)*?    author:\s*(.+)$/gm)];el.innerHTML=items.map(m=>`<div class="row"><div class="t">${esc(m[1].trim())}<div class="k">${esc(m[2].trim())}</div></div><div class="btns"><button class="mini danger" onclick="delBook('${esc(m[1].trim().replace(/'/g,""))}')">Del</button></div></div>`).join("")||"<small>none</small>"}catch(e){el.innerHTML="<small>"+e.message+"</small>"}}
-let BOOK={text:"",sha:null};
+async function loadBooks(){const el=document.getElementById("bookList");el.innerHTML="<small>loading…</small>";try{const f=await ghGet(BOOKSPATH);const items=[...f.text.matchAll(/^  - title:\s*(.+)\n(?:.*\n)*?    author:\s*(.+)$/gm)];el.innerHTML=items.map(m=>`<div class="rowi"><div class="t">${esc(m[1].trim())}<div class="k">${esc(m[2].trim())}</div></div><div class="btns"><button class="mini danger" onclick="delBook('${esc(m[1].trim().replace(/'/g,""))}')">Del</button></div></div>`).join("")||"<small>none</small>"}catch(e){el.innerHTML="<small>"+e.message+"</small>"}}
 function q(id){return document.getElementById(id).value.trim()}
 function yamlStr(s){return '"'+(s||"").replace(/"/g,'\\"')+'"'}
-async function addBook(){const title=q("bk_title");if(!title){toast("Title required");return}const tags=q("bk_tags").split(",").map(t=>t.trim()).filter(Boolean).map(t=>'"'+t+'"').join(", ");const block=["  - title: "+title,"    author: "+q("bk_author"),"    published_date: "+(q("bk_year")||"n.d."),"    category: "+(q("bk_category")||"Uncategorized"),"    rating: "+(q("bk_rating")||"4"),"    image: "+(q("bk_image")||""),"    tags: ["+tags+"]","    summary: "+yamlStr(q("bk_summary")),"    summary_bangla: "+yamlStr(q("bk_summary_bn")),""].join("\n");if(!confirm("Add book “"+title+"”?"))return;toast("Adding…");try{const f=await ghGet(BOOKSPATH);const lines=f.text.split("\n");let dashes=[];for(let i=0;i<lines.length;i++)if(lines[i].trim()==="---")dashes.push(i);const fmEnd=dashes[1];lines.splice(fmEnd,0,block);const text=lines.join("\n");await ghPut(BOOKSPATH,text,f.sha,"Books: add "+title+" (via phone)");toast("Added ✓");["bk_title","bk_author","bk_year","bk_category","bk_rating","bk_image","bk_tags","bk_summary","bk_summary_bn"].forEach(i=>document.getElementById(i).value="");loadBooks()}catch(e){toast("Failed: "+e.message)}}
-async function delBook(title){if(!confirm("Discard book “"+title+"”?"))return;toast("Deleting…");try{const f=await ghGet(BOOKSPATH);const re=new RegExp("^  - title:\\s*"+title.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*\\n(?:(?!  - title:|---).*\\n?)*","m");if(!re.test(f.text))throw new Error("book block not found");const text=f.text.replace(re,"");await ghPut(BOOKSPATH,text,f.sha,"Books: remove "+title+" (via phone)");toast("Removed ✓");loadBooks()}catch(e){toast("Failed: "+e.message)}}
+async function addBook(){const title=q("bk_title");if(!title){toast("Title required");return}const tags=q("bk_tags").split(",").map(t=>t.trim()).filter(Boolean).map(t=>'"'+t+'"').join(", ");const block=["  - title: "+title,"    author: "+q("bk_author"),"    published_date: "+(q("bk_year")||"n.d."),"    category: "+(q("bk_category")||"Uncategorized"),"    rating: "+(q("bk_rating")||"4"),"    image: "+(q("bk_image")||""),"    tags: ["+tags+"]","    summary: "+yamlStr(q("bk_summary")),"    summary_bangla: "+yamlStr(q("bk_summary_bn")),""].join("\n");if(!confirm("Add book “"+title+"”?"))return;toast("Adding…");try{const f=await ghGet(BOOKSPATH);const lines=f.text.split("\n");let dashes=[];for(let i=0;i<lines.length;i++)if(lines[i].trim()==="---")dashes.push(i);const fmEnd=dashes[1];lines.splice(fmEnd,0,block);await ghPut(BOOKSPATH,lines.join("\n"),f.sha,"Books: add "+title+" (via admin)");toast("Added ✓");["bk_title","bk_author","bk_year","bk_category","bk_rating","bk_image","bk_tags","bk_summary","bk_summary_bn"].forEach(i=>document.getElementById(i).value="");afterCommit();loadBooks()}catch(e){toast("Failed: "+e.message)}}
+async function delBook(title){if(!confirm("Discard book “"+title+"”?"))return;toast("Deleting…");try{const f=await ghGet(BOOKSPATH);const re=new RegExp("^  - title:\\s*"+title.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*\\n(?:(?!  - title:|---).*\\n?)*","m");if(!re.test(f.text))throw new Error("book block not found");await ghPut(BOOKSPATH,f.text.replace(re,""),f.sha,"Books: remove "+title+" (via admin)");toast("Removed ✓");afterCommit();loadBooks()}catch(e){toast("Failed: "+e.message)}}
 
 // ---------------- Generic editor ----------------
-let ED={path:"",sha:null};
-async function edOpen(){const p=document.getElementById("ed_path").value.trim();if(!p){toast("Enter a path");return}toast("Opening…");try{const f=await ghGet(p);ED={path:p,sha:f.sha};document.getElementById("ed_text").value=f.text;document.getElementById("ed_body").classList.remove("hide");toast(f.missing?"New file — type content & Save":"Opened "+p)}catch(e){toast(e.message)}}
-async function edSave(){const p=document.getElementById("ed_path").value.trim();if(!p)return;if(!confirm("Commit "+p+"?"))return;toast("Saving…");try{const f=await ghGet(p);await ghPut(p,document.getElementById("ed_text").value,f.sha,"Edit "+p+" (via phone)");toast("Saved "+p+" ✓")}catch(e){toast("Failed: "+e.message)}}
-async function edDelete(){const p=document.getElementById("ed_path").value.trim();if(!p)return;if(!confirm("DELETE file "+p+"? This cannot be undone from here."))return;toast("Deleting…");try{const f=await ghGet(p);if(!f.sha)throw new Error("file does not exist");await ghDel(p,f.sha,"Delete "+p+" (via phone)");toast("Deleted "+p+" ✓");document.getElementById("ed_body").classList.add("hide");document.getElementById("ed_text").value=""}catch(e){toast("Failed: "+e.message)}}
+async function edOpen(){const p=document.getElementById("ed_path").value.trim();if(!p){toast("Enter a path");return}toast("Opening…");try{const f=await ghGet(p);document.getElementById("ed_text").value=f.text;document.getElementById("ed_body").classList.remove("hide");document.getElementById("ed_prev").classList.add("hide");toast(f.missing?"New file — type content & Save":"Opened "+p)}catch(e){toast(e.message)}}
+async function edPreview(){const pv=document.getElementById("ed_prev");const txt=document.getElementById("ed_text").value;pv.classList.remove("hide");pv.innerHTML="<small>rendering…</small>";pv.innerHTML=await renderMd(txt.replace(/^---[\s\S]*?---\s*/,""))}
+async function edSave(){const p=document.getElementById("ed_path").value.trim();if(!p)return;if(!confirm("Commit "+p+"?"))return;toast("Saving…");try{const f=await ghGet(p);await ghPut(p,document.getElementById("ed_text").value,f.sha,"Edit "+p+" (via admin)");toast("Saved "+p+" ✓");afterCommit()}catch(e){toast("Failed: "+e.message)}}
+async function edDelete(){const p=document.getElementById("ed_path").value.trim();if(!p)return;if(!confirm("DELETE file "+p+"? Cannot be undone from here."))return;toast("Deleting…");try{const f=await ghGet(p);if(!f.sha)throw new Error("file does not exist");await ghDel(p,f.sha,"Delete "+p+" (via admin)");toast("Deleted "+p+" ✓");afterCommit();document.getElementById("ed_body").classList.add("hide");document.getElementById("ed_text").value=""}catch(e){toast("Failed: "+e.message)}}
 
 // ---------------- Scholar / auth ----------------
 async function loadScholar(){const el=document.getElementById("stats");try{const f=await ghGet(SCHOLARPATH);const y=f.text;const g=re=>{const m=y.match(re);return m?m[1]:"—"};el.innerHTML=`<div class="stat"><span>Citations (all)</span><b>${g(/citations:\s*\n\s*all:\s*'?(\d+)/)}</b></div><div class="stat"><span>Since ${g(/since_year:\s*'?(\d+)/)}</span><b>${g(/citations:[\s\S]*?recent:\s*'?(\d+)/)}</b></div><div class="stat"><span>h-index</span><b>${g(/h_index:\s*\n\s*all:\s*'?(\d+)/)}</b></div><div class="stat"><span>i10-index</span><b>${g(/i10_index:\s*\n\s*all:\s*'?(\d+)/)}</b></div>`}catch(e){el.innerHTML="<small>"+e.message+"</small>"}}
@@ -167,6 +211,6 @@ async function whoami(){try{const r=await fetch("https://api.github.com/user",{h
 function saveTok(){const v=document.getElementById("tok").value.trim();if(!v)return;localStorage.setItem("pc_gh",v);show()}
 function logout(){localStorage.removeItem("pc_gh");location.reload()}
 function show(){document.getElementById("login").classList.add("hide");document.getElementById("app").classList.remove("hide");loadPubs();loadScholar();whoami()}
-function tab(t){["pubs","books","editor","scholar","set"].forEach(x=>{document.getElementById("t-"+x).classList.toggle("hide",x!==t);document.querySelector("[data-t="+x+"]").classList.toggle("on",x===t)});if(t==="books"&&document.getElementById("bookList").children.length<=1)loadBooks()}
+function tab(t){["site","pubs","books","editor","scholar","set"].forEach(x=>{document.getElementById("t-"+x).classList.toggle("hide",x!==t);document.querySelector("[data-t="+x+"]").classList.toggle("on",x===t)});if(t==="books"&&document.getElementById("bookList").children.length<=1)loadBooks()}
 if(tok())show();
 </script></body></html>

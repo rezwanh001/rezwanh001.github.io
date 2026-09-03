@@ -22,3 +22,8 @@ vendor
 .idea*.mp3
 *.mp3
 *.mp3
+
+# Python bytecode from scripts/
+__pycache__/
+*.pyc
+papers.bib.bak

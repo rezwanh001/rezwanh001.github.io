@@ -289,19 +289,55 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    background-color: inherit;
+    font-weight: 700;
+    color: var(--global-theme-color);
 
     &:hover {
       color: var(--global-hover-color);
     }
   }
 
-  .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+  // Gorgeous animated gradient underline (desktop navbar only).
+  @media (min-width: 576px) {
+    .navbar-nav .nav-item .nav-link {
+      position: relative;
+      font-weight: 500;
+      padding-bottom: 5px;
 
-    &:hover {
-      color: var(--global-hover-color);
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0.15rem;
+        right: 0.15rem;
+        bottom: 0;
+        height: 2px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, var(--global-theme-color), #ff7bd5);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+
+    .navbar-nav .nav-item.active > .nav-link {
+      font-weight: 600;
+
+      &::after {
+        transform: scaleX(1);
+      }
     }
   }
 

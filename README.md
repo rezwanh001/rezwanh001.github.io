@@ -20,6 +20,7 @@ Run `make` (or `make help`) to list everything. The common ones:
 | `make monitor` | Check Scholar for changes / new papers, push an ntfy phone alert |
 | `make paper id=2508.09362` | Resolve an arXiv id / DOI → a ready `papers.bib` entry (prints it) |
 | `make paper-add id=2508.09362` | …same, but **append** it to `papers.bib` (writes a `.bak` first) |
+| `make new-post title="…"` | Scaffold a new blog post in `_posts/` |
 | `make refresh` | The safe maintenance set: `citations` + `repos` + `monitor` |
 | `make serve` | Local live preview at <http://localhost:4000> |
 | `make build` | Build the static site into `_site/` |
@@ -27,7 +28,7 @@ Run `make` (or `make help`) to list everything. The common ones:
 | **`make publish m="msg"`** | **Stage everything → commit → push** (live in ~3–5 min) |
 
 > ⚠️ **Don't** run `for f in scripts/*.py; do python "$f"; done` — `add_paper.py`
-> needs an argument and `scholar_scraper.py` is legacy. Use `make refresh` instead.
+> needs an argument. Use `make refresh` instead.
 
 ---
 
@@ -108,7 +109,7 @@ URL on iPhone → paste the token in the login box (**never in a file**) → Add
 | `fetch_github.py` | `make repos` | GitHub API → baked repo cards in `_data/repositories.yml`. |
 | `add_paper.py` | `make paper id=…` | arXiv/DOI → styled `papers.bib` entry; detects preprint vs venue. `--append` writes it. |
 | `scholar_monitor.py` | `make monitor` | Detects citation/paper changes, sends an **ntfy** alert. Read-only; never pushes. Runs daily via the server crontab. |
-| `scholar_scraper.py` | — | ⚠️ **Legacy**, superseded by `fetch_citations.py`. Safe to delete. |
+| `new_post.sh` | `make new-post title="…"` | Scaffolds `_posts/YYYY-MM-DD-slug.md` with front matter, ready to edit. |
 
 State/cache: `~/.scholar_monitor_state.json` (monitor). See [Automation](#-automation) below.
 

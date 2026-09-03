@@ -25,6 +25,9 @@ paper:           ## Resolve a paper to a bib entry:  make paper id=2508.09362
 paper-add:       ## Same, but append it to papers.bib:  make paper-add id=2508.09362
 	$(PY) scripts/add_paper.py $(id) --append
 
+new-post:        ## Scaffold a blog post:  make new-post title="My Post Title"
+	@bash scripts/new_post.sh "$(title)"
+
 refresh:         ## Run the safe maintenance set (citations + repos + monitor)
 	$(MAKE) citations repos monitor
 
@@ -44,4 +47,4 @@ publish:         ## Commit ALL changes and push:  make publish m="what you chang
 	@git push
 	@echo "Pushed. Live at https://rezwan.xyz in ~3-5 min."
 
-.PHONY: help citations repos monitor paper paper-add refresh serve build status publish
+.PHONY: help citations repos monitor paper paper-add new-post refresh serve build status publish

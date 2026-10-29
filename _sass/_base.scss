@@ -2187,6 +2187,24 @@ footer.sticky-bottom {
   i { font-size: 1rem; }
 }
 
+.repo-hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+// Hugging Face button — amber brand accent
+.repo-hero-btn-hf {
+  background: #ffb000;
+  border-color: #ffb000;
+  color: #1b1b1f !important;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(255, 176, 0, 0.4);
+  }
+}
+
 // Repositories — Section Headers
 
 .repo-section {

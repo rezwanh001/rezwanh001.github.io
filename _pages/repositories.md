@@ -27,9 +27,14 @@ nav_order: 6
       <span class="repo-stat-label">Public Repos on GitHub</span>
     </div>
   </div>
-  <a href="https://github.com/rezwanh001" target="_blank" class="repo-hero-btn">
-    <i class="fa-brands fa-github"></i> View GitHub Profile
-  </a>
+  <div class="repo-hero-btns">
+    <a href="https://github.com/rezwanh001" target="_blank" class="repo-hero-btn">
+      <i class="fa-brands fa-github"></i> View GitHub Profile
+    </a>
+    <a href="https://huggingface.co/mr3haque" target="_blank" class="repo-hero-btn repo-hero-btn-hf">
+      🤗 Hugging Face
+    </a>
+  </div>
 </div>
 
 {% if site.data.repositories.github_users %}

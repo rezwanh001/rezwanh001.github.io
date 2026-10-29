@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Proud Achievement – STAR Award (Spring 2026) from University of Waterloo! 🌟🏆
+title: Proud Achievement – STAR (Student Term Activity Report) Award, Spring 2026 — University of Waterloo! 🌟🏆
 date: 2026-10-27 10:00:00-0400
 inline: false
 related_posts: false
@@ -20,17 +20,18 @@ related_posts: false
 
   <div class="award-body">
     <p class="award-lead">
-      I’m honoured to share that I have received the <strong>STAR Award</strong> from the
-      University of Waterloo <strong>Faculty of Engineering (FOE)</strong> for the
-      <strong>Spring 2026</strong> term. I’m sincerely grateful for this recognition of my
-      teaching and academic contributions — thank you to everyone who made it possible. 🙏
+      I’m honoured to share that I have received the <strong>Student Term Activity Report
+      (STAR) Award</strong> from the <strong>University of Waterloo</strong> for the
+      <strong>Spring 2026</strong> term — awarded for <strong>exceptional merit in research
+      and academics</strong>, and valued at <strong>CAD&nbsp;$1,500</strong>. I’m sincerely
+      grateful for this recognition — thank you to everyone who made it possible. 🙏
     </p>
 
     <div class="award-facts">
-      <div class="award-fact"><span>🥇</span><div><strong>Award</strong><br>STAR Award</div></div>
+      <div class="award-fact"><span>🥇</span><div><strong>Award</strong><br>STAR Award (Student Term Activity Report)</div></div>
       <div class="award-fact"><span>🗓️</span><div><strong>Term</strong><br>Spring 2026</div></div>
-      <div class="award-fact"><span>🏛️</span><div><strong>Institution</strong><br>University of Waterloo · FOE</div></div>
-      <div class="award-fact"><span>📅</span><div><strong>Received</strong><br>October 27, 2026</div></div>
+      <div class="award-fact"><span>🏛️</span><div><strong>Institution</strong><br>University of Waterloo</div></div>
+      <div class="award-fact"><span>💰</span><div><strong>Value</strong><br>CAD&nbsp;$1,500</div></div>
     </div>
 
     <a href="#" data-toggle="modal" data-target="#announcement-12-image-modal" class="award-figure" aria-label="Open the STAR Award notification full size">

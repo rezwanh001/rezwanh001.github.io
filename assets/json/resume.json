@@ -99,6 +99,20 @@
     {
       "organization": "University of Waterloo",
       "location": "Ontario, Canada",
+      "position": "ECE 358: Computer Networks",
+      "url": "https://rezwanh001.github.io/teaching/phd0_ece358_fall2026/",
+      "startDate": "2026-09-01",
+      "endDate": "2026-12-31",
+      "summary": "Teaching Assistant (TA)",
+      "highlights": [
+        "\ud83d\udcc5 Fall 2026 \u00b7 September 2026 \u2013 December 2026",
+        "\ud83d\udc65 Enrolled Students: 420/420",
+        "\u2b50 TA Rating: \u2605\u2605\u2605\u2605\u2605 (--.--/5)"
+      ]
+    },
+    {
+      "organization": "University of Waterloo",
+      "location": "Ontario, Canada",
       "position": "ECE 459: Programming for Performance",
       "url": "https://rezwanh001.github.io/teaching/0_ece459_winter2026/",
       "startDate": "2026-01-01",
@@ -168,6 +182,12 @@
     }
   ],
   "publications": [
+    {
+      "name": "Towards Robust Reinforcement Learning for Small-Scale Language Model Agents",
+      "publisher": "In the Proceedings of  2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+      "releaseDate": "2026-07-27",
+      "url": "https://arxiv.org/abs/2607.25091"
+    },
     {
       "name": "CAST: Channel-Aware Spatial Transfer Learning with Pseudo-Image Radar for Sign Language Recognition",
       "publisher": "In the Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026",
@@ -242,6 +262,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "🏅🌟 Student Term Activity Report (STAR) Award (Spring)",
+      "date": "2026",
+      "awarder": "UWaterloo, CA",
+      "summary": "🏅 Awarded for exceptional merit in research and academics. 💰 Valued at CAD $1,500."
+    },
     {
       "title": "🏅 Faculty of Engineering (FOE) Award (Spring)",
       "date": "2025",

@@ -2,7 +2,7 @@
 #  Repositories page data  (/repositories/)
 #  Native cards render from the baked metadata below — no dependency
 #  on github-readme-stats. Re-bake with: python scripts/fetch_github.py
-#  Last refreshed: 2026-09-03
+#  Last refreshed: 2026-10-29
 # =======================================================================
 
 github_users:
@@ -15,8 +15,8 @@ github_user:
     Agents.
   avatar: /assets/img/github_avatar.jpg
   html_url: https://github.com/rezwanh001
-  public_repos: 53
-  followers: 109
+  public_repos: 54
+  followers: 111
   following: 237
 github_repos:
 - repo: rezwanh001/SLM-RL-Agents
@@ -51,7 +51,7 @@ github_repos:
   description: 'MMFformer: Multimodal Fusion Transformer Network for Depression Detection.'
   language: Python
   lang_color: '#3572A5'
-  stars: 20
+  stars: 19
   forks: 2
   homepage: https://arxiv.org/abs/2508.06701
 - repo: rezwanh001/Multimodal-Depression-Detection
@@ -59,6 +59,6 @@ github_repos:
   description: Multimodal Depression Detection through a Mutual Transformer.
   language: Python
   lang_color: '#3572A5'
-  stars: 10
+  stars: 11
   forks: 1
   homepage: https://arxiv.org/abs/2508.08093

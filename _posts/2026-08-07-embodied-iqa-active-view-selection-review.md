@@ -33,6 +33,13 @@ related_posts: false
 
 Papers 1 and 2 attack the same question from the *measurement* side: **existing IQA metrics score images for humans, but robots are the ones consuming the pixels, and robot preferences do not match human preferences.** Paper 2 (EPD) is the first small proof of this with an RL agent in simulation; Paper 1 (Embodied-IQA) is the large-scale, theoretically framed successor that decomposes robot "perception quality" into Cognition (VLM), Decision (VLA), and Execution (real robot arm). Paper 3 attacks a different question from the *use* side: **if you already have a good no-ground-truth quality score, you can use it to decide where a robot should look next**, replacing expensive 3D uncertainty/information-gain machinery with a cheap 2D cross-reference IQA forward pass. Together they define a loop that nobody has closed yet: a *task-conditioned, reference-free quality signal* that is both (a) predictive of downstream embodied success and (b) cheap enough to drive online action selection. That un-closed loop is where the new-metric opportunity lives (§5).
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>পেপার ১ ও ২ <em>পরিমাপের</em> দিক থেকে একই প্রশ্নে আঘাত করে: <strong>বিদ্যমান IQA মেট্রিক ছবির মান মাপে মানুষের জন্য, অথচ পিক্সেল ব্যবহার করে রোবট — আর রোবটের পছন্দ মানুষের পছন্দের সাথে মেলে না।</strong> পেপার ২ (EPD) সিমুলেশনে RL-এজেন্ট দিয়ে এর প্রথম ছোট প্রমাণ; পেপার ১ (Embodied-IQA) বড় মাপের উত্তরসূরি — রোবটের “উপলব্ধি-মান”-কে Cognition (VLM), Decision (VLA) ও Execution (বাস্তব বাহু)-তে ভাগ করে।</p>
+  <p>পেপার ৩ <em>ব্যবহারের</em> দিক থেকে ভিন্ন প্রশ্নে: ভালো no-ground-truth মান-স্কোর থাকলে তা দিয়ে ঠিক করা যায় রোবট এরপর কোথায় তাকাবে। একসাথে এরা এমন একটি লুপ সংজ্ঞায়িত করে যা কেউ বন্ধ করেনি — <em>task-শর্তাধীন, reference-free</em> মান-সংকেত যা ডাউনস্ট্রিম সাফল্যের পূর্বাভাসক এবং অনলাইন অ্যাকশন চালানোর মতো সস্তা। সেখানেই নতুন-মেট্রিকের সুযোগ (§৫)।</p>
+</div>
+
 ---
 
 ## 1. Paper 1 — Image Quality Assessment for Embodied AI (Embodied-IQA)
@@ -157,6 +164,13 @@ This is a **database + benchmark paper, not a new-model paper**. There is no new
 - **Single frame, no temporal dimension.** Real embodied perception is a video stream in a closed loop.
 - The database was to be **released in stages**, non-commercial.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>পেপার ১ — Embodied-IQA।</strong> সমস্যা: রোবটের তিন ধাপ — বোঝা → সিদ্ধান্ত → সম্পাদন; মান তিন ধাপেই মাপা উচিত। ডেটা: ১,২৩০ পরিষ্কার ছবি → ৩০ রকম × ৫ মাত্রা = <strong>৩৬,৯০০</strong> নষ্ট ছবি; প্রতি-ছবিতে ৫টি প্রাকৃতিক-ভাষা কাজ; ১৫ VLM + ১৫ VLA + একটি UR5 বাহু = ~<strong>৫৫ লক্ষ লেবেল</strong>।</p>
+  <p>পদ্ধতি: নতুন নেটওয়ার্ক নয়, বরং <em>রেসিপি</em> — বোঝা মাপে ক্ষতির আগে-পরে মডেলের বাক্য তুলনা করে, সিদ্ধান্ত মাপে 7-DoF পোজ তুলনা করে, সম্পাদন মাপে বাস্তব বাহু কতটা ভুল স্থানে থামল। ফল: সেরা মেট্রিক SRCC ০.৭৭৫ (মানুষের ০.৯-এর অনেক নিচে); LPIPS/DISTS/CLIPIQA সাধারণ PSNR-এর চেয়েও খারাপ। শিক্ষা: ক্ষতির <em>মাত্রা</em> ≠ <em>প্রভাব</em> — রোবট কেবল দরকারি অংশের পরোয়া করে।</p>
+</div>
+
 ---
 
 ## 2. Paper 2 — Embodied Image Quality Assessment for Robotic Intelligence (EPD + MA-EIQA)
@@ -257,6 +271,13 @@ MS contributes +6.55 / 7.28 / 6.61 %, EA contributes +3.85 / 3.92 / 3.45 %, comb
 - Ceiling around SRCC 0.58 is unexplained: is it model capacity or label noise? No noise-ceiling analysis.
 - MA-EIQA is architecturally conventional (ResNet50 + PANet + CBAM); the novelty is in the *target*, not the network. "Embodied Attention" is CBAM by another name.
 - Human MOS collected from only **15 experts on 128×128 images** — a weak human reference against which to declare HVS/RVS divergence.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>পেপার ২ — EPD + MA-EIQA।</strong> প্রশ্ন: রোবট ও মানুষ কি ছবি থেকে ভিন্ন জিনিস চায়? — আর মান-ডেটাবেস বানাও যা <strong>রোবট কাজ করেই স্কোর করে, কোনো মানুষ ছাড়াই।</strong> ডেটা: সিমুলেটরে বাহু দুটি কাজ (ঠেলা, তোলা) × ১০০ দৃশ্য × ২৫ ক্ষতি × ৫ মাত্রা = <strong>১২,৫০০ জোড়া</strong>; স্কোর = সেই পর্বে অর্জিত <strong>reward</strong>।</p>
+  <p>পদ্ধতি: ছোট no-reference মডেল <strong>MA-EIQA</strong> (৪৮.৮৩M), বহু-জুম + অ্যাটেনশন, এজ-হার্ডওয়্যারের জন্য। ফল: SRCC ০.৫৭৫৫ (বড় মডেলের চেয়ে সামান্য ভালো, তবু কম); মানুষ↔রোবট মত প্রায় মেলে না (<strong>PLCC ০.১৩–০.২১</strong>)। মোশন-ব্লার/নয়েজ রোবটকে ভোগায় না; রঙ-বিকৃতি ও অন্ধকার সবচেয়ে ক্ষতিকর।</p>
+</div>
 
 ---
 
@@ -381,6 +402,13 @@ One **single batched forward pass** of a light image network per selection. Cruc
 - Even the best method does not beat the **FVS oracle** on the Garden scene (23.15 vs 23.05) — geometric coverage heuristics remain very strong on 360° captures.
 - Motion cost is ignored: the "next best view" may be far away, which matters for a real robot but not for a dataset replay.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>পেপার ৩ — Active View Selector (AVS)।</strong> সমস্যা: রোবট ঘরের 3D মডেল বানানোর সময় পরের ভিউ কোথায় নেবে? পুরনো পদ্ধতি 3D-এর ভেতর অনিশ্চয়তা হিসাব করে — ধীর ও প্রতিটি 3D-রূপের জন্য আলাদা। ডেটা: মানব-লেবেল নেই; বহু ভিডিওতে 3D ফিট করে রেন্ডার-ভিউ বনাম বাস্তব ছবির স্বয়ংক্রিয় তুলনা।</p>
+  <p>পদ্ধতি: ছোট নেট রেন্ডার-ভিউকে <em>একই দৃশ্যের কয়েকটি বাস্তব ছবির সাথে</em> দেখে (<strong>CR-IQA</strong>) বোঝে কোথায় খারাপ; নিয়ম: <strong>সবচেয়ে খারাপ ভিউয়ে যাও</strong>। ফল: আগের সেরার চেয়ে ভালো, <strong>১৪–৩৩× দ্রুত</strong>, অর্ধেক মেমরি (~০.৬ সেকেন্ডে ২০০ ভিউ)। মূল অন্তর্দৃষ্টি: অন্য-ভিউ রোবটের কাছে বিনামূল্যে (নিজের আগের ফ্রেম); গতি বাধা নয়।</p>
+</div>
+
 ---
 
 ## 4. Cross-paper synthesis
@@ -405,6 +433,13 @@ One **single batched forward pass** of a light image network per selection. Cruc
 | Best correlation achieved | ~0.75 SRCC (TOPIQ-FR, Position) | ~0.58 SRCC (MA-EIQA) | n/a (evaluated by downstream PSNR/SCR) |
 
 **The gap in one sentence:** Papers 1–2 have the *right target* (task utility for a robot) but a **passive, single-frame, non-actionable** metric; Paper 3 has the *right mechanism* (cheap, reference-free, multi-view, closed-loop, drives an action) but the **wrong target** (SSIM fidelity, task-agnostic).
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>যেখানে একমত:</strong> (১) HVS-প্রশিক্ষিত IQA ট্রান্সফার করে না; (২) deployment-এ রেফারেন্স থাকে না, তাই <strong>reference-free</strong>-ই বাস্তব অবস্থা (পেপার ৩-এর cross-reference দ্বিধা মুছে দেয়); (৩) কম্পিউট/ল্যাটেন্সি গুরুত্বপূর্ণ; (৪) মানুষের চোখে ক্ষতির তীব্রতা ভুল অক্ষ।</p>
+  <p><strong>যেখানে ভিন্ন (এবং যে ফাঁক তৈরি হয়):</strong> পেপার ১–২-এর <em>লক্ষ্য ঠিক</em> (রোবটের কাজের উপযোগিতা) কিন্তু মেট্রিক <strong>প্যাসিভ, একক-ফ্রেম, অ-কার্যকর</strong>; পেপার ৩-এর <em>যন্ত্র ঠিক</em> (সস্তা, reference-free, মাল্টি-ভিউ, ক্লোজড-লুপ, অ্যাকশন চালায়) কিন্তু <strong>লক্ষ্য ভুল</strong> (SSIM-fidelity, task-agnostic)।</p>
+</div>
 
 ---
 
@@ -461,6 +496,13 @@ This connects directly to `Possible_Project_Ideas.md`:
 - **Real-robot data cost.** Paper 1 got only 1,500 execution labels for exactly this reason. *Mitigation:* lean on the self-supervised multi-view branch for scale and use real-robot data only for calibration/validation.
 - **Compute for annotation.** Paper 1 used 2×16 A800s. You do not need to reproduce it — use their released database (staged release, non-commercial).
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>হ্যাঁ, জায়গা আছে</strong> — প্রতিটি মেট্রিক SRCC ≈ ০.৭৫-এ আটকে, EPD-র নিজেরটা ০.৫৮, আর সমস্যাটি এখন MoIQA @ ACM MM 2026 চ্যালেঞ্জে আনুষ্ঠানিক। সাতটি অনুপস্থিত বৈশিষ্ট্য (G1–G7): task-শর্তাধীনতা, স্থানিক/কার্যকর মান, টেম্পোরাল/ক্লোজড-লুপ, actionability, ক্যালিব্রেশন/অনিশ্চয়তা, সঠিকতা (শুধু স্থিতিশীলতা নয়), ক্রস-এমবডিমেন্ট ট্রান্সফার।</p>
+  <p><strong>প্রস্তাব — TAC-Q</strong> (<em>Task-Aware Cross-referenced Quality</em>): নির্দেশ T, বর্তমান ভিউ ও কাছের ভিউ থেকে একটি <strong>স্থানিক উপযোগিতা-মানচিত্র</strong> U(x,y) + ক্যালিব্রেটেড স্কেলার (পূর্বাভাস-ব্যবধানসহ)। চার বৈশিষ্ট্য: task-শর্তাধীন (লেবেল Embodied-IQA-তে আছে), cross-referenced (অন্য ভিউ = বিনামূল্যে রেফারেন্স), dense ও actionable (মানচিত্র), এবং ১৫ VLA-র <em>অমিল</em>-কে epistemic spread হিসেবে ক্যালিব্রেট। ডেটা জোড়া লাগানো, শূন্য থেকে সংগৃহীত নয়। এটিই তোমার “moving to see better” এজেন্ডার reward-ফাংশন।</p>
+</div>
+
 ---
 
 ## 6. Research gaps and future directions
@@ -481,6 +523,12 @@ This connects directly to `Possible_Project_Ideas.md`:
 10. **Metric ↔ restoration co-design.** If darkening and compression are the worst distortions for robots (Paper 2) and Gaussian denoise is severe even at level 1 (Paper 1 — i.e. *denoising hurts robots*), then robot-oriented restoration/enhancement is misaligned with human-oriented restoration. Nobody has built a restoration model optimised for a robot-preference metric.
 11. **Cross-embodiment / cross-policy generalisation of the metric** — untested (§5.1 G7).
 12. **Economics of the loop.** Paper 3 ignores motion cost. A real "next best view" trades information gain against travel time, energy and collision risk. A quality metric with a *cost-aware* selection rule is an obvious and missing extension.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>পেপারগুলোর নিজস্ব সীমা (দৃষ্টির বাইরে উপলব্ধি, স্থির-বাহুর বাইরে এমবডিমেন্ট, বাস্তব execution-লেবেলের স্কেল) ছাড়াও যে ফাঁক কেউ বলেনি: <strong>embodied-এর জন্য ভিডিও/টেম্পোরাল IQA নেই</strong> (সব single-frame, অথচ ব্লার/জিটার টেম্পোরাল ও রোবটের নিজের নড়াচড়ায়), <strong>নয়েজ-সিলিং বিশ্লেষণ নেই</strong>, <strong>সিন্থেটিক-ক্ষতির পক্ষপাত</strong> (বাস্তব ব্যর্থতা স্থানীয়, কাঠামোবদ্ধ, স্ব-প্ররোচিত), প্রথম-ব্যক্তি দৃষ্টি কম-সেবিত, মান-স্কোর ম্যানিপুলেশনে কন্ট্রোল-সংকেত হিসেবে ব্যবহৃত নয়, “quality-aware VLA”-র মান নেই, মেট্রিক↔restoration সহ-নকশা, ক্রস-এমবডিমেন্ট জেনারালাইজেশন, এবং লুপের <strong>অর্থনীতি</strong> (গতি-খরচ ধরা হয় না)।</p>
+</div>
 
 ---
 
@@ -556,6 +604,12 @@ This connects directly to `Possible_Project_Ideas.md`:
 | [VisualQuality-R1: Reasoning-Induced IQA via Reinforcement Learning to Rank](https://arxiv.org/abs/2505.14460) | 2025 | RL-to-rank for IQA; a template for training a metric with ranking rather than regression objectives (useful given noisy DMOS labels). |
 | [Zoom-IQA: IQA with Reliable Region-Aware Reasoning](https://arxiv.org/abs/2601.02918) | 2026 | Region-aware reasoning for IQA — the spatial-localisation direction (G2). |
 | [Q-DeepSight: Incentivizing Thinking with Images for IQA and Refinement](https://arxiv.org/abs/2604.16858) | 2026 | Assess-and-refine loop; translates localised quality diagnoses into targeted edits. Analogous to "diagnose → re-observe" for robots. |
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>২০২৪–২৬-এর সম্পর্কিত কাজের মানচিত্র — <strong>সরাসরি বংশধারা</strong> (MPD, MIQD-2.5M/RA-MIQA, এবং মূল <strong>MoIQA চ্যালেঞ্জ</strong>: দুই ট্র্যাক — সিমে VLM ও বাস্তবে VLA আচরণ মেলানো); <strong>cross-reference ও NVS মান</strong> (CrossScore — AVS-এর ইঞ্জিন; NOVA); <strong>active view selection / next-best-view</strong> (AVS-পরবর্তী বহু কাজ, FisherRF baseline); <strong>VLA-তে active perception</strong> (ActiveVLA, TAVP); <strong>perturbation-এ VLA robustness</strong> (“এই মেট্রিক কেন দরকার”-এর প্রমাণ); <strong>world model-এর ক্লোজড-লুপ মূল্যায়ন</strong> (World-in-World — দৃশ্যগত মান ≠ কাজের সাফল্য); এবং <strong>IQA = reward/reasoning সংকেত</strong>। প্রতিটি নতুন মেট্রিক-প্রস্তাবের জন্য প্রস্তুত baseline, benchmark ও venue দেয়।</p>
+</div>
 
 ---
 

@@ -415,6 +415,13 @@ ul.task-list input[type="checkbox"] {
 
 // Social (bottom)
 
+// Hugging Face social link uses the 🤗 brand mark — size it to match the glyph icons.
+.social-hf {
+  font-size: 1.1rem;
+  line-height: 1;
+  text-decoration: none !important;
+}
+
 .social {
   text-align: center;
 

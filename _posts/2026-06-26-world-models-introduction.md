@@ -46,6 +46,12 @@ If you prefer to *watch* an excellent framing of the same shift — from large l
   <iframe src="https://www.youtube.com/embed/UaHwJeCMzso" title="From LLM to JEPA — AMI Labs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>এই সিরিজটি আমি সেভাবেই লিখছি যেভাবে কেউ আমার জন্য লিখলে ভালো হতো — একদম গোড়া থেকে, ধাপে ধাপে গভীরে। প্রতিটি পর্ব স্বয়ংসম্পূর্ণ: আনুষ্ঠানিক সংজ্ঞা, স্বজ্ঞা, চিত্র ও প্রয়োজনে আমার নিজের প্রস্তাব-সহ, এবং সবকিছু যথাযথভাবে রেফারেন্স-করা। সঙ্গী ভিডিও <em>“From LLM to JEPA”</em> একই পরিবর্তনের চমৎকার উপস্থাপনা।</p>
+</div>
+
 ---
 
 ## The triumph (and the ceiling) of language models
@@ -77,6 +83,13 @@ For an agent that must **perceive, decide, and act**, three gaps open up:
 3. **Planning is implicit and ungrounded.** "Reasoning" emerges as more token generation, with no internal simulator to roll out and compare candidate futures.
 
 This is the ceiling. To cross it we need a model whose variables are **states and actions**, not just words.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>একটি <strong>LLM</strong> মূলত একটি অটোরিগ্রেসিভ next-token predictor — আগের টোকেন দেখে পরের টোকেনের সম্ভাবনা শেখে, cross-entropy কমিয়ে। কিন্তু এটি <strong>মানুষের লেখা টেক্সটের</strong> বণ্টন মডেল করে, “দুনিয়া পরের মুহূর্তে কী করবে” তা নয়।</p>
+  <p>তাই পারসিভ–ডিসাইড–অ্যাক্ট করা এজেন্টের জন্য তিনটি ফাঁক: <strong>(১)</strong> গ্রাউন্ডেড ডাইনামিক্স নেই (টেক্সট কাজের ভৌত পরিণতি ধরে না), <strong>(২)</strong> অ্যাকশনের ধারণা নেই (টোকেনে শর্তাধীন, অ্যাকশন <em>aₜ</em>-তে নয়), <strong>(৩)</strong> প্ল্যানিং অন্তর্নিহিত ও গ্রাউন্ডেড নয়। এই সিলিং পেরোতে দরকার এমন মডেল যার চলক <strong>state ও action</strong>, কেবল শব্দ নয়।</p>
+</div>
 
 ---
 
@@ -159,6 +172,13 @@ The key new ingredient is the **action** $$a_t$$: a world model is *conditional 
 <figcaption>The same picture twice. A language model's graph has one kind of arrow — history to next token. A world model adds a <strong>second input the agent controls</strong>. Everything else in this series follows from that one extra arrow.</figcaption>
 </div>
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>একটি <strong>world model</strong> হলো পরিবেশ কীভাবে বদলায় তার অভ্যন্তরীণ ভবিষ্যদ্বাণীমূলক মডেল — একটি শেখা সিমুলেটর, যাকে জিজ্ঞেস করা যায় “state এই, আমি ওটা করলে কী হবে?” বেশিরভাগ এজেন্ট-পরিবেশ <strong>আংশিক পর্যবেক্ষিত</strong>: এজেন্ট সত্য state দেখে না, কেবল observation <em>oₜ</em>।</p>
+  <p>তাই একটি কমপ্যাক্ট <strong>latent state</strong> <em>zₜ</em> আনা হয় এবং তিনটি জিনিস শেখা হয় — (১) এনকোডার/ইনফারেন্স, (২) latent transition বা “ডাইনামিক্স”, (৩) observation ও reward ডিকোডার। LLM-এর সাথে মূল পার্থক্য: নতুন উপাদান <strong>action aₜ</strong> — world model এজেন্ট <em>কী করছে তার উপর শর্তাধীন</em>, ঠিক যে চলকটি LM-এ নেই অথচ এজেন্টের দরকার।</p>
+</div>
+
 ---
 
 ## The anatomy of a world model
@@ -209,6 +229,13 @@ The cleanest starting blueprint is Ha &amp; Schmidhuber's **V–M–C** decompos
 </div>
 
 That last point is the magic: a trained dynamics model lets you generate experience **in imagination**, decoupling learning from expensive real-world interaction.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>সবচেয়ে পরিষ্কার নকশা Ha ও Schmidhuber-এর <strong>V–M–C</strong>: <strong>V (Vision)</strong> — এনকোডার (সাধারণত VAE) প্রতিটি observation-কে ছোট latent <em>zₜ</em>-এ সংকুচিত করে; <strong>M (Memory)</strong> — রিকারেন্ট/ট্রান্সফরমার ডাইনামিক্স বর্তমান latent ও action থেকে পরের latent অনুমান করে, হিস্ট্রি <em>hₜ</em>-তে ধরে রাখে; <strong>C (Controller)</strong> — ছোট পলিসি সংকুচিত state থেকে action বাছে (V ও M ভারী কাজ করায় C ছোট হতে পারে)।</p>
+  <p><strong>জাদুটি:</strong> প্রশিক্ষিত ডাইনামিক্স দিয়ে <strong>কল্পনায়</strong> অভিজ্ঞতা তৈরি করা যায় — শেখাকে ব্যয়বহুল বাস্তব-জগৎ-মিথস্ক্রিয়া থেকে আলাদা করে।</p>
+</div>
 
 ---
 
@@ -293,6 +320,13 @@ How much does this buy? The clearest single data point: **DreamerV3 was the firs
 
 **4. A candidate path to autonomous machine intelligence.** This is the thesis behind LeCun's proposal for a modular, predictive, world-model-centric architecture as a route past the limits of pure text prediction<sup class="wm-cite"><a href="#ref-12">12</a></sup>.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>(১) স্যাম্পল-দক্ষতা — স্বপ্নে শেখা:</strong> ডাইনামিক্স নির্ভুল হলে কন্ট্রোলার <em>কল্পিত</em> রোলআউটে অপ্টিমাইজ করা যায় (Dreamer ধারা) — প্রতিটি কল্পিত ধাপ কয়েকটি ম্যাট্রিক্স-গুণ মাত্র, রোবট/সিমুলেটর নয়। <strong>DreamerV3</strong> প্রথম এজেন্ট যে Minecraft-এ শূন্য থেকে (মানব-ডেমো ছাড়া, একটিই হাইপারপ্যারামিটার-কনফিগে, ১৫০+ কাজেও) হীরা সংগ্রহ করে।</p>
+  <p><strong>(২) গ্রাউন্ডেড প্ল্যানিং ও রিজনিং:</strong> মাথার ভেতর সিমুলেটর থাকায় এজেন্ট অ্যাকশন-ক্রম খুঁজে ফলাফল তুলনা করে বাছতে পারে। <strong>(৩) জেনারালাইজেশন ও গ্রাউন্ডিং:</strong> পরিণতি অনুমান করতে বাধ্য হলে নেটওয়ার্ক পরিবেশের <em>কার্যকারণ-কাঠামো</em> (বস্তু, পদার্থবিদ্যা) আবিষ্কার করে। <strong>(৪)</strong> স্বশাসিত যন্ত্র-বুদ্ধিমত্তার সম্ভাব্য পথ (LeCun-এর প্রস্তাব)।</p>
+</div>
+
 ---
 
 ## Predicting pixels vs. predicting representations
@@ -376,6 +410,13 @@ In practice the field has given **three different answers** to "what should a wo
   <text x="380" y="252" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.65">this disagreement is the live research question of the field</text>
 </svg>
 <figcaption>The three answers, side by side. Keep this picture: almost every paper in the reading list sits in one of these columns, and most arguments in the field are really arguments about which column is right.</figcaption>
+</div>
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>ডিকোডারে একটি সূক্ষ্ম কিন্তু গুরুত্বপূর্ণ নকশা-পছন্দ: <strong>কাঁচা পিক্সেল</strong> অনুমান করব, নাকি কেবল তার একটি <strong>রিপ্রেজেন্টেশন</strong>? <strong>জেনারেটিভ</strong> world model observation পুনর্গঠন করে (ব্যাখ্যাযোগ্য, কিন্তু প্রতিটি অপ্রাসঙ্গিক ডিটেইলে ক্ষমতা খরচ)। <strong>JEPA</strong> একটি <em>শেখা latent স্পেসে</em> অনুমান করে — এনার্জি কমিয়ে <em>অনুমানযোগ্য কাঠামো</em> ধরে, <em>অনুমান-অযোগ্য নয়েজ বাদ</em> দেয়।</p>
+  <p>মাঠে তিনটি উত্তর — পিক্সেল পুনর্গঠন / ইন্টারঅ্যাক্টিভ জেনারেশন / রিপ্রেজেন্টেশন অনুমান — আর কোনটি ঠিক, সেই বিতর্কই ক্ষেত্রটির জীবন্ত গবেষণা-প্রশ্ন।</p>
 </div>
 
 ---
@@ -473,6 +514,12 @@ A non-exhaustive map of where the field is, to orient the rest of the series. Th
 
 The contemporary literature here is *vast* and moving fast; throughout the series I'll treat recent papers as the best raw material for generating new research ideas. For a continuously-updated, annotated guide — in-depth deep dives followed by a broad thematic index — see the companion **[World Models — Reading &amp; Resources]({{ '/blog/2026/world-models-reading-and-resources/' | relative_url }})**.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>সংক্ষিপ্ত মানচিত্র, তিনটি লেনে: <strong>নিয়ন্ত্রণের জন্য latent world model</strong> — Ha ও Schmidhuber, Dreamer পরিবার; <strong>জয়েন্ট-এমবেডিং/নন-জেনারেটিভ</strong> — JEPA প্রোগ্রাম; <strong>জেনারেটিভ ইন্টারঅ্যাক্টিভ পরিবেশ</strong> — Genie (unlabeled ভিডিও থেকে action-নিয়ন্ত্রিত দুনিয়া); <strong>ভিডিও-জেনারেটর = world simulator</strong>; <strong>এমবডিড, এজেন্ট-কেন্দ্রিক</strong> world model; এবং <strong>মূল্যায়ন নতুন করে ভাবা হচ্ছে</strong> — দৃশ্যগত বাস্তবতা ≠ কাজের সাফল্য।</p>
+</div>
+
 ---
 
 ## Where this series is going
@@ -482,6 +529,12 @@ This was Part 0 — the *why* and the vocabulary. **[Part 1: Inside the Latent](
 Further parts (added one by one) will go deep into: JEPA and energy-based learning; generative interactive worlds; evaluation; and open problems and proposals. Each will live in its own post under the **World Models** section of the [blog]({{ '/blog/world-models/' | relative_url }}).
 
 Comments are open at the bottom of every post — feedback, corrections, and pointers to papers I should cover are very welcome.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>এটি ছিল <strong>Part 0</strong> — <em>কেন</em> ও মূল শব্দভাণ্ডার। <strong>Part 1: Inside the Latent</strong> এখন প্রকাশিত: শূন্য থেকে VAE ও ELBO, এনকোডারকে সিমুলেটরে পরিণত করা RSSM, Dreamer কীভাবে নিজ কল্পনার ভেতর পলিসি প্রশিক্ষণ দেয়, এবং আজকের বাস্তব সিস্টেম (DreamerV3, Genie, Sora, GameNGen, GAIA-1)। পরবর্তী পর্বগুলো (একে একে): JEPA ও এনার্জি-ভিত্তিক শেখা; জেনারেটিভ ইন্টারঅ্যাক্টিভ দুনিয়া; মূল্যায়ন; এবং খোলা সমস্যা ও প্রস্তাব।</p>
+</div>
 
 ---
 

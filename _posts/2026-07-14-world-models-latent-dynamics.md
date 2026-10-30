@@ -50,6 +50,12 @@ That was the *what*. This part is the *how*. Three questions drive everything be
 
 Each has a clean answer, and each answer is a piece of machinery you will meet in every modern system.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>Part 0-এ শব্দভাণ্ডার ঠিক হয়েছিল — world model শেখে p(zₜ₊₁ | zₜ, aₜ) অর্থাৎ action-শর্তাধীন ডাইনামিক্স (LM-এর p(xₜ | x₍&lt;ₜ₎) নয়), V–M–C বিভাজন, এবং কল্পনায় অভিজ্ঞতা তৈরির জাদু। এই পর্ব <em>কীভাবে</em> — তিনটি প্রশ্ন: <strong>(১)</strong> সংকোচন কেন? <strong>(২)</strong> latent চলক কেউ না দিলে সংকোচন শিখি কীভাবে? <strong>(৩)</strong> প্রতি-ফ্রেম এনকোডারকে রোলআউট-যোগ্য সিমুলেটরে বদলাই কীভাবে?</p>
+</div>
+
 ---
 
 ## Why compress at all?
@@ -100,6 +106,13 @@ The bet of latent world models is that a compact $$z_t$$ retains everything **de
 - **Generalisation.** A model forced through a narrow bottleneck cannot memorise textures; it has to encode *structure* — where things are, how they move.
 
 The cost is that the latent is **unobserved**. Nobody labels $$z_t$$. We have to learn the encoder and the dynamics jointly, from observations alone. That is precisely the problem the VAE solves.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>একটি 64×64 RGB ফ্রেম = ১২,২৮৮ সংখ্যা; সরাসরি পরের ফ্রেম অনুমান মানে এত-মাত্রিক স্পেসে বণ্টন মডেল করা, যার বেশিরভাগ (নুড়ির টেক্সচার, ছায়া, সেন্সর-নয়েজ) অপ্রয়োজনীয়। latent world model-এর বাজি: কমপ্যাক্ট zₜ <em>সিদ্ধান্ত-প্রাসঙ্গিক</em> সব রাখে, বাকিটা ফেলে দেয় (~<strong>৩৮০× সংকোচন</strong>)।</p>
+  <p>ফল দুটি: <strong>কম্পিউট</strong> — ছোট স্পেসে শত ধাপ রোলআউট সস্তা; <strong>জেনারালাইজেশন</strong> — সরু bottleneck টেক্সচার মুখস্থ না করে <em>কাঠামো</em> (কী কোথায়, কীভাবে নড়ে) এনকোড করতে বাধ্য হয়। দাম: latent <strong>অপর্যবেক্ষিত</strong> — কেউ zₜ লেবেল করে না, তাই এনকোডার ও ডাইনামিক্স একসাথে শিখতে হয়, যা VAE সমাধান করে।</p>
+</div>
 
 ---
 
@@ -198,6 +211,13 @@ $$
 
 Now $$z$$ is a deterministic, differentiable function of $$\phi$$ and an external noise draw. Gradients flow to $$\mu_\phi$$ and $$\sigma_\phi$$ cleanly. This single line is what made deep latent-variable models trainable at scale, and it is used unchanged inside every model below.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>ধরা হয় ডেটা একটি latent-ভেরিয়েবল মডেল থেকে আসে (z একটি সরল prior থেকে, তারপর ডিকোড)। সরাসরি লাইকলিহুড p(x) = ∫ p(x|z)p(z)dz অগণনীয়। তাই একটি <strong>ইনফারেন্স নেটওয়ার্ক</strong> q(z|x) এনে, Jensen অসমতা দিয়ে <strong>ELBO</strong> পাওয়া যায় = <strong>পুনর্গঠন</strong> E[log p(x|z)] − <strong>রেগুলারাইজেশন</strong> KL(q‖p)। দুই টার্ম পরস্পর-বিরোধী, আর সেই টানটাই রিপ্রেজেন্টেশন।</p>
+  <p><strong>রিপ্যারামিটারাইজেশন ট্রিক:</strong> z = μ(x) + σ(x) ⊙ ε (ε একটি বাহ্যিক নয়েজ) — স্যাম্পলিংকে ডিফারেনশিয়েবল করে, গ্রেডিয়েন্ট μ ও σ-তে পরিষ্কারভাবে বয়। এই একটি লাইনই গভীর latent মডেলকে স্কেলে প্রশিক্ষণযোগ্য করেছে এবং নিচের প্রতিটি মডেলে অপরিবর্তিত থাকে।</p>
+</div>
+
 ---
 
 ## From frames to sequences — the RSSM
@@ -293,6 +313,13 @@ Training pushes the prior toward the posterior. Once they agree, you can **drop 
 <figcaption>The RSSM unrolled. Solid path = memory that always flows; dashed boxes = observations, which are available during <em>training</em> but deliberately withheld when the model is used as a simulator.</figcaption>
 </div>
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>VAE এক ফ্রেম এনকোড করে; world model-কে বলতে হয় “এই state ও action দিলে পরের state কী?” প্রধান উত্তর <strong>RSSM</strong> (PlaNet ও পুরো Dreamer ধারা)। মূল সিদ্ধান্ত: state-কে দুই ভাগে ভাগ — hₜ (<strong>ডিটারমিনিস্টিক</strong>, GRU-বাহিত স্মৃতি-মেরুদণ্ড) ও zₜ (<strong>স্টোক্যাস্টিক</strong>, যা সত্যিই অনুমান-অযোগ্য তা ধরে)। শুধু ডিটারমিনিস্টিক অনিশ্চয়তা ধরতে পারে না; শুধু স্টোক্যাস্টিক দীর্ঘ-পাল্লার তথ্য হারায়।</p>
+  <p>মূল ট্রিক — <strong>prior বনাম posterior</strong>: posterior q(zₜ|hₜ,oₜ) observation <em>দেখেছে</em> (সঠিক state); prior p(ẑₜ|hₜ) <em>দেখেনি</em> (কেবল স্মৃতি+action থেকে আন্দাজ)। প্রশিক্ষণ prior-কে posterior-এর দিকে ঠেলে; মিলে গেলে <strong>observation বাদ দিয়ে কেবল prior-এ চালানো যায় — সেটাই সিমুলেটর</strong>।</p>
+</div>
+
 ---
 
 ## The world-model objective
@@ -310,6 +337,12 @@ Three terms, three jobs:
 3. **KL** is the simulator term. It penalises the gap between "state given the picture" and "state predicted from memory + action". Drive it down and the model can dream.
 
 That third term deserves emphasis, because it is the one people skim: **the KL is not merely regularisation here** — it is the training signal that makes open-loop rollout possible at all.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>সব মিলে একটি লস (সিকোয়েনশিয়াল ELBO) তিনটি কাজ করে: <strong>(১) পুনর্গঠন</strong> latent-কে দৃশ্য বহনে বাধ্য করে; <strong>(২) reward-prediction</strong> <em>কাজের জন্য</em> যা দরকার তা বহনে বাধ্য করে — এই একটি লাইনই জেনেরিক ভিডিও-মডেলকে কন্ট্রোল-মডেলে বদলায়; <strong>(৩) KL</strong> = সিমুলেটর-টার্ম, “ছবি দেখে state” ও “স্মৃতি+action থেকে অনুমিত state”-এর ফাঁক শাস্তি দেয়। এই KL নিছক রেগুলারাইজেশন নয়, এটিই open-loop রোলআউট সম্ভব করার প্রশিক্ষণ-সংকেত।</p>
+</div>
 
 ---
 
@@ -391,6 +424,13 @@ The critic regresses onto $$V^\lambda_t$$; the actor maximises it. Crucially, be
 
 The practical consequence is stark: Dreamer-style agents are often **one to two orders of magnitude more sample-efficient** than model-free baselines on pixel control, because most of their learning happens in a dream rather than in the world.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>প্রশিক্ষিত RSSM দিয়ে পরিবেশ ছাড়াই ট্রাজেক্টরি তৈরি — বাস্তব এনকোডেড state থেকে শুরু করে বারবার <strong>prior</strong> স্যাম্পল করে নিজের অনুমান ফিরিয়ে দেওয়া। <strong>Dreamer</strong> একটি actor ও critic কেবল এই কল্পিত রোলআউটে (~১৫ ধাপ) প্রশিক্ষণ দেয়; return-এ λ-ওজনিত মিশ্রণ (Vλ, bias↔variance ভারসাম্য)।</p>
+  <p>যেহেতু পুরো রোলআউট ডিফারেনশিয়েবল, actor <strong>শেখা ডাইনামিক্সের মধ্য দিয়ে সরাসরি গ্রেডিয়েন্ট</strong> পায় — যা কোনো model-free পদ্ধতির নেই। ফল স্পষ্ট: পিক্সেল-কন্ট্রোলে Dreamer-ধাঁচের এজেন্ট প্রায়ই <strong>১–২ মাত্রা বেশি স্যাম্পল-দক্ষ</strong>, কারণ বেশিরভাগ শেখা দুনিয়ার বদলে স্বপ্নে ঘটে।</p>
+</div>
+
 ---
 
 ## What actually made it work
@@ -404,6 +444,12 @@ The idea above dates to 2018–2019. What turned it from a promising result into
 - **Return normalisation** by a percentile range, so sparse-reward and dense-reward tasks can share settings.
 
 The headline result: **one fixed configuration** across more than 150 tasks, and the first agent to **collect diamonds in Minecraft from scratch, with no human data and no curriculum**<sup class="wm-cite"><a href="#ref-7">7</a></sup>. If you present one empirical fact about world models, that is a strong candidate — it is concrete, verifiable, and instantly legible to a non-specialist.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>ধারণাটি ২০১৮–১৯-এর; এটিকে দৃঢ় করেছে <strong>DreamerV3</strong>-এর কিছু নিরাভরণ ফিক্স: <strong>symlog prediction</strong> (স্কেল সংকোচন), <strong>two-hot encoded returns</strong> (স্থিতিশীল বণ্টন-অনুমান), <strong>KL balancing</strong> (prior/posterior ভিন্ন হারে টানা), <strong>free bits</strong> (posterior collapse রোধ), <strong>return normalisation</strong>। ফল: <strong>একটিই কনফিগ</strong> ১৫০+ কাজে, এবং শূন্য থেকে (মানব-ডেটা/কারিকুলাম ছাড়া) Minecraft-এ হীরা — একটি দৃঢ়, যাচাইযোগ্য, সর্বজনবোধ্য তথ্য।</p>
+</div>
 
 ---
 
@@ -446,6 +492,12 @@ The machinery above is not academic. Here is where it shows up, with what each s
 
 Notice the split running through this list. DreamerV3 and GAIA-1 **reconstruct**; Genie and GameNGen **generate interactively**; JEPA **refuses to reconstruct at all**. That disagreement — *what should a world model actually predict?* — is the live research question, and it is exactly where Part 2 picks up.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>এই যন্ত্র বাস্তবে চলে: <strong>DreamerV3</strong> (RSSM+কল্পনা এখন <em>সাধারণ</em> পদ্ধতি); <strong>Genie</strong> (11B, unlabeled ভিডিও থেকে <em>latent action space</em> আবিষ্কার, একটি ছবি→খেলার-যোগ্য দুনিয়া); <strong>Sora</strong> (“world simulator”-এর দিকে; দৃশ্য-সংগতি কিন্তু পদার্থবিদ্যা-ব্যর্থতা — সংগতি ≠ পদার্থবিদ্যা); <strong>GameNGen</strong> (ডিফিউশন DOOM ~২০ FPS, নিউরাল নেট-ই গেম-ইঞ্জিন); <strong>GAIA-1</strong> (~9B ড্রাইভিং world model; বিরল-বিপজ্জনক দৃশ্য তৈরির নিরাপত্তা-যুক্তি); <strong>JEPA ধারা</strong> (পিক্সেল নয়, <em>রিপ্রেজেন্টেশন</em> স্পেসে অনুমান)। বিভাজন—পুনর্গঠন / ইন্টারঅ্যাক্টিভ জেনারেশন / পুনর্গঠন-প্রত্যাখ্যান—ই জীবন্ত প্রশ্ন (Part 2)।</p>
+</div>
+
 ---
 
 ## How to present this in ten minutes
@@ -460,6 +512,12 @@ Since a stated goal here is to be able to explain this from memory, here is a sk
 
 Two things to keep in reserve for questions: **why the KL term is the simulator term** (§ the objective), and **why the reward head is what separates a world model from a video model**. Those are the two points specialists probe first.
 
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>স্মৃতি থেকে ব্যাখ্যার কঙ্কাল — পাঁচ স্লাইড, এক-একটি ধারণা: <strong>(১) ফাঁক</strong> (LM কী <em>লেখা</em> হবে অনুমান করে; world model কী <em>ঘটবে</em> — তুমি কী করলে); <strong>(২) সংকোচন</strong> (১২,২৮৮→৩২, ৩৮০×); <strong>(৩) দুই-অংশ state</strong> (কখনো-ভোলে-না স্মৃতি + অনিশ্চয়তার random অংশ; posterior ছবি দেখে, prior আন্দাজ করে — মিলিয়ে ছবি ফেলে দাও); <strong>(৪) স্বপ্ন</strong> (প্রশিক্ষণ = ম্যাট্রিক্স-গুণ, রোবট-ঘণ্টা নয়; DreamerV3-এর হীরা); <strong>(৫) খোলা প্রশ্ন</strong> (পিক্সেল/ইন্টারঅ্যাক্টিভ/রিপ্রেজেন্টেশন)। সংরক্ষিত: KL কেন সিমুলেটর-টার্ম, ও reward-head কেন world model-কে ভিডিও-মডেল থেকে আলাদা করে।</p>
+</div>
+
 ---
 
 ## Where this goes next
@@ -469,6 +527,12 @@ Two things to keep in reserve for questions: **why the KL term is the simulator 
 After that: generative interactive worlds (Genie / Sora / GameNGen) in depth, then evaluation — which, as the [reading &amp; resources hub]({{ '/blog/2026/world-models-reading-and-resources/' | relative_url }}) argues, is where the field is currently rethinking itself hardest.
 
 Comments are open below — corrections and pointers to papers I should cover are very welcome.
+
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>Part 2 — রিপ্রেজেন্টেশন অনুমান: JEPA, এনার্জি-ভিত্তিক শেখা, পিক্সেলের বিপক্ষে যুক্তি।</strong> LeCun কেন পুনর্গঠনকে ভুল অবজেক্টিভ বলেন, JEPA কীভাবে রিপ্রেজেন্টেশন-কোল্যাপস এড়ায়, এবং প্রতি-পিক্সেল আঁকা বন্ধ করলে প্রমাণ কী বলে। এরপর: জেনারেটিভ ইন্টারঅ্যাক্টিভ দুনিয়া (Genie/Sora/GameNGen) গভীরভাবে, তারপর মূল্যায়ন — যেখানে ক্ষেত্রটি এখন সবচেয়ে বেশি নিজেকে নতুন করে ভাবছে।</p>
+</div>
 
 ---
 

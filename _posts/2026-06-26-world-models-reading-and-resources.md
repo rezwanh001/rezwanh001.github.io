@@ -77,6 +77,11 @@ A reading list tells you *what* exists; this part tells you *why each paper matt
 - **Results.** No single model, no accuracy number — its value is the framing.
 - **Scope &amp; unique ideas.** The umbrella that legitimizes a perception-quality-inside-world-models direction. Its Theory-of-Mind thread is itself a possible project (user-intention modeling).
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>গ্রুপ A — world model ও ডেটা/এজেন্ডা স্তর।</strong> <strong>WorldPrediction</strong>: দৃশ্যগত বাস্তবতা ≠ পরিকল্পনা-ক্ষমতা; উচ্চ-স্তরের planning প্রায় অমীমাংসিত, সম্ভবত <em>উপলব্ধি</em>-ই বাধা (সেরা মডেল ~৫৭% WM, ~৩৮% PP; মানুষ প্রায় নিখুঁত)। <strong>Action100M</strong>: স্বয়ংক্রিয় হায়ারার্কিক্যাল অ্যানোটেশন ম্যানুয়াল লেবেলিং-এর বিকল্প (V-JEPA 2-ভিত্তিক ~১০০M সেগমেন্ট); predictive রিপ্রেজেন্টেশন ডেটার সাথে উন্নত হয়। <strong>Embodied AI Agents: Modeling the World</strong>: উপলব্ধি+পরিকল্পনা+স্মৃতি world model-এর <em>ভেতরে</em> একত্র করা উচিত, সাথে Theory-of-Mind স্তর — একটি ভিশন পেপার।</p>
+</div>
+
 ## Group B — "Moving to see better" (active perception) {#group-b}
 
 ### 4 · World-in-World <span class="dd-flag">🎯 Core to the project</span>
@@ -129,6 +134,11 @@ A reading list tells you *what* exists; this part tells you *why each paper matt
 - **Results.** Accurate on fine-detail visual questions where standard MLLMs fail.
 - **Scope &amp; unique ideas.** Conceptual grounding for "where to look"; even with a moving robot, the search-then-decide structure transfers.
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>গ্রুপ B — “moving to see better” (active perception)।</strong> <strong>World-in-World</strong>: world model বিচার করো ক্লোজড-লুপ <em>কাজের সাফল্যে</em>, পিক্সেলে নয় — দৃশ্যগত মান ≠ সাফল্য (task-coupled reward-এর অভিজ্ঞতামূলক ভিত্তি)। <strong>MANIQA</strong>: no-reference ছবির মান, channel+space অ্যাটেনশন — “view-quality” মেট্রিকের শুরুর আর্কিটেকচার। <strong>Rein-EAD</strong>: ঘন uncertainty-reward চালিত পুনঃপর্যবেক্ষণ single-shot-কে হারায় — “move to see better”-এর নিকটতম যন্ত্র। <strong>RL4VLM</strong>: perception-সক্ষম মডেলে RL-reward জুড়ে এজেন্ট — <em>যেকোনো</em> reward-কে আচরণে রূপান্তরের রেসিপি। <strong>V*</strong>: কোথায় তাকাবে তা নিজেই শেখনযোগ্য দক্ষতা (SEAL iterative search)।</p>
+</div>
+
 ## Group C — Multi-agent &amp; state tracking {#group-c}
 
 ### 9 · Solaris
@@ -150,6 +160,11 @@ A reading list tells you *what* exists; this part tells you *why each paper matt
 - **Benchmark / dataset / metrics.** VSTAT accuracy, with the large human–model gap as the headline index.
 - **Results.** Best model (~Gemini-3.1 Pro) ≈ **44.4** versus humans ≈ **90.5**.
 - **Scope &amp; unique ideas.** Motivation and a possible evaluation axis for world-model / memory work; its human-vs-model gap framing mirrors the broader "metrics don't equal usefulness" argument.
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>গ্রুপ C — multi-agent ও state tracking।</strong> <strong>Solaris</strong>: multi-agent/“multiplayer” world model; শেয়ার্ড ভিউ সঙ্গতি রাখতে হয় — ক্রস-এজেন্ট দৃশ্য-সঙ্গতির রেফারেন্স। <strong>VSTAT</strong>: মডেল ফ্রেম বর্ণনা করতে পারে কিন্তু <em>সময়জুড়ে state ট্র্যাক</em> করতে পারে না (সেরা ~৪৪.৪ বনাম মানুষ ~৯০.৫) — world model/স্মৃতির প্রেরণা।</p>
+</div>
 
 ## Group D — Quality + active perception for embodied AI {#group-d}
 
@@ -187,6 +202,11 @@ A reading list tells you *what* exists; this part tells you *why each paper matt
 - **Results.** Human and embodied MOS barely correlate (PLCC ~**0.13–0.21**); across 16 IQA methods none exceeds ~0.6 SRCC; MA-EIQA reaches SOTA among no-reference models and beats the full-reference ones. Color distortion hurts tasks most; motion blur and noise least — the opposite of human sensitivity.
 - **Stated future work.** Expand the embodied-preference database; add vision–tactile sensing; cover more robot body types.
 - **Scope &amp; unique ideas.** They already use RL reward as the quality label, but only *offline*, to build a static dataset. Using a learned quality model as a **live dense reward that drives an agent's movement** is the step they do not take. The label is task-specific (push, pick); a quality signal that *generalizes across tasks* — or that an agent can use before it knows the exact task — is open. They vary *distortion* on fixed viewpoints; you care about *viewpoint* — nobody has unified distortion-robustness and viewpoint-usefulness under one task-aligned signal.
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>গ্রুপ D — embodied AI-এর জন্য মান + active perception</strong> (সবচেয়ে সরাসরি ত্রয়ী)। <strong>AVS</strong>: পরের ভিউ বাছাই = 2D IQA (“সবচেয়ে খারাপ ভিউয়ে যাও”), দ্রুত ও representation-agnostic — কিন্তু SSIM-fidelity অপ্টিমাইজ করে (task নয়), কোনো শেখা movement-policy নেই। <strong>Embodied-IQA</strong>: ছবি রোবটের কাজে কতটা <em>ব্যবহারযোগ্য</em> তা অনুমান; বড় মানুষ–রোবট ফাঁক; স্থির স্কোরিং, নড়াচড়া নেই। <strong>EPD/MA-EIQA</strong>: মান-লেবেল কেবল <em>কাজের পারফরম্যান্স</em> থেকে; প্রথম রোবট-লক্ষ্যী no-reference মডেল — তবে অফলাইন, লাইভ reward নয়।</p>
+</div>
 
 ## A cross-cutting idea seed {#idea-seed}
 
@@ -275,6 +295,12 @@ Drawn as a 2×2, the gap is impossible to miss — and this is the single most u
 
 ---
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p>একসাথে পড়লে এরা এক দিকে নির্দেশ করে। পাঁচটি পেপার ভিন্ন কোণ থেকে একই কথা বলে: আজকের মডেল <em>দেখতে</em> ভালো কিন্তু <strong>কাজ/পরিকল্পনা/স্মৃতিতে দুর্বল, আর পিক্সেল-মেট্রিক কাজের উপযোগিতা অনুমানে ব্যর্থ</strong> — human perceptual মান embodied সাফল্যের সাথে দুর্বল সম্পর্কযুক্ত (PLCC ০.১৩–০.২১)। তাই <em>human-aligned</em> view-quality reward সম্ভবত ভুল লক্ষ্য।</p>
+  <p>তিনটি সৎ উত্তর: <strong>(১)</strong> reward-কে <em>task-aligned</em> করো, নতুনত্ব হোক <em>active movement</em>; <strong>(২)</strong> human-alignment রাখো কিন্তু <em>human-facing</em> এজেন্টে (wearables) সীমাবদ্ধ করো; <strong>(৩)</strong> human-বনাম-task মান-ফাঁককেই গবেষণা-প্রশ্ন বানাও। <strong>অদাবিকৃত কেন্দ্র (2×2):</strong> AVS <em>নড়ে</em> কিন্তু ভুল জিনিস অপ্টিমাইজ করে; Embodied-IQA/EPD <em>সঠিক জিনিস</em> সংজ্ঞায়িত করে কিন্তু নড়ে না। খোলা সমস্যা: এমন এজেন্ট যে একটি <strong>movement policy</strong> শেখে যার reward একটি শেখা <strong>task-aligned view-quality</strong> সংকেত, ক্লোজড-লুপে কাজের সাফল্যে মূল্যায়িত। প্রতিটি অর্ধেক সাহিত্যে আছে, সংমিশ্রণটি নেই।</p>
+</div>
+
 # Further reading — active perception &amp; embodied IQA (2024–2026) {#further-reading}
 
 A focused companion to Group D: the surrounding literature on *machine-oriented image quality*, *cross-reference / novel-view quality*, *next-best-view selection*, and *active perception inside VLA policies*. This is the fast-moving neighbourhood around "moving to see better." Many entries are recent preprints — **confirm title/authors/venue at the source before formal citation.**
@@ -290,11 +316,21 @@ A focused companion to Group D: the surrounding literature on *machine-oriented 
   <div class="paper"><a href="https://arxiv.org/abs/2312.17090" target="_blank" rel="noopener">Q-Align: Teaching LMMs Visual Scoring via Discrete Text-Defined Levels</a><span class="paper-meta">ICML 2024</span>The scoring LMM used as both a pre-filter and a zero-shot baseline throughout this literature.</div>
 </div>
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>মেশিন ও embodied IQA — সরাসরি বংশধারা।</strong> এই অংশে মেশিন-লক্ষ্যী মানের মূল পেপারগুলো: <strong>MPD</strong> (Embodied-IQA-র পূর্বসূরি), <strong>MIQD-2.5M / RA-MIQA</strong> (স্বাধীনভাবে একই ফাঁক নিশ্চিত + region-aware), <strong>MoIQA চ্যালেঞ্জ</strong> (ACM MM 2026 — Sim ও Real ট্র্যাক, প্রস্তুত benchmark), ML-CLIPSim, R-Bench, Q-Align।</p>
+</div>
+
 ## Cross-reference &amp; novel-view quality assessment
 
 <div class="paper-list">
   <div class="paper"><a href="https://arxiv.org/abs/2404.14409" target="_blank" rel="noopener">CrossScore: Towards Multi-View Image Evaluation and Scoring</a><span class="paper-meta">ECCV 2024 · Oxford</span>The mechanism AVS builds on: cross-attention over multi-view references to predict an SSIM map <em>without</em> ground truth. The essential prerequisite for any cross-reference quality signal.</div>
   <div class="paper"><a href="https://stootaghaj.github.io/nova-project/" target="_blank" rel="noopener">NOVA: Non-Aligned Reference IQA for Novel View Synthesis</a><span class="paper-meta">WACV 2026</span>Successor/competitor to CrossScore — quality assessment with <em>non-aligned</em> references; bears on whether "reference from another viewpoint" needs alignment.</div>
+</div>
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>Cross-reference ও novel-view মান-মূল্যায়ন।</strong> GT ছাড়া একাধিক ভিউ থেকে মান অনুমান — <strong>CrossScore</strong> (AVS-এর ভেতরের যন্ত্র; cross-attention দিয়ে SSIM অনুমান) এবং <strong>NOVA</strong> (non-aligned রেফারেন্স দিয়ে NVS-মান)। cross-reference কিছু বানানোর আগে এগুলো পড়া জরুরি।</p>
 </div>
 
 ## Active view selection &amp; next-best-view (around AVS)
@@ -309,6 +345,11 @@ A focused companion to Group D: the surrounding literature on *machine-oriented 
   <div class="paper"><a href="https://arm.stanford.edu/next-best-sense" target="_blank" rel="noopener">Next Best Sense: Guiding Vision and Touch with FisherRF for 3DGS</a><span class="paper-meta">2025 · Stanford</span>Extends FisherRF to vision + touch — the multimodal-perception extension embodied-IQA work flags as future.</div>
 </div>
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>Active view selection / next-best-view (AVS-এর চারপাশে)।</strong> পরবর্তী সেরা ভিউ বাছাইয়ের সাম্প্রতিক কাজ — neural uncertainty map, 3DGS-ভিত্তিক object-aware NBV, task-relevant exploration (VISTA), এবং AVS যে baseline-কে হারায় সেই <strong>FisherRF</strong>; কিছু কাজ vision+touch-এ সম্প্রসারিত।</p>
+</div>
+
 ## Active perception inside VLA / manipulation
 
 <div class="paper-list">
@@ -321,12 +362,22 @@ A focused companion to Group D: the surrounding literature on *machine-oriented 
   <div class="paper"><a href="https://arxiv.org/abs/2606.19091" target="_blank" rel="noopener">GCNGrasp-VP: Affordance-Guided View Planning for Task-Oriented Grasping</a><span class="paper-meta">2026</span>Affordance- (i.e. task-) guided view planning.</div>
 </div>
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>VLA/ম্যানিপুলেশনে active perception।</strong> VLA-র ভেতরেই দৃষ্টিকোণ বাছাই: <strong>ActiveVLA</strong> (adaptive viewpoint + resolution, 3D zoom-in — “quality-aware VLA”-র নিকটতম), <strong>TAVP</strong> (task-aware view planning — G1 ধারণা পরিকল্পনায় প্রয়োগ), এবং egocentric ডেটা থেকে non-Markovian active perception ইত্যাদি।</p>
+</div>
+
 ## VLA robustness under perturbation — why quality matters
 
 <div class="paper-list">
   <div class="paper"><a href="https://arxiv.org/abs/2510.00037" target="_blank" rel="noopener">On Robustness of VLA Models against Multi-Modal Perturbations</a><span class="paper-meta">2025</span>Systematic VLA robustness under multi-modal perturbation — independent confirmation that perception degradation breaks embodied policies.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2606.08881" target="_blank" rel="noopener">Benchmarking VLA Models on SO-101: Failure &amp; Recovery Analysis</a><span class="paper-meta">2026</span>A structured failure taxonomy separating semantic- from execution-level failure, with recovery-aware metrics — useful for defining what a quality signal should predict.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2607.04434" target="_blank" rel="noopener">RoboDojo: A Unified Sim-and-Real Benchmark for Manipulation Policies</a><span class="paper-meta">2026</span>A sim-and-real evaluation harness — a candidate testbed for closed-loop validation.</div>
+</div>
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>Perturbation-এ VLA robustness — কেন এই মেট্রিক দরকার।</strong> বহু-মোডাল পরিবর্তনে VLA-নীতির ভঙ্গুরতা স্বাধীনভাবে নিশ্চিত করে পেপার ১-এর মূল যুক্তি; ব্যর্থতা-ট্যাক্সোনমি ও recovery-aware মেট্রিক নির্ধারণ করে “মান” আসলে কী অনুমান করা উচিত (G6)।</p>
 </div>
 
 ## Closed-loop evaluation &amp; IQA as a reward signal
@@ -345,6 +396,11 @@ A focused companion to Group D: the surrounding literature on *machine-oriented 
 
 The broader, faster map — organized by theme, meant as raw material for *idea generation*: read across a cluster, find the gap, build there. Entries already covered above link back to their deep dive.
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>world model-এর ক্লোজড-লুপ মূল্যায়ন ও reward-সংকেত হিসেবে IQA।</strong> <strong>World-in-World</strong> (দৃশ্যগত মান ≠ কাজের সাফল্য — “পিক্সেল-মেট্রিক ≠ উপযোগিতা”-র সবচেয়ে জোরালো সাইটেশন), WorldModelBench, এবং IQA-কে RL-to-rank/reasoning সংকেত হিসেবে প্রশিক্ষণের কাজ (VisualQuality-R1, Zoom-IQA)।</p>
+</div>
+
 ## 1 · Foundations &amp; framing
 
 The classics that define the vocabulary, plus the position papers that set today's agenda.
@@ -353,6 +409,11 @@ The classics that define the vocabulary, plus the position papers that set today
   <div class="paper"><a href="https://arxiv.org/abs/1803.10122" target="_blank" rel="noopener">World Models</a><span class="paper-meta">Ha &amp; Schmidhuber · NeurIPS 2018</span>The paper that named the field. It splits an agent into three parts — a Vision encoder (V) that compresses each frame into a small latent code, a Memory model (M) that learns how those latents evolve over time, and a tiny Controller (C). Its headline result: the controller can be trained almost entirely inside the model's own learned "dream" and still transfer back to the real environment.</div>
   <div class="paper"><a href="https://openreview.net/forum?id=BZ5a1r-kVsf" target="_blank" rel="noopener">A Path Towards Autonomous Machine Intelligence</a><span class="paper-meta">LeCun · 2022</span>LeCun's position paper laying out a modular architecture with a world model at its centre, trained by joint-embedding prediction (JEPA) rather than pixel- or token-level reconstruction. The core claim is that predicting the <em>abstract</em> future state that matters for acting — not every pixel — is the route to agents that can plan and reason. It frames much of today's world-model agenda.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2506.22355" target="_blank" rel="noopener">Embodied AI Agents: Modeling the World</a><span class="paper-meta">Fung et al. · Meta · 2025 · <a href="#group-a">deep dive ↑</a></span>A research-vision paper arguing that embodied agents — avatars, wearables, robots — should unify multimodal perception, reasoning-for-action, and memory inside a single world model. It adds a "mental world model": a Theory-of-Mind layer that infers user intentions and social context. Together these give a taxonomy spanning virtual, wearable, and robotic agents.</div>
+</div>
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ১ · ভিত্তি ও কাঠামো।</strong> ক্ষেত্রটির মূল ভিত্তি ও সংজ্ঞায়ক পেপারসমূহ — world model, latent dynamics ও এজেন্ট-কেন্দ্রিক দৃষ্টিভঙ্গির সূচনা।</p>
 </div>
 
 ## 2 · World models for embodied agents
@@ -366,6 +427,11 @@ Surveys that organize the field, and the two method families that dominate: vide
   <div class="paper"><a href="https://arxiv.org/abs/2506.01182" target="_blank" rel="noopener">Humanoid World Models</a><span class="paper-meta">2025</span>Introduces open foundation world models aimed at humanoid robotics, where the action space and body morphology are far more complex than a single arm. The goal is reusable predictive models that transfer across humanoid tasks instead of being trained from scratch each time.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2509.21790" target="_blank" rel="noopener">LongScape: Long-Horizon Embodied World Models with Context-Aware MoE</a><span class="paper-meta">2025</span>Targets long-horizon embodied world modeling, where most generators drift or lose coherence over many steps. It uses a context-aware mixture-of-experts so that different experts handle different phases or contexts of a long rollout, keeping predictions consistent over extended horizons.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2601.15282" target="_blank" rel="noopener">Rethinking Video Generation Model for the Embodied World</a><span class="paper-meta">2026</span>Asks what a video generator actually needs in order to serve as a world model for an embodied agent, rather than just produce good-looking clips. It re-examines design choices — conditioning, controllability, action grounding — through the lens of downstream embodiment instead of raw visual fidelity.</div>
+</div>
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ২ · embodied এজেন্টের জন্য world model।</strong> এজেন্টের উপলব্ধি, পরিকল্পনা ও স্মৃতিকে world model-এ যুক্ত করার কাজসমূহ।</p>
 </div>
 
 ## 3 · Active perception — "moving to see better"
@@ -382,6 +448,11 @@ Agents that choose where to look or move in order to perceive better — increas
   <div class="paper"><a href="https://arxiv.org/abs/2603.12193" target="_blank" rel="noopener">SaPaVe: Active Perception and Manipulation in VLA Models</a><span class="paper-meta">2026</span>Brings active perception together with manipulation inside vision-language-action (VLA) models, so one policy decides both how to look and how to act. The aim is to close the perceive-then-manipulate loop within a single model instead of treating sensing and acting as separate stages.</div>
 </div>
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ৩ · active perception — “moving to see better”।</strong> নড়াচড়া করে ভালো ভিউ পাওয়া, next-best-view ও view-planning সংক্রান্ত কাজ — এই সিরিজের মূল এজেন্ডা।</p>
+</div>
+
 ## 4 · Agentic &amp; multi-agent embodied AI
 
 Agents that reason, plan, and coordinate — often LLM/VLM-driven, increasingly as multi-agent systems.
@@ -391,6 +462,11 @@ Agents that reason, plan, and coordinate — often LLM/VLM-driven, increasingly 
   <div class="paper"><a href="https://arxiv.org/abs/2402.03310" target="_blank" rel="noopener">V-IRL: Grounding Virtual Intelligence in Real Life</a><span class="paper-meta">Yang et al. (incl. Xie) · ECCV 2024</span>Grounds virtual agents in real-world geographic and street-level data, letting them perceive and act over actual places rather than synthetic toys. It serves as a bridge between simulation and reality, giving embodied agents realistic perceptual grounding at scale.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2505.05108" target="_blank" rel="noopener">Multi-agent Embodied AI: Advances and Future Directions</a><span class="paper-meta">Survey · 2025</span>A survey of embodied AI when several agents must perceive and act together. It frames the perception–action loop at the group level — communication, coordination, and shared understanding — and lays out the open problems for multi-agent embodied systems.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2508.05294" target="_blank" rel="noopener">Towards Embodied Agentic AI: Review &amp; Classification of LLM/VLM-Driven Robot Autonomy</a><span class="paper-meta">Survey · 2025</span>Reviews and classifies LLM/VLM-driven robot autonomy by the role the model plays: coordinator, planner, perception actor, or a single generalist interface. A practical map for deciding how much of an autonomy stack to hand over to a large model.</div>
+</div>
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ৪ · এজেন্টিক ও multi-agent embodied AI।</strong> একক ও বহু-এজেন্ট embodied সিস্টেম, শেয়ার্ড দৃশ্য ও সমন্বয় সংক্রান্ত কাজ।</p>
 </div>
 
 ## 5 · Advanced MI — foundation models, spatial cognition &amp; VLAs
@@ -403,6 +479,11 @@ The generalist layer: models that unify perception, language, and action, and in
   <div class="paper"><a href="https://arxiv.org/abs/2401.06209" target="_blank" rel="noopener">Eyes Wide Shut? Visual Shortcomings of Multimodal LLMs</a><span class="paper-meta">Tong et al. (incl. Xie) · CVPR 2024</span>Systematically documents concrete visual shortcomings of multimodal LLMs — pairs of images that differ in obvious ways yet get described identically. It is sharp motivation that today's models still "see" poorly, isolating perception (not language) as the failure point.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2406.16860" target="_blank" rel="noopener">Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs</a><span class="paper-meta">Tong et al. (incl. Xie) · NeurIPS 2024</span>A fully open, vision-centric study of multimodal LLMs that treats the visual representation — not just the language model — as the thing to get right. It provides a strong, reproducible baseline and a careful analysis of which visual components actually matter.</div>
   <div class="paper"><a href="https://arxiv.org/abs/2405.14093" target="_blank" rel="noopener">A Survey on Vision-Language-Action Models for Embodied AI</a><span class="paper-meta">Survey · continuously updated</span>The reference survey for vision-language-action models — the family that maps perception and language straight to robot actions. Continuously updated, it is the standard map of VLA methods, datasets, and open questions.</div>
+</div>
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ৫ · উন্নত MI — foundation model, spatial cognition ও VLA।</strong> বড় মাল্টিমোডাল/VLA মডেল, স্থানিক বোধ ও উপলব্ধি সংক্রান্ত অগ্রসর কাজ।</p>
 </div>
 
 ## 6 · Evaluation &amp; benchmarks
@@ -418,6 +499,11 @@ The most important recent shift: judging world models by closed-loop *task succe
   <div class="paper"><a href="https://arxiv.org/abs/2204.08958" target="_blank" rel="noopener">MANIQA: Multi-dimension Attention Network for No-Reference IQA</a><span class="paper-meta">🎯 Yang et al. · CVPRW 2022 · <a href="#group-b">deep dive ↑</a></span>A no-reference image-quality model: it scores perceived quality from a single image with no clean reference, using attention across both channel and spatial dimensions on top of a ViT. State-of-the-art on standard IQA datasets (correlated with human MOS via SRCC/PLCC), it is a concrete architectural template for a learned "view-quality" signal — though Group D shows its human-aligned target must be re-pointed for robots.</div>
 </div>
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ৬ · মূল্যায়ন ও benchmark।</strong> মডেল কতটা কাজে লাগে তা মাপার benchmark ও ক্লোজড-লুপ মূল্যায়ন — যেখানে ক্ষেত্রটি এখন সবচেয়ে বেশি নিজেকে নতুন করে ভাবছে।</p>
+</div>
+
 ## 7 · Quality as a task-aligned signal for embodied perception <span class="dd-flag">🎯 Project-aligned cluster</span>
 
 The newest, most directly relevant thread: using **image quality** to *guide* or *judge* embodied perception — and the finding that human-perceived quality transfers poorly to robot task success.
@@ -428,6 +514,11 @@ The newest, most directly relevant thread: using **image quality** to *guide* or
   <div class="paper"><a href="https://arxiv.org/abs/2412.18774" target="_blank" rel="noopener">Embodied IQA for Robotic Intelligence (EPD / MA-EIQA)</a><span class="paper-meta">🎯 Zhang et al. · SJTU · 2025 · <a href="#group-d">deep dive ↑</a></span>Builds robot image-quality labels with no human in the loop — each image is scored by the RL episode reward it leads to — and ships MA-EIQA, a lightweight (48.83M-param) no-reference IQA model for robots. Human and embodied quality barely correlate (~0.13–0.21), and the reward-as-label idea is used only offline, leaving "quality as a live movement reward" wide open.</div>
 </div>
 
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>থিম্যাটিক ইনডেক্স ৭ · task-aligned সংকেত হিসেবে মান (প্রকল্প-সংলগ্ন ক্লাস্টার 🎯)।</strong> embodied উপলব্ধির জন্য কাজ-সংলগ্ন মান-সংকেত — এই পেইজের গবেষণা-দিকের সবচেয়ে কাছের পেপারগুলো এক জায়গায়।</p>
+</div>
+
 ## How to use this map for idea generation {#how-to-use}
 
 A simple recipe I follow: (1) pick a **cluster** above; (2) read the surveys to get the taxonomy; (3) read 2–3 methods and their **evaluation**; (4) look for a *mismatch* — e.g. metrics that don't predict task success ([World-in-World](https://arxiv.org/abs/2510.18135)), or a capability humans have that models lack (state tracking, spatial recall), or a quality signal that ignores movement (Group D); (5) propose the smallest experiment that closes that gap. The recurring theme across the 2025–2026 literature — *visual realism is not utility* — is itself a fertile source of problems.
@@ -435,6 +526,11 @@ A simple recipe I follow: (1) pick a **cluster** above; (2) read the surveys to 
 > **Verification note.** Links point to real, recent papers; the Saining Xie / NYU and Meta entries are taken from official pages, and the four "start here" IDs were independently confirmed. Several other entries — including the Group D trio — are preprints that may later change venue, title, or version. The reframing and the idea openings are my own analysis, not claims from the papers. **Confirm title/authors/venue at the source before formal citation.**
 
 ---
+
+<div class="bn-block">
+  <span class="bn-label">🇧🇩 বাংলা</span>
+  <p><strong>এই মানচিত্র আইডিয়া তৈরিতে কীভাবে ব্যবহার করবেন।</strong> deep-dive-এ কোন অংশ (gist/pipeline/benchmark/results/future work/scope) আইডিয়ার কাঁচামাল, কীভাবে ফাঁক খুঁজে নতুন প্রশ্ন গঠন করবেন — তারই গাইড।</p>
+</div>
 
 ## References {#references}
 
